@@ -35,5 +35,12 @@ module.exports = {
         },
       ],
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`EB Garamond`, `roboto-mono`],
+        display: "swap",
+      },
+    },
   ],
 }
