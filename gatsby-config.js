@@ -1,6 +1,19 @@
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Biju's Blog`,
+        short_name: `Biju's Blog`,
+        start_url: `/`,
+        background_color: `#1a202c`,
+        theme_color: `#6b37bf`,
+        display: `standalone`,
+        icon: `src/images/favicon/eagle-head.jpeg`,
+        crossOrigin: `use-credentials`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
@@ -39,7 +52,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`EB Garamond`, `roboto-mono`],
-        display: "swap",
+        display: `swap`,
       },
     },
     `gatsby-plugin-styled-components`,
