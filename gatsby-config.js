@@ -49,10 +49,19 @@ module.exports = {
       ],
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [`EB Garamond`, `roboto-mono`],
-        display: `swap`,
+        fonts: [
+          {
+            family: `Cinzel Decorative`,
+          },
+          {
+            family: `Special Elite`,
+          },
+          {
+            family: `Shadows Into Light Two`,
+          },
+        ],
       },
     },
     `gatsby-plugin-styled-components`,

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Nav } from "./"
+import { Nav, Footer } from "../components"
 
 const ContainerWrapper = styled.div`
   height: 100%;
@@ -14,6 +14,7 @@ export const Container = ({ children }) => {
     <ContainerWrapper>
       <Nav />
       {children}
+      <Footer />
     </ContainerWrapper>
   )
 }
