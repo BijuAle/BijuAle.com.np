@@ -39,6 +39,7 @@ export const SEO = ({ description, keywords, title, image, url, author }) => {
         return (
           <Helmet
             title={title}
+            defer={false}
             meta={[
               {
                 name: `title`,

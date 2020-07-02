@@ -13,6 +13,15 @@ export const PostWrapper = styled.main`
   p:nth-of-type(1) {
     margin-top: 1.5em;
   }
+  p:nth-of-type(1)::first-letter {
+    color: #1d479b;
+    initial-letter: 3;
+    font-size: 3.5em;
+    float: left;
+    margin-right: 0.1em;
+    line-height: 1;
+    font-family: "Josefin Slab";
+  }
 
   strong {
     font-weight: 700;

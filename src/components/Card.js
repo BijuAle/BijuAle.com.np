@@ -6,7 +6,7 @@ import { H1, Date, StyledLink } from "./Typography"
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 `
 export const Card = ({ date, title, excerpt, slug }) => {
   return (

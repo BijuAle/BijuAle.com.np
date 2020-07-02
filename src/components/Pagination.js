@@ -33,8 +33,10 @@ const PaginationWrapper = styled.div`
   }
 `
 const PaginationElement = styled(props => <StyledLink {...props} />)`
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.5rem;
+  z-index: 10;
+  margin-top: -2rem;
 `
 export const Pagination = ({ isFirst, isLast, prevPage, nextPage }) => {
   return (

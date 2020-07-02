@@ -12,26 +12,16 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
-body,html{
-  color:${props => props.theme.colors.lightText};
-  font-family:${props => props.theme.fonts.main};
-  height:100%;
-  background-color: ${props => props.theme.colors.darkBg};
-}
+iframe {
+  border-radius: 12px;
+  box-shadow: 4px 4px 14px #000;
+} 
 
-
-.bg{
-  width: 100%;
-  background-position: bottom center;
-  background-repeat: repeat-y;
-  background-size: cover;
-}
-
-a:hover {
-  color: purple;
-  transition: 4s;
+nav li a:hover {  
+  color: yellow;
+  transition: 1s;
   cursor:pointer;
-  }
+}
 `
 const components = {
   table: Table,

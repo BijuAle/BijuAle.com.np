@@ -19,20 +19,22 @@ const fontFamilies = {
   josefinSlab: "Josefin Slab",
   specialElite: "Special Elite",
   shadowsIntoLightTwo: "Shadows Into Light Two",
+  emirose: "Emirose",
 }
 
 export const BlogTitle = styled(props => <Link {...props} />)`
   text-decoration: none;
   color: gray;
   &:focus,
-  $:hover,
+  &:hover,
   &:visited,
   &:link,
   &:active {
     text-decoration: none;
   }
   font-size: ${props => fontSizes[props.size] || fontSizes["bigger"]};
-  font-family: "Emirose";
+  font-family: ${props =>
+    fontFamilies[props.fontFamily] || fontFamilies["josefinSlab"]};
 `
 export const BlogTag = styled.p`
   text-decoration: none;
@@ -75,13 +77,24 @@ export const StyledLink = styled(props => <Link {...props} />)`
   text-decoration: none;
   color: gray;
   &:focus,
-  &:hover,
   &:visited,
   &:link,
   &:active {
     text-decoration: none;
   }
+  &:hover {
+    color: yellow;
+    transition: 2s;
+    cursor: pointer;
+  }
+
+  &:not(:hover) {
+    transition: 2s;
+  }
+
   font-size: ${props => fontSizes[props.size] || fontSizes["default"]};
+  font-family: ${props =>
+    fontFamilies[props.fontFamily] || fontFamilies["specialElite"]};
 `
 export const H1 = styled.h1`
   font-size: ${props => fontSizes[props.size] || fontSizes["big"]};
