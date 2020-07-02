@@ -4,7 +4,7 @@ export default {
     selite: "Special Elite",
   },
   colors: {
-    darkBg: "#1a202c",
+    darkBg: "#1A202C",
     lightText: "gray",
     darkText: "brown",
   },

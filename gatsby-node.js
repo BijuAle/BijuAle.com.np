@@ -5,7 +5,7 @@ exports.createPages = async function ({ actions, graphql }) {
         edges {
           node {
             id
-            excerpt
+            excerpt(pruneLength: 280)
             fields {
               slug
             }
@@ -20,7 +20,7 @@ exports.createPages = async function ({ actions, graphql }) {
   `)
 
   //Create paginated pages for post
-  const postPerPage = 3
+  const postPerPage = 5
   const numPages = Math.ceil(data.allMdx.edges.length / postPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({

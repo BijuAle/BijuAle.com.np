@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React from "react"
-import { Meta, H1, StyledLink } from "./Typography"
-import { ReadMoreBtn } from "../components"
+import { H1, Date, StyledLink } from "./Typography"
+// import { ReadMoreBtn } from "../components"
 
 const CardWrapper = styled.div`
   display: flex;
@@ -12,10 +12,12 @@ export const Card = ({ date, title, excerpt, slug }) => {
   return (
     <CardWrapper>
       <H1>
-        <StyledLink size="inherit">{title}</StyledLink>
+        <StyledLink to={slug} size="inherit">
+          {title}
+        </StyledLink>
       </H1>
-      <Meta size="xSmall">{date}</Meta>
-      {excerpt} <ReadMoreBtn href={slug}>Read More</ReadMoreBtn>
+      <Date size="date">{date}</Date>
+      {excerpt}
     </CardWrapper>
   )
 }

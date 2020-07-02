@@ -11,7 +11,12 @@ const fontSizes = {
   default: "1.125rem",
   inherit: "1em",
 }
-
+const fontFamilies = {
+  adobeCaslonPro: "Adobe Caslon Pro",
+  josefinSlab: "Josefin Slab",
+  specialElite: "Special Elite",
+  shadowsIntoLightTwo: "Shadows Into Light Two",
+}
 const FooterWrapper = styled.footer`
   grid-column: 2 / span 12;
   display: flex;
@@ -23,11 +28,13 @@ const FooterWrapper = styled.footer`
   left: 0;
   right: 0;
   font-size: ${props => fontSizes[props.size] || fontSizes["default"]};
+  font-family: ${props =>
+    fontFamilies[props.fontFamily] || fontFamilies["josefinSlab"]};
 `
 
 export const Footer = () => {
   return (
-    <FooterWrapper size="xSmall">
+    <FooterWrapper size="small">
       Biju Ale © 2017 {new Date().getFullYear()} - All Rights Reserved.
     </FooterWrapper>
   )

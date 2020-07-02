@@ -16,7 +16,7 @@ export const Nav = () => {
     <NavWrapper>
       <BlogTitle to="/">
         Biju Ale
-        <BlogTag>Quia Anima Christi</BlogTag>
+        <BlogTag></BlogTag>
       </BlogTitle>
     </NavWrapper>
   )

@@ -1,18 +1,12 @@
 module.exports = {
+  siteMetadata: {
+    title: "Biju's Blog",
+    description: "This is Biju Ale's Blog & Personal Website.",
+    url: "https://bijuale.com.np",
+    image: "",
+    author: "Biju Ale",
+  },
   plugins: [
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Biju's Blog`,
-        short_name: `Biju's Blog`,
-        start_url: `/`,
-        background_color: `#1a202c`,
-        theme_color: `#6b37bf`,
-        display: `standalone`,
-        icon: `src/images/favicon/eagle-head.jpeg`,
-        crossOrigin: `use-credentials`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,22 +32,24 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
-      options: [`md`, `mdx`],
-      gatsbyRemarkPlugins: [
-        {
-          resolve: `gatsby-remark-images`,
-          option: {
-            maxWidth: 545,
+      options: {
+        extension: [`md`, `mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+            },
           },
-        },
-      ],
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
-            family: `Cinzel Decorative`,
+            family: `Josefin Slab`,
           },
           {
             family: `Special Elite`,
@@ -64,6 +60,5 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-styled-components`,
   ],
 }

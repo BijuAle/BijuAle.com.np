@@ -1,15 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { H1, P } from "../components/Typography"
-import { Container, Post } from "../components"
+import { H1, Date } from "../components/Typography"
+import { Container, Post, SEO } from "../components"
 
 const singlePost = ({ data }) => {
   return (
     <Container>
+      <SEO
+        title={data.mdx.frontmatter.title}
+        description={data.mdx.excerpt}
+        author={data.mdx.frontmatter.author}
+      />
       <Post>
         <H1>{data.mdx.frontmatter.title}</H1>
-        <P size="xSmall">{data.mdx.frontmatter.date}</P>
+        <Date size="date">{data.mdx.frontmatter.date}</Date>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>
     </Container>
