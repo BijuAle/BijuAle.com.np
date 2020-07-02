@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"Cuy+":function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return l}));var u=t("q1tI"),a=t.n(u),c=t("Kvkj");function l(){return a.a.createElement(c.b,null,a.a.createElement(c.i,null),a.a.createElement(c.c,null,"Page under construction... [bijuale]@[aol].[com]"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-07d0334ec5a1335c3e58.js.map
