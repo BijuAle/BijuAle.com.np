@@ -113,5 +113,13 @@ module.exports = {
         trackingId: "UA-122354089-1",
       },
     },
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-netlify-cache",
+      options: {
+        cachePublic: true,
+      },
+    },
   ],
 }
