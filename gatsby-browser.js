@@ -12,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
-
 iframe {
   border-radius: 12px;
   box-shadow: 4px 4px 14px #000;

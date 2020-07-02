@@ -49,24 +49,24 @@ export const BlogTag = styled.p`
     opacity: 1;
     transition-delay: 0.2s;
   }
-  &:after {
+  /*  &:after {
     opacity: 0;
     transition: 2s all;
     content: "Forging Christ-centered Mind";
-  }
+  } */
   &:before {
     content: "Cudendum christologicam mentem";
     opacity: 1;
     transition: 2s all;
   }
-  &:hover:before {
+  /*   &:hover:before {
     transition: 2s all;
     content: "";
 
     &:not(&:hover) {
       transition: 2s;
     }
-  }
+  } */
 
   font-size: ${props => fontSizes[props.size] || fontSizes["medium"]};
   font-family: ${props =>
@@ -95,6 +95,7 @@ export const StyledLink = styled(props => <Link {...props} />)`
   font-size: ${props => fontSizes[props.size] || fontSizes["default"]};
   font-family: ${props =>
     fontFamilies[props.fontFamily] || fontFamilies["specialElite"]};
+  font-weight: ${props => props.fontWeight};
 `
 export const H1 = styled.h1`
   font-size: ${props => fontSizes[props.size] || fontSizes["big"]};
