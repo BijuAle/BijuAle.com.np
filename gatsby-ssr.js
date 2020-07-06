@@ -12,6 +12,19 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
+//Scrollbar
+*::-webkit-scrollbar {
+    width: 9px;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: #1A202C;
+  }
+  *::-webkit-scrollbar-thumb {
+  background-color: #310a4e;
+  border-radius: 10px;
+  border: .5px solid darkslategray;
+}
+
 iframe {
   border-radius: 12px;
   box-shadow: 4px 4px 14px #000;

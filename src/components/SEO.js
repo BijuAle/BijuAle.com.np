@@ -77,7 +77,7 @@ export const SEO = ({ description, keywords, title, image, url, author }) => {
               metaKeywords && metaKeywords.length > 0
                 ? {
                     name: `keywords`,
-                    cpmtemt: metaKeywords.join(`,`),
+                    content: metaKeywords.join(`, `),
                   }
                 : []
             )}

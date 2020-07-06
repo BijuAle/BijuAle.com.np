@@ -1,3 +1,5 @@
+const _ = require("lodash")
+
 exports.createPages = async function ({ actions, graphql }) {
   const { data } = await graphql(`
     query {
@@ -5,19 +7,30 @@ exports.createPages = async function ({ actions, graphql }) {
         edges {
           node {
             id
-            excerpt(pruneLength: 280)
+            excerpt(pruneLength: 300)
             fields {
               slug
             }
             frontmatter {
-              date
+              date(formatString: "MMMM DD, YYYY")
               title
+              tags
             }
           }
         }
       }
+      tagsGroup: allMdx(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
   `)
+  // handle errors
+  if (data.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
 
   //Create paginated pages for post
   const postPerPage = 5
@@ -45,8 +58,20 @@ exports.createPages = async function ({ actions, graphql }) {
       context: { id },
     })
   })
-}
 
+  // Extract tag data from query
+  const tags = data.tagsGroup.group
+  // Make tag pages
+  tags.forEach(tag => {
+    actions.createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: require.resolve("./src/templates/tags.js"),
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+}
 //Generate Slug during new page creation
 const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -60,6 +85,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
 // Regiser Menus in siteMetaData
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions

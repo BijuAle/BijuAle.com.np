@@ -7,11 +7,25 @@ import { Nav, Footer } from "../components"
 const ContainerWrapper = styled.div`
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr repeat(12, minmax(auto, 4.2rem)) 1fr;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 4.5rem)) 1fr;
   grid-template-rows: auto;
   background-color: ${props => props.theme.colors.darkBg};
   color: ${props => props.theme.colors.lightText};
-  font-family: ${props => props.theme.fonts.main};
+  align-items: flex-start;
+
+  //Scrollbar
+  *::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: darkslateblue;
+    border-radius: 10px;
+  }
 `
 export const Container = ({ children }) => {
   /* const data = useStaticQuery(graphql`

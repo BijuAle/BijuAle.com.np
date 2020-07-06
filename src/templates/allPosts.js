@@ -9,7 +9,6 @@ const allPosts = ({ pageContext, data }) => {
   const prevPage = currentPage - 1 === 1 ? "/" : `/${currentPage - 1}`
   const nextPage = `/${currentPage + 1}`
   const posts = data.allMdx.edges
-
   return (
     <Container>
       <SEO />
@@ -21,15 +20,18 @@ const allPosts = ({ pageContext, data }) => {
             title={post.node.frontmatter.title}
             excerpt={post.node.excerpt}
             slug={post.node.fields.slug}
+            tags={post.node.frontmatter.tags}
           />
         ))}
+        <Pagination
+          isFirst={isFirst}
+          isLast={isLast}
+          prevPage={prevPage}
+          nextPage={nextPage}
+          currentPage={currentPage}
+          numPages={numPages}
+        />
       </Content>
-      <Pagination
-        isFirst={isFirst}
-        isLast={isLast}
-        prevPage={prevPage}
-        nextPage={nextPage}
-      />
     </Container>
   )
 }
@@ -41,6 +43,7 @@ export const pageQuery = graphql`
       skip: $skip
       limit: $limit
       sort: { fields: frontmatter___date, order: DESC }
+      filter: { fileAbsolutePath: { regex: "/(posts)/.*.mdx/" } }
     ) {
       edges {
         node {
@@ -52,6 +55,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
           }
         }
       }

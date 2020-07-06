@@ -5,6 +5,9 @@ import { H1, Date } from "../components/Typography"
 import { Container, Content, Post, SEO } from "../components"
 
 const singlePost = ({ data }) => {
+  const date_ = data.mdx.frontmatter.data
+  const tags_ = data.mdx.frontmatter.tags
+
   return (
     <Container>
       <SEO
@@ -15,7 +18,10 @@ const singlePost = ({ data }) => {
       <Content>
         <Post>
           <H1>{data.mdx.frontmatter.title}</H1>
-          <Date size="date">{data.mdx.frontmatter.date}</Date>
+          <Date textAlign="center" fontFamily="Josefin Slab" fontSize=".85em">
+            {data.mdx.frontmatter.date}&nbsp;|&nbsp;
+            {data.mdx.frontmatter.tags.join(`, `)}
+          </Date>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </Post>
       </Content>
@@ -32,6 +38,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        tags
       }
       excerpt
     }

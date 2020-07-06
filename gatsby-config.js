@@ -1,12 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: "Biju's Blog",
-    description: "This is Biju Ale's Blog & Personal Website.",
+    description: "Welcome to Biju Ale's Blog & Personal Website.",
     url: "https://bijuale.com.np",
     siteUrl: "https://bijuale.com.np",
     image: "",
     author: "Biju Ale",
     menuLinks: [
+      {
+        name: "Posts",
+        link: "/tags",
+      },
       {
         name: "Contact",
         link: "/contact",
@@ -34,7 +38,7 @@ module.exports = {
         name: `Biju's Blog`,
         short_name: `BijuBlog`,
         description: `This is Biju Ale's Blog & Personal Website.`,
-        start_url: `https://bijuale.com.np`,
+        start_url: `/`,
         background_color: `#1A202C`,
         theme_color: `#1A202C`,
         display: `standalone`,
@@ -74,9 +78,11 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
+              linkImagesToOriginal: false,
             },
           },
         ],
+        plugins: [`gatsby-remark-images`],
       },
     },
     {
@@ -87,10 +93,7 @@ module.exports = {
             family: `Josefin Slab`,
           },
           {
-            family: `Special Elite`,
-          },
-          {
-            family: `Shadows Into Light Two`,
+            family: `Goudy Bookletter 1911`,
           },
         ],
       },

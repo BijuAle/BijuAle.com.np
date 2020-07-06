@@ -2,26 +2,31 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { BlogTitle, BlogTag } from "./Typography"
-import { Menu } from "../components"
+import { Menu, StyledLink } from "../components"
 
 const NavWrapper = styled.nav`
-  grid-column: 4 / span 12;
-  grid-row: auto;
+  grid-column: 4 / span 8;
   display: flex;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  grid-row: 1 / span 1;
+  display: flex;
   position: sticky;
   top: 0;
-  background-color: ${props => props.theme.colors.darkBg};
+  background-color: inherit;
   z-index: 100;
+  padding-top: 1rem;
+  padding-left: 0.8rem;
+  box-shadow: inset 15px 15px 15px -15px rgba(0, 0, 0, 0.5);
+  border-bottom: 0.5px dotted black;
 `
 
 export const Nav = () => {
   return (
     <NavWrapper>
-      <BlogTitle to="/">
-        Biju Ale
-        <BlogTag></BlogTag>
-      </BlogTitle>
+      <StyledLink to="/">
+        <BlogTitle>Biju Ale</BlogTitle>
+      </StyledLink>
+      <BlogTag>Cudendum christologicam mentem</BlogTag>
       <StaticQuery
         query={graphql`
           query SiteTitleQuery {

@@ -10,15 +10,14 @@ const notFound = ({ data }) => {
     <Container>
       <SEO />
       <Content>
-        <H1>
-          Sorry. Could not find what you're looking for in the entire Middle
-          Earth.
+        <H1 lineHeight="1.1em" fontSize="1.3rem">
+          Sorry. Could not find that resource in the entire Middle Earth.
         </H1>
-        <P font-size="xSmall" fontFamily="josefinSlab" marginTop="2rem">
+        <P margin="1em 0 1em 0" lineHeight="1.1em" fontSize="1.06em">
           As Tolkien said, not all those who wander are lost. But you seem to
           have lost your way. The page you are looking for may have been moved
-          or deleted or may not have existed at the first place. They call it a
-          "404 Not Found".
+          or deleted or may not exist at all. This case is also called a "404
+          Not Found".
         </P>
         <Img
           fluid={image404}

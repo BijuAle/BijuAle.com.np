@@ -1,41 +1,49 @@
 import React from "react"
 import styled from "styled-components"
 
-const fontSizes = {
-  medium: "1.125rem",
-  Small: "1rem",
-  small: ".82rem",
-  xSmall: "0.8rem",
-  big: "1.7rem",
-  bigger: "2.5em",
-  default: "1.125rem",
-  inherit: "1em",
-}
-const fontFamilies = {
-  adobeCaslonPro: "Adobe Caslon Pro",
-  josefinSlab: "Josefin Slab",
-  specialElite: "Special Elite",
-  shadowsIntoLightTwo: "Shadows Into Light Two",
-}
 const FooterWrapper = styled.footer`
-  grid-column: 2 / span 12;
+  font-family: "Josefin Slab";
+  font-size: 0.85em;
+  background-color: inherit;
   display: flex;
-  background-color: #1a202c;
+  grid-column: 2 / span 12;
   justify-content: center;
   align-items: flex-start;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: ${props => fontSizes[props.size] || fontSizes["default"]};
-  font-family: ${props =>
-    fontFamilies[props.fontFamily] || fontFamilies["josefinSlab"]};
+  padding: 0.3rem 0 0.3rem 0;
+`
+const FitContentWrapper = styled.div`
+  padding: 0.3rem 2.3rem 0.3rem 0;
+  box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.5);
+  display: flex;
+`
+const RightsWrapper = styled.div`
+  &:hover {
+    color: gold;
+    cursor: pointer;
+  }
+  &:hover:after {
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  &:after {
+    white-space: pre;
+    opacity: 0;
+    transition: 2s all;
+    content: " (On all the content, media, source code, & design.)";
+  }
 `
 
 export const Footer = () => {
   return (
-    <FooterWrapper size="small">
-      Biju Ale © 2017 {new Date().getFullYear()} - All Rights Reserved.
+    <FooterWrapper>
+      <FitContentWrapper>
+        Biju Ale © 2017 {new Date().getFullYear()}
+        <RightsWrapper>&nbsp;-&nbsp;All Rights Reserved</RightsWrapper>
+      </FitContentWrapper>
     </FooterWrapper>
   )
 }
