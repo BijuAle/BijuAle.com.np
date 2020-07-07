@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { StyledLink } from "./Typography"
+import { Nav } from "./Typography"
 
 const MenuWrapper = styled.div`
   font-family: "Josefin Slab";
@@ -21,7 +21,7 @@ export const Menu = ({ menuLinks }) => (
               textTransform: `uppercase`,
             }}
           >
-            <StyledLink to={link.link}>{link.name}</StyledLink>
+            <Nav to={link.link}>{link.name}</Nav>
           </li>
         ))}
       </ul>

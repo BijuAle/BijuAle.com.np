@@ -31,8 +31,8 @@ const notFound = ({ data }) => {
     </Container>
   )
 }
-
 export default notFound
+
 export const notFoundQuery = graphql`
   query NotFoundQuery {
     imageSharp(fluid: { originalName: { eq: "middle-earth.png" } }) {

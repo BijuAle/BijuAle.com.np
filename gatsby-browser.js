@@ -5,7 +5,11 @@ import { MDXProvider } from "@mdx-js/react"
 import { Table } from "./src/components"
 
 const GlobalStyles = createGlobalStyle`
-
+body{
+  min-height: 100vh;
+  background-color: ${props => props.theme.colors.darkBg};
+  color:gray;
+}
 *{
   margin:0;
   padding:0;

@@ -116,12 +116,67 @@ module.exports = {
         trackingId: "UA-122354089-1",
       },
     },
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-netlify-cache",
       options: {
         cachePublic: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
+      options: {
+        query: `
+            {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  siteUrl
+                  site_url: siteUrl
+                }
+              }
+            }
+          `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `{
+              allMdx {
+                edges {
+                  node {
+                    frontmatter {
+                      date(formatString: "MM DD YYYY")
+                      tags
+                      title
+                    }
+                    excerpt
+                    fields {
+                      slug
+                    }
+                  }
+                }
+              }
+            }`,
+            output: "/rss.xml",
+            title: `a's RSS Feed`,
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            match: "^/pages/",
+          },
+        ],
       },
     },
   ],

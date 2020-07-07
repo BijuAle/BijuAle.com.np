@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { H1, Date } from "../components/Typography"
+import { H1, Date, Tags } from "../components/Typography"
 import { Container, Content, Post, SEO } from "../components"
+import kebabCase from "lodash/kebabCase"
 
 const singlePost = ({ data }) => {
-  const date_ = data.mdx.frontmatter.data
-  const tags_ = data.mdx.frontmatter.tags
+  // const date_ = data.mdx.frontmatter.data
+  // const tags_ = data.mdx.frontmatter.tags
 
   return (
     <Container>
@@ -20,7 +21,20 @@ const singlePost = ({ data }) => {
           <H1>{data.mdx.frontmatter.title}</H1>
           <Date textAlign="center" fontFamily="Josefin Slab" fontSize=".85em">
             {data.mdx.frontmatter.date}&nbsp;|&nbsp;
-            {data.mdx.frontmatter.tags.join(`, `)}
+            {data.mdx.frontmatter.tags.map(tag => (
+              <span
+                style={{
+                  margin: "0 .2em 0 0",
+                  padding: ".18em",
+                  borderRadius: "10%",
+                  border: "1px solid #131313",
+                }}
+                key={tag}
+                fontSize=".8em"
+              >
+                <Tags to={`/tags/${kebabCase(tag)}/`}>{tag}</Tags>
+              </span>
+            ))}
           </Date>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </Post>

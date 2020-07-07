@@ -9,9 +9,9 @@ const ContainerWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax(auto, 4.5rem)) 1fr;
   grid-template-rows: auto;
-  background-color: ${props => props.theme.colors.darkBg};
   color: ${props => props.theme.colors.lightText};
   align-items: flex-start;
+  background-color: ${props => props.theme.colors.darkBg};
 
   //Scrollbar
   *::-webkit-scrollbar {

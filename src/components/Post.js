@@ -112,10 +112,9 @@ export const PostWrapper = styled.main`
   thead th {
     font-weight: 200;
   }
-  /*   a {
+  a {
     text-decoration: none;
-    border-bottom: 1px solid purple;
-    color: lightslategray;
+    color: gray;
     &:focus,
     &:visited,
     &:link,
@@ -124,38 +123,16 @@ export const PostWrapper = styled.main`
       background-color: ;
     }
     &:hover {
-      color: khaki;
-      transition: 2s;
+      color: darkhaki;
+      transition: 1s;
       cursor: pointer;
+      background-color: black;
+      border-radius: 20%;
     }
 
     &:not(:hover) {
-      transition: 2s;
+      transition: 1s;
     }
-  } */
-  a {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    z-index: 1;
-    padding-bottom: 0.15em;
-  }
-
-  a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0.07em;
-    height: 0.051em;
-    width: 100%;
-    background: linear-gradient(110deg, maroon, purple, brown, darkslategray);
-    z-index: -1;
-    transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
-  }
-
-  a:hover::after {
-    height: 0.2em;
   }
   ul li {
     margin: 0.08em 0;

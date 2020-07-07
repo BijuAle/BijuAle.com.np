@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React from "react"
-import { H1, P, Date, StyledLink } from "./Typography"
-// import { ReadMoreBtn } from "../components"
+import { H1, P, Date, StyledLink, Tags } from "./Typography"
+import kebabCase from "lodash/kebabCase"
 
 const CardWrapper = styled.div`
   display: flex;
@@ -27,15 +27,26 @@ export const Card = ({ date, title, excerpt, slug, tags }) => {
       </H1>
       <PostMetaWrapper>
         <Date fontFamily="Josefin Slab" fontSize=".8em">
-          {date}
+          {date}&nbsp;|&nbsp;
         </Date>
         <P
           color="#8a865f"
           fontFamily="Josefin Slab"
-          margin="0 0 0 .8em"
+          margin="0 .8em 0 0"
           fontSize=".8em"
         >
-          {tags.join(`, `)}
+          {tags.map(tag => (
+            <span
+              style={{
+                margin: "0 .5em 0 0",
+                borderRadius: "10%",
+              }}
+              key={tag}
+              fontSize=".8em"
+            >
+              <Tags to={`/tags/${kebabCase(tag)}/`}>{tag}</Tags>
+            </span>
+          ))}
         </P>
       </PostMetaWrapper>
       <P margin=".4em 0 0 0" lineHeight="1.1em" fontSize="1.06em">
