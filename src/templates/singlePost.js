@@ -1,14 +1,31 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { H1, Date, Tags } from "../components/Typography"
-import { Container, Content, Post, SEO } from "../components"
+import { H1, Date, Tags, StyledLink } from "../components/Typography"
+import { Container, Content, Post, SEO, TOC } from "../components"
 import kebabCase from "lodash/kebabCase"
+import { MDXProvider } from "@mdx-js/react"
 
-const singlePost = ({ data }) => {
-  // const date_ = data.mdx.frontmatter.data
-  // const tags_ = data.mdx.frontmatter.tags
-
+export const query = graphql`
+  query($id: String) {
+    mdx(id: { eq: $id }) {
+      headings {
+        depth
+        value
+      }
+      body
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        tags
+      }
+      excerpt
+    }
+  }
+`
+const singlePost = ({ data, pageContext }) => {
+  const { previous, next } = pageContext
+  // const comps = { ExternalLink, TOC }
   return (
     <Container>
       <SEO
@@ -36,7 +53,37 @@ const singlePost = ({ data }) => {
               </span>
             ))}
           </Date>
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          <MDXProvider components={{ TOC }}>
+            <MDXRenderer headings={data.mdx.headings}>
+              {data.mdx.body}
+            </MDXRenderer>
+          </MDXProvider>
+          <nav>
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <StyledLink to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </StyledLink>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <StyledLink to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </StyledLink>
+                )}
+              </li>
+            </ul>
+          </nav>
         </Post>
       </Content>
     </Container>
@@ -44,17 +91,3 @@ const singlePost = ({ data }) => {
 }
 
 export default singlePost
-
-export const pageQuery = graphql`
-  query singlePostQuery($id: String) {
-    mdx(id: { eq: $id }) {
-      body
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        tags
-      }
-      excerpt
-    }
-  }
-`

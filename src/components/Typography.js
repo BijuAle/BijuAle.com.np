@@ -31,12 +31,12 @@ export const StyledLink = styled(props => <Link {...props} />)`
   }
   &:hover {
     color: darkkhaki;
-    transition: 1s;
+    transition: 0.5s;
     cursor: pointer;
   }
 
   &:not(:hover) {
-    transition: 1s;
+    transition: 0.5s;
   }
 
   font-size: inherit;
@@ -89,7 +89,7 @@ const BlackHover = styled(props => <Link {...props} />)`
   }
 
   &:not(:hover) {
-    transition: 1s;
+    transition: 0.5s;
   }
 
   font-size: inherit;

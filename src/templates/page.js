@@ -2,16 +2,39 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { H1 } from "../components/Typography"
-import { Container, Content, Post, SEO } from "../components"
+import { Container, Content, Post, SEO, ExternalLink } from "../components"
+import { MDXProvider } from "@mdx-js/react"
 
+export const query = graphql`
+  query($id: String) {
+    site {
+      siteMetadata {
+        author
+      }
+    }
+    mdx(id: { eq: $id }) {
+      body
+      frontmatter {
+        title
+      }
+      excerpt
+    }
+  }
+`
 const page = ({ data }) => {
   return (
     <Container>
-      <SEO />
+      <SEO
+        title={data.mdx.frontmatter.title}
+        description={data.mdx.excerpt}
+        author={data.site.siteMetadata.author}
+      />
       <Content>
         <Post>
           <H1>{data.mdx.frontmatter.title}</H1>
-          <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          <MDXProvider components={ExternalLink}>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          </MDXProvider>
         </Post>
       </Content>
     </Container>
@@ -19,15 +42,3 @@ const page = ({ data }) => {
 }
 
 export default page
-
-export const pageQuery = graphql`
-  query pageQuery($id: String) {
-    mdx(id: { eq: $id }, fileAbsolutePath: { regex: "/(pages)/.*.mdx/" }) {
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-      }
-      body
-    }
-  }
-`

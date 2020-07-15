@@ -18,7 +18,7 @@ const NavWrapper = styled.nav`
   padding-left: 0.8rem;
   box-shadow: inset 15px 15px 15px -15px rgba(0, 0, 0, 0.5);
   border-bottom: 0.5px dotted black;
-  border-bottom-left-radius: 5%;
+  /* border-bottom-left-radius: 5%; */
 `
 export const Nav = () => {
   return (

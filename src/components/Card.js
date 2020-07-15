@@ -6,17 +6,21 @@ import kebabCase from "lodash/kebabCase"
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
   margin-left: 0.8rem;
+  margin-bottom: 2rem;
   height: 100%;
   font-family: "Goudy Bookletter 1911";
 
-  :nth-last-child() {
-    margin: 0;
+  &:nth-of-type(1) {
+    margin-top: 3rem;
+  }
+  &:nth-of-type(4) {
+    margin-bottom: 1rem;
   }
 `
 const PostMetaWrapper = styled.div`
   display: flex;
+  margin-top: 0.2rem;
 `
 
 export const Card = ({ date, title, excerpt, slug, tags }) => {

@@ -12,10 +12,6 @@ module.exports = {
         link: "/tags",
       },
       {
-        name: "Contact",
-        link: "/contact",
-      },
-      {
         name: "Projects",
         link: "/projects",
         subMenu: [
@@ -28,6 +24,14 @@ module.exports = {
             link: `/sub-2`,
           },
         ],
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+      {
+        name: "About",
+        link: "/about",
       },
     ],
   },
@@ -43,6 +47,7 @@ module.exports = {
         theme_color: `#1A202C`,
         display: `standalone`,
         icon: `./src/images/favicon/eagle-head.png`,
+        cache_busting_mode: "none",
       },
     },
 
@@ -67,6 +72,20 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdxpages`,
+        path: `${__dirname}/src/mdxpages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static`,
+        path: `static`,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -81,6 +100,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          `gatsby-remark-slug`,
         ],
         plugins: [`gatsby-remark-images`],
       },
@@ -101,7 +121,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-copy-linked-files`],
+        plugins: [`gatsby-remark-slug`],
       },
     },
     {
@@ -116,7 +136,8 @@ module.exports = {
         trackingId: "UA-122354089-1",
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: "gatsby-plugin-netlify-cache",
       options: {

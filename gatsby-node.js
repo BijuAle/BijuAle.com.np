@@ -10,6 +10,7 @@ exports.createPages = async function ({ actions, graphql }) {
             excerpt(pruneLength: 300)
             fields {
               slug
+              collection
             }
             frontmatter {
               date(formatString: "MMMM DD, YYYY")
@@ -26,15 +27,18 @@ exports.createPages = async function ({ actions, graphql }) {
       }
     }
   `)
-  // handle errors
+
   if (data.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
 
   //Create paginated pages for post
-  const postPerPage = 5
-  const numPages = Math.ceil(data.allMdx.edges.length / postPerPage)
+  const postPerPage = 4
+  const postEdges = data.allMdx.edges.filter(
+    edge => edge.node.fields.collection === "posts"
+  )
+  const numPages = Math.ceil(postEdges.length / postPerPage)
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
@@ -49,12 +53,29 @@ exports.createPages = async function ({ actions, graphql }) {
   })
 
   //Create Individual Blog Post
-  data.allMdx.edges.forEach(edge => {
+  postEdges.forEach((edge, index) => {
+    const slug = edge.node.fields.slug
+    const id = edge.node.id
+    const previous = index === 0 ? null : postEdges[index - 1].node
+    const next =
+      index === postEdges.length - 1 ? null : postEdges[index + 1].node
+    actions.createPage({
+      path: slug,
+      component: require.resolve("./src/templates/singlePost.js"),
+      context: { id, previous, next },
+    })
+  })
+
+  //Create Individual Page
+  const pageEdges = data.allMdx.edges.filter(
+    edge => edge.node.fields.collection === "mdxpages"
+  )
+  pageEdges.forEach(edge => {
     const slug = edge.node.fields.slug
     const id = edge.node.id
     actions.createPage({
       path: slug,
-      component: require.resolve("./src/templates/singlePost.js"),
+      component: require.resolve("./src/templates/page.js"),
       context: { id },
     })
   })
@@ -72,21 +93,30 @@ exports.createPages = async function ({ actions, graphql }) {
     })
   })
 }
-//Generate Slug during new page creation
+
+//Add slug & collection attrubutes
 const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `Mdx`) {
-    const slug = createFilePath({ node, getNode, basePath: `posts` })
+    const parent = getNode(_.get(node, "parent"))
+    const parentName = _.get(parent, "sourceInstanceName")
+    const slug = createFilePath({ node, getNode, basePath: parentName })
+    console.log(slug)
     createNodeField({
       node,
       name: `slug`,
       value: slug,
     })
+    createNodeField({
+      node,
+      name: `collection`,
+      value: parentName,
+    })
   }
 }
 
-// Regiser Menus in siteMetaData
+// Register Menus in siteMetaData
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `

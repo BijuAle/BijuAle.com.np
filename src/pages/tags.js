@@ -3,6 +3,28 @@ import PropTypes from "prop-types"
 import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 import { SEO, Container, Content, Post } from "../components"
+import Img from "gatsby-image"
+
+export const data = graphql`
+  query {
+    imageSharp(fixed: { originalName: { eq: "scroll.png" } }) {
+      fixed {
+        ...GatsbyImageSharpFixed
+      }
+    }
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(limit: 2000) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
+    }
+  }
+`
 
 const TagsPage = ({
   data: {
@@ -11,13 +33,15 @@ const TagsPage = ({
       siteMetadata: { title },
     },
   },
+  data,
 }) => (
   <Container>
     <SEO />
     <Content>
       <Post>
         <h1>All Posts</h1>
-        Categories:
+        <Img fixed={data.imageSharp.fixed} draggable={false} alt="Posts"></Img>
+        Tags:
         <ul>
           {group.map(tag => (
             <li key={tag.fieldValue}>
@@ -51,26 +75,3 @@ TagsPage.propTypes = {
 }
 
 export default TagsPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMdx(limit: 2000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-    file(relativePath: { eq: "scroll.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

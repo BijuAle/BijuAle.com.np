@@ -9,6 +9,9 @@ const PaginationWrapper = styled.div`
   justify-content: center;
   font-weight: 200;
   align-items: flex-start;
+  z-index: 10;
+  margin-top: -1.5rem;
+  border-bottom-left-radius: 2%;
 
   padding: 0.2em;
   background-image: linear-gradient(
@@ -47,7 +50,6 @@ const PaginationElement = styled(props => <StyledLink {...props} />)`
   }
   font-weight: 500;
   font-size: 1.5rem;
-  z-index: 10;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 `
 export const Pagination = ({

@@ -7,7 +7,7 @@ import { Table } from "./src/components"
 const GlobalStyles = createGlobalStyle`
 body{
   min-height: 100vh;
-  background-color: ${props => props.theme.colors.darkBg};
+  /* background-color: ${props => props.theme.colors.darkBg}; */
   color:gray;
 }
 *{
@@ -15,8 +15,13 @@ body{
   padding:0;
   box-sizing: border-box;
 }
+html{
+  /* scroll-behavior: smooth; */
+  scroll-padding-top: 8em;
+}
 
 //Scrollbar
+
 *::-webkit-scrollbar {
     width: 9px;
   }

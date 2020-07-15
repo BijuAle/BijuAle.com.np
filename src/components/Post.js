@@ -1,14 +1,18 @@
 import styled from "styled-components"
 import React from "react"
 
-export const PostWrapper = styled.main`
+const PostWrapper = styled.main`
   grid-column: 4/12;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   margin-left: 1rem;
   font-family: "Goudy Bookletter 1911";
   text-align: justify;
   text-justify: auto;
 
+  li {
+    margin: 0.2rem 0;
+  }
   p {
     /* font-size: 1em; */
     margin: 0 0 1em 0;
@@ -32,6 +36,12 @@ export const PostWrapper = styled.main`
   }
   p:not(:nth-of-type(1)) {
     margin-top: 1rem;
+  }
+  p::-moz-selection {
+    background: slategray;
+  }
+  p::selection {
+    background: slategray;
   }
   strong {
     font-weight: 700;
@@ -58,7 +68,11 @@ export const PostWrapper = styled.main`
     margin-bottom: 0rem;
   }
   h1:nth-of-type(2) {
-    /* margin-top: 3rem; */
+    margin-top: 1rem;
+  }
+
+  h2 > P {
+    margin: 0;
   }
   h2 {
     font-size: 1em;
@@ -69,7 +83,8 @@ export const PostWrapper = styled.main`
     margin: 1rem 0 1rem 2rem;
   }
   li {
-    margin: 0.2rem 0;
+    /* margin: 0.2rem 0; */
+    margin: 4em 0 0 0;
   }
   blockquote {
     font-size: 1.1em;
@@ -114,28 +129,28 @@ export const PostWrapper = styled.main`
   }
   a {
     text-decoration: none;
-    color: gray;
+    color: #74578a;
     &:focus,
     &:visited,
     &:link,
     &:active {
       text-decoration: none;
-      background-color: ;
+      background-color: none;
     }
     &:hover {
       color: darkhaki;
-      transition: 1s;
+      transition: 0.5s;
       cursor: pointer;
       background-color: black;
       border-radius: 20%;
     }
 
     &:not(:hover) {
-      transition: 1s;
+      transition: 0.5s;
     }
   }
   ul li {
-    margin: 0.08em 0;
+    margin: 0.08em 0 0 0;
   }
 `
 export const Post = ({ children }) => {

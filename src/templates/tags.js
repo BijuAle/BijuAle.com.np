@@ -4,6 +4,29 @@ import { Link, graphql } from "gatsby"
 import { SEO, Container, Content, Post } from "../components"
 import { Date } from "../components/Typography"
 
+export const pageQuery = graphql`
+  query($tag: String) {
+    allMdx(
+      limit: 2000
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+  }
+`
+
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMdx
@@ -66,26 +89,3 @@ Tags.propTypes = {
 }
 
 export default Tags
-
-export const pageQuery = graphql`
-  query($tag: String) {
-    allMdx(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
-  }
-`

@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-const detailsQuery = graphql`
+const query = graphql`
   query DefaultSEOQuery {
     site {
       siteMetadata {
@@ -15,10 +15,19 @@ const detailsQuery = graphql`
     }
   }
 `
-export const SEO = ({ description, keywords, title, image, url, author }) => {
+
+export const SEO = ({
+  description,
+  lang = `en`,
+  keywords,
+  title,
+  image,
+  url,
+  author,
+}) => {
   return (
     <StaticQuery
-      query={detailsQuery}
+      query={query}
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
@@ -38,7 +47,11 @@ export const SEO = ({ description, keywords, title, image, url, author }) => {
         ]
         return (
           <Helmet
+            htmlAttributes={{
+              lang,
+            }}
             title={data.site.siteMetadata.title}
+            titleTemplate={`%s`}
             defer={false}
             meta={[
               {
@@ -68,6 +81,10 @@ export const SEO = ({ description, keywords, title, image, url, author }) => {
               {
                 property: `og:description`,
                 content: metaDescription,
+              },
+              {
+                property: `og:type`,
+                content: `blog`,
               },
               {
                 property: `og:url`,

@@ -2,6 +2,31 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Container, Content, Card, Pagination, SEO } from "../components"
 
+export const pageQuery = graphql`
+  query AllPostQuery($skip: Int!, $limit: Int!) {
+    allMdx(
+      skip: $skip
+      limit: $limit
+      sort: { fields: frontmatter___date, order: DESC }
+      filter: { fileAbsolutePath: { regex: "/(posts)/.*.mdx/" } }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            tags
+          }
+        }
+      }
+    }
+  }
+`
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
@@ -36,29 +61,3 @@ const allPosts = ({ pageContext, data }) => {
   )
 }
 export default allPosts
-
-export const pageQuery = graphql`
-  query AllPostQuery($skip: Int!, $limit: Int!) {
-    allMdx(
-      skip: $skip
-      limit: $limit
-      sort: { fields: frontmatter___date, order: DESC }
-      filter: { fileAbsolutePath: { regex: "/(posts)/.*.mdx/" } }
-    ) {
-      edges {
-        node {
-          id
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-          }
-        }
-      }
-    }
-  }
-`
