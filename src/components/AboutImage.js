@@ -22,8 +22,8 @@ const AboutImage = () => {
         style={{
           display: "inline-block",
           float: "right",
-          margin: "0 0 0 .3em",
-          borderRadiuds: "5%",
+          margin: "1.5em 0 0 .3em",
+          borderRadiuds: "40%",
         }}
       ></Img>
       <figcaption
@@ -32,9 +32,8 @@ const AboutImage = () => {
           captionSide: "bottom",
           lineHeight: "1em",
           margin: ".2em 0 0 1em",
-          fontSize: ".7em",
-          fontStyle: "italic",
-          fontFamily: "serif",
+          fontSize: ".75em",
+          color: "#2e772e",
         }}
       >
         Me (far-left), & Kristian (far-right) with our host-family's children in
