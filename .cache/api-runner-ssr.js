@@ -3,7 +3,7 @@ var plugins = [{
       options: {"plugins":[],"name":"Biju's Blog","short_name":"BijuBlog","description":"This is Biju Ale's Blog & Personal Website.","start_url":"/","background_color":"#1A202C","theme_color":"#1A202C","display":"standalone","icon":"./src/images/favicon/eagle-head.png","cache_busting_mode":"none","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[{"resolve":"/home/biju/GitHub/blog/node_modules/gatsby-remark-images","id":"3626c0e0-58d4-5046-b0e5-cb7731a052f2","name":"gatsby-remark-images","version":"3.3.18","pluginOptions":{"plugins":[]},"nodeAPIs":[],"browserAPIs":["onRouteUpdate"],"ssrAPIs":[]}],"extension":["md","mdx"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1000,"linkImagesToOriginal":false}},"gatsby-remark-slug"]},
+      options: {"plugins":[],"extension":["md","mdx"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1000,"quality":100,"linkImagesToOriginal":false,"backgroundColor":"transparent"}},"gatsby-remark-slug"]},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":[{"family":"Josefin Slab"},{"family":"Goudy Bookletter 1911"}]},
@@ -19,6 +19,9 @@ var plugins = [{
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-122354089-1"},
+    },{
+      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      options: {"plugins":[]},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-feed-mdx/gatsby-ssr'),
       options: {"plugins":[],"query":"\n            {\n              site {\n                siteMetadata {\n                  title\n                  description\n                  siteUrl\n                  site_url: siteUrl\n                }\n              }\n            }\n          ","feeds":[{"query":"{\n              allMdx {\n                edges {\n                  node {\n                    frontmatter {\n                      date(formatString: \"MM DD YYYY\")\n                      tags\n                      title\n                    }\n                    excerpt\n                    fields {\n                      slug\n                    }\n                  }\n                }\n              }\n            }","output":"/rss.xml","title":"a's RSS Feed","match":"^/pages/"}]},

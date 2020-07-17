@@ -97,12 +97,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000,
+              quality: 100,
               linkImagesToOriginal: false,
+              backgroundColor: "transparent",
+              // disableBgImageOnAlpha: true,
             },
           },
           `gatsby-remark-slug`,
         ],
-        plugins: [`gatsby-remark-images`],
       },
     },
     {
@@ -121,7 +123,19 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-slug`],
+        plugins: [
+          `gatsby-remark-slug`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+              quality: 100,
+              linkImagesToOriginal: false,
+              backgroundColor: "transparent",
+              // disableBgImageOnAlpha: true,
+            },
+          },
+        ],
       },
     },
     {
@@ -136,8 +150,8 @@ module.exports = {
         trackingId: "UA-122354089-1",
       },
     },
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-offline`,
+    // `gatsby-plugin-remove-serviceworker`,
     {
       resolve: "gatsby-plugin-netlify-cache",
       options: {
