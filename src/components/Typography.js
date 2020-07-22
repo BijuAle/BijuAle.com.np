@@ -30,7 +30,7 @@ export const StyledLink = styled(props => <Link {...props} />)`
     text-decoration: none;
   }
   &:hover {
-    color: darkkhaki;
+    color: green;
     transition: 0.5s;
     cursor: pointer;
   }
@@ -40,18 +40,22 @@ export const StyledLink = styled(props => <Link {...props} />)`
   }
 
   font-size: inherit;
-  font-family: inherit;
-  font-weight: inherit;
+  font-family: ${props => props.fontFamily || "inherit"};
+  font-weight: ${props => props.fontWeight || "inherit"};
   margin: ${props => props.margin};
   padding: ${props => props.padding};
+  color: ${props => props.color || "inherit"};
 `
-export const H1 = styled.h1`
+export const PostTitle = styled.span`
   font-size: ${props => props.fontSize};
   font-family: "Goudy Bookletter 1911";
   font-weight: 400;
   line-height: ${props => props.lineHeight};
   margin: ${props => props.margin};
   padding: ${props => props.padding};
+  color: ${props => props.color || "inherit"};
+  text-align: ${props => props.textAlign};
+  display: block;
 `
 export const P = styled.p`
   font-size: ${props => props.fontSize};
@@ -65,12 +69,14 @@ export const P = styled.p`
 export const Date = styled.div`
   font-size: ${props => props.fontSize};
   font-family: ${props => props.fontFamily};
-  font-style: italic;
+  /* font-style: italic; */
   text-align: ${props => props.textAlign};
   color: #676363;
   font-style: ${props => props.fontStyle};
   margin: ${props => props.margin};
   padding: ${props => props.padding};
+  display: ${props => props.display};
+  float: ${props => props.float};
 `
 const BlackHover = styled(props => <Link {...props} />)`
   text-decoration: none;

@@ -36,6 +36,10 @@ export const Nav = () => {
                 menuLinks {
                   name
                   link
+                  subMenu {
+                    name
+                    link
+                  }
                 }
               }
             }

@@ -1,7 +1,6 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
-import { SEO, Container, Content, Post } from "../components"
+import { PostTitle, SEO, Container, Content, Post } from "../components"
 import { Date } from "../components/Typography"
 
 export const pageQuery = graphql`
@@ -19,7 +18,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMM  DD YYYY")
           }
         }
       }
@@ -27,7 +26,7 @@ export const pageQuery = graphql`
   }
 `
 
-const Tags = ({ pageContext, data }) => {
+const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allMdx
   const tagHeader = `${totalCount} post${
@@ -39,21 +38,26 @@ const Tags = ({ pageContext, data }) => {
       <SEO />
       <Content>
         <Post>
-          <h1>{tagHeader}</h1>
+          <PostTitle
+            margin="2.5rem 0 2rem 0"
+            fontSize="1.55rem"
+            textAlign="center"
+            color="#465440"
+          >
+            {tagHeader}
+          </PostTitle>
           <ul>
             {edges.map(({ node }) => {
               const { slug } = node.fields
               const { title } = node.frontmatter
               return (
                 <li key={slug}>
-                  <Link to={slug}>{title}</Link>
-                  <Date
-                    fontStyle="italic"
-                    fontFamily="Josefin Slab"
-                    fontSize=".85em"
-                  >
-                    {node.frontmatter.date}
-                  </Date>
+                  <Link to={slug}>
+                    {title}{" "}
+                    <Date float="right" display="inline">
+                      {node.frontmatter.date}
+                    </Date>
+                  </Link>
                 </li>
               )
             })}
@@ -63,29 +67,6 @@ const Tags = ({ pageContext, data }) => {
       </Content>
     </Container>
   )
-}
-
-Tags.propTypes = {
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-  }),
-  data: PropTypes.shape({
-    allMdx: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired,
-            }),
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired
-      ),
-    }),
-  }),
 }
 
 export default Tags

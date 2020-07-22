@@ -1,9 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { H1 } from "../components/Typography"
-import { Container, Content, Post, SEO, ExternalLink } from "../components"
+import { PostTitle, StyledLink, Date, Tags } from "../components/Typography"
+import { Container, Content, Post, SEO, TOC } from "../components"
 import { MDXProvider } from "@mdx-js/react"
+import kebabCase from "lodash/kebabCase"
+require(`katex/dist/katex.min.css`)
 
 export const query = graphql`
   query($id: String) {
@@ -13,15 +15,26 @@ export const query = graphql`
       }
     }
     mdx(id: { eq: $id }) {
+      headings {
+        depth
+        value
+      }
       body
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
+        tags
+      }
+      fields {
+        slug
       }
       excerpt
     }
   }
 `
 const page = ({ data }) => {
+  let ComputingSlugRegex = new RegExp("/educational/computing/(.*)/")
+  var isComputingPage = ComputingSlugRegex.test(data.mdx.fields.slug)
   return (
     <Container>
       <SEO
@@ -31,10 +44,43 @@ const page = ({ data }) => {
       />
       <Content>
         <Post>
-          <H1>{data.mdx.frontmatter.title}</H1>
-          <MDXProvider components={ExternalLink}>
-            <MDXRenderer>{data.mdx.body}</MDXRenderer>
+          <PostTitle
+            margin="2.5rem 0 1rem 0"
+            color="#465440"
+            fontSize="1.55rem"
+            textAlign="center"
+          >
+            {data.mdx.frontmatter.title}
+          </PostTitle>
+          {isComputingPage ? (
+            <Date textAlign="center" fontFamily="Josefin Slab" fontSize=".85em">
+              {data.mdx.frontmatter.date}&nbsp;|&nbsp;
+              {data.mdx.frontmatter.tags.map(tag => (
+                <span
+                  style={{
+                    margin: "0 .2em 0 0",
+                    padding: ".18em",
+                    borderRadius: "10%",
+                    border: "1px solid #131313",
+                  }}
+                  key={tag}
+                  fontSize=".8em"
+                >
+                  <Tags to={`/tags/${kebabCase(tag)}/`}>{tag}</Tags>
+                </span>
+              ))}
+            </Date>
+          ) : null}
+          <MDXProvider components={{ TOC }}>
+            <MDXRenderer headings={data.mdx.headings}>
+              {data.mdx.body}
+            </MDXRenderer>
           </MDXProvider>
+          {isComputingPage ? (
+            <StyledLink to="/educational/computing">
+              ← All Computing Posts
+            </StyledLink>
+          ) : null}
         </Post>
       </Content>
     </Container>

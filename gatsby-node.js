@@ -118,7 +118,20 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 // Register Menus in siteMetaData
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
+  const { createFieldExtension, createTypes } = actions
+  createFieldExtension({
+    name: `defaultArray`,
+    extend() {
+      return {
+        resolve(source, args, context, info) {
+          if (source[info.fieldName] == null) {
+            return []
+          }
+          return source[info.fieldName]
+        },
+      }
+    },
+  })
   const typeDefs = `
     type Site implements Node {
       siteMetadata: SiteMetadata
@@ -129,7 +142,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MenuLinks {
       name: String!
       link: String!
-      subMenu: [SubMenu]
+      subMenu: [SubMenu] @defaultArray
     }
     type SubMenu {
       name: String

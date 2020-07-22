@@ -6,8 +6,8 @@ const slug = require("github-slugger").slug
 
 const Wrapper = styled.div`
   overflow: hidden;
-  max-height: 70vh;
-  max-width: 30vh;
+  max-height: 30rem;
+  max-width: 15rem;
   position: fixed;
   right: 10rem;
   text-align: left;
@@ -32,6 +32,7 @@ const Wrapper = styled.div`
     right: 5rem;
   }
 `
+
 export const TOC = ({ headings }) => (
   <Wrapper>
     <ul>

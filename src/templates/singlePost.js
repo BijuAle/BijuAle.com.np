@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { H1, Date, Tags, StyledLink } from "../components/Typography"
+import { PostTitle, Date, Tags, StyledLink } from "../components/Typography"
 import { Container, Content, Post, SEO, TOC } from "../components"
 import kebabCase from "lodash/kebabCase"
 import { MDXProvider } from "@mdx-js/react"
@@ -25,7 +25,6 @@ export const query = graphql`
 `
 const singlePost = ({ data, pageContext }) => {
   const { previous, next } = pageContext
-  // const comps = { ExternalLink, TOC }
   return (
     <Container>
       <SEO
@@ -35,8 +34,20 @@ const singlePost = ({ data, pageContext }) => {
       />
       <Content>
         <Post>
-          <H1>{data.mdx.frontmatter.title}</H1>
-          <Date textAlign="center" fontFamily="Josefin Slab" fontSize=".85em">
+          <PostTitle
+            margin="2.5rem 0 0 0"
+            fontSize="1.55rem"
+            textAlign="center"
+            color="#465440"
+          >
+            {data.mdx.frontmatter.title}
+          </PostTitle>
+          <Date
+            margin="0 0 2rem 0 "
+            textAlign="center"
+            fontFamily="Josefin Slab"
+            fontSize=".85em"
+          >
             {data.mdx.frontmatter.date}&nbsp;|&nbsp;
             {data.mdx.frontmatter.tags.map(tag => (
               <span

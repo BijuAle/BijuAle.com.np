@@ -7,20 +7,20 @@ const PostWrapper = styled.main`
   margin-bottom: 4rem;
   margin-left: 1rem;
   font-family: "Goudy Bookletter 1911";
+  font-weight: 100;
   text-align: justify;
   text-justify: auto;
 
+  ul li {
+    list-style: none;
+  }
   li {
     margin: 0.2rem 0;
   }
   p {
-    /* font-size: 1em; */
     margin: 0 0 1em 0;
-    font-size: 1.06em;
+    font-size: 1.067em;
     line-height: 1.09em;
-  }
-  p:nth-of-type(1) {
-    margin-top: 1.5em;
   }
   p:nth-of-type(1)::first-letter {
     font-family: "Josefin Slab";
@@ -33,14 +33,12 @@ const PostWrapper = styled.main`
     line-height: 1;
     float: left;
     padding: 0 0.23em 0 0;
+    margin-bottom: 0;
   }
-  p:not(:nth-of-type(1)) {
-    margin-top: 1rem;
-  }
-  p::-moz-selection {
+  *::-moz-selection {
     background: slategray;
   }
-  p::selection {
+  *::selection {
     background: slategray;
   }
   strong {
@@ -52,38 +50,39 @@ const PostWrapper = styled.main`
   del {
     text-decoration: line-through;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #465440;
+  }
   h1 {
     font-family: "Goudy Bookletter 1911";
-    font-size: 1.3em;
+    font-size: 1.35em;
     font-weight: 200;
     line-height: 1.1;
-    margin-bottom: 0.4rem;
+    color: #465440;
   }
-  h1:nth-of-type(1) {
-    font-family: "Goudy Bookletter 1911";
-    font-size: 1.55em;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 0rem;
-    margin-bottom: 0rem;
-  }
-  h1:nth-of-type(2) {
-    margin-top: 1rem;
+  h2 > p {
+    margin-top: 0;
   }
 
-  h2 > P {
-    margin: 0;
-  }
   h2 {
-    font-size: 1em;
-    font-weight: 200;
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-bottom: 0;
+    color: #8c6258;
+  }
+  h3 {
+    font-size: 1.25em;
+    font-weight: 100;
   }
   ul,
   ol {
-    margin: 1rem 0 1rem 2rem;
+    margin: 0 0 1rem 2rem;
   }
   li {
-    /* margin: 0.2rem 0; */
     margin: 4em 0 0 0;
   }
   blockquote {
@@ -149,10 +148,71 @@ const PostWrapper = styled.main`
       transition: 0.5s;
     }
   }
+
   ul li {
     margin: 0.08em 0 0 0;
   }
+
+  deckgo-highlight-code {
+    --deckgo-highlight-code-padding: 0 5px;
+    --deckgo-highlight-code-font-size: 0.95em;
+    --deckgo-highlight-code-token-selector: green;
+    --deckgo-highlight-code-token-operator: darkkhaki;
+    --deckgo-highlight-code-carbon-header-padding: 2px;
+    --deckgo-highlight-code-carbon-header-button-width: 3px;
+    --deckgo-highlight-code-carbon-header-button-height: 3px;
+    --deckgo-highlight-code-carbon-header-button-red-background: maroon;
+    --deckgo-highlight-code-carbon-header-button-red-border: 0.5px solid maroon;
+    --deckgo-highlight-code-carbon-header-button-yellow-background: purple;
+    --deckgo-highlight-code-carbon-header-button-yellow-border: 0.5px solid
+      purple;
+    --deckgo-highlight-code-carbon-header-button-green-background: slategray;
+    --deckgo-highlight-code-carbon-header-button-green-border: 0.5px solid
+      slategray;
+    --deckgo-highlight-code-token-property: gray;
+  }
+  .katex {
+    font-size: 0.97em;
+  }
+
+  strong {
+    font-weight: normal;
+    color: #665e73;
+  }
+  summary {
+    display: inline;
+  }
+  summary:focus {
+    outline: 0;
+  }
+  summary:hover {
+    color: darkhaki;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 20%;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .details-animated[open] {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: black;
+    margin-bottom: 1rem;
+  }
 `
+
 export const Post = ({ children }) => {
   return <PostWrapper>{children}</PostWrapper>
 }

@@ -2,7 +2,8 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 import { MDXProvider } from "@mdx-js/react"
-import { Table } from "./src/components"
+import { Table, MemoryLink } from "./src/components"
+import props from "prop-types"
 
 const GlobalStyles = createGlobalStyle`
 body{
@@ -45,8 +46,26 @@ nav li a:hover {
   cursor:pointer;
 }
 `
+
+const EL = props => {
+  if (
+    props.href.includes("bijuale.com.np") ||
+    props.href.includes("localhost:8000") ||
+    props.href[0] === "/" ||
+    props.href[0] === "localhost:8000"
+  ) {
+    return <a href={props.href}>{props.children}</a>
+  }
+  return (
+    <a href={props.href} target="_blank" rel="noopener noreferrer">
+      {props.children}
+    </a>
+  )
+}
 const components = {
   table: Table,
+  a: EL,
+  Link: <MemoryLink {...props}></MemoryLink>,
 }
 
 export const wrapRootElement = ({ element }) => (

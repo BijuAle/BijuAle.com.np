@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Container, Content, Post, SEO } from "../components"
-import { H1, P } from "../components/Typography"
+import { PostTitle, P } from "../components/Typography"
 import Img from "gatsby-image"
 
 const notFound = ({ data }) => {
@@ -10,9 +10,9 @@ const notFound = ({ data }) => {
       <SEO />
       <Content>
         <Post>
-          <H1 lineHeight="1.1em" fontSize="1.3rem">
+          <PostTitle lineHeight="1.1em" fontSize="1.3rem">
             Sorry. Could not find that resource in the entire Middle Earth.
-          </H1>
+          </PostTitle>
           <P margin="1em 0 1em 0" lineHeight="1.1em" fontSize="1.06em">
             As Tolkien said, not all those who wander are lost. But you seem to
             have lost your way. The page you are looking for may have been moved

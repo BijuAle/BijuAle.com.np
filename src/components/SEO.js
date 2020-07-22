@@ -37,13 +37,27 @@ export const SEO = ({
         // const metaImage = image || data.site.siteMetadata.image
         const metaKeywords = keywords || [
           "Biju Ale",
+          "Ale Biju",
           "Biju Ale Website",
           "Biju Ale Blog",
-          "Biju",
+          "Biju Ale Philosophy",
+          "Biju Ale Research",
+          "Biju Ale Christian",
+          "Biju Ale University",
+          "Biju Ale College",
+          "Biju Ale Writings",
+          "Biju Ale Articles",
+          "Biju Ale Nepal",
+          "Biju Ale Kathmandu",
+          "Biju Ale Ilam",
+          "Biju Ale USA",
+          "Biju Ale Volunteer",
+          "Biju Ale Social",
           "Biju Blog",
           "Biju Website",
-          "Biju Ale Nepal",
           "Biju Gatsby",
+          "Biju",
+          "Ale",
         ]
         return (
           <Helmet

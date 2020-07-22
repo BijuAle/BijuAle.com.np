@@ -10,28 +10,44 @@ module.exports = {
       {
         name: "Posts",
         link: "/tags",
+        subMenu: [],
       },
       {
         name: "Projects",
         link: "/projects",
+        subMenu: [],
+      },
+      {
+        name: "Educational",
+        link: "/educational",
         subMenu: [
           {
-            name: `Sub 1`,
-            link: `/sub-1`,
+            name: `Philosophy`,
+            link: `/educational/philosophy`,
           },
           {
-            name: `Sub 2`,
-            link: `/sub-2`,
+            name: `Mathematics`,
+            link: `/educational/mathematics`,
+          },
+          {
+            name: `Computing`,
+            link: `/educational/computing`,
+          },
+          {
+            name: `General`,
+            link: `/educational/general`,
           },
         ],
       },
       {
         name: "Contact",
         link: "/contact",
+        subMenu: [],
       },
       {
         name: "About",
         link: "/about",
+        subMenu: [],
       },
     ],
   },
@@ -100,10 +116,23 @@ module.exports = {
               quality: 100,
               linkImagesToOriginal: false,
               backgroundColor: "transparent",
-              // disableBgImageOnAlpha: true,
             },
           },
           `gatsby-remark-slug`,
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "carbon",
+              theme: "night-owl",
+              lineNumbers: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
         ],
       },
     },
@@ -132,7 +161,6 @@ module.exports = {
               quality: 100,
               linkImagesToOriginal: false,
               backgroundColor: "transparent",
-              // disableBgImageOnAlpha: true,
             },
           },
         ],
@@ -148,6 +176,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-122354089-1",
+        head: true,
       },
     },
     `gatsby-plugin-offline`,
@@ -205,14 +234,18 @@ module.exports = {
             }`,
             output: "/rss.xml",
             title: `a's RSS Feed`,
-            // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
             match: "^/pages/",
           },
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-remove-generator",
+      options: {
+        removeVersionOnly: true,
+        content: "Biju Ale",
+      },
+    },
+    `gatsby-plugin-catch-links`,
   ],
 }

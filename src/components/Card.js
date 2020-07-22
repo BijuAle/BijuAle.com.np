@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from "react"
-import { H1, P, Date, StyledLink, Tags } from "./Typography"
+import { PostTitle, P, Date, StyledLink, Tags } from "./Typography"
 import kebabCase from "lodash/kebabCase"
 
 const CardWrapper = styled.div`
@@ -10,6 +10,13 @@ const CardWrapper = styled.div`
   margin-bottom: 2rem;
   height: 100%;
   font-family: "Goudy Bookletter 1911";
+
+  *::-moz-selection {
+    background: slategray;
+  }
+  *::selection {
+    background: slategray;
+  }
 
   &:nth-of-type(1) {
     margin-top: 3rem;
@@ -26,9 +33,11 @@ const PostMetaWrapper = styled.div`
 export const Card = ({ date, title, excerpt, slug, tags }) => {
   return (
     <CardWrapper>
-      <H1 lineHeight="1.1em" fontSize="1.3rem">
-        <StyledLink to={slug}>{title}</StyledLink>
-      </H1>
+      <PostTitle lineHeight="1.1em" fontSize="1.3rem">
+        <StyledLink color="#454c42" to={slug}>
+          {title}
+        </StyledLink>
+      </PostTitle>
       <PostMetaWrapper>
         <Date fontFamily="Josefin Slab" fontSize=".8em">
           {date}&nbsp;|&nbsp;
