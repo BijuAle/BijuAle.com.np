@@ -33,14 +33,14 @@ const TagsPage = ({
     <SEO />
     <Content>
       <Post>
-        <StyledLink alt="Go To Home" title="Go To Home" to={"/"}>
+        <StyledLink margin="0" alt="Go To Home" title="Go To Home" to={"/"}>
           &#8962; ← Home
         </StyledLink>
         <PostTitle
           margin="2.5rem 0 0 0"
           fontSize="1.55rem"
           textAlign="center"
-          color="#465440"
+          color="#5e6b58"
         >
           All Posts
         </PostTitle>

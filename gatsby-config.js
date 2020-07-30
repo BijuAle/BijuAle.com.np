@@ -40,6 +40,11 @@ module.exports = {
         ],
       },
       {
+        name: "Gallery",
+        link: "/gallery",
+        subMenu: [],
+      },
+      {
         name: "Contact",
         link: "/contact",
         subMenu: [],

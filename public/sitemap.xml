@@ -3,6 +3,8 @@
 <url> <loc>https://bijuale.com.np/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bijuale.com.np/4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bijuale.com.np/2020/karna-das/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/2020/thank-you-dear-ravi/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/2020/nepali-sociologist/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/2019/our-first-vox-pop/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -18,11 +20,13 @@
 <url> <loc>https://bijuale.com.np/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bijuale.com.np/gallery/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/computing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://bijuale.com.np/educational/general/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/mathematics/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bijuale.com.np/educational/general/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/philosophy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bijuale.com.np/educational/computing/nifty-scripts/date-tagging-mp4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/computing/nifty-scripts/copyright-images/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/computing/nifty-scripts/powerful-backup-tool/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bijuale.com.np/educational/mathematics/set-theory/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

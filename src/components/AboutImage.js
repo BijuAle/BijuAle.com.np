@@ -22,7 +22,7 @@ const AboutImage = () => {
         style={{
           display: "inline-block",
           float: "right",
-          margin: "1.5em 0 0 .3em",
+          margin: "0 0 0 .3em",
           borderRadiuds: "40%",
         }}
       ></Img>

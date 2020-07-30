@@ -3,7 +3,7 @@ import React from "react"
 
 const TableWrapper = styled.div`
   overflow-x: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
 `
 
 export const Table = ({ children }) => {

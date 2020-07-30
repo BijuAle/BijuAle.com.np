@@ -34,7 +34,7 @@ export const Card = ({ date, title, excerpt, slug, tags }) => {
   return (
     <CardWrapper>
       <PostTitle lineHeight="1.1em" fontSize="1.3rem">
-        <StyledLink color="#454c42" to={slug}>
+        <StyledLink color="#5e6b58" to={slug}>
           {title}
         </StyledLink>
       </PostTitle>
@@ -42,12 +42,7 @@ export const Card = ({ date, title, excerpt, slug, tags }) => {
         <Date fontFamily="Josefin Slab" fontSize=".8em">
           {date}&nbsp;|&nbsp;
         </Date>
-        <P
-          color="#8a865f"
-          fontFamily="Josefin Slab"
-          margin="0 .8em 0 0"
-          fontSize=".8em"
-        >
+        <P fontSize=".8em" color="#676363" fontFamily="Josefin Slab">
           {tags.map(tag => (
             <span
               style={{
@@ -55,7 +50,6 @@ export const Card = ({ date, title, excerpt, slug, tags }) => {
                 borderRadius: "10%",
               }}
               key={tag}
-              fontSize=".8em"
             >
               <Tags to={`/tags/${kebabCase(tag)}/`}>{tag}</Tags>
             </span>

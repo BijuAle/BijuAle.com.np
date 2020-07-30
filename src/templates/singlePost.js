@@ -38,7 +38,7 @@ const singlePost = ({ data, pageContext }) => {
             margin="2.5rem 0 0 0"
             fontSize="1.55rem"
             textAlign="center"
-            color="#465440"
+            color="#5e6b58"
           >
             {data.mdx.frontmatter.title}
           </PostTitle>
@@ -48,7 +48,7 @@ const singlePost = ({ data, pageContext }) => {
             fontFamily="Josefin Slab"
             fontSize=".85em"
           >
-            {data.mdx.frontmatter.date}&nbsp;|&nbsp;
+            Biju Ale | {data.mdx.frontmatter.date}&nbsp;|&nbsp;
             {data.mdx.frontmatter.tags.map(tag => (
               <span
                 style={{

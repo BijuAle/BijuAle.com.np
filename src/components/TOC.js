@@ -5,13 +5,21 @@ import { StyledLink } from "./Typography"
 const slug = require("github-slugger").slug
 
 const Wrapper = styled.div`
+  display: inline-block;
   overflow: hidden;
   max-height: 30rem;
   max-width: 15rem;
+  width: 15rem;
   position: fixed;
   right: 10rem;
   text-align: left;
-  box-shadow: inset 15px 0 15px -15px rgba(0, 0, 0, 0.5);
+  border-left: 1px solid black;
+
+  ul {
+    margin-left: 1rem;
+  }
+
+  /* box-shadow: inset 15px 0 15px -15px rgba(0, 0, 0, 0.5); */
 
   ::-webkit-scrollbar-track {
     background-color: #1a202c;

@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Nav, Footer } from "../components"
+import background from "../images/background/cartographer.png"
 
 const ContainerWrapper = styled.div`
   min-height: 100vh;
@@ -8,7 +9,7 @@ const ContainerWrapper = styled.div`
   grid-template-columns: 1fr repeat(12, minmax(auto, 4.5rem)) 1fr;
   grid-template-rows: 6.5rem repeat(4, auto);
   color: ${props => props.theme.colors.lightText};
-  background-color: ${props => props.theme.colors.darkBg};
+  background: url(${background}) fixed;
 
   //Scrollbar
   *::-webkit-scrollbar {

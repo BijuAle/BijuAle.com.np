@@ -44,16 +44,32 @@ const page = ({ data }) => {
       />
       <Content>
         <Post>
-          <PostTitle
-            margin="2.5rem 0 1rem 0"
-            color="#465440"
-            fontSize="1.55rem"
-            textAlign="center"
-          >
-            {data.mdx.frontmatter.title}
-          </PostTitle>
           {isComputingPage ? (
-            <Date textAlign="center" fontFamily="Josefin Slab" fontSize=".85em">
+            <PostTitle
+              margin="2.5rem 0 0 0"
+              color="#5e6b58"
+              fontSize="1.55rem"
+              textAlign="center"
+            >
+              {data.mdx.frontmatter.title}
+            </PostTitle>
+          ) : (
+            <PostTitle
+              margin="2.5rem 0 1rem 0"
+              color="#5e6b58"
+              fontSize="1.55rem"
+              textAlign="center"
+            >
+              {data.mdx.frontmatter.title}
+            </PostTitle>
+          )}
+          {isComputingPage ? (
+            <Date
+              margin="0 0 2rem 0 "
+              textAlign="center"
+              fontFamily="Josefin Slab"
+              fontSize=".85em"
+            >
               {data.mdx.frontmatter.date}&nbsp;|&nbsp;
               {data.mdx.frontmatter.tags.map(tag => (
                 <span

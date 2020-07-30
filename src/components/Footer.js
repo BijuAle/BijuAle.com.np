@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import background from "../images/background/cartographer.png"
 
 const FooterWrapper = styled.footer`
   font-family: "Josefin Slab";
@@ -13,11 +14,11 @@ const FooterWrapper = styled.footer`
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0.3rem 0 0.3rem 0;
+  background: url(${background});
 `
 const FitContentWrapper = styled.div`
   padding: 0.3rem 2.3rem 0.3rem 0;
-  box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.5);
+  /* box-shadow: inset 0 15px 15px -15px rgba(0, 0, 0, 0.5); */
   display: flex;
 `
 const RightsWrapper = styled.div`

@@ -1,20 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 // import { Nav } from "./Typography"
-import { StyledLink } from "./Typography"
+import { StyledLink, BlackHover } from "./Typography"
 
 const MenuWrapper = styled.div`
   font-family: "Josefin Slab";
   margin-top: 0.8rem;
   margin-bottom: 0.6rem;
-
   ul {
     list-style: none;
     margin: 0;
     padding-left: 0;
     display: flex;
   }
-
+  ul li:first-child {
+    padding: 0;
+  }
   li {
     display: block;
     float: left;
@@ -24,18 +25,15 @@ const MenuWrapper = styled.div`
     text-transform: uppercase;
     font-size: 0.8em;
   }
-
   li:hover,
   li:focus-within {
     cursor: pointer;
   }
-
   li:focus-within a {
     outline: none;
   }
-
   ul li ul {
-    background: #1a202c;
+    background: #1b1b1b;
     margin-left: 0.5rem;
     visibility: hidden;
     opacity: 0;
@@ -46,7 +44,6 @@ const MenuWrapper = styled.div`
     padding-top: 0.5rem;
     transition: all 2s ease;
   }
-
   ul li:hover > ul,
   ul li:focus-within > ul,
   ul li ul:hover,
@@ -55,11 +52,11 @@ const MenuWrapper = styled.div`
     opacity: 1;
     display: block;
   }
-
   ul li ul li {
     clear: both;
     width: 100%;
     margin-top: 0.3rem;
+    padding-left: 0.6rem !important;
   }
 `
 export const Menu = ({ menuLinks }) => (
@@ -68,7 +65,7 @@ export const Menu = ({ menuLinks }) => (
       <ul>
         {menuLinks.map(link => (
           <li key={link.name}>
-            <StyledLink to={link.link}>{link.name}</StyledLink>
+            <BlackHover to={link.link}>{link.name}</BlackHover>
             {link.subMenu && link.subMenu.length > 0 ? (
               <ul>
                 {link.subMenu.map(subLink => (

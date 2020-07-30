@@ -14,6 +14,16 @@ export const BlogTitle = styled.p`
   }
   font-size: ${props => props.fontSize || "2.5rem"};
   font-family: "Josefin Slab";
+
+  &:hover {
+    color: #5c9a36;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  &:not(:hover) {
+    transition: 1s;
+  }
 `
 export const BlogTag = styled.p`
   font-size: "1.5em";
@@ -69,7 +79,6 @@ export const P = styled.p`
 export const Date = styled.div`
   font-size: ${props => props.fontSize};
   font-family: ${props => props.fontFamily};
-  /* font-style: italic; */
   text-align: ${props => props.textAlign};
   color: #676363;
   font-style: ${props => props.fontStyle};
@@ -78,7 +87,7 @@ export const Date = styled.div`
   display: ${props => props.display};
   float: ${props => props.float};
 `
-const BlackHover = styled(props => <Link {...props} />)`
+export const BlackHover = styled(props => <Link {...props} />)`
   text-decoration: none;
   color: gray;
   &:focus,
@@ -106,12 +115,9 @@ const BlackHover = styled(props => <Link {...props} />)`
 `
 
 export const Tags = styled(BlackHover)`
-  color: #676363;
-  font-style: italic;
-  &:hover {
-    color: gold;
-    background-color: black;
-  }
+  font-family: "Josefin Slab";
+  font-size: ${props => props.fontSize};
+  color: "#676363";
 `
 
 export const Nav = styled(BlackHover)`

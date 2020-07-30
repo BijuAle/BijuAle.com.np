@@ -16,12 +16,15 @@ const PostWrapper = styled.main`
   }
   li {
     margin: 0.2rem 0;
+    color: gray;
+    opacity: 0.74;
   }
   p {
     margin: 0 0 1em 0;
     font-size: 1.067em;
     line-height: 1.09em;
   }
+
   p:nth-of-type(1)::first-letter {
     font-family: "Josefin Slab";
     font-size: 400%;
@@ -85,24 +88,26 @@ const PostWrapper = styled.main`
   li {
     margin: 4em 0 0 0;
   }
+
   blockquote {
     font-size: 1.1em;
     line-height: 1.15em;
     margin-left: 2rem;
     color: #6d6d4f;
+    opacity: 0.93;
   }
 
   blockquote:before {
     font-size: 3.5em;
     line-height: 0.1em;
-    content: "“";
+    content: "\\201C";
     vertical-align: -0.4em;
     opacity: 0.2;
   }
   blockquote:after {
     font-size: 3.5em;
     line-height: 0.1em;
-    content: "”";
+    content: "\\201D";
     vertical-align: -0.4em;
     opacity: 0.2;
   }
@@ -113,7 +118,10 @@ const PostWrapper = styled.main`
     margin-top: 1.7em;
   }
   cite {
-    margin-left: 30%;
+    margin-left: 50%;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    opacity: 0.6;
   }
 
   cite::before {
@@ -122,6 +130,7 @@ const PostWrapper = styled.main`
 
   table {
     border-spacing: 1em;
+    opacity: 0.74;
   }
   thead th {
     font-weight: 200;
@@ -154,6 +163,7 @@ const PostWrapper = styled.main`
   }
 
   deckgo-highlight-code {
+    margin-bottom: 1.5rem;
     --deckgo-highlight-code-padding: 0 5px;
     --deckgo-highlight-code-font-size: 0.95em;
     --deckgo-highlight-code-token-selector: green;

@@ -14,11 +14,11 @@ const PaginationWrapper = styled.div`
   border-bottom-left-radius: 2%;
 
   padding: 0.2em;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.15),
     rgba(0, 0, 0, 0)
-  );
+  ); */
 
   a {
     margin-right: 0.7rem;

@@ -7,8 +7,11 @@ import { Table } from "./src/components"
 const GlobalStyles = createGlobalStyle`
 body{
   min-height: 100vh;
-  /* background-color: ${props => props.theme.colors.darkBg}; */
   color:gray;
+}
+
+p{
+  opacity:.74;
 }
 *{
   margin:0;
@@ -21,12 +24,12 @@ html{
 }
 
 //Scrollbar
-
 *::-webkit-scrollbar {
     width: 9px;
+
   }
-  *::-webkit-scrollbar-track {
-    background-color: #1A202C;
+*::-webkit-scrollbar-track {
+  background: #1B1B1B;
   }
   *::-webkit-scrollbar-thumb {
   background-color: #310a4e;
