@@ -1,13 +1,13 @@
 import React from "react"
 import { Location } from "@reach/router"
-import { Link } from "gatsby"
+import { StyledLink } from "../components"
 
 export const MemoryLink = ({ children, state, ...rest }) => (
   <Location>
     {({ location }) => (
-      <Link {...rest} state={{ prevUrl: location.pathname, ...state }}>
+      <StyledLink {...rest} state={{ prevUrl: location.pathname, ...state }}>
         {children}
-      </Link>
+      </StyledLink>
     )}
   </Location>
 )

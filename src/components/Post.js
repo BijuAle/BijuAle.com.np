@@ -16,20 +16,21 @@ const PostWrapper = styled.main`
   }
   li {
     margin: 0.2rem 0;
-    color: gray;
+    color: black;
     opacity: 0.74;
   }
   p {
     margin: 0 0 1em 0;
     font-size: 1.067em;
     line-height: 1.09em;
+    opacity: 0.85;
   }
 
   p:nth-of-type(1)::first-letter {
     font-family: "Josefin Slab";
     font-size: 400%;
     font-style: italic;
-    color: #310a4e;
+    color: #363661;
     text-shadow: -1px -1px 0 darkslategray, 1px -1px 0 black, -1px 1px 0 black,
       1px 1px 0 black;
     initial-letter: 2;
@@ -39,10 +40,10 @@ const PostWrapper = styled.main`
     margin-bottom: 0;
   }
   *::-moz-selection {
-    background: slategray;
+    background: lightpink;
   }
   *::selection {
-    background: slategray;
+    background: lightpink;
   }
   strong {
     font-weight: 700;
@@ -93,7 +94,7 @@ const PostWrapper = styled.main`
     font-size: 1.1em;
     line-height: 1.15em;
     margin-left: 2rem;
-    color: #6d6d4f;
+    color: #501e56;
     opacity: 0.93;
   }
 
@@ -137,7 +138,7 @@ const PostWrapper = styled.main`
   }
   a {
     text-decoration: none;
-    color: #74578a;
+    color: #363661;
     &:focus,
     &:visited,
     &:link,
@@ -146,10 +147,9 @@ const PostWrapper = styled.main`
       background-color: none;
     }
     &:hover {
-      color: darkhaki;
+      color: purple;
       transition: 0.5s;
       cursor: pointer;
-      background-color: black;
       border-radius: 20%;
     }
 
@@ -196,11 +196,10 @@ const PostWrapper = styled.main`
     outline: 0;
   }
   summary:hover {
-    color: darkhaki;
     transition: 0.5s;
     cursor: pointer;
-    background-color: black;
     border-radius: 20%;
+    color: darkslateblue;
   }
   @keyframes fadeIn {
     0% {

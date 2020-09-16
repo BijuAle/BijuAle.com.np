@@ -12,10 +12,10 @@ const CardWrapper = styled.div`
   font-family: "Goudy Bookletter 1911";
 
   *::-moz-selection {
-    background: slategray;
+    background: lightpink;
   }
   *::selection {
-    background: slategray;
+    background: lightpink;
   }
 
   &:nth-of-type(1) {
@@ -34,9 +34,7 @@ export const Card = ({ date, title, excerpt, slug, tags }) => {
   return (
     <CardWrapper>
       <PostTitle lineHeight="1.1em" fontSize="1.3rem">
-        <StyledLink color="#5e6b58" to={slug}>
-          {title}
-        </StyledLink>
+        <StyledLink to={slug}>{title}</StyledLink>
       </PostTitle>
       <PostMetaWrapper>
         <Date fontFamily="Josefin Slab" fontSize=".8em">

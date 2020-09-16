@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 export const BlogTitle = styled.p`
   text-decoration: none;
-  color: #676767;
+  color: purple;
   &:focus,
   &:hover,
   &:visited,
@@ -16,7 +16,7 @@ export const BlogTitle = styled.p`
   font-family: "Josefin Slab";
 
   &:hover {
-    color: #5c9a36;
+    color: purple;
     transition: 1s;
     cursor: pointer;
   }
@@ -32,29 +32,12 @@ export const BlogTag = styled.p`
 
 export const StyledLink = styled(props => <Link {...props} />)`
   text-decoration: none;
-  color: gray;
-  &:focus,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
+  color: #4c4963;
+
   &:hover {
-    color: green;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-
-  &:not(:hover) {
+    color: purple;
     transition: 0.5s;
   }
-
-  font-size: inherit;
-  font-family: ${props => props.fontFamily || "inherit"};
-  font-weight: ${props => props.fontWeight || "inherit"};
-  margin: ${props => props.margin};
-  padding: ${props => props.padding};
-  color: ${props => props.color || "inherit"};
 `
 export const PostTitle = styled.span`
   font-size: ${props => props.fontSize};
@@ -63,7 +46,7 @@ export const PostTitle = styled.span`
   line-height: ${props => props.lineHeight};
   margin: ${props => props.margin};
   padding: ${props => props.padding};
-  color: ${props => props.color || "inherit"};
+  color: #4c4963;
   text-align: ${props => props.textAlign};
   display: block;
 `
@@ -80,7 +63,7 @@ export const Date = styled.div`
   font-size: ${props => props.fontSize};
   font-family: ${props => props.fontFamily};
   text-align: ${props => props.textAlign};
-  color: #676363;
+  color: #401f2b;
   font-style: ${props => props.fontStyle};
   margin: ${props => props.margin};
   padding: ${props => props.padding};
@@ -97,10 +80,9 @@ export const BlackHover = styled(props => <Link {...props} />)`
     text-decoration: none;
   }
   &:hover {
-    color: gold;
+    color: purple;
     transition: 1s;
     cursor: pointer;
-    background-color: black;
   }
 
   &:not(:hover) {
@@ -117,7 +99,7 @@ export const BlackHover = styled(props => <Link {...props} />)`
 export const Tags = styled(BlackHover)`
   font-family: "Josefin Slab";
   font-size: ${props => props.fontSize};
-  color: "#676363";
+  color: #401f2b;
 `
 
 export const Nav = styled(BlackHover)`

@@ -3,7 +3,7 @@ export default {
     darkBg: "#0e1117",
     // darkBg: "#1A202C",
     lightBg: "#B8BAA5",
-    lightText: "gray",
+    lightText: "black",
     darkText: "brown",
   },
 }

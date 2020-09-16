@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { PostTitle, StyledLink, Date, Tags } from "../components/Typography"
-import { Container, Content, Post, SEO, TOC } from "../components"
+import { Layout, Content, Post, SEO, TOC } from "../components"
 import { MDXProvider } from "@mdx-js/react"
 import kebabCase from "lodash/kebabCase"
 require(`katex/dist/katex.min.css`)
@@ -36,7 +36,7 @@ const page = ({ data }) => {
   let ComputingSlugRegex = new RegExp("/educational/computing/(.*)/")
   var isComputingPage = ComputingSlugRegex.test(data.mdx.fields.slug)
   return (
-    <Container>
+    <Layout>
       <SEO
         title={data.mdx.frontmatter.title}
         description={data.mdx.excerpt}
@@ -99,7 +99,7 @@ const page = ({ data }) => {
           ) : null}
         </Post>
       </Content>
-    </Container>
+    </Layout>
   )
 }
 

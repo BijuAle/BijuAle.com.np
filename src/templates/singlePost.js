@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { PostTitle, Date, Tags, StyledLink } from "../components/Typography"
-import { Container, Content, Post, SEO, TOC } from "../components"
+import { Layout, Content, Post, SEO, TOC } from "../components"
 import kebabCase from "lodash/kebabCase"
 import { MDXProvider } from "@mdx-js/react"
 
@@ -26,7 +26,7 @@ export const query = graphql`
 const singlePost = ({ data, pageContext }) => {
   const { previous, next } = pageContext
   return (
-    <Container>
+    <Layout>
       <SEO
         title={data.mdx.frontmatter.title}
         description={data.mdx.excerpt}
@@ -55,7 +55,7 @@ const singlePost = ({ data, pageContext }) => {
                   margin: "0 .2em 0 0",
                   padding: ".18em",
                   borderRadius: "10%",
-                  border: "1px solid #131313",
+                  border: "1px solid gray",
                 }}
                 key={tag}
                 fontSize=".8em"
@@ -97,7 +97,7 @@ const singlePost = ({ data, pageContext }) => {
           </nav>
         </Post>
       </Content>
-    </Container>
+    </Layout>
   )
 }
 

@@ -33,7 +33,7 @@ const AboutImage = () => {
           lineHeight: "1em",
           margin: ".2em 0 0 1em",
           fontSize: ".75em",
-          color: "#2e772e",
+          color: "#4c4963",
         }}
       >
         Me (far-left), & Kristian (far-right) with our host-family's children in

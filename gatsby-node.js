@@ -86,7 +86,7 @@ exports.createPages = async function ({ actions, graphql }) {
   tags.forEach(tag => {
     actions.createPage({
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: require.resolve("./src/templates/tags.js"),
+      component: require.resolve("./src/templates/singleTag.js"),
       context: {
         tag: tag.fieldValue,
       },

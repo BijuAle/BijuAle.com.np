@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 // import { Nav } from "./Typography"
-import { StyledLink, BlackHover } from "./Typography"
+import { StyledLink } from "./Typography"
 
 const MenuWrapper = styled.div`
-  font-family: "Josefin Slab";
+  font-family: "Goudy Bookletter 1911";
   margin-top: 0.8rem;
   margin-bottom: 0.6rem;
   ul {
@@ -33,7 +33,7 @@ const MenuWrapper = styled.div`
     outline: none;
   }
   ul li ul {
-    background: #1b1b1b;
+    background: #a6ad96;
     margin-left: 0.5rem;
     visibility: hidden;
     opacity: 0;
@@ -65,7 +65,7 @@ export const Menu = ({ menuLinks }) => (
       <ul>
         {menuLinks.map(link => (
           <li key={link.name}>
-            <BlackHover to={link.link}>{link.name}</BlackHover>
+            <StyledLink to={link.link}>{link.name}</StyledLink>
             {link.subMenu && link.subMenu.length > 0 ? (
               <ul>
                 {link.subMenu.map(subLink => (

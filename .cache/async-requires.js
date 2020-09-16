@@ -8,6 +8,6 @@ exports.components = {
   "component---src-templates-all-posts-js": () => import("./../../src/templates/allPosts.js" /* webpackChunkName: "component---src-templates-all-posts-js" */),
   "component---src-templates-page-js": () => import("./../../src/templates/page.js" /* webpackChunkName: "component---src-templates-page-js" */),
   "component---src-templates-single-post-js": () => import("./../../src/templates/singlePost.js" /* webpackChunkName: "component---src-templates-single-post-js" */),
-  "component---src-templates-tags-js": () => import("./../../src/templates/tags.js" /* webpackChunkName: "component---src-templates-tags-js" */)
+  "component---src-templates-single-tag-js": () => import("./../../src/templates/singleTag.js" /* webpackChunkName: "component---src-templates-single-tag-js" */)
 }
 

@@ -6,12 +6,11 @@ import { Table } from "./src/components"
 
 const GlobalStyles = createGlobalStyle`
 body{
-  min-height: 100vh;
-  color:gray;
+  min-height: 100vh; 
 }
 
 p{
-  opacity:.74;
+  opacity:.85;
 }
 *{
   margin:0;
@@ -29,7 +28,7 @@ html{
 
   }
 *::-webkit-scrollbar-track {
-  background: #1B1B1B;
+  background: #A6AD96;
   }
   *::-webkit-scrollbar-thumb {
   background-color: #310a4e;

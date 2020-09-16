@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Container, Content, Card, Pagination, SEO } from "../components"
+import { Layout, Content, Card, Pagination } from "../components"
 
 export const pageQuery = graphql`
   query AllPostQuery($skip: Int!, $limit: Int!) {
@@ -27,6 +27,7 @@ export const pageQuery = graphql`
     }
   }
 `
+
 const allPosts = ({ pageContext, data }) => {
   const { currentPage, numPages } = pageContext
   const isFirst = currentPage === 1
@@ -35,8 +36,7 @@ const allPosts = ({ pageContext, data }) => {
   const nextPage = `/${currentPage + 1}`
   const posts = data.allMdx.edges
   return (
-    <Container>
-      <SEO />
+    <Layout>
       <Content>
         {posts.map(post => (
           <Card
@@ -57,7 +57,7 @@ const allPosts = ({ pageContext, data }) => {
           numPages={numPages}
         />
       </Content>
-    </Container>
+    </Layout>
   )
 }
 export default allPosts

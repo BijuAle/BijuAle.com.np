@@ -7,7 +7,7 @@ import { MemoryLink } from "../components"
 import {
   StyledLink,
   SEO,
-  Container,
+  Layout,
   Content,
   Post,
   PostTitle,
@@ -29,7 +29,7 @@ const TagsPage = ({
     allMdx: { group },
   },
 }) => (
-  <Container>
+  <Layout>
     <SEO />
     <Content>
       <Post>
@@ -56,7 +56,7 @@ const TagsPage = ({
         </ul>
       </Post>
     </Content>
-  </Container>
+  </Layout>
 )
 
 export default TagsPage

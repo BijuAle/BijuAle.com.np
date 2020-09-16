@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Container, Content, Post, SEO } from "../components"
+import { Layout, Content, Post, SEO } from "../components"
 import { PostTitle, P } from "../components/Typography"
 import Img from "gatsby-image"
 
 const notFound = ({ data }) => {
   return (
-    <Container>
+    <Layout>
       <SEO />
       <Content>
         <Post>
@@ -28,7 +28,7 @@ const notFound = ({ data }) => {
         </Post>
         {/* \Image Credit: Terra di Mezzo. by Gecko Art, Italy (pinterest.com/pin/590323463636983034)*/}
       </Content>
-    </Container>
+    </Layout>
   )
 }
 export default notFound
