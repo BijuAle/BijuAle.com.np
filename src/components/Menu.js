@@ -4,6 +4,9 @@ import styled from "styled-components"
 import { StyledLink } from "./Typography"
 
 const MenuWrapper = styled.div`
+  @-moz-document url-prefix() {
+    background: #a0a790;
+  }
   font-family: "Goudy Bookletter 1911";
   margin-top: 0.8rem;
   margin-bottom: 0.6rem;

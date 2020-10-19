@@ -185,10 +185,6 @@ const PostWrapper = styled.main`
     font-size: 0.97em;
   }
 
-  strong {
-    font-weight: normal;
-    color: #665e73;
-  }
   summary {
     display: inline;
   }
