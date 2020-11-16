@@ -26,7 +26,7 @@ export const BlogTitle = styled.p`
   }
 `
 export const BlogTag = styled.p`
-  font-size: "1.5em";
+  font-size: 0.88em;
   font-family: "Josefin Slab";
 `
 

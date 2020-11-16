@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   position: fixed;
   right: 10rem;
   text-align: left;
-  /* border-left: 1px solid #363661; */
+  /* bo3rder-left: 1px solid #363661; */
 
   ul {
     margin-left: 1rem;

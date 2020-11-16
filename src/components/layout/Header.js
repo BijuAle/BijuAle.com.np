@@ -27,7 +27,10 @@ export const Header = () => {
       <StyledLink to="/">
         <BlogTitle title="Home">Biju Ale</BlogTitle>
       </StyledLink>
-      <BlogTag>Cudendum christologicam mentem</BlogTag>
+      <BlogTag>
+        "And ye shall know the truth, and the truth shall make you free."
+        <em>-John 8:32</em>
+      </BlogTag>
       <StaticQuery
         query={graphql`
           query SiteTitleQuery {
