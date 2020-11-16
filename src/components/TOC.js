@@ -13,13 +13,13 @@ const Wrapper = styled.div`
   position: fixed;
   right: 10rem;
   text-align: left;
-  border-left: 1px solid #363661;
+  /* border-left: 1px solid #363661; */
 
   ul {
     margin-left: 1rem;
   }
 
-  /* box-shadow: inset 15px 0 15px -15px rgba(0, 0, 0, 0.5); */
+  box-shadow: inset 15px 0 15px -15px rgba(0, 0, 0, 0.5);
 
   ::-webkit-scrollbar-track {
     background-color: #1a202c;

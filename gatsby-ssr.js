@@ -2,14 +2,15 @@ import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Theme from "./src/themes/theme"
 import { MDXProvider } from "@mdx-js/react"
-import { Table, MemoryLink } from "./src/components"
-import props from "prop-types"
+import { Table } from "./src/components"
 
 const GlobalStyles = createGlobalStyle`
 body{
-  min-height: 100vh;
-  /* background-color: ${props => props.theme.colors.darkBg}; */
-  color:gray;
+  min-height: 100vh; 
+}
+
+p{
+  opacity:.85;
 }
 *{
   margin:0;
@@ -22,12 +23,12 @@ html{
 }
 
 //Scrollbar
-
 *::-webkit-scrollbar {
     width: 9px;
+
   }
-  *::-webkit-scrollbar-track {
-    background-color: #1A202C;
+*::-webkit-scrollbar-track {
+  background: #A6AD96;
   }
   *::-webkit-scrollbar-thumb {
   background-color: #310a4e;
@@ -62,10 +63,10 @@ const EL = props => {
     </a>
   )
 }
+
 const components = {
   table: Table,
   a: EL,
-  Link: <MemoryLink {...props}></MemoryLink>,
 }
 
 export const wrapRootElement = ({ element }) => (

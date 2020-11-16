@@ -10,7 +10,7 @@ module.exports = {
     author: "Biju Ale",
     menuLinks: [
       {
-        name: "Posts",
+        name: "Essays",
         link: "/tags",
         subMenu: [],
       },

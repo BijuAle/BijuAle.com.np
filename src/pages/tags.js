@@ -42,7 +42,7 @@ const TagsPage = ({
           textAlign="center"
           color="#5e6b58"
         >
-          All Posts
+          Essays
         </PostTitle>
         Tags:
         <ul>

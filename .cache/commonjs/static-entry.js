@@ -50,6 +50,10 @@ const {
   version: gatsbyVersion
 } = require(`gatsby/package.json`);
 
+const {
+  grabMatchParams
+} = require(`./find-path`);
+
 const stats = JSON.parse(fs.readFileSync(`${process.cwd()}/public/webpack.stats.json`, `utf-8`));
 const chunkMapping = JSON.parse(fs.readFileSync(`${process.cwd()}/public/chunk-map.json`, `utf-8`)); // const testRequireError = require("./test-require-error")
 // For some extremely mysterious reason, webpack adds the above module *after*
@@ -85,6 +89,8 @@ const getPageDataUrl = pagePath => {
   const pageDataPath = getPageDataPath(pagePath);
   return `${__PATH_PREFIX__}/${pageDataPath}`;
 };
+
+const getStaticQueryUrl = hash => `${__PATH_PREFIX__}/page-data/sq/d/${hash}.json`;
 
 const getPageData = pagePath => {
   const pageDataPath = getPageDataPath(pagePath);
@@ -222,13 +228,20 @@ var _default = (pagePath, callback) => {
   const pageDataUrl = getPageDataUrl(pagePath);
   const appDataUrl = getAppDataUrl();
   const {
-    componentChunkName
+    componentChunkName,
+    staticQueryHashes = []
   } = pageData;
+  const staticQueryUrls = staticQueryHashes.map(getStaticQueryUrl);
 
   class RouteHandler extends React.Component {
     render() {
+      var _pageData$result, _pageData$result$page;
+
       const props = { ...this.props,
         ...pageData.result,
+        params: { ...grabMatchParams(this.props.location.pathname),
+          ...(((_pageData$result = pageData.result) === null || _pageData$result === void 0 ? void 0 : (_pageData$result$page = _pageData$result.pageContext) === null || _pageData$result$page === void 0 ? void 0 : _pageData$result$page.__params) || {})
+        },
         // pathContext was deprecated in v2. Renamed to pageContext
         pathContext: pageData.result ? pageData.result.pageContext : undefined
       };
@@ -365,6 +378,14 @@ var _default = (pagePath, callback) => {
       crossOrigin: "anonymous"
     }));
   }
+
+  staticQueryUrls.forEach(staticQueryUrl => headComponents.push( /*#__PURE__*/React.createElement("link", {
+    as: "fetch",
+    rel: "preload",
+    key: staticQueryUrl,
+    href: staticQueryUrl,
+    crossOrigin: "anonymous"
+  })));
 
   if (appDataUrl) {
     headComponents.push( /*#__PURE__*/React.createElement("link", {

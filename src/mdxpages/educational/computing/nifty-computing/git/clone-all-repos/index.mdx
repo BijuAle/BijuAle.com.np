@@ -1,0 +1,30 @@
+---
+title: Clone All Repositories of a GitHub User
+date: 2020-02-02
+tags: ["Nifty Computing"]
+---
+
+# Steps
+
+- Check & install the required tools.
+- Enter the following command in bash.  
+  (replacing `[UserName]` with the actual username.)
+
+# Script
+
+```bash
+curl -s https://api.github.com/users/[UserName]/repos | grep "clone_url" | awk '{print $2}' | sed -e 's/"//g' -e 's/,//g' | xargs -n1 git clone
+```
+
+# Required Tools
+
+- curl
+- awk
+- grep
+- sed
+- xargs
+- git
+
+# OS
+
+- Unix-like

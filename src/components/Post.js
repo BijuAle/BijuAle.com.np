@@ -11,13 +11,12 @@ const PostWrapper = styled.main`
   text-align: justify;
   text-justify: auto;
 
-  ul li {
-    list-style: none;
-  }
-  li {
-    margin: 0.2rem 0;
-    color: black;
-    opacity: 0.74;
+  ul,
+  ol {
+    margin: 0 0 0 2rem;
+    list-style-type: none;
+    opacity: 0.85;
+    list-style: disc outside url("/bullet.png");
   }
   p {
     margin: 0 0 1em 0;
@@ -78,16 +77,10 @@ const PostWrapper = styled.main`
     margin-bottom: 0;
     color: #8c6258;
   }
+
   h3 {
     font-size: 1.25em;
     font-weight: 100;
-  }
-  ul,
-  ol {
-    margin: 0 0 1rem 2rem;
-  }
-  li {
-    margin: 4em 0 0 0;
   }
 
   blockquote {
@@ -156,10 +149,6 @@ const PostWrapper = styled.main`
     &:not(:hover) {
       transition: 0.5s;
     }
-  }
-
-  ul li {
-    margin: 0.08em 0 0 0;
   }
 
   deckgo-highlight-code {
