@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 export const BlogTitle = styled.p`
   text-decoration: none;
   color: purple;
+  width: 50%;
   &:focus,
   &:hover,
   &:visited,

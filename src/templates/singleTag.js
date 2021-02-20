@@ -38,7 +38,13 @@ const Tags = ({ pageContext, data, location }) => {
       <SEO />
       <Content>
         <Post>
-          <Link to="/tags">← &#9997; Essays</Link>
+          <Link to="/tags">
+            ←{" "}
+            <span role="img" aria-label="essay">
+              &#9997;
+            </span>{" "}
+            Essays
+          </Link>
 
           <PostTitle
             margin="2.5rem 0 2rem 0"
