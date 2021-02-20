@@ -143,17 +143,12 @@ module.exports = {
         ],
       },
     },
+
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Josefin Slab`,
-          },
-          {
-            family: `Goudy Bookletter 1911`,
-          },
-        ],
+        fonts: [`Goudy Bookletter 1911`, `Josefin Slab`],
+        display: "swap",
       },
     },
     {

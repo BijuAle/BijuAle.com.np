@@ -5,8 +5,8 @@ var plugins = [{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
       options: {"plugins":[],"extension":["md","mdx"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1000,"quality":100,"linkImagesToOriginal":false,"backgroundColor":"transparent"}},"gatsby-remark-slug",{"resolve":"gatsby-remark-highlight-code","options":{"terminal":"carbon","theme":"night-owl","lineNumbers":true}},{"resolve":"gatsby-remark-katex","options":{"strict":"ignore"}}]},
     },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":[{"family":"Josefin Slab"},{"family":"Goudy Bookletter 1911"}]},
+      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":["Goudy Bookletter 1911","Josefin Slab"],"display":"swap"},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
