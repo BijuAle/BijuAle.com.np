@@ -7,7 +7,7 @@
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
           "options": {}
         },
         {
@@ -15,11 +15,17 @@
           "stage": "develop",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": false
           }
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -54,11 +60,11 @@
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -74,6 +80,12 @@
           "stage": "develop-html",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": false
           }
         }
@@ -101,11 +113,11 @@
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -121,6 +133,12 @@
           "stage": "build-html",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": true
           }
         }
@@ -148,11 +166,11 @@
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
           "options": {}
         },
         {
-          "name": "/home/biju/GitHub/blog/node_modules/gatsby-plugin-typescript/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/biju/GitHub/blog/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
@@ -168,6 +186,12 @@
           "stage": "build-javascript",
           "options": {
             "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "namespace": "",
+            "transpileTemplateLiterals": true,
+            "pure": false,
             "ssr": true
           }
         }

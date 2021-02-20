@@ -1,6 +1,6 @@
 var plugins = [{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Biju's Blog","short_name":"BijuBlog","description":"This is Biju Ale's Blog & Personal Website.","start_url":"/","background_color":"#1A202C","theme_color":"#1A202C","display":"standalone","icon":"./src/images/favicon/eagle-head.png","cache_busting_mode":"none","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+      options: {"plugins":[],"name":"Biju's Blog","short_name":"BijuBlog","description":"This is Biju Ale's Blog & Personal Website.","start_url":"/","background_color":"#1A202C","theme_color":"#1A202C","display":"standalone","icon":"./src/images/favicon/eagle-head.png","cache_busting_mode":"none","legacy":true,"theme_color_in_head":true,"crossOrigin":"anonymous","include_favicon":true,"cacheDigest":null},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
       options: {"plugins":[],"extension":["md","mdx"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1000,"quality":100,"linkImagesToOriginal":false,"backgroundColor":"transparent"}},"gatsby-remark-slug",{"resolve":"gatsby-remark-highlight-code","options":{"terminal":"carbon","theme":"night-owl","lineNumbers":true}},{"resolve":"gatsby-remark-katex","options":{"strict":"ignore"}}]},
@@ -9,16 +9,16 @@ var plugins = [{
       options: {"plugins":[],"fonts":["Goudy Bookletter 1911","Josefin Slab"],"display":"swap"},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"trackingId":"UA-122354089-1","head":true},
+      options: {"plugins":[],"trackingId":"UA-122354089-1","head":true,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0},
     },{
       plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
