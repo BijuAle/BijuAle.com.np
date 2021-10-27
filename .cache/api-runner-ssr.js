@@ -1,37 +1,25 @@
 var plugins = [{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Biju's Blog","short_name":"BijuBlog","description":"This is Biju Ale's Blog & Personal Website.","start_url":"/","background_color":"#1A202C","theme_color":"#1A202C","display":"standalone","icon":"./src/images/favicon/eagle-head.png","cache_busting_mode":"none","legacy":true,"theme_color_in_head":true,"crossOrigin":"anonymous","include_favicon":true,"cacheDigest":null},
+      name: 'gatsby-plugin-sitemap',
+      plugin: require('/home/biju/GitHub/a/blog/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"output":"/sitemap","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[],"extension":["md","mdx"],"gatsbyRemarkPlugins":[{"resolve":"gatsby-remark-images","options":{"maxWidth":1000,"quality":100,"linkImagesToOriginal":false,"backgroundColor":"transparent"}},"gatsby-remark-slug",{"resolve":"gatsby-remark-highlight-code","options":{"terminal":"carbon","theme":"night-owl","lineNumbers":true}},{"resolve":"gatsby-remark-katex","options":{"strict":"ignore"}}]},
-    },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":["Goudy Bookletter 1911","Josefin Slab"],"display":"swap"},
-    },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"pure":false},
-    },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
-    },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      name: 'gatsby-plugin-react-helmet',
+      plugin: require('/home/biju/GitHub/a/blog/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[],"trackingId":"UA-122354089-1","head":true,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0},
-    },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      name: 'gatsby-plugin-image',
+      plugin: require('/home/biju/GitHub/a/blog/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-feed-mdx/gatsby-ssr'),
-      options: {"plugins":[],"query":"\n            {\n              site {\n                siteMetadata {\n                  title\n                  description\n                  siteUrl\n                  site_url: siteUrl\n                }\n              }\n            }\n          ","feeds":[{"query":"{\n              allMdx {\n                edges {\n                  node {\n                    frontmatter {\n                      date(formatString: \"MM DD YYYY\")\n                      tags\n                      title\n                    }\n                    excerpt\n                    fields {\n                      slug\n                    }\n                  }\n                }\n              }\n            }","output":"/rss.xml","title":"a's RSS Feed","match":"^/pages/"}]},
+      name: 'gatsby-plugin-mdx',
+      plugin: require('/home/biju/GitHub/a/blog/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"gatsbyRemarkPlugins":[{"resolve":"/home/biju/GitHub/a/blog/node_modules/gatsby-remark-images","id":"4ee03d67-61da-5c6a-9c47-ca3726d1f687","name":"gatsby-remark-images","version":"6.0.0","modulePath":"/home/biju/GitHub/a/blog/node_modules/gatsby-remark-images/index.js","pluginOptions":{"plugins":[],"linkImagesToOriginal":false,"withWebp":true,"backgroundColor":"transparent"},"nodeAPIs":["pluginOptionsSchema"],"browserAPIs":["onRouteUpdate"],"ssrAPIs":[]}],"extensions":[".mdx"],"defaultLayouts":{},"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/home/biju/GitHub/a/blog"},
     },{
-      plugin: require('/home/biju/GitHub/blog/node_modules/gatsby-plugin-remove-generator/gatsby-ssr'),
-      options: {"plugins":[],"removeVersionOnly":true,"content":"Biju Ale"},
-    },{
-      plugin: require('/home/biju/GitHub/blog/gatsby-ssr'),
-      options: {"plugins":[]},
+      name: 'gatsby-plugin-manifest',
+      plugin: require('/home/biju/GitHub/a/blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Biju's Blog","short_name":"BijuBlog","description":"This is Biju Ale's Blog & Personal Website.","start_url":"/","background_color":"#1A202C","theme_color":"#1A202C","display":"standalone","icon":"./src/images/eagle-head.png","cache_busting_mode":"none","legacy":true,"theme_color_in_head":true,"crossOrigin":"anonymous","include_favicon":true,"cacheDigest":null},
     }]
+/* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
@@ -46,31 +34,76 @@ var plugins = [{
 
 const apis = require(`./api-ssr-docs`)
 
-// Run the specified API in any plugins that have implemented it
-module.exports = (api, args, defaultReturn, argTransform) => {
+function augmentErrorWithPlugin(plugin, err) {
+  if (plugin.name !== `default-site-plugin`) {
+    // default-site-plugin is user code and will print proper stack trace,
+    // so no point in annotating error message pointing out which plugin is root of the problem
+    err.message += ` (from plugin: ${plugin.name})`
+  }
+
+  throw err
+}
+
+export function apiRunner(api, args, defaultReturn, argTransform) {
   if (!apis[api]) {
     console.log(`This API doesn't exist`, api)
   }
 
-  // Run each plugin in series.
-  // eslint-disable-next-line no-undef
-  let results = plugins.map(plugin => {
-    if (!plugin.plugin[api]) {
-      return undefined
+  const results = []
+  plugins.forEach(plugin => {
+    const apiFn = plugin.plugin[api]
+    if (!apiFn) {
+      return
     }
-    const result = plugin.plugin[api](args, plugin.options)
-    if (result && argTransform) {
-      args = argTransform({ args, result })
+
+    try {
+      const result = apiFn(args, plugin.options)
+
+      if (result && argTransform) {
+        args = argTransform({ args, result })
+      }
+
+      // This if case keeps behaviour as before, we should allow undefined here as the api is defined
+      // TODO V4
+      if (typeof result !== `undefined`) {
+        results.push(result)
+      }
+    } catch (e) {
+      augmentErrorWithPlugin(plugin, e)
     }
-    return result
   })
 
-  // Filter out undefined results.
-  results = results.filter(result => typeof result !== `undefined`)
+  return results.length ? results : [defaultReturn]
+}
 
-  if (results.length > 0) {
-    return results
-  } else {
-    return [defaultReturn]
+export async function apiRunnerAsync(api, args, defaultReturn, argTransform) {
+  if (!apis[api]) {
+    console.log(`This API doesn't exist`, api)
   }
+
+  const results = []
+  for (const plugin of plugins) {
+    const apiFn = plugin.plugin[api]
+    if (!apiFn) {
+      continue
+    }
+
+    try {
+      const result = await apiFn(args, plugin.options)
+
+      if (result && argTransform) {
+        args = argTransform({ args, result })
+      }
+
+      // This if case keeps behaviour as before, we should allow undefined here as the api is defined
+      // TODO V4
+      if (typeof result !== `undefined`) {
+        results.push(result)
+      }
+    } catch (e) {
+      augmentErrorWithPlugin(plugin, e)
+    }
+  }
+
+  return results.length ? results : [defaultReturn]
 }

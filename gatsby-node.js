@@ -13,6 +13,7 @@ exports.createPages = async function ({ actions, graphql }) {
               collection
             }
             frontmatter {
+              author
               date(formatString: "MMMM DD, YYYY")
               title
               tags
@@ -34,7 +35,7 @@ exports.createPages = async function ({ actions, graphql }) {
   }
 
   //Create paginated pages for post
-  const postPerPage = 4
+  const postPerPage = 20
   const postEdges = data.allMdx.edges.filter(
     edge => edge.node.fields.collection === "posts"
   )
@@ -42,7 +43,7 @@ exports.createPages = async function ({ actions, graphql }) {
   Array.from({ length: numPages }).forEach((_, i) => {
     actions.createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
-      component: require.resolve("./src/templates/allPosts.js"),
+      component: require.resolve("./src/templates/AllPosts.js"),
       context: {
         limit: postPerPage,
         skip: i * postPerPage,
@@ -61,21 +62,21 @@ exports.createPages = async function ({ actions, graphql }) {
       index === postEdges.length - 1 ? null : postEdges[index + 1].node
     actions.createPage({
       path: slug,
-      component: require.resolve("./src/templates/singlePost.js"),
+      component: require.resolve("./src/templates/SinglePost.js"),
       context: { id, previous, next },
     })
   })
 
   //Create Individual Page
   const pageEdges = data.allMdx.edges.filter(
-    edge => edge.node.fields.collection === "mdxpages"
+    edge => edge.node.fields.collection === "pages"
   )
   pageEdges.forEach(edge => {
     const slug = edge.node.fields.slug
     const id = edge.node.id
     actions.createPage({
       path: slug,
-      component: require.resolve("./src/templates/page.js"),
+      component: require.resolve("./src/templates/SinglePage.js"),
       context: { id },
     })
   })
@@ -86,7 +87,7 @@ exports.createPages = async function ({ actions, graphql }) {
   tags.forEach(tag => {
     actions.createPage({
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: require.resolve("./src/templates/singleTag.js"),
+      component: require.resolve("./src/templates/AllTaggedPosts.js"),
       context: {
         tag: tag.fieldValue,
       },
@@ -114,40 +115,4 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: parentName,
     })
   }
-}
-
-// Register Menus in siteMetaData
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createFieldExtension, createTypes } = actions
-  createFieldExtension({
-    name: `defaultArray`,
-    extend() {
-      return {
-        resolve(source, args, context, info) {
-          if (source[info.fieldName] == null) {
-            return []
-          }
-          return source[info.fieldName]
-        },
-      }
-    },
-  })
-  const typeDefs = `
-    type Site implements Node {
-      siteMetadata: SiteMetadata
-    }
-    type SiteMetadata {
-      menuLinks: [MenuLinks]!
-    }
-    type MenuLinks {
-      name: String!
-      link: String!
-      subMenu: [SubMenu] @defaultArray
-    }
-    type SubMenu {
-      name: String
-      link: String
-    }
-  `
-  createTypes(typeDefs)
 }

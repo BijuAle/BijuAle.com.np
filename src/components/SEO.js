@@ -1,120 +1,60 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
+import { useLocation } from "@reach/router"
+import { useStaticQuery, graphql } from "gatsby"
 
 const query = graphql`
-  query DefaultSEOQuery {
+  query SEO {
     site {
       siteMetadata {
-        title
-        description
-        url
-        image
-        author
+        defaultTitle: title
+        defaultDescription: description
+        siteUrl: url
+        keywords
       }
     }
   }
 `
 
-export const SEO = ({
-  description,
-  lang = `en`,
-  keywords,
-  title,
-  image,
-  url,
-  author,
-}) => {
+export const SEO = ({ title, description, image, article }) => {
+  const { pathname } = useLocation()
+  const { site } = useStaticQuery(query)
+  const {
+    defaultTitle,
+    defaultDescription,
+    siteUrl,
+    defaultImage,
+    twitterUsername,
+    keywords,
+  } = site.siteMetadata
+  const seo = {
+    title: title || defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}${image || defaultImage}`,
+    url: `${siteUrl}${pathname}`,
+    keywords: keywords,
+  }
   return (
-    <StaticQuery
-      query={query}
-      render={data => {
-        const metaDescription =
-          description || data.site.siteMetadata.description
-        const metaTitle = title || data.site.siteMetadata.title
-        const metaAuthor = author || data.site.siteMetadata.author
-        const metaUrl = url || data.site.siteMetadata.url
-        // const metaImage = image || data.site.siteMetadata.image
-        const metaKeywords = keywords || [
-          "Biju Ale",
-          "Ale Biju",
-          "Biju Ale Website",
-          "Biju Ale Blog",
-          "Biju Ale Philosophy",
-          "Biju Ale Research",
-          "Biju Ale Christian",
-          "Biju Ale University",
-          "Biju Ale College",
-          "Biju Ale Writings",
-          "Biju Ale Articles",
-          "Biju Ale Nepal",
-          "Biju Ale Kathmandu",
-          "Biju Ale Ilam",
-          "Biju Ale USA",
-          "Biju Ale Volunteer",
-          "Biju Ale Social",
-          "Biju Blog",
-          "Biju Website",
-          "Biju Gatsby",
-          "Biju",
-          "Ale",
-        ]
-        return (
-          <Helmet
-            htmlAttributes={{
-              lang,
-            }}
-            title={data.site.siteMetadata.title}
-            titleTemplate={`%s`}
-            defer={false}
-            meta={[
-              {
-                name: `title`,
-                content: metaTitle,
-              },
-              {
-                name: `author`,
-                content: metaAuthor,
-              },
-              {
-                name: `description`,
-                content: metaDescription,
-              },
-              {
-                property: `url`,
-                content: metaUrl,
-              },
-              {
-                property: `og:title`,
-                content: metaTitle,
-              },
-              {
-                property: `og:author`,
-                content: metaAuthor,
-              },
-              {
-                property: `og:description`,
-                content: metaDescription,
-              },
-              {
-                property: `og:type`,
-                content: `blog`,
-              },
-              {
-                property: `og:url`,
-                content: metaUrl,
-              },
-            ].concat(
-              metaKeywords && metaKeywords.length > 0
-                ? {
-                    name: `keywords`,
-                    content: metaKeywords.join(`, `),
-                  }
-                : []
-            )}
-          />
-        )
-      }}
-    />
+    <Helmet title={seo.title}>
+      <meta name="keywords" content={seo.keywords} />
+      <meta name="description" content={seo.description} />
+      <meta name="image" content={seo.image} />
+      {seo.url && <meta property="og:url" content={seo.url} />}
+      {(article ? true : null) && <meta property="og:type" content="article" />}
+      {seo.title && <meta property="og:title" content={seo.title} />}
+      {seo.description && (
+        <meta property="og:description" content={seo.description} />
+      )}
+      {seo.image && <meta property="og:image" content={seo.image} />}
+      <meta name="twitter:card" content="summary_large_image" />
+      {twitterUsername && (
+        <meta name="twitter:creator" content={twitterUsername} />
+      )}
+      {seo.title && <meta name="twitter:title" content={seo.title} />}
+      {seo.description && (
+        <meta name="twitter:description" content={seo.description} />
+      )}
+      {seo.image && <meta name="twitter:image" content={seo.image} />}
+    </Helmet>
   )
 }

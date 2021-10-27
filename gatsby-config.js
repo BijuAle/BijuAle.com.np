@@ -2,63 +2,50 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: "Biju's Blog",
-    description: "Welcome to Biju Ale's Blog & Personal Website.",
+    title: "Biju Ale",
+    description: "Biju Ale's Blog & Personal Website.",
     url: "https://bijuale.com.np",
     siteUrl: "https://bijuale.com.np",
     image: "",
     author: "Biju Ale",
-    menuLinks: [
-      {
-        name: "Essays",
-        link: "/tags",
-        subMenu: [],
-      },
-      {
-        name: "Projects",
-        link: "/projects",
-        subMenu: [],
-      },
-      {
-        name: "Educational",
-        link: "/educational",
-        subMenu: [
+    keywords:
+      "Philosophy, Christian, Website, Biju, Ale, Biju Ale, Nepal, USA, Biola, Theology",
+  },
+  plugins: [
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
           {
-            name: `Philosophy`,
-            link: `/educational/philosophy`,
-          },
-          {
-            name: `Mathematics`,
-            link: `/educational/mathematics`,
-          },
-          {
-            name: `Computing`,
-            link: `/educational/computing`,
-          },
-          {
-            name: `General`,
-            link: `/educational/general`,
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              withWebp: true,
+              backgroundColor: `transparent`,
+            },
           },
         ],
       },
-      {
-        name: "Gallery",
-        link: "/gallery",
-        subMenu: [],
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`,
+            },
+          },
+        ],
       },
-      {
-        name: "Contact",
-        link: "/contact",
-        subMenu: [],
-      },
-      {
-        name: "About",
-        link: "/about",
-        subMenu: [],
-      },
-    ],
-  },
-  plugins: [
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -69,11 +56,10 @@ module.exports = {
         background_color: `#1A202C`,
         theme_color: `#1A202C`,
         display: `standalone`,
-        icon: `./src/images/favicon/eagle-head.png`,
+        icon: `./src/images/eagle-head.png`,
         cache_busting_mode: "none",
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -85,7 +71,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/mdxpages`,
       },
     },
     {
@@ -93,170 +79,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `mdxpages`,
-        path: `${__dirname}/src/mdxpages`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `static`,
-        path: `static`,
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extension: [`md`, `mdx`],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1000,
-              quality: 100,
-              linkImagesToOriginal: false,
-              backgroundColor: "transparent",
-            },
-          },
-          `gatsby-remark-slug`,
-          {
-            resolve: `gatsby-remark-highlight-code`,
-            options: {
-              terminal: "carbon",
-              theme: "night-owl",
-              lineNumbers: true,
-            },
-          },
-          {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              strict: `ignore`,
-            },
-          },
-        ],
-      },
-    },
-
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Goudy Bookletter 1911`, `Josefin Slab`],
-        display: "swap",
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-slug`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1000,
-              quality: 100,
-              linkImagesToOriginal: false,
-              backgroundColor: "transparent",
-            },
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {},
-    },
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-122354089-1",
-        head: true,
-      },
-    },
-    `gatsby-plugin-offline`,
-    // `gatsby-plugin-remove-serviceworker`,
-    {
-      resolve: "gatsby-plugin-netlify-cache",
-      options: {
-        cachePublic: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-feed-mdx`,
-      options: {
-        query: `
-            {
-              site {
-                siteMetadata {
-                  title
-                  description
-                  siteUrl
-                  site_url: siteUrl
-                }
-              }
-            }
-          `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMdx } }) => {
-              return allMdx.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
-            },
-            query: `{
-              allMdx {
-                edges {
-                  node {
-                    frontmatter {
-                      date(formatString: "MM DD YYYY")
-                      tags
-                      title
-                    }
-                    excerpt
-                    fields {
-                      slug
-                    }
-                  }
-                }
-              }
-            }`,
-            output: "/rss.xml",
-            title: `a's RSS Feed`,
-            match: "^/pages/",
-          },
-        ],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-remove-generator",
-      options: {
-        removeVersionOnly: true,
-        content: "Biju Ale",
-      },
-    },
-    `gatsby-plugin-catch-links`,
-    {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
-        resourceType: `image`,
-        prefix: `blog/`,
       },
     },
   ],
