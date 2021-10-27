@@ -30,13 +30,13 @@ const singlePost = ({ data, pageContext }) => {
       <div style={{ fontSize: "1.3rem" }}>
         <b>{data.mdx.frontmatter.title}</b>
       </div>
-      <div style={{ marginBottom: "1rem", opacity: "70%" }}>
+      <div style={{ marginBottom: "1rem", opacity: "70%", fontSize: ".95rem" }}>
         <div>
           {data.mdx.frontmatter.author}&nbsp;|&nbsp;{data.mdx.frontmatter.date}
           &nbsp;|&nbsp;
           {data.mdx.frontmatter.tags.map(tag => (
             <span key={tag}>
-              <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+              <Link to={`/tags/${kebabCase(tag)}/`}>{tag}&nbsp;</Link>
             </span>
           ))}
         </div>
