@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-404-js",
-    "path": "/404/",
-    "result": {"data":{"imageSharp":{"gatsbyImageData":{"layout":"constrained","backgroundColor":"#788878","images":{"fallback":{"src":"/static/745ffeb15bd6a59c6893894822d7cc8f/0c76d/middle-earth.png","srcSet":"/static/745ffeb15bd6a59c6893894822d7cc8f/e0274/middle-earth.png 637w,\n/static/745ffeb15bd6a59c6893894822d7cc8f/b23cb/middle-earth.png 1275w,\n/static/745ffeb15bd6a59c6893894822d7cc8f/0c76d/middle-earth.png 2549w","sizes":"(min-width: 2549px) 2549px, 100vw"},"sources":[{"srcSet":"/static/745ffeb15bd6a59c6893894822d7cc8f/6b19b/middle-earth.webp 637w,\n/static/745ffeb15bd6a59c6893894822d7cc8f/27570/middle-earth.webp 1275w,\n/static/745ffeb15bd6a59c6893894822d7cc8f/e40a1/middle-earth.webp 2549w","type":"image/webp","sizes":"(min-width: 2549px) 2549px, 100vw"}]},"width":2549,"height":1856}}},"pageContext":{}},
-    "staticQueryHashes": ["2935582604"]}

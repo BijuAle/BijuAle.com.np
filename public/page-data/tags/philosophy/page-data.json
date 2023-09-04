@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-all-tagged-posts-js",
-    "path": "/tags/philosophy/",
-    "result": {"data":{"allMdx":{"totalCount":4,"edges":[{"node":{"fields":{"slug":"/2021/anselm-proslogium/"},"frontmatter":{"title":"Tension between Divine Justice and Divine Mercy","date":"Oct  27 2021"}}},{"node":{"fields":{"slug":"/2021/nazianzen-oration29/"},"frontmatter":{"title":"Eternal generation of the Son","date":"Oct  27 2021"}}},{"node":{"fields":{"slug":"/2021/pre-socratic-philosophers/"},"frontmatter":{"title":"The Pre-socratic Philosophers","date":"Aug  08 2021"}}},{"node":{"fields":{"slug":"/2020/set-theory/"},"frontmatter":{"title":"Set Theory","date":"Feb  03 2020"}}}]}},"pageContext":{"tag":"Philosophy"}},
-    "staticQueryHashes": ["2935582604"]}

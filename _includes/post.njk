@@ -1,0 +1,13 @@
+---
+layout: base
+---
+<div class="post_header">
+    {% block title %}
+        <h1>{{title}}</h1>
+        <span>{{date | postDate}}</span>
+    {% endblock %}
+</div>
+
+{% block content %}
+    {{content | safe}}
+{% endblock %}

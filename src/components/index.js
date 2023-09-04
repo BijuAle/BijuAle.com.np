@@ -1,7 +1,0 @@
-export * from "./Pagination"
-export * from "./PostListItem"
-export * from "./Layout"
-export * from "./Header"
-export * from "./Footer"
-export * from "./TagList"
-export * from "./SEO"

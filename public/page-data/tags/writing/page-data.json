@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-all-tagged-posts-js",
-    "path": "/tags/writing/",
-    "result": {"data":{"allMdx":{"totalCount":2,"edges":[{"node":{"fields":{"slug":"/2019/art-of-laconic-expression/"},"frontmatter":{"title":"Art Of Laconic Expression","date":"Apr  10 2019"}}},{"node":{"fields":{"slug":"/2018/a-way-with-words/"},"frontmatter":{"title":"A Way With Words","date":"Jul  06 2018"}}}]}},"pageContext":{"tag":"Writing"}},
-    "staticQueryHashes": ["2935582604"]}

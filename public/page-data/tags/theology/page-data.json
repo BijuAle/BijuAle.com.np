@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-all-tagged-posts-js",
-    "path": "/tags/theology/",
-    "result": {"data":{"allMdx":{"totalCount":4,"edges":[{"node":{"fields":{"slug":"/2021/anselm-proslogium/"},"frontmatter":{"title":"Tension between Divine Justice and Divine Mercy","date":"Oct  27 2021"}}},{"node":{"fields":{"slug":"/2021/nazianzen-oration29/"},"frontmatter":{"title":"Eternal generation of the Son","date":"Oct  27 2021"}}},{"node":{"fields":{"slug":"/2018/love-musings/"},"frontmatter":{"title":"Eros in a Postmodern World","date":"Jun  17 2018"}}},{"node":{"fields":{"slug":"/2018/hope-through-bleakness/"},"frontmatter":{"title":"Hope Piercing Through Bleakness","date":"Jun  05 2018"}}}]}},"pageContext":{"tag":"Theology"}},
-    "staticQueryHashes": ["2935582604"]}
