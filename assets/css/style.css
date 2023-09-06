@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     max-width: 700px;
     text-align: center;
-    background-color: rgb(189, 189, 161);
+    background-color: #bdbda1;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     z-index: 1;
     border-bottom: 1px solid grey;
     text-align: center;
-    background-color: rgb(189, 189, 161);
+    background-color: #bdbda1;
 }
 
 #site_heading {
@@ -81,7 +81,7 @@ footer {
     text-align: center;
     border-top: 1px solid grey;
     margin-top: 1rem;
-    background-color: rgb(189, 189, 161);
+    background-color: #bdbda1;
 }
 
 main {
@@ -145,6 +145,10 @@ i {
     font-style: italic;
 }
 
+main a{
+    color:#463eac
+}
+
 main img {
     text-align: center;
     justify-content: center;
@@ -157,6 +161,6 @@ main img {
     color: #dfaaaa;
     margin-bottom: 1.5rem;
     border-radius: 5px;
-    background: rgb(166, 166, 176);
-    background: linear-gradient(270deg, rgba(166, 166, 176, 0.21052170868347342) 0%, rgba(2, 26, 31, 0.8071603641456583) 41%, rgba(6, 30, 41, 1) 63%, rgba(6, 30, 41, 1) 100%, rgba(14, 37, 59, 1) 100%);
+    background: #a6a6b0;
+    background: linear-gradient(270deg, #a6a6b036 0%, #021a1fce 41%, hwb(199 2% 84%) 63%, #061e29 100%, #0e253b 100%);
 }
