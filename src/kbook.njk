@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: My Kindle Notes
+pagination:
+  data: knotes
+  size: 1
+  alias: book
+permalink: "/books/{{ book.bookTitle | slug }}/"
+---
+<h1>{{title}}</h1>
+<div class="kindle-book">
+<h1>{{ book.bookTitle }}</h1>
+<h2>{{ book.author }}</h2>
+</div>
+
+<div class="highlights-grid">
+  {% for highlight in book.highlights %}
+    <div class="highlight-card">
+      <pre>Page:</strong> {{ highlight.page }}; Location: {{ highlight.location }}</pre>
+      <p>{{ highlight.content }}</p>
+      {% if highlight.note %}
+        <div class="note">
+          <p><strong>Note:</strong> {{ highlight.note.content }}</p>
+          <p></p>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+    <style>
+      .highlights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+      .highlight-card { border: 1px solid black; padding: 10px; }
+      .note { margin-top: 10px; padding-top: 10px; border-top: 1px dashed gray; }
+    </style>
+</script>

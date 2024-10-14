@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: My Kindle Notes
+---
+<h1>{{title}}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Book Title</th>
+      <th>Author</th>
+      <th>No. of Highlights</th>
+      <th>Last Highlighted</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for book in knotes %}
+    <tr onclick="window.location='/books/{{ book.bookTitle | slug }}'">
+      <td>{{ book.bookTitle }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.highlights.length }}</td>
+      <td>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
