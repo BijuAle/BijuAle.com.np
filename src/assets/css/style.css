@@ -80,7 +80,8 @@ footer {
   width: 100%;
   text-align: center;
   border-top: 1px solid grey;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 2px;
   background-color: #bdbda1;
 }
 
@@ -213,6 +214,7 @@ select {
   border: 1px solid;
   border-radius: 5px;
 }
+
 button,
 input[type="button"] {
   background: transparent;
@@ -231,5 +233,64 @@ input[type="button"]:hover {
 .pagination {
   float: right;
   margin-bottom: 5px;
-  font-size:small;
+  font-size: small;
+}
+
+[aria-current="page"] {
+  color: black;
+  font-weight: bold;
+}
+
+.vocab-main-word {
+  color: hsla(269, 31%, 28%, 0.808);
+  font-size: 20px;
+}
+
+#vocab-area {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "n c" "s c";
+}
+
+#vocab-select {
+  grid-area: s;
+  height: 300px;
+}
+#vocab-card {
+  grid-area: c;
+  margin-left: 20px;
+}
+#vocab-nav {
+  grid-area: n;
+  margin-bottom: 10px;
+}
+
+.phonetic {
+  font-style: italic;
+  color: #145145;
+}
+.part-of-speech {
+  font-weight: bold;
+  color: #145145;
+  margin-top: 15px;
+}
+.definition {
+  margin-bottom: 10px;
+}
+.example {
+  font-style: italic;
+  color: #145145;
+}
+.synonyms,
+.antonyms {
+  margin-top: 10px;
+}
+.synonyms span,
+.antonyms span {
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-left: 2px;
+  padding: 2px;
 }

@@ -1,0 +1,104 @@
+---
+layout: "layouts/base.njk"
+---
+
+<div id="vocab-area">
+  <select name="vocab-select" id="vocab-select" size="10">
+    {% for w in vocab %}
+    <option value="{{ w.word }}">{{ w.word }}</option>
+    {% endfor %}
+  </select>
+
+  <div id="vocab-nav">
+    <button id="prev-word">&lt; Prev</button>
+    <button id="random-word">Random</button>
+    <button id="next-word">Next &gt;</button>
+  </div>
+
+  <div id="vocab-card"></div>
+</div>
+
+<script id="vocab-data" type="application/json">
+  {{ vocab | dump | safe }}
+</script>
+
+<script>
+  const vocabData = JSON.parse(
+    document.getElementById("vocab-data").textContent
+  );
+  const vocabSelect = document.getElementById("vocab-select");
+  const vocabCard = document.getElementById("vocab-card");
+  const prevButton = document.getElementById("prev-word");
+  const nextButton = document.getElementById("next-word");
+  const randomButton = document.getElementById("random-word");
+
+  function updateCard() {
+    const selectedWord = vocabSelect.value;
+    const wordData = vocabData.find((item) => item.word === selectedWord);
+
+    if (wordData && !wordData.hasOwnProperty("error")) {
+      const details = wordData.details[0];
+      let html = `<h1 class="vocab-main-word">${details.word}</h1>`;
+      if (
+        details.phonetics &&
+        details.phonetics[0] &&
+        details.phonetics[0].text
+      ) {
+        html += `<p class="phonetic">${details.phonetics[0].text}</p>`;
+      }
+
+      details.meanings.forEach((meaning) => {
+        html += `<p class="part-of-speech">${meaning.partOfSpeech}</p>`;
+        meaning.definitions.forEach((def, index) => {
+          html += `<p class="definition">${index + 1}. ${def.definition}</p>`;
+          if (def.example) {
+            html += `<p class="example">Example: ${def.example}</p>`;
+          }
+        });
+
+        if (meaning.synonyms.length > 0) {
+          html +=
+            '<p class="synonyms">Synonyms: ' +
+            meaning.synonyms.map((s) => `<span>${s}</span>`).join(" ") +
+            "</p>";
+        }
+        if (meaning.antonyms.length > 0) {
+          html +=
+            '<p class="antonyms">Antonyms: ' +
+            meaning.antonyms.map((a) => `<span>${a}</span>`).join(" ") +
+            "</p>";
+        }
+      });
+
+      vocabCard.innerHTML = html;
+    } else {
+      vocabCard.innerHTML = "Word details not found.";
+    }
+  }
+
+  vocabSelect.addEventListener("change", updateCard);
+
+  prevButton.addEventListener("click", () => {
+    const currentIndex = vocabSelect.selectedIndex;
+    if (currentIndex > 0) {
+      vocabSelect.selectedIndex = currentIndex - 1;
+      updateCard();
+    }
+  });
+
+  nextButton.addEventListener("click", () => {
+    const currentIndex = vocabSelect.selectedIndex;
+    if (currentIndex < vocabSelect.options.length - 1) {
+      vocabSelect.selectedIndex = currentIndex + 1;
+      updateCard();
+    }
+  });
+
+  randomButton.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * vocabSelect.options.length);
+    vocabSelect.selectedIndex = randomIndex;
+    updateCard();
+  });
+
+  updateCard();
+</script>

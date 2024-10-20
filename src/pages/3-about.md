@@ -1,8 +1,9 @@
 ---
 title: About
+navTitle: About
+eleventyExcludeFromCollections: true
 ---
 
-# ABOUT
 ![I, and my volunteer partner Kristian with our host familis' kids in Dhading]({{ '/assets/images/biju.png' | url }})
 
 My name is _Biju Ale_. I am a John 3:16 Christian. I am interested in Philosophy, Science, and Theology. Welcome to my website, where I try to write about my formative experiences and occasional musings.

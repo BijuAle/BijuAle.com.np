@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Biju Ale | {{ title | default('Biju Ale') }}</title>
-        <link rel="stylesheet" href="{{ '/assets/css/reset.css' | url }}">
-        <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
- 
-    </head>
-    <body>
-        {% include 'header.njk' %}
+    <title>Biju Ale | {{ title | default('Biju Ale') }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/reset.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
+  </head>
+  <body>
+    {% include 'header.njk' %}
 
-        {% block title %}
-            {{title}}
-        {% endblock %}
+    <main>
+    <h1>{{ title }}</h1>
+      {% block content %}
+      {{ content | safe }}
+      {% endblock %}
+    </main>
 
-        <main>
-            {% block content %}
-                {{content | safe}}
-            {% endblock %}
-        </main>
-
-        {% include 'footer.njk' %}
-    </body>
+    {% include 'footer.njk' %}
+  </body>
 </html>

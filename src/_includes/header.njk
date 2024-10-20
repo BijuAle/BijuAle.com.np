@@ -1,20 +1,28 @@
 <header>
+    {% set currentUrl = page.url %}
     <nav>
         <div id="site_heading">
             <a href="/">Biju Ale</a>
         </div>
 
-        <ul>
+        <ul role="list">
             <li>
-                <a href="/">Essays</a>
+              <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
             </li>
+        
+            {% for link in collections.page %}
             <li>
-                <a href="/kindle-notes">Kindle Notes</a>
+              <a
+                {% if currentUrl === link.url %}aria-current="page"{% endif %}
+                href="{{ link.url }}">
+                  {{ link.data.navTitle }}
+              </a>
             </li>
+            {%- endfor %}
             <li>
-                <a href="/about">About</a>
+              <a {% if currentUrl === '/about' %}aria-current="page"{% endif %} href="/">About</a>
             </li>
-        </ul>
+          </ul>
     </nav>
 
     <div  id="site_subheading">And you shall know the truth, 
