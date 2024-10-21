@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
 <div id="controls">
-  <input type="text" id="searchInput" placeholder="Search...">
+  <input type="text" id="searchInput" placeholder="Search..." />
   <select id="filterType">
     <option value="all">All</option>
     <option value="note">Notes</option>
@@ -34,7 +34,10 @@ layout: layouts/base.njk
   </thead>
   <tbody>
     {% for book in knotes %}
-    <tr data-book="{{ book | dump | escape }}" onclick="window.location='/books/{{ book.bookTitle | slug }}'">
+    <tr
+      data-book="{{ book | dump | escape }}"
+      onclick="window.location='/books/{{ book.bookTitle | slug }}'"
+    >
       <td>{{ book.bookTitle }}</td>
       <td>{{ book.author }}</td>
       <td>{{ book.highlights.length }}</td>
@@ -45,21 +48,25 @@ layout: layouts/base.njk
 </table>
 
 <script>
-  const searchInput = document.getElementById('searchInput');
-  const filterType = document.getElementById('filterType');
-  const sortBy = document.getElementById('sortBy');
-  const table = document.getElementById('booksTable');
-  const rows = Array.from(table.querySelectorAll('tbody tr'));
-  const prevPageBtn = document.getElementById('prevPage');
-  const nextPageBtn = document.getElementById('nextPage');
-  const pageInfo = document.getElementById('pageInfo');
+  const searchInput = document.getElementById("searchInput");
+  const filterType = document.getElementById("filterType");
+  const sortBy = document.getElementById("sortBy");
+  const table = document.getElementById("booksTable");
+  const rows = Array.from(table.querySelectorAll("tbody tr"));
+  const prevPageBtn = document.getElementById("prevPage");
+  const nextPageBtn = document.getElementById("nextPage");
+  const pageInfo = document.getElementById("pageInfo");
 
   let currentPage = 1;
   const rowsPerPage = 20;
 
   function formatDate(dateString) {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
   }
 
   function filterAndSortTable() {
@@ -67,29 +74,32 @@ layout: layouts/base.njk
     const filterValue = filterType.value;
     const sortValue = sortBy.value;
 
-    const filteredRows = rows.filter(row => {
+    const filteredRows = rows.filter((row) => {
       const book = JSON.parse(row.dataset.book);
-      const matchesSearch = Object.values(book).some(value => 
+      const matchesSearch = Object.values(book).some((value) =>
         String(value).toLowerCase().includes(searchTerm)
       );
-      const matchesFilter = filterValue === 'all' || 
-        book.highlights.some(h => h.type === filterValue);
+      const matchesFilter =
+        filterValue === "all" ||
+        book.highlights.some((h) => h.type === filterValue);
       return matchesSearch && matchesFilter;
     });
 
     filteredRows.sort((a, b) => {
       const bookA = JSON.parse(a.dataset.book);
       const bookB = JSON.parse(b.dataset.book);
-      switch(sortValue) {
-        case 'title':
+      switch (sortValue) {
+        case "title":
           return bookA.bookTitle.localeCompare(bookB.bookTitle);
-        case 'author':
+        case "author":
           return bookA.author.localeCompare(bookB.author);
-        case 'highlights':
+        case "highlights":
           return bookB.highlights.length - bookA.highlights.length;
-        case 'lastHighlighted':
-          return new Date(bookB.highlights[bookB.highlights.length - 1].dateAdded) - 
-                 new Date(bookA.highlights[bookA.highlights.length - 1].dateAdded);
+        case "lastHighlighted":
+          return (
+            new Date(bookB.highlights[bookB.highlights.length - 1].dateAdded) -
+            new Date(bookA.highlights[bookA.highlights.length - 1].dateAdded)
+          );
       }
     });
 
@@ -101,11 +111,13 @@ layout: layouts/base.njk
     const endIndex = startIndex + rowsPerPage;
     const displayedRows = filteredRows.slice(startIndex, endIndex);
 
-    const tbody = table.querySelector('tbody');
-    tbody.innerHTML = '';
-    displayedRows.forEach(row => {
+    const tbody = table.querySelector("tbody");
+    tbody.innerHTML = "";
+    displayedRows.forEach((row) => {
       const book = JSON.parse(row.dataset.book);
-      row.cells[3].textContent = formatDate(book.highlights[book.highlights.length - 1].dateAdded);
+      row.cells[3].textContent = formatDate(
+        book.highlights[book.highlights.length - 1].dateAdded
+      );
       tbody.appendChild(row);
     });
 
@@ -124,24 +136,24 @@ layout: layouts/base.njk
     displayTable(filteredRows);
   }
 
-  searchInput.addEventListener('input', () => {
+  searchInput.addEventListener("input", () => {
     currentPage = 1;
     updateTable();
   });
-  filterType.addEventListener('change', () => {
+  filterType.addEventListener("change", () => {
     currentPage = 1;
     updateTable();
   });
-  sortBy.addEventListener('change', updateTable);
+  sortBy.addEventListener("change", updateTable);
 
-  prevPageBtn.addEventListener('click', () => {
+  prevPageBtn.addEventListener("click", () => {
     if (currentPage > 1) {
       currentPage--;
       updateTable();
     }
   });
 
-  nextPageBtn.addEventListener('click', () => {
+  nextPageBtn.addEventListener("click", () => {
     const filteredRows = filterAndSortTable();
     const totalPages = Math.ceil(filteredRows.length / rowsPerPage);
     if (currentPage < totalPages) {
@@ -151,9 +163,11 @@ layout: layouts/base.njk
   });
 
   // Initial table setup and date formatting
-  rows.forEach(row => {
+  rows.forEach((row) => {
     const book = JSON.parse(row.dataset.book);
-    row.cells[3].textContent = formatDate(book.highlights[book.highlights.length - 1].dateAdded);
+    row.cells[3].textContent = formatDate(
+      book.highlights[book.highlights.length - 1].dateAdded
+    );
   });
   updateTable();
 </script>

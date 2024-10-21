@@ -72,7 +72,7 @@ layout: "layouts/base.njk"
 
       vocabCard.innerHTML = html;
     } else {
-      vocabCard.innerHTML = "Word details not found.";
+      vocabCard.innerHTML = `<h1 class="vocab-main-word">${selectedWord}</h1>`;
     }
   }
 

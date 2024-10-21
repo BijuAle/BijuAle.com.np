@@ -1,14 +1,38 @@
 ---
 layout: layouts/base.njk
 title: Essays
+pagination:
+  size: 20
+  data: collections.post
+  alias: posts
+  reverse: true
 ---
-<ul>
-  {% for post in collections.post |reverse %}
 
+<div>
+  <ul>
+    {% for post in pagination.items %}
     <li>
-        &#10032;<a href={{post.url}}>
-            {{ post.data.title }}</a>
-          <span class="date">{{post.date|formatted}}</span>
-        </li>
-        {% endfor %}
-</ul>
+      &#10032;<a href="{{ post.url }}"> {{ post.data.title }}</a>
+      <span class="date">{{ post.date | formatted }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="post-pagination">
+  <a href="{{ pagination.href.previous }}"><button>Previous</button></a>{%- for
+  pageEntry in pagination.pages %}
+  <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
+  {%- endfor %} <a href="{{ pagination.href.next }}"><button>Next</button></a>
+</div>
+
+<!-- <div class="pagination">
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"
+    ><button>Previous</button></a
+  >{% endif %} {%- for pageEntry in pagination.pages %}
+  <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
+  {%- endfor %} {% if pagination.href.next %}<a
+    href="{{ pagination.href.next }}"
+    ><button>Next</button></a
+  >{% endif %}
+</div> -->

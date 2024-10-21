@@ -136,7 +136,9 @@ p {
 strong {
   font-weight: bold;
 }
-
+em{
+  font-style: italic;
+}
 i {
   font-style: italic;
 }
@@ -155,6 +157,7 @@ main img {
 .kindle-book {
   padding: 5px;
   color: #dfaaaa;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
   background: #a6a6b0;
@@ -214,6 +217,17 @@ select {
   border: 1px solid;
   border-radius: 5px;
 }
+select::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+select::-webkit-scrollbar-track {
+  background: transparent; 
+}
+select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
 
 button,
 input[type="button"] {
@@ -226,6 +240,10 @@ button,
 input[type="button"]:hover {
   cursor: pointer;
 }
+button:hover {
+  background-color: #009879;
+  color: hsla(156, 38%, 84%, 0.875);
+}
 ::placeholder {
   color: black;
   opacity: 1;
@@ -234,6 +252,11 @@ input[type="button"]:hover {
   float: right;
   margin-bottom: 5px;
   font-size: small;
+}
+
+.post-pagination{
+  max-width: fit-content;
+  margin: 20px auto;
 }
 
 [aria-current="page"] {
