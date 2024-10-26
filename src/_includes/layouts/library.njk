@@ -1,0 +1,267 @@
+{% extends 'layouts/base.njk' %} {% block content %}
+{{ content | safe }}
+
+<div id="toc-container">
+  <h2>Table of Book Categories</h2>
+
+  <!-- Checkbox to toggle visibility of headings with 0 books -->
+  <label class="checkbox" style="font-size: small;">
+    <input type="checkbox" id="toggle-zero-books">
+    <span>Toggle 0 Count</span>
+  </label>
+
+  <div
+    id="toc"
+    style="
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      font-size: small;
+    "
+  ></div>
+</div>
+
+<div id="container"></div>
+
+<!-- DDC headings JSON -->
+<script id="ddc-data" type="application/json">
+  {{ ddc_headings | dump | safe }}
+</script>
+
+<!-- Books JSON -->
+<script id="books-data" type="application/json">
+  {{ l | dump | safe }}
+</script>
+
+<style>
+  .highlight {
+    background-color: #649ab5; /* Change this color to your preference */
+    transition: background-color 0.5s ease; /* Transition for smoothness */
+  }
+
+  #back-to-toc {
+    position: fixed;
+    right: 200px; /* Distance from the right side */
+    bottom: 20px; /* Distance from the bottom */
+    display: none; /* Initially hidden */
+    padding: 10px 15px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+
+  #back-to-toc:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+
+  /* Styles for TOC */
+  .toc-section {
+    border-bottom: 2px solid grey; /* Bottom border for separation */
+    padding-bottom: 5px;
+    margin-bottom: 10px; /* Space between sections */
+  }
+
+  /* Styles for greyed out TOC entries */
+  .disabled {
+    color: grey; /* Grey out the text */
+  }
+</style>
+
+<button id="back-to-toc">&#8593; Back to TOC</button>
+
+<script>
+  const tocContainer = document.getElementById("toc");
+  const container = document.getElementById("container");
+  const ddcCategories = JSON.parse(
+    document.getElementById("ddc-data").textContent
+  );
+  const booksData = JSON.parse(
+    document.getElementById("books-data").textContent
+  );
+
+  const stickyMenuOffset = 100; // Reduced offset to account for the sticky menu
+
+  // Initialize book lists for each DDC category
+  const bookLists = {};
+  for (const ddcId in ddcCategories) {
+    bookLists[ddcId] = [];
+  }
+
+  // Categorize books based on DDC codes
+  Object.values(booksData).forEach((book) => {
+    const bookDdcCode = book.ddc?.code?.[0];
+    if (bookDdcCode) {
+      const mainDdcClass = bookDdcCode.split(".")[0].slice(0, 2); // Get first two digits of DDC
+
+      // Assign books to DDC headings by pattern
+      for (const ddcId in ddcCategories) {
+        if (ddcId.startsWith(mainDdcClass)) {
+          bookLists[ddcId].push({
+            title: book.title,
+            author: book.primaryauthor || "Unknown Author",
+            date: book.date || "Unknown Date",
+            formatted: `${book.title} by ${
+              book.primaryauthor || "Unknown Author"
+            } (${book.date || "Unknown Date"})`,
+          });
+          break;
+        }
+      }
+    }
+  });
+
+  // Render TOC links and book sections with counts
+  const tocLinks = [];
+  for (const [ddcId, ddcWording] of Object.entries(ddcCategories)) {
+    const sectionId = `section-${ddcId}`;
+
+    // Create TOC link
+    const tocLink = document.createElement("a");
+    tocLink.href = `#${sectionId}`;
+    tocLink.textContent = `${ddcId} – ${ddcWording}`;
+    tocLink.classList.add("toc-link"); // Add class for styling or future use
+    tocLinks.push({ link: tocLink, id: sectionId, count: 0 });
+
+    // Create a span for the book count
+    const bookCount = bookLists[ddcId].length;
+    const countSpan = document.createElement("span");
+    countSpan.textContent = `(${bookCount})`; // Display the count
+    countSpan.style.float = "right"; // Float it to the right
+    countSpan.style.color = "grey"; // Set the color to grey
+    countSpan.style.marginLeft = "10px"; // Add some spacing
+
+    // Append the span to the TOC link
+    tocLink.appendChild(countSpan);
+
+    // Create DDC section heading with book count
+    const heading = document.createElement("h1");
+    heading.id = sectionId;
+    const bookCountSpan = document.createElement("span");
+    bookCountSpan.textContent = `(${bookCount})`;
+    bookCountSpan.style.float = "right";
+    bookCountSpan.style.color = "grey";
+    heading.textContent = `${ddcId} – ${ddcWording} `;
+    heading.appendChild(bookCountSpan);
+    heading.classList.add("toc-section"); // Add class for styling or future use
+    container.appendChild(heading);
+
+    // Create list for books under the heading
+    const bookList = document.createElement("ol"); // Changed from <ul> to <ol>
+    if (bookCount > 0) {
+      bookLists[ddcId].forEach((bookItem) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = bookItem.formatted;
+        bookList.appendChild(listItem);
+      });
+    } else {
+      const noBooksMessage = document.createElement("li");
+      noBooksMessage.textContent = "No books available under this category.";
+      bookList.appendChild(noBooksMessage);
+    }
+    container.appendChild(bookList);
+
+    // Update the count in the TOC links array
+    tocLinks[tocLinks.length - 1].count = bookCount;
+  }
+
+  // Function to update visibility based on toggle state
+  function updateVisibility() {
+    const showZeroBooks = document.getElementById("toggle-zero-books").checked;
+
+    tocLinks.forEach(({ link, id, count }) => {
+      const sectionHeading = document.getElementById(id);
+      const bookList = sectionHeading.nextElementSibling; // Get the <ol> that follows the heading
+
+      if (count === 0 && !showZeroBooks) {
+        link.classList.add("disabled"); // Grey out TOC entry
+        sectionHeading.style.display = "none"; // Hide section heading
+        bookList.style.display = "none"; // Hide corresponding book list
+      } else {
+        link.classList.remove("disabled"); // Restore normal TOC entry
+        sectionHeading.style.display = "block"; // Show section heading
+        bookList.style.display = "block"; // Show corresponding book list
+      }
+    });
+  }
+
+  // Initial visibility update
+  updateVisibility();
+
+  // Add event listener to toggle checkbox
+  document
+    .getElementById("toggle-zero-books")
+    .addEventListener("change", updateVisibility);
+
+  // Split TOC links across columns
+  const numColumns = 2;
+  const itemsPerColumn = Math.ceil(tocLinks.length / numColumns);
+  for (let i = 0; i < numColumns; i++) {
+    const column = document.createElement("div");
+    column.style.display = "flex";
+    column.style.flexDirection = "column";
+    tocLinks
+      .slice(i * itemsPerColumn, (i + 1) * itemsPerColumn)
+      .forEach(({ link }) => {
+        column.appendChild(link);
+      });
+    tocContainer.appendChild(column);
+  }
+
+  // Add scroll offset for headings when TOC links are clicked
+  document.querySelectorAll(".toc-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href").slice(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const targetPosition =
+          targetElement.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: targetPosition - stickyMenuOffset,
+          behavior: "smooth",
+        });
+
+        // Highlight the section
+        highlightSection(targetElement);
+      }
+    });
+  });
+
+  // Function to highlight section
+  function highlightSection(targetElement) {
+    const heading = targetElement; // The heading
+    const list = targetElement.nextElementSibling; // The following ol element
+
+    // Add highlight class to both heading and list
+    heading.classList.add("highlight");
+    list.classList.add("highlight");
+
+    // Remove highlight class after 2 seconds
+    setTimeout(() => {
+      heading.classList.remove("highlight");
+      list.classList.remove("highlight");
+    }, 2000); // Adjust duration as needed
+  }
+
+  // Show "Back to TOC" button when scrolling past TOC
+  const backToTocButton = document.getElementById("back-to-toc");
+  const tocOffset = tocContainer.offsetTop + tocContainer.offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > tocOffset) {
+      backToTocButton.style.display = "block"; // Show button
+    } else {
+      backToTocButton.style.display = "none"; // Hide button
+    }
+  });
+
+  // Add event listener to scroll back to TOC
+  backToTocButton.addEventListener("click", () => {
+    window.scrollTo({ top: tocOffset - 900, behavior: "smooth" });
+  });
+</script>
+{% endblock %}
