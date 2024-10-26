@@ -10,22 +10,48 @@
               <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
             </li>
         
-            {% for link in collections.page %}
             <li>
-              <a
-                {% if currentUrl === link.url %}aria-current="page"{% endif %}
-                href="{{ link.url }}">
-                  {{ link.data.navTitle }}
-              </a>
+              <a {% if currentUrl === '/kindle-clippings/' %}aria-current="page"{% endif %} href="/kindle-clippings">Kindle Clippings</a>
             </li>
-            {%- endfor %}
             <li>
-              <a {% if currentUrl === '/about' %}aria-current="page"{% endif %} href="/3-about">About</a>
+              <a {% if currentUrl === '/vocab/' %}aria-current="page"{% endif %} href="/vocab">Vocab</a>
+            </li>
+            <li>
+              <a {% if currentUrl === '/library/' %}aria-current="page"{% endif %} href="/library">Library</a>
+            </li>
+            <li>
+              <a {% if currentUrl === '#' %}aria-current="page"{% endif %} href="#">Digital Alchemy</a>
+              <ul class="submenu">
+                <li>
+                  <a {% if currentUrl === '/latex/' %}aria-current="page"{% endif %} href="/latex">LaTeX</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/git/' %}aria-current="page"{% endif %} href="/git">Git</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/pdf/' %}aria-current="page"{% endif %} href="/pdf">PDF</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/windows/' %}aria-current="page"{% endif %} href="/windows">Windows</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/ydl/' %}aria-current="page"{% endif %} href="/ydl">Y-DL</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/flac/' %}aria-current="page"{% endif %} href="/flac">FLAC</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/melange/' %}aria-current="page"{% endif %} href="/melange">Melange</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a {% if currentUrl === '/about/' %}aria-current="page"{% endif %} href="/about">About</a>
             </li>
           </ul>
     </nav>
 
     <div  id="site_subheading">And you shall know the truth, 
-    <br>& the truth shall make you free.</br> &mdash;<span>John 8:32</span> 
+    <br>& the truth shall set you free.</br> &mdash;<span>John 8:32</span> 
     </div>
 </header>

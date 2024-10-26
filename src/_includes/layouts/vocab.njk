@@ -1,6 +1,6 @@
----
-layout: "layouts/base.njk"
----
+{% extends 'layouts/base.njk' %} {% block content %}
+
+{{ content | safe }}
 
 <div id="vocab-area">
   <select name="vocab-select" id="vocab-select" size="10">
@@ -9,10 +9,25 @@ layout: "layouts/base.njk"
     {% endfor %}
   </select>
 
-  <div id="vocab-nav">
+  <div id="vocab-nav" style="text-align: center">
     <button id="prev-word">&lt; Prev</button>
     <button id="random-word">Random</button>
     <button id="next-word">Next &gt;</button>
+    <div style="margin-top: 0.5rem">
+      <input size="15" type="text" id="word-search" placeholder="Search word" />
+      <button
+        id="btn-asc"
+        onclick="sortSelectOptions('vocab-select', 'ascending')"
+      >
+        &#x2191;AZ
+      </button>
+      <button
+        id="btn-desc"
+        onclick="sortSelectOptions('vocab-select', 'descending')"
+      >
+        &#x2193;ZA
+      </button>
+    </div>
   </div>
 
   <div id="vocab-card"></div>
@@ -31,6 +46,7 @@ layout: "layouts/base.njk"
   const prevButton = document.getElementById("prev-word");
   const nextButton = document.getElementById("next-word");
   const randomButton = document.getElementById("random-word");
+  const searchInput = document.getElementById("word-search");
 
   function updateCard() {
     const selectedWord = vocabSelect.value;
@@ -100,5 +116,43 @@ layout: "layouts/base.njk"
     updateCard();
   });
 
+  searchInput.addEventListener("input", () => {
+    let searchTerm = searchInput.value.toLowerCase();
+    for (let i = 0; i < vocabSelect.options.length; i++) {
+      const optionText = vocabSelect.options[i].text.toLowerCase();
+      if (optionText.includes(searchTerm)) {
+        vocabSelect.selectedIndex = i;
+        break;
+      }
+    }
+  });
+
+  function randomizeSelectOptions(selectId) {
+    const select = document.getElementById(selectId);
+    const optionsArray = Array.from(select.options);
+    const shuffledOptions = optionsArray.sort(() => Math.random() - 0.5);
+    select.innerHTML = "";
+    shuffledOptions.forEach((option) => {
+      select.appendChild(option);
+    });
+  }
+
+  function sortSelectOptions(selectId, order = "ascending") {
+    const select = document.getElementById(selectId);
+    const optionsArray = Array.from(select.options);
+    optionsArray.sort((a, b) => {
+      if (order === "ascending") {
+        return a.text.toLowerCase().localeCompare(b.text.toLowerCase());
+      } else if (order === "descending") {
+        return b.text.toLowerCase().localeCompare(a.text.toLowerCase());
+      }
+    });
+    select.innerHTML = "";
+    optionsArray.forEach((option) => {
+      select.appendChild(option);
+    });
+  }
+
   updateCard();
 </script>
+{% endblock %}

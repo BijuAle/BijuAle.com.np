@@ -7,9 +7,9 @@ tags: ["Writing"]
 
 # Lexis: Building language
 
-"There lies a great difference between an almost right word & the right word – just as between a lightning bug & a lightning", quipped the noted American author, Samuel Clemens known popularly as Mark Twain. Twain reminded us that to master vocabulary is beyond the possession of an ever-expanding mental lexicon. It is the ability to use words precisely in its purposeful context.
+“There lies a great difference between an almost right word and the right word—much like the distinction between a lightning bug and lightning,” quipped the renowned American author Samuel Clemens, better known as Mark Twain. Twain reminds us that mastering vocabulary involves more than just having an ever-expanding mental lexicon; it requires the precise use of words in their intended context.
 
-Effective employment of vocabulary, with logical adequacy in propositions, helps us to effectively reason, communicate, & connect with important people in our lives. Wouldn't we want to share our musings & sentiments precisely & comprehensively with our loved ones? In this article, I shall share with you a few insights I've garnered during my quest for paving my way with words.
+The effective use of vocabulary, combined with logical clarity in our propositions, enables us to reason, communicate, and connect meaningfully with the important people in our lives. Wouldn’t we want to express our thoughts and feelings accurately and comprehensively to our loved ones? In this article, I will share some insights I’ve gathered in my journey toward finding the right words.
 
 # Progressive Learning
 

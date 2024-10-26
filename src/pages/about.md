@@ -1,7 +1,5 @@
 ---
 title: About
-navTitle: About
-eleventyExcludeFromCollections: true
 ---
 
 ![I, and my volunteer partner Kristian with our host familis' kids in Dhading]({{ '/assets/images/biju.png' | url }})
@@ -25,8 +23,18 @@ Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnep
 </details>
 <hr>
 
-# CONTACT
+# Contact
 
 Have you any feedback or enquiry, I would love to hear from you. Email address: <a href="mailto:bijuale@aol.com" target="_blank"    rel="noopener noreferrer"> bijuale[at]aol[dot]com</a>
 
 ![Contact]({{ '/assets/images/contact.png' | url }})
+
+# Donate
+
+Consider a small gift money if you appreciate my posts.
+
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="M6UYLSALRKX5W" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_NP/i/scr/pixel.gif" width="1" height="1" />
+</form>

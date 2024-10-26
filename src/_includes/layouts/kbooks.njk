@@ -1,6 +1,7 @@
----
-layout: layouts/base.njk
----
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+{{ content | safe }}
 
 <div id="controls">
   <input type="text" id="searchInput" placeholder="Search..." />
@@ -171,3 +172,4 @@ layout: layouts/base.njk
   });
   updateTable();
 </script>
+{% endblock %}
