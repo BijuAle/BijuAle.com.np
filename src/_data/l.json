@@ -1,0 +1,1598 @@
+{
+  "247607163": {
+    "books_id": "247607163",
+    "title": "Philosophical Foundations for a Christian Worldview",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Moreland, J. P.",
+    "primaryauthorrole": "Author",
+    "secondaryauthor": "Craig, William Lane",
+    "secondaryauthorroles": "Author",
+    "authors": [
+      {
+        "lf": "Moreland, J. P.",
+        "fl": "J. P. Moreland",
+        "role": "Author"
+      },
+      {
+        "lf": "Craig, William Lane",
+        "fl": "William Lane Craig",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0830826947",
+    "isbn": {
+      "0": "0830826947",
+      "2": "9780830826940"
+    },
+    "asin": "0830826947",
+    "ean": ["0884649074574"],
+    "upc": ["884649074574"],
+    "publication": "IVP Academic (2003), Edition: unknown, 672 pages",
+    "date": "2003",
+    "summary": "Philosophical Foundations for a Christian Worldview by J. P. Moreland (2003)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["261.51"],
+      "wording": [
+        "Christian church and church work",
+        "Christianity and secular disciplines",
+        "Church and the world; Social theology and interreligious relations and attitudes",
+        "Philosophy And Psychology",
+        "Religions"
+      ]
+    },
+    "lcc": {
+      "code": "BR100 .M68"
+    },
+    "subject": [["Christianity", "Philosophy"]],
+    "awards": ["Christian Book Award"],
+    "genre": ["Nonfiction", "Philosophy", "Religion & Spirituality"],
+    "genre_id": ["20275895", "66879", "1944"],
+    "source": "amazon.com books",
+    "workcode": "56349",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.2",
+        "text": "Hardcover"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "672 p.; 10 inches",
+    "height": "10 inches",
+    "thickness": "1.8 inches",
+    "length": "7 inches",
+    "dimensions": "10 x 7 x 1.8 inches",
+    "weight": "1.46827866492 pounds",
+    "pages": "672 "
+  },
+  "247607251": {
+    "books_id": "247607251",
+    "title": "The Book of Man: Quest to Discover Our Genetic Heritage",
+    "sortcharacter": "5",
+    "public": "true",
+    "primaryauthor": "Bodmer, Robin Mckie W. f.",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Bodmer, Robin Mckie W. f.",
+        "fl": "Robin Mckie W. f. Bodmer",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0349106207",
+    "isbn": {
+      "0": "0349106207",
+      "2": "9780349106205"
+    },
+    "asin": "0349106207",
+    "ean": ["0349106207"],
+    "publication": "ABACUS (1995), Edition: New Ed, 288 pages",
+    "date": "1995",
+    "summary": "The Book of Man: Quest to Discover Our Genetic Heritage by Robin Mckie W. f. Bodmer (1995)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["573.21"],
+      "wording": [
+        "Life Sciences, Biology",
+        "Natural sciences and mathematics",
+        "Origin of man",
+        "Physiological systems in animals"
+      ]
+    },
+    "lcc": {
+      "code": "QH445.2 .B63"
+    },
+    "subject": [
+      ["Human Genome Project"],
+      ["Human gene mapping", "Popular works"],
+      ["Human genetics", "Popular works"]
+    ],
+    "awards": ["Royal Society Trivedi Science Book Prize"],
+    "genre": [
+      "Nonfiction",
+      "Anthropology",
+      "General Nonfiction",
+      "History",
+      "Science & Nature"
+    ],
+    "genre_id": ["20275895", "5022", "1247", "1599", "1457"],
+    "source": "amazon.com books",
+    "workcode": "553926",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1"
+  },
+  "247607264": {
+    "books_id": "247607264",
+    "title": "I Know Why The Caged Bird Sings (VMC Designer Collection)",
+    "sortcharacter": "3",
+    "public": "true",
+    "primaryauthor": "Angelou, Maya",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Angelou, Maya",
+        "fl": "Maya Angelou",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "9780860685111",
+    "isbn": ["9780860685111", "086068511X"],
+    "asin": "086068511X",
+    "ean": ["086068511X"],
+    "publication": "HACHETTE INDIA (1993), Edition: New Ed, 320 pages",
+    "date": "1993",
+    "summary": "I Know Why The Caged Bird Sings (VMC Designer Collection) by Maya Angelou (1993)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["811"],
+      "wording": ["American poetry", "English (North America)", "Literature"]
+    },
+    "lcc": {
+      "code": "PS3551.N464"
+    },
+    "source": "amazon.com books",
+    "workcode": "2407975",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "320 p.; 7.72 inches",
+    "height": "7.71652 inches",
+    "thickness": "1.02362 inches",
+    "length": "5.03936 inches",
+    "dimensions": "7.71652 x 5.03936 x 1.02362 inches",
+    "weight": "0.220462262 pounds",
+    "pages": "320 "
+  },
+  "247607277": {
+    "books_id": "247607277",
+    "title": "The Trial (Penguin Modern Classics)",
+    "sortcharacter": "5",
+    "public": "true",
+    "primaryauthor": "Kafka, Franz",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Kafka, Franz",
+        "fl": "Franz Kafka",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0141182903",
+    "isbn": {
+      "0": "0141182903",
+      "2": "9780141182902"
+    },
+    "asin": "0141182903",
+    "ean": ["0141182903"],
+    "publication": "Penguin Classic (2000), Edition: New Ed, 208 pages",
+    "date": "2000",
+    "summary": "The Trial (Penguin Modern Classics) by Franz Kafka (2000)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["833.912"],
+      "wording": [
+        "1900-",
+        "1900-1945",
+        "1900-1990",
+        "German and related languages",
+        "German fiction",
+        "Literature"
+      ]
+    },
+    "lcc": {
+      "code": "PT2621.A26 P713"
+    },
+    "subject": {
+      "0": ["Allegories"],
+      "2": ["Publishers' advertisements"],
+      "3": ["Trials", "Fiction"]
+    },
+    "originaltitle": "Der Prozess",
+    "awards": [
+      "100 German must-reads by Deutsche Welle",
+      "100 best books according to Dystopia",
+      "100 novels according to the editors of \"NG-Ex libris\"",
+      "1000 Books to Read Before You Die",
+      "1001 Books You Must Read Before You Die",
+      "1001 boeken die je gelezen moet hebben!",
+      "1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
+      "20 German Novels You Must Read",
+      "40 best books to read before you die",
+      "500 Must Read Books",
+      "501 Must-Read Books (Emma Beare, 2006)",
+      "ABA Journal 25 Greatest Law Novels Ever",
+      "Around the world in 80 books",
+      "Best German Novels of the Twentieth Century",
+      "Best Works of Literature by Piero Scaruffi",
+      "Boston Public Library's 100 Most Influential Books of the Century",
+      "B\u00fccher des Jahrhunderts",
+      "Canon de la narrativa universal del siglo XX",
+      "Christianity Today's Books of the Century",
+      "Daily Telegraph's 100 Books of the Century, 1900-1999",
+      "Daniel S. Burt's Novel 100",
+      "Das Kanonspiel - Ergebnisse",
+      "Der Kanon - Marcel Reich-Ranicki Liste in \"Der Spiegel\"",
+      "Der Kanon: Romane",
+      "Die Romane des Jahrhunderts",
+      "Genome of the Russian soul",
+      "Greatest Books algorithm",
+      "Harenberg Buch der 1000 B\u00fccher",
+      "Horror: The 100 Best Books",
+      "I Migliori Libri del '900",
+      "Las joyas del milenio",
+      "Le Monde's 100 Books of the Century",
+      "Los Angeles Times Best Books of the Year",
+      "Norwegian Book Clubs' top 100 books of all time",
+      "Os 100 melhores romances do s\u00e9culo XX segundo a Folha de S\u00e3o Paulo",
+      "Robert McCrum's top 10 books of the twentieth century",
+      "SWR-Bestenliste",
+      "Sturm and Drang: 20 German Classics You Should Read Right Now",
+      "The 100 Most Influential Books Ever Written: The History of Thought from Ancient Times to Today",
+      "The 50 Most Essential Works Of Jewish Fiction Of The Last 100 Years",
+      "The Greatest 20th Century Novels",
+      "The Guardian 1000 Novels Everyone Must Read",
+      "The New Lifetime Reading Plan With Going Further",
+      "The Observer's 100 Greatest Novels of All Time",
+      "The Telegraph's 100 novels everyone should read",
+      "The Top Ten: Writers Pick Their Favorite Books",
+      "The top 10 allegories in fiction",
+      "V\u00e4rldsbiblioteket",
+      "Waterstones Books of the Century",
+      "Western World's Greatest Books - Project Gutenberg",
+      "ZEIT-Sch\u00fclerbibliothek",
+      "occamsrazorlibrary-award",
+      "\u00c5rhundrets bibliotek",
+      "\u0421\u0430\u043c\u044b\u0435 \u0447\u0438\u0442\u0430\u0435\u043c\u044b\u0435 \u043a\u043d\u0438\u0433\u0438 \u043d\u0430 LiveLib"
+    ],
+    "genre": ["Fiction", "General Fiction"],
+    "genre_id": ["17160326", "2"],
+    "source": "amazon.com books",
+    "workcode": "2152",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "208 p.; 7.75 inches",
+    "height": "7.75 inches",
+    "thickness": "0.49 inches",
+    "length": "5.05 inches",
+    "dimensions": "7.75 x 5.05 x 0.49 inches",
+    "weight": "0.34612575134 pounds",
+    "pages": "208 "
+  },
+  "247628486": {
+    "books_id": "247628486",
+    "title": "Mind Wars: The Battle for Your Brain",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "McFadyen, Ian",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "McFadyen, Ian",
+        "fl": "Ian McFadyen",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0198603703",
+    "isbn": {
+      "0": "0198603703",
+      "2": "9780198603702"
+    },
+    "asin": "186508316X",
+    "ean": ["186508316X"],
+    "publication": "Allen & Unwin (2001), 232 pages",
+    "date": "2001",
+    "summary": "Mind Wars: The Battle for Your Brain by Ian McFadyen (2001)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["155.7"],
+      "wording": [
+        "Developmental And Differential Psychology",
+        "Evolutionary Psychology",
+        "Philosophy and Psychology",
+        "Psychology"
+      ]
+    },
+    "lcc": {
+      "code": "BF701 .M38"
+    },
+    "source": "amazon.com books",
+    "workcode": "1837232",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "232 p.; 8.5 inches",
+    "height": "8.5 inches",
+    "thickness": "0.5 inches",
+    "length": "5.5 inches",
+    "dimensions": "8.5 x 5.5 x 0.5 inches",
+    "weight": "0.5732018812 pounds",
+    "pages": "232 "
+  },
+  "247644140": {
+    "books_id": "247644140",
+    "title": "Psyche as Hero: Female Heroism and Fictional Form",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Edwards, Lee R.",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Edwards, Lee R.",
+        "fl": "Lee R. Edwards",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0819561711",
+    "isbn": {
+      "0": "0819561711",
+      "2": "9780819561718"
+    },
+    "asin": "0819561711",
+    "ean": ["0819561711"],
+    "publication": "Wesleyan University Press (1987), 319 pages",
+    "date": "1987",
+    "summary": "Psyche as Hero: Female Heroism and Fictional Form by Lee R. Edwards (1987)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["823.009"],
+      "wording": ["By Type", "English", "English fiction", "Literature"]
+    },
+    "lcc": {
+      "code": "PR830.H4 E38"
+    },
+    "source": "amazon.com books",
+    "workcode": "2700187",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "319 p.",
+    "weight": "1.4 pounds",
+    "pages": "319 "
+  },
+  "247644165": {
+    "books_id": "247644165",
+    "title": "The Wordsworth Dictionary of Dreams",
+    "sortcharacter": "5",
+    "public": "true",
+    "primaryauthor": "Miller, Gustavus Hindman",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Miller, Gustavus Hindman",
+        "fl": "Gustavus Hindman Miller",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "1853263257",
+    "isbn": {
+      "0": "1853263257",
+      "2": "9781853263255"
+    },
+    "asin": "B0027Q2S6Y",
+    "ean": ["1853263257"],
+    "publication": "Wordsworth Reference (1994)",
+    "date": "1994",
+    "summary": "The Wordsworth Dictionary of Dreams by Gustavus Hindman Miller (1994)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["135.3"],
+      "wording": [
+        "Dreams",
+        "Dreams And Mysticism",
+        "Parapsychology And Occultism",
+        "Philosophy and Psychology"
+      ]
+    },
+    "lcc": {
+      "code": "BF1091 .M6"
+    },
+    "subject": {
+      "0": ["Dream interpretation"],
+      "2": ["Dreams"],
+      "4": ["dreams"]
+    },
+    "source": "amazon.com books",
+    "workcode": "36204",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "height": "7.56 inches",
+    "thickness": "0.87 inches",
+    "length": "4.96 inches",
+    "dimensions": "7.56 x 4.96 x 0.87 inches",
+    "weight": "0.4 pounds",
+    "pages": "640 "
+  },
+  "247644290": {
+    "books_id": "247644290",
+    "title": "Robert Frost's Poems",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Frost, Robert",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Frost, Robert",
+        "fl": "Robert Frost",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0312983328",
+    "isbn": {
+      "0": "0312983328",
+      "2": "9780312983321"
+    },
+    "asin": "0312983328",
+    "ean": ["0312983328"],
+    "publication": "St. Martin's Paperbacks (2002), Edition: Reprint, 288 pages",
+    "date": "2002",
+    "summary": "Robert Frost's Poems by Robert Frost (2002)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["811.52"],
+      "wording": [
+        "1900-1945",
+        "20th Century",
+        "American poetry",
+        "English (North America)",
+        "Literature"
+      ]
+    },
+    "lcc": {
+      "code": "PS3511.R94 A6"
+    },
+    "source": "amazon.com books",
+    "workcode": "3506497",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "288 p.; 8.33 inches",
+    "height": "8.3299046 inches",
+    "thickness": "0.7299198 inches",
+    "length": "4.24 inches",
+    "dimensions": "8.3299046 x 4.24 x 0.7299198 inches",
+    "weight": "0.39462744898 pounds",
+    "pages": "288 "
+  },
+  "247644296": {
+    "books_id": "247644296",
+    "title": "A People War : Images of the Nepal Conflict 1996-2006",
+    "sortcharacter": "3",
+    "public": "true",
+    "authors": [[]],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "asin": "B00CCHD6PU",
+    "ean": ["9799994620851"],
+    "publication": "Publication Nepa-Laya Pvt. Ltd., Edition: 2nd, 215 pages",
+    "summary": "A People War : Images of the Nepal Conflict 1996-2006",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage_codeA": ["eng"],
+    "lcc": [],
+    "source": "amazon.com books",
+    "workcode": "30840103",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1",
+        "text": "Paper Book"
+      }
+    ],
+    "copies": "1"
+  },
+  "247644393": {
+    "books_id": "247644393",
+    "title": "A Kingdom Under Siege: Nepal's Maoist Insurgency, 1996 to 2003.",
+    "sortcharacter": "3",
+    "public": "true",
+    "primaryauthor": "Thapa, Deepak",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Thapa, Deepak",
+        "fl": "Deepak Thapa",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "9993359076",
+    "isbn": {
+      "0": "9993359076",
+      "2": "9789993359074"
+    },
+    "asin": "9993359076",
+    "ean": ["9993359076"],
+    "publication": "The Printhouse (2003), 324 pages",
+    "date": "2003",
+    "summary": "A Kingdom Under Siege: Nepal's Maoist Insurgency, 1996 to 2003. by Deepak Thapa (2003)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["954.96"],
+      "wording": [
+        "Asia",
+        "History and Geography",
+        "India and South Asia",
+        "Nepal",
+        "Other South Asia"
+      ]
+    },
+    "lcc": {
+      "code": "DS495 .T47"
+    },
+    "subject": [
+      ["Communism", "Nepal"],
+      ["Insurgency", "Nepal"],
+      ["Nepal", "History", "Civil War, 1996-"],
+      ["Nepal", "History", "Civil war, 1996-"],
+      ["Nepal", "Politics and government", "1990-"],
+      ["Nep?ala Kamyunish?ta P?ar?ti (M?aov?adi)"]
+    ],
+    "source": "amazon.com books",
+    "workcode": "677423",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1"
+  },
+  "247644412": {
+    "books_id": "247644412",
+    "title": "Nurturing Resilience in Our Children : Answers to the Most Important Parenting Questions",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Brooks, Robert",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Brooks, Robert",
+        "fl": "Robert Brooks",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "978-0-658-02110-7",
+    "isbn": ["978-0-658-02110-7", "0658021109", "9780658021107"],
+    "upc": ["639785410850"],
+    "publication": "McGraw-Hill Education (2002), 320 pages",
+    "date": "2002",
+    "summary": "Nurturing Resilience in Our Children : Answers to the Most Important Parenting Questions by Robert Brooks (2002)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["155.4"],
+      "wording": [
+        "Childhood",
+        "Developmental And Differential Psychology",
+        "Philosophy and Psychology",
+        "Psychology"
+      ]
+    },
+    "lcc": {
+      "code": "HQ772.B846"
+    },
+    "source": "Bowker Books in Print",
+    "workcode": "1573482",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "volumes": "1",
+    "physical_description": "320 p.; 923 cm",
+    "height": "923 cm",
+    "thickness": "1 inch",
+    "length": "6 inches",
+    "dimensions": "923 x 6 x 1 cm",
+    "weight": "1.2 pounds",
+    "pages": "320 "
+  },
+  "247644494": {
+    "books_id": "247644494",
+    "title": "Critical Theory Since Plato",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Adams, Hazard",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Adams, Hazard",
+        "fl": "Hazard Adams",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0155161431",
+    "isbn": {
+      "0": "0155161431",
+      "2": "9780155161436"
+    },
+    "asin": "0155161431",
+    "ean": ["0155161431"],
+    "publication": "Heinle & Heinle Publishers Inc.,U.S. (1992), Edition: 2, 1350 pages",
+    "date": "1992",
+    "summary": "Critical Theory Since Plato by Hazard Adams (1992)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["801.95"],
+      "wording": [
+        "Literary theory and criticism",
+        "Literature",
+        "Nature and character",
+        "Philosophy and theory",
+        "modified standard subdivisions"
+      ]
+    },
+    "lcc": {
+      "code": "PN49 .C683"
+    },
+    "subject": {
+      "0": ["Aesthetics"],
+      "2": ["Criticism"],
+      "4": ["Literature", "Aesthetics"],
+      "6": ["Literature", "Collections"],
+      "7": ["Literature", "History and criticism", "Theory, etc"],
+      "8": ["Literature", "Theory, etc"],
+      "9": ["aesthetics"]
+    },
+    "source": "amazon.com books",
+    "workcode": "138983",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.2",
+        "text": "Hardcover"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "1350 p.; 9.75 inches",
+    "height": "9.75 inches",
+    "thickness": "7.75 inches",
+    "length": "1.75 inches",
+    "dimensions": "9.75 x 1.75 x 7.75 inches",
+    "weight": "3.85147571714 pounds",
+    "pages": "1350 "
+  },
+  "247644526": {
+    "books_id": "247644526",
+    "title": "The Macmillan Dictionary of Contemporary Quotations",
+    "sortcharacter": "5",
+    "public": "true",
+    "authors": [[]],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0333634136",
+    "isbn": {
+      "0": "0333634136",
+      "2": "9780333634134"
+    },
+    "asin": "0333634136",
+    "ean": ["0333634136"],
+    "publication": "Pan Books, Edition: 3rd",
+    "summary": "The Macmillan Dictionary of Contemporary Quotations",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["082"],
+      "wording": [
+        "Anthologies and Quotations",
+        "English Anthologies",
+        "Information"
+      ]
+    },
+    "lcc": {
+      "code": "PN6081"
+    },
+    "source": "amazon.com books",
+    "workcode": "1049955",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "7.76 inches",
+    "height": "7.75589 inches",
+    "thickness": "1.69291 inches",
+    "length": "5.1181 inches",
+    "dimensions": "7.75589 x 5.1181 x 1.69291 inches"
+  },
+  "247644541": {
+    "books_id": "247644541",
+    "title": "Basic Research Methods: An Entry to Social Science Research",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Guthrie, Gerard",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Guthrie, Gerard",
+        "fl": "Gerard Guthrie",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "8132104579",
+    "isbn": {
+      "0": "8132104579",
+      "2": "9788132104575"
+    },
+    "asin": "8132104579",
+    "ean": ["8132104579"],
+    "publication": "SAGE Publications Pvt. Ltd (2010), Edition: First, 252 pages",
+    "date": "2010",
+    "summary": "Basic Research Methods: An Entry to Social Science Research by Gerard Guthrie (2010)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["300.72"],
+      "wording": [
+        "Education And Research",
+        "Social Sciences; Sociology and anthropology",
+        "Social sciences",
+        "Social sciences",
+        "Social sciences--research"
+      ]
+    },
+    "lcc": {
+      "code": "H62"
+    },
+    "source": "amazon.com books",
+    "workcode": "13826495",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "252 p.; 9.69 inches",
+    "height": "9.69 inches",
+    "thickness": "0.51 inches",
+    "length": "7.44 inches",
+    "dimensions": "9.69 x 7.44 x 0.51 inches",
+    "weight": "0.9038952742 pounds",
+    "pages": "252 "
+  },
+  "247644602": {
+    "books_id": "247644602",
+    "title": "Modern Times: Selected Non-fiction",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Sartre, Jean-Paul",
+    "primaryauthorrole": "Auteur",
+    "authors": [
+      {
+        "lf": "Sartre, Jean-Paul",
+        "fl": "Jean-Paul Sartre",
+        "role": "Auteur"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0140189211",
+    "isbn": {
+      "0": "0140189211",
+      "2": "9780140189216"
+    },
+    "asin": "0140189211",
+    "ean": ["0140189211"],
+    "publication": "Penguin Classics (2000), 416 pages",
+    "date": "2000",
+    "summary": "Modern Times: Selected Non-fiction by Jean-Paul Sartre (2000)",
+    "language": ["English", "French"],
+    "language_codeA": ["eng", "fre"],
+    "originallanguage": ["French"],
+    "originallanguage_codeA": ["eng", "fre"],
+    "ddc": {
+      "code": ["808"],
+      "wording": [
+        "Literature",
+        "Rhetoric and collections of literary texts from more than two literatures",
+        "modified standard subdivisions"
+      ]
+    },
+    "lcc": {
+      "code": "B2430.S33 S5813"
+    },
+    "source": "amazon.com books",
+    "workcode": "664664",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "416 p.; 7.8 inches",
+    "height": "7.79526 inches",
+    "thickness": "1.37795 inches",
+    "length": "5.07873 inches",
+    "dimensions": "7.79526 x 5.07873 x 1.37795 inches",
+    "weight": "1.10231131 pounds",
+    "pages": "416 "
+  },
+  "247644627": {
+    "books_id": "247644627",
+    "title": "Hindu Philosophy of Sin, Salvation & Karma",
+    "sortcharacter": "1",
+    "public": "true",
+    "authors": [[]],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "8124202001",
+    "isbn": {
+      "0": "8124202001",
+      "2": "9788124202005"
+    },
+    "asin": "8124202001",
+    "ean": ["8124202001"],
+    "publication": "Crest Publishing House",
+    "summary": "Hindu Philosophy of Sin, Salvation & Karma",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "lcc": [],
+    "source": "amazon.com books",
+    "workcode": "30840110",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "weight": "1.10231131 pounds"
+  },
+  "247644686": {
+    "books_id": "247644686",
+    "title": "God's Secret Agent",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Benge, Janet",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Benge, Janet",
+        "fl": "Janet Benge",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "1576583554",
+    "isbn": {
+      "0": "1576583554",
+      "2": "9781576583555"
+    },
+    "asin": "1576583554",
+    "ean": ["1576583554"],
+    "publication": "YWAM Publishing (2006), 215 pages",
+    "date": "2006",
+    "summary": "God's Secret Agent by Janet Benge (2006)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["266.0092"],
+      "wording": [
+        "Christian church and church work",
+        "History, geographic treatment, biography",
+        "Missions; Home and Foreign",
+        "Missions; Home and Foreign",
+        "Missions; Home and Foreign",
+        "Religions"
+      ]
+    },
+    "lcc": {
+      "code": "BV2372.A7 B46"
+    },
+    "subject": [
+      ["Andrew, Brother"],
+      ["Bible", "Publication and distribution", "Europe, Eastern"],
+      ["Missionaries", "Europe, Eastern", "Biography"],
+      ["Missionaries", "Netherlands", "Biography"],
+      ["Missions", "Europe, Eastern"]
+    ],
+    "series": ["Christian Heroes: Then & Now"],
+    "genre": ["Nonfiction", "Biography & Memoir", "Kids"],
+    "genre_id": ["20275895", "1240", "24"],
+    "source": "amazon.com books",
+    "workcode": "3038929",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "215 p.; 7.5 inches",
+    "height": "7.5 inches",
+    "thickness": "0.25 inches",
+    "length": "5.25 inches",
+    "dimensions": "7.5 x 5.25 x 0.25 inches",
+    "weight": "0.42108292042 pounds",
+    "pages": "215 "
+  },
+  "247644755": {
+    "books_id": "247644755",
+    "title": "God at Work: Your Christian Vocation in All of Life (Focal Point Series)",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Jr., Gene Edward Veith",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Jr., Gene Edward Veith",
+        "fl": "Gene Edward Veith Jr.",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "1581344031",
+    "isbn": {
+      "0": "1581344031",
+      "2": "9781581344035"
+    },
+    "asin": "1581344031",
+    "ean": ["1581344031"],
+    "publication": "Crossway (2002), 176 pages",
+    "date": "2002",
+    "summary": "God at Work: Your Christian Vocation in All of Life (Focal Point Series) by Gene Edward Veith Jr. (2002)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["248.4"],
+      "wording": [
+        "Christian Devotional Literature and Practical Theology",
+        "Christian Life; experience and practice",
+        "Christian Living",
+        "Religions"
+      ]
+    },
+    "lcc": {
+      "code": "BV4740 .V43"
+    },
+    "subject": [["Vocation", "Lutheran Church"]],
+    "originaltitle": "God at work : your Christian vocation in all of life",
+    "genre": ["Nonfiction", "Religion & Spirituality"],
+    "genre_id": ["20275895", "1944"],
+    "source": "amazon.com books",
+    "workcode": "184939",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "176 p.; 8.25 inches",
+    "height": "8.25 inches",
+    "thickness": "0.5 inches",
+    "length": "5.25 inches",
+    "dimensions": "8.25 x 5.25 x 0.5 inches",
+    "weight": "0.55 pounds",
+    "pages": "176 "
+  },
+  "247644783": {
+    "books_id": "247644783",
+    "title": "One Light for One World",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Runcie, Robert",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Runcie, Robert",
+        "fl": "Robert Runcie",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0281043345",
+    "isbn": {
+      "0": "0281043345",
+      "2": "9780281043347"
+    },
+    "asin": "0281043345",
+    "ean": ["0281043345"],
+    "publication": "SPCK Publishing (1988), 208 pages",
+    "date": "1988",
+    "summary": "One Light for One World by Robert Runcie (1988)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["252.03"],
+      "wording": [
+        "Anglican And Episcopal",
+        "Christian pastoral theology, homiletics and religious orders",
+        "Religions",
+        "Texts of sermons"
+      ]
+    },
+    "lcc": {
+      "code": "BX5133"
+    },
+    "source": "amazon.com books",
+    "workcode": "2628391",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "height": "8.43 inches",
+    "thickness": "0.71 inches",
+    "length": "5.12 inches",
+    "dimensions": "8.43 x 5.12 x 0.71 inches",
+    "weight": "0.44 pounds",
+    "pages": "208 "
+  },
+  "247644876": {
+    "books_id": "247644876",
+    "title": "Calendar of Creative Man",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Paxton, John",
+    "primaryauthorrole": "Editor",
+    "authors": [
+      {
+        "lf": "Paxton, John",
+        "fl": "John Paxton",
+        "role": "Editor"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0333181573",
+    "isbn": {
+      "0": "0333181573",
+      "2": "9780333181577"
+    },
+    "asin": "0333181573",
+    "ean": ["0333181573"],
+    "publication": "Palgrave Macmillan (1980), 544 pages",
+    "date": "1980",
+    "summary": "Calendar of Creative Man by John Paxton (1980)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["700.9"],
+      "wording": [
+        "Historical, geographic, persons treatment of the arts",
+        "Modified subdivisions of the arts",
+        "Standard subdivisions of the arts",
+        "The arts"
+      ]
+    },
+    "lcc": {
+      "code": "NX447.P38"
+    },
+    "subject": [
+      ["Arts", "Chronology"],
+      ["Arts", "History", "Chronology"]
+    ],
+    "source": "amazon.com books",
+    "workcode": "2408214",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.2",
+        "text": "Hardcover"
+      }
+    ],
+    "copies": "1"
+  },
+  "247645181": {
+    "books_id": "247645181",
+    "title": "A History of Western Music",
+    "sortcharacter": "3",
+    "public": "true",
+    "primaryauthor": "Grout, Donald J.",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Grout, Donald J.",
+        "fl": "Donald J. Grout",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0393975274",
+    "isbn": {
+      "0": "0393975274",
+      "2": "9780393975277"
+    },
+    "asin": "0393975274",
+    "ean": ["0393975274"],
+    "publication": "W W Norton & Co Inc (Np) (2001), Edition: 6th, 843 pages",
+    "date": "2001",
+    "summary": "A History of Western Music by Donald J. Grout (2001)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["780.9"],
+      "wording": ["Biography And History", "Music", "Music", "The arts"]
+    },
+    "lcc": {
+      "code": "ML160 .G87"
+    },
+    "subject": [
+      ["Music", "History and Criticism"],
+      ["Music", "History and criticism"]
+    ],
+    "awards": ["Notable Books List"],
+    "genre": ["Nonfiction", "General Nonfiction", "History", "Music"],
+    "genre_id": ["20275895", "1247", "1599", "15028"],
+    "source": "amazon.com books",
+    "workcode": "11658",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.2",
+        "text": "Hardcover"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "843 p.; 10.75 inches",
+    "height": "10.75 inches",
+    "thickness": "7 inches",
+    "length": "1.5 inches",
+    "dimensions": "10.75 x 1.5 x 7 inches",
+    "weight": "3.5384193051 pounds",
+    "pages": "843 "
+  },
+  "247645247": {
+    "books_id": "247645247",
+    "title": "Crossing",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Tagore, Rabindranath",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Tagore, Rabindranath",
+        "fl": "Rabindranath Tagore",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "8171677436",
+    "isbn": {
+      "0": "8171677436",
+      "2": "9788171677436"
+    },
+    "asin": "8171677436",
+    "ean": ["8171677436"],
+    "publication": "rupa (2002), 74 pages",
+    "date": "2002",
+    "summary": "Crossing by Rabindranath Tagore (2002)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "lcc": {
+      "code": "PK1723.L6"
+    },
+    "source": "amazon.com books",
+    "workcode": "762655",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1"
+  },
+  "247645255": {
+    "books_id": "247645255",
+    "title": "Discover Biology: Core Topics, 5th Edition",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Singh-Cundy, Anu",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Singh-Cundy, Anu",
+        "fl": "Anu Singh-Cundy",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0393918149",
+    "isbn": {
+      "0": "0393918149",
+      "2": "9780393918144"
+    },
+    "asin": "0393918149",
+    "ean": ["0393918149"],
+    "publication": "W. W. Norton & Company (2011), Edition: 5th, 654 pages",
+    "date": "2011",
+    "summary": "Discover Biology: Core Topics, 5th Edition by Anu Singh-Cundy (2011)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["570"],
+      "wording": [
+        "Life Sciences",
+        "Life Sciences, Biology",
+        "Natural sciences and mathematics"
+      ]
+    },
+    "lcc": {
+      "code": "QH308.D57"
+    },
+    "source": "amazon.com books",
+    "workcode": "12366071",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "654 p.; 10.9 inches",
+    "height": "10.8999782 inches",
+    "thickness": "0.8999982 inches",
+    "length": "9.499981 inches",
+    "dimensions": "10.8999782 x 9.499981 x 0.8999982 inches",
+    "pages": "654 "
+  },
+  "247645292": {
+    "books_id": "247645292",
+    "title": "Federalism: An Introduction",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Anderson, George",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Anderson, George",
+        "fl": "George Anderson",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0195429044",
+    "isbn": {
+      "0": "0195429044",
+      "2": "9780195429046"
+    },
+    "asin": "0195429044",
+    "ean": ["0195429044"],
+    "publication": "Oxford University Press (2008), Edition: 1, 192 pages",
+    "date": "2008",
+    "summary": "Federalism: An Introduction by George Anderson (2008)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["321.02"],
+      "wording": [
+        "Federations",
+        "Political Science ",
+        "Political Systems",
+        "Social sciences",
+        "Systems of governments and states"
+      ]
+    },
+    "lcc": {
+      "code": "JC355"
+    },
+    "source": "amazon.com books",
+    "workcode": "8006171",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "192 p.; 6.8 x 4.3 inches",
+    "height": "4.3 inches",
+    "thickness": "0.5 inches",
+    "length": "6.8 inches",
+    "dimensions": "4.3 x 6.8 x 0.5 inches",
+    "weight": "0.18077905484 pounds",
+    "pages": "192 "
+  },
+  "247645754": {
+    "books_id": "247645754",
+    "title": "From the Stone Age to Christianity: Monotheism and the Historical Process",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Albright, William Foxwell",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Albright, William Foxwell",
+        "fl": "William Foxwell Albright",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "asin": "B0007EO9XS",
+    "publication": "Doubleday Anchor Book (1957), Edition: 2nd, 432 pages",
+    "date": "1957",
+    "summary": "From the Stone Age to Christianity: Monotheism and the Historical Process by William Foxwell Albright (1957)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["291.14"],
+      "wording": [
+        "Categories of Religion",
+        "Comparative Religion; Mythology (No Longer Used)",
+        "Mythologies",
+        "Other Religions",
+        "Religions"
+      ]
+    },
+    "lcc": {
+      "code": "BL221 .A47"
+    },
+    "subject": {
+      "0": ["History", "Methodology"],
+      "2": ["History", "Philosophy"],
+      "4": ["Monotheism"],
+      "6": ["Religion"],
+      "8": ["religion"]
+    },
+    "source": "amazon.com books",
+    "workcode": "576219",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1",
+    "physical_description": "432 p.",
+    "weight": "0.7 pounds",
+    "pages": "432 "
+  },
+  "247645786": {
+    "books_id": "247645786",
+    "title": "Meat not Milk",
+    "sortcharacter": "1",
+    "public": "true",
+    "authors": [[]],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "9780860656210",
+    "isbn": ["9780860656210", "0860656217"],
+    "asin": "0860656217",
+    "ean": ["0860656217"],
+    "publication": "MARC",
+    "summary": "Meat not Milk",
+    "lcc": {
+      "code": "BT701.2"
+    },
+    "source": "amazon.com books",
+    "workcode": "3261196",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1",
+        "text": "Paper Book"
+      }
+    ],
+    "copies": "1"
+  },
+  "247645809": {
+    "books_id": "247645809",
+    "title": "Oxford University Press The First World War: A Very Short Introduction",
+    "sortcharacter": "1",
+    "public": "true",
+    "primaryauthor": "Howard, Michael",
+    "primaryauthorrole": "Author",
+    "authors": [
+      {
+        "lf": "Howard, Michael",
+        "fl": "Michael Howard",
+        "role": "Author"
+      }
+    ],
+    "collections_idA": [1],
+    "collections": ["Your library"],
+    "originalisbn": "0195692195",
+    "isbn": {
+      "0": "0195692195",
+      "2": "9780195692198"
+    },
+    "asin": "0195692195",
+    "ean": ["0195692195"],
+    "publication": "Oxford University Press (2008)",
+    "date": "2008",
+    "summary": "Oxford University Press The First World War: A Very Short Introduction by Michael Howard (2008)",
+    "language": ["English"],
+    "language_codeA": ["eng"],
+    "originallanguage": ["English"],
+    "originallanguage_codeA": ["eng"],
+    "ddc": {
+      "code": ["940.3"],
+      "wording": [
+        "Europe",
+        "History and Geography",
+        "History of Europe",
+        "World War I, 1914-1918"
+      ]
+    },
+    "lcc": {
+      "code": "D521 .H645"
+    },
+    "series": [
+      "\u725b\u6d25\u901a\u8b58\u8ab2",
+      "Very Short Introductions",
+      "A Very Short Introduction",
+      "The Oxford Very Short Introductions Series"
+    ],
+    "genre": ["Nonfiction", "General Nonfiction", "History"],
+    "genre_id": ["20275895", "1247", "1599"],
+    "source": "amazon.com books",
+    "workcode": "4771072",
+    "entrydate": "2023-08-26",
+    "format": [
+      {
+        "code": "1.1.1",
+        "text": "Paperback"
+      }
+    ],
+    "copies": "1"
+  }
+}
