@@ -58,9 +58,14 @@ nav ul li:hover {
   transition: all 0.3s;
 }
 
-nav a {
+nav ul li a {
   text-decoration: none;
   color: #333;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .submenu {
@@ -99,8 +104,7 @@ footer {
 }
 
 main {
-  padding-top: 3rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
 }
@@ -166,10 +170,13 @@ main img {
   display: flex;
 }
 
-main h1:nth-child(n + 2) {
+.post h1 {
   display: inline-block;
-  border: 1px solid #658996;
+  background: #649ab5;
   padding: 2px;
+  color: #1e1212;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .post_header,
@@ -221,7 +228,7 @@ table tbody td {
   padding: 5px;
 }
 table tbody tr:hover {
-  background-color: #5cdfdf;
+  background-color: #649ab5;
   cursor: pointer;
 }
 
@@ -337,7 +344,7 @@ button:hover {
   margin-left: 2px;
   padding: 2px;
 }
-pre {
+pre code {
   white-space: pre-wrap; /* css-3 */
   white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
   white-space: -pre-wrap; /* Opera 4-6 */

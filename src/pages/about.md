@@ -27,7 +27,7 @@ Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnep
 
 Have you any feedback or enquiry, I would love to hear from you. Email address: <a href="mailto:bijuale@aol.com" target="_blank"    rel="noopener noreferrer"> bijuale[at]aol[dot]com</a>
 
-![Contact]({{ '/assets/images/contact.png' | url }})
+<!-- ![Contact]({{ '/assets/images/contact.png' | url }}) -->
 
 # Donate
 

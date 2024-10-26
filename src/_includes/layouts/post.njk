@@ -1,10 +1,12 @@
----
-layout: layouts/base.njk
----
+{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
+content %}
+<a href="{{ '/' }}"><button>Back to Essays</button></a>
 
 <div class="post_header">
   <h1>{{ title }}</h1>
   <span>{{ date | formatted }}</span>
 </div>
-
-{{content | safe}}
+<div class="post">
+  {{ content | safe }}
+</div>
+{% endblock %}
