@@ -1,4 +1,5 @@
-{% extends 'layouts/base.njk' %} {% block content %}
+{% extends 'layouts/base.njk' %} 
+{% block content %}
 {{ content | safe }}
 
 <div id="toc-container">
@@ -15,8 +16,9 @@
     style="
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-      font-size: small;
+      gap: 10px;
+      font-size: .85rem;
+      margin-bottom: 2rem;
     "
   ></div>
 </div>
@@ -34,6 +36,15 @@
 </script>
 
 <style>
+.toc-link[href$="0"]:not([href$="00"]) {
+  margin-left: 10px;
+}
+.toc-link[href$="00"] {
+  text-transform: uppercase;
+  /* font-weight: bold; /* */
+  margin-top: .5rem;
+  color:black;
+}
   .highlight {
     background-color: #649ab5; /* Change this color to your preference */
     transition: background-color 0.5s ease; /* Transition for smoothness */
@@ -41,36 +52,45 @@
 
   #back-to-toc {
     position: fixed;
-    right: 200px; /* Distance from the right side */
-    bottom: 20px; /* Distance from the bottom */
-    display: none; /* Initially hidden */
-    padding: 10px 15px;
-    background-color: #007bff; /* Button color */
-    color: white;
+    right: 200px;
+    bottom: 20px; 
+    display: none; 
+    background-color: #0056b3;
+    color: #d9cece;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000; /* Ensure it's above other elements */
+    z-index: 1000;
   }
 
   #back-to-toc:hover {
-    background-color: #0056b3; /* Darker on hover */
+    background-color: #649ab5; /* Darker on hover */
+    color: black
   }
 
   /* Styles for TOC */
   .toc-section {
-    border-bottom: 2px solid grey; /* Bottom border for separation */
+    border-bottom: 1px solid grey; /* Bottom border for separation */
     padding-bottom: 5px;
-    margin-bottom: 10px; /* Space between sections */
+    margin-bottom: 5px; /* Space between sections */
   }
 
   /* Styles for greyed out TOC entries */
   .disabled {
     color: grey; /* Grey out the text */
   }
+
+  /* Book list styling */
+  .book-item .author, .book-item .date {
+    color: #9f4f4f;
+  }
+
+  .book-item .title {
+    font-style: italic;
+  }
 </style>
 
-<button id="back-to-toc">&#8593; Back to TOC</button>
+<button id="back-to-toc">&#8593; Back to</br> TOC</button>
 
 <script>
   const tocContainer = document.getElementById("toc");
@@ -90,7 +110,7 @@
     bookLists[ddcId] = [];
   }
 
-  // Categorize books based on DDC codes
+  // Categorize and sort books based on DDC codes, author name, and date
   Object.values(booksData).forEach((book) => {
     const bookDdcCode = book.ddc?.code?.[0];
     if (bookDdcCode) {
@@ -101,17 +121,28 @@
         if (ddcId.startsWith(mainDdcClass)) {
           bookLists[ddcId].push({
             title: book.title,
-            author: book.primaryauthor || "Unknown Author",
-            date: book.date || "Unknown Date",
-            formatted: `${book.title} by ${
-              book.primaryauthor || "Unknown Author"
-            } (${book.date || "Unknown Date"})`,
+            author: book.primaryauthor || "? Author",
+            date: book.date || "? Date",
+            formatted: `${book.primaryauthor || "? Author"}, ${
+              book.date || "? Date"
+            }: ${book.title}`,
           });
           break;
         }
       }
     }
   });
+
+  // Sort books by author name and date within each category
+  for (const ddcId in bookLists) {
+    bookLists[ddcId].sort((a, b) => {
+      if (a.author < b.author) return -1;
+      if (a.author > b.author) return 1;
+      if (a.date < b.date) return -1;
+      if (a.date > b.date) return 1;
+      return 0;
+    });
+  }
 
   // Render TOC links and book sections with counts
   const tocLinks = [];
@@ -121,7 +152,7 @@
     // Create TOC link
     const tocLink = document.createElement("a");
     tocLink.href = `#${sectionId}`;
-    tocLink.textContent = `${ddcId} – ${ddcWording}`;
+    tocLink.textContent = `${ddcId} ${ddcWording}`;
     tocLink.classList.add("toc-link"); // Add class for styling or future use
     tocLinks.push({ link: tocLink, id: sectionId, count: 0 });
 
@@ -130,7 +161,7 @@
     const countSpan = document.createElement("span");
     countSpan.textContent = `(${bookCount})`; // Display the count
     countSpan.style.float = "right"; // Float it to the right
-    countSpan.style.color = "grey"; // Set the color to grey
+    countSpan.style.color = "#9f4f4f"; // Set the color to grey
     countSpan.style.marginLeft = "10px"; // Add some spacing
 
     // Append the span to the TOC link
@@ -142,7 +173,7 @@
     const bookCountSpan = document.createElement("span");
     bookCountSpan.textContent = `(${bookCount})`;
     bookCountSpan.style.float = "right";
-    bookCountSpan.style.color = "grey";
+    bookCountSpan.style.color = "#9f4f4f";
     heading.textContent = `${ddcId} – ${ddcWording} `;
     heading.appendChild(bookCountSpan);
     heading.classList.add("toc-section"); // Add class for styling or future use
@@ -153,7 +184,11 @@
     if (bookCount > 0) {
       bookLists[ddcId].forEach((bookItem) => {
         const listItem = document.createElement("li");
-        listItem.textContent = bookItem.formatted;
+        listItem.classList.add("book-item");
+        listItem.innerHTML = `
+          <span class="author">${bookItem.author}</span> 
+          <span class="date">${bookItem.date}</span>
+          <span class="title">${toTitleCase(bookItem.title)}</span>`;
         bookList.appendChild(listItem);
       });
     } else {
@@ -214,54 +249,43 @@
   document.querySelectorAll(".toc-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      const targetId = link.getAttribute("href").slice(1);
-      const targetElement = document.getElementById(targetId);
-
+      const sectionId = link.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(sectionId);
       if (targetElement) {
-        const targetPosition =
+        const topOffset =
           targetElement.getBoundingClientRect().top + window.scrollY;
         window.scrollTo({
-          top: targetPosition - stickyMenuOffset,
+          top: topOffset - stickyMenuOffset,
           behavior: "smooth",
         });
-
-        // Highlight the section
-        highlightSection(targetElement);
       }
     });
   });
 
-  // Function to highlight section
-  function highlightSection(targetElement) {
-    const heading = targetElement; // The heading
-    const list = targetElement.nextElementSibling; // The following ol element
-
-    // Add highlight class to both heading and list
-    heading.classList.add("highlight");
-    list.classList.add("highlight");
-
-    // Remove highlight class after 2 seconds
-    setTimeout(() => {
-      heading.classList.remove("highlight");
-      list.classList.remove("highlight");
-    }, 2000); // Adjust duration as needed
-  }
-
-  // Show "Back to TOC" button when scrolling past TOC
+  // Display back-to-toc button after scrolling down 200px
   const backToTocButton = document.getElementById("back-to-toc");
-  const tocOffset = tocContainer.offsetTop + tocContainer.offsetHeight;
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > tocOffset) {
-      backToTocButton.style.display = "block"; // Show button
+  window.onscroll = () => {
+    if (window.scrollY >= 200) {
+      backToTocButton.style.display = "block";
     } else {
-      backToTocButton.style.display = "none"; // Hide button
+      backToTocButton.style.display = "none";
     }
+  };
+
+  // Scroll to top of the TOC when back-to-toc is clicked
+  backToTocButton.addEventListener("click", () => {
+    const tocTop = tocContainer.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: tocTop - stickyMenuOffset,
+      behavior: "smooth",
+    });
   });
 
-  // Add event listener to scroll back to TOC
-  backToTocButton.addEventListener("click", () => {
-    window.scrollTo({ top: tocOffset - 900, behavior: "smooth" });
-  });
+  // Function to capitalize book titles
+  function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+      return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+    });
+  }
 </script>
 {% endblock %}
