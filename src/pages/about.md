@@ -3,7 +3,8 @@ title: About
 ---
 
 ![I, and my volunteer partner Kristian with our host familis' kids in Dhading]({{ '/assets/images/biju.png' | url }})
-Caption: _I, and my volunteer partner Kristian Hillerup Jørgensen with our host familis' children in Dhading, Nepal (2018)_
+
+Image Caption: _I, and my volunteer partner Kristian Hillerup Jørgensen with our host familis' children in Dhading, Nepal (2018)_
 
 I, _Biju Ale_, am a John 3:16 Christian. I am interested in Philosophy, Theology, and Science. Welcome to my website, where I try to write about my formative experiences and occasional musings, and share .
 
