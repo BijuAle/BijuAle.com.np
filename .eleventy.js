@@ -29,6 +29,34 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("tags", function (collection) {
+    const excludedTags = new Set(["page", "post"]); // Add tags to exclude
+    const tagCount = {};
+
+    // Loop through all items in the collection
+    collection.getAll().forEach((item) => {
+      if (item.data.tags) {
+        item.data.tags.forEach((tag) => {
+          // Skip excluded tags
+          if (!excludedTags.has(tag)) {
+            // Initialize the tag count if it doesn't exist
+            if (!tagCount[tag]) {
+              tagCount[tag] = 0;
+            }
+            // Increment the count for the tag
+            tagCount[tag]++;
+          }
+        });
+      }
+    });
+
+    // Convert the tagCount object to an array of objects
+    return Object.entries(tagCount).map(([tag, count]) => ({
+      tag,
+      count,
+    }));
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dir: {

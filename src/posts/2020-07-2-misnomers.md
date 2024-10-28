@@ -1,7 +1,7 @@
 ---
 title: Travel Essentials
 date: 2020-07-02
-tags: ['travel']
+tags: ['Travel']
 ---
 
 Head lamp

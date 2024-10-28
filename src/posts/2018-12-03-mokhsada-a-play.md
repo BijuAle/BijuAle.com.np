@@ -1,6 +1,5 @@
 ---
 title: Mokhsada - An Enthralling Anti-Sexism Play
-author: Biju Ale
 date: 2018-12-03
 tags: ["Journal"]
 ---

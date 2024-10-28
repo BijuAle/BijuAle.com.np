@@ -1,6 +1,5 @@
 ---
 title: In Loving Memory of Johnny
-author: Biju Ale
 date: 2018-09-09
 tags: ["Journal"]
 ---

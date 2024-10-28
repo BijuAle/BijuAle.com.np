@@ -1,6 +1,5 @@
 ---
 title: The Pre-socratic Philosophers
-author: Biju Ale
 date: 2021-08-08
 tags: ["Philosophy"]
 ---

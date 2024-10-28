@@ -1,6 +1,5 @@
 ---
 title: Philosophical Student Society
-author: Biju Ale
 date: 2018-12-12
 tags: ["Philosophy"]
 ---

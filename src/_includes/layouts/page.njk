@@ -4,9 +4,10 @@ content %}
   <h1>{{ title }}</h1>
 </div>
 
-<nav id="toc"><em>Outline:</em></nav>
+<nav id="toc"><em>Outline</em></nav>
 
 {{ content | safe }}
+
 <script>
   const toc = document.getElementById("toc");
   const headings = document.querySelectorAll("h1,h2,h3,h4");
@@ -37,12 +38,10 @@ content %}
   #toc {
     position: fixed;
     top: 10rem;
-    right: 5rem; /* Adjust right margin for mobile */
+    right: 6rem; /* Adjust right margin for mobile */
     padding: 1rem;
     width: 200px; /* Set a maximum width */
     overflow-y: auto; /* Add scrollbar for long TOCs */
-
-
   }
 
   @media (max-width: 768px) {
@@ -61,8 +60,9 @@ content %}
     max-width: 190px;
   }
 
-  #toc li:first-child {
+  #toc li:first-of-type{
     display: none;
+    font-style: italic;
   }
 
   #toc li:not(:last-child) {

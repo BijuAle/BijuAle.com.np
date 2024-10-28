@@ -2,7 +2,6 @@
 date: 2020-02-03
 title: Set Theory
 tags: ["Mathematics", "Philosophy"]
-author: Biju Ale
 ---
 
 - Article in progress...

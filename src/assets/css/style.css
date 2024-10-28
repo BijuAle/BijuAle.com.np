@@ -40,17 +40,42 @@ header {
   font-family: "Garamond Italic";
 }
 
+.post-list {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.tags::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tags ul li {
+  float: left;
+  border: 1px solid grey;
+  padding: 3px;
+  margin: 4px;
+  border-radius: 5px;
+}
+.tags ul li a {
+  display: block;
+  text-align: center;
+}
+.tags ul li:hover {
+  background: #649ab5;
+}
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-evenly;
 }
 nav ul li {
   border: 1px solid grey;
   padding: 2px;
   margin: 0 2px;
-  background: rgb(87	174	159	);
+  background: #57ae9f;
   width: 100%;
 }
 nav ul li:hover {

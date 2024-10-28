@@ -1,6 +1,5 @@
 ---
 title: Gorkha Earthquake In Retrospect - Lessons In Diplomacy, Preparedness, & Morality
-author: Biju Ale
 date: 2020-10-02
 tags: ["Journal"]
 ---

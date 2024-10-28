@@ -1,6 +1,5 @@
 ---
 title: Eros in a Postmodern World
-author: Biju Ale
 date: 2018-06-17
 tags: ["Theology"]
 ---

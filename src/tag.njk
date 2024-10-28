@@ -1,0 +1,36 @@
+---
+layout: "layouts/base.njk"
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+
+<a href="{{ '/' }}"><button>All Essays</button></a>
+
+<div class="tags">
+  <ul>
+    {% for tagInfo in collections.tags %}
+    <li>
+      <a href="/tags/{{ tagInfo.tag | url }}"
+        >{{ tagInfo.tag }} ({{ tagInfo.count }})</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<hr />
+
+<h1>Posts tagged: “{{ tag }}”</h1>
+<div>
+  <ul>
+    {% set taglist = collections[ tag ] %}
+    {% for post in taglist | reverse %}
+    <li>
+      &#10032;<a href="{{ post.url }}"> {{ post.data.title }}</a>
+      <span class="date-post">{{ post.date | formatted }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

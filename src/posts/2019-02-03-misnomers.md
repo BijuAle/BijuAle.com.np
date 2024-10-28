@@ -1,7 +1,7 @@
 ---
 title: Misnomers
 date: 2019-02-03
-tags: ["writing"]
+tags: ["Writing"]
 ---
 
 This list gives a humorous and surprising look at how language can lead to unexpected associations!

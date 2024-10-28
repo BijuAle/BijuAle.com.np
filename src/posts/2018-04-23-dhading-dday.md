@@ -1,6 +1,5 @@
 ---
 title: Dhading Diaries - Volunteers' D-Day
-author: Biju Ale
 date: 2018-04-23
 tags: ["Journal"]
 ---

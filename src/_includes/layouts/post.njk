@@ -5,13 +5,25 @@ content %}
 <div class="post-header">
   <h1>{{ title }}</h1>
   <span>{{ date | formatted }}</span>
+  <div class="tags">
+    <ul>
+      {% for tag in tags %}
+      {% if tag !== 'post' %}
+      <li>
+        <a href="/tags/{{ tag | slugify }}">{{ tag }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 
-<nav id="toc">Outline:</nav>
+<nav id="toc">Outline</nav>
 
 <div class="post">
   {{ content | latex | safe }}
 </div>
+
 <script>
   const h1Count = document.getElementsByTagName("h1").length;
   const navElement = document.getElementById("toc");
@@ -44,6 +56,22 @@ content %}
 </script>
 
 <style>
+  .tags ul {
+    display: flex;
+  }
+  .tags ul li{
+    display: flex;
+    border: 1px solid grey; 
+    padding: 3px;
+    margin: 4px;
+    border-radius: 5px;
+  }
+  .tags ul li a{
+    color: grey;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
   .post ul li {
     list-style: circle;
     list-style-position: outside;
@@ -53,7 +81,7 @@ content %}
   #toc {
     position: fixed;
     top: 10rem;
-    right: 5rem; /* Adjust right margin for mobile */
+    right: 6rem; /* Adjust right margin for mobile */
     padding: 1rem;
     width: 200px; /* Set a maximum width */
     overflow-y: auto; /* Add scrollbar for long TOCs */
@@ -75,7 +103,7 @@ content %}
     max-width: 190px;
   }
 
-  #toc li:first-child {
+  #toc li:first-of-type {
     display: none;
   }
 

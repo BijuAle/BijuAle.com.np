@@ -1,7 +1,7 @@
 ---
-title: Keyboard Panagrams
+title: Keyboard Pangrams
 date: 2019-10-03
-tags: ['writing']
+tags: ['Writing']
 ---
 
 “The quick brown fox jumped over the lazy dog” is a classic pangram to test your typewriter or keyboard. Here are some other fun alternatives:

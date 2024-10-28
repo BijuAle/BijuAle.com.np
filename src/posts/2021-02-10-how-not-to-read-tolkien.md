@@ -1,6 +1,7 @@
 ---
 title: How not to read Tolkien?
 date: 2021-02-10
+tags: ["Reading", "Theology", "Philosophy"]
 ---
 
 Tolkien explained three wrong readings of his works - Biographical, Allegorical, and Source Analysis.

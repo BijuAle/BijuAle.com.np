@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 // Define input and output file paths
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
-const inputFile = path.resolve("/Users/bijuale/My Documents/Writings/v.txt");
+const inputFile = path.resolve("/Users/bijuale/My Documents/Writings/VocabularyWords.txt");
 const outputFile = path.join(__dirname, "../../_data/vocab.json");
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));

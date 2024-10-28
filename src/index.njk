@@ -8,7 +8,7 @@ pagination:
   reverse: true
 ---
 
-<div>
+<div class="post-list">
   <ul>
     {% for post in pagination.items %}
     <li>
@@ -19,20 +19,21 @@ pagination:
   </ul>
 </div>
 
-<!-- <div class="post-pagination">
-  <a href="{{ pagination.href.previous }}"><button>Previous</button></a>{%- for
-  pageEntry in pagination.pages %}
-  <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
-  {%- endfor %} <a href="{{ pagination.href.next }}"><button>Next</button></a>
-</div> -->
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"
+  >Previous page</a
+>{% endif %} {% if pagination.href.next %}<a href="{{ pagination.href.next }}"
+  >Next page</a
+>{% endif %}
 
-<!-- <div class="pagination">
-  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"
-    ><button>Previous</button></a
-  >{% endif %} {%- for pageEntry in pagination.pages %}
-  <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
-  {%- endfor %} {% if pagination.href.next %}<a
-    href="{{ pagination.href.next }}"
-    ><button>Next</button></a
-  >{% endif %}
-</div> -->
+<div class="tags">
+  Topics
+  <ul>
+    {% for tagInfo in collections.tags %}
+    <li>
+      <a href="/tags/{{ tagInfo.tag | url }}"
+        >{{ tagInfo.tag }} ({{ tagInfo.count }})</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</div>

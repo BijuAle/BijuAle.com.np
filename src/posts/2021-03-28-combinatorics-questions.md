@@ -1,6 +1,7 @@
 ---
 title: Combinatorics Questions
 date: 2021-03-28
+tags: ["Mathematics"]
 ---
 
 # Independent Events

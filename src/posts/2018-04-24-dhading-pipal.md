@@ -1,7 +1,6 @@
 ---
-date: 2018-04-24
 title: Dhading Diaries - Pipal Dada (Hill)
-author: Biju Ale
+date: 2018-04-24
 tags: ["Journal"]
 ---
 

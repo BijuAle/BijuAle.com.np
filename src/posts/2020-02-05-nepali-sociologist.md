@@ -1,8 +1,7 @@
 ---
 title: Discussing Worldviews, Machines, & Red Indians with a Nepalese sociologist.
-author: Biju Ale
 date: 2020-02-05
-tags: ["Journal"]
+tags: ["Journal", "Philosophy"]
 ---
 
 <TOC headings={props.headings} />

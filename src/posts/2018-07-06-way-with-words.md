@@ -1,6 +1,5 @@
 ---
 title: A Way With Words
-author: Biju Ale
 date: 2018-07-06
 tags: ["Writing"]
 ---

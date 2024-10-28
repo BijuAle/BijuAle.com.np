@@ -1,10 +1,8 @@
 ---
-title: Reading logarithms
+title: Reading Logarithms
 date: 2018-11-02
-tags: ['mathematics']
+tags: ['Mathematics']
 ---
-
-## Logarithm
 
 One way to conceptualize logarithms is as a tool to quantify exponential growth or decay of an object in a system. They offer a unique perspective on exponential relationships. Consider this equation:
 
@@ -18,14 +16,11 @@ Here, another object wants to grow doubly but the '0' time says that the growth 
 
 $$2^{-1} = \frac{1}{2}$$
 
-Here, the negative sign in the time '-1' means a past event, i.e. going backward in time in the growth. The result '1/2' means that the size of the object was half its original size. Since, it was meant to grow doubly at each step of the time, it is halved. Its size would have been one-third the original size, if it was growing triply, a quarter of the original size if it grew quadruply and so on.
+Here, the negative sign in the time '-1' means a past event, i.e. going backward in time in the growth. The result '1/2' means that the size of the object was half its original size. Since, it was meant to
+ grow doubly at each step of the time, it is halved. Its size would have been one-third the original size, if it was growing triply, a quarter of the original size if it grew quadruply and so on.
 
 These equations, can be represented using the logarithms as below.
 
-$$
-\begin{aligned}
-2^7 &= 128 &\rightarrow \log_2 128 &= 7 \\
-2^0 &= 1 &\rightarrow \log_2 1 &= 0 \\
-2^{-1} &= \frac{1}{2} &\rightarrow \log_2 \frac{1}{2} &= -1
-\end{aligned}
-$$
+$$2^7 = 128 \rightarrow \log_2 128 = 7$$
+$$2^0 = 1 \rightarrow \log_2 1 = 0$$
+$$2^{-1} = \frac{1}{2} \rightarrow \log_2 \frac{1}{2} = -1$$

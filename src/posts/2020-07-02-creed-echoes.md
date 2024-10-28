@@ -1,7 +1,7 @@
 ---
 title: Creed Echoes
 date: 2020-07-02
-tags: ['music']
+tags: ['Music', "Journal"]
 ---
 
 I first encountered Creed in 2008 with their single “One Last Breath” from their 2001 album, Weathered. Scott Stapp’s voice, rich with a sea-like depth, paired with Mark Tremonti’s deft guitar work—from soothing fingerstyle passages to thunderous riffs—captivated my young mind. Both the guitar-works of Tremonti and the lyrical depth sounding from Stapp's golden pipes motivated me. Inspired, I set out to master the guitar parts of this song and discern the meaning of the songs. Years later, after much practice, I’m glad to have tamed most of the notes in some of their hits. Tremonti himself admits that this song is challenging to play and sing simultaneously—and it truly is. With regards to their songs, as I age new colors come out of it.

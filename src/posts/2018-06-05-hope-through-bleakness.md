@@ -1,6 +1,5 @@
 ---
 title: Hope Piercing Through Bleakness
-author: Biju Ale
 date: 2018-06-05
 tags: ["Theology"]
 ---

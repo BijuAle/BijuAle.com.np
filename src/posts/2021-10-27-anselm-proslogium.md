@@ -1,6 +1,5 @@
 ---
 title: Tension between Divine Justice and Divine Mercy
-author: Biju Ale
 date: 2021-10-27
 tags: ["Philosophy", "Theology"]
 ---
