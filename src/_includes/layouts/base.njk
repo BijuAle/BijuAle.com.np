@@ -8,6 +8,10 @@
     <title>Biju Ale | {{ title | default('Biju Ale') }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/reset.css' | url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/katex@latest/dist/katex.min.css"
+    />
   </head>
   <body>
     {% include 'header.njk' %}
@@ -15,9 +19,7 @@
     <main>
       {% block title %}
       <h1>{{ title }}</h1>
-      {% endblock %} 
-      
-      {% block content %}
+      {% endblock %} {% block content %}
       {{ content | safe }}
       {% endblock %}
     </main>

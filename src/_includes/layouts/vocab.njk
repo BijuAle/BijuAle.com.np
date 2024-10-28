@@ -1,8 +1,12 @@
 {% extends 'layouts/base.njk' %}
 
-{% block content %}
+{% block title %}
+{% endblock %}
 
-{{ content | safe }}
+{% block content %}
+<div class="page-header">
+    <h1>{{ title }}</h1>
+</div>
 
 <div id="vocab-area">
   <select name="vocab-select" id="vocab-select" size="10">

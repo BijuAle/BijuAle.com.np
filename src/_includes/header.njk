@@ -9,13 +9,21 @@
             <li>
               <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
             </li>
-        
             <li>
-              <a {% if currentUrl === '/kindle-clippings/' %}aria-current="page"{% endif %} href="/kindle-clippings">Kindle Clippings</a>
+              <a {% if currentUrl === '#' %}aria-current="page"{% endif %} href="#">My Favorites</a>
+              <ul class="submenu">
+                <li>
+                  <a {% if currentUrl === '/kindle-clippings/' %}aria-current="page"{% endif %} href="/kindle-clippings">Kindle Clippings</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/vocab/' %}aria-current="page"{% endif %} href="/vocab">Vocab</a>
+                </li>
+                <li>
+                  <a {% if currentUrl === '/poems-lyrics/' %}aria-current="page"{% endif %} href="/poems-lyrics">Poems & Lyrics</a>
+                </li>
+              </ul>
             </li>
-            <li>
-              <a {% if currentUrl === '/vocab/' %}aria-current="page"{% endif %} href="/vocab">Vocab</a>
-            </li>
+            
             <li>
               <a {% if currentUrl === '/library/' %}aria-current="page"{% endif %} href="/library">Library</a>
             </li>

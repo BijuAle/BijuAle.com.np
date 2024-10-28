@@ -26,7 +26,7 @@ body...
 \end{document}
 ```
 
-# Word Count
+## Word Count
 
 
 1. Generate a word count file

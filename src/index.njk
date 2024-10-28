@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Essays
 pagination:
-  size: 20
+  size: 30
   data: collections.post
   alias: posts
   reverse: true
@@ -19,12 +19,12 @@ pagination:
   </ul>
 </div>
 
-<div class="post-pagination">
+<!-- <div class="post-pagination">
   <a href="{{ pagination.href.previous }}"><button>Previous</button></a>{%- for
   pageEntry in pagination.pages %}
   <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
   {%- endfor %} <a href="{{ pagination.href.next }}"><button>Next</button></a>
-</div>
+</div> -->
 
 <!-- <div class="pagination">
   {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"

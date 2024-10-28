@@ -33,7 +33,6 @@ header {
   opacity: 66%;
   font-size: 0.95rem;
   white-space: nowrap;
-  
 }
 
 #site_subheading span {
@@ -51,8 +50,8 @@ nav ul li {
   border: 1px solid grey;
   padding: 2px;
   margin: 0 2px;
-  align-items: center;
-  background: #bdbda1;
+  background: rgb(87	174	159	);
+  width: 100%;
 }
 nav ul li:hover {
   background: #649ab5;
@@ -61,7 +60,7 @@ nav ul li:hover {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #36193a;
   width: 100%;
   height: 100%;
   display: flex;
@@ -105,9 +104,11 @@ footer {
 }
 
 main {
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
+  color: #333;
 }
 
 #list_essays li {
@@ -119,8 +120,8 @@ main {
   float: right;
   opacity: 60%;
 }
-.date-post{
-  float:right;
+.date-post {
+  float: right;
   opacity: 40%;
 }
 
@@ -153,6 +154,11 @@ p {
   line-height: 1.3;
   text-align: left;
   text-align: justify;
+  white-space: pre-wrap;
+}
+
+.highlight-card p {
+  margin-bottom: 0;
 }
 main .container ul li {
   color: #333;
@@ -187,8 +193,9 @@ main img {
   padding: 3px;
 }
 
-.post_header,
-.kindle-book {
+.post-header,
+.kindle-book,
+.page-header {
   padding: 5px;
   color: #dfaaaa;
   margin-top: 0.5rem;
@@ -208,8 +215,12 @@ main img {
 .kindle-book h2 {
   font-style: italic;
 }
+.highlight-card {
+  border-radius: 8px;
+}
 table td {
   vertical-align: middle;
+  color: #333;
 }
 
 table thead th {
@@ -234,6 +245,9 @@ table thead th td {
 
 table tbody td {
   padding: 5px;
+}
+table tbody tr {
+  border-radius: 10px;
 }
 table tbody tr:hover {
   background-color: #649ab5;
@@ -358,6 +372,7 @@ pre code {
   white-space: -pre-wrap; /* Opera 4-6 */
   white-space: -o-pre-wrap; /* Opera 7 */
 
+  border-radius: 10px;
   border: 1px solid #361e5a;
   color: #3a3333;
   page-break-inside: avoid;
@@ -368,19 +383,20 @@ pre code {
   display: block;
 }
 
-
-ul {
+/* ul {
   list-style-type: circle;
   list-style-position: inside;
   margin-left: 10px;
   color: #333;
-}
+  margin:0;
+} */
 ol {
   list-style-type: decimal;
   list-style-position: inside;
   margin-left: 10px;
   color: #333;
 }
+
 li::marker {
   color: #8d8585;
 }

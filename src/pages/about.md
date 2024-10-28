@@ -6,21 +6,31 @@ title: About
 
 Image Caption: _I, and my volunteer partner Kristian Hillerup Jørgensen with our host familis' children in Dhading, Nepal (2018)_
 
-I, _Biju Ale_, am a John 3:16 Christian. I am interested in Philosophy, Theology, and Science. Welcome to my website, where I try to write about my formative experiences and occasional musings, and share .
+I’m _Biju Ale_, a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. Welcome to my webpage—a space for thoughtful reflections. I hope you discover something meaningful here that resonates with you.
 
 Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnepal.com.np/biju-ale/), in research, monitoring, learning, and evaluation of myriad developmental projects in Nepal. <details class="details-animated ">
 
 <summary>More about me...</summary>
 
 - I support humanitarian and educational causes.
-- I believe naturalism, scientism, postmodernism, and critical theories are false worldviews.
-- I love dogs.
-- Some favourite authors: CS Lewis, JRR Tolkien, Richard Swinburne, Pascal, William L Craig, & J P Moreland.
-- Some favourite musicians: Symphony X, Creed, Buckethead, Kenny G, Stravinsky, & Beethoven.
-- My favorite shows are Batman Animated Series (1992), X-Men (1992), Full house (1987), Freaks & Geeks (1999), and Robert L. Kuhn's Closer to Truth.
-- I am nostalgic about the lovely 90s and the early 2000s. Would it be possible bring 'em back and live in one?
-- I also love to hike, bicycle, take pictures, play the guitar, and art-related activities: art, craft, and lettering.
-- Me, elsewhere on the web: [Academia.edu](https://independent.academia.edu/BijuAle/), [LinkedIn](https://linkedin.com/in/bijuale/), [Facebook](https://fb.com/BijuAle), [Instagram](https://instagram.com/bijuale__)
+
+- I believe that naturalism, scientism, postmodernism, and critical theory are flawed worldviews.
+
+- Some of my favorite authors are C.S. Lewis, J.R.R. Tolkien, Richard Swinburne, Pascal, William Lane Craig, and J.P. Moreland.
+
+- Some of my favorite bands and arists are Johnny Cash, Hank Williams, Elizabeth Cotten, Kenny G, Creed, Evanescence, Symphony X, Seventh Wonder, War of Ages, Stravinsky, and Beethoven.
+
+- My favorite guitarists are Buckethead, Michael Romeo, and Mark Tremonti.
+
+- Some of my favorite shows are Batman: The Animated Series (1992), X-Men (1992), Full House (1987), Freaks and Geeks (1999), and Robert L. Kuhn’s Closer to Truth.
+
+- I’m nostalgic for the charm of the ’90s and early 2000s—if only we could freeze in its cosy zeitgeist!
+
+- I also enjoy hiking, cycling, photography, playing the guitar, and creative projects in art, craft, and lettering.
+
+- I’m a dog lover.
+
+- Find me elsewhere on the web: [Academia.edu](https://independent.academia.edu/BijuAle/), [LinkedIn](https://linkedin.com/in/bijuale/), [Facebook](https://fb.com/BijuAle), [Instagram](https://instagram.com/bijuale__)
 </details>
 <hr>
 
