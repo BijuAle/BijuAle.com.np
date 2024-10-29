@@ -1,0 +1,99 @@
+{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
+content %}
+<div class="page-header">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="verse-area">
+  <div class="verse-selector">
+    <button class="nav-button" id="prev-button">Previous</button>
+    <button class="nav-button" id="next-button">Next</button>
+    <button class="nav-button" id="random-button">Shuffle</button>
+    <select id="verse-select" size="20">
+      {% for verse in bible_verses %}
+      <option value="{{ loop.index - 1 }}">
+        {{ verse.book }} {{ verse.chapter }}:{{ verse.verse_from }}-{{
+          verse.verse_to
+        }}
+      </option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="verse-card">
+    <p id="verse-text"></p>
+    <p id="verse-reference"></p>
+  </div>
+</div>
+
+<script id="verse-data" type="application/json">
+  {{ bible_verses | dump | safe }}
+</script>
+<script>
+  const verseData = JSON.parse(
+    document.getElementById("verse-data").textContent
+  );
+  const verseSelect = document.getElementById("verse-select");
+  const verseText = document.getElementById("verse-text");
+  const verseReference = document.getElementById("verse-reference");
+  const prevButton = document.getElementById("prev-button");
+  const nextButton = document.getElementById("next-button");
+  const randomButton = document.getElementById("random-button");
+
+  function displayVerse(index) {
+    const verse = verseData[index];
+    verseText.textContent = verse.verse;
+    verseReference.textContent = `${verse.book} ${verse.chapter}:${verse.verse_from}-${verse.verse_to}`;
+  }
+
+  verseSelect.addEventListener("change", () => {
+    displayVerse(verseSelect.selectedIndex);
+  });
+
+  prevButton.addEventListener("click", () => {
+    const currentIndex = verseSelect.selectedIndex;
+    const newIndex = currentIndex - 1;
+    if (newIndex >= 0) {
+      verseSelect.selectedIndex = newIndex;
+      displayVerse(newIndex);
+    }
+  });
+
+  nextButton.addEventListener("click", () => {
+    const currentIndex = verseSelect.selectedIndex;
+    const newIndex = currentIndex + 1;
+    if (newIndex < verseData.length) {
+      verseSelect.selectedIndex = newIndex;
+      displayVerse(newIndex);
+    }
+  });
+
+  randomButton.addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * verseData.length);
+    verseSelect.selectedIndex = randomIndex;
+    displayVerse(randomIndex);
+  });
+
+  // Display the first verse by default
+  displayVerse(0);
+</script>
+
+<style>
+  select {
+    margin-top: .5rem;
+  }
+  .verse-area {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "n c" "s c";
+  }
+  .verse-selector {
+    margin-bottom: 20px;
+  }
+
+  .verse-card {
+    padding: 20px;
+  }
+</style>
+{% endblock %}

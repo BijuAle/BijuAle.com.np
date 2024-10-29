@@ -1,11 +1,7 @@
-{% extends 'layouts/base.njk' %}
-
-{% block title %}
-{% endblock %}
-
-{% block content %}
+{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
+content %}
 <div class="page-header">
-    <h1>{{ title }}</h1>
+  <h1>{{ title }}</h1>
 </div>
 
 <div id="vocab-area">
@@ -17,8 +13,9 @@
 
   <div id="vocab-nav" style="text-align: center">
     <button id="prev-word">&lt; Prev</button>
-    <button id="random-word">Random</button>
     <button id="next-word">Next &gt;</button>
+    <button id="random-word">Shuffle</button>
+
     <div style="margin-top: 0.5rem">
       <input size="15" type="text" id="word-search" placeholder="Search word" />
       <button
@@ -161,4 +158,59 @@
 
   updateCard();
 </script>
+<style>
+  .vocab-main-word {
+    color: hsla(269, 31%, 28%, 0.808);
+    font-size: 20px;
+  }
+
+  #vocab-area {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "n c" "s c";
+  }
+
+  #vocab-select {
+    grid-area: s;
+    height: 300px;
+  }
+  #vocab-card {
+    grid-area: c;
+    margin-left: 20px;
+  }
+  #vocab-nav {
+    grid-area: n;
+    margin-bottom: 10px;
+  }
+
+  .phonetic {
+    font-style: italic;
+    color: #145145;
+  }
+  .part-of-speech {
+    font-weight: bold;
+    color: #145145;
+    margin-top: 15px;
+  }
+  .definition {
+    margin-bottom: 10px;
+  }
+  .example {
+    font-style: italic;
+    color: #145145;
+  }
+  .synonyms,
+  .antonyms {
+    margin-top: 10px;
+  }
+  .synonyms span,
+  .antonyms span {
+    display: inline-block;
+    border: 1px solid rgb(144, 129, 183);
+    border-radius: 5px;
+    margin-left: 2px;
+    padding: 2px;
+  }
+</style>
 {% endblock %}

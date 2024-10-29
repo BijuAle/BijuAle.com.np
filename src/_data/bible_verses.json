@@ -166,5 +166,12 @@
     "verse_from": 32,
     "verse_to": 32,
     "verse": "...Veritas Vos Liberabit."
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "verse_from": 21,
+    "verse_to": 23,
+    "verse": "Yet this I call to mind and therefore I have hope: Because of the Lord’s great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness."
   }
 ]

@@ -1,5 +1,6 @@
 ---
-title: Collected Poems & Songs
+title: Favorite Poems & Lyrics
+layout: "layouts/poem.njk"
 ---
 
 # A New Leaf
@@ -127,7 +128,7 @@ and still stir up the gift in me.
 4 Ready for all thy perfect will,
 my acts of faith and love repeat;
 till death thy endless mercies seal,
-and make the sacrifice complete.Lamentations 3:21-23
+and make the sacrifice complete.
 
 # Who Will Answer
 
@@ -492,7 +493,9 @@ Nor attempt the Future’s portal with the Past’s blood-rusted key.
 
 # Aazaadiyan - Pairon Ki Bediyan
 
-Amit Trivedi (Composition & Vocals) | Neuman Pinto (Vocals) | Nikhil D'Souza (Vocals) | Amitabh Bhattacharya (Lyrics & Vocals), Movie: Udaan (2010)
+by Amit Trivedi (Composition & Vocals) | Neuman Pinto (Vocals) | Nikhil D'Souza (Vocals) | Amitabh Bhattacharya (Lyrics & Vocals), Movie: Udaan (2010)
+
+
 पैरों की बेड़ियां ख्वाबों को बाँधे नहीं रे, कभी नहीं रे (The shackles on legs can never bind dreams.)
 मिट्टी की परतों को नन्ने से अंकुर भी छीने, धीरे - धीरे (Even a baby sprout can rip through the blanket of soil, slowly but surely.)
 इरादे हरे हरे जिनके सीनों में घर करे (Those whose bosom nestle their evergreen purposes.)

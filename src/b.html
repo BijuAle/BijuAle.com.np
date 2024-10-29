@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bookshelf">
+        <div class="shelf">
+            <h2>Law</h2>
+            <div class="book">Genesis</div>
+            <div class="book">Exodus</div>
+            <div class="book">Leviticus</div>
+            <div class="book">Numbers</div>
+            <div class="book">Deuteronomy</div>
+        </div>
+
+        <div class="shelf">
+            <h2>History</h2>
+            <div class="book">Joshua</div>
+            <div class="book">Judges</div>
+            <div class="book">Ruth</div>
+            <div class="book">1 Samuel</div>
+            <div class="book">2 Samuel</div>
+            </div>
+
+        <div class="shelf">
+            <h2>Poetry</h2>
+            <div class="book">Job</div>
+            <div class="book">Psalms</div>
+            <div class="book">Proverbs</div>
+            <div class="book">Ecclesiastes</div>
+            <div class="book">Song of Solomon</div>
+        </div>
+
+        </div>
+</body>
+
+<style>
+    body {
+    font-family: serif;
+    background-color: #f2e8d9; /* Soft parchment color */
+}
+
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shelf {
+    background-color: #e0c999; /* Wood shelf color */
+    border: 2px solid #8c6239;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shelf h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.book {
+    background-color: #fff;
+    border: 1px solid #8c6239;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+</style>
+</html>

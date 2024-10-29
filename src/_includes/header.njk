@@ -21,9 +21,10 @@
                 <li>
                   <a {% if currentUrl === '/poems-lyrics/' %}aria-current="page"{% endif %} href="/poems-lyrics">Poems & Lyrics</a>
                 </li>
+                <li>
+                  <a {% if currentUrl === '/bible-verses/' %}aria-current="page"{% endif %} href="/bible-verses">Bible Verses</a>                </li>
               </ul>
             </li>
-            
             <li>
               <a {% if currentUrl === '/library/' %}aria-current="page"{% endif %} href="/library">Library</a>
             </li>
@@ -63,3 +64,87 @@
     <br>& the truth shall set you free.</br> &mdash;<span>John 8:32</span> 
     </div>
 </header>
+
+<style>
+  header {
+  background-color: #bdbda1;
+  position: sticky;
+  top: 0;
+  font-family: "Cinzel";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+#site_heading {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+#site_subheading {
+  display: block;
+  text-align: right;
+  opacity: 66%;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+#site_subheading span {
+  font-style: italic;
+  font-family: "Garamond Italic";
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul li {
+  border: 1px solid grey;
+  padding: 2px;
+  margin: 0 2px;
+  background: #57ae9f;
+  width: 100%;
+}
+nav ul li:hover {
+  background: #649ab5;
+  transition: all 0.3s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #36193a;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+nav li:hover .submenu {
+  display: block;
+  
+}
+
+@media (max-width: 768px) {
+  header,
+  nav {
+    flex-direction: column;
+  }
+  .submenu {
+    position: static;
+  }
+}
+</style>
