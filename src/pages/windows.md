@@ -1,5 +1,6 @@
 ---
 title: Windows Automations
+tags: ['Computing']
 ---
 
 # Unofficial activiations

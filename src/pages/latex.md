@@ -1,5 +1,6 @@
 ---
 title: LaTeX Automations
+tags: ['Computing']
 ---
 
 # Template: Letter

@@ -1,7 +1,11 @@
 ---
 title: Favorite Poems & Lyrics
 layout: "layouts/poem.njk"
+tags: ['post',"Music",'Reading']
+date: 2014-10-24
 ---
+
+Poems and Lyrics I've collected that resonate with me one way or the other.
 
 # A New Leaf
 

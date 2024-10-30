@@ -1,5 +1,5 @@
 ---
-title: Eternal generation of the Son
+title: Eternal Generation of the Son
 date: 2021-10-27
 tags: ["Theology", "Philosophy"]
 ---

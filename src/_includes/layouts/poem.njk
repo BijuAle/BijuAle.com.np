@@ -20,13 +20,15 @@ content %}
 
   <div class="poem-card">
     <h1 id="poem-title"></h1>
-    <p id="poem-author"></p>
-    <p id="poem-date"></p>
+    <span id="poem-author"></span>
+    <span id="poem-date"></span>
+    <div id="poem-themes">
+      <p>THemes</p>
+    </div>
     <div id="poem-stanza"></div>
-    <p><strong>Themes:</strong> <span id="poem-themes"></span></p>
   </div>
-  <div><img src="" alt="" /></div>
 </div>
+<div><img src="" alt="" /></div>
 
 <script id="poem-data" type="application/json">
   {{ poems | dump | safe }}
@@ -55,11 +57,19 @@ content %}
     poemStanza.innerHTML = poem.stanzas
       .map((stanza) => `<p>${stanza.join("<br>")}</p>`)
       .join("");
-    poemThemes.textContent = poem.themes.join(", ");
+
+    // Clear existing themes and create a new list
+    poemThemes.innerHTML = "<span>Themes</span>";
+    const themeList = document.createElement("ul");
+    poemThemes.appendChild(themeList);
+
+    // Add each theme as a list item
+    poem.themes.forEach((theme) => {
+      const themeItem = document.createElement("li");
+      themeItem.textContent = theme;
+      themeList.appendChild(themeItem);
+    });
   }
-
-
-
   poemSelect.addEventListener("change", () => {
     displayPoem(poemSelect.selectedIndex);
   });
@@ -93,11 +103,35 @@ content %}
     margin-top: 0.5rem;
   }
 
+  #poem-themes {
+    display: block;
+    float: right;
+    span {
+      color: #333;
+      font-weight: bold;
+    }
+    ul {
+      margin-left: 1rem;
+    }
+  }
+  #poem-themes ul li {
+    opacity: 80%;
+    font-family: "Garamond Italic";
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+  }
+
+  #poem-title {
+    font-size: 1.3rem;
+  }
   #poem-author,
   #poem-title {
     margin: 0;
   }
-
+  #poem-stanza {
+    margin-top: 1rem;
+  }
   .poem-area {
     display: grid;
     grid-template-columns: 200px auto;

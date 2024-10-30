@@ -1,5 +1,6 @@
 ---
 title: PDF Manipulations
+tags: ['Computing']
 ---
 
 # Scanned PDF to B&W
