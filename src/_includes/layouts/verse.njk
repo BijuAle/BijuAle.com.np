@@ -22,7 +22,7 @@ content %}
   </div>
 
   <div class="verse-card">
-    <p id="verse-text"></p>
+    <blockquote id="verse-text"></blockquote>
     <p id="verse-reference"></p>
   </div>
 </div>
@@ -83,14 +83,14 @@ content %}
   select {
     margin-top: 0.5rem;
   }
-  #verse-reference{
+  #verse-reference {
     font-size: 1.4rem;
     font-family: "Garamond Italic";
     font-style: italic;
-    float: right;
+    float: left;
   }
-  #verse-reference::before{
-      content: "—";
+  #verse-reference::before {
+    content: "—";
   }
   #verse-text {
     font-size: 1.2rem;
@@ -109,6 +109,33 @@ content %}
 
   .verse-card {
     padding: 20px;
+  }
+
+  blockquote {
+    line-height: 1.4;
+    position: relative;
+  }
+
+  blockquote:before,
+  blockquote:after {
+    position: absolute;
+    color: #84a380;
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  blockquote:before {
+    content: "“";
+    left: -4rem;
+    top: -3rem;
+  }
+
+  blockquote:after {
+    content: "”";
+    right: -3rem;
+    bottom: 0rem;
+    z-index: -1;
   }
 </style>
 {% endblock %}

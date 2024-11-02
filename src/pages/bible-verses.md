@@ -5,4 +5,6 @@ tags: ['post', 'Theology', 'Reading']
 date: 2015-10-24
 ---
 
-Greg Koukl has taught us an invaluable, wise, and critical advice: never read just one Bible verse!  Bible verses aren’t isolated quotations or sayings; they’re part of a unified Scripture, the living Word of God, woven from history, prophecy, literature, and episteles. To truly understand a verse, we must read it in context. With this in mind, these verses, viewed within their broader narrative, have deeply impacted me.
+Please be mindful that reading these bible verses in isolation can lead to misunderstandings and misinterpretations.  I encourage you to delve deeper into the surrounding passages of these verses. As Greg Koukl reminds us, "Never read a bible verse!" Bible verses aren’t stand-alone quotations or sayings that you suit your meaning and feelings into; they’re part of a unified Scripture, the living Word of God, woven from history, prophecy, literature, and episteles.
+
+These are my favorite verses (for their context please refer to a good commentary on the verse).
