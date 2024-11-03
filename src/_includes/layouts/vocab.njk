@@ -1,5 +1,9 @@
-{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
-content %}
+{% extends 'layouts/base.njk' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
 <div class="page-header">
   <h1>{{ title }}</h1>
 </div>
@@ -7,7 +11,7 @@ content %}
 <div id="vocab-area">
   <select name="vocab-select" id="vocab-select" size="10">
     {% for w in vocab %}
-    <option value="{{ w.word }}">{{ w.word }}</option>
+    <option value="{{ w.word | slug }}">{{ w.word }}</option>
     {% endfor %}
   </select>
 
@@ -18,16 +22,10 @@ content %}
 
     <div style="margin-top: 0.5rem">
       <input size="15" type="text" id="word-search" placeholder="Search word" />
-      <button
-        id="btn-asc"
-        onclick="sortSelectOptions('vocab-select', 'ascending')"
-      >
+      <button id="btn-asc" onclick="sortSelectOptions('vocab-select', 'ascending')">
         &#x2191;AZ
       </button>
-      <button
-        id="btn-desc"
-        onclick="sortSelectOptions('vocab-select', 'descending')"
-      >
+      <button id="btn-desc" onclick="sortSelectOptions('vocab-select', 'descending')">
         &#x2193;ZA
       </button>
     </div>
@@ -41,9 +39,7 @@ content %}
 </script>
 
 <script>
-  const vocabData = JSON.parse(
-    document.getElementById("vocab-data").textContent
-  );
+  const vocabData = JSON.parse(document.getElementById("vocab-data").textContent);
   const vocabSelect = document.getElementById("vocab-select");
   const vocabCard = document.getElementById("vocab-card");
   const prevButton = document.getElementById("prev-word");
@@ -51,73 +47,68 @@ content %}
   const randomButton = document.getElementById("random-word");
   const searchInput = document.getElementById("word-search");
 
-  function updateCard() {
-    const selectedWord = vocabSelect.value;
-    const wordData = vocabData.find((item) => item.word === selectedWord);
+  function displayWord(index) {
+    const wordData = vocabData[index];
+    vocabSelect.selectedIndex = index;
 
-    if (wordData && !wordData.hasOwnProperty("error")) {
-      const details = wordData.details[0];
+    if (wordData && wordData.details) {
+      const details = wordData.details[0]; // Assuming details is an array with at least one item
       let html = `<h1 class="vocab-main-word">${details.word}</h1>`;
-      if (
-        details.phonetics &&
-        details.phonetics[0] &&
-        details.phonetics[0].text
-      ) {
+
+      if (details.phonetics && details.phonetics[0] && details.phonetics[0].text) {
         html += `<p class="phonetic">${details.phonetics[0].text}</p>`;
       }
 
-      details.meanings.forEach((meaning) => {
-        html += `<p class="part-of-speech">${meaning.partOfSpeech}</p>`;
-        meaning.definitions.forEach((def, index) => {
-          html += `<p class="definition">${index + 1}. ${def.definition}</p>`;
-          if (def.example) {
-            html += `<p class="example">Example: ${def.example}</p>`;
+      if (details.meanings && details.meanings.length > 0) {
+        details.meanings.forEach((meaning) => {
+          html += `<p class="part-of-speech">${meaning.partOfSpeech}</p>`;
+          meaning.definitions.forEach((def, i) => {
+            html += `<p class="definition">${i + 1}. ${def.definition}</p>`;
+            if (def.example) {
+              html += `<p class="example">Example: ${def.example}</p>`;
+            }
+          });
+
+          if (meaning.synonyms && meaning.synonyms.length > 0) {
+            html += '<p class="synonyms">Synonyms: ' + meaning.synonyms.map((s) => `<span>${s}</span>`).join(" ") + "</p>";
+          }
+          if (meaning.antonyms && meaning.antonyms.length > 0) {
+            html += '<p class="antonyms">Antonyms: ' + meaning.antonyms.map((a) => `<span>${a}</span>`).join(" ") + "</p>";
           }
         });
-
-        if (meaning.synonyms.length > 0) {
-          html +=
-            '<p class="synonyms">Synonyms: ' +
-            meaning.synonyms.map((s) => `<span>${s}</span>`).join(" ") +
-            "</p>";
-        }
-        if (meaning.antonyms.length > 0) {
-          html +=
-            '<p class="antonyms">Antonyms: ' +
-            meaning.antonyms.map((a) => `<span>${a}</span>`).join(" ") +
-            "</p>";
-        }
-      });
+      } else {
+        html += `<p class="definition">No meanings available.</p>`;
+      }
 
       vocabCard.innerHTML = html;
     } else {
-      vocabCard.innerHTML = `<h1 class="vocab-main-word">${selectedWord}</h1>`;
+      vocabCard.innerHTML = `<h1 class="vocab-main-word">${wordData.word}</h1><p>No details available.</p>`;
     }
+
+    updateURL(wordData.word);
   }
 
-  vocabSelect.addEventListener("change", updateCard);
+  function updateURL(word) {
+    const url = new URL(window.location);
+    url.searchParams.set("word", word.toLowerCase().replace(/\s+/g, "-"));
+    window.history.pushState({}, "", url);
+  }
 
+  function selectWordBySlug(slug) {
+    const index = vocabData.findIndex(word => word.word.toLowerCase().replace(/\s+/g, "-") === slug);
+    if (index !== -1) displayWord(index);
+  }
+
+  vocabSelect.addEventListener("change", () => displayWord(vocabSelect.selectedIndex));
   prevButton.addEventListener("click", () => {
-    const currentIndex = vocabSelect.selectedIndex;
-    if (currentIndex > 0) {
-      vocabSelect.selectedIndex = currentIndex - 1;
-      updateCard();
-    }
+    const newIndex = (vocabSelect.selectedIndex - 1 + vocabData.length) % vocabData.length;
+    displayWord(newIndex);
   });
-
   nextButton.addEventListener("click", () => {
-    const currentIndex = vocabSelect.selectedIndex;
-    if (currentIndex < vocabSelect.options.length - 1) {
-      vocabSelect.selectedIndex = currentIndex + 1;
-      updateCard();
-    }
+    const newIndex = (vocabSelect.selectedIndex + 1) % vocabData.length;
+    displayWord(newIndex);
   });
-
-  randomButton.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * vocabSelect.options.length);
-    vocabSelect.selectedIndex = randomIndex;
-    updateCard();
-  });
+  randomButton.addEventListener("click", () => displayWord(Math.floor(Math.random() * vocabData.length)));
 
   searchInput.addEventListener("input", () => {
     let searchTerm = searchInput.value.toLowerCase();
@@ -125,39 +116,29 @@ content %}
       const optionText = vocabSelect.options[i].text.toLowerCase();
       if (optionText.includes(searchTerm)) {
         vocabSelect.selectedIndex = i;
+        displayWord(i);
         break;
       }
     }
   });
 
-  function randomizeSelectOptions(selectId) {
-    const select = document.getElementById(selectId);
-    const optionsArray = Array.from(select.options);
-    const shuffledOptions = optionsArray.sort(() => Math.random() - 0.5);
-    select.innerHTML = "";
-    shuffledOptions.forEach((option) => {
-      select.appendChild(option);
-    });
-  }
-
   function sortSelectOptions(selectId, order = "ascending") {
     const select = document.getElementById(selectId);
     const optionsArray = Array.from(select.options);
     optionsArray.sort((a, b) => {
-      if (order === "ascending") {
-        return a.text.toLowerCase().localeCompare(b.text.toLowerCase());
-      } else if (order === "descending") {
-        return b.text.toLowerCase().localeCompare(a.text.toLowerCase());
-      }
+      if (order === "ascending") return a.text.toLowerCase().localeCompare(b.text.toLowerCase());
+      else return b.text.toLowerCase().localeCompare(a.text.toLowerCase());
     });
     select.innerHTML = "";
-    optionsArray.forEach((option) => {
-      select.appendChild(option);
-    });
+    optionsArray.forEach(option => select.appendChild(option));
   }
 
-  updateCard();
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialWordSlug = urlParams.get("word");
+  if (initialWordSlug) selectWordBySlug(initialWordSlug);
+  else displayWord(Math.floor(Math.random() * vocabData.length));
 </script>
+
 <style>
   .vocab-main-word {
     color: hsla(269, 31%, 28%, 0.808);
