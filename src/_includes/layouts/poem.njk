@@ -1,9 +1,5 @@
-{% extends 'layouts/base.njk' %}
-
-{% block title %}
-{% endblock %}
-
-{% block content %}
+{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
+content %}
 
 <div class="page-header">
   <h1>{{ title }}</h1>
@@ -25,7 +21,7 @@
     <h1 id="poem-title"></h1>
     <span id="poem-author"></span>
     <div id="poem-themes">
-      <span>Themes</span>
+      <span>THEMES</span>
       <ul id="theme-list"></ul>
       <!-- <span id="poem-source"></span> -->
     </div>
@@ -59,7 +55,9 @@
     themeList.innerHTML = poem.themes
       .map((theme) => `<li>${theme}</li>`)
       .join("");
+    poemSource.textContent = poem.source;
 
+    // Update select and URL to reflect the current poem
     poemSelect.value = poem.title.toLowerCase().replace(/\s+/g, "-");
     updateURL(poem.title);
   }
@@ -74,25 +72,36 @@
     const index = poemData.findIndex(
       (poem) => poem.title.toLowerCase().replace(/\s+/g, "-") === title
     );
-    if (index !== -1) displayPoem(index);
+    if (index !== -1) {
+      poemSelect.selectedIndex = index;
+      displayPoem(index);
+    }
   }
 
-  poemSelect.addEventListener("change", () =>
-    displayPoem(poemSelect.selectedIndex)
-  );
-  document.getElementById("prev-button").addEventListener("click", () => {
-    const newIndex =
-      (poemSelect.selectedIndex - 1 + poemData.length) % poemData.length;
-    displayPoem(newIndex);
-  });
-  document.getElementById("next-button").addEventListener("click", () => {
-    const newIndex = (poemSelect.selectedIndex + 1) % poemData.length;
-    displayPoem(newIndex);
-  });
-  document.getElementById("random-button").addEventListener("click", () => {
-    displayPoem(Math.floor(Math.random() * poemData.length));
+  poemSelect.addEventListener("change", () => {
+    displayPoem(poemSelect.selectedIndex);
   });
 
+  document.getElementById("prev-button").addEventListener("click", () => {
+    let newIndex = poemSelect.selectedIndex - 1;
+    if (newIndex < 0) newIndex = poemData.length - 1;
+    poemSelect.selectedIndex = newIndex;
+    displayPoem(newIndex);
+  });
+
+  document.getElementById("next-button").addEventListener("click", () => {
+    let newIndex = (poemSelect.selectedIndex + 1) % poemData.length;
+    poemSelect.selectedIndex = newIndex;
+    displayPoem(newIndex);
+  });
+
+  document.getElementById("random-button").addEventListener("click", () => {
+    const randomIndex = Math.floor(Math.random() * poemData.length);
+    poemSelect.selectedIndex = randomIndex;
+    displayPoem(randomIndex);
+  });
+
+  // Load initial poem based on URL or display the first poem by default
   const urlParams = new URLSearchParams(window.location.search);
   const initialPoemTitle = urlParams.get("poem");
   if (initialPoemTitle) selectPoemByTitle(initialPoemTitle);
