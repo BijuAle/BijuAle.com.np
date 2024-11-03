@@ -1,5 +1,10 @@
-{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
-content %}
+{% extends 'layouts/base.njk' %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
 <div class="page-header">
   <h1>{{ title }}</h1>
 </div>
@@ -11,9 +16,7 @@ content %}
     <button class="nav-button" id="random-button">Shuffle</button>
     <select id="poem-select" size="20">
       {% for poem in poems %}
-      <option value="{{ loop.index0 }}">
-        {{ poem.title }}
-      </option>
+      <option value="{{ poem.title | slug }}">{{ poem.title }}</option>
       {% endfor %}
     </select>
   </div>
@@ -21,14 +24,15 @@ content %}
   <div class="poem-card">
     <h1 id="poem-title"></h1>
     <span id="poem-author"></span>
-    <span id="poem-date"></span>
     <div id="poem-themes">
-      <p>THemes</p>
+      <span>Themes</span>
+      <ul id="theme-list"></ul>
+      <!-- <span id="poem-source"></span> -->
     </div>
+    <span id="poem-source"></span>
     <div id="poem-stanza"></div>
   </div>
 </div>
-<div><img src="" alt="" /></div>
 
 <script id="poem-data" type="application/json">
   {{ poems | dump | safe }}
@@ -39,95 +43,92 @@ content %}
   const poemSelect = document.getElementById("poem-select");
   const poemTitle = document.getElementById("poem-title");
   const poemAuthor = document.getElementById("poem-author");
-  const poemDate = document.getElementById("poem-date");
+  const poemSource = document.getElementById("poem-source");
   const poemStanza = document.getElementById("poem-stanza");
-  const poemThemes = document.getElementById("poem-themes");
-
-  const prevButton = document.getElementById("prev-button");
-  const nextButton = document.getElementById("next-button");
-  const randomButton = document.getElementById("random-button");
+  const themeList = document.getElementById("theme-list");
 
   function displayPoem(index) {
     const poem = poemData[index];
     poemTitle.textContent = poem.title;
-    poemAuthor.textContent = `${poem.author}`;
-    poemAuthor.innerHTML += poem.datePublished
-      ? ` | ${poem.datePublished}`
-      : "";
+    poemAuthor.textContent = `${poem.author} ${
+      poem.datePublished ? "| " + poem.datePublished : ""
+    }`;
     poemStanza.innerHTML = poem.stanzas
       .map((stanza) => `<p>${stanza.join("<br>")}</p>`)
       .join("");
+    themeList.innerHTML = poem.themes
+      .map((theme) => `<li>${theme}</li>`)
+      .join("");
 
-    // Clear existing themes and create a new list
-    poemThemes.innerHTML = "<span>Themes</span>";
-    const themeList = document.createElement("ul");
-    poemThemes.appendChild(themeList);
-
-    // Add each theme as a list item
-    poem.themes.forEach((theme) => {
-      const themeItem = document.createElement("li");
-      themeItem.textContent = theme;
-      themeList.appendChild(themeItem);
-    });
+    poemSelect.value = poem.title.toLowerCase().replace(/\s+/g, "-");
+    updateURL(poem.title);
   }
-  poemSelect.addEventListener("change", () => {
-    displayPoem(poemSelect.selectedIndex);
-  });
 
-  prevButton.addEventListener("click", () => {
-    const currentIndex = poemSelect.selectedIndex;
-    const newIndex = currentIndex > 0 ? currentIndex - 1 : poemData.length - 1;
-    poemSelect.selectedIndex = newIndex;
+  function updateURL(title) {
+    const url = new URL(window.location);
+    url.searchParams.set("poem", title.toLowerCase().replace(/\s+/g, "-"));
+    window.history.pushState({}, "", url);
+  }
+
+  function selectPoemByTitle(title) {
+    const index = poemData.findIndex(
+      (poem) => poem.title.toLowerCase().replace(/\s+/g, "-") === title
+    );
+    if (index !== -1) displayPoem(index);
+  }
+
+  poemSelect.addEventListener("change", () =>
+    displayPoem(poemSelect.selectedIndex)
+  );
+  document.getElementById("prev-button").addEventListener("click", () => {
+    const newIndex =
+      (poemSelect.selectedIndex - 1 + poemData.length) % poemData.length;
     displayPoem(newIndex);
   });
-
-  nextButton.addEventListener("click", () => {
-    const currentIndex = poemSelect.selectedIndex;
-    const newIndex = (currentIndex + 1) % poemData.length;
-    poemSelect.selectedIndex = newIndex;
+  document.getElementById("next-button").addEventListener("click", () => {
+    const newIndex = (poemSelect.selectedIndex + 1) % poemData.length;
     displayPoem(newIndex);
   });
-
-  randomButton.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * poemData.length);
-    poemSelect.selectedIndex = randomIndex;
-    displayPoem(randomIndex);
+  document.getElementById("random-button").addEventListener("click", () => {
+    displayPoem(Math.floor(Math.random() * poemData.length));
   });
 
-  // Display the first poem by default
-  displayPoem(0);
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialPoemTitle = urlParams.get("poem");
+  if (initialPoemTitle) selectPoemByTitle(initialPoemTitle);
+  else displayPoem(0);
 </script>
 
 <style>
   select {
     margin-top: 0.5rem;
   }
-
   #poem-themes {
     display: block;
     float: right;
-    span {
-      color: #333;
-      font-weight: bold;
-    }
-    ul {
-      margin-left: 1rem;
-    }
   }
-  #poem-themes ul li {
+  #poem-themes span {
+    color: #333;
+    font-weight: bold;
+  }
+  #theme-list {
+    margin-left: 1rem;
+  }
+  #theme-list li {
     opacity: 80%;
     font-family: "Garamond Italic";
     font-style: italic;
     font-size: 1.2rem;
     margin: 0.2rem;
   }
-
   #poem-title {
     font-size: 1.3rem;
-  }
-  #poem-author,
-  #poem-title {
     margin: 0;
+  }
+  #poem-author {
+    font-style: italic;
+    font-family: "Garamond Italic";
+    font-size: 1.2rem;
   }
   #poem-stanza {
     margin-top: 1rem;
@@ -135,25 +136,14 @@ content %}
   .poem-area {
     display: grid;
     grid-template-columns: 200px auto;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "s c" "s c";
-  }
-  .poem-selector {
-    margin-bottom: 20px;
   }
   .poem-card {
     padding: 20px;
   }
-  #poem-author {
-    font-style: italic;
-    font-family: "Garamond Italic";
-    font-size: 1.2rem;
-  }
-  /* Styles for the poem image */
-  #poem-image {
-    margin-top: 20px;
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
+  #poem-source {
+    display: block;
+    margin-top: 10px;
   }
 </style>
+
 {% endblock %}

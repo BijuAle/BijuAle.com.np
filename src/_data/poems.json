@@ -3,7 +3,7 @@
     "title": "A New Leaf",
     "author": "Anonymous",
     "datePublished": "1964",
-    "source":"Olney Hymns",
+    "source": "Olney Hymns",
     "type": "poem",
     "stanzas": [
       [
@@ -35,6 +35,55 @@
       "spiritual growth"
     ]
   },
+  {
+    "title": "The Kingdom of God",
+    "author": "Francis Thompson",
+    "stanzas": [
+      [
+        "O world invisible, we view thee,",
+        "O world intangible, we touch thee,",
+        "O world unknowable, we know thee,",
+        "",
+        "Inapprehensible, we clutch thee!"
+      ],
+      [
+        "Does the fish soar to find the ocean,",
+        "The eagle plunge to find the air—",
+        "That we ask of the stars in motion",
+        "If they have rumour of thee there?"
+      ],
+      [
+        "Not where the wheeling systems darken,",
+        "And our benumbed conceiving soars!—",
+        "The drift of pinions, would we hearken,",
+        "Beats at our own clay-shuttered doors."
+      ],
+      [
+        "The angels keep their ancient places;",
+        "—Turn but a stone, and start a wing!",
+        "‘Tis ye, ‘tis your estrangèd faces,",
+        "That miss the many-splendoured thing."
+      ],
+      [
+        "But (when so sad thou canst not sadder)Cry;",
+        "—and upon thy so sore loss",
+        "Shall shine the traffic of Jacob’s ladder",
+        "Pitched betwixt Heaven and Charing Cross."
+      ],
+      [
+        "Yea, in the night, my Soul, my daughter,",
+        "Cry,—clinging Heaven by the hems;",
+        "And lo, Christ walking on the water",
+        "Not of Gennesareth, but Thames!"
+      ]
+    ],
+    "themes": [
+      "divine presence",
+      "spiritual perception",
+      "sacred ordinary",
+      "faith and revelation"
+    ]
+  },  
   {
     "title": "The Gate of The Year",
     "author": "Minnie Louise Haskins",
@@ -419,9 +468,7 @@
         "O God! can I not save",
         "One from the pitiless wave?"
       ],
-      ["Is all that we see or seem",
-      "But a dream within a dream?"
-    ]
+      ["Is all that we see or seem", "But a dream within a dream?"]
     ],
     "themes": [
       "reality vs illusion",
@@ -432,92 +479,258 @@
     ]
   },
   {
-    "title": "Seven Stanzas at Easter",
-    "author": "John Updike",
+    "title": "The Present Crisis",
+    "author": "James Russell Lowell",
     "datePublished": null,
     "type": "poem",
     "stanzas": [
       [
-        "Take this kiss upon the brow!",
-        "And, in parting from you now,",
-        "Thus much let me avow —",
-        "You are not wrong, who deem",
-        "That my days have been a dream;"
+        "When a deed is done for Freedom, through the broad earth’s aching breast",
+        "Runs a thrill of joy prophetic, trembling on from east to west,",
+        "And the slave, where’er he cowers, feels the soul within him climb",
+        "To the awful verge of manhood, as the energy sublime",
+        "Of a century bursts full-blossomed on the thorny stem of Time."
       ],
       [
-        "Yet if hope has flown away",
-        "In a night, or in a day,",
-        "In a vision, or in none,",
-        "Is it therefore the less _gone_?",
-        "_All_ that we see or seem",
-        "Is but a dream within a dream."
+        "Through the walls of hut and palace shoots the instantaneous throe,",
+        "When the travail of the Ages wrings earth’s systems to and fro;",
+        "At the birth of each new Era, with a recognizing start,",
+        "Nation wildly looks at nation, standing with mute lips apart,",
+        "And glad Truth’s yet mightier man-child leaps beneath the Future’s heart."
       ],
       [
-        "I stand amid the roar",
-        "Of a surf-tormented shore,",
-        "And I hold within my hand",
-        "Grains of the golden sand —",
-        "How few! yet how they creep",
-        "Through my fingers to the deep,"
+        "So the Evil’s triumph sendeth, with a terror and a chill,",
+        "Under continent to continent, the sense of coming ill,",
+        "And the slave, where’er he cowers, feels his sympathies with God",
+        "In hot tear-drops ebbing earthward, to be drunk up by the sod,",
+        "Till a corpse crawls round unburied, delving in the nobler clod."
       ],
       [
-        "While I weep — while I weep!",
-        "O God! Can I not grasp",
-        "Them with a tighter clasp?",
-        "O God! can I not save",
-        "_One_ from the pitiless wave?",
-        "Is _all_ that we see or seem",
-        "But a dream within a dream."
+        "For mankind are one in spirit, and an instinct bears along,",
+        "Round the earth’s electric circle, the swift flash of right or wrong;",
+        "Whether conscious or unconscious, yet Humanity’s vast frame",
+        "Through its ocean-sundered fibres feels the gush of joy or shame;—",
+        "In the gain or loss of one race all the rest have equal claim."
+      ],
+      [
+        "Once to every man and nation comes the moment to decide,",
+        "In the strife of Truth with Falsehood, for the good or evil side;",
+        "Some great cause, God’s new Messiah, offering each the bloom or blight,",
+        "Parts the goats upon the left hand, and the sheep upon the right,",
+        "And the choice goes by forever ’twixt that darkness and that light."
+      ],
+      [
+        "Hast thou chosen, O my people, on whose party thou shalt stand,",
+        "Ere the Doom from its worn sandals shakes the dust against our land?",
+        "Though the cause of Evil prosper, yet ’tis Truth alone is strong,",
+        "And, albeit she wander outcast now, I see around her throng",
+        "Troops of beautiful, tall angels, to enshield her from all wrong."
+      ],
+      [
+        "Backward look across the ages and the beacon-moments see,",
+        "That, like peaks of some sunk continent, jut through Oblivion’s sea;",
+        "Not an ear in court or market for the low, foreboding cry",
+        "Of those Crises, God’s stern winnowers, from whose feet earth’s chaff must fly;",
+        "Never shows the choice momentous till the judgment hath passed by."
+      ],
+      [
+        "Careless seems the great Avenger; history’s pages but record",
+        "One death-grapple in the darkness ’twixt old systems and the Word;",
+        "Truth forever on the scaffold, Wrong forever on the throne,—",
+        "Yet that scaffold sways the future, and, behind the dim unknown,",
+        "Standeth God within the shadow, keeping watch above his own."
+      ],
+      [
+        "We see dimly in the Present what is small and what is great,",
+        "Slow of faith how weak an arm may turn this iron helm of fate,",
+        "But the soul is still oracular; amid the market’s din,",
+        "List the ominous stern whisper from the Delphic cave within,—",
+        "“They enslave their children’s children who make compromise with sin.”"
+      ],
+      [
+        "Slavery, the earth-born Cyclops, fellest of the giant brood,",
+        "Sons of brutish Force and Darkness, who have drenched the earth with blood,",
+        "Famished in his self-made desert, blinded by our purer day,",
+        "Gropes in yet unblasted regions for his miserable prey;—",
+        "Shall we guide his gory fingers where our helpless children play?"
+      ],
+      [
+        "Then to side with Truth is noble when we share her wretched crust,",
+        "Ere her cause bring fame and profit, and ’tis prosperous to be just;",
+        "Then it is the brave man chooses, while the coward stands aside,",
+        "Doubting in his abject spirit, till his Lord is crucified,",
+        "And the multitude make virtue of the faith they had denied."
+      ],
+      [
+        "Count me o’er earth’s chosen heroes,— they were souls that stood alone,",
+        "While the men they agonized for hurled the contumelious stone,",
+        "Stood serene, and down the future saw the golden beam incline",
+        "To the side of perfect justice, mastered by their faith divine,",
+        "By one man’s plain truth to manhood and to God’s supreme design."
+      ],
+      [
+        "By the light of burning heretics Christ’s bleeding feet I track,",
+        "Toiling up new Calvaries ever with the cross that turns not back,",
+        "And these mounts of anguish number how each generation learned",
+        "One new word of that grand Credo which in prophet-hearts hath burned",
+        "Since the first man stood God-conquered with his face to heaven upturned."
+      ],
+      [
+        "For Humanity sweeps onward: where to-day the martyr stands,",
+        "On the morrow crouches Judas with the silver in his hands;",
+        "Far in front the cross stands ready and the crackling fagots burn,",
+        "While the hooting mob of yesterday in silent awe return",
+        "To glean up the scattered ashes into History's golden urn."
+      ],
+      [
+        "'Tis as easy to be heroes as to sit the idle slaves",
+        "Of a legendary virtue carved upon our fathers' graves,",
+        "Worshippers of light ancestral make the present light a crime;—",
+        "Was the Mayflower launched by cowards, steered by men behind their time?",
+        "Turn those tracks toward Past or Future, that made Plymouth Rock sublime?"
+      ],
+      [
+        "They were men of present valor, stalwart old iconoclasts,",
+        "Unconvinced by axe or gibbet that all virtue was the Past's;",
+        "But we make their truth our falsehood, thinking that hath made us free,",
+        "Hoarding it in mouldy parchments, while our tender spirits flee",
+        "The rude grasp of that great Impulse which drove them across the sea."
+      ],
+      [
+        "They have rights who dare maintain them; we are traitors to our sires,",
+        "Smothering in their holy ashes Freedom's new-lit altar-fires;",
+        "Shall we make their creed our jailer? Shall we, in our haste to slay,",
+        "From the tombs of the old prophets steal the funeral lamps away",
+        "To light up the martyr-fagots round the prophets of to-day?"
+      ],
+      [
+        "New occasions teach new duties; Time makes ancient good uncouth;",
+        "They must upward still, and onward, who would keep abreast of Truth;",
+        "Lo, before us gleam her camp-fires! we ourselves must Pilgrims be,",
+        "Launch our Mayflower, and steer boldly through the desperate winter sea,",
+        "Nor attempt the Future's portal with the Past's blood-rusted key."
       ]
-    ],
-    "themes": ["existence", "dreams", "ephemerality", "loss", "grief"]
+    ]
   },
   {
-    "title": "The Kingdom of God",
-    "author": "Francis Thompson",
+    "title": "Aazadiyan",
+    "themes": ["freedom", "determination"],
+    "author": "Amitabh Bhattacharya",
     "datePublished": null,
-    "type": "poem",
-    "image":"",
+    "type": "song",
     "stanzas": [
       [
-        "O world invisible, we view thee,",
-        "O world intangible, we touch thee,",
-        "O world unknowable, we know thee,",
-        "Inapprehensible, we clutch thee!"
+        "[Verse 1] पैरों की बेड़ियाँ ख्वाबों को बांधें नहीं रे, कभी नहीं रे..",
+        "(Foot shackles cannot bind dreams, never.)",
+        "मिट्टी की परतों को नन्हे से अंकुर भी चीरें, धीरे धीरे..",
+        "(Even tiny sprouts pierce through the earth, slowly.)",
+        "इरादे हरे भरे, जिनके सीने में घर करें",
+        "(Green intentions, that find a home in hearts)",
+        "वो दिल की सुने करें, ना डरें, ना डरें",
+        "(They listen to their hearts, fear nothing.)"
       ],
       [
-        "Does the fish soar to find the ocean,",
-        "The eagle plunge to find the air—",
-        "That we ask of the stars in motion",
-        "If they have rumour of thee there?"
+        "[Chorus] सुबह की किरणों को रोकें जो सलाखें है कहाँ",
+        "(Where are the bars that can stop the morning rays?)",
+        "जो ख्यालों पे पहरे डालें वो आंखें है कहाँ",
+        "(Where are the eyes that can blind thoughts?)",
+        "पर खुलने की देरी है परिंदे उड़ के चूमेंगे.. आसमान आसमान आसमान..",
+        "(But the birds will soon fly and touch the sky, sky, sky.)"
       ],
       [
-        "Not where the wheeling systems darken,",
-        "And our benumbed conceiving soars!—",
-        "The drift of pinions, would we hearken,",
-        "eats at our own clay-shuttered doors."
+        "[Chorus] आज़ादियाँ.. आज़ादियाँ.. माँगे ना कभी, मिले मिले मिले",
+        "(Freedom, freedom, never ask for it, it comes, it comes, it comes.)",
+        "आज़ादियाँ.. आज़ादियाँ.. जो छीने वही, जी ले जी ले जी ले",
+        "(Freedom, freedom, those who snatch it, live, live, live.)"
       ],
       [
-        "The angels keep their ancient places;—",
-        "Turn but a stone, and start a wing!",
-        "‘Tis ye, ‘tis your estrangèd faces,",
-        "That miss the many-splendoured thing."
+        "[Verse 2] आज़ादियाँ.. आज़ादियाँ.. माँगे ना कभी, मिले मिले मिले",
+        "(Freedom, freedom, never ask for it, it comes, it comes, it comes.)",
+        "आज़ादियाँ.. आज़ादियाँ.. जो छीने वही, जी ले जी ले जी ले",
+        "(Freedom, freedom, those who snatch it, live, live, live.)"
       ],
       [
-        "But (when so sad thou canst not sadder)",
-        "Cry;—and upon thy so sore loss",
-        "Shall shine the traffic of Jacob’s ladder",
-        "Pitched betwixt Heaven and Charing Cross."
+        "[Chorus] सुबह की किरणों को रोकें जो सलाखें है कहाँ",
+        "(Where are the bars that can stop the morning rays?)",
+        "जो ख्यालों पे पहरे डालें वो आंखें है कहाँ",
+        "(Where are the eyes that can blind thoughts?)",
+        "पर खुलने की देरी है परिंदे उड़ के चूमेंगे.. आसमान आसमान आसमान..",
+        "(But the birds will soon fly and touch the sky, sky, sky.)"
       ],
       [
-        "Yea, in the night, my Soul, my daughter,",
-        "Cry,—clinging Heaven by the hems;",
-        "And lo, Christ walking on the water",
-        "Not of Gennesareth, but Thames!"
+        "[Outro] आज़ादियाँ.. आज़ादियाँ.. माँगे ना कभी, मिले मिले मिले आज़ादियाँ.. आज़ादियाँ.. जो छीने वही, जी ले जी ले जी ले",
+        "(Freedom, freedom, never ask for it, it comes, it comes, it comes. Freedom, freedom, those who snatch it, live, live, live.)"
+      ],
+      [
+        "[Outro 2] कहानी खत्म है या शुरुआत होने को है होने को है",
+        "(Is the story over, or is it about to begin? It's about to begin.)",
+        "सुबह नई है ये या फिर रात होने को है होने को है",
+        "(Is this a new dawn, or is it about to become night? It's about to become night.)",
+        "कहानी खत्म है या शुरुआत होने को है होने को है",
+        "(Is the story over, or is it about to begin? It's about to begin.)",
+        "सुबह नई है ये या फिर रात होने को है होने को है",
+        "(Is this a new dawn, or is it about to become night? It's about to become night.)",
+        "आने वाला वक्त देगा पनाहें है या फिर से मिलेंगे दो राहें",
+        "(The coming time will give shelter, or we will meet again at two paths.)",
+        "खबर क्या क्या पता है",
+        "(Who knows what the future holds?)"
       ]
-    ],
-    "themes": ["faith", "spirituality", "divine presence", "human perception"]
+    ]
+  },
+  {
+    "title": "Seven Stanzas at Easter",
+    "author": "John Updike",
+    "themes": ["resurrection", "faith"],
+    "stanzas": [
+      [
+        "Make no mistake: if he rose at all",
+        "It was as His body;",
+        "If the cell’s dissolution did not reverse, the molecule reknit,",
+        "The amino acids rekindle,",
+        "The Church will fall."
+      ],
+      [
+        "It was not as the flowers,",
+        "Each soft spring recurrent;",
+        "It was not as His Spirit in the mouths and fuddled eyes of the",
+        "Eleven apostles;",
+        "It was as His flesh; ours."
+      ],
+      [
+        "The same hinged thumbs and toes",
+        "The same valved heart",
+        "That—pierced—died, withered, paused, and then regathered",
+        "Out of enduring Might",
+        "New strength to enclose."
+      ],
+      [
+        "Let us not mock God with metaphor,",
+        "Analogy, sidestepping, transcendence,",
+        "Making of the event a parable, a sign painted in the faded",
+        "Credulity of earlier ages:",
+        "Let us walk through the door."
+      ],
+      [
+        "The stone is rolled back, not papier-mache,",
+        "Not a stone in a story,",
+        "But the vast rock of materiality that in the slow grinding of",
+        "Time will eclipse for each of us",
+        "The wide light of day."
+      ],
+      [
+        "And if we have an angel at the tomb,",
+        "Make it a real angel,",
+        "Weighty with Max Planck’s quanta, vivid with hair, opaque in",
+        "The dawn light, robed in real linen",
+        "Spun on a definite loom."
+      ],
+      [
+        "Let us not seek to make it less monstrous,",
+        "For our own convenience, our own sense of beauty,",
+        "Lest, awakened in one unthinkable hour, we are embarrassed",
+        "By the miracle,",
+        "And crushed by remonstrance."
+      ]
+    ]
   }
-
-
 ]
