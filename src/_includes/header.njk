@@ -2,7 +2,7 @@
     {% set currentUrl = page.url %}
     <nav>
         <div id="site_heading">
-            <a href="/">Biju Ale</a>
+            <a href="/">Biju Ale<span>'s Web</span></a>
         </div>
 
         <ul role="list">
@@ -66,6 +66,11 @@
 </header>
 
 <style>
+  #site_heading span{
+    font-family: "Garamond Italic";
+    font-style: italic;
+    color:gray;
+  }
   header {
   background-color: #bdbda1;
   position: sticky;
