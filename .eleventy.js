@@ -19,6 +19,8 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   eleventyConfig.addFilter("latex", (content) => {
     return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
       const cleanEquation = equation
