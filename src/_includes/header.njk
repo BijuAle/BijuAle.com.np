@@ -2,9 +2,13 @@
     {% set currentUrl = page.url %}
     <nav>
         <div id="site_heading">
-            <a href="/">Biju Ale<span>'s Web</span></a>
+          
+          <a href="/"><img width="35px" src="../assets/images/chi-ro.png" alt="">Biju Ale<span id="web">'s Web</span></a>
+            <div  id="site_subheading">And you shall know the truth, 
+              & the truth shall set you free.</br> <span id="verse">&mdash;John 8:32</span>
+              </div>
         </div>
-
+     
         <ul role="list">
             <li>
               <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
@@ -60,26 +64,21 @@
           </ul>
     </nav>
 
-    <div  id="site_subheading">And you shall know the truth, 
-    <br>& the truth shall set you free.</br> &mdash;<span>John 8:32</span> 
-    </div>
+    
 </header>
 
 <style>
-  #site_heading span{
-    font-family: "Garamond Italic";
-    font-style: italic;
-    color:gray;
-  }
+
   header {
   background-color: #bdbda1;
+  z-index: 1;
   position: sticky;
   top: 0;
   font-family: "Cinzel";
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
   border-bottom: 1px solid grey;
 }
 
@@ -90,16 +89,20 @@
 }
 
 #site_subheading {
-  display: block;
+  display: inline;
   text-align: right;
-  opacity: 66%;
+  opacity: 75%;
   font-size: 0.95rem;
   white-space: nowrap;
+  position: absolute;
+  right:0;
+  max-width:300px;
+  text-wrap: wrap;
 }
-
-#site_subheading span {
-  font-style: italic;
-  font-family: "Garamond Italic";
+#web{
+    font-family: "Garamond Italic";
+    font-style: italic;
+    opacity: 40%;
 }
 
 nav ul {
@@ -137,19 +140,42 @@ nav ul li a {
   padding: 0.5rem;
   z-index: 1;
 }
+header img{
+    opacity: 60%;
+    display: inline-block;
+  }
 
+#verse{
+  font-style: italic;
+  font-family: "Garamond Italic";
+  opacity: 75%;
+
+}
 nav li:hover .submenu {
   display: block;
-  
 }
 
-@media (max-width: 768px) {
+  header img{
+    padding-left: 4px;
+    padding-top: 4px;
+  }
+
+  @media (max-width: 768px) {
   header,
   nav {
     flex-direction: column;
-  }
-  .submenu {
-    position: static;
+    padding: 0;
+    }
+
+  #site_subheading{
+    padding-right: .3rem;
+    padding-top:.2rem;
+    font-size: 40%;
+    opacity: 90%;
+    font-family: "Gaela";
+    max-width:140px;
+    text-wrap: wrap;
+    
   }
 }
 </style>
