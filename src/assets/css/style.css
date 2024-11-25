@@ -45,6 +45,9 @@ h3 {
   margin: 0.2rem 0 0.5rem 0;
   font-weight: bold;
 }
+h2{
+  text-indent: 1em;
+}
 
 h1:not(:first-of-type),
 h2:not(:first-of-type),
@@ -334,4 +337,8 @@ li::marker {
 }
 .tags ul li:hover {
   background: #649ab5;
+}
+p + ul,
+p + ol {
+  margin-top: -1rem;
 }

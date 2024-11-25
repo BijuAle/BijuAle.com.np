@@ -2,14 +2,10 @@
     {% set currentUrl = page.url %}
     <nav>
         <div id="site_heading">
-          
           <a href="/"><img width="35px" src="../assets/images/chi-ro.png" alt="">Biju Ale<span id="web">'s Web</span></a>
-            <div  id="site_subheading">And you shall know the truth, 
-              & the truth shall set you free.</br> <span id="verse">&mdash;John 8:32</span>
-              </div>
+          <div  id="site_subheading">And you shall know the truth, & the truth shall set you free.</br> <span id="verse">&mdash;John 8:32</span></div>
         </div>
-     
-        <ul role="list">
+            <ul role="list">
             <li>
               <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
             </li>
