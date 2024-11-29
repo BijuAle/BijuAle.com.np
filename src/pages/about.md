@@ -2,9 +2,9 @@
 title: About
 ---
 
-![I, and my volunteer partner Kristian with our host familis' kids in Dhading]({{ '/assets/images/biju.png' | url }})
+![My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)]({{ '/assets/images/dhading.png' | url }})
 
-Image Caption: _I, and my volunteer partner Kristian Hillerup Jørgensen with our host familis' children in Dhading, Nepal (2018)_
+Image Caption: My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)
 
 I’m _Biju Ale_, a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. Welcome to my webpage—a space for thoughtful reflections. I hope you discover something meaningful here that resonates with you.
 
