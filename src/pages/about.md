@@ -6,7 +6,7 @@ title: About
 
 Image Caption: My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)
 
-I’m _Biju Ale_, a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. Welcome to my webpage—a space for thoughtful reflections. I hope you discover something meaningful here that resonates with you.
+My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. Welcome to my webpage—a space for thoughtful reflections. I hope you discover something meaningful here that resonates with you.
 
 Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnepal.com.np/biju-ale/), in research, monitoring, learning, and evaluation of myriad developmental projects in Nepal. <details class="details-animated ">
 
