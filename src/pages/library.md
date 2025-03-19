@@ -1,5 +1,5 @@
 ---
-title: "Shelf Reflection: My Home Library"
+title: "Shelf Reflection: Home Library"
 layout: "layouts/library.njk"
 tags: ['post', 'Philosophy', 'Reading']
 date: 2024-10-24

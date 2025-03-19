@@ -2,6 +2,16 @@
 title: Various Automations
 ---
 
+# Internet Archive
+
+```
+1. Get Collection
+ia search 'collection:mir_titles' --itemlist > items.txt
+
+2. Download Collection
+cat items.txt | xargs -n 1 -P 10 -I {} bash -c 'ia download --no-directories --glob "*.pdf" --destdir=. "{}"'
+```
+
 # Copyright Images
 
 ```
