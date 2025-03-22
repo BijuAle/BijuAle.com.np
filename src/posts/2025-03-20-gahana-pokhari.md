@@ -1,5 +1,5 @@
 ---
-title: Gahana Pokhari
+title: Mutating Enclaves in Kathmandu
 date: 2025-03-20
 tags: ["Journal"]
 ---
