@@ -1,12 +1,30 @@
+require('dotenv').config();
+const cloudinary = require("cloudinary").v2;
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
+});
+
 const { DateTime } = require("luxon");
 const slugify = require("slugify");
 const katex = require("katex");
 
 module.exports = function (eleventyConfig) {
+  
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addFilter("formatted", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
+
+  
+ eleventyConfig.addFilter("date", function(dateObj) {
+  return new Date(dateObj).toLocaleDateString('en-US', { 
+    year: 'numeric', 
+    month: 'short', 
+    day: 'numeric' 
+  });
+ });
 
   eleventyConfig.addFilter("slug", (str) => {
     if (!str) {

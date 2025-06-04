@@ -1,0 +1,295 @@
+---
+layout: layouts/base.njk
+pagination:
+ data: photos.tags
+ size: 1
+ alias: tag
+permalink: "photo-tag/{{ tag }}/index.html"
+---
+<div class="viewer">
+  <h1>{{ tag }}</h1>
+  <a href="{{ '/photography' }}"><button>&#8592; Photography</button></a>
+
+  <div class="main">
+    <div class="photo-area">
+      <button class="nav prev" onclick="previousPhoto()">‹</button>
+      
+      <div class="photo">
+        {% for photo in photos.byTag[tag] %}
+        <div class="slide {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+          {% set main_url = photo.secure_url | replace('/upload/', '/upload/w_800,h_600,c_limit,q_auto/') %}
+          <img src="{{ main_url }}" alt="{{ tag }}">
+        </div>
+        {% endfor %}
+      </div>
+      
+      <button class="nav next" onclick="nextPhoto()">›</button>
+    </div>
+    
+    <div class="meta">
+      {% for photo in photos.byTag[tag] %}
+      <div class="info {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+        {% if photo.context and photo.context.caption %}
+        <div class="caption">{{ photo.context.caption }}</div>
+        {% endif %}
+        <div><b>Created:</b> {{ photo.created_at }}</div>
+        {% if photo.width %}
+        <div><b>Original Dimensions:</b> {{ photo.width }} × {{ photo.height }}px</div>
+        {% endif %}
+        {% if photo.tags %}
+        <div><b>Tags:</b> {{ photo.tags | join('; ') }}</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="thumbs">
+    {% for photo in photos.byTag[tag] %}
+    <div class="thumb {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+      {% set thumb_url = photo.secure_url | replace('/upload/', '/upload/w_60,h_60,c_fill,q_auto/') %}
+      <img src="{{ thumb_url }}" alt="{{ loop.index }}">
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.viewer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.main {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.photo-area {
+  flex: 1;
+  position: relative;
+  border-radius: 8px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #eea8a8e6;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav:hover {
+border-color:blue;
+border:1px solid blue;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.meta {
+  width: 240px;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  height: fit-content;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.info {
+  display: none;
+}
+
+.info.active {
+  display: block;
+}
+
+.info div {
+  margin-bottom: 5px;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.caption {
+  border:2px solid grey;
+  border-radius: 10px;
+  width: 100%;
+  color:  lightgreen;
+  background: #4d3d3d;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.info div:last-child {
+  margin-bottom: 0;
+}
+
+.info b {
+  color: #666;
+  font-weight: 500;
+}
+
+.thumbs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.thumbs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.thumbs::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.thumb {
+  min-width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: all 0.15s;
+}
+
+.thumb.active {
+  border-color: #007bff;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  
+  .meta {
+    width: 100%;
+  }
+  
+  .photo-area {
+    height: 300px;
+  }
+  
+  .thumb {
+    min-width: 40px;
+    height: 40px;
+  }
+}
+</style>
+
+<script>
+let currentIndex = 0;
+const totalPhotos = document.querySelectorAll('.slide').length;
+
+function showPhoto(index) {
+  document.querySelector('.slide.active').classList.remove('active');
+  document.querySelector('.info.active').classList.remove('active');
+  document.querySelector('.thumb.active').classList.remove('active');
+  
+  document.querySelectorAll(`[data-index="${index}"]`).forEach(el => el.classList.add('active'));
+  
+  currentIndex = index;
+  
+  const activeThumb = document.querySelector(`.thumb[data-index="${index}"]`);
+  activeThumb.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+}
+
+function nextPhoto() {
+  const nextIndex = (currentIndex + 1) % totalPhotos;
+  showPhoto(nextIndex);
+}
+
+function previousPhoto() {
+  const prevIndex = (currentIndex - 1 + totalPhotos) % totalPhotos;
+  showPhoto(prevIndex);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.thumb').forEach(thumb => {
+    thumb.addEventListener('click', function() {
+      const index = parseInt(this.getAttribute('data-index'));
+      showPhoto(index);
+    });
+  });
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowRight') nextPhoto();
+  if (e.key === 'ArrowLeft') previousPhoto();
+});
+</script>

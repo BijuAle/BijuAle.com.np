@@ -342,3 +342,44 @@ p + ul,
 p + ol {
   margin-top: -1rem;
 }
+
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.tag-grid a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tag-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.slide img {
+  /* width: 100%; */
+  border-radius: 10px;
+}
+
+.caption {
+  float:right;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.pagination a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
