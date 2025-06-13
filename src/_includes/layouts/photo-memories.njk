@@ -3,8 +3,7 @@ layout: layouts/base.njk
 title: Photo Tags
 ---
 
-<h1>Tags</h1>
-<div class="tag-grid">
+Tags:<div class="tag-grid">
   {% for tag in photos.tags %}
     <a href="/photo-tag/{{ tag }}/">
       <img src="{{ photos.byTag[tag][0].secure_url }}" alt="{{ tag }}" style="border: 1px solid black; transition: border 0.1s;" onmouseover="this.style.border='1px solid yellow'" onmouseout="this.style.border='none'">
