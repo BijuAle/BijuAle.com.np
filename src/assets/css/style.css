@@ -169,7 +169,7 @@ table tbody td {
 table tbody tr {
   border-radius: 10px;
 }
-table tbody tr:hover {
+table:not(.exif-table) tbody tr:hover {
   background-color: #649ab5;
   cursor: pointer;
 }

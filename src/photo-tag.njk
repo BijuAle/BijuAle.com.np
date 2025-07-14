@@ -1,65 +1,138 @@
 ---
 layout: layouts/base.njk
 pagination:
- data: photos.tags
- size: 1
- alias: tag
+  data: photos.tags
+  size: 1
+  alias: tag
 permalink: "photo-tag/{{ tag }}/index.html"
 ---
+
 <div class="fullscreen-gallery">
   <div class="header">
     <h1>{{ tag }}</h1>
     <div class="controls">
-      <a href="{{ '/photo-memories' }}" class="back-btn">← Photography</a>
-      <span class="counter"><span id="current">1</span> / {{ photos.byTag[tag] | length }}</span>
+      <a href="{{ '/photo-memories' }}" class="back-btn">← Photo Memories</a>
+      <span class="counter">
+        <span id="current">1</span> / {{ photos.byTag[tag] | length }}
+      </span>
     </div>
   </div>
 
   <div class="gallery-main">
     <div class="photo-area">
       <button class="nav prev" onclick="prev()">‹</button>
-      
       <div class="photo-container">
         {% for photo in photos.byTag[tag] %}
-        <div class="photo {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-          {% set url = photo.secure_url | replace('/upload/', '/upload/q_auto,f_auto/') %}
-          <img src="{{ url }}" alt="{{ photo.context.caption or tag }}">
+        <div
+          class="photo {% if loop.first %}active{% endif %}"
+          data-index="{{ loop.index0 }}"
+        >
+          {% set url = photo.secure_url | replace('/upload/',
+          '/upload/q_auto,f_auto/') %}
+          <img src="{{ url }}" alt="{{ photo.context.caption or tag }}" />
         </div>
         {% endfor %}
       </div>
-      
       <button class="nav next" onclick="next()">›</button>
     </div>
-    
+
     <div class="sidebar">
       <div class="details-area">
         {% for photo in photos.byTag[tag] %}
-        <div class="details {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+        <div
+          class="details {% if loop.first %}active{% endif %}"
+          data-index="{{ loop.index0 }}"
+        >
           {% if photo.context and photo.context.caption %}
           <div class="caption">{{ photo.context.caption }}</div>
           {% endif %}
-          
+
           <div class="meta">
-            <div class="meta-row">
-              <span class="label">Created:</span>
-              <span>{{ photo.created_at }}</span>
-            </div>
-            {% if photo.width %}
-            <div class="meta-row">
-              <span class="label">Size:</span>
-              <span>{{ photo.width }} × {{ photo.height }}px</span>
+            <table class="exif-table">
+              {% if photo.context.date %}
+              <tr>
+                <td class="label">Photo Taken On</td>
+                <td>{{ photo.context.date }}</td>
+              </tr>
+              {% endif %} {% if photo.context.camera %}
+              <tr>
+                <td class="label">Camera Model</td>
+                <td>{{ photo.context.camera }}</td>
+              </tr>
+              {% endif %} {% if photo.context.iso %}
+              <tr>
+                <td class="label">ISO</td>
+                <td>{{ photo.context.iso }}</td>
+              </tr>
+              {% endif %} {% if photo.context.aperture %}
+              <tr>
+                <td class="label">Aperture</td>
+                <td>{{ photo.context.aperture }}</td>
+              </tr>
+              {% endif %} {% if photo.context.focalLength %}
+              <tr>
+                <td class="label">Focal Length</td>
+                <td>{{ photo.context.focalLength }}</td>
+              </tr>
+              {% endif %} {% if photo.context.shutter %}
+              <tr>
+                <td class="label">Shutter Speed</td>
+                <td>{{ photo.context.shutter }}</td>
+              </tr>
+              {% endif %} {% if photo.context.gps %} {% set gps =
+              photo.context.gps | replace(' ', '') %} {% set lat =
+              gps.split(',')[0] %} {% set lng = gps.split(',')[1] %} {% endif %}
+
+
+              <!-- {% if photo.context.lens %}
+              <tr>
+                <td class="label">Lens</td>
+                <td>{{ photo.context.lens }}</td>
+              </tr>
+              {% endif %} -->
+              
+              {% if photo.width %}
+              <tr>
+                <td class="label">Dimensions</td>
+                <td>{{ photo.width }} × {{ photo.height }}px</td>
+              </tr>
+              {% endif %}
+                <tr>
+              <td class="label">Copyright</td>
+                <td>© 2025 Biju Ale</td>
+            </tr>
+            </table>
+          
+            {% if photo.context.gps %}
+            <div class="map-container">
+              <iframe
+                width="100%"
+                height="320"
+                frameborder="0"
+                style="border: 0"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q={{ lat }},{{
+                  lng
+                }}&z=15&t=k&output=embed"
+                allowfullscreen
+              ></iframe>
             </div>
             {% endif %}
           </div>
         </div>
         {% endfor %}
       </div>
-      
+
       <div class="thumbs">
         {% for photo in photos.byTag[tag] %}
-        <div class="thumb {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}" onclick="goTo('{{ loop.index0 }}')">
-          {% set thumb = photo.secure_url | replace('/upload/', '/upload/w_60,h_60,c_fill,q_auto/') %}
-          <img src="{{ thumb }}" alt="{{ loop.index }}">
+        <div
+          class="thumb {% if loop.first %}active{% endif %}"
+          data-index="{{ loop.index0 }}"
+          onclick="goTo('{{ loop.index0 }}')"
+        >
+          {% set thumb = photo.secure_url | replace('/upload/',
+          '/upload/w_60,h_60,c_fill,q_auto/') %}
+          <img src="{{ thumb }}" alt="{{ loop.index }}" />
         </div>
         {% endfor %}
       </div>
@@ -68,364 +141,313 @@ permalink: "photo-tag/{{ tag }}/index.html"
 </div>
 
 <style>
-.fullscreen-gallery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #432c2d;
-  color: #ddd;
-  font-family: system-ui, sans-serif;
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  backdrop-filter: blur(10px);
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.back-btn {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 16px;
-  background: rgba(178, 129, 129, 0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 4px;
-  transition: background 0.2s;
-}
-
-.back-btn:hover {
-  background: rgba(255,255,255,0.2);
-}
-
-.counter {
-  font-size: 14px;
-  color: rgba(255,255,255,0.7);
-}
-
-.gallery-main {
-  flex: 1;
-  display: flex;
-  min-height: 0;
-}
-
-.photo-area {
-  flex: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.photo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.photo.active {
-  opacity: 1;
-}
-
-.photo img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.photo img:hover {
-  transform: scale(1.02);
-}
-
-.nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  /* background: rgba(255,255,255,0.1); */
-  border: 1px solid rgba(255,255,255,0.2);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 10;
-  transition: all 0.2s;
-}
-
-.nav:hover {
-  background: rgba(255,255,255,0.2);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.prev { left: 20px; }
-.next { right: 20px; }
-
-.sidebar {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-}
-
-.details-area {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.details {
-  display: none;
-}
-
-.details.active {
-  display: flex;
-    justify-content:space-between;
-    flex-direction:column;
-}
-
-.caption {
-background: rgb(75, 106, 97);
-margin:15px;
-}
-
-.meta {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.meta-row {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.label {
-  font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.tag {
-  background: rgba(74,158,255,0.2);
-  color: #4a9eff;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 11px;
-}
-
-.thumbs {
-  display: flex;
-  gap: 8px;
-  padding: 15px;
-  overflow-x: auto;
-}
-
-.thumb {
-  min-width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.thumb.active {
-  border-color: #4a9eff;
-}
-
-.thumb:hover {
-  transform: scale(1.1);
-}
-
-.thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .gallery-main {
+  .fullscreen-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #432c2d;
+    color: #ddd;
+    font-family: system-ui, sans-serif;
+    z-index: 9999;
+    display: flex;
     flex-direction: column;
   }
-  
-  .sidebar {
-    width: 100%;
-    height: 40vh;
-  }
-  
-  .photo-area {
-    height: 60vh;
-  }
 
-  
-  .details-area {
-    padding: 15px;
-  }
-  
-  .meta-row {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .meta-row .tags {
-    margin-top: 0;
-    justify-content: flex-end;
-    flex: 1;
-    margin-left: 10px;
-  }
-  
-  .caption {
-    margin-bottom: 15px;
-    font-size: 13px;
-  }
-  
   .header {
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
   }
-  
-  .header h1 {
-    font-size: 1.3rem;
-  }
-  
-  .controls {
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-end;
-  }
-  
-  .nav {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-  
-  .prev { left: 10px; }
-  .next { right: 10px; }
-}
 
-@media (max-width: 480px) {
-  .sidebar {
-    height: 35vh;
+  .header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
   }
-  
+
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .back-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background: rgba(178, 129, 129, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  .back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .counter {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .gallery-main {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+  }
+
   .photo-area {
-    height: 65vh;
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
+
+  .photo-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .photo.active {
+    opacity: 1;
+  }
+
+  .photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .photo img:hover {
+    transform: scale(1.02);
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s;
+  }
+
+  .nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .prev {
+    left: 20px;
+  }
+  .next {
+    right: 20px;
+  }
+
+  .sidebar {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .details-area {
-    padding: 12px;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
   }
-  
+
+  .details {
+    display: none;
+  }
+
+  .details.active {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .caption {
+    background: rgb(75, 106, 97);
+    margin: 15px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .meta {
+    padding-top: 10px;
+  }
+
+  .exif-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    color: #ccc;
+  }
+
+  .exif-table td {
+    padding: 4px 8px;
+    vertical-align: top;
+    color: #ccc;
+  }
+
+  .exif-table .label {
+    text-align: right;
+    width: 40%;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .map-container {
+    margin-top: 16px;
+  }
+
   .thumbs {
-    padding: 10px;
+    display: flex;
+    gap: 8px;
+    padding: 15px;
+    overflow-x: auto;
   }
-  
+
   .thumb {
-    min-width: 45px;
-    height: 45px;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
   }
-}
+
+  .thumb.active {
+    border: 2px solid #4a9eff;
+  }
+
+  .thumb:hover {
+    transform: scale(1.1);
+  }
+
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .gallery-main {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      height: 40vh;
+    }
+
+    .photo-area {
+      height: 60vh;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sidebar {
+      height: 35vh;
+    }
+
+    .photo-area {
+      height: 65vh;
+    }
+
+    .thumb {
+      min-width: 45px;
+      height: 45px;
+    }
+  }
 </style>
 
 <script>
-let current = 0;
-const total = document.querySelectorAll('.photo').length;
+  let current = 0;
+  const total = document.querySelectorAll(".photo").length;
 
-function show(index) {
-  // Remove active classes
-  document.querySelector('.photo.active').classList.remove('active');
-  document.querySelector('.details.active').classList.remove('active');
-  document.querySelector('.thumb.active').classList.remove('active');
-  
-  // Add active classes
-  document.querySelectorAll(`[data-index="${index}"]`).forEach(el => {
-    el.classList.add('active');
+  function show(index) {
+    document.querySelector(".photo.active").classList.remove("active");
+    document.querySelector(".details.active").classList.remove("active");
+    document.querySelector(".thumb.active").classList.remove("active");
+
+    document.querySelectorAll(`[data-index="${index}"]`).forEach((el) => {
+      el.classList.add("active");
+    });
+
+    current = index;
+    document.getElementById("current").textContent = current + 1;
+
+    const thumb = document.querySelector(`.thumb[data-index="${index}"]`);
+    thumb.scrollIntoView({ behavior: "smooth", inline: "center" });
+  }
+
+  function next() {
+    show((current + 1) % total);
+  }
+
+  function prev() {
+    show((current - 1 + total) % total);
+  }
+
+  function goTo(index) {
+    show(index);
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight" || e.key === " ") {
+      e.preventDefault();
+      next();
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      prev();
+    }
   });
-  
-  current = index;
-  document.getElementById('current').textContent = current + 1;
-  
-  // Scroll thumb into view
-  const thumb = document.querySelector(`.thumb[data-index="${index}"]`);
-  thumb.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-}
 
-function next() {
-  show((current + 1) % total);
-}
+  let startX = 0;
+  document
+    .querySelector(".photo-container")
+    .addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
 
-function prev() {
-  show((current - 1 + total) % total);
-}
+  document
+    .querySelector(".photo-container")
+    .addEventListener("touchend", (e) => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
 
-function goTo(index) {
-  show(index);
-}
-
-// Keyboard navigation
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'ArrowRight' || e.key === ' ') {
-    e.preventDefault();
-    next();
-  } else if (e.key === 'ArrowLeft') {
-    e.preventDefault();
-    prev();
-  }
-});
-
-// Touch/swipe support
-let startX = 0;
-document.querySelector('.photo-container').addEventListener('touchstart', e => {
-  startX = e.touches[0].clientX;
-});
-
-document.querySelector('.photo-container').addEventListener('touchend', e => {
-  const endX = e.changedTouches[0].clientX;
-  const diff = startX - endX;
-  
-  if (Math.abs(diff) > 50) {
-    if (diff > 0) next();
-    else prev();
-  }
-});
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) next();
+        else prev();
+      }
+    });
 </script>
