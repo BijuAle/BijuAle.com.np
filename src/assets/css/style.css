@@ -198,12 +198,13 @@ select::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+textarea,
 button,
 input[type="button"] {
   background: transparent;
   outline: none;
   border: 1px solid #122b54;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 button,
 input[type="button"]:hover {
