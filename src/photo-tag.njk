@@ -38,14 +38,14 @@ permalink: "photo-tag/{{ tag }}/index.html"
       {% if loop.first %}
       <source 
         media="(max-width: 600px)" 
-        srcset="{{ photo.secure_url | replace('/upload/', '/upload/w_600,c_scale,q_75,f_webp,dpr_auto/') }}"
+        srcset="{{ photo.secure_url | replace('/upload/', '/upload/w_600,c_scale,q_auto,f_webp,dpr_auto/') }}"
       >
       <source 
         media="(max-width: 1200px)" 
-        srcset="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_80,f_webp,dpr_auto/') }}"
+        srcset="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_auto,f_webp,dpr_auto/') }}"
       >
       <img
-        src="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_80,f_webp,dpr_auto/') }}"
+        src="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_auto,f_webp,dpr_auto/') }}"
         alt="{{ photo.alt or 'Photo' }}"
         class="photo-img loaded"
         loading="eager"
