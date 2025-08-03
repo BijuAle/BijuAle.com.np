@@ -81,3 +81,29 @@ a{
     font-family: "Cinzel";
     src: url("../fonts/Cinzel-Regular.otf");
 }
+
+/* For WebKit browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+  height: 8px; /* Adjust height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Makes the scrollbar track transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); /* Example: semi-transparent black thumb */
+  border-radius: 4px; /* Rounds the corners of the thumb */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* "auto" or "none" are also options */
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* thumb color track color */
+}
+
+/* For Internet Explorer and Edge */
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Hides scrollbar when not in use */
+}
