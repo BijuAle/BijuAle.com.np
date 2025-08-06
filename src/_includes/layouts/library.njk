@@ -1,22 +1,36 @@
-{% extends 'layouts/base.njk' %}
-
-{% block title %}
-{% endblock %}
-
-{% block content %}
+{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
+content %}
 <div class="page-header">
-    <h1>{{ title }}</h1>
+  <h1>{{ title }}</h1>
 </div>
 {{ content | safe }}
 
 <div id="toc-container">
   <h2>Table of Book Categories</h2>
 
-  <!-- Checkbox to toggle visibility of headings with 0 books -->
-  <label class="checkbox" style="font-size: small;">
-    <input type="checkbox" id="toggle-zero-books">
-    <span>Toggle 0 Count</span>
-  </label>
+  <!-- Controls -->
+  <div
+    id="controls"
+    style="display: flex; align-items: center; gap: 20px; margin-bottom: 1rem"
+  >
+    <label style="font-size: small">
+      <input type="checkbox" id="toggle-zero-books" />
+      <span>Toggle 0 Count</span>
+    </label>
+
+    <div style="display: flex; align-items: center; gap: 8px">
+      <label for="sort-select" style="font-size: small">Sort by:</label>
+      <select
+        id="sort-select"
+        style="font-size: small; padding: 2px 5px; background: transparent"
+      >
+        <option value="date-asc-author">Date ↑ → Author → Title</option>
+        <option value="date-desc-author">Date ↓ → Author → Title</option>
+        <option value="date-asc-title">Date ↑ → Title → Author</option>
+        <option value="date-desc-title">Date ↓ → Title → Author</option>
+      </select>
+    </div>
+  </div>
 
   <div
     id="toc"
@@ -24,7 +38,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
-      font-size: .85rem;
+      font-size: 0.85rem;
       margin-bottom: 2rem;
     "
   ></div>
@@ -32,74 +46,101 @@
 
 <div id="container"></div>
 
-<!-- DDC headings JSON -->
+<!-- Data Scripts -->
 <script id="ddc-data" type="application/json">
   {{ ddc_headings | dump | safe }}
 </script>
-
-<!-- Books JSON -->
 <script id="books-data" type="application/json">
   {{ librarything_BijuAle | dump | safe }}
 </script>
 
 <style>
-.toc-link[href$="0"]:not([href$="00"]) {
-  margin-left: 10px;
-}
-.toc-link[href$="00"] {
-  text-transform: uppercase;
-  /* font-weight: bold; /* */
-  margin-top: .5rem;
-  color:black;
-}
-  .highlight {
-    background-color: #649ab5; /* Change this color to your preference */
-    transition: background-color 0.5s ease; /* Transition for smoothness */
+  /* TOC Styling */
+  .toc-link[href$="0"]:not([href$="00"]) {
+    margin-left: 10px;
+  }
+  .toc-link[href$="00"] {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    color: black;
+  }
+  .disabled {
+    color: grey;
   }
 
+  /* Section Styling */
+  .toc-section {
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  /* Book Item Styling */
+  .book-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 2px;
+  }
+
+  .serial-no {
+    opacity: 30%;
+  }
+
+  .date {
+    color: #9f4f4f;
+    width: fit-content;
+    flex-shrink: 0;
+  }
+
+  .title {
+    font-family: "Garamond R";
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .author {
+    color: #9f4f4f;
+    opacity: 70%;
+    width: fit-content;
+    flex-shrink: 0;
+  }
+
+  /* Controls */
+  #sort-select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: white;
+  }
+  #sort-select:focus {
+    outline: 2px solid #649ab5;
+    border-color: #649ab5;
+  }
+
+  /* Back to TOC Button */
   #back-to-toc {
     position: fixed;
     right: 300px;
-    bottom: 20px; 
-    display: none; 
+    bottom: 20px;
+    display: none;
     background-color: #0056b3;
     color: #d9cece;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
+    padding: 5px 10px;
   }
-
   #back-to-toc:hover {
-    background-color: #649ab5; /* Darker on hover */
-    color: black
-  }
-
-  /* Styles for TOC */
-  .toc-section {
-    border-bottom: 1px solid grey; /* Bottom border for separation */
-    padding-bottom: 5px;
-    margin-bottom: 5px; /* Space between sections */
-  }
-
-  /* Styles for greyed out TOC entries */
-  .disabled {
-    color: grey; /* Grey out the text */
-  }
-
-  /* Book list styling */
-  .book-item .author, .book-item .date {
-    color: #9f4f4f;
-  }
-
-  .book-item .title {
-    font-style: italic;
+    background-color: #649ab5;
+    color: black;
   }
 </style>
 
-<button id="back-to-toc">&#8593; Back to</br> TOC</button>
+<button id="back-to-toc">↑ Back to TOC</button>
 
 <script>
+  // Initialize
   const tocContainer = document.getElementById("toc");
   const container = document.getElementById("container");
   const ddcCategories = JSON.parse(
@@ -108,31 +149,24 @@
   const booksData = JSON.parse(
     document.getElementById("books-data").textContent
   );
+  const stickyMenuOffset = 100;
 
-  const stickyMenuOffset = 100; // Reduced offset to account for the sticky menu
-
-  // Initialize book lists for each DDC category
+  // Categorize books by DDC
   const bookLists = {};
   for (const ddcId in ddcCategories) {
     bookLists[ddcId] = [];
   }
 
-  // Categorize and sort books based on DDC codes, author name, and date
   Object.values(booksData).forEach((book) => {
     const bookDdcCode = book.ddc?.code?.[0];
     if (bookDdcCode) {
-      const mainDdcClass = bookDdcCode.split(".")[0].slice(0, 2); // Get first two digits of DDC
-
-      // Assign books to DDC headings by pattern
+      const mainDdcClass = bookDdcCode.split(".")[0].slice(0, 2);
       for (const ddcId in ddcCategories) {
         if (ddcId.startsWith(mainDdcClass)) {
           bookLists[ddcId].push({
             title: book.title,
             author: book.primaryauthor || "? Author",
             date: book.date || "? Date",
-            formatted: `${book.primaryauthor || "? Author"}, ${
-              book.date || "? Date"
-            }: ${book.title}`,
           });
           break;
         }
@@ -140,104 +174,135 @@
     }
   });
 
-  // Sort books by author name and date within each category
-  for (const ddcId in bookLists) {
-    bookLists[ddcId].sort((a, b) => {
-      if (a.author < b.author) return -1;
-      if (a.author > b.author) return 1;
-      if (a.date < b.date) return -1;
-      if (a.date > b.date) return 1;
-      return 0;
+  // Sorting function
+  function sortBooks(books, sortBy) {
+    return [...books].sort((a, b) => {
+      const dateA = a.date;
+      const dateB = b.date;
+
+      switch (sortBy) {
+        case "date-asc-author":
+          if (dateA !== dateB) return dateA < dateB ? -1 : 1;
+          if (a.author !== b.author) return a.author < b.author ? -1 : 1;
+          return a.title < b.title ? -1 : 1;
+
+        case "date-desc-author":
+          if (dateA !== dateB) return dateA > dateB ? -1 : 1;
+          if (a.author !== b.author) return a.author < b.author ? -1 : 1;
+          return a.title < b.title ? -1 : 1;
+
+        case "date-asc-title":
+          if (dateA !== dateB) return dateA < dateB ? -1 : 1;
+          if (a.title !== b.title) return a.title < b.title ? -1 : 1;
+          return a.author < b.author ? -1 : 1;
+
+        case "date-desc-title":
+          if (dateA !== dateB) return dateA > dateB ? -1 : 1;
+          if (a.title !== b.title) return a.title < b.title ? -1 : 1;
+          return a.author < b.author ? -1 : 1;
+
+        default:
+          return 0;
+      }
     });
   }
 
-  // Render TOC links and book sections with counts
+  // Initial sort
+  for (const ddcId in bookLists) {
+    bookLists[ddcId] = sortBooks(bookLists[ddcId], "date-asc-author");
+  }
+
+  // Render book sections
+  function renderBookSections() {
+    container.innerHTML = "";
+    const sortBy = document.getElementById("sort-select").value;
+
+    for (const [ddcId, ddcWording] of Object.entries(ddcCategories)) {
+      const sectionId = `section-${ddcId}`;
+      const sortedBooks = sortBooks(bookLists[ddcId], sortBy);
+      const bookCount = sortedBooks.length;
+
+      // Create heading
+      const heading = document.createElement("h1");
+      heading.id = sectionId;
+      heading.classList.add("toc-section");
+
+      const bookCountSpan = document.createElement("span");
+      bookCountSpan.textContent = `(${bookCount})`;
+      bookCountSpan.style.float = "right";
+      bookCountSpan.style.color = "#9f4f4f";
+
+      heading.textContent = `${ddcId} – ${ddcWording} `;
+      heading.appendChild(bookCountSpan);
+      container.appendChild(heading);
+
+      // Create book list
+      const bookList = document.createElement("ol");
+      if (bookCount > 0) {
+        sortedBooks.forEach((book, index) => {
+          const listItem = document.createElement("li");
+          listItem.classList.add("book-item");
+          listItem.innerHTML = `
+                 <span class="serial-no">${index + 1}</span>
+                    <span class="date">${book.date}</span>
+                    <span class="title">${toTitleCase(book.title)}</span>
+                    <span class="author">${book.author}</span>
+                `;
+          bookList.appendChild(listItem);
+        });
+      } else {
+        const noBooksMessage = document.createElement("li");
+        noBooksMessage.textContent = "No books available under this category.";
+        bookList.appendChild(noBooksMessage);
+      }
+      container.appendChild(bookList);
+    }
+    updateVisibility();
+  }
+
+  // Create TOC links
   const tocLinks = [];
   for (const [ddcId, ddcWording] of Object.entries(ddcCategories)) {
     const sectionId = `section-${ddcId}`;
-
-    // Create TOC link
     const tocLink = document.createElement("a");
     tocLink.href = `#${sectionId}`;
     tocLink.textContent = `${ddcId} ${ddcWording}`;
-    tocLink.classList.add("toc-link"); // Add class for styling or future use
-    tocLinks.push({ link: tocLink, id: sectionId, count: 0 });
+    tocLink.classList.add("toc-link");
 
-    // Create a span for the book count
     const bookCount = bookLists[ddcId].length;
     const countSpan = document.createElement("span");
-    countSpan.textContent = `(${bookCount})`; // Display the count
-    countSpan.style.float = "right"; // Float it to the right
-    countSpan.style.color = "#9f4f4f"; // Set the color to grey
-    countSpan.style.marginLeft = "10px"; // Add some spacing
-
-    // Append the span to the TOC link
+    countSpan.textContent = `(${bookCount})`;
+    countSpan.style.float = "right";
+    countSpan.style.color = "#9f4f4f";
+    countSpan.style.marginLeft = "10px";
     tocLink.appendChild(countSpan);
 
-    // Create DDC section heading with book count
-    const heading = document.createElement("h1");
-    heading.id = sectionId;
-    const bookCountSpan = document.createElement("span");
-    bookCountSpan.textContent = `(${bookCount})`;
-    bookCountSpan.style.float = "right";
-    bookCountSpan.style.color = "#9f4f4f";
-    heading.textContent = `${ddcId} – ${ddcWording} `;
-    heading.appendChild(bookCountSpan);
-    heading.classList.add("toc-section"); // Add class for styling or future use
-    container.appendChild(heading);
-
-    // Create list for books under the heading
-    const bookList = document.createElement("ol"); // Changed from <ul> to <ol>
-    if (bookCount > 0) {
-      bookLists[ddcId].forEach((bookItem) => {
-        const listItem = document.createElement("li");
-        listItem.classList.add("book-item");
-        listItem.innerHTML = `
-          <span class="author">${bookItem.author}</span> 
-          <span class="date">${bookItem.date}</span>
-          <span class="title">${toTitleCase(bookItem.title)}</span>`;
-        bookList.appendChild(listItem);
-      });
-    } else {
-      const noBooksMessage = document.createElement("li");
-      noBooksMessage.textContent = "No books available under this category.";
-      bookList.appendChild(noBooksMessage);
-    }
-    container.appendChild(bookList);
-
-    // Update the count in the TOC links array
-    tocLinks[tocLinks.length - 1].count = bookCount;
+    tocLinks.push({ link: tocLink, id: sectionId, count: bookCount });
   }
 
-  // Function to update visibility based on toggle state
+  // Update visibility based on toggle
   function updateVisibility() {
     const showZeroBooks = document.getElementById("toggle-zero-books").checked;
 
     tocLinks.forEach(({ link, id, count }) => {
       const sectionHeading = document.getElementById(id);
-      const bookList = sectionHeading.nextElementSibling; // Get the <ol> that follows the heading
+      const bookList = sectionHeading
+        ? sectionHeading.nextElementSibling
+        : null;
 
       if (count === 0 && !showZeroBooks) {
-        link.classList.add("disabled"); // Grey out TOC entry
-        sectionHeading.style.display = "none"; // Hide section heading
-        bookList.style.display = "none"; // Hide corresponding book list
+        link.classList.add("disabled");
+        if (sectionHeading) sectionHeading.style.display = "none";
+        if (bookList) bookList.style.display = "none";
       } else {
-        link.classList.remove("disabled"); // Restore normal TOC entry
-        sectionHeading.style.display = "block"; // Show section heading
-        bookList.style.display = "block"; // Show corresponding book list
+        link.classList.remove("disabled");
+        if (sectionHeading) sectionHeading.style.display = "block";
+        if (bookList) bookList.style.display = "block";
       }
     });
   }
 
-  // Initial visibility update
-  updateVisibility();
-
-  // Add event listener to toggle checkbox
-  document
-    .getElementById("toggle-zero-books")
-    .addEventListener("change", updateVisibility);
-
-  // Split TOC links across columns
+  // Render TOC in columns
   const numColumns = 2;
   const itemsPerColumn = Math.ceil(tocLinks.length / numColumns);
   for (let i = 0; i < numColumns; i++) {
@@ -246,13 +311,56 @@
     column.style.flexDirection = "column";
     tocLinks
       .slice(i * itemsPerColumn, (i + 1) * itemsPerColumn)
-      .forEach(({ link }) => {
-        column.appendChild(link);
-      });
+      .forEach(({ link }) => column.appendChild(link));
     tocContainer.appendChild(column);
   }
 
-  // Add scroll offset for headings when TOC links are clicked
+  // Title case function
+  function toTitleCase(str) {
+    // Return empty string if input is empty or not a string
+    if (!str || typeof str !== "string") return "";
+
+    // Use Set for faster lookup of exceptions
+    const exceptions = new Set([
+      "of"
+    ]);
+
+    // Split on spaces, parentheses, and colons, preserving delimiters
+    return str
+      .split(/(\s+|[:()])/)
+      .map((word, index, words) => {
+        // Preserve delimiters (spaces, colons, parentheses)
+        if (/\s+|[:()]/.test(word)) return word;
+
+        const lowerWord = word.toLowerCase();
+        const isAfterColon = index > 0 && words[index - 1] === ":";
+        const isAfterParenthesis = index > 0 && words[index - 1] === "(";
+
+        // Capitalize: first word, last non-delimiter word, after colon/parenthesis, or non-exception
+        if (
+          index === 0 ||
+          (index === words.length - 1 && !/\s+|[:()]/.test(word)) ||
+          isAfterColon ||
+          isAfterParenthesis ||
+          !exceptions.has(lowerWord)
+        ) {
+          return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        }
+
+        return lowerWord;
+      })
+      .join("");
+  }
+
+  // Event listeners
+  document
+    .getElementById("toggle-zero-books")
+    .addEventListener("change", updateVisibility);
+  document
+    .getElementById("sort-select")
+    .addEventListener("change", renderBookSections);
+
+  // TOC link scroll behavior
   document.querySelectorAll(".toc-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -269,17 +377,12 @@
     });
   });
 
-  // Display back-to-toc button after scrolling down 200px
+  // Back to TOC button
   const backToTocButton = document.getElementById("back-to-toc");
   window.onscroll = () => {
-    if (window.scrollY >= 200) {
-      backToTocButton.style.display = "block";
-    } else {
-      backToTocButton.style.display = "none";
-    }
+    backToTocButton.style.display = window.scrollY >= 200 ? "block" : "none";
   };
 
-  // Scroll to top of the TOC when back-to-toc is clicked
   backToTocButton.addEventListener("click", () => {
     const tocTop = tocContainer.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({
@@ -288,38 +391,7 @@
     });
   });
 
-  // Function to capitalize book titles
-function toTitleCase(str) {
-
-  const exceptions = [
-  'and', 'or', 'but', 'for', 'nor', 'so', 'yet',
-  'a', 'an', 'the', 'in', 'on', 'at', 'to', 'by', 'with',
-  'as', 'of', 'about', 'against', 'between', 'into',
-  'through', 'during', 'before', 'after', 'above', 'below',
-  'up', 'down', 'over', 'under', 'again', 'further',
-  'then', 'once', 'here', 'there', 'when', 'where', 'why',
-  'how', 'all', 'any', 'both', 'each', 'few', 'more', 'most',
-  'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own',
-  'same', 'so', 'than', 'too', 'very', 's'
-];
-  return str.split(/(\s+|[()])/).map((word, index, words) => {
-    const lowerWord = word.toLowerCase();
-
-    // Check if the word follows an opening parenthesis, a colon, or is the first/last word
-    const isAfterParenthesis = index > 0 && words[index - 1] === '(';
-    const isAfterColon = index > 0 && words[index - 1] === ':';
-
-    // Capitalize the first word, the last word, or if the word is not in the exceptions list,
-    // or if the word is after a parenthesis or colon
-    if (index === 0 || index === words.length - 1 || 
-        !exceptions.includes(lowerWord) || 
-        isAfterParenthesis || 
-        isAfterColon) {
-      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    } else {
-      return lowerWord;
-    }
-  }).join('');
-}
+  // Initial render
+  renderBookSections();
 </script>
 {% endblock %}

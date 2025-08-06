@@ -82,6 +82,7 @@ a{
     src: url("../fonts/Cinzel-Regular.otf");
 }
 
+
 /* For WebKit browsers (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {
   width: 8px; /* Adjust width as needed */
@@ -106,4 +107,8 @@ html {
 /* For Internet Explorer and Edge */
 body {
   -ms-overflow-style: -ms-autohiding-scrollbar; /* Hides scrollbar when not in use */
+}
+
+select{
+background:transparent;
 }

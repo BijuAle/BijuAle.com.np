@@ -3716,7 +3716,7 @@
 },
 "248001624": {
   "books_id": "248001624",
-  "title": "First Aid Manual: Was the Authorised Manual of St. John Ambulance, St. Andrew's Ambulance Association, and the British Red Cross",
+  "title": "First Aid Manual",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Ambulance, St Andrews' Ambulance Association the British Red Cross St John",
@@ -3735,7 +3735,7 @@
   "ean": ["0751337048"],
   "publication": "DK (2002), Edition: 8th, 288 pages",
   "date": "2002",
-  "summary": "First Aid Manual: Was the Authorised Manual of St. John Ambulance, St. Andrew's Ambulance Association, and the British Red Cross by St Andrews' Ambulance Association the British Red Cross St John Ambulance (2002)",
+  "summary": "First Aid Manual by St Andrews' Ambulance Association the British Red Cross St John Ambulance (2002)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -7175,7 +7175,7 @@
 },
 "248549487": {
   "books_id": "248549487",
-  "title": "Epistemology : becoming intellectually virtuous",
+  "title": "Epistemology: becoming intellectually virtuous",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Wood, W. Jay",
@@ -7190,18 +7190,16 @@
   "0877845220"],
   "publication": "Downers Grove, Ill. : InterVarsity Press, c1998.",
   "date": "1998",
-  "summary": "Epistemology : becoming intellectually virtuous by W. Jay Wood (1998)",
+  "summary": "Epistemology: becoming intellectually virtuous by W. Jay Wood (1998)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["230/.01",
-    "230.01"],
-    "wording": ["Christianity",
-    "Christianity",
-    "Doctrinal Dogmatics - Theology",
-    "Religion"]
+    "code": ["121"],
+    "wording": ["Epistemology",
+    "Epistemology (Theory of knowledge)",
+    "Philosophy & psychology"]
   },
   "lcc": {
     "code": "BT50.W57 1998"
@@ -7240,11 +7238,11 @@
   "title": "Tractatus Logico-Philosophicus",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "NA",
+  "primaryauthor": "Wittgenstein, Ludwig",
   "primaryauthorrole": "Author",
   "authors": [{
-    "lf": "NA",
-    "fl": "NA",
+    "lf": "Wittgenstein, Ludwig",
+    "fl": "Ludwig Wittgenstein",
     "role": "Author"
   }],
   "collections_idA": [1],
@@ -7256,14 +7254,12 @@
   "ean": ["1138301361"],
   "publication": "Routledge Classics (2017)",
   "date": "2017",
-  "summary": "Tractatus Logico-Philosophicus by NA (2017)",
+  "summary": "Tractatus Logico-Philosophicus by Ludwig Wittgenstein (2017)",
   "ddc": {
-    "code": ["221.9\n",
-    "221.9"],
-    "wording": ["Geography, history, chronology, persons of Old Testament lands in Old Testament times",
-    "Old Testament (Tanakh)",
-    "Religion",
-    "The Bible"]
+    "code": ["192"],
+    "wording": ["Modern western philosophy",
+    "Philosophy & psychology",
+    "Philosophy of British Isles"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -8296,12 +8292,10 @@
   "title": "The Concept of Man: A Study in Comparative Philosophy",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Radhakrishnan, S.",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Radhakrishnan, Sarvapalli",
   "authors": [{
-    "lf": "Radhakrishnan, S.",
-    "fl": "S. Radhakrishnan",
-    "role": "Author"
+    "lf": "Radhakrishnan, Sarvapalli",
+    "fl": "Sarvapalli Radhakrishnan"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -8314,7 +8308,7 @@
   "ean": ["8172231466"],
   "publication": "South Asia Books (1999), Edition: 2, 390 pages",
   "date": "1999",
-  "summary": "The Concept of Man: A Study in Comparative Philosophy by S. Radhakrishnan (1999)",
+  "summary": "The Concept of Man: A Study in Comparative Philosophy by Sarvapalli Radhakrishnan (1999)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -8844,11 +8838,10 @@
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["509\n",
-    "509"],
-    "wording": ["History, geographic treatment, biography",
-    "Science",
-    "Science"]
+    "code": ["220"],
+    "wording": ["Religion",
+    "The Bible",
+    "The Bible"]
   },
   "lcc": [],
   "source": "British Library",
@@ -9376,7 +9369,7 @@
 },
 "248724707": {
   "books_id": "248724707",
-  "title": "What is the Soul? Recovering Human Personhood in a Scientific Age.",
+  "title": "What is the Soul? Recovering Human Personhood in a Scientific Age",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Moreland, J. P.",
@@ -9394,7 +9387,8 @@
   "asin": "1930107064",
   "ean": ["1930107064"],
   "publication": "RZIM, 63 pages",
-  "summary": "What is the Soul? Recovering Human Personhood in a Scientific Age. by J. P. Moreland",
+  "date": "2002",
+  "summary": "What is the Soul? Recovering Human Personhood in a Scientific Age by J. P. Moreland (2002)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -9786,22 +9780,29 @@
 },
 "248730934": {
   "books_id": "248730934",
-  "title": "Man & Spirit -- The Speculative Philosophers",
+  "title": "Man & Spirit: The Speculative Philosophers",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Commins, Saxe / Robert N. Linscott -- (editors)",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Commins, Saxe",
+  "primaryauthorrole": "Editor",
+  "secondaryauthor": "Linscott, Robert N.",
+  "secondaryauthorroles": "Editor",
   "authors": [{
-    "lf": "Commins, Saxe / Robert N. Linscott -- (editors)",
-    "fl": "Saxe / Robert N. Linscott -- (editors) Commins",
-    "role": "Author"
+    "lf": "Commins, Saxe",
+    "fl": "Saxe Commins",
+    "role": "Editor"
+  },
+  {
+    "lf": "Linscott, Robert N.",
+    "fl": "Robert N. Linscott",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B01A4QDLLE",
   "publication": "Washington Square Press, Inc. (1966)",
   "date": "1966",
-  "summary": "Man & Spirit -- The Speculative Philosophers by Saxe / Robert N. Linscott -- (editors) Commins (1966)",
+  "summary": "Man & Spirit: The Speculative Philosophers by Saxe Commins (1966)",
   "originallanguage": ["Multiple languages"],
   "originallanguage_codeA": ["mul"],
   "ddc": {
@@ -10540,6 +10541,25 @@
     "41": ["fantasy"],
     "43": ["fantasy fiction"]
   },
+  "series": ["Gospodar prstenova",
+  "Il Signore degli Anelli",
+  "Gy\u0171r\u0171k Ura",
+  "El Se\u00f1or de los Anillos",
+  "Gospodar prstenova",
+  "Ringenes herre",
+  "El Senyor dels Anells",
+  "P\u00e1n Prsten\u016f",
+  "O Senhor dos An\u00e9is",
+  "Sagan om Ringen",
+  "Ringenes herre",
+  "Le seigneur des anneaux",
+  "Der Herr der Ringe",
+  "\u9b54\u6212",
+  "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
+  "In de Ban van de Ring",
+  "W\u0142adca Pier\u015bcieni",
+  "Taru Sormusten Herrasta",
+  "The Lord of the Rings"],
   "originaltitle": "The Hobbit, or, There and Back Again",
   "awards": ["1000 Books to Read Before You Die",
   "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
@@ -10694,19 +10714,19 @@
   "title": "Topics And Opinions",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Scott, A. F. (edited)",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Scott, A. F.",
+  "primaryauthorrole": "Editor",
   "authors": [{
-    "lf": "Scott, A. F. (edited)",
-    "fl": "A. F. (edited) Scott",
-    "role": "Author"
+    "lf": "Scott, A. F.",
+    "fl": "A. F. Scott",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B000RC2NHY",
   "publication": "Macmillan (1961), Edition: Reprint, 294 pages",
   "date": "1961",
-  "summary": "Topics And Opinions by A. F. (edited) Scott (1961)",
+  "summary": "Topics And Opinions by A. F. Scott (1961)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -11701,31 +11721,34 @@
   "title": "The Prelude to Poetry: The English Poets in Defence and Praise of Their Own Art",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Rhys, Ernest (editor)",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Rhys, Ernest",
+  "primaryauthorrole": "Editor",
   "authors": [{
-    "lf": "Rhys, Ernest (editor)",
-    "fl": "Ernest (editor) Rhys",
-    "role": "Author"
+    "lf": "Rhys, Ernest",
+    "fl": "Ernest Rhys",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B0010Y4Z9M",
-  "publication": "Everyman&#039;s Library (1951)",
+  "publication": "Everyman's Library (1951)",
   "date": "1951",
-  "summary": "The Prelude to Poetry: The English Poets in Defence and Praise of Their Own Art by Ernest (editor) Rhys (1951)",
+  "summary": "The Prelude to Poetry: The English Poets in Defence and Praise of Their Own Art by Ernest Rhys (1951)",
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["821.09\n",
-    "821.09"],
+    "code": ["821.09"],
     "wording": ["English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
     "Literature",
     "[History, description, critical appraisal of poetry not limited by time period or kind of form now in 821.009]"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "PN1064"
+  },
   "source": "amazon.com books",
-  "workcode": "30920623",
+  "workcode": "1408884",
   "entrydate": "2023-09-11",
   "format": [{
     "code": "1.1.2",
@@ -12173,7 +12196,7 @@
   },
   "asin": "817019167X",
   "ean": ["817019167X"],
-  "publication": "(1978)",
+  "publication": "Motilal Banarsidass",
   "date": "1978",
   "summary": "Knowledge Culture and Value by R. C. Pandeya & S. R. Bhatt (1978)",
   "language": ["English"],
@@ -12324,7 +12347,7 @@
 },
 "248861984": {
   "books_id": "248861984",
-  "title": "Truth matters : realism, anti-realism and response-dependence",
+  "title": "Truth Matters: Realism, anti-realism and response-dependence",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Norris, Christopher",
@@ -12339,7 +12362,7 @@
   "0748615989"],
   "publication": "Edinburgh : Edinburgh University Press, c2005.",
   "date": "2005",
-  "summary": "Truth matters : realism, anti-realism and response-dependence by Christopher Norris (2005)",
+  "summary": "Truth Matters: Realism, anti-realism and response-dependence by Christopher Norris (2005)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12384,12 +12407,10 @@
   "title": "Cambridge Companion to Life and Death",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "StevenLuper",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Luper, Steven",
   "authors": [{
-    "lf": "StevenLuper",
-    "fl": "StevenLuper",
-    "role": "Author"
+    "lf": "Luper, Steven",
+    "fl": "Steven Luper"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -12400,7 +12421,7 @@
   "ean": ["1107461669"],
   "publication": "CambridgeUniversityPress (2014)",
   "date": "2014",
-  "summary": "Cambridge Companion to Life and Death by StevenLuper (2014)",
+  "summary": "Cambridge Companion to Life and Death by Steven Luper (2014)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12505,10 +12526,10 @@
   "title": "An Idealist View of Life",
   "sortcharacter": "4",
   "public": "true",
-  "primaryauthor": "Radhakrishnan, S.",
+  "primaryauthor": "Radhakrishnan, Sarvapalli",
   "authors": [{
-    "lf": "Radhakrishnan, S.",
-    "fl": "S. Radhakrishnan"
+    "lf": "Radhakrishnan, Sarvapalli",
+    "fl": "Sarvapalli Radhakrishnan"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -12517,7 +12538,7 @@
   "0041410092"],
   "publication": "London : Unwin paperbacks, 1980.",
   "date": "1980",
-  "summary": "An Idealist View of Life by S. Radhakrishnan (1980)",
+  "summary": "An Idealist View of Life by Sarvapalli Radhakrishnan (1980)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13690,12 +13711,24 @@
   "title": "Faith and Modernity",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Vinay & Sugden, Chris (editors) Sampson Philip & Samuel",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Sampson, Philip",
+  "primaryauthorrole": "Editor",
+  "secondaryauthor": "Sugden, Chris|Samuel, Vinay",
+  "secondaryauthorroles": "Editor|Editor",
   "authors": [{
-    "lf": "Vinay & Sugden, Chris (editors) Sampson Philip & Samuel",
-    "fl": "Chris (editors) Sampson Philip & Samuel Vinay & Sugden",
-    "role": "Author"
+    "lf": "Sampson, Philip",
+    "fl": "Philip Sampson",
+    "role": "Editor"
+  },
+  {
+    "lf": "Sugden, Chris",
+    "fl": "Chris Sugden",
+    "role": "Editor"
+  },
+  {
+    "lf": "Samuel, Vinay",
+    "fl": "Vinay Samuel",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -13708,7 +13741,7 @@
   "ean": ["1870345177"],
   "publication": "Regnum Books (1997)",
   "date": "1997",
-  "summary": "Faith and Modernity by Chris (editors) Sampson Philip & Samuel Vinay & Sugden (1997)",
+  "summary": "Faith and Modernity by Philip Sampson (1997)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13788,12 +13821,10 @@
   "title": "Theory Of General Ethics, A: Human Relationships, Nature, And The Built Environment",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Fox",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Fox, Warwick",
   "authors": [{
-    "lf": "Fox",
-    "fl": "Fox",
-    "role": "Author"
+    "lf": "Fox, Warwick",
+    "fl": "Warwick Fox"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -13806,7 +13837,7 @@
   "ean": ["8120338073"],
   "publication": "PHI Learning (2009)",
   "date": "2009",
-  "summary": "Theory Of General Ethics, A: Human Relationships, Nature, And The Built Environment by Fox (2009)",
+  "summary": "Theory Of General Ethics, A: Human Relationships, Nature, And The Built Environment by Warwick Fox (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13904,7 +13935,7 @@
 },
 "248862070": {
   "books_id": "248862070",
-  "title": "New Science of Life [Paperback] sheldrake-rupert",
+  "title": "New Science of Life",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Sheldrake, Rupert",
@@ -13923,7 +13954,7 @@
   "ean": ["1848310420"],
   "publication": "Icon Books (2009), Edition: 48029th, 304 pages",
   "date": "2009",
-  "summary": "New Science of Life [Paperback] sheldrake-rupert by Rupert Sheldrake (2009)",
+  "summary": "New Science of Life by Rupert Sheldrake (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -14328,14 +14359,26 @@
 },
 "248869387": {
   "books_id": "248869387",
-  "title": "Introduction To Logic 14Th Edition",
+  "title": "Introduction To Logic (14th Edition)",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Copi & Cohen Et.Al.",
+  "primaryauthor": "Copi, Irving M.",
   "primaryauthorrole": "Author",
+  "secondaryauthor": "Cohen, Carl|McMohan, Kenneth",
+  "secondaryauthorroles": "Author|Author",
   "authors": [{
-    "lf": "Copi & Cohen Et.Al.",
-    "fl": "Copi & Cohen Et.Al.",
+    "lf": "Copi, Irving M.",
+    "fl": "Irving M. Copi",
+    "role": "Author"
+  },
+  {
+    "lf": "Cohen, Carl",
+    "fl": "Carl Cohen",
+    "role": "Author"
+  },
+  {
+    "lf": "McMohan, Kenneth",
+    "fl": "Kenneth McMohan",
     "role": "Author"
   }],
   "collections_idA": [1],
@@ -14349,13 +14392,12 @@
   "ean": ["9332539618"],
   "publication": "Pearson India (2015), Edition: 14",
   "date": "2015",
-  "summary": "Introduction To Logic 14Th Edition by Copi & Cohen Et.Al. (2015)",
+  "summary": "Introduction To Logic (14th Edition) by Irving M. Copi (2015)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["160\n",
-    "160"],
+    "code": ["160"],
     "wording": ["Philosophical logic",
     "Philosophical logic",
     "Philosophy & psychology"]
@@ -15085,10 +15127,19 @@
   "title": "Pure mathematics 1: Coursebook",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Pemberton, (Mathematics examiner) Sue",
+  "primaryauthor": "Pemberton, Sue",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Gilbey, Julian",
+  "secondaryauthorroles": "Editor",
   "authors": [{
-    "lf": "Pemberton, (Mathematics examiner) Sue",
-    "fl": "(Mathematics examiner) Sue Pemberton"
+    "lf": "Pemberton, Sue",
+    "fl": "Sue Pemberton",
+    "role": "Author"
+  },
+  {
+    "lf": "Gilbey, Julian",
+    "fl": "Julian Gilbey",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -15097,7 +15148,7 @@
   "1108407145"],
   "publication": "Cambridge, United Kingdom : Cambridge University Press, 2018.",
   "date": "2018",
-  "summary": "Pure mathematics 1: Coursebook by (Mathematics examiner) Sue Pemberton (2018)",
+  "summary": "Pure mathematics 1: Coursebook by Sue Pemberton (2018)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -17140,7 +17191,7 @@
 },
 "276462139": {
   "books_id": "276462139",
-  "title": "New Testament : Psalms Proverbs",
+  "title": "New Testament: Psalms Proverbs",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Gideons",
@@ -17152,7 +17203,7 @@
   "collections": ["Your library"],
   "asin": "B001ACBYDY",
   "publication": "Gideons International, Edition: 3x4.5 inch, 168 pages",
-  "summary": "New Testament : Psalms Proverbs by Gideons",
+  "summary": "New Testament: Psalms Proverbs by Gideons",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -17531,7 +17582,7 @@
 },
 "276462272": {
   "books_id": "276462272",
-  "title": "Holy Bible-Placed by The Gideons",
+  "title": "Holy Bible (Placed by The Gideons)",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Nelson, Thomas",
@@ -17552,7 +17603,7 @@
   "ean": ["0834004267"],
   "publication": "THE GIDEONS INTERNATIONAL (1985), Edition: Classic Edition, 1217 pages",
   "date": "1985",
-  "summary": "Holy Bible-Placed by The Gideons by Thomas Nelson (1985)",
+  "summary": "Holy Bible (Placed by The Gideons) by Thomas Nelson (1985)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -20540,14 +20591,13 @@
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Samdan Publisher",
-  "primaryauthorrole": "Editor",
   "authors": [{
     "lf": "Samdan Publisher",
-    "fl": "Samdan Publisher",
-    "role": "Editor"
+    "fl": "Samdan Publisher"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
+  "publication": "Samdan Publisher",
   "date": "2018",
   "summary": "Theological Topics (Sasthra Ka Bishayaharu): Old Testament & New Testament Articles (English-Nepali) by Samdan Publisher (2018)",
   "language": ["English",
@@ -21866,7 +21916,7 @@
 },
 "276504342": {
   "books_id": "276504342",
-  "title": "PEACE IN OUR TIME? SOME BIBLICAL GROUNDWORK",
+  "title": "Peace in Our Time? Some Biblical Groundwork",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Atjubsib, David",
@@ -21885,9 +21935,9 @@
   },
   "asin": "0851104630",
   "ean": ["080280179X"],
-  "publication": "INTER-VARSITY PRESS (1985)",
+  "publication": "Intervarsity Press (1985)",
   "date": "1985",
-  "summary": "PEACE IN OUR TIME? SOME BIBLICAL GROUNDWORK by David Atjubsib (1985)",
+  "summary": "Peace in Our Time? Some Biblical Groundwork by David Atjubsib (1985)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -22227,6 +22277,7 @@
   "asin": "0310269989",
   "ean": ["0310269989"],
   "upc": ["025986269982"],
+  "publication": "Zondervan",
   "summary": "Has Christianity Failed You? by Ravi Zacharias",
   "language": ["English"],
   "language_codeA": ["eng"],
@@ -24778,12 +24829,12 @@
   "title": "The Philosophy of Sarvepalli Radhakrishnan.",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Schilpp, Paul Arthur (ed.",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Schilpp, Paul Arthur",
+  "primaryauthorrole": "Editor",
   "authors": [{
-    "lf": "Schilpp, Paul Arthur (ed.",
-    "fl": "Paul Arthur (ed. Schilpp",
-    "role": "Author"
+    "lf": "Schilpp, Paul Arthur",
+    "fl": "Paul Arthur Schilpp",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -24796,7 +24847,7 @@
   "ean": ["1135208743"],
   "publication": "Tudor (1952), Edition: First Edition, 883 pages",
   "date": "1952",
-  "summary": "The Philosophy of Sarvepalli Radhakrishnan. by Paul Arthur (ed. Schilpp (1952)",
+  "summary": "The Philosophy of Sarvepalli Radhakrishnan. by Paul Arthur Schilpp (1952)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -29433,7 +29484,7 @@
   },
   "asin": "0877842515",
   "ean": ["0877842515"],
-  "publication": "Intervarsity Pr (1968), 224 pages",
+  "publication": "Intervarsity Press (1968), 224 pages",
   "date": "1968",
   "summary": "Genesis (The Tyndale Old Testament Commentary Series) by Derek Kidner (1968)",
   "language": ["English"],
@@ -30287,28 +30338,26 @@
 },
 "276509568": {
   "books_id": "276509568",
-  "title": "Tractatus Logico-Philosophicus: A New Translation",
+  "title": "Tractatus Logico-Philosophicus",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Wittgenstein, Ludwig",
-  "primaryauthorrole": "Author",
   "authors": [{
     "lf": "Wittgenstein, Ludwig",
-    "fl": "Ludwig Wittgenstein",
-    "role": "Author"
+    "fl": "Ludwig Wittgenstein"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
-  "originalisbn": "1324092432",
+  "originalisbn": "0710030045",
   "isbn": {
-    "0": "1324092432",
-    "2": "9781324092438"
+    "0": "0710030045",
+    "2": "9780710030047"
   },
   "asin": "1324092432",
   "ean": ["1324092432"],
-  "publication": "Liveright (2024), Edition: Translation, 224 pages",
-  "date": "2024",
-  "summary": "Tractatus Logico-Philosophicus: A New Translation by Ludwig Wittgenstein (2024)",
+  "publication": "Routledge &amp; Kegan Paul",
+  "date": "1972",
+  "summary": "Tractatus Logico-Philosophicus by Ludwig Wittgenstein (1972)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -30434,14 +30483,21 @@
 },
 "276509575": {
   "books_id": "276509575",
-  "title": "In Search of a Confident Faith: Overcoming Barriers to Trusting in God [IN SEARCH OF A CONFIDENT FAITH]",
+  "title": "In Search of a Confident Faith: Overcoming Barriers to Trusting in God",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Moreland, Klaus Issler J. P.",
+  "primaryauthor": "Moreland, J. P.",
   "primaryauthorrole": "Author",
+  "secondaryauthor": "Issler, Klauss",
+  "secondaryauthorroles": "Author",
   "authors": [{
-    "lf": "Moreland, Klaus Issler J. P.",
-    "fl": "Klaus Issler J. P. Moreland",
+    "lf": "Moreland, J. P.",
+    "fl": "J. P. Moreland",
+    "role": "Author"
+  },
+  {
+    "lf": "Issler, Klauss",
+    "fl": "Klauss Issler",
     "role": "Author"
   }],
   "collections_idA": [1],
@@ -30455,7 +30511,7 @@
   "ean": ["1844743276"],
   "publication": "IVP Books (2008)",
   "date": "2008",
-  "summary": "In Search of a Confident Faith: Overcoming Barriers to Trusting in God [IN SEARCH OF A CONFIDENT FAITH] by Klaus Issler J. P. Moreland (2008)",
+  "summary": "In Search of a Confident Faith: Overcoming Barriers to Trusting in God by J. P. Moreland (2008)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -34207,44 +34263,6 @@
   "copies": "1",
   "volumes": "1"
 },
-"276549411": {
-  "books_id": "276549411",
-  "title": "Bado Cheap Cha Yar Kathmandu",
-  "sortcharacter": "1",
-  "public": "true",
-  "primaryauthor": "Sharma, Shuva Kantha",
-  "primaryauthorrole": "Author",
-  "authors": [{
-    "lf": "Sharma, Shuva Kantha",
-    "fl": "Shuva Kantha Sharma",
-    "role": "Author"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "date": "2003",
-  "summary": "Bado Cheap Cha Yar Kathmandu by Shuva Kantha Sharma (2003)",
-  "language": ["Nepali"],
-  "language_codeA": ["nep"],
-  "originallanguage_codeA": ["nep"],
-  "ddc": {
-    "code": ["891.492"],
-    "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
-    "Literature of other Indic languages",
-    "Modern Indic languages",
-    "Other literatures"]
-  },
-  "lcc": [],
-  "source": "manual entry",
-  "workcode": "33288363",
-  "entrydate": "2024-12-12",
-  "format": [{
-    "code": "1.1.1",
-    "text": "Paperback"
-  }],
-  "copies": "1",
-  "volumes": "1"
-},
 "276549431": {
   "books_id": "276549431",
   "title": "Nepal: An Interesting Account for Foreigners",
@@ -34283,7 +34301,8 @@
   }],
   "copies": "1",
   "volumes": "1"
-},"276549460": {
+},
+"276549460": {
   "books_id": "276549460",
   "title": "To be a Nepalese",
   "sortcharacter": "1",
@@ -34335,8 +34354,7 @@
   "height": "22 cm",
   "dimensions": "22 cm",
   "pages": "xii; 68 "
-},
-"276549718": {
+},"276549718": {
   "books_id": "276549718",
   "title": "A Newcomer's Guide to living in Kathmandu",
   "sortcharacter": "3",
@@ -34781,23 +34799,23 @@
   "lcc": {
     "code": "PN6790.B44 T57813"
   },
-  "series": ["Les aventures de Tintin {Herg\u00e9}",
-  "Les aventures de Tintin",
-  "Tintins \u00e4ventyr {Herg\u00e9}",
-  "Tintins \u00e4ventyr",
-  "Tintin [Dalen] {Herg\u00e9}",
-  "Tintin [Dalen]",
+  "series": ["Les aventures de Tint\u00edn {Herg\u00e9}",
+  "Les aventures de Tint\u00edn",
   "Tintim",
   "Tintin",
   "The Adventures of Tintin",
+  "Les aventures de Tintin {Herg\u00e9}",
+  "Les aventures de Tintin",
+  "Tintin [Dalen] {Herg\u00e9}",
+  "Tintin [Dalen]",
+  "Tintins \u00e4ventyr {Herg\u00e9}",
+  "Tintins \u00e4ventyr",
   "Aventuras de Tint\u00edn {Herg\u00e9}",
   "Aventuras de Tint\u00edn",
-  "Tim und Struppi {Herg\u00e9}",
-  "Tim und Struppi",
-  "Les aventures de Tint\u00edn {Herg\u00e9}",
-  "Les aventures de Tint\u00edn",
   "Tintins oplevelser {Herg\u00e9}",
   "Tintins oplevelser",
+  "Tim und Struppi {Herg\u00e9}",
+  "Tim und Struppi",
   "Tintin seikkailut {Herg\u00e9}",
   "Tintin seikkailut",
   "De avonturen van Kuifje {Herg\u00e9}",
@@ -35384,12 +35402,10 @@
   "title": "Cambodia - Culture Smart!: The Essential Guide to Customs & Culture (18)",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "PhD, Graham Saunders",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Saunders, Graham",
   "authors": [{
-    "lf": "PhD, Graham Saunders",
-    "fl": "Graham Saunders PhD",
-    "role": "Author"
+    "lf": "Saunders, Graham",
+    "fl": "Graham Saunders"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -35402,7 +35418,7 @@
   "ean": ["185733471X"],
   "publication": "Kuperard (2008), Edition: Illustrated, 168 pages",
   "date": "2008",
-  "summary": "Cambodia - Culture Smart!: The Essential Guide to Customs & Culture (18) by Graham Saunders PhD (2008)",
+  "summary": "Cambodia - Culture Smart!: The Essential Guide to Customs & Culture (18) by Graham Saunders (2008)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -35482,24 +35498,24 @@
   "lcc": {
     "code": "DL407 .E94"
   },
-  "series": ["Guia American Express",
-  "F\u00f6rsta klass reseguider",
-  "DK kelioni\u0173 vadovai",
-  "Gu\u00edas Visuales",
-  "Capitool reisgidsen",
+  "series": ["Capitool reisgidsen",
   "Guides Voir, Hachette",
   "Hachette, Guide Voir",
   "Vis \u00e0 vis",
   "Vis \u00e0 Vis Reisef\u00fchrer",
   "Vis-\u00e0-vis-Reisef\u00fchrer",
   "Club-Reisef\u00fchrer",
-  "Gu\u00eda Visuales",
-  "DK Ce\u013cvedi",
+  "Gu\u00edas Visuales",
+  "DK kelioni\u0173 vadovai",
   "Politikens visuelle guide",
   "DK Eyewitness Travel Guides",
   "DK Travel Guides",
   "Dorling Kindersley Travel Guides",
   "Eyewitness Travel",
+  "DK Ce\u013cvedi",
+  "Gu\u00eda Visuales",
+  "Guia American Express",
+  "F\u00f6rsta klass reseguider",
   "Silmaringi reisijuht",
   "Le guide [Mondadori]"],
   "originaltitle": "DK Eyewitness Travel Guide : Norway",
@@ -36379,11 +36395,10 @@
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["121.3"],
-    "wording": ["Epistemology",
-    "Epistemology (Theory of knowledge)",
-    "Origin, sources, means of knowledge",
-    "Philosophy & psychology"]
+    "code": ["423"],
+    "wording": ["Dictionaries of standard English",
+    "English & Old English languages",
+    "Language"]
   },
   "lcc": {
     "code": "HQ9.C35"
@@ -39197,9 +39212,9 @@
     "8": ["Totalitarianism. [from old catalog]"],
     "9": ["imperialism"]
   },
-  "series": ["The Origins of Totalitarianism",
-  "Les origines du totalitarisme",
-  "Elemente und Urspr\u00fcnge totaler Herrschaft"],
+  "series": ["Les origines du totalitarisme",
+  "Elemente und Urspr\u00fcnge totaler Herrschaft",
+  "The Origins of Totalitarianism"],
   "originaltitle": "Elemente und Urspr&uuml;nge totaler Herrschaft",
   "awards": ["Best holiday reads 2017, picked by writers",
   "Blackwell's 1879-2019: 140 Years 140 Books",
@@ -39709,7 +39724,8 @@
   "dimensions": "1.0629921249 x 8.661417314 x 5.905511805 inches",
   "weight": "0.98546631114 pounds",
   "pages": "335 "
-},"276642726": {
+},
+"276642726": {
   "books_id": "276642726",
   "title": "Nationalism and Social Communication: An Inquiry into the Foundations of Nationality",
   "sortcharacter": "1",
@@ -39763,8 +39779,7 @@
   "dimensions": "8 x 5.375 x 0.81 inches",
   "weight": "0.87964442538 pounds",
   "pages": "345 "
-},
-"276642734": {
+},"276642734": {
   "books_id": "276642734",
   "title": "The second sex",
   "sortcharacter": "5",
@@ -40821,8 +40836,8 @@
   "lcc": {
     "code": "HB171.S245"
   },
-  "series": ["Schaum's Outline",
-  "Compendios Schaum"],
+  "series": ["Compendios Schaum",
+  "Schaum's Outline"],
   "genre": ["Nonfiction",
   "Business",
   "Economics"],
@@ -41272,7 +41287,7 @@
 },
 "276642955": {
   "books_id": "276642955",
-  "title": "Small Is Beautiful [Paperback] [Jan 01, 1993] E F Schumacher",
+  "title": "Small Is Beautiful",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Schumacher, Ernst F.",
@@ -41293,7 +41308,7 @@
   "ean": ["0099225611"],
   "publication": "Vintage (1993), Edition: New Ed, 252 pages",
   "date": "1993",
-  "summary": "Small Is Beautiful [Paperback] [Jan 01, 1993] E F Schumacher by Ernst F. Schumacher (1993)",
+  "summary": "Small Is Beautiful by Ernst F. Schumacher (1993)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -42200,7 +42215,7 @@
 },
 "276645361": {
   "books_id": "276645361",
-  "title": "Hindu Death Ries (Antyeshti Samsakar)",
+  "title": "Hindu Death Rites (Antyeshti Samsakar)",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Ghimire (Poudyal), Beena",
@@ -42220,7 +42235,8 @@
   "collections_idA": [1],
   "collections": ["Your library"],
   "publication": "1998",
-  "summary": "Hindu Death Ries (Antyeshti Samsakar) by Beena Ghimire (Poudyal)",
+  "date": "1998",
+  "summary": "Hindu Death Rites (Antyeshti Samsakar) by Beena Ghimire (Poudyal) (1998)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -42642,10 +42658,10 @@
   "date": "1993",
   "summary": "Facts about Israel by Israel Information Center (1993)",
   "ddc": {
-    "code": ["315.694"],
-    "wording": ["General statistics of Asia",
-    "Social sciences",
-    "Statistics"]
+    "code": ["956"],
+    "wording": ["History & geography",
+    "History of Asia",
+    "Middle East (Near East)"]
   },
   "lcc": {
     "code": "DS101.F3"
@@ -45967,19 +45983,17 @@
   "title": "Great Poems: From Shakespeare to Manley Hopkins",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Hampden, John (1898-1974)",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Hampden, John",
   "authors": [{
-    "lf": "Hampden, John (1898-1974)",
-    "fl": "John (1898-1974) Hampden",
-    "role": "Author"
+    "lf": "Hampden, John",
+    "fl": "John Hampden"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B000S2ILAQ",
   "publication": "London : Pan Books (1949), Edition: First Edition",
   "date": "1949",
-  "summary": "Great Poems: From Shakespeare to Manley Hopkins by John (1898-1974) Hampden (1949)",
+  "summary": "Great Poems: From Shakespeare to Manley Hopkins by John Hampden (1949)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -46000,7 +46014,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"276679712": {
+},
+"276679712": {
   "books_id": "276679712",
   "title": "The Pocket Book of Verse: Great English and American Poems (W 241)",
   "sortcharacter": "5",
@@ -46052,8 +46067,7 @@
   }],
   "copies": "1",
   "weight": "0.4 pounds"
-},
-"276679772": {
+},"276679772": {
   "books_id": "276679772",
   "title": "To Kill a Mockingbird (Warner Books)",
   "sortcharacter": "1",
@@ -46343,10 +46357,10 @@
     "19": ["Married women",
     "Fiction"]
   },
-  "series": ["The House of Earth Trilogy",
-  "Buck's China Trilogy",
-  "Bucks China Trilogie",
-  "De goede aarde Trilogie"],
+  "series": ["Bucks China Trilogie",
+  "De goede aarde Trilogie",
+  "The House of Earth Trilogy",
+  "Buck's China Trilogy"],
   "originaltitle": "The Good Earth",
   "awards": ["100 Best Books by American Women During the Past 100 Years, 1833-1933",
   "100 Books That Shaped World History",
@@ -46813,20 +46827,20 @@
     "15": ["humorous fiction"],
     "17": ["science fiction"]
   },
-  "series": ["The Hitchhiker's Guide to the Galaxy",
-  "Hitch-Hikers Guide to the Galaxy",
-  "Autostopem przez Galaktyk\u0119",
-  "H2G2",
-  "Per Anhalter durch die Galaxis",
-  "Het transgalactisch liftershandboek",
+  "series": ["Stopa\u0159\u016fv pr\u016fvodce po Galaxii",
+  "Galakse-blafferen",
+  "Guida galattica per gli autostoppisti",
+  "O Guia do Mochileiro das Gal\u00e1xias",
   "Liftartrilogin",
-  "Gu\u00eda del autoestopista gal\u00e1ctico",
+  "Het transgalactisch liftershandboek",
   "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
   "Galaxis utikalauz",
-  "O Guia do Mochileiro das Gal\u00e1xias",
-  "Guida galattica per gli autostoppisti",
-  "Galakse-blafferen",
-  "Stopa\u0159\u016fv pr\u016fvodce po Galaxii"],
+  "Gu\u00eda del autoestopista gal\u00e1ctico",
+  "H2G2",
+  "Autostopem przez Galaktyk\u0119",
+  "The Hitchhiker's Guide to the Galaxy",
+  "Hitch-Hikers Guide to the Galaxy",
+  "Per Anhalter durch die Galaxis"],
   "originaltitle": "The Restaurant at the End of the Universe",
   "awards": ["Top 10 fictional towns in children's books"],
   "genre": ["Fiction",
@@ -47956,24 +47970,24 @@
     "34": ["fantasy fiction"],
     "35": ["fiction in English"]
   },
-  "series": ["Der Herr der Ringe",
+  "series": ["Il Signore degli Anelli",
+  "Gy\u0171r\u0171k Ura",
+  "El Se\u00f1or de los Anillos",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
   "\u9b54\u6212",
+  "Gospodar prstenova",
+  "Gospodar prstenova",
+  "Ringenes herre",
   "Le seigneur des anneaux",
+  "Der Herr der Ringe",
   "Ringenes herre",
-  "Sagan om Ringen",
-  "O Senhor dos An\u00e9is",
-  "P\u00e1n Prsten\u016f",
   "El Senyor dels Anells",
-  "Ringenes herre",
-  "Gospodar prstenova",
-  "El Se\u00f1or de los Anillos",
-  "Gy\u0171r\u0171k Ura",
-  "Il Signore degli Anelli",
-  "Gospodar prstenova",
+  "P\u00e1n Prsten\u016f",
+  "O Senhor dos An\u00e9is",
+  "Sagan om Ringen",
+  "In de Ban van de Ring",
   "Taru Sormusten Herrasta",
   "W\u0142adca Pier\u015bcieni",
-  "In de Ban van de Ring",
   "The Lord of the Rings"],
   "originaltitle": "The Lord of the Rings",
   "awards": ["1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
@@ -49587,7 +49601,7 @@
   },
   "asin": "B007I0Q8II",
   "ean": ["0521427061"],
-  "publication": "(1992)",
+  "publication": "Cambridge University Press (Canto)",
   "date": "1992",
   "summary": "A Mathematicians Apology by G. H. Hardy (1992)",
   "language": ["English"],
@@ -50439,8 +50453,8 @@
   "lcc": {
     "code": "HV9713 .S6413"
   },
-  "series": ["The Gulag Archipelago",
-  "Der Archipel GULAG",
+  "series": ["Der Archipel GULAG",
+  "The Gulag Archipelago",
   "Archipelag Gu\u0142ag",
   "De Goelag Archipel, 1918-1956"],
   "originaltitle": "&#1040;&#1088;&#1093;&#1080;&#1087;&#1077;&#1083;&#1072;&#1075; &#1043;&#1059;&#1051;&#1040;&#1043;",
@@ -52419,12 +52433,10 @@
   "title": "The Geography of Thought: How Asians and Westerners Think Differently...and Why",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Ph.D., Richard Nisbett",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Nisbett, Richard",
   "authors": [{
-    "lf": "Ph.D., Richard Nisbett",
-    "fl": "Richard Nisbett Ph.D.",
-    "role": "Author"
+    "lf": "Nisbett, Richard",
+    "fl": "Richard Nisbett"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -52437,7 +52449,7 @@
   "ean": ["0743255356"],
   "publication": "Free Press (2004), Edition: Reprint, 288 pages",
   "date": "2004",
-  "summary": "The Geography of Thought: How Asians and Westerners Think Differently...and Why by Richard Nisbett Ph.D. (2004)",
+  "summary": "The Geography of Thought: How Asians and Westerners Think Differently...and Why by Richard Nisbett (2004)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -53290,7 +53302,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"276686122": {
+},
+"276686122": {
   "books_id": "276686122",
   "title": "Towards Universal Man",
   "sortcharacter": "1",
@@ -53331,8 +53344,7 @@
   "physical_description": "387 p.",
   "weight": "1.3 pounds",
   "pages": "387 "
-},
-"276686125": {
+},"276686125": {
   "books_id": "276686125",
   "title": "Crimes Without Victims: Deviant Behavior and Public Policy : Abortion, Homosexuality, Drug Addiction",
   "sortcharacter": "1",
@@ -53728,7 +53740,7 @@
 },
 "276715273": {
   "books_id": "276715273",
-  "title": "Brand New Word Power Made Easy",
+  "title": "Word Power Made Easy",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Lewis, Norman",
@@ -53745,7 +53757,9 @@
   },
   "asin": "B00VIK7HKC",
   "ean": ["8183071007"],
-  "summary": "Brand New Word Power Made Easy by Norman Lewis",
+  "publication": "GOYAL",
+  "date": "2017",
+  "summary": "Word Power Made Easy by Norman Lewis (2017)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -55834,8 +55848,7 @@
   "date": "1911",
   "summary": "New Manual Of English Grammar by The Christian Literature Society (1911)",
   "ddc": {
-    "code": [".428.2",
-    "428.2"],
+    "code": ["428.2"],
     "wording": ["English & Old English languages",
     "Language",
     "Standard English usage (Prescriptive linguistics)",
@@ -56529,7 +56542,7 @@
   },
   "asin": "8177092677",
   "ean": ["8177092677"],
-  "publication": "(2017)",
+  "publication": "Bharati Bhawan (P&amp;D)",
   "date": "2017",
   "summary": "Brush up Your English by S.T.Imam (2017)",
   "language": ["English"],
@@ -58363,7 +58376,7 @@
   },
   "asin": "0134372077",
   "ean": ["0134372077"],
-  "publication": "(2000), 154 pages",
+  "publication": "Hall, Prentice",
   "date": "2000",
   "summary": "The Tragedy of Romeo & Juliet by Prentice Hall (2000)",
   "language": ["English"],
@@ -58772,7 +58785,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"276824863": {
+},
+"276824863": {
   "books_id": "276824863",
   "title": "Handbook Of Critical Approaches Of Literature, 5th Edition",
   "sortcharacter": "1",
@@ -58825,8 +58839,7 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},
-"276824868": {
+},"276824868": {
   "books_id": "276824868",
   "title": "Studies in Medieval and Renaissance Literature",
   "sortcharacter": "1",
@@ -59274,13 +59287,21 @@
   "title": "Science Fiction Stories",
   "sortcharacter": "1",
   "public": "true",
-  "authors": [[]],
+  "primaryauthor": "Boardman, Tom",
+  "primaryauthorrole": "Editor",
+  "authors": [{
+    "lf": "Boardman, Tom",
+    "fl": "Tom Boardman",
+    "role": "Editor"
+  }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B006ZIJFCA",
-  "summary": "Science Fiction Stories",
+  "publication": "Octopus",
+  "summary": "Science Fiction Stories by Tom Boardman",
   "language": ["English"],
   "language_codeA": ["eng"],
+  "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["813.087"],
@@ -59291,9 +59312,11 @@
     "Genre fiction",
     "Literature"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "PN6071.S33 S37"
+  },
   "source": "amazon.com books",
-  "workcode": "28284290",
+  "workcode": "297393",
   "entrydate": "2024-12-18",
   "format": [{
     "code": "1.1",
@@ -59746,7 +59769,7 @@
 },
 "276864258": {
   "books_id": "276864258",
-  "title": "Romantic Image. On the poetic image, with special reference to modern poetry and criticism",
+  "title": "Romantic Image: On the poetic image, with special reference to modern poetry and criticism",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Kermode, Frank",
@@ -59767,16 +59790,15 @@
   "ean": ["8990148022"],
   "publication": "Routledge &amp; Keegan Paul (1957)",
   "date": "1957",
-  "summary": "Romantic Image. On the poetic image, with special reference to modern poetry and criticism by Frank Kermode (1957)",
+  "summary": "Romantic Image: On the poetic image, with special reference to modern poetry and criticism by Frank Kermode (1957)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["576.8"],
-    "wording": ["Biology",
-    "Evolution",
-    "Genetics and evolution",
-    "Science"]
+    "code": ["800"],
+    "wording": ["Literature",
+    "Literature (Belles-lettres) and rhetoric",
+    "Literature, rhetoric & criticism"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -60186,15 +60208,13 @@
 },
 "276868115": {
   "books_id": "276868115",
-  "title": "Indian Philosophy: Volume II: with an Introduction by J.N. Mohanty: v. 2 (Oxford India Collection) (Oxford India Collection (Paperback))",
+  "title": "Indian Philosophy: Volume II",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Radhakrishnan",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Radhakrishnan, Sarvapalli",
   "authors": [{
-    "lf": "Radhakrishnan",
-    "fl": "Radhakrishnan",
-    "role": "Author"
+    "lf": "Radhakrishnan, Sarvapalli",
+    "fl": "Sarvapalli Radhakrishnan"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -60207,7 +60227,7 @@
   "ean": ["0195698428"],
   "publication": "OUP India (2009), Edition: 2, 768 pages",
   "date": "2009",
-  "summary": "Indian Philosophy: Volume II: with an Introduction by J.N. Mohanty: v. 2 (Oxford India Collection) (Oxford India Collection (Paperback)) by Radhakrishnan (2009)",
+  "summary": "Indian Philosophy: Volume II by Sarvapalli Radhakrishnan (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -61452,15 +61472,13 @@
 },
 "276868601": {
   "books_id": "276868601",
-  "title": "Religion and Change in Contemporary Asia [Mar 17, 1971] Spencer, Robert Francis",
+  "title": "Religion and Change in Contemporary Asia",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Spencer, Robert F (Ed)",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Spencer, Robert Francis",
   "authors": [{
-    "lf": "Spencer, Robert F (Ed)",
-    "fl": "Robert F (Ed) Spencer",
-    "role": "Author"
+    "lf": "Spencer, Robert Francis",
+    "fl": "Robert Francis Spencer"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -61471,7 +61489,7 @@
   "ean": ["0816606102"],
   "publication": "University of Minnesota Press (1971), Edition: First Edition, 172 pages",
   "date": "1971",
-  "summary": "Religion and Change in Contemporary Asia [Mar 17, 1971] Spencer, Robert Francis by Robert F (Ed) Spencer (1971)",
+  "summary": "Religion and Change in Contemporary Asia by Robert Francis Spencer (1971)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -62148,19 +62166,19 @@
   "title": "History of Philosophy Eastern and Western: Volume One",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Radhakrishnan, Sarveppali (ed.); et al.",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Radhakrishnan, Sarvapalli",
+  "primaryauthorrole": "Editor",
   "authors": [{
-    "lf": "Radhakrishnan, Sarveppali (ed.); et al.",
-    "fl": "Sarveppali (ed.); et al. Radhakrishnan",
-    "role": "Author"
+    "lf": "Radhakrishnan, Sarvapalli",
+    "fl": "Sarvapalli Radhakrishnan",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B0010IKCWC",
   "publication": "George Allen &amp; Unwin Ltd.. (1952)",
   "date": "1952",
-  "summary": "History of Philosophy Eastern and Western: Volume One by Sarveppali (ed.); et al. Radhakrishnan (1952)",
+  "summary": "History of Philosophy Eastern and Western: Volume One by Sarvapalli Radhakrishnan (1952)",
   "ddc": {
     "code": ["109"],
     "wording": ["History and collected biography",
@@ -62304,10 +62322,11 @@
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["137.082"],
-    "wording": ["Divinatory graphology",
-    "Parapsychology & occultism",
-    "Philosophy & psychology"]
+    "code": ["155.2"],
+    "wording": ["Differential and developmental psychology",
+    "Individual Psychology",
+    "Philosophy & psychology",
+    "Psychology"]
   },
   "lcc": {
     "code": "BF698 .K58"
@@ -63319,12 +63338,10 @@
   "title": "The Psychology of Phantasy: An Experimental and Theoretical Investigation into the Intrinsic Laws of Productive Mentality",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "i-roset",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "I. Roset",
   "authors": [{
-    "lf": "i-roset",
-    "fl": "i-roset",
-    "role": "Author"
+    "lf": "I. Roset",
+    "fl": "I. Roset"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -63337,7 +63354,7 @@
   "ean": ["0828529779"],
   "publication": "Progress Publishers (1985), Edition: First Edition",
   "date": "1985",
-  "summary": "The Psychology of Phantasy: An Experimental and Theoretical Investigation into the Intrinsic Laws of Productive Mentality by i-roset (1985)",
+  "summary": "The Psychology of Phantasy: An Experimental and Theoretical Investigation into the Intrinsic Laws of Productive Mentality by I. Roset (1985)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -63873,12 +63890,10 @@
   "title": "Neuroscience Basics (Chinese Edition)",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "(Mei)Malcolmslaughter",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Slaughter, Malcolm M.",
   "authors": [{
-    "lf": "(Mei)Malcolmslaughter",
-    "fl": "(Mei)Malcolmslaughter",
-    "role": "Author"
+    "lf": "Slaughter, Malcolm M.",
+    "fl": "Malcolm M. Slaughter"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -63891,7 +63906,7 @@
   "ean": ["7810713906"],
   "publication": "Peking University Medical Press Pub. Date :2002-10 (2000)",
   "date": "2000",
-  "summary": "Neuroscience Basics (Chinese Edition) by (Mei)Malcolmslaughter (2000)",
+  "summary": "Neuroscience Basics (Chinese Edition) by Malcolm M. Slaughter (2000)",
   "language": ["Chinese"],
   "language_codeA": ["chi"],
   "originallanguage_codeA": ["chi"],
@@ -64013,6 +64028,7 @@
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
+  "publication": "N.M. Tripathi Private Limited",
   "summary": "Hindu Law by Sir Dinshaw Fardunji Mulla",
   "ddc": {
     "code": ["346.54"],
@@ -64310,7 +64326,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"276884476": {
+},
+"276884476": {
   "books_id": "276884476",
   "title": "A History of English Criticism: Being The English Chapters of A History of Criticism and Literary Taste in Europe",
   "sortcharacter": "1",
@@ -64346,8 +64363,7 @@
     "text": "Hardcover"
   }],
   "copies": "1"
-},
-"276885034": {
+},"276885034": {
   "books_id": "276885034",
   "title": "An Outline History Of English Literature",
   "sortcharacter": "4",
@@ -65558,19 +65574,26 @@
   "title": "The Annals of Imperial Rome",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Grant, Tacitus and translated by Michael",
+  "primaryauthor": "Tacitus, Publius Cornelius",
   "primaryauthorrole": "Author",
+  "secondaryauthor": "Grant, Michael",
+  "secondaryauthorroles": "Translator",
   "authors": [{
-    "lf": "Grant, Tacitus and translated by Michael",
-    "fl": "Tacitus and translated by Michael Grant",
+    "lf": "Tacitus, Publius Cornelius",
+    "fl": "Publius Cornelius Tacitus",
     "role": "Author"
+  },
+  {
+    "lf": "Grant, Michael",
+    "fl": "Michael Grant",
+    "role": "Translator"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B00JK2K08Q",
   "publication": "Barnes &amp; Noble Books (1971), Edition: Revised Edition",
   "date": "1971",
-  "summary": "The Annals of Imperial Rome by Tacitus and translated by Michael Grant (1971)",
+  "summary": "The Annals of Imperial Rome by Publius Cornelius Tacitus (1971)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["Latin"],
@@ -69666,7 +69689,8 @@
   "physical_description": "259 p.",
   "weight": "1.01 pounds",
   "pages": "259 "
-},"280388200": {
+},
+"280388200": {
   "books_id": "280388200",
   "title": "Responding to the Challenge of Evolution",
   "sortcharacter": "1",
@@ -69716,8 +69740,7 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},
-"280388309": {
+},"280388309": {
   "books_id": "280388309",
   "title": "The Children Of The New Forest | Regent Classic",
   "sortcharacter": "5",
@@ -73254,9 +73277,9 @@
   "El Se\u00f1or de los Anillos",
   "Gy\u0171r\u0171k Ura",
   "P\u00e1n Prsten\u016f",
-  "W\u0142adca Pier\u015bcieni",
   "In de Ban van de Ring",
   "The Lord of the Rings",
+  "W\u0142adca Pier\u015bcieni",
   "Taru Sormusten Herrasta"],
   "originaltitle": "The Lord of the Rings",
   "awards": ["1001 Children's Books You Must Read Before You Grow Up",
@@ -73978,6 +74001,7 @@
   },
   "asin": "0195681819",
   "ean": ["0195681819"],
+  "publication": "Oxford University Press",
   "summary": "Free Will: A Very Short Introduction by Thomas Pink",
   "language": ["English"],
   "language_codeA": ["eng"],
@@ -75446,7 +75470,8 @@
   "physical_description": "219 p.",
   "weight": "0.35 pounds",
   "pages": "219 "
-},"287193059": {
+},
+"287193059": {
   "books_id": "287193059",
   "title": "This Fascinating Astronomy (Science for Everyone)",
   "sortcharacter": "1",
@@ -75491,8 +75516,7 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},
-"287193115": {
+},"287193115": {
   "books_id": "287193115",
   "title": "Elementary Kinematics of Elementary Particles (Science for Everyone)",
   "sortcharacter": "1",
@@ -76961,4 +76985,391 @@
   "dimensions": "8.3 x 5.3 x 1 inches",
   "weight": "1 pound",
   "pages": "304 "
+},
+"291924514": {
+  "books_id": "291924514",
+  "title": "Forty studies that changed psychology: Explorations into the history of psychological research",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Hock, Roger R.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Hock, Roger R.",
+    "fl": "Roger R. Hock",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0133275787",
+  "isbn": {
+    "0": "0133275787",
+    "2": "9780133275780"
+  },
+  "asin": "0133275787",
+  "ean": ["0133275787"],
+  "publication": "Prentice-Hall (1992), Edition: First Edition, 308 pages",
+  "date": "1992",
+  "summary": "Forty studies that changed psychology: Explorations into the history of psychological research by Roger R. Hock (1992)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["150"],
+    "wording": ["Philosophy & psychology",
+    "Psychology",
+    "Psychology"]
+  },
+  "lcc": {
+    "code": "BF105 .H63"
+  },
+  "subject": [["Psychology",
+  "Experiments",
+  "History",
+  "20th century",
+  "Textbooks"],
+  ["Psychology",
+  "History"],
+  ["Psychology",
+  "History",
+  "20th century"],
+  ["Psychology",
+  "History",
+  "Textbooks"],
+  ["Psychology",
+  "history"]],
+  "source": "amazon.com books",
+  "workcode": "286691",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "308 p.; 8.96 inches",
+  "height": "8.96 inches",
+  "thickness": "5.96 inches",
+  "length": "0.61 inches",
+  "dimensions": "8.96 x 0.61 x 5.96 inches",
+  "weight": "0.90169065158 pounds",
+  "pages": "308 "
+},
+"291924722": {
+  "books_id": "291924722",
+  "title": "Prefaces to the Experience of Literature (The Works of Lionel Trilling)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Trilling, Lionel",
+  "primaryauthorrole": "Compiler",
+  "secondaryauthor": "Jovanovich, William",
+  "secondaryauthorroles": "Foreword",
+  "authors": [{
+    "lf": "Trilling, Lionel",
+    "fl": "Lionel Trilling",
+    "role": "Compiler"
+  },
+  {
+    "lf": "Jovanovich, William",
+    "fl": "William Jovanovich",
+    "role": "Foreword"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0151739153",
+  "isbn": {
+    "0": "0151739153",
+    "2": "9780151739158"
+  },
+  "asin": "0151739153",
+  "ean": ["0151739153"],
+  "publication": "Harcourt (1967), Edition: First Edition, 302 pages",
+  "date": "1967",
+  "summary": "Prefaces to the Experience of Literature (The Works of Lionel Trilling) by Lionel Trilling (1967)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["809"],
+    "wording": ["History, description, critical appraisal of more than two literatures",
+    "Literature",
+    "Literature, rhetoric & criticism"]
+  },
+  "lcc": {
+    "code": "PN511 .T77"
+  },
+  "source": "amazon.com books",
+  "workcode": "3618622",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "302 p.; 8.25 inches",
+  "height": "8.25 inches",
+  "thickness": "1.25 inches",
+  "length": "5.75 inches",
+  "dimensions": "8.25 x 5.75 x 1.25 inches",
+  "weight": "0.9 pounds",
+  "pages": "302 "
+},
+"291924733": {
+  "books_id": "291924733",
+  "title": "Ethics and education",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Peters, R. S",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Peters, R. S",
+    "fl": "R. S Peters",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0043700322",
+  "isbn": {
+    "0": "0043700322",
+    "2": "9780043700327"
+  },
+  "asin": "0043700322",
+  "ean": ["0043700322"],
+  "publication": "Allen and Unwin (1970), 333 pages",
+  "date": "1970",
+  "summary": "Ethics and education by R. S Peters (1970)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["370.1"],
+    "wording": ["Education",
+    "Education",
+    "Social sciences",
+    "Theory of education; Meaning; Aim"]
+  },
+  "lcc": {
+    "code": "LB880 .P43"
+  },
+  "subject": {
+    "0": ["Education",
+    "Philosophy"],
+    "2": ["Ethics"],
+    "3": ["ethics"]
+  },
+  "source": "amazon.com books",
+  "workcode": "484902",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "333 p.",
+  "weight": "0.9 pounds",
+  "pages": "333 "
+},
+"291924746": {
+  "books_id": "291924746",
+  "title": "Extraordinary People",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Wilson, Derek",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Wilson, Derek",
+    "fl": "Derek Wilson",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0330280988",
+  "isbn": {
+    "0": "0330280988",
+    "2": "9780330280983"
+  },
+  "asin": "0330280988",
+  "ean": ["0330280988"],
+  "publication": "Macmillan (1983), 256 pages",
+  "date": "1983",
+  "summary": "Extraordinary People by Derek Wilson (1983)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["920.02"],
+    "wording": ["Biography & genealogy",
+    "Biography, genealogy, insignia",
+    "General and collective by localities",
+    "History & geography",
+    "Partial collections not limited to any special country or subject"]
+  },
+  "lcc": {
+    "code": "CT104"
+  },
+  "source": "amazon.com books",
+  "workcode": "26066",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"291924770": {
+  "books_id": "291924770",
+  "title": "Leonard Maltin's Movie Encyclopedia: Career Profiles of More than 2000 Actors and Filmmakers, Past and Present (Reference)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Maltin, Leonard",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Maltin, Leonard",
+    "fl": "Leonard Maltin",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0452270588",
+  "isbn": {
+    "0": "0452270588",
+    "2": "9780452270589"
+  },
+  "asin": "0452270588",
+  "ean": ["0091857023007"],
+  "publication": "Plume (1995), Edition: Reprint, 992 pages",
+  "date": "1995",
+  "summary": "Leonard Maltin's Movie Encyclopedia: Career Profiles of More than 2000 Actors and Filmmakers, Past and Present (Reference) by Leonard Maltin (1995)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["791.43"],
+    "wording": ["Arts & recreation",
+    "Motion pictures",
+    "Motion pictures, radio, television, podcasting",
+    "Public performances",
+    "Sports, games & entertainment"]
+  },
+  "lcc": {
+    "code": "PN1998 .M34"
+  },
+  "source": "amazon.com books",
+  "workcode": "647123",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "992 p.; 8.94 inches",
+  "height": "8.94 inches",
+  "thickness": "2.09 inches",
+  "length": "6.04 inches",
+  "dimensions": "8.94 x 6.04 x 2.09 inches",
+  "weight": "2.25091969502 pounds",
+  "pages": "992 "
+},
+"291924891": {
+  "books_id": "291924891",
+  "title": "Children's History of the World",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Somerset Fry, Plantagenet",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Somerset Fry, Plantagenet",
+    "fl": "Plantagenet Somerset Fry",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0601074521",
+  "isbn": {
+    "0": "0601074521",
+    "2": "9780601074525"
+  },
+  "asin": "0601074521",
+  "ean": ["0601074521"],
+  "publication": "Hamlyn (1972), Edition: Eleventh Impression 1987, 448 pages",
+  "date": "1972",
+  "summary": "Children's History of the World by Plantagenet Somerset Fry (1972)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["901.9"],
+    "wording": ["History",
+    "History & geography",
+    "Philosophy and theory of history"]
+  },
+  "lcc": {
+    "code": "D21"
+  },
+  "source": "amazon.com books",
+  "workcode": "2932549",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.3",
+    "text": "Board book"
+  }],
+  "copies": "1",
+  "physical_description": "448 p.",
+  "height": "10.1 inches",
+  "thickness": "1.7 inches",
+  "length": "7.4 inches",
+  "dimensions": "10.1 x 7.4 x 1.7 inches",
+  "weight": "2.65 pounds",
+  "pages": "448 "
+},
+"291925258": {
+  "books_id": "291925258",
+  "title": "Introduction to the Decorative Arts to The (A Quintet book)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "O Neill, Amanda",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "O Neill, Amanda",
+    "fl": "Amanda O Neill",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1855010534",
+  "isbn": {
+    "0": "1855010534",
+    "2": "9781855010536"
+  },
+  "asin": "1855010534",
+  "ean": ["1855010534"],
+  "publication": "Tiger Books Intl (1990), Edition: First Edition, 144 pages",
+  "date": "1990",
+  "summary": "Introduction to the Decorative Arts to The (A Quintet book) by Amanda O Neill (1990)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["745.0904"],
+    "wording": ["20th Century",
+    "Arts & recreation",
+    "Biography And History",
+    "By Period",
+    "Decorative arts",
+    "Design & related arts"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "28431885",
+  "entrydate": "2025-08-05",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
 }}
