@@ -3,13 +3,78 @@ layout: layouts/base.njk
 title: Photo Tags
 ---
 
-Tags:<div class="tag-grid">
-  {% for tag in photos.tags %}
-    <a href="/photo-tag/{{ tag }}/">
-      <img src="{{ photos.byTag[tag][0].secure_url }}" alt="{{ tag }}" style="border: 1px solid black; transition: border 0.1s;" onmouseover="this.style.border='1px solid yellow'" onmouseout="this.style.border='none'">
-      <span style="background: #d0a9a9; border-radius: 12px; margin-top:2px; padding: 4px 10px; display: inline-block;">
-        {{ tag | titleCase }}
-      </span>
-    </a>
-  {% endfor %}
-</div>
+<section class="photo-tags">
+  <div class="tag-grid">
+    {% for tag in photos.tags %} {% if photos.byTag[tag] and
+    photos.byTag[tag][0] %}
+    <figure class="tag-card">
+      <a href="/photo-tag/{{ tag | url }}">
+        <img
+          src="{{
+            photos.byTag[tag][0].secure_url
+          }}?w=300&h=300&c=fill&f=auto&q=auto"
+          alt="Photo representing {{ tag }}"
+          loading="lazy"
+          width="300"
+          height="300"
+        />
+        <figcaption>{{ tag | titleCase }}</figcaption>
+      </a>
+    </figure>
+    {% endif %} {% endfor %}
+  </div>
+</section>
+
+<style>
+  .tag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .tag-card {
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .tag-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .tag-card img {
+    width: 100%;
+    height: auto;
+    border: none;
+    transition: border 0.1s;
+    border: 1px solid black;
+  }
+
+  .tag-card img {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    flex-shrink: 0;
+  }
+
+  .tag-card img:hover,
+  .tag-card img.active-thumb {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    transform: scale(1.05);
+  }
+
+  .tag-card figcaption {
+    background: #d0a9a9;
+    border-radius: 0 0 12px 12px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+</style>
