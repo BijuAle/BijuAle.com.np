@@ -1,184 +1,306 @@
-<header>
-    {% set currentUrl = page.url %}
-    <nav>
-        <div id="site_heading">
-          <a href="/"><img width="35px" src="../assets/images/chi-ro.png" alt="">Biju Ale<span id="web">'s Web</span></a>
-          <div  id="site_subheading">And you shall know the truth, & the truth shall set you free.</br> <span id="verse">&mdash;John 8:32</span></div>
-        </div>
-            <ul role="list">
-            <li>
-              <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
-            </li>
-            <li>
-              <a {% if currentUrl === '#' %}aria-current="page"{% endif %} href="#">My Favorites</a>
-              <ul class="submenu">
-                <li>
-                  <a {% if currentUrl === '/kindle-clippings/' %}aria-current="page"{% endif %} href="/kindle-clippings">Kindle Clippings</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/vocab/' %}aria-current="page"{% endif %} href="/vocab">Vocab</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/poems-lyrics/' %}aria-current="page"{% endif %} href="/poems-lyrics">Poems & Lyrics</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/bible-verses/' %}aria-current="page"{% endif %} href="/bible-verses">Bible Verses</a>                </li>
-              </ul>
-            </li>
-                 <li>
-              <a {% if currentUrl === '/photo-memories/' %}aria-current="page"{% endif %} href="/photo-memories">Photo Memories</a>
-            </li>
-            <li>
-              <a {% if currentUrl === '/library/' %}aria-current="page"{% endif %} href="/library">Library</a>
-            </li>
-            <li>
-              <a {% if currentUrl === '#' %}aria-current="page"{% endif %} href="#">Digital Alchemy</a>
-              <ul class="submenu">
-                <li>
-                  <a {% if currentUrl === '/latex/' %}aria-current="page"{% endif %} href="/latex">LaTeX</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/git/' %}aria-current="page"{% endif %} href="/git">Git</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/pdf/' %}aria-current="page"{% endif %} href="/pdf">PDF</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/ydl/' %}aria-current="page"{% endif %} href="/ydl">Y-DL</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/flac/' %}aria-current="page"{% endif %} href="/flac">FLAC</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/windows/' %}aria-current="page"{% endif %} href="/windows">Windows</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/mac/' %}aria-current="page"{% endif %} href="/mac">Mac</a>
-                </li>
-                <li>
-                  <a {% if currentUrl === '/melange/' %}aria-current="page"{% endif %} href="/melange">Melange</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a {% if currentUrl === '/about/' %}aria-current="page"{% endif %} href="/about">About</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+<header class="site-header">
+  <div class="header-top">
+    <div class="site-branding">
+      <a href="/" class="branding-link">
+        <img
+          width="35"
+          src="../assets/images/chi-ro.png"
+          alt="Chi Rho"
+          class="branding-img"
+        />
+        <span class="site-title">
+          Biju Ale<span class="site-web">’s Web</span>
+        </span>
+      </a>
+    </div>
 
-    
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <svg
+        class="hamburger-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </label>
+
+    <div class="site-subheading">
+      And you shall know the truth, &amp; the truth shall make you free.<br />
+      <span class="verse">&mdash; John 8:32</span>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <ul role="list" class="nav-list">
+      <li class="active">
+        <a href="/" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">My Favorites</a>
+        <ul class="submenu">
+          <li>
+            <a href="/kindle-clippings" class="submenu-link"
+              >Kindle Clippings</a
+            >
+          </li>
+          <li><a href="/vocab" class="submenu-link">Vocab</a></li>
+          <li>
+            <a href="/poems-lyrics" class="submenu-link">Poems & Lyrics</a>
+          </li>
+          <li><a href="/bible-verses" class="submenu-link">Bible Verses</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/photo-memories" class="nav-link">Photo Memories</a>
+      </li>
+      <li>
+        <a href="/library" class="nav-link">Library</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Digital Alchemy</a>
+        <ul class="submenu">
+          <li><a href="/latex" class="submenu-link">LaTeX</a></li>
+          <li><a href="/git" class="submenu-link">Git</a></li>
+          <li><a href="/pdf" class="submenu-link">PDF</a></li>
+          <li><a href="/ydl" class="submenu-link">Y-DL</a></li>
+          <li><a href="/flac" class="submenu-link">FLAC</a></li>
+          <li><a href="/windows" class="submenu-link">Windows</a></li>
+          <li><a href="/mac" class="submenu-link">Mac</a></li>
+          <li><a href="/melange" class="submenu-link">Melange</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/about" class="nav-link">About</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <style>
-
-  header {
-  background-color: #bdbda1;
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  font-family: "Cinzel";
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1rem;
-  border-bottom: 1px solid grey;
-}
-
-#site_heading {
-  text-align: left;
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
-}
-
-#site_subheading {
-  display: inline;
-  text-align: right;
-  opacity: 75%;
-  font-size: 0.95rem;
-  white-space: nowrap;
-  position: absolute;
-  right:0;
-  max-width:300px;
-  text-wrap: wrap;
-}
-#web{
-    font-family: "Garamond Italic";
-    font-style: italic;
-    opacity: 40%;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-nav ul li {
-  border: 1px solid grey;
-  padding: 2px;
-  margin: 0 2px;
-  background: #57ae9f;
-  width: 100%;
-}
-nav ul li:hover {
-  background: #649ab5;
-  transition: all 0.3s;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #36193a;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  padding: 0.5rem;
-  z-index: 1;
-}
-header img{
-    opacity: 60%;
-    display: inline-block;
+  .site-header {
+    padding: 0.5rem;
+    background-color: #bdbda1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
-#verse{
-  font-style: italic;
-  font-family: "Garamond Italic";
-  opacity: 75%;
+  .header-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
 
-}
-nav li:hover .submenu {
-  display: block;
-}
+  .site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-  header img{
-    padding-left: 4px;
-    padding-top: 4px;
+  .branding-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .branding-img {
+    width: auto;
+    height: 35px;
+    opacity: 80%;
+  }
+
+  .site-title {
+    font-family: Cinzel;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .site-web {
+    font-family: "Garamond Italic";
+    font-style: italic;
+    color: #666;
+  }
+
+  .site-subheading {
+    font-family: Cinzel;
+    font-size: 0.9rem;
+    text-align: right;
+    max-width: 400px;
+  }
+  .site-subheading::after {
+    content: "\&";
+    white-space: pre;
+  }
+
+  .verse {
+    font-style: italic;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    display: none;
+    cursor: pointer;
+  }
+
+  .hamburger-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-nav {
+    max-width: 1200px;
+    margin: 0.5rem auto 0;
+    border-bottom: 1px solid #666;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.2rem;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: #b98484;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+
+    background-color: #666;
+  }
+
+  .nav-link:hover {
+    background-color: #bdbda1;
+  }
+
+  .active .nav-link {
+    font-weight: bold;
+    background-color: #bdbda1;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #bdbda1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  .nav-item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .submenu-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+  }
+
+  .submenu-link:hover {
+    background-color: #bdbda1;
   }
 
   @media (max-width: 768px) {
-  header,
-  nav {
-    flex-direction: column;
-    padding: 0;
+    .header-top {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-  #site_subheading{
-    padding-right: .3rem;
-    padding-top:.2rem;
-    font-size: 40%;
-    opacity: 90%;
-    font-family: "Gaela";
-    max-width:140px;
-    text-wrap: wrap;
-    
+    .site-subheading {
+      text-align: left;
+      margin-top: 0.5rem;
+    }
+
+    .nav-toggle-label {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .main-nav {
+      display: none;
+      width: 100%;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label + .site-subheading + .main-nav {
+      display: block;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .nav-link {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .submenu {
+      position: static;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      padding-left: 1rem;
+    }
+
+    .submenu-link {
+      border: 1px solid darkslategray;
+      border-radius: 4px;
+    }
   }
-}
 </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navToggle = document.getElementById("nav-toggle");
+    navToggle.addEventListener("change", () => {
+      const mainNav = document.querySelector(".main-nav");
+      mainNav.style.display = navToggle.checked ? "block" : "none";
+    });
+  });
+</script>

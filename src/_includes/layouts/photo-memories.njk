@@ -9,16 +9,15 @@ title: Photo Tags
     photos.byTag[tag][0] %}
     <figure class="tag-card">
       <a href="/photo-tag/{{ tag | url }}">
+        <figcaption>{{ tag | titleCase }}</figcaption>
         <img
           src="{{
             photos.byTag[tag][0].secure_url
           }}?w=300&h=300&c=fill&f=auto&q=auto"
           alt="Photo representing {{ tag }}"
-          loading="lazy"
-          width="300"
-          height="300"
+          width="100"
+          height="100"
         />
-        <figcaption>{{ tag | titleCase }}</figcaption>
       </a>
     </figure>
     {% endif %} {% endfor %}
@@ -28,8 +27,8 @@ title: Photo Tags
 <style>
   .tag-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 4fr));
+    gap: 0.5rem;
   }
 
   .tag-card {
@@ -67,14 +66,14 @@ title: Photo Tags
   .tag-card img.active-thumb {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-    transform: scale(1.05);
   }
 
   .tag-card figcaption {
-    background: #d0a9a9;
-    border-radius: 0 0 12px 12px;
-    padding: 0.5rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 0.3rem 0.75rem;
+    color: bkack;
+    opacity: 90%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Garamond Italic";
   }
 </style>
