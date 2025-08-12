@@ -32,8 +32,8 @@
     </label>
 
     <div class="site-subheading">
-      And you shall know the truth, &amp; the truth shall make you free.<br />
-      <span class="verse">&mdash; John 8:32</span>
+      And you shall know the truth, &amp; </br>the truth shall make you free.<br />
+      <span class="verse">&mdash;John 8:32</span>
     </div>
   </div>
 
@@ -86,7 +86,7 @@
 <style>
   .site-header {
     padding: 0.5rem;
-    background-color: #bdbda1;
+    background-color: #8d99bb;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -125,7 +125,6 @@
   .site-title {
     font-family: Cinzel;
     font-size: 1.7rem;
-    font-weight: bold;
   }
 
   .site-web {
@@ -140,12 +139,9 @@
     text-align: right;
     max-width: 400px;
   }
-  .site-subheading::after {
-    content: "\&";
-    white-space: pre;
-  }
 
   .verse {
+    font-family: "Garamond Italic";
     font-style: italic;
   }
 
@@ -166,7 +162,6 @@
   .main-nav {
     max-width: 1200px;
     margin: 0.5rem auto 0;
-    border-bottom: 1px solid #666;
   }
 
   .nav-list {
@@ -186,33 +181,27 @@
     display: block;
     padding: 0.2rem;
     text-decoration: none;
-    color: #b98484;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 4px;
     transition: background-color 0.2s ease;
-
-    background-color: #666;
   }
 
   .nav-link:hover {
     background-color: #bdbda1;
   }
 
-  .active .nav-link {
-    font-weight: bold;
-    background-color: #bdbda1;
+  .nav-link:active {
+    text-decoration: underline;
   }
 
   .submenu {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 150px;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #bdbda1;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -220,6 +209,7 @@
     transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
     z-index: 10;
+    background-color: #8d99bb;
   }
 
   .nav-item:hover .submenu {
@@ -230,10 +220,10 @@
 
   .submenu-link {
     display: block;
-    padding: 0.5rem 1rem;
     text-decoration: none;
     color: #333;
     transition: background-color 0.2s ease;
+    padding: 1px;
   }
 
   .submenu-link:hover {

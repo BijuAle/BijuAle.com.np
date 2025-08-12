@@ -37,3 +37,40 @@ pagination:
     {% endfor %}
   </ul>
 </div>
+
+<style>
+  .post-list {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .date-post {
+    float: right;
+    opacity: 40%;
+  }
+  .post-list ul li {
+    font-family: "Garamond R";
+    color: #111;
+  }
+
+  .tags::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tags ul li {
+    float: left;
+    border: 1px solid grey;
+    padding: 3px;
+    margin: 4px;
+    border-radius: 5px;
+  }
+  .tags ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+</style>

@@ -1,5 +1,5 @@
-{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
-content %}
+{% extends 'layouts/base.njk' %} {% block title %}{{ title }}{% endblock %} {%
+block content %}
 
 <div class="page-header">
   <h1>{{ title }}</h1>
@@ -7,9 +7,11 @@ content %}
 
 <div class="poem-area">
   <div class="poem-selector">
-    <button class="nav-button" id="prev-button">Previous</button>
-    <button class="nav-button" id="next-button">Next</button>
-    <button class="nav-button" id="random-button">Shuffle</button>
+    <div class="nav-buttons">
+      <button class="nav-button" id="prev-button">Previous</button>
+      <button class="nav-button" id="next-button">Next</button>
+      <button class="nav-button" id="random-button">Shuffle</button>
+    </div>
     <select id="poem-select" size="20">
       {% for poem in poems %}
       <option value="{{ poem.title | slug }}">{{ poem.title }}</option>
@@ -18,14 +20,14 @@ content %}
   </div>
 
   <div class="poem-card">
-    <!-- <img src="../../assets/images/francis-thompson.png" alt=""> -->
     <h1 id="poem-title"></h1>
     <span id="poem-author"></span>
+
     <div id="poem-themes">
       <span>THEMES</span>
       <ul id="theme-list"></ul>
-      <!-- <span id="poem-source"></span> -->
     </div>
+
     <span id="poem-source"></span>
     <div id="poem-stanza"></div>
   </div>
@@ -47,8 +49,8 @@ content %}
   function displayPoem(index) {
     const poem = poemData[index];
     poemTitle.textContent = poem.title;
-    poemAuthor.textContent = `${poem.author} ${
-      poem.datePublished ? "| " + poem.datePublished : ""
+    poemAuthor.textContent = `${poem.author}${
+      poem.datePublished ? " | " + poem.datePublished : ""
     }`;
     poemStanza.innerHTML = poem.stanzas
       .map((stanza) => `<p>${stanza.join("<br>")}</p>`)
@@ -57,8 +59,6 @@ content %}
       .map((theme) => `<li>${theme}</li>`)
       .join("");
     poemSource.textContent = poem.source;
-
-    // Update select and URL to reflect the current poem
     poemSelect.value = poem.title.toLowerCase().replace(/\s+/g, "-");
     updateURL(poem.title);
   }
@@ -79,30 +79,26 @@ content %}
     }
   }
 
-  poemSelect.addEventListener("change", () => {
-    displayPoem(poemSelect.selectedIndex);
-  });
-
+  poemSelect.addEventListener("change", () =>
+    displayPoem(poemSelect.selectedIndex)
+  );
   document.getElementById("prev-button").addEventListener("click", () => {
     let newIndex = poemSelect.selectedIndex - 1;
     if (newIndex < 0) newIndex = poemData.length - 1;
     poemSelect.selectedIndex = newIndex;
     displayPoem(newIndex);
   });
-
   document.getElementById("next-button").addEventListener("click", () => {
     let newIndex = (poemSelect.selectedIndex + 1) % poemData.length;
     poemSelect.selectedIndex = newIndex;
     displayPoem(newIndex);
   });
-
   document.getElementById("random-button").addEventListener("click", () => {
     const randomIndex = Math.floor(Math.random() * poemData.length);
     poemSelect.selectedIndex = randomIndex;
     displayPoem(randomIndex);
   });
 
-  // Load initial poem based on URL or display the first poem by default
   const urlParams = new URLSearchParams(window.location.search);
   const initialPoemTitle = urlParams.get("poem");
   if (initialPoemTitle) selectPoemByTitle(initialPoemTitle);
@@ -110,49 +106,106 @@ content %}
 </script>
 
 <style>
-  select {
-    margin-top: 0.5rem;
+  /* Container layout */
+  .poem-area {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
-  #poem-themes {
-    display: block;
-    float: right;
+
+  /* Poem selector section */
+  .poem-selector {
+    flex: 1 1 200px;
+    min-width: 180px;
   }
-  #poem-themes span {
+  .nav-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .nav-button {
+    flex: 1;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+  .nav-button:hover {
+    border: 1px solid #673082;
+    border-radius: 10px;
     color: #333;
-    /* font-weight: bold; */
   }
-  #theme-list {
-    margin-left: 1rem;
+
+  select {
+    width: 100%;
+    max-height: 400px;
   }
-  #theme-list li {
-    opacity: 80%;
-    font-family: "Garamond Italic";
-    font-style: italic;
-    font-size: 1.2rem;
-    margin: 0.2rem;
+
+  /* Poem display card */
+  .poem-card {
+    flex: 3 1 300px;
+    padding: 1rem;
+    background: url("../../assets/images/ep_naturalwhite.png");
+    border-radius: 8px;
   }
   #poem-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0;
   }
   #poem-author {
     font-style: italic;
-    font-family: "Garamond Italic";
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 0.2rem;
+  }
+  #poem-themes {
+    margin-top: 0.5rem;
+  }
+  #poem-themes span {
+    font-weight: bold;
+    color: #333;
+  }
+  #theme-list {
+    margin: 0.3rem 0 0 1rem;
+    padding: 0;
+  }
+  #theme-list li {
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 1rem;
+    margin: 0.2rem 0;
   }
   #poem-stanza {
     margin-top: 1rem;
-  }
-  .poem-area {
-    display: grid;
-    grid-template-columns: 200px auto;
-  }
-  .poem-card {
-    padding: 20px;
+    line-height: 1.5;
   }
   #poem-source {
     display: block;
-    margin-top: 10px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 600px) {
+    .poem-area {
+      flex-direction: column;
+    }
+    .nav-buttons {
+      flex-direction: column;
+    }
+    select {
+      size: auto;
+      max-height: unset;
+    }
+    #poem-title {
+      font-size: 1.2rem;
+    }
+    #poem-author,
+    #theme-list li {
+      font-size: 1rem;
+    }
   }
 </style>
 

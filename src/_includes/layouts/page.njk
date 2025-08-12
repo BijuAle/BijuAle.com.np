@@ -1,9 +1,5 @@
-{% extends 'layouts/base.njk' %}
-
-{% block title %}
-{% endblock %}
-
-{% block content %}
+{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
+content %}
 <div class="page-header">
   <h1>{{ title }}</h1>
 </div>
@@ -42,10 +38,17 @@
   #toc {
     position: fixed;
     top: 10rem;
-    right: 6rem; /* Adjust right margin for mobile */
+    right: -0.5rem; /* Adjust right margin for mobile */
     padding: 1rem;
     width: 200px; /* Set a maximum width */
     overflow-y: auto; /* Add scrollbar for long TOCs */
+  }
+
+  #toc a:hover {
+    border: 1px solid #673082;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -66,7 +69,6 @@
 
   #toc li:first-of-type {
     display: none;
-    font-style: italic;
   }
 
   #toc li:not(:last-child) {

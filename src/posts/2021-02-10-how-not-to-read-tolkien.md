@@ -28,4 +28,4 @@ Tolkien explained three wrong readings of his works - Biographical, Allegorical,
 - Soup is amalgamation of flavors. Cannot be dissected and understood. Has to critiqued as a soup not its constituents.
 - Tolkien's work is like a soup rather than a salad.
 
-Fantasy is not taken seriously to merit any place in the study of literature. With the advent of modernism, and post-modernism it is discarded with a smug as being childish.
+Fantasy seldom merits a place in the serious study of literature. With the advent of modernism and post-modernism it is discarded with a smug as being childish. However, epic fictions remain gateways to profound truths.

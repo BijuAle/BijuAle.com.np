@@ -6,7 +6,7 @@ title: About
 
 Image Caption: My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)
 
-My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. Welcome to my webpage—a space for thoughtful reflections. I hope you discover something meaningful here that resonates with you.
+My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. This is my website.
 
 Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnepal.com.np/biju-ale/), in research, monitoring, learning, and evaluation of myriad developmental projects in Nepal. <details class="details-animated ">
 
@@ -14,21 +14,21 @@ Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnep
 
 - I support humanitarian and educational causes.
 
-- I believe that naturalism, scientism, postmodernism, and critical theory are flawed worldviews.
+- Some of the worldviews that I consider false: Naturalism, Scientism, Postmodernism, and Critical Theory.
 
-- Some of my favorite authors are C.S. Lewis, J.R.R. Tolkien, Richard Swinburne, Pascal, William Lane Craig, and J.P. Moreland.
+- Some of my favorite authors: C.S. Lewis, J.R.R. Tolkien, abd J.P. Moreland.
 
 - Some of my favorite bands and arists are Johnny Cash, Hank Williams, Elizabeth Cotten, Kenny G, Creed, Evanescence, Symphony X, Seventh Wonder, War of Ages, Stravinsky, and Beethoven.
 
-- My favorite guitarists are Buckethead, Michael Romeo, and Mark Tremonti.
+- Some of my favorite guitarists: Buckethead, Michael Romeo, and Mark Tremonti.
 
-- Some of my favorite shows are Batman: The Animated Series (1992), X-Men (1992), Full House (1987), Freaks and Geeks (1999), and Robert L. Kuhn’s Closer to Truth.
+- Some of my favorite shows: Batman: The Animated Series (1992), X-Men (1992), Full House (1987), Freaks and Geeks (1999), and Robert L. Kuhn’s Closer to Truth.
 
-- I’m nostalgic for the charm of the ’90s and early 2000s—if only we could freeze in its cosy zeitgeist!
+- I’m nostalgic for the magical charm of the ’90s and early 2000s. If only we could immerse in its cosy zeitgeist today!
 
 - I also enjoy hiking, cycling, photography, playing the guitar, and creative projects in art, craft, and lettering.
 
-- I’m a dog lover.
+- I love dogs.
 
 - Find me elsewhere on the web: [Academia.edu](https://independent.academia.edu/BijuAle/), [LinkedIn](https://linkedin.com/in/bijuale/), [Facebook](https://fb.com/BijuAle), [Instagram](https://instagram.com/bijuale__)
 </details>

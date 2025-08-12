@@ -1,37 +1,36 @@
-{% extends 'layouts/base.njk' %} {% block title %} {% endblock %} {% block
-content %}
+{% extends 'layouts/base.njk' %} {% block title %}{{ title }}{% endblock %} {%
+block content %}
 <div class="page-header">
   <h1>{{ title }}</h1>
 </div>
 
 <div id="vocab-area">
+  <div id="vocab-nav">
+    <button id="prev-word">&lt; Prev</button>
+    <button id="next-word">Next &gt;</button>
+    <button id="random-word">Shuffle</button>
+
+    <div class="search-sort">
+      <input
+        type="text"
+        id="word-search"
+        placeholder="Search word"
+        aria-label="Search word"
+      />
+      <button onclick="sortSelectOptions('vocab-select', 'ascending')">
+        &#x2191;AZ
+      </button>
+      <button onclick="sortSelectOptions('vocab-select', 'descending')">
+        &#x2193;ZA
+      </button>
+    </div>
+  </div>
+
   <select name="vocab-select" id="vocab-select" size="10">
     {% for w in vocab %}
     <option value="{{ w.word | slug }}">{{ w.word }}</option>
     {% endfor %}
   </select>
-
-  <div id="vocab-nav" style="text-align: center">
-    <button id="prev-word">&lt; Prev</button>
-    <button id="next-word">Next &gt;</button>
-    <button id="random-word">Shuffle</button>
-
-    <div style="margin-top: 0.5rem">
-      <input size="15" type="text" id="word-search" placeholder="Search word" />
-      <button
-        id="btn-asc"
-        onclick="sortSelectOptions('vocab-select', 'ascending')"
-      >
-        &#x2191;AZ
-      </button>
-      <button
-        id="btn-desc"
-        onclick="sortSelectOptions('vocab-select', 'descending')"
-      >
-        &#x2193;ZA
-      </button>
-    </div>
-  </div>
 
   <div id="vocab-card"></div>
 </div>
@@ -50,25 +49,20 @@ content %}
   const nextButton = document.getElementById("next-word");
   const randomButton = document.getElementById("random-word");
   const searchInput = document.getElementById("word-search");
-  const randomizeButton = document.getElementById("btn-randomize");
 
   function displayWord(index) {
     const wordData = vocabData[index];
     vocabSelect.selectedIndex = index;
 
     if (wordData && wordData.details) {
-      const details = wordData.details[0]; // Assuming details is an array with at least one item
+      const details = wordData.details[0];
       let html = `<h1 class="vocab-main-word">${details.word}</h1>`;
 
-      if (
-        details.phonetics &&
-        details.phonetics[0] &&
-        details.phonetics[0].text
-      ) {
+      if (details.phonetics?.[0]?.text) {
         html += `<p class="phonetic">${details.phonetics[0].text}</p>`;
       }
 
-      if (details.meanings && details.meanings.length > 0) {
+      if (details.meanings?.length) {
         details.meanings.forEach((meaning) => {
           html += `<p class="part-of-speech">${meaning.partOfSpeech}</p>`;
           meaning.definitions.forEach((def, i) => {
@@ -78,13 +72,13 @@ content %}
             }
           });
 
-          if (meaning.synonyms && meaning.synonyms.length > 0) {
+          if (meaning.synonyms?.length) {
             html +=
               '<p class="synonyms">Synonyms: ' +
               meaning.synonyms.map((s) => `<span>${s}</span>`).join(" ") +
               "</p>";
           }
-          if (meaning.antonyms && meaning.antonyms.length > 0) {
+          if (meaning.antonyms?.length) {
             html +=
               '<p class="antonyms">Antonyms: ' +
               meaning.antonyms.map((a) => `<span>${a}</span>`).join(" ") +
@@ -120,13 +114,12 @@ content %}
     displayWord(vocabSelect.selectedIndex)
   );
   prevButton.addEventListener("click", () => {
-    const newIndex =
-      (vocabSelect.selectedIndex - 1 + vocabData.length) % vocabData.length;
-    displayWord(newIndex);
+    displayWord(
+      (vocabSelect.selectedIndex - 1 + vocabData.length) % vocabData.length
+    );
   });
   nextButton.addEventListener("click", () => {
-    const newIndex = (vocabSelect.selectedIndex + 1) % vocabData.length;
-    displayWord(newIndex);
+    displayWord((vocabSelect.selectedIndex + 1) % vocabData.length);
   });
   randomButton.addEventListener("click", () =>
     displayWord(Math.floor(Math.random() * vocabData.length))
@@ -135,8 +128,7 @@ content %}
   searchInput.addEventListener("input", () => {
     let searchTerm = searchInput.value.toLowerCase();
     for (let i = 0; i < vocabSelect.options.length; i++) {
-      const optionText = vocabSelect.options[i].text.toLowerCase();
-      if (optionText.includes(searchTerm)) {
+      if (vocabSelect.options[i].text.toLowerCase().includes(searchTerm)) {
         vocabSelect.selectedIndex = i;
         displayWord(i);
         break;
@@ -146,20 +138,16 @@ content %}
 
   function sortSelectOptions(selectId, order = "ascending") {
     const select = document.getElementById(selectId);
-    const options = select.options;
-
-    const sortedOptions = [...options].sort((a, b) => {
-      if (order === "ascending") {
-        return a.text.localeCompare(b.text);
-      } else {
-        return b.text.localeCompare(a.text);
-      }
-    });
-
+    const sortedOptions = [...select.options].sort((a, b) =>
+      order === "ascending"
+        ? a.text.localeCompare(b.text)
+        : b.text.localeCompare(a.text)
+    );
     sortedOptions.forEach((option, index) => {
       select.options[index] = option;
     });
   }
+
   const urlParams = new URLSearchParams(window.location.search);
   const initialWordSlug = urlParams.get("word");
   if (initialWordSlug) selectWordBySlug(initialWordSlug);
@@ -167,58 +155,108 @@ content %}
 </script>
 
 <style>
-  .vocab-main-word {
-    color: hsla(269, 31%, 28%, 0.808);
-    font-size: 20px;
-  }
-
+  /* Layout */
   #vocab-area {
     display: grid;
     grid-template-columns: 200px auto;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: "n c" "s c";
-  }
-
-  #vocab-select {
-    grid-area: s;
-    height: 300px;
-  }
-  #vocab-card {
-    grid-area: c;
-    margin-left: 20px;
+    grid-template-areas:
+      "n c"
+      "s c";
+    gap: 1rem;
   }
   #vocab-nav {
     grid-area: n;
-    margin-bottom: 10px;
+    text-align: center;
+  }
+  #vocab-select {
+    grid-area: s;
+    width: 100%;
+  }
+  #vocab-card {
+    grid-area: c;
+    background: url("../../assets/images/ep_naturalwhite.png");
+    padding: 1rem;
+    border-radius: 8px;
   }
 
+  /* Mobile-friendly adjustments */
+  @media (max-width: 768px) {
+    #vocab-area {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "n"
+        "s"
+        "c";
+    }
+    #vocab-select {
+      height: auto;
+    }
+  }
+
+  /* Typography & colors */
+  .vocab-main-word {
+    color: #432c5c;
+    font-size: 1.5rem;
+  }
+  .phonetic,
+  .part-of-speech,
+  .example {
+    color: #145145;
+  }
   .phonetic {
     font-style: italic;
-    color: #145145;
   }
   .part-of-speech {
     font-weight: bold;
-    color: #145145;
-    margin-top: 15px;
+    margin-top: 1rem;
   }
   .definition {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
   }
   .example {
     font-style: italic;
-    color: #145145;
   }
   .synonyms,
   .antonyms {
-    margin-top: 10px;
+    margin-top: 0.5rem;
   }
   .synonyms span,
   .antonyms span {
     display: inline-block;
-    border: 1px solid rgb(144, 129, 183);
+    border: 1px solid #9081b7;
     border-radius: 5px;
-    margin-left: 2px;
-    padding: 2px;
+    margin: 2px;
+    padding: 2px 4px;
+    font-size: 0.85rem;
+  }
+
+  /* Controls */
+  button {
+    flex: 1;
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    cursor: pointer;
+  }
+  button:hover {
+    border: 1px solid #673082;
+    border-radius: 10px;
+    color: #333;
+  }
+
+  #word-search {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 200px;
+  }
+  .search-sort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
   }
 </style>
 {% endblock %}

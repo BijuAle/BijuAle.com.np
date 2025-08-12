@@ -1,124 +1,102 @@
+/* ================================
+  BASE STYLES
+================================ */
 body {
   margin: 0 auto;
   max-width: 700px;
   text-align: center;
-  background-color: #bdbda1;
+  border: 40px solid;
+  border-image-slice: 80;
+  border-image-repeat: round round;
+  border-image-source: url("../images/border2.jpg");
+  background-color: #8fbeb5;
 }
 
-.post-list {
-  border-bottom: 1px solid grey;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+p {
+  margin: 0 0 1rem 0;
+  font-family: "Garamond R";
+  font-size: 1.1rem;
+  color: #111;
+  line-height: 1.3;
+  text-align: justify;
+  white-space: pre-wrap;
 }
 
-
-main {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: left;
-  color: #333;
-
-  @media (max-width: 768px) {
-    padding: 1rem;
-  }
+strong {
+  font-weight: bold;
 }
-
-#list_essays li {
-  margin-bottom: 0.2rem;
-  list-style: none;
-}
-
-.date {
-  float: right;
-  opacity: 60%;
-}
-.date-post {
-  float: right;
-  opacity: 40%;
+em,
+i {
+  font-style: italic;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Cinzel";
-  margin: 0.2rem 0 0.5rem 0;
   font-weight: bold;
+  margin: 0.2rem 0 0.5rem 0;
 }
-h2{
+h2 {
   text-indent: 1em;
 }
-
 h1:not(:first-of-type),
 h2:not(:first-of-type),
 h3:not(:first-of-type) {
   margin-top: 0.7rem;
 }
 
+/* ================================
+   LAYOUT & STRUCTURE
+================================ */
+main {
+  padding: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
+
+.date {
+  float: right;
+  opacity: 60%;
+}
+
 details ul li {
-  list-style: circle;
-  list-style-position: outside;
+  list-style: circle outside;
   margin-left: 2rem;
   color: #333;
 }
 
-p {
-  display: block;
-  margin: 0 0 1rem 0;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.3;
-  text-align: left;
-  text-align: justify;
-  white-space: pre-wrap;
-}
-
-.highlight-card p {
-  margin-bottom: 0;
-}
 main .container ul li {
   color: #333;
 }
 
-strong {
-  font-weight: bold;
-}
-em {
-  font-style: italic;
-}
-i {
-  font-style: italic;
-}
-
+/* ================================
+   LINKS & INTERACTIONS
+================================ */
 main a {
   color: #463eac;
 }
-
-main img {
-  text-align: center;
-  justify-content: center;
-  display: flex;
+.post-header .tags ul li a:hover {
+  color: black;
+  transition: all 0.3s;
 }
 
-.post h1 {
-  display: inline-block;
-  background: #649ab5;
-  padding: 2px;
-  color: #1e1212;
-  border-radius: 10px;
-  padding: 3px;
-}
+/* ================================
+   COMPONENTS & SPECIAL BLOCKS
+================================ */
 
 .post-header,
 .kindle-book,
 .page-header {
   padding: 5px;
   color: #dfaaaa;
-  margin-top: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin: 0.5rem 0 1.5rem;
   border-radius: 5px;
-  background: #a6a6b0;
   background: linear-gradient(
     270deg,
     #a6a6b036 0%,
@@ -128,21 +106,54 @@ main img {
     #0e253b 100%
   );
 }
-.post-header .tags ul li a:hover {
-  color: black;
-  transition: all 0.3s;
-}
 .kindle-book h2 {
   font-style: italic;
 }
 .highlight-card {
   border-radius: 8px;
 }
+.highlight-card p {
+  margin-bottom: 0;
+}
+
+
+
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.tag-grid a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+.tag-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.slide img {
+  border-radius: 10px;
+}
+.caption {
+  float: right;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* ================================
+   TABLES
+================================ */
 table td {
   vertical-align: middle;
   color: #333;
 }
-
 table thead th {
   text-align: center;
   vertical-align: middle;
@@ -151,18 +162,12 @@ table thead th {
   font-family: "Cinzel";
   font-weight: 500;
 }
-
 table th:first-child {
   border-radius: 10px 0 0 10px;
 }
-
 table th:last-child {
   border-radius: 0 10px 10px 0;
 }
-table thead th td {
-  font-weight: bold;
-}
-
 table tbody td {
   padding: 5px;
 }
@@ -174,12 +179,16 @@ table:not(.exif-table) tbody tr:hover {
   cursor: pointer;
 }
 
+/* ================================
+   FORMS & CONTROLS
+================================ */
 #controls {
   margin-bottom: 20px;
 }
 #controls > * {
   margin-right: 10px;
 }
+
 input[type="text"],
 select {
   background: transparent;
@@ -202,9 +211,9 @@ textarea,
 button,
 input[type="button"] {
   background: transparent;
-  outline: none;
   border: 1px solid #122b54;
   border-radius: 5px;
+  outline: none;
 }
 button,
 input[type="button"]:hover {
@@ -218,32 +227,38 @@ button:hover {
   color: black;
   opacity: 50%;
 }
+
+/* ================================
+   PAGINATION
+================================ */
 .pagination {
   float: right;
   margin-bottom: 5px;
   font-size: small;
 }
-
+.pagination a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
 .post-pagination {
   max-width: fit-content;
   margin: 20px auto;
 }
-
 [aria-current="page"] {
   color: black;
   font-weight: bold;
 }
 
+/* ================================
+   CODE BLOCKS
+================================ */
 pre code {
-  white-space: pre-wrap; /* css-3 */
-  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-  white-space: -pre-wrap; /* Opera 4-6 */
-  white-space: -o-pre-wrap; /* Opera 7 */
-
+  white-space: pre-wrap;
   border-radius: 10px;
   border: 1px solid #361e5a;
   color: #3a3333;
-  page-break-inside: avoid;
   font-family: monospace;
   max-width: 100%;
   overflow: auto;
@@ -251,23 +266,43 @@ pre code {
   display: block;
 }
 
-/* ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  margin-left: 10px;
-  color: #333;
-  margin:0;
-} */
+/* ================================
+   LISTS
+================================ */
+
 ol {
   list-style-type: decimal;
   list-style-position: inside;
   margin-left: 10px;
   color: #333;
 }
-
 li::marker {
   color: #8d8585;
 }
+
+.post ul li {
+  font-family: "Garamond R";
+  list-style: circle;
+  list-style-position: outside;
+  margin-left: 2rem;
+  color: #333;
+}
+.post ol li {
+  font-family: "Garamond R";
+  list-style: decimal;
+  list-style-position: outside;
+  margin-left: 2rem;
+  color: #333;
+}
+
+p + ul,
+p + ol {
+  margin-top: -1rem;
+}
+
+/* ================================
+   CUSTOM CHECKBOX
+================================ */
 .checkbox input[type="checkbox"] {
   background-image: -webkit-linear-gradient(
       hsla(0, 0%, 0%, 0.1),
@@ -282,12 +317,10 @@ li::marker {
     0 -1px 1px 1px hsla(0, 0%, 0%, 0.25), 0 1px 1px 1px hsla(0, 0%, 100%, 0.75);
   cursor: pointer;
   height: 10px;
-  padding-right: 10px;
   width: 30px;
   appearance: none;
   transition: 0.25s;
 }
-
 .checkbox input[type="checkbox"]:after {
   background-color: #eee;
   background-image: -webkit-linear-gradient(
@@ -303,84 +336,6 @@ li::marker {
   height: 10px;
   width: 20px;
 }
-
 .checkbox input[type="checkbox"]:checked {
   background-position: 0 0, 15px 0;
-  padding-left: 10px;
-  padding-right: 0;
-}
-
-#toc a:hover {
-  border: 1px solid #673082;
-  border-radius: 10px;
-  color: #333;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.tags::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.tags ul li {
-  float: left;
-  border: 1px solid grey;
-  padding: 3px;
-  margin: 4px;
-  border-radius: 5px;
-}
-.tags ul li a {
-  display: block;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-.tags ul li:hover {
-  background: #649ab5;
-}
-p + ul,
-p + ol {
-  margin-top: -1rem;
-}
-
-.tag-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 1rem;
-}
-
-.tag-grid a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-.tag-grid img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.slider {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.slide img {
-  /* width: 100%; */
-  border-radius: 10px;
-}
-
-.caption {
-  float:right;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.pagination a {
-  margin-right: 0.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
 }
