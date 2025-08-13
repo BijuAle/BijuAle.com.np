@@ -116,8 +116,6 @@ main a {
   margin-bottom: 0;
 }
 
-
-
 .tag-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -150,6 +148,7 @@ main a {
 /* ================================
    TABLES
 ================================ */
+
 table td {
   vertical-align: middle;
   color: #333;

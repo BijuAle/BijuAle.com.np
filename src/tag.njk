@@ -9,7 +9,6 @@ permalink: /tags/{{ tag }}/
 
 <a href="{{ '/' }}"><button>All Essays</button></a>
 <h1>Posts tagged: “{{ tag }}”</h1>
-<div>
   <ul>
     {% set taglist = collections[ tag ] %} {% for post in taglist | reverse %}
     <li>
@@ -18,9 +17,8 @@ permalink: /tags/{{ tag }}/
     </li>
     {% endfor %}
   </ul>
-</div>
 <hr />
-<div class="tags">
+<div class="other-tags">
   <ul>
     {% for tagInfo in collections.tags %}
     <li>
@@ -31,3 +29,24 @@ permalink: /tags/{{ tag }}/
     {% endfor %}
   </ul>
 </div>
+
+<style>
+.date-post {
+    float: right;
+    opacity: 40%;
+  }
+ .other-tags::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .other-tags ul li {
+    float: left;
+    border: 1px solid grey;
+    padding: 3px;
+    margin: 4px;
+    border-radius: 5px;
+  }
+
+  
+</style>

@@ -16,7 +16,7 @@
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
     <label for="nav-toggle" class="nav-toggle-label">
-      <svg
+      Menu<svg
         class="hamburger-icon"
         fill="none"
         stroke="currentColor"
@@ -90,6 +90,10 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+  }
+
+  .site-header::stuck{
+  background-color: black;
   }
 
   .header-top {
@@ -263,8 +267,9 @@
     }
 
     .nav-link {
-      width: 100%;
-      box-sizing: border-box;
+      /* width:100%; */
+      display: inline-block;
+      margin: .2rem 0;
     }
 
     .submenu {
@@ -281,6 +286,10 @@
     .submenu-link {
       border: 1px solid darkslategray;
       border-radius: 4px;
+      display: inline-block;
+      margin: .2rem 0;
+
+
     }
   }
 </style>
