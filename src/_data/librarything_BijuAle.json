@@ -439,7 +439,7 @@
 },
 "247644412": {
   "books_id": "247644412",
-  "title": "Nurturing Resilience in Our Children : Answers to the Most Important Parenting Questions",
+  "title": "Nurturing Resilience in Our Children: Answers to the Most Important Parenting Questions",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Brooks, Robert",
@@ -458,7 +458,7 @@
   "upc": ["639785410850"],
   "publication": "McGraw-Hill Education (2002), 320 pages",
   "date": "2002",
-  "summary": "Nurturing Resilience in Our Children : Answers to the Most Important Parenting Questions by Robert Brooks (2002)",
+  "summary": "Nurturing Resilience in Our Children: Answers to the Most Important Parenting Questions by Robert Brooks (2002)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -3837,7 +3837,7 @@
 },
 "248001836": {
   "books_id": "248001836",
-  "title": "0 to 5 : The Complete Handbook for Young Mothers",
+  "title": "0 to 5: The Complete Handbook for Young Mothers",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Jolly, Dr. Hugh",
@@ -3849,7 +3849,7 @@
   "collections": ["Your library"],
   "publication": "London : Grosvenov Press, (1983).",
   "date": "1983",
-  "summary": "0 to 5 : The Complete Handbook for Young Mothers by Dr. Hugh Jolly (1983)",
+  "summary": "0 to 5: The Complete Handbook for Young Mothers by Dr. Hugh Jolly (1983)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -4135,13 +4135,13 @@
 },
 "248002173": {
   "books_id": "248002173",
-  "title": "Ten Years of Upheaval : Reportage of the Decade Long Maoist People's War in Nepal",
+  "title": "Ten Years of Upheaval: Reportage of the Decade Long Maoist People's War in Nepal",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Sa\u0304pakot\u0323a\u0304, Di\u0304paka",
+  "primaryauthor": "Sapkota, Dipak",
   "authors": [{
-    "lf": "Sa\u0304pakot\u0323a\u0304, Di\u0304paka",
-    "fl": "Di\u0304paka Sa\u0304pakot\u0323a\u0304"
+    "lf": "Sapkota, Dipak",
+    "fl": "Dipak Sapkota"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -4150,7 +4150,7 @@
   "9937228271"],
   "publication": "Kathmandu : Revolutionary Journalist Association Central Committee, 2010.",
   "date": "2010",
-  "summary": "Ten Years of Upheaval : Reportage of the Decade Long Maoist People's War in Nepal by Di\u0304paka Sa\u0304pakot\u0323a\u0304 (2010)",
+  "summary": "Ten Years of Upheaval: Reportage of the Decade Long Maoist People's War in Nepal by Dipak Sapkota (2010)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -5918,7 +5918,7 @@
 },
 "248548187": {
   "books_id": "248548187",
-  "title": "Mending your soul : the spiritual path to inner wholeness",
+  "title": "Mending Your Soul: The Spiritual Path to Inner Wholeness",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Richard, Ramesh",
@@ -5933,7 +5933,7 @@
   "0805418342"],
   "publication": "Nashville, Tenn. : Broadman & Holman Publishers, c1999.",
   "date": "1999",
-  "summary": "Mending your soul : the spiritual path to inner wholeness by Ramesh Richard (1999)",
+  "summary": "Mending Your Soul: The Spiritual Path to Inner Wholeness by Ramesh Richard (1999)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -6019,7 +6019,7 @@
 },
 "248548787": {
   "books_id": "248548787",
-  "title": "An Introduction to Ethics (Routledge Library Editions: Ethics)",
+  "title": "An Introduction to Ethics (Routledge Library Editions)",
   "sortcharacter": "4",
   "public": "true",
   "primaryauthor": "Lillie, William",
@@ -6040,7 +6040,7 @@
   "ean": ["0367477149"],
   "publication": "Routledge (2022), Edition: 1, 350 pages",
   "date": "2022",
-  "summary": "An Introduction to Ethics (Routledge Library Editions: Ethics) by William Lillie (2022)",
+  "summary": "An Introduction to Ethics (Routledge Library Editions) by William Lillie (2022)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -6560,7 +6560,7 @@
 },
 "248549109": {
   "books_id": "248549109",
-  "title": "Insight and illusion : themes in the philosophy of Wittgenstein",
+  "title": "Insight and Illusion: Themes in the Philosophy of Wittgenstein",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Hacker, P. M. S.",
@@ -6575,7 +6575,7 @@
   "0198247982"],
   "publication": "Oxford [Oxfordshire] : New York : Clarendon Press ; Oxford University Press, 1986.",
   "date": "1986",
-  "summary": "Insight and illusion : themes in the philosophy of Wittgenstein by P. M. S. Hacker (1986)",
+  "summary": "Insight and Illusion: Themes in the Philosophy of Wittgenstein by P. M. S. Hacker (1986)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -6884,7 +6884,7 @@
 },
 "248549249": {
   "books_id": "248549249",
-  "title": "Superintelligence : paths, dangers, strategies",
+  "title": "Superintelligence: Paths, Dangers, Strategies",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Bostrom, Nick",
@@ -6899,7 +6899,7 @@
   "0198739834"],
   "publication": "Oxford, United Kingdom ; New York, NY : Oxford University Press, 2016.",
   "date": "2016",
-  "summary": "Superintelligence : paths, dangers, strategies by Nick Bostrom (2016)",
+  "summary": "Superintelligence: Paths, Dangers, Strategies by Nick Bostrom (2016)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -6954,7 +6954,7 @@
 },
 "248549433": {
   "books_id": "248549433",
-  "title": "The moral philosophy of William James",
+  "title": "The Moral Philosophy of William James",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "James, William",
@@ -6969,7 +6969,7 @@
   "asin": "B0006C2L8G",
   "publication": "Crowell (1969), 355 pages",
   "date": "1969",
-  "summary": "The moral philosophy of William James by William James (1969)",
+  "summary": "The Moral Philosophy of William James by William James (1969)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -6996,7 +6996,7 @@
 },
 "248549440": {
   "books_id": "248549440",
-  "title": "The sickness unto death : a Christian psychological exposition for edification and awakening",
+  "title": "The Sickness Unto Death: A Christian Psychological Exposition for Edification and Awakening",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Kierkegaard, Soren",
@@ -7011,7 +7011,7 @@
   "0140445331"],
   "publication": "London, England ; New York, N.Y., USA : Penguin Books, 1989.",
   "date": "1989",
-  "summary": "The sickness unto death : a Christian psychological exposition for edification and awakening by Soren Kierkegaard (1989)",
+  "summary": "The Sickness Unto Death: A Christian Psychological Exposition for Edification and Awakening by Soren Kierkegaard (1989)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -7273,7 +7273,7 @@
 },
 "248549494": {
   "books_id": "248549494",
-  "title": "Freedom and reason",
+  "title": "Freedom and Reason",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Hare, R. M.",
@@ -7288,7 +7288,7 @@
   "019881092X"],
   "publication": "[S.l.] : OUP, 1963(1972)",
   "date": "1963",
-  "summary": "Freedom and reason by R. M. Hare (1963)",
+  "summary": "Freedom and Reason by R. M. Hare (1963)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -8046,7 +8046,7 @@
 },
 "248550530": {
   "books_id": "248550530",
-  "title": "The philosopher's toolkit : a compendium of philosophical concepts and methods",
+  "title": "The Philosopher's Toolkit: A Compendium of Philosophical Concepts and Methods",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Fosl, Peter S.",
@@ -8191,7 +8191,7 @@
 },
 "248551167": {
   "books_id": "248551167",
-  "title": "The philosophy skills book : exercises in critical reading, writing, and thinking",
+  "title": "The Philosophy Skills Book: Exercises in Critical Reading, Writing, and Thinking",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Finn, Stephen J.",
@@ -8206,7 +8206,7 @@
   "1441167420"],
   "publication": "New York : Continuum, c2012.",
   "date": "2012",
-  "summary": "The philosophy skills book : exercises in critical reading, writing, and thinking by Stephen J. Finn (2012)",
+  "summary": "The Philosophy Skills Book: Exercises in Critical Reading, Writing, and Thinking by Stephen J. Finn (2012)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -9063,56 +9063,6 @@
   "weight": "0.40344593946 pounds",
   "pages": "208 "
 },
-"248722655": {
-  "books_id": "248722655",
-  "title": "Green philosophy : how to think seriously about the planet",
-  "sortcharacter": "1",
-  "public": "true",
-  "primaryauthor": "Scruton, Roger",
-  "authors": [{
-    "lf": "Scruton, Roger",
-    "fl": "Roger Scruton"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "9781848872028",
-  "isbn": ["9781848872028",
-  "184887202X"],
-  "publication": "London : Atlantic Books, 2013, c2012.",
-  "date": "2012",
-  "summary": "Green philosophy : how to think seriously about the planet by Roger Scruton (2012)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["179.1"],
-    "wording": ["Ethics",
-    "Other ethical norms",
-    "Philosophy & psychology",
-    "Respect for life and nature"]
-  },
-  "lcc": {
-    "code": "GF80 .S37"
-  },
-  "subject": [["Conservation of natural resources Philosophy"],
-  ["ENVIRONMENTAL ETHICS"],
-  ["Environmental Ethics"],
-  ["Environmental ethics"]],
-  "source": "British Library",
-  "workcode": "12493872",
-  "entrydate": "2023-09-11",
-  "format": [{
-    "code": "1.1",
-    "text": "Paper Book"
-  }],
-  "copies": "1",
-  "volumes": "1",
-  "physical_description": "457 p.; 20 cm",
-  "height": "20 cm",
-  "dimensions": "20 cm",
-  "pages": "457 "
-},
 "248722777": {
   "books_id": "248722777",
   "title": "Sophie's world",
@@ -9185,7 +9135,7 @@
 },
 "248722836": {
   "books_id": "248722836",
-  "title": "The way the world is : the Christian perspective of a scientist",
+  "title": "The Way the World Is: The Christian Perspective of a Scientist",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Polkinghorne, J. C.",
@@ -9200,7 +9150,7 @@
   "0664232140"],
   "publication": "Louisville : Westminster John Knox Press, 2007.",
   "date": "2007",
-  "summary": "The way the world is : the Christian perspective of a scientist by J. C. Polkinghorne (2007)",
+  "summary": "The Way the World Is: The Christian Perspective of a Scientist by J. C. Polkinghorne (2007)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -9243,7 +9193,7 @@
 },
 "248722875": {
   "books_id": "248722875",
-  "title": "Real philosophy : an anthology of the universal search for meaning",
+  "title": "Real Philosophy: An Anthology of the Universal Search for Meaning",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Needleman, Jacob",
@@ -9258,7 +9208,7 @@
   "0140192565"],
   "publication": "London, England ; New York, N.Y., USA : Arkana, 1990.",
   "date": "1990",
-  "summary": "Real philosophy : an anthology of the universal search for meaning by Jacob Needleman (1990)",
+  "summary": "Real Philosophy: An Anthology of the Universal Search for Meaning by Jacob Needleman (1990)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -9590,19 +9540,26 @@
   "title": "The Ethics of Aristotle: The Nicomachean Ethics",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Aristotle; Translated By Thomson, J.A. K.; Notes and Appendices By Tredennick, Hugh",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Tredennick, Hugh",
+  "primaryauthorrole": "Contributor",
+  "secondaryauthor": "Thomson, J. A. K.",
+  "secondaryauthorroles": "Translator",
   "authors": [{
-    "lf": "Aristotle; Translated By Thomson, J.A. K.; Notes and Appendices By Tredennick, Hugh",
-    "fl": "J.A. K.; Notes and Appendices By Tredennick Aristotle; Translated By Thomson, Hugh",
-    "role": "Author"
+    "lf": "Tredennick, Hugh",
+    "fl": "Hugh Tredennick",
+    "role": "Contributor"
+  },
+  {
+    "lf": "Thomson, J. A. K.",
+    "fl": "J. A. K. Thomson",
+    "role": "Translator"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B000H4R5OS",
   "publication": "Penguin Books (1985)",
   "date": "1985",
-  "summary": "The Ethics of Aristotle: The Nicomachean Ethics by J.A. K.; Notes and Appendices By Tredennick Aristotle; Translated By Thomson, Hugh (1985)",
+  "summary": "The Ethics of Aristotle: The Nicomachean Ethics by Hugh Tredennick (1985)",
   "ddc": {
     "code": ["171.3"],
     "wording": ["Ethical systems",
@@ -10062,7 +10019,7 @@
 },
 "248735140": {
   "books_id": "248735140",
-  "title": "Ethics : A Very Short Introduction",
+  "title": "Ethics: A Very Short Introduction",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Blackburn, Simon",
@@ -10077,7 +10034,7 @@
   "0192804421"],
   "publication": "Oxford ; New York : Oxford University Press, 2003, c2001.",
   "date": "2001",
-  "summary": "Ethics : A Very Short Introduction by Simon Blackburn (2001)",
+  "summary": "Ethics: A Very Short Introduction by Simon Blackburn (2001)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -10300,7 +10257,7 @@
 },
 "248736439": {
   "books_id": "248736439",
-  "title": "The Communist manifesto",
+  "title": "The Communist Manifesto",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Marx, Karl",
@@ -10327,7 +10284,7 @@
   },
   "publication": "[Harmondsworth] : Penguin, 1967 (1979)",
   "date": "1967",
-  "summary": "The Communist manifesto by Karl Marx (1967)",
+  "summary": "The Communist Manifesto by Karl Marx (1967)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -10541,7 +10498,8 @@
     "41": ["fantasy"],
     "43": ["fantasy fiction"]
   },
-  "series": ["Gospodar prstenova",
+  "series": ["\u9b54\u6212",
+  "Gospodar prstenova",
   "Il Signore degli Anelli",
   "Gy\u0171r\u0171k Ura",
   "El Se\u00f1or de los Anillos",
@@ -10554,12 +10512,11 @@
   "Ringenes herre",
   "Le seigneur des anneaux",
   "Der Herr der Ringe",
-  "\u9b54\u6212",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
-  "In de Ban van de Ring",
+  "The Lord of the Rings",
   "W\u0142adca Pier\u015bcieni",
   "Taru Sormusten Herrasta",
-  "The Lord of the Rings"],
+  "In de Ban van de Ring"],
   "originaltitle": "The Hobbit, or, There and Back Again",
   "awards": ["1000 Books to Read Before You Die",
   "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
@@ -10919,7 +10876,7 @@
 },
 "248747179": {
   "books_id": "248747179",
-  "title": "Great expectations",
+  "title": "Great Expectations",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Dickens, Charles",
@@ -10934,7 +10891,7 @@
   "asin": "B0000CIGF2",
   "publication": "Collins (1953), 461 pages",
   "date": "1953",
-  "summary": "Great expectations by Charles Dickens (1953)",
+  "summary": "Great Expectations by Charles Dickens (1953)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -11362,7 +11319,8 @@
     "text": "Paper Book"
   }],
   "copies": "1"
-},"248749870": {
+},
+"248749870": {
   "books_id": "248749870",
   "title": "English Lessons for English People",
   "sortcharacter": "1",
@@ -11414,8 +11372,7 @@
   "dimensions": "9.21 x 6.14 x 0.75 inches",
   "weight": "1.3999353637 pounds",
   "pages": "328 "
-},
-"248751155": {
+},"248751155": {
   "books_id": "248751155",
   "title": "Poems of Wordsworth",
   "sortcharacter": "1",
@@ -11585,7 +11542,7 @@
 },
 "248752374": {
   "books_id": "248752374",
-  "title": "American critical essays : twentieth century",
+  "title": "American Critical Essays: Twentieth Century",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Beaver, Harold Lowther",
@@ -11597,7 +11554,7 @@
   "collections": ["Your library"],
   "publication": "Oxford U.P., 1959.",
   "date": "1959",
-  "summary": "American critical essays : twentieth century by Harold Lowther Beaver (1959)",
+  "summary": "American Critical Essays: Twentieth Century by Harold Lowther Beaver (1959)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -12584,7 +12541,7 @@
 },
 "248861999": {
   "books_id": "248861999",
-  "title": "Is God a moral monster? : making sense of the Old Testament God",
+  "title": "Is God a Moral Monster?: Making Sense of the Old Testament God",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Copan, Paul",
@@ -12599,7 +12556,7 @@
   "0801072751"],
   "publication": "Grand Rapids, Mich. : Baker Books, c2011.",
   "date": "2011",
-  "summary": "Is God a moral monster? : making sense of the Old Testament God by Paul Copan (2011)",
+  "summary": "Is God a Moral Monster?: Making Sense of the Old Testament God by Paul Copan (2011)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12640,7 +12597,7 @@
 },
 "248862002": {
   "books_id": "248862002",
-  "title": "Twenty questions : an introduction to philosophy",
+  "title": "Twenty Questions: An Introduction to Philosophy",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Bowie, G. Lee",
@@ -12655,7 +12612,7 @@
   "0155923897"],
   "publication": "Fort Worth : Harcourt Brace Jovanovich College Publishers, c1992.",
   "date": "1992",
-  "summary": "Twenty questions : an introduction to philosophy by G. Lee Bowie (1992)",
+  "summary": "Twenty Questions: An Introduction to Philosophy by G. Lee Bowie (1992)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12687,7 +12644,7 @@
 },
 "248862003": {
   "books_id": "248862003",
-  "title": "Ethics : a contemporary introduction",
+  "title": "Ethics: A contemporary introduction",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Gensler, Harry J.",
@@ -12702,7 +12659,7 @@
   "0415156254"],
   "publication": "London ; New York : Routledge, 1998.",
   "date": "1998",
-  "summary": "Ethics : a contemporary introduction by Harry J. Gensler (1998)",
+  "summary": "Ethics: A contemporary introduction by Harry J. Gensler (1998)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12744,7 +12701,7 @@
 },
 "248862004": {
   "books_id": "248862004",
-  "title": "Reading the world : ideas that matter",
+  "title": "Reading the World: Ideas that Matter",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Austin, Michael",
@@ -12759,7 +12716,7 @@
   "0393933490"],
   "publication": "New York : W.W. Norton & Co., 2010.",
   "date": "2010",
-  "summary": "Reading the world : ideas that matter by Michael Austin (2010)",
+  "summary": "Reading the World: Ideas that Matter by Michael Austin (2010)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12801,7 +12758,7 @@
 },
 "248862005": {
   "books_id": "248862005",
-  "title": "Panentheism, the other God of the philosophers : from Plato to the present",
+  "title": "Panentheism, the other God of the Philosophers: from Plato to the present",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Cooper, John W.",
@@ -12816,7 +12773,7 @@
   "0801027241"],
   "publication": "Grand Rapids, Mich. : Baker Academic, c2006.",
   "date": "2006",
-  "summary": "Panentheism, the other God of the philosophers : from Plato to the present by John W. Cooper (2006)",
+  "summary": "Panentheism, the other God of the Philosophers: from Plato to the present by John W. Cooper (2006)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12855,7 +12812,7 @@
 },
 "248862006": {
   "books_id": "248862006",
-  "title": "Reasonable faith : Christian truth and apologetics",
+  "title": "Reasonable Faith: Christian Truth and Apologetics",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Craig, William Lane",
@@ -12870,7 +12827,7 @@
   "1433501155"],
   "publication": "Wheaton, Ill. : Crossway Books, c2008.",
   "date": "2008",
-  "summary": "Reasonable faith : Christian truth and apologetics by William Lane Craig (2008)",
+  "summary": "Reasonable Faith: Christian Truth and Apologetics by William Lane Craig (2008)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12914,7 +12871,7 @@
 },
 "248862007": {
   "books_id": "248862007",
-  "title": "Authority and estrangement : an essay on self-knowledge",
+  "title": "Authority and Estrangement: An Essay on Self-knowledge",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Moran, Richard",
@@ -12929,7 +12886,7 @@
   "0691089450"],
   "publication": "Princeton, N.J. : Princeton University Press, c2001.",
   "date": "2001",
-  "summary": "Authority and estrangement : an essay on self-knowledge by Richard Moran (2001)",
+  "summary": "Authority and Estrangement: An Essay on Self-knowledge by Richard Moran (2001)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13020,7 +12977,7 @@
 },
 "248862009": {
   "books_id": "248862009",
-  "title": "This mortal flesh : incarnation and bioethics",
+  "title": "This Mortal Flesh: Incarnation and Bioethics",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Waters, Brent",
@@ -13035,7 +12992,7 @@
   "158743251X"],
   "publication": "Grand Rapids, Mich. : Brazos Press, c2009.",
   "date": "2009",
-  "summary": "This mortal flesh : incarnation and bioethics by Brent Waters (2009)",
+  "summary": "This Mortal Flesh: Incarnation and Bioethics by Brent Waters (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13078,7 +13035,7 @@
 },
 "248862010": {
   "books_id": "248862010",
-  "title": "Handbook of Christian apologetics : hundreds of answers to crucial questions",
+  "title": "Handbook of Christian Apologetics: Hundreds of Answers to Crucial Questions",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Kreeft, Peter",
@@ -13093,7 +13050,7 @@
   "0830817743"],
   "publication": "Downers Grove, Ill. : InterVarsity Press, c1994.",
   "date": "1994",
-  "summary": "Handbook of Christian apologetics : hundreds of answers to crucial questions by Peter Kreeft (1994)",
+  "summary": "Handbook of Christian Apologetics: Hundreds of Answers to Crucial Questions by Peter Kreeft (1994)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13206,7 +13163,7 @@
 },
 "248862012": {
   "books_id": "248862012",
-  "title": "A reasonable response : answers to tough questions on God, Christianity, and the Bible",
+  "title": "A Reasonable Response: Answers to Tough Questions on God, Christianity, and the Bible",
   "sortcharacter": "3",
   "public": "true",
   "primaryauthor": "Craig, William Lane",
@@ -13221,7 +13178,7 @@
   "0802405991"],
   "publication": "Chicago : Moody Publishers, [2013]",
   "date": "2013",
-  "summary": "A reasonable response : answers to tough questions on God, Christianity, and the Bible by William Lane Craig (2013)",
+  "summary": "A Reasonable Response: Answers to Tough Questions on God, Christianity, and the Bible by William Lane Craig (2013)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13357,7 +13314,7 @@
 },
 "248862026": {
   "books_id": "248862026",
-  "title": "Ruling passions : a theory of practical reasoning",
+  "title": "Ruling Passions: A Theory of Practical Reasoning",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Blackburn, Simon",
@@ -13372,7 +13329,7 @@
   "0199241392"],
   "publication": "Oxford ; New York : Oxford University Press, 2000.",
   "date": "2000",
-  "summary": "Ruling passions : a theory of practical reasoning by Simon Blackburn (2000)",
+  "summary": "Ruling Passions: A Theory of Practical Reasoning by Simon Blackburn (2000)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13609,7 +13566,7 @@
 },
 "248862032": {
   "books_id": "248862032",
-  "title": "Critical reasoning : a practical introduction",
+  "title": "Critical Reasoning: A Practical Introduction",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Thomson, Anne",
@@ -13624,7 +13581,7 @@
   "0415445876"],
   "publication": "London ; New York : Routledge, 2009.",
   "date": "2009",
-  "summary": "Critical reasoning : a practical introduction by Anne Thomson (2009)",
+  "summary": "Critical Reasoning: A Practical Introduction by Anne Thomson (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13766,7 +13723,7 @@
 },
 "248862039": {
   "books_id": "248862039",
-  "title": "Indian philosophy : an introduction to Hindu and Buddhist thought",
+  "title": "Indian Philosophy: An Introduction to Hindu and Buddhist Thought",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "King, Richard",
@@ -13781,7 +13738,7 @@
   "0748609547"],
   "publication": "Edinburgh : Edinburgh University Press, c1999.",
   "date": "1999",
-  "summary": "Indian philosophy : an introduction to Hindu and Buddhist thought by Richard King (1999)",
+  "summary": "Indian Philosophy: An Introduction to Hindu and Buddhist Thought by Richard King (1999)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13818,7 +13775,7 @@
 },
 "248862041": {
   "books_id": "248862041",
-  "title": "Theory Of General Ethics, A: Human Relationships, Nature, And The Built Environment",
+  "title": "Theory Of General Ethics: A Human Relationships, Nature, And The Built Environment",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Fox, Warwick",
@@ -13837,7 +13794,7 @@
   "ean": ["8120338073"],
   "publication": "PHI Learning (2009)",
   "date": "2009",
-  "summary": "Theory Of General Ethics, A: Human Relationships, Nature, And The Built Environment by Warwick Fox (2009)",
+  "summary": "Theory Of General Ethics: A Human Relationships, Nature, And The Built Environment by Warwick Fox (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -14203,7 +14160,7 @@
 },
 "248869378": {
   "books_id": "248869378",
-  "title": "Environmental ethics : readings in theory and application",
+  "title": "Environmental Ethics: Readings in Theory and Application",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Pojman, Louis P.",
@@ -14218,7 +14175,7 @@
   "0534543715"],
   "publication": "Belmont, CA : Wadsworth, c2001.",
   "date": "2001",
-  "summary": "Environmental ethics : readings in theory and application by Louis P. Pojman (2001)",
+  "summary": "Environmental Ethics: Readings in Theory and Application by Louis P. Pojman (2001)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -14257,7 +14214,7 @@
 },
 "248869380": {
   "books_id": "248869380",
-  "title": "Philosophy : themes and thinkers",
+  "title": "Philosophy: Themes and Thinkers",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Phelan, J. W.",
@@ -14272,7 +14229,7 @@
   "0521537428"],
   "publication": "Cambridge  ; New York : Cambridge University Press, 2005.",
   "date": "2005",
-  "summary": "Philosophy : themes and thinkers by J. W. Phelan (2005)",
+  "summary": "Philosophy: Themes and Thinkers by J. W. Phelan (2005)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -14736,7 +14693,7 @@
 },
 "248869414": {
   "books_id": "248869414",
-  "title": "World Prehistory : A Brief Introduction",
+  "title": "World Prehistory: A Brief Introduction",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Fagan, Brian M.",
@@ -14751,7 +14708,7 @@
   "0673523721"],
   "publication": "New York : HarperCollins College Publishers, c1996.",
   "date": "1996",
-  "summary": "World Prehistory : A Brief Introduction by Brian M. Fagan (1996)",
+  "summary": "World Prehistory: A Brief Introduction by Brian M. Fagan (1996)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -15536,7 +15493,7 @@
 },
 "248869705": {
   "books_id": "248869705",
-  "title": "Frontiers of the soul : exploring psychic evolution",
+  "title": "Frontiers of the Soul: Exploring Psychic Evolution",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Grosso, Michael",
@@ -15551,7 +15508,7 @@
   "0835606767"],
   "publication": "Wheaton, Ill., U.S.A. : Quest Books, 1992.",
   "date": "1992",
-  "summary": "Frontiers of the soul : exploring psychic evolution by Michael Grosso (1992)",
+  "summary": "Frontiers of the Soul: Exploring Psychic Evolution by Michael Grosso (1992)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -16033,27 +15990,113 @@
   "title": "The Fundamentals of Marxist-Leninist Philosophy.",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "[By Title]",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Daglish, Robert",
+  "primaryauthorrole": "Translator",
+  "secondaryauthor": "Bogomolov, A.S.|Spirkin, Alexander|Kelle, V. Zh.|Konstantinov, F.V.|Kopnin, P.V.|Oiserman, T.I.|Semyonov, V.S.|Shishkin, A.F.|Rozental, M.M.|Rutkevich, M.N.|Uyomov, A.I.|Chesnokov, D.I.|Gak, G.M.|Glezerman, G.Y.|Kuznetsov, I.V.|Melyukhin, S.T.|Momjan, Kh.N.",
+  "secondaryauthorroles": "Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor|Editor",
   "authors": [{
-    "lf": "[By Title]",
-    "fl": "[By Title]",
-    "role": "Author"
+    "lf": "Daglish, Robert",
+    "fl": "Robert Daglish",
+    "role": "Translator"
+  },
+  {
+    "lf": "Bogomolov, A.S.",
+    "fl": "A.S. Bogomolov",
+    "role": "Editor"
+  },
+  {
+    "lf": "Spirkin, Alexander",
+    "fl": "Alexander Spirkin",
+    "role": "Editor"
+  },
+  {
+    "lf": "Kelle, V. Zh.",
+    "fl": "V. Zh. Kelle",
+    "role": "Editor"
+  },
+  {
+    "lf": "Konstantinov, F.V.",
+    "fl": "F.V. Konstantinov",
+    "role": "Editor"
+  },
+  {
+    "lf": "Kopnin, P.V.",
+    "fl": "P.V. Kopnin",
+    "role": "Editor"
+  },
+  {
+    "lf": "Oiserman, T.I.",
+    "fl": "T.I. Oiserman",
+    "role": "Editor"
+  },
+  {
+    "lf": "Semyonov, V.S.",
+    "fl": "V.S. Semyonov",
+    "role": "Editor"
+  },
+  {
+    "lf": "Shishkin, A.F.",
+    "fl": "A.F. Shishkin",
+    "role": "Editor"
+  },
+  {
+    "lf": "Rozental, M.M.",
+    "fl": "M.M. Rozental",
+    "role": "Editor"
+  },
+  {
+    "lf": "Rutkevich, M.N.",
+    "fl": "M.N. Rutkevich",
+    "role": "Editor"
+  },
+  {
+    "lf": "Uyomov, A.I.",
+    "fl": "A.I. Uyomov",
+    "role": "Editor"
+  },
+  {
+    "lf": "Chesnokov, D.I.",
+    "fl": "D.I. Chesnokov",
+    "role": "Editor"
+  },
+  {
+    "lf": "Gak, G.M.",
+    "fl": "G.M. Gak",
+    "role": "Editor"
+  },
+  {
+    "lf": "Glezerman, G.Y.",
+    "fl": "G.Y. Glezerman",
+    "role": "Editor"
+  },
+  {
+    "lf": "Kuznetsov, I.V.",
+    "fl": "I.V. Kuznetsov",
+    "role": "Editor"
+  },
+  {
+    "lf": "Melyukhin, S.T.",
+    "fl": "S.T. Melyukhin",
+    "role": "Editor"
+  },
+  {
+    "lf": "Momjan, Kh.N.",
+    "fl": "Kh.N. Momjan",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B000KRR4BG",
   "publication": "Progress Publishers (1974), Edition: First Edition",
   "date": "1974",
-  "summary": "The Fundamentals of Marxist-Leninist Philosophy. by [By Title] (1974)",
+  "summary": "The Fundamentals of Marxist-Leninist Philosophy. by Robert Daglish (1974)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["Russian"],
   "originallanguage_codeA": ["eng",
   "rus"],
   "ddc": {
-    "code": ["335.4\n",
-    "335.4"],
+    "code": ["335.4"],
     "wording": ["Economics",
     "Marxian systems",
     "Social sciences",
@@ -16751,7 +16794,8 @@
   "dimensions": "11.25 x 7.9 x 2.05 inches",
   "weight": "3.99918543268 pounds",
   "pages": "2048 "
-},"275052144": {
+},
+"275052144": {
   "books_id": "275052144",
   "title": "Key Bible Concepts",
   "sortcharacter": "1",
@@ -16803,8 +16847,7 @@
   "dimensions": "7.99211 x 4.99999 x 0.3440938 inches",
   "weight": "0.4 pounds",
   "pages": "148 "
-},
-"275052146": {
+},"275052146": {
   "books_id": "275052146",
   "title": "Philosophy Of Science (Fundamentals of Philosophy)",
   "sortcharacter": "1",
@@ -22418,7 +22461,8 @@
   "dimensions": "8.25 x 5.5 x 0.75 inches",
   "weight": "0.55 pounds",
   "pages": "199 "
-},"276504372": {
+},
+"276504372": {
   "books_id": "276504372",
   "title": "The Origin of Satan: How Christians Demonized Jews, Pagans, and Heretics",
   "sortcharacter": "5",
@@ -22479,8 +22523,7 @@
   "dimensions": "6.89 x 5.2 x 0.65 inches",
   "weight": "0.59965735264 pounds",
   "pages": "240 "
-},
-"276504375": {
+},"276504375": {
   "books_id": "276504375",
   "title": "Business as a Calling: Work and the Examined Life",
   "sortcharacter": "1",
@@ -23339,7 +23382,7 @@
 },
 "276504470": {
   "books_id": "276504470",
-  "title": "Real Face of Atheism, The",
+  "title": "The Real Face of Atheism",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Zacharias, Ravi",
@@ -23354,7 +23397,7 @@
   "asin": "B002NLKWPM",
   "publication": "Baker Books (2004), 196 pages",
   "date": "2004",
-  "summary": "Real Face of Atheism, The by Ravi Zacharias (2004)",
+  "summary": "The Real Face of Atheism by Ravi Zacharias (2004)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -24110,7 +24153,7 @@
 },
 "276504973": {
   "books_id": "276504973",
-  "title": "What is love (Daybreak books)",
+  "title": "What is Love (Daybreak books)",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Wynanda, C",
@@ -24131,7 +24174,7 @@
   "ean": ["0310375711"],
   "publication": "Zondervan (1984), 94 pages",
   "date": "1984",
-  "summary": "What is love (Daybreak books) by C Wynanda (1984)",
+  "summary": "What is Love (Daybreak books) by C Wynanda (1984)",
   "ddc": {
     "code": ["241.4"],
     "wording": ["Christian ethics",
@@ -25139,12 +25182,10 @@
   "title": "God's Little Devotional for Graduates (Gift Series)",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Ministries, Cook (David C. ) Church",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Cook, David C.",
   "authors": [{
-    "lf": "Ministries, Cook (David C. ) Church",
-    "fl": "Cook (David C. ) Church Ministries",
-    "role": "Author"
+    "lf": "Cook, David C.",
+    "fl": "David C. Cook"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -25157,7 +25198,7 @@
   "ean": ["1562920995"],
   "publication": "Honor Books (1995), Edition: 11th printing, 317 pages",
   "date": "1995",
-  "summary": "God's Little Devotional for Graduates (Gift Series) by Cook (David C. ) Church Ministries (1995)",
+  "summary": "God's Little Devotional for Graduates (Gift Series) by David C. Cook (1995)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -28247,7 +28288,8 @@
   "dimensions": "7.96 x 5.25 x 1.69 inches",
   "weight": "1.10010668738 pounds",
   "pages": "944 "
-},"276508727": {
+},
+"276508727": {
   "books_id": "276508727",
   "title": "Being Good: Christian Virtues for Everyday Life",
   "sortcharacter": "1",
@@ -28300,8 +28342,7 @@
   "dimensions": "9 x 6 x 0.73 inches",
   "weight": "0.9 pounds",
   "pages": "292 "
-},
-"276508735": {
+},"276508735": {
   "books_id": "276508735",
   "title": "What Can We Know?: An Introduction to the Theory of Knowledge",
   "sortcharacter": "1",
@@ -28806,7 +28847,7 @@
 },
 "276509107": {
   "books_id": "276509107",
-  "title": "THE Allegory of Love",
+  "title": "The Allegory of Love",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Lewis, C. S.",
@@ -28821,7 +28862,7 @@
   "asin": "B09PFV6NGB",
   "publication": "Tingle Books (2021), 454 pages",
   "date": "2021",
-  "summary": "THE Allegory of Love by C. S. Lewis (2021)",
+  "summary": "The Allegory of Love by C. S. Lewis (2021)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -31728,7 +31769,7 @@
 },
 "276547909": {
   "books_id": "276547909",
-  "title": "Democratic Constitution Making : Experiences from Nepal, Kenya, South Africa, and Sri Lanka",
+  "title": "Democratic Constitution Making: Experiences from Nepal, Kenya, South Africa, and Sri Lanka",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Bhattarai, Hari P.",
@@ -31750,7 +31791,7 @@
   },
   "publication": "Kathmandu : Nepal South Asia Center, 2007",
   "date": "2007",
-  "summary": "Democratic Constitution Making : Experiences from Nepal, Kenya, South Africa, and Sri Lanka by Hari P. Bhattarai (2007)",
+  "summary": "Democratic Constitution Making: Experiences from Nepal, Kenya, South Africa, and Sri Lanka by Hari P. Bhattarai (2007)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -32395,7 +32436,7 @@
 },
 "276548463": {
   "books_id": "276548463",
-  "title": "What If : Serious Scientific Answers To Absurd Hypothetical Questions",
+  "title": "What If: Serious Scientific Answers To Absurd Hypothetical Questions",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Munroe, Randall",
@@ -32414,7 +32455,7 @@
   "ean": ["1848549563"],
   "publication": "John Murray (2015), Edition: 01, 320 pages",
   "date": "2015",
-  "summary": "What If : Serious Scientific Answers To Absurd Hypothetical Questions by Randall Munroe (2015)",
+  "summary": "What If: Serious Scientific Answers To Absurd Hypothetical Questions by Randall Munroe (2015)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -32892,7 +32933,7 @@
 },
 "276548644": {
   "books_id": "276548644",
-  "title": "The Literature Machine : Essays",
+  "title": "The Literature Machine: Essays",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Calvino, Italo",
@@ -32911,7 +32952,7 @@
   "ean": ["0099430851"],
   "publication": "Random House (2002), 348 pages",
   "date": "2002",
-  "summary": "The Literature Machine : Essays by Italo Calvino (2002)",
+  "summary": "The Literature Machine: Essays by Italo Calvino (2002)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -33420,19 +33461,26 @@
   "title": "Anne Frank: The Diary of a Young Girl",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Mooyaart, Anne Frank; Introduction-Eleanor Roosevelt; Translator-B. M.",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Mooyaart-Doubleday, B.M.",
+  "primaryauthorrole": "Translator",
+  "secondaryauthor": "Roosevelt, Eleanor",
+  "secondaryauthorroles": "Contributor",
   "authors": [{
-    "lf": "Mooyaart, Anne Frank; Introduction-Eleanor Roosevelt; Translator-B. M.",
-    "fl": "Anne Frank; Introduction-Eleanor Roosevelt; Translator-B. M. Mooyaart",
-    "role": "Author"
+    "lf": "Mooyaart-Doubleday, B.M.",
+    "fl": "B.M. Mooyaart-Doubleday",
+    "role": "Translator"
+  },
+  {
+    "lf": "Roosevelt, Eleanor",
+    "fl": "Eleanor Roosevelt",
+    "role": "Contributor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B000USUY3K",
   "publication": "Bantam (1993)",
   "date": "1993",
-  "summary": "Anne Frank: The Diary of a Young Girl by Anne Frank; Introduction-Eleanor Roosevelt; Translator-B. M. Mooyaart (1993)",
+  "summary": "Anne Frank: The Diary of a Young Girl by B.M. Mooyaart-Doubleday (1993)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -34121,15 +34169,27 @@
 },
 "276549352": {
   "books_id": "276549352",
-  "title": "Nationalism and Ethnicity in a Hndu Kingdom: The Politics of Culture in Contemporary Nepal",
+  "title": "Nationalism and Ethnicity in a Hindu Kingdom: The Politics of Culture in Contemporary Nepal",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Gellner, Joanna Pfaff-Czarnecka and John Whelpton David N.",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Gellner, David N.",
+  "primaryauthorrole": "Editor",
+  "secondaryauthor": "Pfaff-Czarnecka, Joanna|Welpton, John",
+  "secondaryauthorroles": "Editor|Editor",
   "authors": [{
-    "lf": "Gellner, Joanna Pfaff-Czarnecka and John Whelpton David N.",
-    "fl": "Joanna Pfaff-Czarnecka and John Whelpton David N. Gellner",
-    "role": "Author"
+    "lf": "Gellner, David N.",
+    "fl": "David N. Gellner",
+    "role": "Editor"
+  },
+  {
+    "lf": "Pfaff-Czarnecka, Joanna",
+    "fl": "Joanna Pfaff-Czarnecka",
+    "role": "Editor"
+  },
+  {
+    "lf": "Welpton, John",
+    "fl": "John Welpton",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -34140,7 +34200,7 @@
   "ean": ["1138895695"],
   "publication": "Routledge (Manohar) (2017)",
   "date": "2017",
-  "summary": "Nationalism and Ethnicity in a Hndu Kingdom: The Politics of Culture in Contemporary Nepal by Joanna Pfaff-Czarnecka and John Whelpton David N. Gellner (2017)",
+  "summary": "Nationalism and Ethnicity in a Hindu Kingdom: The Politics of Culture in Contemporary Nepal by David N. Gellner (2017)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -34354,7 +34414,8 @@
   "height": "22 cm",
   "dimensions": "22 cm",
   "pages": "xii; 68 "
-},"276549718": {
+},
+"276549718": {
   "books_id": "276549718",
   "title": "A Newcomer's Guide to living in Kathmandu",
   "sortcharacter": "3",
@@ -34391,8 +34452,7 @@
   }],
   "copies": "1",
   "volumes": "1"
-},
-"276549797": {
+},"276549797": {
   "books_id": "276549797",
   "title": "The general ecology, flora, and fauna of midland Nepal",
   "sortcharacter": "5",
@@ -39779,7 +39839,8 @@
   "dimensions": "8 x 5.375 x 0.81 inches",
   "weight": "0.87964442538 pounds",
   "pages": "345 "
-},"276642734": {
+},
+"276642734": {
   "books_id": "276642734",
   "title": "The second sex",
   "sortcharacter": "5",
@@ -39851,8 +39912,7 @@
   "dimensions": "7.56 x 5.12 x 1.34 inches",
   "weight": "1.0141264052 pounds",
   "pages": "768 "
-},
-"276642743": {
+},"276642743": {
   "books_id": "276642743",
   "title": "The human race",
   "sortcharacter": "5",
@@ -40836,8 +40896,8 @@
   "lcc": {
     "code": "HB171.S245"
   },
-  "series": ["Compendios Schaum",
-  "Schaum's Outline"],
+  "series": ["Schaum's Outline",
+  "Compendios Schaum"],
   "genre": ["Nonfiction",
   "Business",
   "Economics"],
@@ -44691,7 +44751,7 @@
 },
 "276678152": {
   "books_id": "276678152",
-  "title": "Shakespeare: The Tragedies : A Collection of Critical Essays",
+  "title": "Shakespeare: The Tragedies: A Collection of Critical Essays",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Leech, Clifford",
@@ -44712,7 +44772,7 @@
   "ean": ["0226470180"],
   "publication": "Univ of Chicago Pr (1965), Edition: 1st",
   "date": "1965",
-  "summary": "Shakespeare: The Tragedies : A Collection of Critical Essays by Clifford Leech (1965)",
+  "summary": "Shakespeare: The Tragedies: A Collection of Critical Essays by Clifford Leech (1965)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -46067,7 +46127,8 @@
   }],
   "copies": "1",
   "weight": "0.4 pounds"
-},"276679772": {
+},
+"276679772": {
   "books_id": "276679772",
   "title": "To Kill a Mockingbird (Warner Books)",
   "sortcharacter": "1",
@@ -46175,6 +46236,7 @@
     "41": ["fiction in English"]
   },
   "series": ["To Kill a Mockingbird"],
+  "originaltitle": "To Kill a Mockingbird",
   "awards": ["100 Books That Shaped World History",
   "100 Books to Read in a Lifetime",
   "100 Must-Read Classics By Women",
@@ -46286,8 +46348,7 @@
   "dimensions": "6.7 x 4.1 x 0.8 inches",
   "weight": "0.42 pounds",
   "pages": "284 "
-},
-"276679867": {
+},"276679867": {
   "books_id": "276679867",
   "title": "The Good Earth",
   "sortcharacter": "5",
@@ -46357,10 +46418,10 @@
     "19": ["Married women",
     "Fiction"]
   },
-  "series": ["Bucks China Trilogie",
-  "De goede aarde Trilogie",
-  "The House of Earth Trilogy",
-  "Buck's China Trilogy"],
+  "series": ["The House of Earth Trilogy",
+  "Buck's China Trilogy",
+  "Bucks China Trilogie",
+  "De goede aarde Trilogie"],
   "originaltitle": "The Good Earth",
   "awards": ["100 Best Books by American Women During the Past 100 Years, 1833-1933",
   "100 Books That Shaped World History",
@@ -46603,6 +46664,7 @@
     "41": ["fiction in English"]
   },
   "series": ["To Kill a Mockingbird"],
+  "originaltitle": "To Kill a Mockingbird",
   "awards": ["100 Books That Shaped World History",
   "100 Books to Read in a Lifetime",
   "100 Must-Read Classics By Women",
@@ -46827,20 +46889,20 @@
     "15": ["humorous fiction"],
     "17": ["science fiction"]
   },
-  "series": ["Stopa\u0159\u016fv pr\u016fvodce po Galaxii",
-  "Galakse-blafferen",
-  "Guida galattica per gli autostoppisti",
-  "O Guia do Mochileiro das Gal\u00e1xias",
-  "Liftartrilogin",
+  "series": ["The Hitchhiker's Guide to the Galaxy",
+  "Hitch-Hikers Guide to the Galaxy",
+  "Autostopem przez Galaktyk\u0119",
+  "H2G2",
+  "Per Anhalter durch die Galaxis",
   "Het transgalactisch liftershandboek",
+  "Liftartrilogin",
+  "Gu\u00eda del autoestopista gal\u00e1ctico",
   "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
   "Galaxis utikalauz",
-  "Gu\u00eda del autoestopista gal\u00e1ctico",
-  "H2G2",
-  "Autostopem przez Galaktyk\u0119",
-  "The Hitchhiker's Guide to the Galaxy",
-  "Hitch-Hikers Guide to the Galaxy",
-  "Per Anhalter durch die Galaxis"],
+  "O Guia do Mochileiro das Gal\u00e1xias",
+  "Guida galattica per gli autostoppisti",
+  "Galakse-blafferen",
+  "Stopa\u0159\u016fv pr\u016fvodce po Galaxii"],
   "originaltitle": "The Restaurant at the End of the Universe",
   "awards": ["Top 10 fictional towns in children's books"],
   "genre": ["Fiction",
@@ -47970,24 +48032,24 @@
     "34": ["fantasy fiction"],
     "35": ["fiction in English"]
   },
-  "series": ["Il Signore degli Anelli",
-  "Gy\u0171r\u0171k Ura",
-  "El Se\u00f1or de los Anillos",
+  "series": ["Der Herr der Ringe",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
   "\u9b54\u6212",
-  "Gospodar prstenova",
-  "Gospodar prstenova",
-  "Ringenes herre",
   "Le seigneur des anneaux",
-  "Der Herr der Ringe",
   "Ringenes herre",
-  "El Senyor dels Anells",
-  "P\u00e1n Prsten\u016f",
-  "O Senhor dos An\u00e9is",
   "Sagan om Ringen",
-  "In de Ban van de Ring",
+  "O Senhor dos An\u00e9is",
+  "P\u00e1n Prsten\u016f",
+  "El Senyor dels Anells",
+  "Ringenes herre",
+  "Gospodar prstenova",
+  "El Se\u00f1or de los Anillos",
+  "Gy\u0171r\u0171k Ura",
+  "Il Signore degli Anelli",
+  "Gospodar prstenova",
   "Taru Sormusten Herrasta",
   "W\u0142adca Pier\u015bcieni",
+  "In de Ban van de Ring",
   "The Lord of the Rings"],
   "originaltitle": "The Lord of the Rings",
   "awards": ["1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
@@ -49200,12 +49262,10 @@
   "title": "The Principles of Economic Geography",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Brown, R. N. Rudmose (Robert Neal Rudmos",
-  "primaryauthorrole": "Creator",
+  "primaryauthor": "Brown, Robert Neal Rudmose",
   "authors": [{
-    "lf": "Brown, R. N. Rudmose (Robert Neal Rudmos",
-    "fl": "R. N. Rudmose (Robert Neal Rudmos Brown",
-    "role": "Creator"
+    "lf": "Brown, Robert Neal Rudmose",
+    "fl": "Robert Neal Rudmose Brown"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -49217,8 +49277,8 @@
   "asin": "1371872805",
   "ean": ["1371872805"],
   "publication": "Wentworth Press (2016), 236 pages",
-  "date": "2016",
-  "summary": "The Principles of Economic Geography by R. N. Rudmose (Robert Neal Rudmos Brown (2016)",
+  "date": "1920",
+  "summary": "The Principles of Economic Geography by Robert Neal Rudmose Brown (1920)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -49792,7 +49852,7 @@
 },
 "276685114": {
   "books_id": "276685114",
-  "title": "Beyond Machiavelli : Tools for Coping With Conflict",
+  "title": "Beyond Machiavelli: Tools for Coping With Conflict",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Fisher, Roger",
@@ -49811,7 +49871,7 @@
   "ean": ["0140245227"],
   "publication": "Penguin Publishing Group (1996), Edition: Reissue, 168 pages",
   "date": "1996",
-  "summary": "Beyond Machiavelli : Tools for Coping With Conflict by Roger Fisher (1996)",
+  "summary": "Beyond Machiavelli: Tools for Coping With Conflict by Roger Fisher (1996)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -50453,8 +50513,8 @@
   "lcc": {
     "code": "HV9713 .S6413"
   },
-  "series": ["Der Archipel GULAG",
-  "The Gulag Archipelago",
+  "series": ["The Gulag Archipelago",
+  "Der Archipel GULAG",
   "Archipelag Gu\u0142ag",
   "De Goelag Archipel, 1918-1956"],
   "originaltitle": "&#1040;&#1088;&#1093;&#1080;&#1087;&#1077;&#1083;&#1072;&#1075; &#1043;&#1059;&#1051;&#1040;&#1043;",
@@ -51273,7 +51333,8 @@
   "AudioFile's Best Audiobooks of the Year",
   "Globe and Mail Top 100 Book",
   "Los Angeles Public Library Best of the Year",
-  "RUSA CODES Listen List"],
+  "RUSA CODES Listen List",
+  "The Best Books: Book Recommendations from the Multnomah County Library"],
   "genre": ["Nonfiction",
   "General Nonfiction",
   "Sociology"],
@@ -53344,7 +53405,8 @@
   "physical_description": "387 p.",
   "weight": "1.3 pounds",
   "pages": "387 "
-},"276686125": {
+},
+"276686125": {
   "books_id": "276686125",
   "title": "Crimes Without Victims: Deviant Behavior and Public Policy : Abortion, Homosexuality, Drug Addiction",
   "sortcharacter": "1",
@@ -53399,8 +53461,7 @@
   "dimensions": "7.9 x 5.5 x 0.8 inches",
   "weight": "0.55 pounds",
   "pages": "180 "
-},
-"276715235": {
+},"276715235": {
   "books_id": "276715235",
   "title": "The Little, Brown Handbook, Ninth Edition",
   "sortcharacter": "5",
@@ -58839,7 +58900,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"276824868": {
+},
+"276824868": {
   "books_id": "276824868",
   "title": "Studies in Medieval and Renaissance Literature",
   "sortcharacter": "1",
@@ -58915,8 +58977,7 @@
   "dimensions": "8.19 x 5.43 x 0.47 inches",
   "weight": "0.53 pounds",
   "pages": "212 "
-},
-"276824870": {
+},"276824870": {
   "books_id": "276824870",
   "title": "Paradigms Lost: Images of Man in the Mirror of Science",
   "sortcharacter": "1",
@@ -59736,7 +59797,7 @@
 },
 "276864161": {
   "books_id": "276864161",
-  "title": "The Time Machine; The invisible Man; Short stories; Essays",
+  "title": "The Time Machine; The Invisible Man; Short stories; Essays",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Wells, H. G.",
@@ -59748,7 +59809,7 @@
   "collections": ["Your library"],
   "publication": "Progress Publishers, Moscow",
   "date": "1981",
-  "summary": "The Time Machine; The invisible Man; Short stories; Essays by H. G. Wells (1981)",
+  "summary": "The Time Machine; The Invisible Man; Short stories; Essays by H. G. Wells (1981)",
   "ddc": {
     "code": ["823\n",
     "823"],
@@ -60963,15 +61024,15 @@
 },
 "276868214": {
   "books_id": "276868214",
-  "title": "The Rig Veda : An Anthology : One Hundred and Eight Hymns, Selected, Translated and Annotated",
+  "title": "The Rig Veda: An Anthology (One Hundred and Eight Hymns, Selected, Translated and Annotated)",
   "sortcharacter": "5",
   "public": "true",
-  "primaryauthor": "Anonymous",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Doniger, Wendy",
+  "primaryauthorrole": "Editor",
   "authors": [{
-    "lf": "Anonymous",
-    "fl": "Anonymous",
-    "role": "Author"
+    "lf": "Doniger, Wendy",
+    "fl": "Wendy Doniger",
+    "role": "Editor"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -60982,7 +61043,7 @@
   "ean": ["0140444025"],
   "publication": "Penguin Classics (1982), Edition: 2000, 352 pages",
   "date": "1982",
-  "summary": "The Rig Veda : An Anthology : One Hundred and Eight Hymns, Selected, Translated and Annotated by Anonymous (1982)",
+  "summary": "The Rig Veda: An Anthology (One Hundred and Eight Hymns, Selected, Translated and Annotated) by Wendy Doniger (1982)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -64363,7 +64424,8 @@
     "text": "Hardcover"
   }],
   "copies": "1"
-},"276885034": {
+},
+"276885034": {
   "books_id": "276885034",
   "title": "An Outline History Of English Literature",
   "sortcharacter": "4",
@@ -64417,8 +64479,7 @@
   "length": "7.874 inches",
   "dimensions": "1.5748 x 7.874 x 5.5118 inches",
   "weight": "0.44312911768363 pounds"
-},
-"276885093": {
+},"276885093": {
   "books_id": "276885093",
   "title": "An Introduction To The Study Of English Literature",
   "sortcharacter": "4",
@@ -66998,7 +67059,7 @@
 },
 "278839411": {
   "books_id": "278839411",
-  "title": "Tod's Annals of Rajasthan : the annals of Mewar",
+  "title": "Tod's Annals of Rajasthan: The Annals of Mewar",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Payne, C. H.",
@@ -69747,7 +69808,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"280388309": {
+},
+"280388309": {
   "books_id": "280388309",
   "title": "The Children Of The New Forest | Regent Classic",
   "sortcharacter": "5",
@@ -69767,6 +69829,7 @@
   "summary": "The Children Of The New Forest | Regent Classic by Frederick Marryat (1960)",
   "language": ["English"],
   "language_codeA": ["eng"],
+  "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["823.8"],
@@ -69776,8 +69839,23 @@
     "Literature"]
   },
   "lcc": [],
+  "subject": [["Great Britain",
+  "History",
+  "Civil War, 1642-1649",
+  "Fiction"],
+  ["Great Britain",
+  "History",
+  "Civil war, 1642-1649",
+  "Fiction"],
+  ["Historical Fiction"],
+  ["Historical fiction"],
+  ["New Forest (England : Forest)",
+  "Fiction"],
+  ["Orphans",
+  "Fiction"],
+  ["historical fiction"]],
   "source": "amazon.com books",
-  "workcode": "32813180",
+  "workcode": "51382",
   "entrydate": "2025-02-05",
   "format": [{
     "code": "1.1.2",
@@ -69785,25 +69863,22 @@
   }],
   "copies": "1",
   "weight": "1.01 pounds"
-},
-"280388487": {
+},"280388487": {
   "books_id": "280388487",
-  "title": "Income: An introduction to economics.--",
+  "title": "Income: An Introduction to Economics",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Pigou, A.C.",
-  "primaryauthorrole": "Author",
   "authors": [{
     "lf": "Pigou, A.C.",
-    "fl": "A.C. Pigou",
-    "role": "Author"
+    "fl": "A.C. Pigou"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B0007KGO7Q",
   "publication": "Macmillan (1949)",
   "date": "1949",
-  "summary": "Income: An introduction to economics.-- by A.C. Pigou (1949)",
+  "summary": "Income: An Introduction to Economics by A.C. Pigou (1949)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -75523,7 +75598,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"287193115": {
+},
+"287193115": {
   "books_id": "287193115",
   "title": "Elementary Kinematics of Elementary Particles (Science for Everyone)",
   "sortcharacter": "1",
@@ -75558,8 +75634,7 @@
     "text": "Paper Book"
   }],
   "copies": "1"
-},
-"287193232": {
+},"287193232": {
   "books_id": "287193232",
   "title": "Ethology: What Animals Do and Why (Science for Everyone)",
   "sortcharacter": "1",
@@ -76203,9 +76278,16 @@
     "The Bible",
     "The Bible"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "BS195 .N37"
+  },
+  "originaltitle": "The Holy Bible: New International Version",
+  "genre": ["Nonfiction",
+  "Religion & Spirituality"],
+  "genre_id": ["20275895",
+  "1944"],
   "source": "manual entry",
-  "workcode": "34390206",
+  "workcode": "32905209",
   "entrydate": "2025-07-02",
   "format": [{
     "code": "1.1.1",
@@ -76613,7 +76695,7 @@
 },
 "291859890": {
   "books_id": "291859890",
-  "title": "Qed: The Strange Theory of Light and Matter",
+  "title": "QED: The Strange Theory of Light and Matter",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Feynman, Richard P",
@@ -76632,7 +76714,7 @@
   "ean": ["8601404233753"],
   "publication": "Penguin (1990), Edition: 1, 164 pages",
   "date": "1990",
-  "summary": "Qed: The Strange Theory of Light and Matter by Richard P Feynman (1990)",
+  "summary": "QED: The Strange Theory of Light and Matter by Richard P Feynman (1990)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -77123,7 +77205,7 @@
 },
 "291924733": {
   "books_id": "291924733",
-  "title": "Ethics and education",
+  "title": "Ethics and Education",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Peters, R. S",
@@ -77144,7 +77226,7 @@
   "ean": ["0043700322"],
   "publication": "Allen and Unwin (1970), 333 pages",
   "date": "1970",
-  "summary": "Ethics and education by R. S Peters (1970)",
+  "summary": "Ethics and Education by R. S Peters (1970)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
