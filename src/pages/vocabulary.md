@@ -1,5 +1,5 @@
 ---
-layout: "layouts/vocab.njk"
+layout: "layouts/vocabulary.njk"
 title: My Vocab Collection
 ---
 

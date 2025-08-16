@@ -3,8 +3,8 @@ title: yt-dlp Commands
 tags: ['Computing']
 ---
 
-# Download YouTube Playlist
-
+# Download YT Playlist
+```
 yt-dlp \
   --yes-playlist \
   --concurrent-fragments 10 \
@@ -24,3 +24,4 @@ yt-dlp \
   --no-overwrites \
   --continue \
   "https://www.youtube.com/playlist?list=PL9GwT4_YRZdBf9nIUHs0zjrnUVl-KBNSM"
+  ```

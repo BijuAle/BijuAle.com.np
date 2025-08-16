@@ -2,13 +2,10 @@
   BASE STYLES
 ================================ */
 body {
-  margin: 0 auto;
-  max-width: 700px;
-  text-align: center;
   border: 40px solid;
   border-image-slice: 80;
-  border-image-repeat: round round;
-  border-image-source: url("../images/border2.jpg");
+  border-image-repeat: round;
+  border-image-source: url("../images/border.jpg");
   background-color: #8fbeb5;
 }
 
@@ -50,14 +47,14 @@ h3:not(:first-of-type) {
    LAYOUT & STRUCTURE
 ================================ */
 main {
+  border: 1px solid #333;
+  max-width: 700px;
+  margin: auto;
   padding: 1rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: left;
-}
-@media (max-width: 768px) {
-  main {
-    padding: 1rem;
-  }
+  border-radius: 0.5rem;
+  min-height: 100vh;
+  text-align: justify;
+  font-family: "Garamond R", serif;
 }
 
 .date {
@@ -79,7 +76,7 @@ main .container ul li {
    LINKS & INTERACTIONS
 ================================ */
 main a {
-  color: #463eac;
+  color: #3b3590;
 }
 .post-header .tags ul li a:hover {
   color: black;
@@ -251,7 +248,7 @@ button:hover {
 }
 
 /* ================================
-   CODE BLOCKS
+  BLOCKS
 ================================ */
 pre code {
   white-space: pre-wrap;
@@ -265,6 +262,30 @@ pre code {
   display: block;
 }
 
+blockquote {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  background-color: #68b0a2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+blockquote p {
+  margin: 0;
+  display: inline;
+  font-family: "Garamond R";
+  opacity: 80%;
+  font-size: 1.2rem;
+}
+blockquote .cite-note {
+  opacity: 60%;
+}
+blockquote .cite-note::before {
+  content: "\00a0";
+}
 /* ================================
    LISTS
 ================================ */

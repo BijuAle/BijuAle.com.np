@@ -1,20 +1,38 @@
 ---
 title: "Shelf Reflection: Home Library"
 layout: "layouts/library.njk"
-tags: ['post', 'Philosophy', 'Reading']
+tags: ["post", "Philosophy", "Reading"]
 date: 2024-10-24
 ---
-<span>"We read to know we are not alone." —C. S. Lewis (Christian Apologist)
 
-"All Truth is God's Truth." —Arthur F. Holmes (Christian Philosopher)
+<blockquote>
+<p>"We read to know we are not alone."</p><cite>—C. S. Lewis</cite><span class="cite-note"> (Christian Apologist)</span>
+</blockquote>
 
-"Reading is an important tool in the pursuit of the good life, which includes truth, goodness, and beauty. Moreover, I think Christians need to carefully consider how they can go about loving God with their mind." —Kenneth Samples (Christian Philosopher)
+<blockquote>
+    <p>"All Truth is God's Truth."</p>
+    <cite>—Arthur F. Holmes</cite><span class="cite-note"> (Christian Philosopher)</span>
+</blockquote>
 
-"The Christian knows from the outset that the salvation of a single soul is more important than the production or preservation of all the epics and tragedies in the world… But it does not follow that literature is valueless." —C. S. Lewis (Christian Apologist)
+<blockquote>
+    <p>"Reading is an important tool in the pursuit of the good life, which includes truth, goodness, and beauty. Moreover, I think Christians need to carefully consider how they can go about loving God with their mind."</p>
+    <cite>—Kenneth Samples</cite><span class="cite-note"> (Christian Philosopher)</span>
+</blockquote>
 
-“Some books are to be tasted, others to be swallowed, and some few to be chewed and digested…” —Francis Bacon (Father of Modern Science)
+<blockquote>
+    <p>"The Christian knows from the outset that the salvation of a single soul is more important than the production or preservation of all the epics and tragedies in the world… But it does not follow that literature is valueless."</p>
+    <cite>—C. S. Lewis</cite><span class="cite-note"> (Christian Apologist)</span>
+</blockquote>
 
-“Tolle lege! Tolle lege!” —Saint Augustine (The child’s voice, “Pick it up and read!” that urged St. Augustine to open the Bible, sparking his life-changing conversion.)
+<blockquote>
+    <p>“Some books are to be tasted, others to be swallowed, and some few to be chewed and digested…”</p>
+    <cite>—Francis Bacon</cite><span class="cite-note"> (Father of Modern Science)</span>
+</blockquote>
+
+<blockquote>
+    <p>“Tolle lege! Tolle lege!”</p>
+    <cite>—Saint Augustine</cite><span class="cite-note"> (The child’s voice, “Pick it up and read!” that urged St. Augustine to open the Bible, sparking his life-changing conversion.)</span>
+</blockquote>
 
 <hr>
 

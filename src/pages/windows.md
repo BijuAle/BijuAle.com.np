@@ -3,7 +3,7 @@ title: Windows Automations
 tags: ['Computing']
 ---
 
-# Unofficial activiations
+# Windows Tweaker
 
 ```
 Run in elevated Powershell:
