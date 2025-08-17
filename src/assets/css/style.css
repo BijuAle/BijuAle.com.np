@@ -95,6 +95,9 @@ body {
   /* ================================
    LINKS & INTERACTIONS
 ================================ */
+a{
+  cursor: pointer;
+}
   main a {
     color: #3b3590;
   }
