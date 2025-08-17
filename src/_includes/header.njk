@@ -1,7 +1,7 @@
 <header>
   <div class="header-top">
     <a href="/">
-      <img width="35" src="../assets/images/chi-rho.png" alt="Chi Rho" />
+      <img width="35" src="/assets/images/chi-rho.png" alt="Chi Rho" />
       <span class="site-title">Biju Ale<span class="site-title-frag-web">’s Web</span></span>
     </a>
     <span class="site-verse">
@@ -51,8 +51,7 @@
     top: 0;
     background-color: #68b0a2;
     z-index: 1000;
-
-    
+    border: 1px solid #666;
   }
 
   .menu,
@@ -78,12 +77,13 @@
   }
 
   .menu li a {
-    border: 1px solid black;
-    border-radius: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4rem;
     padding: 0.2rem;
     display: block;
     text-decoration: none;
   }
+  
 
   .menu>li>a:hover,
   .menu>li>a:focus,
@@ -174,7 +174,7 @@
       display: none;
     }
 
-    .menu li {
+    .menu > li {
       display: inline;
       flex-wrap: wrap;
     }
@@ -183,7 +183,8 @@
       cursor: pointer;
       display: block;
       text-align: center;
-      margin: 1rem;
+      margin: .5rem;
+      opacity: 60%;
     }
 
     #check-menu:checked~nav .menu {

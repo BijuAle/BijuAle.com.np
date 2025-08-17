@@ -2,14 +2,47 @@
 title: About
 ---
 
-![My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)]({{ '/assets/images/dhading.png' | url }})
-_My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)_
+<div class="about-image-container">
+  <img 
+    src="{{ '/assets/images/dhading.png' | url }}" 
+    alt="My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)"
+    class="about-image"
+  />
+  <span class="about-image-caption">
+    My volunteer colleagues Emma McEvoy, Romisha Thapa, and me in Dhading, Nepal (2018)
+  </span>
+</div>
+
+<style>
+.about-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.about-image-caption {
+  margin-top: 0.5em;
+  text-align: center;
+  display: block;
+  font-family: "Garamond R";
+  opacity:60%;
+  font-size: .8rem;
+}
+</style>
 
 ---
 
 ## About Me
 
-My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science. This is my website.
+My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science.
 
 Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnepal.com.np/biju-ale/), working in research, monitoring, learning, and evaluation of developmental projects in Nepal.
 
