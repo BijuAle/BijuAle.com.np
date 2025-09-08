@@ -181,3 +181,8 @@ wget --header="Accept: text/html" --user-agent="Mozilla/5.0 (Macintosh; Intel Ma
 Name-fix
 wget -c -i a.txt --restrict-file-names=windows --content-disposition
 ```
+# Delete all files of an extension
+
+```
+for /R %f in (*.flac) do echo del "%f" | cmd
+```

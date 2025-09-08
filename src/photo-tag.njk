@@ -369,6 +369,13 @@ permalink: "/photo-tag/{{ tag }}/"
 </style>
 
 <script>
+  const checkbox = document.getElementById("check-menu");
+  window.onload = function () {
+    if (checkbox.checked==true) {
+      checkbox.checked = false;
+    }
+  };
+
   class FastPhotoGallery {
     constructor() {
       this.currentIndex = 0;
@@ -585,9 +592,9 @@ permalink: "/photo-tag/{{ tag }}/"
       }, 200);
 
       // Scroll to top on mobile
-      if (window.innerWidth <= 600) {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+      // if (window.innerWidth <= 600) {
+      //   window.scrollTo({ top: 0, behavior: "smooth" });
+      // }
     }
 
     preloadAdjacentImages(index) {
