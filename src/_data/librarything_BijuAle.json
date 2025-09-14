@@ -91,7 +91,7 @@
     "code": ["811"],
     "wording": ["American literature in English",
     "American poetry in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3551.N464"
@@ -147,7 +147,7 @@
     "1900-1990",
     "German & related literatures",
     "German fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PT2621.A26 P713"
@@ -321,7 +321,7 @@
     "wording": ["By type",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR830.H4 E38"
@@ -523,7 +523,7 @@
   "fre"],
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -762,7 +762,7 @@
     "Music"]
   },
   "lcc": {
-    "code": "ML160 .G87"
+    "code": "ML160 .G872"
   },
   "subject": [["Music",
   "History and Criticism"],
@@ -1142,7 +1142,7 @@
   "ddc": {
     "code": ["809.9"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature displaying specific features, miscellaneous writings",
     "Literature, rhetoric & criticism"]
   },
@@ -2069,7 +2069,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -2122,7 +2122,7 @@
     "code": ["823"],
     "wording": ["English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6029.R8"
@@ -2376,7 +2376,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -5265,7 +5265,7 @@
     "wording": ["21st Century",
     "American essays in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PN4874.G398 A25"
@@ -6831,7 +6831,7 @@
 },
 "248549246": {
   "books_id": "248549246",
-  "title": "The first philosophers : the pre-Socratics and sophists",
+  "title": "The First Philosophers: The pre-Socratics and Sophists",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Waterfield, Robin",
@@ -6846,7 +6846,7 @@
   "019953909X"],
   "publication": "Oxford : Oxford University Press, 2009.",
   "date": "2009",
-  "summary": "The first philosophers : the pre-Socratics and sophists by Robin Waterfield (2009)",
+  "summary": "The First Philosophers: The pre-Socratics and Sophists by Robin Waterfield (2009)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["Greek (Ancient)"],
@@ -7530,7 +7530,7 @@
   "ddc": {
     "code": ["809"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": [],
@@ -8777,7 +8777,7 @@
 },
 "248707910": {
   "books_id": "248707910",
-  "title": "History of Greek philosophy",
+  "title": "History of Greek Philosophy",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Fuller, B. A. G.",
@@ -8789,7 +8789,7 @@
   "collections": ["Your library"],
   "publication": "New York : Greenwood Press, [1968, c1923-31]",
   "date": "1923",
-  "summary": "History of Greek philosophy by B. A. G. Fuller (1923)",
+  "summary": "History of Greek Philosophy by B. A. G. Fuller (1923)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -8922,7 +8922,7 @@
     "809.2"],
     "wording": ["Drama",
     "History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": [],
@@ -9091,7 +9091,7 @@
     "wording": ["2000\u2013",
     "Danish and Norwegian literatures",
     "German & related literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Norwegian Bokm\u00e5l fiction",
     "Norwegian literature",
     "Other Germanic literatures"]
@@ -9683,7 +9683,7 @@
 },
 "248728130": {
   "books_id": "248728130",
-  "title": "Phaedrus (Classic, 60s)",
+  "title": "Phaedrus",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Plato",
@@ -9704,7 +9704,7 @@
   "ean": ["0146001796"],
   "publication": "Penguin Books (1996), Edition: New edition, 96 pages",
   "date": "1996",
-  "summary": "Phaedrus (Classic, 60s) by Plato (1996)",
+  "summary": "Phaedrus by Plato (1996)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["Greek"],
@@ -9721,6 +9721,7 @@
   },
   "source": "amazon.com books",
   "workcode": "10705518",
+  "price": "$0.95 (USD)",
   "entrydate": "2023-09-11",
   "format": [{
     "code": "1.1.1",
@@ -10444,7 +10445,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.T5744 H"
@@ -10498,7 +10499,8 @@
     "41": ["fantasy"],
     "43": ["fantasy fiction"]
   },
-  "series": ["\u9b54\u6212",
+  "series": ["Isis Clear Type Classic",
+  "\u9b54\u6212",
   "Gospodar prstenova",
   "Il Signore degli Anelli",
   "Gy\u0171r\u0171k Ura",
@@ -10513,10 +10515,10 @@
   "Le seigneur des anneaux",
   "Der Herr der Ringe",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
-  "The Lord of the Rings",
-  "W\u0142adca Pier\u015bcieni",
   "Taru Sormusten Herrasta",
-  "In de Ban van de Ring"],
+  "W\u0142adca Pier\u015bcieni",
+  "In de Ban van de Ring",
+  "The Lord of the Rings"],
   "originaltitle": "The Hobbit, or, There and Back Again",
   "awards": ["1000 Books to Read Before You Die",
   "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
@@ -10542,6 +10544,7 @@
   "LitWorld Staff Picks",
   "Locus All-Time Best",
   "Mid-Continent Public Library Best Books",
+  "Na Duaisean Litreachais / The Gaelic Literature Awards",
   "New York Herald Tribune's Children's Spring Book Festival Award",
   "New York Public Library's Books of the Century",
   "New York Times bestseller",
@@ -10692,7 +10695,7 @@
     "code": ["824"],
     "wording": ["English & Old English literatures",
     "English essays",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -10744,7 +10747,7 @@
     "wording": ["1625-1702",
     "English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR3552.B88"
@@ -10902,7 +10905,7 @@
     "Dickens, Charles 1812\u201370",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4560 .A1"
@@ -11401,7 +11404,7 @@
     "821"],
     "wording": ["English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR5852"
@@ -11563,7 +11566,7 @@
     "wording": ["American literature in English",
     "American literature in English",
     "History and criticism of American literature",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "British Library",
@@ -11606,7 +11609,7 @@
     "English poetry",
     "English poetry {by more than one author}",
     "History, description, critical appraisal of English poetry not limited by time period or kind of form",
-    "Literature",
+    "Literature & rhetoric",
     "Modified standard subdivisions"]
   },
   "lcc": {
@@ -11698,7 +11701,7 @@
     "wording": ["English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "[History, description, critical appraisal of poetry not limited by time period or kind of form now in 821.009]"]
   },
   "lcc": {
@@ -11752,7 +11755,7 @@
     "code": ["824"],
     "wording": ["English & Old English literatures",
     "English essays",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4022"
@@ -11813,7 +11816,7 @@
     "English poetry",
     "English poetry {by more than one author}",
     "History, description, critical appraisal of English poetry not limited by time period or kind of form",
-    "Literature",
+    "Literature & rhetoric",
     "Modified standard subdivisions"]
   },
   "lcc": {
@@ -12285,7 +12288,7 @@
   "ddc": {
     "code": ["808.8"],
     "wording": ["Collections of literary texts from more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -12644,7 +12647,7 @@
 },
 "248862003": {
   "books_id": "248862003",
-  "title": "Ethics: A contemporary introduction",
+  "title": "Ethics: A Contemporary Introduction",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Gensler, Harry J.",
@@ -12659,7 +12662,7 @@
   "0415156254"],
   "publication": "London ; New York : Routledge, 1998.",
   "date": "1998",
-  "summary": "Ethics: A contemporary introduction by Harry J. Gensler (1998)",
+  "summary": "Ethics: A Contemporary Introduction by Harry J. Gensler (1998)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -12726,7 +12729,7 @@
     "808.0427"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -12758,7 +12761,7 @@
 },
 "248862005": {
   "books_id": "248862005",
-  "title": "Panentheism, the other God of the Philosophers: from Plato to the present",
+  "title": "Panentheism, The other God of the Philosophers: from Plato to the present",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Cooper, John W.",
@@ -12773,7 +12776,7 @@
   "0801027241"],
   "publication": "Grand Rapids, Mich. : Baker Academic, c2006.",
   "date": "2006",
-  "summary": "Panentheism, the other God of the Philosophers: from Plato to the present by John W. Cooper (2006)",
+  "summary": "Panentheism, The other God of the Philosophers: from Plato to the present by John W. Cooper (2006)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13092,7 +13095,7 @@
 },
 "248862011": {
   "books_id": "248862011",
-  "title": "The Passion of the Western Mind: Understanding the Ideas that have Shaped Our World View (Hardcover)",
+  "title": "The Passion of the Western Mind: Understanding the Ideas that have Shaped Our World View",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Tarnas, Richard",
@@ -13107,7 +13110,7 @@
   "0517577909"],
   "publication": "New York : Harmony Books, c1991.",
   "date": "1991",
-  "summary": "The Passion of the Western Mind: Understanding the Ideas that have Shaped Our World View (Hardcover) by Richard Tarnas (1991)",
+  "summary": "The Passion of the Western Mind: Understanding the Ideas that have Shaped Our World View by Richard Tarnas (1991)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -13855,7 +13858,7 @@
   "ddc": {
     "code": ["809"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": {
@@ -14394,7 +14397,7 @@
     "code": ["880"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek literature and literatures of related Hellenic languages",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PA3621.L48 1999"
@@ -14420,7 +14423,7 @@
 },
 "248869393": {
   "books_id": "248869393",
-  "title": "An introduction to philosophical analysis",
+  "title": "An Introduction to Philosophical Analysis",
   "sortcharacter": "4",
   "public": "true",
   "primaryauthor": "Hospers, John",
@@ -14435,7 +14438,7 @@
   "0415157935"],
   "publication": "London : Routledge, 1997.",
   "date": "1997",
-  "summary": "An introduction to philosophical analysis by John Hospers (1997)",
+  "summary": "An Introduction to Philosophical Analysis by John Hospers (1997)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -15793,7 +15796,7 @@
 },
 "248870251": {
   "books_id": "248870251",
-  "title": "Philosophies of education: An introduction",
+  "title": "Philosophies of Education: An introduction",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Wingo, Glenn Max",
@@ -15814,7 +15817,7 @@
   "ean": ["0669844004"],
   "publication": "Heath (1974), 367 pages",
   "date": "1974",
-  "summary": "Philosophies of education: An introduction by Glenn Max Wingo (1974)",
+  "summary": "Philosophies of Education: An introduction by Glenn Max Wingo (1974)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -16153,7 +16156,7 @@
     "20th Century",
     "American literature in English",
     "American miscellaneous writings in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3555.I78 S75"
@@ -16984,7 +16987,7 @@
   "ddc": {
     "code": ["801.95"],
     "wording": ["Literary theory and criticism",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Nature and character",
     "Philosophy and theory"]
@@ -17454,11 +17457,11 @@
     "The Bible"]
   },
   "lcc": {
-    "code": "BS191.A1 .N37"
+    "code": "BS191.A1"
   },
-  "awards": ["ALA Outstanding Books for the College Bound",
-  "New York Public Library's Books of the Century",
-  "Newsweek's Top 100 Books: The Meta-List"],
+  "awards": ["New York Public Library's Books of the Century",
+  "Newsweek's Top 100 Books: The Meta-List",
+  "Outstanding Books for the College Bound and Lifelong Learners"],
   "genre": ["Nonfiction",
   "History",
   "Religion & Spirituality"],
@@ -17743,7 +17746,7 @@
     "wording": ["English & Old English literatures",
     "English miscellaneous writings",
     "English miscellaneous writings 1625-1702",
-    "Literature",
+    "Literature & rhetoric",
     "Works without identifiable literary form"]
   },
   "lcc": {
@@ -18504,7 +18507,7 @@
     "wording": ["English & Old English literatures",
     "English miscellaneous writings",
     "English miscellaneous writings 1625-1702",
-    "Literature",
+    "Literature & rhetoric",
     "Works without identifiable literary form"]
   },
   "lcc": {
@@ -20837,8 +20840,8 @@
   "workcode": "10982975",
   "entrydate": "2024-12-10",
   "format": [{
-    "code": "1.1.2",
-    "text": "Hardcover"
+    "code": "1.1.1",
+    "text": "Paperback"
   }],
   "copies": "1",
   "physical_description": "251 p.; 8.5 inches",
@@ -23973,7 +23976,7 @@
 },
 "276504597": {
   "books_id": "276504597",
-  "title": "The search for salvation (Issues in contemporary theology)",
+  "title": "The Search For Salvation (Issues In Contemporary Theology)",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Wells, David F",
@@ -23994,7 +23997,7 @@
   "ean": ["0851114016"],
   "publication": "Inter-Varsity Press (1978), 176 pages",
   "date": "1978",
-  "summary": "The search for salvation (Issues in contemporary theology) by David F Wells (1978)",
+  "summary": "The Search For Salvation (Issues In Contemporary Theology) by David F Wells (1978)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -24616,7 +24619,7 @@
 },
 "276505086": {
   "books_id": "276505086",
-  "title": "A Short History of Western Civilization.",
+  "title": "A Short History of Western Civilization",
   "sortcharacter": "3",
   "public": "true",
   "primaryauthor": "Richard E. John B. & Sullivan Harrison",
@@ -24637,7 +24640,7 @@
   "ean": ["9110015833"],
   "publication": "Alfred A. Knopf (1960), Edition: First Edition",
   "date": "1960",
-  "summary": "A Short History of Western Civilization. by Richard E. John B. & Sullivan Harrison (1960)",
+  "summary": "A Short History of Western Civilization by Richard E. John B. & Sullivan Harrison (1960)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -25412,7 +25415,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": {
@@ -25942,7 +25945,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3576.A19 S46"
@@ -26304,15 +26307,15 @@
 },
 "276506136": {
   "books_id": "276506136",
-  "title": "Thinking, fast and slow: Daniel Kahneman",
+  "title": "Thinking, Fast and Slow",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Kahneman, Daniel",
-  "primaryauthorrole": "Autor",
+  "primaryauthorrole": "Author",
   "authors": [{
     "lf": "Kahneman, Daniel",
     "fl": "Daniel Kahneman",
-    "role": "Autor"
+    "role": "Author"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -26323,7 +26326,7 @@
   "ean": ["0141033576"],
   "publication": "Penguin Books (2011), Edition: 01, 624 pages",
   "date": "2011",
-  "summary": "Thinking, fast and slow: Daniel Kahneman by Daniel Kahneman (2011)",
+  "summary": "Thinking, Fast and Slow by Daniel Kahneman (2011)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -27030,7 +27033,7 @@
     "Early Italian; Age of Dante \u20131375",
     "Italian poetry",
     "Italian, Romanian & related literatures",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ4315 .C5"
@@ -27055,6 +27058,7 @@
     "11": ["Italian poetry",
     "Translations into English"]
   },
+  "series": ["The Divine Comedy"],
   "originaltitle": "La Divina Commedia",
   "awards": ["100 Books That Shaped World History",
   "100 best books according to Dystopia",
@@ -27540,7 +27544,7 @@
     "Fantasy fiction",
     "Genre fiction",
     "High fantasy",
-    "Literature",
+    "Literature & rhetoric",
     "Speculative fiction"]
   },
   "lcc": {
@@ -27616,7 +27620,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6023.E926 P47"
@@ -27693,7 +27697,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -28706,7 +28710,7 @@
     "code": ["814.36"],
     "wording": ["American essays in English",
     "American literature in English",
-    "Literature",
+    "Literature & rhetoric",
     "Middle 19th Century (1830-1861)"]
   },
   "lcc": {
@@ -28817,7 +28821,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6029.R8 A63"
@@ -28870,7 +28874,7 @@
   "ddc": {
     "code": ["809.93"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature displaying other aspects",
     "Literature displaying specific features, miscellaneous writings",
     "Literature, rhetoric & criticism"]
@@ -29067,7 +29071,7 @@
 },
 "276509139": {
   "books_id": "276509139",
-  "title": "The Screwtape Letters (The C.S. Lewis Signature Classics)",
+  "title": "The Screwtape Letters",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Lewis, C. S.",
@@ -29088,7 +29092,7 @@
   "ean": ["0060652934"],
   "publication": "HarperOne (2015), Edition: Reprint, 224 pages",
   "date": "2001",
-  "summary": "The Screwtape Letters (The C.S. Lewis Signature Classics) by C. S. Lewis (2001)",
+  "summary": "The Screwtape Letters by C. S. Lewis (2001)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -29289,7 +29293,7 @@
     "code": ["891.733"],
     "wording": ["1800\u20131917",
     "East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -29346,10 +29350,10 @@
     "wording": ["1800-1837",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
-    "code": "PR4791 .P7"
+    "code": "PR4791.P7"
   },
   "subject": {
     "0": ["Confession stories"],
@@ -29599,7 +29603,7 @@
     "code": ["883.01"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek epic poetry and fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Pseudo-Callisthenes"]
   },
   "lcc": {
@@ -29709,6 +29713,7 @@
   "PEN Award for Poetry in Translation",
   "Philip Ward's Lifetime Reading Plan",
   "Prix Jules Janin",
+  "Pr\u00eamio Jabuti",
   "Six Professors from \"Esteemed\" Universities Favorite Books",
   "The 100 Most Influential Books Ever Written: The History of Thought from Ancient Times to Today",
   "The 100 books every school-leaver ought to have read",
@@ -29774,7 +29779,7 @@
     "code": ["883.01"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek epic poetry and fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Pseudo-Callisthenes"]
   },
   "lcc": {
@@ -29892,7 +29897,7 @@
 },
 "276509490": {
   "books_id": "276509490",
-  "title": "Understanding philosophy;: A popular history of ideas",
+  "title": "Understanding Philosophy: A Popular History of Ideas",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Feibleman, James Kern",
@@ -29913,7 +29918,7 @@
   "ean": ["0818013176"],
   "publication": "Horizon Press (1973), 240 pages",
   "date": "1973",
-  "summary": "Understanding philosophy;: A popular history of ideas by James Kern Feibleman (1973)",
+  "summary": "Understanding Philosophy: A Popular History of Ideas by James Kern Feibleman (1973)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -30020,7 +30025,7 @@
     "code": ["814"],
     "wording": ["American essays in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -30057,7 +30062,7 @@
     "code": ["822"],
     "wording": ["English & Old English literatures",
     "English drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -30763,7 +30768,7 @@
     "English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "Lyric and balladic poetry"]
   },
   "lcc": {
@@ -30881,7 +30886,7 @@
     "code": ["814.3"],
     "wording": ["American essays in English",
     "American literature in English",
-    "Literature",
+    "Literature & rhetoric",
     "Middle 19th Century (1830-1861)"]
   },
   "lcc": {
@@ -31287,7 +31292,7 @@
   "ddc": {
     "code": ["809"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": {
@@ -32559,13 +32564,13 @@
     "Case studies"]
   },
   "awards": ["10 non-fiction \u043a\u043d\u0438\u0433, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0436\u0443\u0440\u043d\u0430\u043b\u0443 Slon",
-  "ALA Outstanding Books for the College Bound",
   "Amazon.com Best Books",
   "Commonwealth Club of California Book Awards",
   "Financial Times \u201cReading List to Prepare for a Post-Pandemic Age\u201d Selection",
   "Most Significant Futures Works",
   "New York Times bestseller",
   "Notable Books List",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Prix du livre sur l'environnement",
   "Recommendations of Around the World Magazine",
   "Royal Society Trivedi Science Book Prize",
@@ -32959,7 +32964,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["800"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature (Belles-lettres) and rhetoric",
     "Literature, rhetoric & criticism"]
   },
@@ -33167,7 +33172,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3572.O5 T56"
@@ -33249,7 +33254,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3554.I3 S28"
@@ -33337,7 +33342,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3558.E476"
@@ -33377,8 +33382,8 @@
     "24": ["historical fiction"],
     "25": ["satire"]
   },
-  "series": ["\u7b2c22\u689d\u8ecd\u898f",
-  "Catch-22"],
+  "series": ["Catch-22",
+  "\u7b2c22\u689d\u8ecd\u898f"],
   "awards": ["100 Best Novels in English Since 1900",
   "100 Books That Shaped World History",
   "100 Books to Read in a Lifetime",
@@ -33393,7 +33398,6 @@
   "40 Works of Fiction Are Must-Reads",
   "40 best books to read before you die",
   "500 Must Read Books",
-  "ALA Outstanding Books for the College Bound",
   "Anthony Burgess: 99 Novels",
   "Audie Award",
   "BBC's Big Read",
@@ -33413,6 +33417,7 @@
   "National Book Award",
   "New York Public Library's Books of the Century",
   "Newsweek's Top 100 Books: The Meta-List",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Radcliffe Publishing Course Top 100 Novels of the 20th Century",
   "The 100 Favorite Novels of Librarians",
   "The 50 Most Essential Works Of Jewish Fiction Of The Last 100 Years",
@@ -33581,7 +33586,6 @@
   "501 Must-Read Books (Emma Beare, 2006)",
   "52 best autobiographies & biographies of all time",
   "55 Nonfiction Books to Read in a Lifetime",
-  "ALA Outstanding Books for the College Bound",
   "ALA Popular Paperbacks for Young Adults",
   "ALA Top 100 Most Frequently Challenged Books: 2010-2019",
   "Best Fiction for Young Adults",
@@ -33603,12 +33607,14 @@
   "New York Public Library's Books of the Century",
   "New York Times bestseller",
   "Notable Books List",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "The Great 100 Jewish Books from the Yiddish Books Center Judges",
   "The Guardian 100 Greatest Non-Fiction",
   "The Most Iconic Books Set in 150 Countries Around the World",
   "Unsere Besten \u2013 Die Lieblingsb\u00fccher der Deutschen",
   "Waterstones Books of the Century",
-  "Western World's Greatest Books - Project Gutenberg"],
+  "Western World's Greatest Books - Project Gutenberg",
+  "\u00a1Vamos a leer! Libros recomendados para ni\u00f1as y ni\u00f1os"],
   "genre": ["Nonfiction",
   "Biography & Memoir"],
   "genre_id": ["20275895",
@@ -33658,7 +33664,7 @@
     "1945-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6052.O39 M57"
@@ -33725,7 +33731,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3561.E667 O5"
@@ -34147,8 +34153,8 @@
   },
   "subject": [["Nepal",
   "Guidebooks"]],
-  "series": ["APA Guides",
-  "Insight Guides"],
+  "series": ["Insight Guides",
+  "APA Guides"],
   "genre": ["Nonfiction",
   "General Nonfiction",
   "Travel"],
@@ -34211,9 +34217,11 @@
     "Political science",
     "Social sciences"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "DS493 .N37"
+  },
   "source": "amazon.com books",
-  "workcode": "33288360",
+  "workcode": "2987111",
   "entrydate": "2024-12-12",
   "format": [{
     "code": "1.1.1",
@@ -34307,7 +34315,7 @@
   "ddc": {
     "code": ["891.492"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature of other Indic languages",
     "Modern Indic languages",
     "Other literatures"]
@@ -34664,7 +34672,7 @@
     "English & Old English literatures",
     "English fiction",
     "Genre fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -34864,6 +34872,7 @@
   "Tintim",
   "Tintin",
   "The Adventures of Tintin",
+  "Le avventure di Tintin",
   "Les aventures de Tintin {Herg\u00e9}",
   "Les aventures de Tintin",
   "Tintin [Dalen] {Herg\u00e9}",
@@ -34872,15 +34881,15 @@
   "Tintins \u00e4ventyr",
   "Aventuras de Tint\u00edn {Herg\u00e9}",
   "Aventuras de Tint\u00edn",
-  "Tintins oplevelser {Herg\u00e9}",
-  "Tintins oplevelser",
   "Tim und Struppi {Herg\u00e9}",
   "Tim und Struppi",
   "Tintin seikkailut {Herg\u00e9}",
   "Tintin seikkailut",
   "De avonturen van Kuifje {Herg\u00e9}",
   "De avonturen van Kuifje",
-  "De Kuifje archieven"],
+  "De Kuifje archieven",
+  "Tintins oplevelser {Herg\u00e9}",
+  "Tintins oplevelser"],
   "awards": ["CBC Graphic Novels for Young Readers"],
   "genre": ["Comics"],
   "genre_id": ["4778"],
@@ -35558,7 +35567,8 @@
   "lcc": {
     "code": "DL407 .E94"
   },
-  "series": ["Capitool reisgidsen",
+  "series": ["Guia American Express",
+  "Capitool reisgidsen",
   "Guides Voir, Hachette",
   "Hachette, Guide Voir",
   "Vis \u00e0 vis",
@@ -35566,18 +35576,17 @@
   "Vis-\u00e0-vis-Reisef\u00fchrer",
   "Club-Reisef\u00fchrer",
   "Gu\u00edas Visuales",
-  "DK kelioni\u0173 vadovai",
+  "DK Ce\u013cvedi",
   "Politikens visuelle guide",
+  "Gu\u00eda Visuales",
+  "Silmaringi reisijuht",
+  "Le guide [Mondadori]",
+  "F\u00f6rsta klass reseguider",
+  "DK kelioni\u0173 vadovai",
   "DK Eyewitness Travel Guides",
   "DK Travel Guides",
   "Dorling Kindersley Travel Guides",
-  "Eyewitness Travel",
-  "DK Ce\u013cvedi",
-  "Gu\u00eda Visuales",
-  "Guia American Express",
-  "F\u00f6rsta klass reseguider",
-  "Silmaringi reisijuht",
-  "Le guide [Mondadori]"],
+  "Eyewitness Travel"],
   "originaltitle": "DK Eyewitness Travel Guide : Norway",
   "genre": ["Nonfiction",
   "General Nonfiction",
@@ -37735,7 +37744,7 @@
 },
 "276587178": {
   "books_id": "276587178",
-  "title": "A short history of our own times (1919-1950)",
+  "title": "A Short History of Our Own Times (1919-1950)",
   "sortcharacter": "3",
   "public": "true",
   "primaryauthor": "Wright, Esmond",
@@ -37750,7 +37759,7 @@
   "asin": "B0000CHYKP",
   "publication": "Thrift Books (1951), 126 pages",
   "date": "1951",
-  "summary": "A short history of our own times (1919-1950) by Esmond Wright (1951)",
+  "summary": "A Short History of Our Own Times (1919-1950) by Esmond Wright (1951)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -39272,9 +39281,9 @@
     "8": ["Totalitarianism. [from old catalog]"],
     "9": ["imperialism"]
   },
-  "series": ["Les origines du totalitarisme",
-  "Elemente und Urspr\u00fcnge totaler Herrschaft",
-  "The Origins of Totalitarianism"],
+  "series": ["The Origins of Totalitarianism",
+  "Les origines du totalitarisme",
+  "Elemente und Urspr\u00fcnge totaler Herrschaft"],
   "originaltitle": "Elemente und Urspr&uuml;nge totaler Herrschaft",
   "awards": ["Best holiday reads 2017, picked by writers",
   "Blackwell's 1879-2019: 140 Years 140 Books",
@@ -39842,7 +39851,7 @@
 },
 "276642734": {
   "books_id": "276642734",
-  "title": "The second sex",
+  "title": "The Second Sex",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Beauvoir, Simone de",
@@ -39863,7 +39872,7 @@
   "ean": ["0140034633"],
   "publication": "Penguin. (1972), Edition: Later Printing Used, 768 pages",
   "date": "1972",
-  "summary": "The second sex by Simone de Beauvoir (1972)",
+  "summary": "The Second Sex by Simone de Beauvoir (1972)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["French"],
@@ -42574,7 +42583,7 @@
   "ddc": {
     "code": ["891.73"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -43035,7 +43044,7 @@
     "wording": ["1800-1837",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR5397.F7"
@@ -43195,7 +43204,7 @@
     "code": ["823"],
     "wording": ["English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6029.R8"
@@ -43401,7 +43410,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6015.U9 B7"
@@ -43461,7 +43470,7 @@
     "English & Old English literatures",
     "English fiction",
     "Genre fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Science fiction",
     "Speculative fiction"]
   },
@@ -43511,7 +43520,6 @@
   "501 Must-Read Books (Emma Beare, 2006)",
   "A Century of Reading by LitHub",
   "ALA 100 Most Frequently Challenged Books of 1990-2000",
-  "ALA Outstanding Books for the College Bound",
   "ALA Top 10 Most Challenged Books",
   "ALA Top 100 Most Frequently Challenged Books: 1990-1999",
   "ALA Top 100 Most Frequently Challenged Books: 2000-2009",
@@ -43548,10 +43556,12 @@
   "New York Public Library's Books of the Century",
   "Newsweek's Top 100 Books: The Meta-List",
   "Os 100 melhores romances do s\u00e9culo XX segundo a Folha de S\u00e3o Paulo",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Prometheus Award",
   "Radcliffe Publishing Course Top 100 Novels of the 20th Century",
   "Reading Olympics",
   "The 16 Best Science Fiction Books of All Time",
+  "The 59 Top Biotech Books of All Time",
   "The Essential Man's Library: 100 Must-Read Books",
   "The Guardian 1000 Novels Everyone Must Read",
   "The Modern Library's 100 Best Novels: The Board's List",
@@ -43711,7 +43721,7 @@
     "wording": ["1715-1789",
     "French & related literatures",
     "French fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ2082.C3 E5"
@@ -43813,13 +43823,62 @@
     "wording": ["1715-1789",
     "French & related literatures",
     "French fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
-    "code": "PQ2083.A3"
+    "code": "PQ2082.C3 E5"
   },
+  "subject": [["Booksellers' labels (Provenance)"],
+  ["France",
+  "Politics and government",
+  "Satire",
+  "18th century"],
+  ["French fiction",
+  "18th century",
+  "Translations into English"],
+  ["Great Britain",
+  "Civilization",
+  "18th century"],
+  ["Imaginary letters"],
+  ["Language file",
+  "French"],
+  ["Philosophy, Modern"],
+  ["Satire, French",
+  "Early works to 1800"],
+  ["Voltaire, 1694-1778. Candide"]],
+  "originaltitle": "Candide, ou l'Optimisme",
+  "awards": ["1000 Books to Read Before You Die",
+  "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
+  "1001 Books You Must Read Before You Die",
+  "1001 boeken die je gelezen moet hebben!",
+  "1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
+  "1898 C.K. Shorter List of Best 100 Novels",
+  "501 Must-Read Books (Emma Beare, 2006)",
+  "BookDepository's 100 Best Books Ever",
+  "Daniel S. Burt's Novel 100",
+  "Easton Press: The 100 Greatest Books Ever Written",
+  "From Zero to Well-Read in 100 Books",
+  "Greatest Books algorithm",
+  "Harenberg Buch der 1000 B\u00fccher",
+  "Las joyas del milenio",
+  "Les 100 livres pr\u00e9f\u00e9r\u00e9s des Fran\u00e7ais",
+  "Philip Ward's Lifetime Reading Plan",
+  "Prix de La Nuit du Livre",
+  "Read This Next: 500 of the Best Books You'll Ever Read",
+  "The 100 Most Influential Books Ever Written: The History of Thought from Ancient Times to Today",
+  "The Guardian 1000 Novels Everyone Must Read",
+  "The Guardian Essential Library",
+  "The New Lifetime Reading Plan With Going Further",
+  "The Top Ten: Writers Pick Their Favorite Books",
+  "V\u00e4rldsbiblioteket",
+  "Western World's Greatest Books - Project Gutenberg",
+  "ZEIT-Bibliothek der 100 B\u00fccher"],
+  "genre": ["Fiction",
+  "General Fiction"],
+  "genre_id": ["17160326",
+  "2"],
   "source": "amazon.com books",
-  "workcode": "27956966",
+  "workcode": "2184",
   "entrydate": "2024-12-14",
   "format": [{
     "code": "1.1.1",
@@ -43869,7 +43928,7 @@
     "1945-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ4.M974 PR6063 .U7"
@@ -43941,7 +44000,7 @@
     "code": ["817"],
     "wording": ["American humor and satire in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PN6231.W64 A33"
@@ -44013,7 +44072,7 @@
     "1945-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6013.O35 L634"
@@ -44074,7 +44133,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6029.R8 .O794"
@@ -44128,7 +44187,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR99 .L35"
@@ -44179,7 +44238,7 @@
     "wording": ["1837-1899",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6037.T617"
@@ -44269,6 +44328,7 @@
   "New York Public Library's Books of the Century",
   "Paste Magazine's 50 Best Horror Novels of All-Time",
   "Patrick Ness's top 10 'unsuitable' books for teenagers",
+  "Pr\u00eamio Liter\u00e1rio Biblioteca Nacional",
   "Quick Picks for Reluctant Young Adult Readers",
   "RUSA CODES Listen List",
   "Rivertonbiblioteket",
@@ -44345,7 +44405,7 @@
     "1900-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3511.I9"
@@ -44497,7 +44557,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": {
@@ -44546,7 +44606,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": {
@@ -44605,7 +44665,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": [],
@@ -44651,7 +44711,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": {
@@ -44695,7 +44755,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR2976.A68"
@@ -44735,7 +44795,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR2983"
@@ -44782,7 +44842,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": {
@@ -44840,7 +44900,7 @@
     "English & Old English literatures",
     "English fiction",
     "Genre fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Science fiction",
     "Speculative fiction"]
   },
@@ -44890,7 +44950,6 @@
   "501 Must-Read Books (Emma Beare, 2006)",
   "A Century of Reading by LitHub",
   "ALA 100 Most Frequently Challenged Books of 1990-2000",
-  "ALA Outstanding Books for the College Bound",
   "ALA Top 10 Most Challenged Books",
   "ALA Top 100 Most Frequently Challenged Books: 1990-1999",
   "ALA Top 100 Most Frequently Challenged Books: 2000-2009",
@@ -44927,10 +44986,12 @@
   "New York Public Library's Books of the Century",
   "Newsweek's Top 100 Books: The Meta-List",
   "Os 100 melhores romances do s\u00e9culo XX segundo a Folha de S\u00e3o Paulo",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Prometheus Award",
   "Radcliffe Publishing Course Top 100 Novels of the 20th Century",
   "Reading Olympics",
   "The 16 Best Science Fiction Books of All Time",
+  "The 59 Top Biotech Books of All Time",
   "The Essential Man's Library: 100 Must-Read Books",
   "The Guardian 1000 Novels Everyone Must Read",
   "The Modern Library's 100 Best Novels: The Board's List",
@@ -44999,7 +45060,7 @@
     "code": ["813.3"],
     "wording": ["American fiction in English",
     "American literature in English",
-    "Literature",
+    "Literature & rhetoric",
     "Middle 19th Century 1830-1861"]
   },
   "lcc": {
@@ -45191,7 +45252,7 @@
     "20th Century",
     "French & related literatures",
     "French fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ2637.A82"
@@ -45238,7 +45299,7 @@
     "code": ["882"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek dramatic poetry and drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "DF215.R67"
@@ -45286,7 +45347,7 @@
     "1900-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.W58277 T"
@@ -45361,7 +45422,7 @@
     "code": ["891.733"],
     "wording": ["1800\u20131917",
     "East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -45414,7 +45475,7 @@
     "code": ["891.733"],
     "wording": ["1800\u20131917",
     "East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -45471,7 +45532,7 @@
     "20th Century",
     "French & related literatures",
     "French fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ2607.E834 D213"
@@ -45544,7 +45605,7 @@
     "wording": ["1800-1837",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4034"
@@ -45676,7 +45737,7 @@
     "1900-1999 20th Century",
     "English & Old English literatures",
     "English drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6037.H513 J6"
@@ -45737,7 +45798,7 @@
     "wording": ["1837-1899",
     "English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR5489 .C5"
@@ -45827,7 +45888,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6013.O35"
@@ -45961,7 +46022,7 @@
     "code": ["821"],
     "wording": ["English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR1175.W563"
@@ -46017,7 +46078,7 @@
     "20th Century",
     "American literature in English",
     "American poetry in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3511.R94 A6"
@@ -46062,7 +46123,7 @@
     "wording": ["English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "[Collections of English poetry not limited by time period or kind of form now in 821.008]"]
   },
   "lcc": [],
@@ -46102,7 +46163,7 @@
     "wording": ["English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "[Collections of English poetry not limited by time period or kind of form now in 821.008]"]
   },
   "lcc": {
@@ -46162,7 +46223,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3562.E353"
@@ -46258,7 +46319,6 @@
   "A Century of Reading by LitHub",
   "ABA Journal 25 Greatest Law Novels Ever",
   "ALA 100 Most Frequently Challenged Books of 1990-2000",
-  "ALA Outstanding Books for the College Bound",
   "ALA Top 10 Most Challenged Books",
   "ALA Top 100 Most Frequently Challenged Books: 1990-1999",
   "ALA Top 100 Most Frequently Challenged Books: 2000-2009",
@@ -46296,6 +46356,7 @@
   "New York Times bestseller",
   "Newsweek's Top 100 Books: The Meta-List",
   "Notable Books List",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Oxford American Best Southern Books of All Time",
   "Oxford American Most Underrated Southern Books",
   "Publishers Weekly Bestseller",
@@ -46382,7 +46443,7 @@
     "1900-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3503.U198 G6"
@@ -46479,7 +46540,7 @@
   "ddc": {
     "code": ["891.73"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -46523,7 +46584,7 @@
     "wording": ["1715-1789",
     "French & related literatures",
     "French fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ2021.M3"
@@ -46590,7 +46651,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3562.E353"
@@ -46686,7 +46747,6 @@
   "A Century of Reading by LitHub",
   "ABA Journal 25 Greatest Law Novels Ever",
   "ALA 100 Most Frequently Challenged Books of 1990-2000",
-  "ALA Outstanding Books for the College Bound",
   "ALA Top 10 Most Challenged Books",
   "ALA Top 100 Most Frequently Challenged Books: 1990-1999",
   "ALA Top 100 Most Frequently Challenged Books: 2000-2009",
@@ -46724,6 +46784,7 @@
   "New York Times bestseller",
   "Newsweek's Top 100 Books: The Meta-List",
   "Notable Books List",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Oxford American Best Southern Books of All Time",
   "Oxford American Most Underrated Southern Books",
   "Publishers Weekly Bestseller",
@@ -46810,7 +46871,7 @@
     "wording": ["1837-1899",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR5819 .A1"
@@ -46867,7 +46928,7 @@
     "1945-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6051.D3352"
@@ -46889,20 +46950,20 @@
     "15": ["humorous fiction"],
     "17": ["science fiction"]
   },
-  "series": ["The Hitchhiker's Guide to the Galaxy",
-  "Hitch-Hikers Guide to the Galaxy",
-  "Autostopem przez Galaktyk\u0119",
-  "H2G2",
-  "Per Anhalter durch die Galaxis",
-  "Het transgalactisch liftershandboek",
-  "Liftartrilogin",
-  "Gu\u00eda del autoestopista gal\u00e1ctico",
-  "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
-  "Galaxis utikalauz",
-  "O Guia do Mochileiro das Gal\u00e1xias",
-  "Guida galattica per gli autostoppisti",
+  "series": ["Stopa\u0159\u016fv pr\u016fvodce po Galaxii",
   "Galakse-blafferen",
-  "Stopa\u0159\u016fv pr\u016fvodce po Galaxii"],
+  "Guida galattica per gli autostoppisti",
+  "O Guia do Mochileiro das Gal\u00e1xias",
+  "Gu\u00eda del autoestopista gal\u00e1ctico",
+  "Liftartrilogin",
+  "Galaxis utikalauz",
+  "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
+  "The Hitchhiker's Guide to the Galaxy",
+  "Hitch-Hikers Guide to the Galaxy",
+  "H2G2",
+  "Autostopem przez Galaktyk\u0119",
+  "Per Anhalter durch die Galaxis",
+  "Het transgalactisch liftershandboek"],
   "originaltitle": "The Restaurant at the End of the Universe",
   "awards": ["Top 10 fictional towns in children's books"],
   "genre": ["Fiction",
@@ -46957,7 +47018,7 @@
     "wording": ["Early Italian; Age of Dante \u20131375",
     "Italian poetry",
     "Italian, Romanian & related literatures",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ4315 .E76"
@@ -46989,6 +47050,7 @@
   "Los Angeles Times Book Prize",
   "Notable Books List",
   "Oxford-Weidenfeld Translation Prize",
+  "Pr\u00eamio Liter\u00e1rio Biblioteca Nacional",
   "The 100 books every school-leaver ought to have read",
   "Top 10 gleeful adulterers in literature",
   "Top 111 livres de SensCritique"],
@@ -47041,7 +47103,7 @@
     "code": ["883.01"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek epic poetry and fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Pseudo-Callisthenes"]
   },
   "lcc": {
@@ -47088,7 +47150,6 @@
   "1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
   "20 Books to Read in a Lifetime",
   "500 Must Read Books",
-  "ALA Outstanding Books for the College Bound",
   "Audie Award",
   "Best Books Listed for High School Students",
   "Best Foreign Work of Fiction Chosen by Francophone Writers",
@@ -47099,6 +47160,7 @@
   "Harvard Book Store Top 100",
   "Newsweek's Top 100 Books: The Meta-List",
   "Norwegian Book Clubs' top 100 books of all time",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Philip Ward's Lifetime Reading Plan",
   "Schecks B\u00fccher",
   "Six Professors from \"Esteemed\" Universities Favorite Books",
@@ -47168,7 +47230,7 @@
     "1945-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3537.A426"
@@ -47241,7 +47303,7 @@
     "code": ["891.733"],
     "wording": ["1800\u20131917",
     "East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -47410,7 +47472,7 @@
     "wording": ["American fiction in English",
     "American literature in English",
     "Later 19th Century 1861-1900",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS1305 .A1"
@@ -47596,7 +47658,7 @@
     "wording": ["American fiction in English",
     "American literature in English",
     "Later 19th Century 1861-1900",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS1306"
@@ -47761,7 +47823,7 @@
   "ddc": {
     "code": ["891.451"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Modern Indic languages",
     "Other literatures",
     "Poetry",
@@ -47809,7 +47871,7 @@
   "originallanguage_codeA": ["ben"],
   "ddc": {
     "code": ["895"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literatures of East and Southeast Asia",
     "Other literatures"]
   },
@@ -47855,7 +47917,7 @@
     "code": ["824.008"],
     "wording": ["English & Old English literatures",
     "English essays",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR1362"
@@ -47916,7 +47978,7 @@
     "wording": ["English & Old English literatures",
     "English miscellaneous writings",
     "English miscellaneous writings 1702-1745",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR3722"
@@ -47993,7 +48055,7 @@
     "Fantasy fiction",
     "Genre fiction",
     "High fantasy",
-    "Literature",
+    "Literature & rhetoric",
     "Speculative fiction"]
   },
   "lcc": {
@@ -48032,24 +48094,24 @@
     "34": ["fantasy fiction"],
     "35": ["fiction in English"]
   },
-  "series": ["Der Herr der Ringe",
+  "series": ["Il Signore degli Anelli",
+  "Gy\u0171r\u0171k Ura",
+  "El Se\u00f1or de los Anillos",
+  "Gospodar prstenova",
+  "Gospodar prstenova",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
   "\u9b54\u6212",
-  "Le seigneur des anneaux",
   "Ringenes herre",
-  "Sagan om Ringen",
-  "O Senhor dos An\u00e9is",
-  "P\u00e1n Prsten\u016f",
   "El Senyor dels Anells",
+  "P\u00e1n Prsten\u016f",
+  "Le seigneur des anneaux",
+  "Der Herr der Ringe",
+  "O Senhor dos An\u00e9is",
+  "Sagan om Ringen",
   "Ringenes herre",
-  "Gospodar prstenova",
-  "El Se\u00f1or de los Anillos",
-  "Gy\u0171r\u0171k Ura",
-  "Il Signore degli Anelli",
-  "Gospodar prstenova",
   "Taru Sormusten Herrasta",
-  "W\u0142adca Pier\u015bcieni",
   "In de Ban van de Ring",
+  "W\u0142adca Pier\u015bcieni",
   "The Lord of the Rings"],
   "originaltitle": "The Lord of the Rings",
   "awards": ["1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
@@ -48097,7 +48159,7 @@
     "code": ["880"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek literature and literatures of related Hellenic languages",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -48136,7 +48198,7 @@
     "wording": ["1625-1702",
     "English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR3581.H85"
@@ -48170,7 +48232,7 @@
     "wording": ["English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "[Collections of English poetry not limited by time period or kind of form now in 821.008]"]
   },
   "lcc": [],
@@ -48205,7 +48267,7 @@
     "code": ["818.309"],
     "wording": ["American literature in English",
     "American miscellaneous writings in English",
-    "Literature",
+    "Literature & rhetoric",
     "Middle 19th Century 1830-61"]
   },
   "lcc": {
@@ -48253,7 +48315,7 @@
     "code": ["882"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek dramatic poetry and drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "manual entry",
@@ -48310,7 +48372,7 @@
   "ddc": {
     "code": ["891.73"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -48370,7 +48432,6 @@
   "500 Must Read Books",
   "501 Must-Read Books (Emma Beare, 2006)",
   "ABA Journal 25 Greatest Law Novels Ever",
-  "ALA Outstanding Books for the College Bound",
   "Audie Award",
   "BBC's Big Read",
   "Best Books Listed for High School Students",
@@ -48393,6 +48454,7 @@
   "Meg Rosoff's top 10 adult books for teenagers",
   "Newark Public Library's 1904 List of a Thousand of the Best Novels",
   "Norwegian Book Clubs' top 100 books of all time",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Philip Ward's Lifetime Reading Plan",
   "Prix Langlois",
   "SWR-Bestenliste",
@@ -48461,7 +48523,7 @@
     "1900-1999",
     "American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS3515.E37"
@@ -48589,7 +48651,7 @@
     "wording": ["1800-1837",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4034"
@@ -48742,7 +48804,7 @@
     "code": ["882"],
     "wording": ["Classical & modern Greek literatures",
     "Classical Greek dramatic poetry and drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -48793,7 +48855,7 @@
     "code": ["839.8"],
     "wording": ["Danish and Norwegian literatures",
     "German & related literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other Germanic literatures"]
   },
   "lcc": {
@@ -48851,7 +48913,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6029.R8"
@@ -48905,7 +48967,7 @@
     "wording": ["1837-1899",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4553 .G3"
@@ -48953,7 +49015,7 @@
     "code": ["823"],
     "wording": ["English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6029.R8"
@@ -49373,7 +49435,7 @@
   "ddc": {
     "code": ["891.73"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages",
     "Russian fiction"]
@@ -49433,7 +49495,6 @@
   "500 Must Read Books",
   "501 Must-Read Books (Emma Beare, 2006)",
   "ABA Journal 25 Greatest Law Novels Ever",
-  "ALA Outstanding Books for the College Bound",
   "Audie Award",
   "BBC's Big Read",
   "Best Books Listed for High School Students",
@@ -49456,6 +49517,7 @@
   "Meg Rosoff's top 10 adult books for teenagers",
   "Newark Public Library's 1904 List of a Thousand of the Best Novels",
   "Norwegian Book Clubs' top 100 books of all time",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Philip Ward's Lifetime Reading Plan",
   "Prix Langlois",
   "SWR-Bestenliste",
@@ -49534,7 +49596,7 @@
     "code": ["818.309"],
     "wording": ["American literature in English",
     "American miscellaneous writings in English",
-    "Literature",
+    "Literature & rhetoric",
     "Middle 19th Century 1830-61"]
   },
   "lcc": {
@@ -49712,7 +49774,7 @@
 },
 "276685110": {
   "books_id": "276685110",
-  "title": "Poweras and Prospects",
+  "title": "Powers and Prospects",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Chomsky, Noam",
@@ -49733,7 +49795,7 @@
   "ean": ["0141023031"],
   "publication": "Penguin Books (2007), 320 pages",
   "date": "2007",
-  "summary": "Poweras and Prospects by Noam Chomsky (2007)",
+  "summary": "Powers and Prospects by Noam Chomsky (2007)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -50318,7 +50380,7 @@
   "ddc": {
     "code": ["891.7"],
     "wording": ["East Indo-European and Celtic literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures",
     "Russian and East Slavic languages"]
   },
@@ -50513,10 +50575,10 @@
   "lcc": {
     "code": "HV9713 .S6413"
   },
-  "series": ["The Gulag Archipelago",
+  "series": ["Archipelag Gu\u0142ag",
   "Der Archipel GULAG",
-  "Archipelag Gu\u0142ag",
-  "De Goelag Archipel, 1918-1956"],
+  "De Goelag Archipel, 1918-1956",
+  "The Gulag Archipelago"],
   "originaltitle": "&#1040;&#1088;&#1093;&#1080;&#1087;&#1077;&#1083;&#1072;&#1075; &#1043;&#1059;&#1051;&#1040;&#1043;",
   "awards": ["1000 Books to Read Before You Die",
   "Arhundrets bibliotek",
@@ -50674,7 +50736,7 @@
     "code": ["813"],
     "wording": ["American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PK1730.A65 L3513"
@@ -50865,7 +50927,7 @@
 },
 "276685686": {
   "books_id": "276685686",
-  "title": "IDEOLOGIES AND SOCIAL WORK: Historical and Contemporary Analyses",
+  "title": "Ideologies and Social Work: Historical and Contemporary Analyses",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Desai, Murli",
@@ -50886,7 +50948,7 @@
   "ean": ["817033988X"],
   "publication": "Rawat Publication (2010)",
   "date": "2010",
-  "summary": "IDEOLOGIES AND SOCIAL WORK: Historical and Contemporary Analyses by Murli Desai (2010)",
+  "summary": "Ideologies and Social Work: Historical and Contemporary Analyses by Murli Desai (2010)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -50952,7 +51014,7 @@
     "Social sciences"]
   },
   "lcc": {
-    "code": "E169.12 .H78"
+    "code": "E169 .H78"
   },
   "subject": {
     "0": ["National characteristics, American"],
@@ -51822,12 +51884,12 @@
   "awards": ["16 Of The Best Science Books of All Time",
   "200 best non-fiction books according to Afisha Magazine",
   "500 Must Read Books",
-  "ALA Outstanding Books for the College Bound",
   "Amazon.com Best Books",
   "Baillie Gifford Prize for Non-Fiction",
   "Descartes Prize for Science Communication",
   "KIB - Non Fiction books everyone should read",
   "New York Times bestseller",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Public Libraries\u2019 Chart Toppers",
   "Royal Society Trivedi Science Book Prize",
   "UC Berkeley Summer Reading List",
@@ -52862,7 +52924,6 @@
   "originaltitle": "John Adams",
   "awards": ["1,000 Books to Read Before You Die Page-A-Day Calendar",
   "100 Essential New England Books",
-  "ALA Outstanding Books for the College Bound",
   "Amazon.com Best Books",
   "Ambassador Book Award",
   "Audie Award",
@@ -52873,6 +52934,7 @@
   "Los Angeles Times Book Prize",
   "New York Times bestseller",
   "Notable Books List",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Publishers Weekly Bestseller",
   "Pulitzer Prize",
   "Salon Book Award",
@@ -52961,13 +53023,14 @@
   "200 best non-fiction books according to Afisha Magazine",
   "30 Nonfiction Books That Are Sure to Make You Smarter",
   "500 Must Read Books",
-  "ALA Outstanding Books for the College Bound",
   "Books of the Century",
   "Commonwealth Club of California Book Awards",
   "KIB - Non Fiction books everyone should read",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Phi Beta Kappa Award in Science",
   "Pulitzer Prize",
   "Royal Society Trivedi Science Book Prize",
+  "The 59 Top Biotech Books of All Time",
   "Torchlight List",
   "UC Berkeley Summer Reading List",
   "\u041a\u043d\u0438\u0436\u043d\u044b\u0439 \u043a\u043b\u0443\u0431 \u00ab\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432\u00bb"],
@@ -53493,7 +53556,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -53564,7 +53627,7 @@
     "code": ["814.008"],
     "wording": ["American essays in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS688"
@@ -53670,7 +53733,7 @@
     "code": ["808.0427"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -53942,7 +54005,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -54022,7 +54085,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808.5"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures",
     "Rhetoric of speech"]
@@ -54128,7 +54191,7 @@
   "ddc": {
     "code": ["809"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": {
@@ -54234,7 +54297,7 @@
   "ddc": {
     "code": ["808.066"],
     "wording": ["By Type Of Writing",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures",
@@ -54449,7 +54512,7 @@
     "code": ["824.008"],
     "wording": ["English & Old English literatures",
     "English essays",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR1363 .O9"
@@ -54574,7 +54637,7 @@
   "ddc": {
     "code": ["808.06691"],
     "wording": ["By Type Of Writing",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures",
@@ -54714,7 +54777,7 @@
     "code": ["801.9509"],
     "wording": ["Biography And History",
     "Literary theory and criticism",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Nature and character",
     "Philosophy and theory"]
@@ -54780,7 +54843,7 @@
   "ddc": {
     "code": ["808.0668"],
     "wording": ["By Type Of Writing",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures",
@@ -54898,7 +54961,7 @@
     "code": ["808.042071"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -55013,7 +55076,7 @@
     "code": ["808.0427"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -55078,7 +55141,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -55143,7 +55206,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -55345,7 +55408,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -56202,7 +56265,7 @@
   "summary": "How to Write and Speak Effective English by Edward Frank Allen (2000)",
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -56388,7 +56451,7 @@
     "wording": ["1800-1837",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4034.P73"
@@ -56486,6 +56549,7 @@
     "Fiction"],
     "56": ["fiction in English"]
   },
+  "originaltitle": "Pride and Prejudice",
   "awards": ["100 Books That Shaped World History",
   "100 Books to Read in a Lifetime",
   "1000 Books to Read Before You Die",
@@ -56749,7 +56813,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -56902,7 +56966,7 @@
   "ddc": {
     "code": ["808.02"],
     "wording": ["Authorship techniques, plagiarism, editorial techniques",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -56940,7 +57004,7 @@
     "wording": ["Collections of literary texts in more than one form",
     "English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "manual entry",
@@ -57015,7 +57079,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -58063,7 +58127,7 @@
     "code": ["818"],
     "wording": ["American literature in English",
     "American miscellaneous writings in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -58391,7 +58455,7 @@
     "English & Old English literatures",
     "English poetry",
     "History, description, critical appraisal",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR590"
@@ -58449,7 +58513,7 @@
     "wording": ["Elizabethan 1558-1625",
     "English & Old English literatures",
     "English drama",
-    "Literature",
+    "Literature & rhetoric",
     "Shakespeare, William 1564\u20131616"]
   },
   "lcc": {
@@ -58495,7 +58559,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR83 .S26"
@@ -58551,7 +58615,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808.2"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures",
     "Rhetoric of drama"]
@@ -58613,7 +58677,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR9080.P55"
@@ -58716,7 +58780,7 @@
     "English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature",
+    "Literature & rhetoric",
     "Literature displaying specific qualities of style, mood, viewpoint",
     "Romanticism"]
   },
@@ -58777,7 +58841,7 @@
   "ddc": {
     "code": ["801.95"],
     "wording": ["Literary theory and criticism",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Nature and character",
     "Philosophy and theory"]
@@ -58878,7 +58942,7 @@
   "ddc": {
     "code": ["801.95"],
     "wording": ["Literary theory and criticism",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Nature and character",
     "Philosophy and theory"]
@@ -58934,7 +58998,7 @@
     "wording": ["6th-15th centuries, 500-1499",
     "By Period",
     "History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": {
@@ -59179,7 +59243,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR5774 .F5"
@@ -59255,7 +59319,7 @@
     "code": ["823"],
     "wording": ["English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -59311,7 +59375,7 @@
     "Collections",
     "Collections",
     "Genre fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Science fiction",
     "Speculative fiction"]
   },
@@ -59371,7 +59435,7 @@
     "American literature in English",
     "By type",
     "Genre fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PN6071.S33 S37"
@@ -59443,7 +59507,7 @@
 },
 "276863259": {
   "books_id": "276863259",
-  "title": "THE COMPLETE ESSAYS OF MARK TWAIN. For the First Time in One Volume, All the Famous Essays of One of America&#039;s Most Renowned Authors.",
+  "title": "The Complete Essays of Mark Twain",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "Twain, Mark",
@@ -59465,7 +59529,7 @@
   "asin": "B000I85IGA",
   "publication": "Doubleday &amp; Co. (1963)",
   "date": "1963",
-  "summary": "THE COMPLETE ESSAYS OF MARK TWAIN. For the First Time in One Volume, All the Famous Essays of One of America&#039;s Most Renowned Authors. by Mark Twain (1963)",
+  "summary": "The Complete Essays of Mark Twain by Mark Twain (1963)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -59475,7 +59539,7 @@
     "wording": ["American essays in English",
     "American literature in English",
     "Later 19th Century (1861-1900)",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS1302.N38"
@@ -59528,7 +59592,7 @@
     "wording": ["American literature in English",
     "American literature in English",
     "History and criticism of American literature",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS201.M3"
@@ -59598,7 +59662,7 @@
   "summary": "Monarch Notes How to Analyze Drama by Christopher Eussell Reaske",
   "ddc": {
     "code": ["808.2"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures",
     "Rhetoric of drama"]
@@ -59647,7 +59711,7 @@
     "English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "Modified standard subdivisions"]
   },
   "lcc": {
@@ -59702,7 +59766,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "series": ["A Critical History of English Literature"],
@@ -59767,7 +59831,7 @@
   "ddc": {
     "code": ["808.8"],
     "wording": ["Collections of literary texts from more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -59815,11 +59879,11 @@
     "823"],
     "wording": ["English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "manual entry",
-  "workcode": "25695462",
+  "workcode": "7985962",
   "entrydate": "2024-12-18",
   "format": [{
     "code": "1.1.2",
@@ -59857,7 +59921,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["800"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature (Belles-lettres) and rhetoric",
     "Literature, rhetoric & criticism"]
   },
@@ -59897,7 +59961,7 @@
     "wording": ["English & Old English literatures",
     "English poetry",
     "English poetry {by more than one author}",
-    "Literature",
+    "Literature & rhetoric",
     "[Collections of English poetry not limited by time period or kind of form now in 821.008]"]
   },
   "lcc": [],
@@ -59943,7 +60007,7 @@
     "code": ["818.303"],
     "wording": ["American literature in English",
     "American miscellaneous writings in English",
-    "Literature",
+    "Literature & rhetoric",
     "Middle 19th Century 1830-61"]
   },
   "lcc": {
@@ -60052,7 +60116,7 @@
   "ddc": {
     "code": ["808.1\n",
     "808.1"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures",
     "Rhetoric of poetry"]
@@ -60099,7 +60163,7 @@
   "ddc": {
     "code": ["809.1"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Poetry"]
   },
@@ -60641,7 +60705,7 @@
     "Bengali",
     "East Indo-European and Celtic literatures",
     "Fiction",
-    "Literature",
+    "Literature & rhetoric",
     "Modern Indic languages",
     "Other literatures"]
   },
@@ -60719,6 +60783,7 @@
   ["India",
   "History",
   "To 324 B.C"]],
+  "series": ["Wonder That Was India"],
   "awards": ["70 iconic Indian books"],
   "genre": ["Nonfiction",
   "Art & Design",
@@ -61621,7 +61686,7 @@
     "1900-1990",
     "German & related literatures",
     "German fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PT2617.E85 S52"
@@ -61653,7 +61718,6 @@
   "1001 Books You Must Read Before You Die",
   "1001 boeken die je gelezen moet hebben!",
   "1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
-  "ALA Outstanding Books for the College Bound",
   "ALA Popular Paperbacks for Young Adults",
   "Biblioteca Folha",
   "Bulgarian Big Read",
@@ -61663,6 +61727,7 @@
   "Harenberg Buch der 1000 B\u00fccher",
   "HarperCollins 100 Best Spiritual Books of the Century",
   "I Migliori Libri del '900",
+  "Outstanding Books for the College Bound and Lifelong Learners",
   "Reading the world in 196 books",
   "Sturm and Drang: 20 German Classics You Should Read Right Now",
   "The Great American Read",
@@ -63890,7 +63955,7 @@
 },
 "276882688": {
   "books_id": "276882688",
-  "title": "An outline of psychoanalysis (The Norton library)",
+  "title": "An Outline Of Psychoanalysis (The Norton Library)",
   "sortcharacter": "4",
   "public": "true",
   "primaryauthor": "Freud, Sigmund",
@@ -63905,7 +63970,7 @@
   "asin": "B0007FYM7U",
   "publication": "Norton (1963), 127 pages",
   "date": "1963",
-  "summary": "An outline of psychoanalysis (The Norton library) by Sigmund Freud (1963)",
+  "summary": "An Outline Of Psychoanalysis (The Norton Library) by Sigmund Freud (1963)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -64264,7 +64329,7 @@
     "code": ["810"],
     "wording": ["American literature in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "H6381"
@@ -64371,7 +64436,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808.4"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures",
     "Rhetoric of essays"]
@@ -64409,7 +64474,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["801"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Philosophy and theory"]
   },
@@ -64458,7 +64523,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR85 .H8"
@@ -64510,7 +64575,7 @@
   "ddc": {
     "code": ["807"],
     "wording": ["Education, research, related topics",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": [],
@@ -64546,7 +64611,7 @@
   "summary": "Critical Studies by B. L. Sahney (1939)",
   "ddc": {
     "code": ["801"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Philosophy and theory"]
   },
@@ -64579,7 +64644,7 @@
   "ddc": {
     "code": ["808.8"],
     "wording": ["Collections of literary texts from more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -64614,7 +64679,7 @@
     "wording": ["1800-1837, romantic period",
     "English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "manual entry",
@@ -64660,7 +64725,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR83 .C28"
@@ -64707,7 +64772,7 @@
   "ddc": {
     "code": ["809"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": [],
@@ -65130,7 +65195,7 @@
     "code": ["813"],
     "wording": ["American fiction in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "B945.S23 L8"
@@ -65406,19 +65471,26 @@
   "title": "This Chancy, Chancy, Chancy World",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Rastrigi, L",
+  "primaryauthor": "Rastrigin, Leonard Andreevich",
   "primaryauthorrole": "Author",
+  "secondaryauthor": "Woodhouse, R.H.M",
+  "secondaryauthorroles": "Translator",
   "authors": [{
-    "lf": "Rastrigi, L",
-    "fl": "L Rastrigi",
+    "lf": "Rastrigin, Leonard Andreevich",
+    "fl": "Leonard Andreevich Rastrigin",
     "role": "Author"
+  },
+  {
+    "lf": "Woodhouse, R.H.M",
+    "fl": "R.H.M Woodhouse",
+    "role": "Translator"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B000OP7KSG",
   "publication": "Mir Publishers (1984), Edition: 2nd printing.",
   "date": "1984",
-  "summary": "This Chancy, Chancy, Chancy World by L Rastrigi (1984)",
+  "summary": "This Chancy, Chancy, Chancy World by Leonard Andreevich Rastrigin (1984)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -66157,7 +66229,7 @@
     "20th Century",
     "French & related literatures",
     "French fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PQ2605.A3734"
@@ -66636,7 +66708,7 @@
     "code": ["839.82"],
     "wording": ["Danish and Norwegian literatures",
     "German & related literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Norwegian literature",
     "Other Germanic literatures"]
   },
@@ -66673,7 +66745,7 @@
   "ddc": {
     "code": ["807"],
     "wording": ["Education, research, related topics",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": [],
@@ -66711,7 +66783,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR4825.J3 A7753"
@@ -66849,7 +66921,7 @@
     "wording": ["1837-1899",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ3.H222 J"
@@ -66925,7 +66997,7 @@
   "summary": "The Way We Go: A Prose Selection For Degree Students by Brander L (1968)",
   "ddc": {
     "code": ["808"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -66964,7 +67036,7 @@
     "wording": ["1625-1702",
     "English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "manual entry",
@@ -67255,7 +67327,7 @@
     "20th century",
     "French & related literatures",
     "French essays",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PN513 .S26"
@@ -68730,7 +68802,7 @@
   "ddc": {
     "code": ["808.8"],
     "wording": ["Collections of literary texts from more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -69270,7 +69342,7 @@
   "ddc": {
     "code": ["808.8"],
     "wording": ["Collections of literary texts from more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -69382,7 +69454,7 @@
   "ddc": {
     "code": ["808.8"],
     "wording": ["Collections of literary texts from more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -69607,7 +69679,7 @@
     "wording": ["History and criticism of Latin literature",
     "Latin & Italic literatures",
     "Latin literature and literatures of related Italic languages",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PA6019.O35"
@@ -69658,7 +69730,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["808.1"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures",
     "Rhetoric of poetry"]
@@ -69836,9 +69908,11 @@
     "wording": ["1837-1899",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "PZ7.M35"
+  },
   "subject": [["Great Britain",
   "History",
   "Civil War, 1642-1649",
@@ -69854,6 +69928,15 @@
   ["Orphans",
   "Fiction"],
   ["historical fiction"]],
+  "awards": ["1001 Children's Books You Must Read Before You Grow Up",
+  "1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
+  "9 classic books with a Hampshire connection",
+  "The Guardian 1000 Novels Everyone Must Read",
+  "The Nation's Favourite Children's Book"],
+  "genre": ["Fiction",
+  "Children's Books"],
+  "genre_id": ["17160326",
+  "11"],
   "source": "amazon.com books",
   "workcode": "51382",
   "entrydate": "2025-02-05",
@@ -70052,7 +70135,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -70141,7 +70224,7 @@
     "1945-1999",
     "English & Old English literatures",
     "English poetry",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": [],
   "source": "manual entry",
@@ -70260,7 +70343,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.P85 T"
@@ -70342,7 +70425,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.P85 T"
@@ -70413,7 +70496,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.P85 T"
@@ -70484,7 +70567,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.P85 T"
@@ -70558,7 +70641,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.P85 T"
@@ -70654,7 +70737,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PZ7.P85 T"
@@ -71132,7 +71215,7 @@
     "code": ["808.042"],
     "wording": ["English",
     "Handbooks for writers",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and anthologies",
     "Rhetoric and collections of literary texts from more than two literatures"]
@@ -71346,7 +71429,7 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["801"],
-    "wording": ["Literature",
+    "wording": ["Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Philosophy and theory"]
   },
@@ -71459,7 +71542,7 @@
   "ddc": {
     "code": ["801.95"],
     "wording": ["Literary theory and criticism",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Nature and character",
     "Philosophy and theory"]
@@ -71528,7 +71611,7 @@
     "wording": ["20th Century",
     "American essays in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PS688 .A615"
@@ -71876,7 +71959,7 @@
   "ddc": {
     "code": ["801.953"],
     "wording": ["Literary theory and criticism",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Nature and character",
     "Philosophy and theory",
@@ -72116,7 +72199,7 @@
   },
   "lcc": [],
   "source": "amazon.com books",
-  "workcode": "33873579",
+  "workcode": "32300226",
   "entrydate": "2025-03-31",
   "format": [{
     "code": "1.1.2",
@@ -72151,7 +72234,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR431.W4"
@@ -72188,7 +72271,7 @@
     "code": ["808.88"],
     "wording": ["Collections of literary texts from more than two literatures",
     "Collections of miscellaneous writings",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism",
     "Rhetoric and collections of literary texts from more than two literatures"]
   },
@@ -72791,7 +72874,7 @@
     "20th Century",
     "American essays in English",
     "American literature in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PN6162 .B797"
@@ -73206,7 +73289,7 @@
     "wording": ["English & Old English literatures",
     "English and Old English (Anglo-Saxon) literatures",
     "History, description, critical appraisal of works in more than one form",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR83 .B285"
@@ -73317,7 +73400,7 @@
     "1901-1999",
     "English & Old English literatures",
     "English fiction",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PR6039.O32"
@@ -73646,7 +73729,7 @@
     "wording": ["Afro-Asiatic literatures",
     "Arabic (Egypt, Lebanon, Palestine, Saudi Arabia, Sudan)",
     "Arabic letters",
-    "Literature",
+    "Literature & rhetoric",
     "Other literatures"]
   },
   "lcc": {
@@ -74491,7 +74574,7 @@
     "20th Century",
     "American literature in English",
     "American poetry in English",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "BV4501.2 .D684"
@@ -74673,7 +74756,7 @@
     "Fiction",
     "Lebanon",
     "Levent",
-    "Literature",
+    "Literature & rhetoric",
     "Middle East"]
   },
   "lcc": {
@@ -75668,7 +75751,9 @@
     "Science",
     "Specific topics in natural history of animals"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "QL751.A5513"
+  },
   "source": "amazon.com books",
   "workcode": "34179094",
   "entrydate": "2025-05-26",
@@ -76939,7 +77024,7 @@
     "wording": ["1750\u20131832 : 18th century; classical period; romantic period",
     "German & related literatures",
     "German drama",
-    "Literature"]
+    "Literature & rhetoric"]
   },
   "lcc": {
     "code": "PT2026.F2"
@@ -77181,7 +77266,7 @@
   "ddc": {
     "code": ["809"],
     "wording": ["History, description, critical appraisal of more than two literatures",
-    "Literature",
+    "Literature & rhetoric",
     "Literature, rhetoric & criticism"]
   },
   "lcc": {
@@ -77461,4 +77546,1170 @@
     "text": "Hardcover"
   }],
   "copies": "1"
+},
+"294038942": {
+  "books_id": "294038942",
+  "title": "Word Power Made Easy",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Lewis, Norman",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Lewis, Norman",
+    "fl": "Norman Lewis",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "067174190X",
+  "isbn": {
+    "0": "067174190X",
+    "2": "9780671741907"
+  },
+  "asin": "067174190X",
+  "ean": ["067174190X"],
+  "publication": "Pocket Books (1991), 528 pages",
+  "date": "1991",
+  "summary": "Word Power Made Easy by Norman Lewis (1991)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["428.1"],
+    "wording": ["English & Old English languages",
+    "Language",
+    "Standard English usage (Prescriptive linguistics)",
+    "Words"]
+  },
+  "lcc": {
+    "code": "PE1449 .L46"
+  },
+  "subject": {
+    "0": ["Vocabulary"],
+    "2": ["vocabulary"]
+  },
+  "source": "amazon.com books",
+  "workcode": "58354",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "6.8 inches",
+  "thickness": "1.2 inches",
+  "length": "4.2 inches",
+  "dimensions": "6.8 x 4.2 x 1.2 inches",
+  "weight": "0.75 pounds",
+  "pages": "528 "
+},
+"294038955": {
+  "books_id": "294038955",
+  "title": "Social Contract",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Rousseau, Jean Jacques",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Rousseau, Jean Jacques",
+    "fl": "Jean Jacques Rousseau",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0140442014",
+  "isbn": {
+    "0": "0140442014",
+    "2": "9780140442014"
+  },
+  "asin": "B002NQNQFU",
+  "ean": ["0140442014"],
+  "publication": "PENGUIN BOOKS INDIA",
+  "summary": "Social Contract by Jean Jacques Rousseau",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["320.01"],
+    "wording": ["Philosophy and Theory",
+    "Political Science ",
+    "Political science",
+    "Political science (Politics and government)",
+    "Social sciences"]
+  },
+  "lcc": {
+    "code": "JC179 .R7"
+  },
+  "subject": [["Civilization",
+  "Early works to 1800"],
+  ["Political science"],
+  ["Political science",
+  "Early works to 1800"],
+  ["Social contract"],
+  ["Social contract",
+  "Early works to 1800"],
+  ["State, The"],
+  ["State, the"],
+  ["political science",
+  "early works to 1800"]],
+  "source": "amazon.com books",
+  "workcode": "2935148",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "192 p.; 7.88 inches",
+  "height": "7.88 inches",
+  "thickness": "0.47 inches",
+  "length": "5.08 inches",
+  "dimensions": "7.88 x 5.08 x 0.47  inches",
+  "weight": "0.33 pounds",
+  "pages": "192 "
+},
+"294039031": {
+  "books_id": "294039031",
+  "title": "The Symposium",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Plato",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Hamilton, Walter",
+  "secondaryauthorroles": "Translator",
+  "authors": [{
+    "lf": "Plato",
+    "fl": "Plato",
+    "role": "Author"
+  },
+  {
+    "lf": "Hamilton, Walter",
+    "fl": "Walter Hamilton",
+    "role": "Translator"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9780140440249",
+  "isbn": ["9780140440249",
+  "0140440240"],
+  "asin": "0140440240",
+  "ean": ["0140440240"],
+  "publication": "Penguin Classics (1995), Edition: Reprint, 128 pages",
+  "date": "1995",
+  "summary": "The Symposium by Plato (1995)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["184"],
+    "wording": ["Ancient, medieval & eastern philosophy",
+    "Philosophy & psychology",
+    "Platonic philosophy"]
+  },
+  "lcc": {
+    "code": "B385.A5 N44"
+  },
+  "subject": {
+    "0": ["Imaginary conversations",
+    "Early works to 1800"],
+    "1": ["Knowledge, Theory of"],
+    "2": ["Knowledge, theory of"],
+    "3": ["Love"],
+    "5": ["Love",
+    "Early works to 1800"],
+    "7": ["Philosophy",
+    "Early works to 1800"],
+    "8": ["Philosophy, Ancient"],
+    "10": ["Philosophy, ancient"],
+    "11": ["Plato. Symposium"],
+    "12": ["Rhetoric",
+    "Early works to 1800"],
+    "13": ["Socrates"],
+    "14": ["love"]
+  },
+  "originaltitle": "&Sigma;&upsilon;&mu;&pi;&#972;&sigma;&iota;&omicron;&nu;",
+  "awards": ["1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
+  "500 Must Read Books",
+  "Annabel Lyon's top 10 books on the ancient world",
+  "The Guardian 100 Greatest Non-Fiction"],
+  "genre": ["Nonfiction",
+  "Philosophy"],
+  "genre_id": ["20275895",
+  "66879"],
+  "source": "amazon.com books",
+  "workcode": "9869",
+  "price": "$8.95 (USD)",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "7 inches",
+  "thickness": "0.3 inches",
+  "length": "4.3 inches",
+  "dimensions": "7 x 4.3 x 0.3 inches",
+  "weight": "0.19 pounds",
+  "pages": "122 "
+},
+"294039047": {
+  "books_id": "294039047",
+  "title": "Fifty Key Thinkers on the Environment (Routledge Key Guides)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Palmer, Joy A.",
+  "primaryauthorrole": "Editor",
+  "secondaryauthor": "Cooper, David|Cooper, David E.",
+  "secondaryauthorroles": "Editor|Editor",
+  "authors": [{
+    "lf": "Palmer, Joy A.",
+    "fl": "Joy A. Palmer",
+    "role": "Editor"
+  },
+  {
+    "lf": "Cooper, David",
+    "fl": "David Cooper",
+    "role": "Editor"
+  },
+  {
+    "lf": "Cooper, David E.",
+    "fl": "David E. Cooper",
+    "role": "Editor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0415146992",
+  "isbn": {
+    "0": "0415146992",
+    "2": "9780415146999"
+  },
+  "asin": "0415146992",
+  "ean": ["0415146992"],
+  "publication": "Routledge (2001), Edition: 1, 336 pages",
+  "date": "2005",
+  "summary": "Fifty Key Thinkers on the Environment (Routledge Key Guides) by Joy A. Palmer (2005)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["333.70922"],
+    "wording": ["Economics",
+    "Economics of land and energy",
+    "Land, recreational and wilderness areas, energy",
+    "Social sciences"]
+  },
+  "lcc": {
+    "code": "GE40"
+  },
+  "series": ["Fifty Key Thinkers"],
+  "genre": ["Nonfiction",
+  "Biography & Memoir",
+  "Economics",
+  "General Nonfiction",
+  "History",
+  "Philosophy",
+  "Religion & Spirituality",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1240",
+  "7973",
+  "1247",
+  "1599",
+  "66879",
+  "1944",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "997648",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "8.3 inches",
+  "thickness": "0.9 inches",
+  "length": "5.4 inches",
+  "dimensions": "8.3 x 5.4 x 0.9 inches",
+  "weight": "0.75 pounds",
+  "pages": "288 "
+},
+"294039059": {
+  "books_id": "294039059",
+  "title": "Ecocriticism (Routledge Literature Readers)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Hiltner, Ken",
+  "primaryauthorrole": "Editor",
+  "authors": [{
+    "lf": "Hiltner, Ken",
+    "fl": "Ken Hiltner",
+    "role": "Editor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0415508606",
+  "isbn": {
+    "0": "0415508606",
+    "2": "9780415508605"
+  },
+  "asin": "0415508606",
+  "ean": ["0415508606"],
+  "publication": "Routledge (2014), Edition: 1, 398 pages",
+  "date": "2014",
+  "summary": "Ecocriticism (Routledge Literature Readers) by Ken Hiltner (2014)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["809.9336"],
+    "wording": ["History, description, critical appraisal of more than two literatures",
+    "Literature & rhetoric",
+    "Literature dealing with specific themes and subjects",
+    "Literature displaying other aspects",
+    "Literature displaying specific features, miscellaneous writings",
+    "Literature, rhetoric & criticism",
+    "Physical and natural phenomena"]
+  },
+  "lcc": {
+    "code": "PN98.E36 E39"
+  },
+  "source": "amazon.com books",
+  "workcode": "15469884",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"294040030": {
+  "books_id": "294040030",
+  "title": "Mathematical Logic",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Ershov, Yuri L.",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Palyutin, Evgenii A.",
+  "secondaryauthorroles": "Author",
+  "authors": [{
+    "lf": "Ershov, Yuri L.",
+    "fl": "Yuri L. Ershov",
+    "role": "Author"
+  },
+  {
+    "lf": "Palyutin, Evgenii A.",
+    "fl": "Evgenii A. Palyutin",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B0007B3CAM",
+  "publication": "Mir (1984), Edition: First Edition, 303 pages",
+  "date": "1984",
+  "summary": "Mathematical Logic by Yuri L. Ershov (1984)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage_codeA": ["eng"],
+  "lcc": {
+    "code": "QA9"
+  },
+  "source": "amazon.com books",
+  "workcode": "27591753",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "303 p.",
+  "weight": "1 pound",
+  "pages": "303 "
+},
+"294040330": {
+  "books_id": "294040330",
+  "title": "Refuting Evolution",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Sarfati, Jonathan",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Sarfati, Jonathan",
+    "fl": "Jonathan Sarfati",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0890512582",
+  "isbn": {
+    "0": "0890512582",
+    "2": "9780890512586"
+  },
+  "asin": "0890512582",
+  "ean": ["0890512582"],
+  "publication": "Master Books (1999), Edition: UNABRIDGED VERSION, 143 pages",
+  "date": "1999",
+  "summary": "Refuting Evolution by Jonathan Sarfati (1999)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["576"],
+    "wording": ["Biology",
+    "Genetics and evolution",
+    "Science"]
+  },
+  "lcc": {
+    "code": "BS659"
+  },
+  "subject": [["Evolution (Biology)"]],
+  "source": "amazon.com books",
+  "workcode": "91879",
+  "entrydate": "2025-08-31",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "8.3 inches",
+  "thickness": "0.5 inches",
+  "length": "5.3 inches",
+  "dimensions": "8.3 x 5.3 x 0.5 inches",
+  "weight": "0.1 pounds",
+  "pages": "143 "
+},
+"294247222": {
+  "books_id": "294247222",
+  "title": "An Invitation To Philosophy",
+  "sortcharacter": "4",
+  "public": "true",
+  "primaryauthor": "Perumalil, Augustine",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Perumalil, Augustine",
+    "fl": "Augustine Perumalil",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8172146566",
+  "isbn": {
+    "0": "8172146566",
+    "2": "9788172146566"
+  },
+  "publication": "ISPCK, Delhi",
+  "date": "2001",
+  "summary": "An Invitation To Philosophy by Augustine Perumalil (2001)",
+  "lcc": [],
+  "source": "manual entry",
+  "workcode": "34763337",
+  "entrydate": "2025-09-03",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"294313401": {
+  "books_id": "294313401",
+  "title": "Philosophy and Contemporary Issues",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Burr & Goldinger",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Burr & Goldinger",
+    "fl": "Burr & Goldinger",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8120333659",
+  "isbn": {
+    "0": "8120333659",
+    "2": "9788120333659"
+  },
+  "asin": "8120333659",
+  "ean": ["8120333659"],
+  "publication": "Prentice-Hall (2008), Edition: 9",
+  "date": "2008",
+  "summary": "Philosophy and Contemporary Issues by Burr & Goldinger (2008)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "34767830",
+  "entrydate": "2025-09-03",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"294343559": {
+  "books_id": "294343559",
+  "title": "God and the new biology",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Peacocke, Arthur R.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Peacocke, Arthur R.",
+    "fl": "Arthur R. Peacocke",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0460046993",
+  "isbn": {
+    "0": "0460046993",
+    "2": "9780460046992"
+  },
+  "asin": "0460046993",
+  "ean": ["0460046993"],
+  "publication": "J. M. Dent (1986), Edition: 1st Ed., 224 pages",
+  "date": "1986",
+  "summary": "God and the new biology by Arthur R. Peacocke (1986)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["215.74"],
+    "wording": ["Biology and Natural History",
+    "Philosophy & theory of religion",
+    "Religion",
+    "Religion And Biology",
+    "Science and religion"]
+  },
+  "lcc": {
+    "code": "BL255 .P43"
+  },
+  "source": "amazon.com books",
+  "workcode": "259619",
+  "entrydate": "2025-09-04",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
+},
+"294601418": {
+  "books_id": "294601418",
+  "title": "The Inspirational Writings of C.S. Lewis: Surprised by Joy/Reflections on the Psalms/the Four Loves/the Business of Heaven",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Lewis, C. S.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Lewis, C. S.",
+    "fl": "C. S. Lewis",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0884863425",
+  "isbn": {
+    "0": "0884863425",
+    "2": "9780884863427"
+  },
+  "asin": "0884863425",
+  "ean": ["0884863425"],
+  "publication": "Bbs Pub Corp (2004), Edition: No Additional Printings Listed, 544 pages",
+  "date": "2004",
+  "summary": "The Inspirational Writings of C.S. Lewis: Surprised by Joy/Reflections on the Psalms/the Four Loves/the Business of Heaven by C. S. Lewis (2004)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["248.4"],
+    "wording": ["Christian Living",
+    "Christian experience, practice, life",
+    "Christian practice & observance",
+    "Religion"]
+  },
+  "lcc": {
+    "code": "BR121.2"
+  },
+  "subject": [["Christian life",
+  "Anglican authors"],
+  ["Christianity"],
+  ["Spiritual life",
+  "Anglican authors"],
+  ["Theology"],
+  ["theology"]],
+  "source": "amazon.com books",
+  "workcode": "4802429",
+  "entrydate": "2025-09-07",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "544 p.; 8.25 inches",
+  "height": "8.25 inches",
+  "thickness": "1.75 inches",
+  "length": "5.5 inches",
+  "dimensions": "8.25 x 5.5 x 1.75 inches",
+  "weight": "1.55 pounds",
+  "pages": "544 "
+},
+"294601426": {
+  "books_id": "294601426",
+  "title": "Jack: A Life of C. S. Lewis",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "(Clive Staples) Sayer Lewis, George C. S.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "(Clive Staples) Sayer Lewis, George C. S.",
+    "fl": "George C. S. (Clive Staples) Sayer Lewis",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0891077618",
+  "isbn": {
+    "0": "0891077618",
+    "2": "9780891077619"
+  },
+  "asin": "0891077618",
+  "ean": ["0891077618"],
+  "publication": "Crossway Books (1994), 457 pages",
+  "date": "1994",
+  "summary": "Jack: A Life of C. S. Lewis by George C. S. (Clive Staples) Sayer Lewis (1994)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "lcc": {
+    "code": "PR6023.E926 Z88"
+  },
+  "source": "amazon.com books",
+  "workcode": "29757765",
+  "entrydate": "2025-09-07",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "8.52 inches",
+  "thickness": "1.23 inches",
+  "length": "5.53 inches",
+  "dimensions": "8.52 x 5.53 x 1.23 inches",
+  "weight": "1.22 pounds",
+  "pages": "457 "
+},
+"294601429": {
+  "books_id": "294601429",
+  "title": "The Chronicles of Narnia: 7 Books in 1 Paperback",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Lewis, C. S.",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Baynes, Pauline",
+  "secondaryauthorroles": "Illustrator",
+  "authors": [{
+    "lf": "Lewis, C. S.",
+    "fl": "C. S. Lewis",
+    "role": "Author"
+  },
+  {
+    "lf": "Baynes, Pauline",
+    "fl": "Pauline Baynes",
+    "role": "Illustrator"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9780066238500",
+  "isbn": ["9780066238500",
+  "0066238501"],
+  "asin": "0066238501",
+  "ean": ["0066238501"],
+  "publication": "HarperCollins (2001), Edition: 7, 768 pages",
+  "date": "2001",
+  "summary": "The Chronicles of Narnia: 7 Books in 1 Paperback by C. S. Lewis (2001)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["823.087661"],
+    "wording": ["Adventure fiction",
+    "By type",
+    "English & Old English literatures",
+    "English fiction",
+    "Fantasy fiction",
+    "Genre fiction",
+    "High fantasy",
+    "Literature & rhetoric",
+    "Speculative fiction"]
+  },
+  "lcc": {
+    "code": "PZ7.L58474 C"
+  },
+  "series": ["Narnia: kronologisk ordning",
+  "Letopisi Narnije, hronolo\u0161ki",
+  "Le cronache di Narnia, ordine della storia",
+  "Les Chroniques de Narnia",
+  "Narnia fort\u00e6llingerne",
+  "Las Cr\u00f3nicas De Narnia",
+  "Les Cr\u00f2niques de N\u00e0rnia",
+  "Die Chroniken von Narnia",
+  "De Kronieken van Narnia",
+  "Die Chroniken von Narnia, Handlung Chronologisch",
+  "Kroniki Narnii",
+  "\u7d0d\u5c3c\u4e9e\u50b3\u5947",
+  "The Chronicles of Narnia: Chronological order",
+  "Chronicles of Narnia: Chronological order",
+  "Narnia kr\u00f3nik\u00e1i",
+  "The Chronicles of Narnia: Publication order",
+  "Chronicles of Narnia: Publication order",
+  "\u7d0d\u5c3c\u4e9e\u50b3\u5947(\u51fa\u7248\u6b21\u5e8f)",
+  "Les Chroniques de Narnia",
+  "Opowie\u015bci z Narnii",
+  "Letopisi Narnije",
+  "Le cronache di Narnia",
+  "De Kronieken van Narnia",
+  "Narnia: publiceringsordning",
+  "Narnia: publiceringsordning",
+  "Die Chroniken von Narnia"],
+  "awards": ["1,000 Books to Read Before You Die Page-A-Day Calendar",
+  "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
+  "Audie Award",
+  "BBC Culture - The 100 Greatest British Novels",
+  "Best-selling books according to Pro-books.ru",
+  "Christianity Today's Books of the Century",
+  "Harvard Book Store Top 100",
+  "Kid's Choice Award",
+  "Locus All-Time Best",
+  "Mir Fantastiki: 100 main fantasy and science-fiction books",
+  "The Great American Read",
+  "The Guardian 1000 Novels Everyone Must Read",
+  "\u0421\u0430\u043c\u044b\u0435 \u0447\u0438\u0442\u0430\u0435\u043c\u044b\u0435 \u043a\u043d\u0438\u0433\u0438 \u043d\u0430 LiveLib"],
+  "genre": ["Fiction",
+  "Christian Fiction",
+  "Fantasy"],
+  "genre_id": ["17160326",
+  "39177",
+  "5280"],
+  "source": "amazon.com books",
+  "workcode": "6945753",
+  "entrydate": "2025-09-07",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "9 inches",
+  "thickness": "2.1 inches",
+  "length": "6 inches",
+  "dimensions": "9 x 6 x 2.1 inches",
+  "weight": "1.8 pounds",
+  "pages": "768 "
+},
+"294601441": {
+  "books_id": "294601441",
+  "title": "The Essential C. S. Lewis",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Dorsett, Lyle W.",
+  "primaryauthorrole": "Editor",
+  "authors": [{
+    "lf": "Dorsett, Lyle W.",
+    "fl": "Lyle W. Dorsett",
+    "role": "Editor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0684823748",
+  "isbn": {
+    "0": "0684823748",
+    "2": "9780684823744"
+  },
+  "asin": "0684823748",
+  "ean": ["0684823748"],
+  "publication": "Scribner (1996), Edition: Reprint, 560 pages",
+  "date": "1996",
+  "summary": "The Essential C. S. Lewis by Lyle W. Dorsett (1996)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["823.912"],
+    "wording": ["1900-",
+    "1901-1945",
+    "1901-1999",
+    "English & Old English literatures",
+    "English fiction",
+    "Literature & rhetoric"]
+  },
+  "lcc": {
+    "code": "PR6023.E926 A6"
+  },
+  "source": "amazon.com books",
+  "workcode": "142854",
+  "entrydate": "2025-09-07",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "9 inches",
+  "thickness": "1.5 inches",
+  "length": "6.1 inches",
+  "dimensions": "9 x 6.1 x 1.5 inches",
+  "weight": "1.35 pounds",
+  "pages": "560 "
+},
+"294601452": {
+  "books_id": "294601452",
+  "title": "C.s. Lewis: His Life & Thought",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Glaspey, Terry",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Glaspey, Terry",
+    "fl": "Terry Glaspey",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0884863352",
+  "isbn": {
+    "0": "0884863352",
+    "2": "9780884863359"
+  },
+  "asin": "0884863352",
+  "ean": ["0884863352"],
+  "publication": "Inspirational Pr (2005), 240 pages",
+  "date": "2005",
+  "summary": "C.s. Lewis: His Life & Thought by Terry Glaspey (2005)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["283.092"],
+    "wording": ["Anglican churches",
+    "Biography",
+    "Biography And History",
+    "Christian denominations",
+    "Religion"]
+  },
+  "lcc": {
+    "code": "BX5199.L53"
+  },
+  "source": "amazon.com books",
+  "workcode": "223861",
+  "entrydate": "2025-09-07",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
+},
+"294601647": {
+  "books_id": "294601647",
+  "title": "Mere Christianity",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Lewis, C. S.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Lewis, C. S.",
+    "fl": "C. S. Lewis",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0060652888",
+  "isbn": {
+    "0": "0060652888",
+    "2": "9780060652883"
+  },
+  "asin": "0060652888",
+  "ean": ["0060652888"],
+  "publication": "HarperSanFrancisco (2009), Edition: Revised ed., 227 pages",
+  "date": "2009",
+  "summary": "Mere Christianity by C. S. Lewis (2009)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["230"],
+    "wording": ["Christianity",
+    "Christianity",
+    "Religion"]
+  },
+  "lcc": {
+    "code": "BT77 .L348"
+  },
+  "subject": {
+    "0": ["Apologetics"],
+    "2": ["Apologetics",
+    "History",
+    "20th century"],
+    "3": ["Christian ethics",
+    "Anglican authors"],
+    "5": ["Christianity"],
+    "7": ["Large Type Books"],
+    "8": ["Large type books"],
+    "10": ["Theology, Doctrinal"],
+    "11": ["Theology, Doctrinal",
+    "Popular works"],
+    "13": ["theology, Doctrinal",
+    "Popular works"]
+  },
+  "originaltitle": "Mere Christianity",
+  "awards": ["25 Books Every Christian Should Read: A Guide to the Essential Spiritual Classics",
+  "A Catholic Lifetime Reading Plan",
+  "Christianity Today's Books of the Century",
+  "Christianity Today's Top 50 Books That Have Shaped Evangelicals",
+  "HarperCollins 100 Best Spiritual Books of the Century",
+  "KIB - Non Fiction books everyone should read",
+  "National Review's 100 Best Nonfiction Books of the Century"],
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "Philosophy",
+  "Religion & Spirituality"],
+  "genre_id": ["20275895",
+  "1247",
+  "66879",
+  "1944"],
+  "source": "amazon.com books",
+  "workcode": "1595966",
+  "entrydate": "2025-09-07",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "227 p.; 8.25 inches",
+  "height": "8.25 inches",
+  "thickness": "0.89 inches",
+  "length": "5.5 inches",
+  "dimensions": "8.25 x 5.5 x 0.89 inches",
+  "weight": "0.85098433132 pounds",
+  "pages": "227 "
+},
+"295186630": {
+  "books_id": "295186630",
+  "title": "Mathematics Can Be Fun",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Perelman, Yakov",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Perelman, Yakov",
+    "fl": "Yakov Perelman",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B0DJLNZ3FP",
+  "publication": "Mir Publishers Moscow (1985), Edition: First Published in English, 400 pages",
+  "date": "1985",
+  "summary": "Mathematics Can Be Fun by Yakov Perelman (1985)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["Russian"],
+  "originallanguage_codeA": ["eng",
+  "rus"],
+  "ddc": {
+    "code": ["793.74"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Mathematical games and puzzles",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Sports, games & entertainment"]
+  },
+  "lcc": {
+    "code": "QA95"
+  },
+  "series": ["Populaarteaduslik sari"],
+  "originaltitle": "\u0416\u0438\u0432\u0430\u044f \u043c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0430",
+  "genre": ["Nonfiction",
+  "General Nonfiction"],
+  "genre_id": ["20275895",
+  "1247"],
+  "source": "amazon.com books",
+  "workcode": "2195247",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "400 p.; 8.86 x 1.18 inches",
+  "height": "1.181102361 inches",
+  "thickness": "6.8897637725 inches",
+  "length": "8.8582677075 inches",
+  "dimensions": "1.181102361 x 8.8582677075 x 6.8897637725 inches",
+  "weight": "1.543235834 pounds",
+  "pages": "400 "
+},
+"295187198": {
+  "books_id": "295187198",
+  "title": "Literary Criticism: A Short History",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Wimsatt, William K.",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Brooks, Cleanth",
+  "secondaryauthorroles": "Author",
+  "authors": [{
+    "lf": "Wimsatt, William K.",
+    "fl": "William K. Wimsatt",
+    "role": "Author"
+  },
+  {
+    "lf": "Brooks, Cleanth",
+    "fl": "Cleanth Brooks",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0710023146",
+  "isbn": {
+    "0": "0710023146",
+    "2": "9780710023148"
+  },
+  "asin": "0710023146",
+  "ean": ["0710023146"],
+  "publication": "Oxford & IBH Publishing Co.",
+  "date": "1964",
+  "summary": "Literary Criticism: A Short History by William K. Wimsatt (1964)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["801"],
+    "wording": ["Literature & rhetoric",
+    "Literature, rhetoric & criticism",
+    "Philosophy and theory"]
+  },
+  "lcc": {
+    "code": "PN86.W5"
+  },
+  "subject": {
+    "0": ["Criticism",
+    "History"],
+    "2": ["Literature",
+    "History and criticism"]
+  },
+  "source": "amazon.com books",
+  "workcode": "196830",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "796 p.",
+  "weight": "3 pounds",
+  "pages": "796 "
+},
+"295188088": {
+  "books_id": "295188088",
+  "title": "How to Play Chess",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Mitchell, R. L.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Mitchell, R. L.",
+    "fl": "R. L. Mitchell",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8185018049",
+  "isbn": {
+    "0": "8185018049",
+    "2": "9788185018041"
+  },
+  "publication": "New Light Publishers, New Delhi",
+  "summary": "How to Play Chess by R. L. Mitchell",
+  "lcc": [],
+  "source": "manual entry",
+  "workcode": "34844477",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"295188634": {
+  "books_id": "295188634",
+  "title": "All the Prayers of the Bible",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Lockyer, Herbert",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Lockyer, Herbert",
+    "fl": "Herbert Lockyer",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9788173622496",
+  "isbn": ["9788173622496",
+  "8173622493"],
+  "asin": "0310281210",
+  "ean": ["0310281210"],
+  "publication": "Authentic Books, Secunderbad",
+  "date": "2010",
+  "summary": "All the Prayers of the Bible by Herbert Lockyer (2010)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["220"],
+    "wording": ["Religion",
+    "The Bible",
+    "The Bible"]
+  },
+  "lcc": {
+    "code": "BV228.L6"
+  },
+  "subject": [["Bible",
+  "Prayers"]],
+  "series": ["Herbert Lockyer's \"All\" Series"],
+  "genre": ["Nonfiction",
+  "Religion & Spirituality"],
+  "genre_id": ["20275895",
+  "1944"],
+  "source": "amazon.com books",
+  "workcode": "53418",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "304 p.; 9.2 inches",
+  "height": "9.2 inches",
+  "thickness": "0.79 inches",
+  "length": "6.15 inches",
+  "dimensions": "9.2 x 6.15 x 0.79 inches",
+  "weight": "2.314853751 pounds",
+  "pages": "304 "
 }}
