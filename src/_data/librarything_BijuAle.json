@@ -77915,6 +77915,13 @@
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": [" 511.3"],
+    "wording": ["General principles of mathematics",
+    "Mathematical (Symbolic) logic",
+    "Mathematics",
+    "Science"]
+  },
   "lcc": {
     "code": "QA9"
   },
@@ -78005,6 +78012,12 @@
   "publication": "ISPCK, Delhi",
   "date": "2001",
   "summary": "An Invitation To Philosophy by Augustine Perumalil (2001)",
+  "ddc": {
+    "code": ["101"],
+    "wording": ["Philosophy",
+    "Philosophy & psychology",
+    "Theory of philosophy"]
+  },
   "lcc": [],
   "source": "manual entry",
   "workcode": "34763337",
@@ -78044,6 +78057,12 @@
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["190"],
+    "wording": ["Modern western and other noneastern philosophy",
+    "Modern western philosophy",
+    "Philosophy & psychology"]
+  },
   "lcc": [],
   "source": "amazon.com books",
   "workcode": "34767830",
@@ -78191,6 +78210,15 @@
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["230.092"],
+    "wording": ["Biography",
+    "Biography And History",
+    "Christianity",
+    "Christianity",
+    "Doctrinal Dogmatics - Theology",
+    "Religion"]
+  },
   "lcc": {
     "code": "PR6023.E926 Z88"
   },
@@ -78644,6 +78672,13 @@
   },
   "publication": "New Light Publishers, New Delhi",
   "summary": "How to Play Chess by R. L. Mitchell",
+  "ddc": {
+    "code": ["794.1"],
+    "wording": ["Arts & recreation",
+    "Chess",
+    "Indoor games of skill",
+    "Sports, games & entertainment"]
+  },
   "lcc": [],
   "source": "manual entry",
   "workcode": "34844477",
