@@ -3586,7 +3586,7 @@
 },
 "248001484": {
   "books_id": "248001484",
-  "title": "Beginners' Botany",
+  "title": "Beginner's Botany",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Bailey, Liberty Hyde",
@@ -3599,9 +3599,9 @@
   "collections_idA": [1],
   "collections": ["Your library"],
   "asin": "B00JPIO0KO",
-  "publication": "Sutton Press (2014), 220 pages",
-  "date": "2014",
-  "summary": "Beginners' Botany by Liberty Hyde Bailey (2014)",
+  "publication": "Norwood Press",
+  "date": "1909",
+  "summary": "Beginner's Botany by Liberty Hyde Bailey (1909)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -10499,8 +10499,7 @@
     "41": ["fantasy"],
     "43": ["fantasy fiction"]
   },
-  "series": ["Isis Clear Type Classic",
-  "\u9b54\u6212",
+  "series": ["\u9b54\u6212",
   "Gospodar prstenova",
   "Il Signore degli Anelli",
   "Gy\u0171r\u0171k Ura",
@@ -19520,12 +19519,10 @@
   "title": "Restored",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Anderson, Mr Neil T",
-  "primaryauthorrole": "Author",
+  "primaryauthor": "Anderson, Neil T.",
   "authors": [{
-    "lf": "Anderson, Mr Neil T",
-    "fl": "Mr Neil T Anderson",
-    "role": "Author"
+    "lf": "Anderson, Neil T.",
+    "fl": "Neil T. Anderson"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
@@ -19538,7 +19535,7 @@
   "ean": ["1933383399"],
   "publication": "Freedom in Christ Ministries (2008), Edition: First Edition, 166 pages",
   "date": "2007",
-  "summary": "Restored by Mr Neil T Anderson (2007)",
+  "summary": "Restored by Neil T. Anderson (2007)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -24764,7 +24761,7 @@
 },
 "276505113": {
   "books_id": "276505113",
-  "title": "THE COLUMBIA HISTORY OF THE WORLD",
+  "title": "The Columbia History Of The World",
   "sortcharacter": "5",
   "public": "true",
   "primaryauthor": "John A. & Peter Gay (Editors) Garraty",
@@ -24785,7 +24782,7 @@
   "ean": ["0880290048"],
   "publication": "Harper (1981), Edition: Dorset Press Edition, 1237 pages",
   "date": "1981",
-  "summary": "THE COLUMBIA HISTORY OF THE WORLD by John A. & Peter Gay (Editors) Garraty (1981)",
+  "summary": "The Columbia History Of The World by John A. & Peter Gay (Editors) Garraty (1981)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -47163,6 +47160,7 @@
   "Outstanding Books for the College Bound and Lifelong Learners",
   "Philip Ward's Lifetime Reading Plan",
   "Schecks B\u00fccher",
+  "Seminary Co-op Notable Book of the Decade",
   "Six Professors from \"Esteemed\" Universities Favorite Books",
   "The 100 Most Influential Books Ever Written: The History of Thought from Ancient Times to Today",
   "The Essential Man's Library: 50 Fictional Adventure Books",
@@ -78285,7 +78283,10 @@
   "lcc": {
     "code": "PZ7.L58474 C"
   },
-  "series": ["Narnia: kronologisk ordning",
+  "series": ["The Chronicles of Narnia: Chronological order",
+  "Chronicles of Narnia: Chronological order",
+  "\u7d0d\u5c3c\u4e9e\u50b3\u5947",
+  "Kroniki Narnii",
   "Letopisi Narnije, hronolo\u0161ki",
   "Le cronache di Narnia, ordine della storia",
   "Les Chroniques de Narnia",
@@ -78295,11 +78296,9 @@
   "Die Chroniken von Narnia",
   "De Kronieken van Narnia",
   "Die Chroniken von Narnia, Handlung Chronologisch",
-  "Kroniki Narnii",
-  "\u7d0d\u5c3c\u4e9e\u50b3\u5947",
-  "The Chronicles of Narnia: Chronological order",
-  "Chronicles of Narnia: Chronological order",
   "Narnia kr\u00f3nik\u00e1i",
+  "Narnia: kronologisk ordning",
+  "Narnia: publiceringsordning",
   "The Chronicles of Narnia: Publication order",
   "Chronicles of Narnia: Publication order",
   "\u7d0d\u5c3c\u4e9e\u50b3\u5947(\u51fa\u7248\u6b21\u5e8f)",
@@ -78308,7 +78307,6 @@
   "Letopisi Narnije",
   "Le cronache di Narnia",
   "De Kronieken van Narnia",
-  "Narnia: publiceringsordning",
   "Narnia: publiceringsordning",
   "Die Chroniken von Narnia"],
   "awards": ["1,000 Books to Read Before You Die Page-A-Day Calendar",
@@ -78747,4 +78745,2532 @@
   "dimensions": "9.2 x 6.15 x 0.79 inches",
   "weight": "2.314853751 pounds",
   "pages": "304 "
+},
+"295442682": {
+  "books_id": "295442682",
+  "title": "Old and Middle English Literature From the Beginnings to 1485",
+  "sortcharacter": "2",
+  "public": "true",
+  "primaryauthor": "Anderson, George K.",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Craig, Hardin",
+  "secondaryauthorroles": "Editor",
+  "authors": [{
+    "lf": "Anderson, George K.",
+    "fl": "George K. Anderson",
+    "role": "Author"
+  },
+  {
+    "lf": "Craig, Hardin",
+    "fl": "Hardin Craig",
+    "role": "Editor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B0007DYAEW",
+  "publication": "Collier Books (1962), Edition: First Edition",
+  "date": "1962",
+  "summary": "Old and Middle English Literature From the Beginnings to 1485 by George K. Anderson (1962)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["820.9001"],
+    "wording": ["English & Old English literatures",
+    "English and Old English (Anglo-Saxon) literatures",
+    "History, description, critical appraisal of works in more than one form",
+    "Literature & rhetoric"]
+  },
+  "lcc": {
+    "code": "PR85.C68 .1"
+  },
+  "source": "amazon.com books",
+  "workcode": "173531",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "weight": "1 pound"
+},
+"295442869": {
+  "books_id": "295442869",
+  "title": "Europe of the dictators, 1919-1945 (Fontana history of Europe)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Wiskemann, Elizabeth",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Wiskemann, Elizabeth",
+    "fl": "Elizabeth Wiskemann",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0006860680",
+  "isbn": {
+    "0": "0006860680",
+    "2": "9780006860686"
+  },
+  "asin": "0006860680",
+  "ean": ["0006860680"],
+  "publication": "Fontana Press (1966), 287 pages",
+  "date": "1966",
+  "summary": "Europe of the dictators, 1919-1945 (Fontana history of Europe) by Elizabeth Wiskemann (1966)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["940.5"],
+    "wording": ["1918-",
+    "History & geography",
+    "History of Europe",
+    "History of Europe"]
+  },
+  "lcc": {
+    "code": "D443 .W557"
+  },
+  "subject": [["Europe",
+  "History",
+  "1918-1945"]],
+  "series": ["Historia de Europa Siglo XXI"],
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "History"],
+  "genre_id": ["20275895",
+  "1247",
+  "1599"],
+  "source": "amazon.com books",
+  "workcode": "949305",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "287 p.",
+  "height": "7.56 inches",
+  "thickness": "0.63 inches",
+  "length": "5.04 inches",
+  "dimensions": "7.56 x 5.04 x 0.63 inches",
+  "weight": "0.440924524 pounds",
+  "pages": "287 "
+},
+"295443070": {
+  "books_id": "295443070",
+  "title": "The Complete Works of William Shakespeare",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Craig, S. J.",
+  "primaryauthorrole": "Editor",
+  "authors": [{
+    "lf": "Craig, S. J.",
+    "fl": "S. J. Craig",
+    "role": "Editor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B0006DL4RO",
+  "publication": "Humprhrey Milford, Oxford University Press (1945)",
+  "date": "1947",
+  "summary": "The Complete Works of William Shakespeare by S. J. Craig (1947)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["822.33"],
+    "wording": ["Elizabethan 1558-1625",
+    "English & Old English literatures",
+    "English drama",
+    "Literature & rhetoric",
+    "Shakespeare, William 1564\u20131616"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "34436735",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
+},
+"295443303": {
+  "books_id": "295443303",
+  "title": "Modern Constitutions",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Wheare, K. C.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Wheare, K. C.",
+    "fl": "K. C. Wheare",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9780198880110",
+  "isbn": ["9780198880110",
+  "0198880111"],
+  "asin": "0198880111",
+  "ean": ["0198880111"],
+  "publication": "Oxford University Press (1966), Edition: 2, 158 pages",
+  "date": "1966",
+  "summary": "Modern Constitutions by K. C. Wheare (1966)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["342"],
+    "wording": ["Constitutional and administrative law",
+    "Law",
+    "Social sciences"]
+  },
+  "lcc": {
+    "code": "K3165"
+  },
+  "subject": [["Constitutional law"],
+  ["Constitutions"]],
+  "source": "amazon.com books",
+  "workcode": "1223658",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "158 p.",
+  "weight": "0.4 pounds",
+  "pages": "158 "
+},
+"295443392": {
+  "books_id": "295443392",
+  "title": "The Genetic Code",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Asimov, Isaac",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Asimov, Isaac",
+    "fl": "Isaac Asimov",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B002AZGXFY",
+  "publication": "Signet (1962), Edition: First Edition, 187 pages",
+  "date": "1962",
+  "summary": "The Genetic Code by Isaac Asimov (1962)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["575.12"],
+    "wording": ["Biology",
+    "Heredity",
+    "Science",
+    "Specific parts of and physiological systems in plants"]
+  },
+  "lcc": {
+    "code": "QH431.A72"
+  },
+  "subject": {
+    "0": ["Genetic code"],
+    "2": ["Genetics",
+    "Popular Works"],
+    "4": ["Genetics",
+    "Popular works"],
+    "6": ["genetic code"]
+  },
+  "source": "amazon.com books",
+  "workcode": "295790",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "187 p.",
+  "weight": "0.992080179 pounds",
+  "pages": "187 "
+},
+"295443494": {
+  "books_id": "295443494",
+  "title": "The Evidence For Creation: Examining The Origin Of Planet Earth",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "McLean, G. S",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "McLean, G. S",
+    "fl": "G. S McLean",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0883682117",
+  "isbn": {
+    "0": "0883682117",
+    "2": "9780883682111"
+  },
+  "asin": "0883682117",
+  "ean": ["0883682117"],
+  "publication": "Full Gospel Bible Institute (1989), 192 pages",
+  "date": "1989",
+  "summary": "The Evidence For Creation: Examining The Origin Of Planet Earth by G. S McLean (1989)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["231.7"],
+    "wording": ["Christianity",
+    "God",
+    "Relation to the world - divine law and miracles",
+    "Religion"]
+  },
+  "lcc": {
+    "code": "BS651 .M398"
+  },
+  "subject": {
+    "0": ["Creationism"],
+    "2": ["Evolution"],
+    "4": ["evolution"]
+  },
+  "source": "amazon.com books",
+  "workcode": "213273",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.5",
+    "text": "Unbound paper"
+  }],
+  "copies": "1",
+  "physical_description": "192 p.",
+  "height": "8.1 inches",
+  "thickness": "0.6 inches",
+  "length": "5.1 inches",
+  "dimensions": "8.1 x 5.1 x 0.6 inches",
+  "weight": "0.55 pounds",
+  "pages": "192 "
+},
+"295443587": {
+  "books_id": "295443587",
+  "title": "Why ProLife?",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Alcorn, Randy",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Alcorn, Randy",
+    "fl": "Randy Alcorn",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8173627851",
+  "isbn": {
+    "0": "8173627851",
+    "2": "9788173627859"
+  },
+  "asin": "8173627851",
+  "ean": ["8173627851"],
+  "publication": "Authentic, Andhra Pradesh",
+  "date": "2007",
+  "summary": "Why ProLife? by Randy Alcorn (2007)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["363.46"],
+    "wording": ["Abortion",
+    "Other social problems and services",
+    "Social problems and social services",
+    "Social sciences"]
+  },
+  "lcc": {
+    "code": "HQ766 .A53"
+  },
+  "subject": [["Abortion",
+  "Christianity"],
+  ["Abortion",
+  "Moral and ethical aspects"],
+  ["Right to life"]],
+  "source": "amazon.com books",
+  "workcode": "486532",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "7.09 inches",
+  "height": "7.0866 inches",
+  "thickness": "4.7244 inches",
+  "length": "0.70866 inches",
+  "dimensions": "7.0866 x 0.70866 x 4.7244 inches",
+  "weight": "1.01 pounds"
+},
+"295444037": {
+  "books_id": "295444037",
+  "title": "The Prophet",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Gibran, Kahlil",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Gibran, Kahlil",
+    "fl": "Kahlil Gibran",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9780394404288",
+  "isbn": ["9780394404288",
+  "0394404289"],
+  "asin": "0394404289",
+  "ean": ["0394404289"],
+  "publication": "Allied Publishers, New Delhi",
+  "date": "1979",
+  "summary": "The Prophet by Kahlil Gibran (1979)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["818.9956923"],
+    "wording": ["---",
+    "American literature in English",
+    "American literature in English outside the USA (English speaking authors)",
+    "American miscellaneous writings in English",
+    "Asia",
+    "Fiction",
+    "Lebanon",
+    "Levent",
+    "Literature & rhetoric",
+    "Middle East"]
+  },
+  "lcc": {
+    "code": "PS3513.I25 P7"
+  },
+  "subject": {
+    "0": ["Gibran, Kahlil, 1883-1931",
+    "Translations into English"],
+    "1": ["Large Type Books"],
+    "2": ["Large type books"],
+    "4": ["Mysticism",
+    "Poetry"],
+    "6": ["Prose poems, American"]
+  },
+  "series": ["The Prophet"],
+  "awards": ["111 jaar Donner - Een tijdlijn in boeken",
+  "Blackwell's 1879-2019: 140 Years 140 Books",
+  "Museums, Libraries, and Archives Society's \"30 Books Every Adult Should Read Before They Die\"",
+  "New York Public Library's Books of the Century",
+  "The Most Iconic Books Set in 150 Countries Around the World"],
+  "genre": ["Fiction",
+  "Poetry",
+  "Religion & Spirituality"],
+  "genre_id": ["17160326",
+  "10010",
+  "1944"],
+  "source": "amazon.com books",
+  "workcode": "8505",
+  "entrydate": "2025-09-14",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "96 p.; 8.5 inches",
+  "height": "8.5 inches",
+  "thickness": "0.54 inches",
+  "length": "5.69 inches",
+  "dimensions": "8.5 x 5.69 x 0.54 inches",
+  "weight": "0.6503636729 pounds",
+  "pages": "96 "
+},
+"295515123": {
+  "books_id": "295515123",
+  "title": "Professor Stewart's Hoard of Mathematical Treasures",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Stewart, Professor Ian",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Stewart, Professor Ian",
+    "fl": "Professor Ian Stewart",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1846683467",
+  "isbn": {
+    "0": "1846683467",
+    "2": "9781846683466"
+  },
+  "asin": "1846683467",
+  "ean": ["1846683467"],
+  "publication": "Profile Books (2010), Edition: Main, 352 pages",
+  "date": "2010",
+  "summary": "Professor Stewart's Hoard of Mathematical Treasures by Professor Ian Stewart (2010)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["510"],
+    "wording": ["Mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA99 .S85"
+  },
+  "series": ["Cabinet of Curiosities"],
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1247",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "8906148",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "7.7 inches",
+  "thickness": "1 inch",
+  "length": "5.1 inches",
+  "dimensions": "7.7 x 5.1 x 1 inches",
+  "weight": "0.65 pounds",
+  "pages": "352 "
+},
+"295515167": {
+  "books_id": "295515167",
+  "title": "Introduction to Mathematical Physics",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Charlie, Harper",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Charlie, Harper",
+    "fl": "Harper Charlie",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8120302621",
+  "isbn": {
+    "0": "8120302621",
+    "2": "9788120302624"
+  },
+  "asin": "8120302621",
+  "ean": ["8120302621"],
+  "publication": "Prentice-Hall of India Pvt.Ltd (2013), 320 pages",
+  "date": "2013",
+  "summary": "Introduction to Mathematical Physics by Harper Charlie (2013)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["530.1"],
+    "wording": ["Physics",
+    "Physics",
+    "Science",
+    "Theoretical Physics"]
+  },
+  "lcc": {
+    "code": "QC20.H38"
+  },
+  "source": "amazon.com books",
+  "workcode": "1166700",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295515254": {
+  "books_id": "295515254",
+  "title": "1001 Questions and Answers",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Simon Mugford & Alexander Gordon Smith",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Simon Mugford & Alexander Gordon Smith",
+    "fl": "Simon Mugford & Alexander Gordon Smith",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1843224542",
+  "isbn": {
+    "0": "1843224542",
+    "2": "9781843224549"
+  },
+  "asin": "1843224542",
+  "ean": ["1843224542"],
+  "publication": "Armadillo Books (2002), 192 pages",
+  "date": "2002",
+  "summary": "1001 Questions and Answers by Simon Mugford & Alexander Gordon Smith (2002)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["031.02"],
+    "wording": ["Computer science, information & general works",
+    "Encyclopedias & books of facts",
+    "General encyclopedic works in American English",
+    "Miscellanies and Factbooks"]
+  },
+  "lcc": {
+    "code": "AG195.O58"
+  },
+  "source": "amazon.com books",
+  "workcode": "1949324",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "11.7 inches",
+  "thickness": "0.4 inches",
+  "length": "9 inches",
+  "dimensions": "11.7 x 9 x 0.4 inches",
+  "weight": "1.95 pounds",
+  "pages": "192 "
+},
+"295515729": {
+  "books_id": "295515729",
+  "title": "The Earth in Space (Science in Our World)",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Riley, Peter",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Riley, Peter",
+    "fl": "Peter Riley",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0531153703",
+  "isbn": {
+    "0": "0531153703",
+    "2": "9780531153703"
+  },
+  "asin": "0531153703",
+  "ean": ["0531153703"],
+  "publication": "Regency Publishing",
+  "date": "1997",
+  "summary": "The Earth in Space (Science in Our World) by Peter Riley (1997)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["520"],
+    "wording": ["Astronomy",
+    "Astronomy and allied sciences",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QB46 .R56"
+  },
+  "series": ["Straightforward Science"],
+  "genre": ["Nonfiction",
+  "Kids"],
+  "genre_id": ["20275895",
+  "24"],
+  "source": "amazon.com books",
+  "workcode": "3460256",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
+},
+"295515915": {
+  "books_id": "295515915",
+  "title": "103 Trigonometry Problems: From the Training of the USA IMO Team",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Andreescu, Titu",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Feng, Zuming",
+  "secondaryauthorroles": "Primary Contributor",
+  "authors": [{
+    "lf": "Andreescu, Titu",
+    "fl": "Titu Andreescu",
+    "role": "Author"
+  },
+  {
+    "lf": "Feng, Zuming",
+    "fl": "Zuming Feng",
+    "role": "Primary Contributor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0817643346",
+  "isbn": {
+    "0": "0817643346",
+    "2": "9780817643348"
+  },
+  "asin": "0817643346",
+  "ean": ["0817643346"],
+  "publication": "Birkh&auml;user (2004), Edition: 2005, 226 pages",
+  "date": "2004",
+  "summary": "103 Trigonometry Problems: From the Training of the USA IMO Team by Titu Andreescu (2004)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["516.24"],
+    "wording": ["Euclidean geometry",
+    "Geometry",
+    "Mathematics",
+    "Science",
+    "Trigonometry"]
+  },
+  "lcc": {
+    "code": "QA537 .A63"
+  },
+  "source": "amazon.com books",
+  "workcode": "427764",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "226 p.; 9.25 inches",
+  "height": "9.25 inches",
+  "thickness": "0.53 inches",
+  "length": "6.1 inches",
+  "dimensions": "9.25 x 6.1 x 0.53 inches",
+  "weight": "0.83334735036 pounds",
+  "pages": "226 "
+},
+"295515969": {
+  "books_id": "295515969",
+  "title": "The Observer's Book of British Wild Animals",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Burton, Maurice",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Burton, Maurice",
+    "fl": "Maurice Burton",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0723215030",
+  "isbn": {
+    "0": "0723215030",
+    "2": "9780723215035"
+  },
+  "asin": "0723215030",
+  "ean": ["0723215030"],
+  "publication": "Warne (1972), Edition: Revised, 205 pages",
+  "date": "1972",
+  "summary": "The Observer's Book of British Wild Animals by Maurice Burton (1972)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["596.0942"],
+    "wording": ["Animals (Zoology)",
+    "Chordata",
+    "England and Wales",
+    "Europe",
+    "Geographic",
+    "Science",
+    "Vertebrates"]
+  },
+  "lcc": {
+    "code": "QL706 .B98"
+  },
+  "series": ["Observer's Books",
+  "The Observer's Pocket Series"],
+  "genre": ["Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "1399773",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "205 p.; 20 inches",
+  "height": "20 inches",
+  "thickness": "20 inches",
+  "length": "20 inches",
+  "dimensions": "20 x 20 x 20 inches",
+  "weight": "20.00033640864 pounds",
+  "pages": "205 "
+},
+"295516042": {
+  "books_id": "295516042",
+  "title": "The Observer's Book of Insects",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "; Clegg Linssen, John E. F.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "; Clegg Linssen, John E. F.",
+    "fl": "John E. F. ; Clegg Linssen",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1854710486",
+  "isbn": {
+    "0": "1854710486",
+    "2": "9781854710482"
+  },
+  "asin": "1854710486",
+  "ean": ["1854710486"],
+  "publication": "Godfrey Cave Associates Ltd (1996), Edition: Revised",
+  "date": "1996",
+  "summary": "The Observer's Book of Insects by John E. F. ; Clegg Linssen (1996)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["595.7"],
+    "wording": ["Animals (Zoology)",
+    "Arthropoda",
+    "Insects: Insecta, Hexapoda",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QL482.G8 L5"
+  },
+  "subject": [["Arachnida",
+  "British Isles"],
+  ["Insects",
+  "British Isles"],
+  ["Spiders",
+  "British Isles"]],
+  "series": ["Observer's Books",
+  "The Observer's Pocket Series"],
+  "genre": ["Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "1330896",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
+},
+"295516239": {
+  "books_id": "295516239",
+  "title": "Mathematical Analysis",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Apostol, Tom",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Apostol, Tom",
+    "fl": "Tom Apostol",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "0201002884",
+  "ean": ["0201002884"],
+  "publication": "Addison-Wesley",
+  "date": "1997",
+  "summary": "Mathematical Analysis by Tom Apostol (1997)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["515"],
+    "wording": ["Analysis",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA300 .A573"
+  },
+  "subject": [["Mathematical analysis"]],
+  "source": "amazon.com books",
+  "workcode": "365453",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "512 p.; 9.1 inches",
+  "height": "9.1 inches",
+  "thickness": "6.5 inches",
+  "length": "1.1 inches",
+  "dimensions": "9.1 x 1.1 x 6.5 inches",
+  "weight": "0.220462262 pounds",
+  "pages": "512 "
+},
+"295516373": {
+  "books_id": "295516373",
+  "title": "Introductory Functional Analysis with Applications",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Kreyszig, E.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Kreyszig, E.",
+    "fl": "E. Kreyszig",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8126511915",
+  "isbn": {
+    "0": "8126511915",
+    "2": "9788126511914"
+  },
+  "asin": "8126511915",
+  "ean": ["8126511915"],
+  "publication": "Wiley Publishing (2006), Edition: 1st, 688 pages",
+  "date": "2006",
+  "summary": "Introductory Functional Analysis with Applications by E. Kreyszig (2006)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["515.7"],
+    "wording": ["Analysis",
+    "Functional Analysis",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA320 .K74"
+  },
+  "subject": [["Functional analysis"]],
+  "source": "amazon.com books",
+  "workcode": "3111952",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295516624": {
+  "books_id": "295516624",
+  "title": "121 Mathematical Puzzles And Teasers",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Champanerkar, M.",
+  "authors": [{
+    "lf": "Champanerkar, M.",
+    "fl": "M. Champanerkar"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "81-85311-18-8",
+  "isbn": ["81-85311-18-8",
+  "8185311188",
+  "9788185311180"],
+  "publication": "Jeet Publications, Bombay",
+  "summary": "121 Mathematical Puzzles And Teasers by M. Champanerkar",
+  "ddc": {
+    "code": ["793.74"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Mathematical games and puzzles",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Sports, games & entertainment"]
+  },
+  "lcc": [],
+  "source": "manual entry",
+  "workcode": "28389624",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"295516682": {
+  "books_id": "295516682",
+  "title": "The Great Book of Puzzles and Teasers",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Summers, George J.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Summers, George J.",
+    "fl": "George J. Summers",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8172242212",
+  "isbn": {
+    "0": "8172242212",
+    "2": "9788172242213"
+  },
+  "asin": "8172242212",
+  "ean": ["8172242212"],
+  "publication": "Jaico Publishing House (2005), 256 pages",
+  "date": "2005",
+  "summary": "The Great Book of Puzzles and Teasers by George J. Summers (2005)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["793.73"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Puzzles and puzzle games",
+    "Sports, games & entertainment"]
+  },
+  "lcc": {
+    "code": "GV1507.D4 S857"
+  },
+  "subject": [["Detective and mystery stories"],
+  ["Puzzles"]],
+  "source": "amazon.com books",
+  "workcode": "38492",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295516785": {
+  "books_id": "295516785",
+  "title": "Mammoth Book of Quick Puzzles",
+  "sortcharacter": "1",
+  "public": "true",
+  "authors": [[]],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1849010595",
+  "isbn": {
+    "0": "1849010595",
+    "2": "9781849010597"
+  },
+  "asin": "1849010595",
+  "ean": ["1849010595"],
+  "publication": "Robinson Publishing",
+  "summary": "Mammoth Book of Quick Puzzles",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["793"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Sports, games & entertainment"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "10330989",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295516802": {
+  "books_id": "295516802",
+  "title": "Challenging Math Puzzles",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Vecchione, Glen",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Vecchione, Glen",
+    "fl": "Glen Vecchione",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8172451709",
+  "isbn": {
+    "0": "8172451709",
+    "2": "9788172451707"
+  },
+  "asin": "8172451709",
+  "ean": ["8172451709"],
+  "publication": "Goodwill Publishing House (2009)",
+  "date": "2009",
+  "summary": "Challenging Math Puzzles by Glen Vecchione (2009)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["793.74"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Mathematical games and puzzles",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Sports, games & entertainment"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "2330120",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295517139": {
+  "books_id": "295517139",
+  "title": "Sudoku LET",
+  "sortcharacter": "1",
+  "public": "true",
+  "authors": [[]],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "978-1-84858-604-8",
+  "isbn": ["978-1-84858-604-8",
+  "1848586043",
+  "9781848586048"],
+  "publication": "Arcturus Publishing",
+  "date": "2012",
+  "summary": "Sudoku LET (2012)",
+  "ddc": {
+    "code": ["793.74"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Mathematical games and puzzles",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Sports, games & entertainment"]
+  },
+  "lcc": [],
+  "source": "manual entry",
+  "workcode": "34901883",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"295517438": {
+  "books_id": "295517438",
+  "title": "1001 Riddles",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Wilson, Brian",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Wilson, Brian",
+    "fl": "Brian Wilson",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8182746361",
+  "isbn": {
+    "0": "8182746361",
+    "2": "9788182746367"
+  },
+  "asin": "8182746361",
+  "ean": ["8182746361"],
+  "publication": "Pentagon Press (2005), 216 pages",
+  "date": "2005",
+  "summary": "1001 Riddles by Brian Wilson (2005)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["793.735"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Puzzles and puzzle games",
+    "Riddles",
+    "Sports, games & entertainment"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "16108036",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "7.8 inches",
+  "thickness": "0.63 inches",
+  "length": "5.59 inches",
+  "dimensions": "7.8 x 5.59 x 0.63 inches",
+  "weight": "0.57 pounds",
+  "pages": "216 "
+},
+"295517448": {
+  "books_id": "295517448",
+  "title": "Everyday Maths for Grown-Ups: Getting to Grips with the Basics",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Poskitt, Kjartan",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Poskitt, Kjartan",
+    "fl": "Kjartan Poskitt",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "178243335X",
+  "isbn": {
+    "0": "178243335X",
+    "2": "9781782433354"
+  },
+  "asin": "178243335X",
+  "ean": ["178243335X"],
+  "publication": "Michael O'Mara Books Ltd (2015)",
+  "date": "2015",
+  "summary": "Everyday Maths for Grown-Ups: Getting to Grips with the Basics by Kjartan Poskitt (2015)",
+  "language": ["English",
+  "Undetermined"],
+  "language_codeA": ["eng",
+  "und"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng",
+  "und"],
+  "ddc": {
+    "code": ["510"],
+    "wording": ["Mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA93 P"
+  },
+  "source": "amazon.com books",
+  "workcode": "10342599",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295517537": {
+  "books_id": "295517537",
+  "title": "Puzzles for Superbrains",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Odell, Steve",
+  "primaryauthorrole": "Editor",
+  "authors": [{
+    "lf": "Odell, Steve",
+    "fl": "Steve Odell",
+    "role": "Editor"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0584104553",
+  "isbn": {
+    "0": "0584104553",
+    "2": "9780584104554"
+  },
+  "asin": "0584104553",
+  "ean": ["0584104553"],
+  "publication": "Hutchinson (1979), 80 pages",
+  "date": "1979",
+  "summary": "Puzzles for Superbrains by Steve Odell (1979)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["793.7"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Sports, games & entertainment"]
+  },
+  "lcc": {
+    "code": "GV1493"
+  },
+  "source": "amazon.com books",
+  "workcode": "2208936",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295517600": {
+  "books_id": "295517600",
+  "title": "How to Pass Numerical Reasoning Tests: Over 550 Practice Questions (Kogan Page Testing)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Smith, Heidi",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Smith, Heidi",
+    "fl": "Heidi Smith",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "074948019X",
+  "isbn": {
+    "0": "074948019X",
+    "2": "9780749480196"
+  },
+  "asin": "074948019X",
+  "ean": ["074948019X"],
+  "publication": "Kogan Page (2017), Edition: 3, 224 pages",
+  "date": "2017",
+  "summary": "How to Pass Numerical Reasoning Tests: Over 550 Practice Questions (Kogan Page Testing) by Heidi Smith (2017)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["510.76"],
+    "wording": ["Education And Research",
+    "Mathematics",
+    "Mathematics",
+    "Review and exercise",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA43 SMI"
+  },
+  "source": "amazon.com books",
+  "workcode": "20817800",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295517658": {
+  "books_id": "295517658",
+  "title": "Critical Thinking Puzzles",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Dispezio, Michael A.",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Miller, Myron",
+  "secondaryauthorroles": "Illustrator",
+  "authors": [{
+    "lf": "Dispezio, Michael A.",
+    "fl": "Michael A. Dispezio",
+    "role": "Author"
+  },
+  {
+    "lf": "Miller, Myron",
+    "fl": "Myron Miller",
+    "role": "Illustrator"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0806994304",
+  "isbn": {
+    "0": "0806994304",
+    "2": "9780806994307"
+  },
+  "asin": "0806994304",
+  "ean": ["0806994304"],
+  "publication": "Sterling Pub Co Inc (1996), 96 pages",
+  "date": "1996",
+  "summary": "Critical Thinking Puzzles by Michael A. Dispezio (1996)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["793.73"],
+    "wording": ["Arts & recreation",
+    "Indoor games and amusements",
+    "Non-action games, puzzles [boardgames now 794]",
+    "Puzzles and puzzle games",
+    "Sports, games & entertainment"]
+  },
+  "lcc": {
+    "code": "GV1493 .D55"
+  },
+  "subject": {
+    "0": ["Critical thinking"],
+    "2": ["Puzzles"]
+  },
+  "source": "amazon.com books",
+  "workcode": "171506",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "96 p.; 8.5 inches",
+  "height": "8.5 inches",
+  "thickness": "0.5 inches",
+  "length": "5.5 inches",
+  "dimensions": "8.5 x 5.5 x 0.5 inches",
+  "weight": "0.25 pounds",
+  "pages": "96 "
+},
+"295517721": {
+  "books_id": "295517721",
+  "title": "Speed Mathematics: Secrets of Lightning Mental Calculation",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Handley, Bill",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Handley, Bill",
+    "fl": "Bill Handley",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1876627336",
+  "isbn": {
+    "0": "1876627336",
+    "2": "9781876627331"
+  },
+  "asin": "1876627336",
+  "ean": ["1876627336"],
+  "publication": "Master Mind Books (2000), 230 pages",
+  "date": "2000",
+  "summary": "Speed Mathematics: Secrets of Lightning Mental Calculation by Bill Handley (2000)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["513.9"],
+    "wording": ["Arithmetic",
+    "Mathematics",
+    "Problems",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA103 .H363"
+  },
+  "source": "amazon.com books",
+  "workcode": "1187005",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "230 p.",
+  "weight": "0.5 pounds",
+  "pages": "230 "
+},
+"295517766": {
+  "books_id": "295517766",
+  "title": "Mathematics Dictionary",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "James",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "James",
+    "fl": "James",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9788123909134",
+  "isbn": ["9788123909134",
+  "8123909136"],
+  "asin": "8123909136",
+  "ean": ["8123909136"],
+  "publication": "CBS Publishers (2007)",
+  "date": "2007",
+  "summary": "Mathematics Dictionary by James (2007)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["510.3"],
+    "wording": ["Dictionaries And Encyclopedias",
+    "Mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA5 .J32"
+  },
+  "subject": {
+    "0": ["Dictionaries, Polyglot"],
+    "2": ["Mathematics",
+    "Dictionaries"],
+    "4": ["Mathematics",
+    "Dictionaries",
+    "Polyglot"],
+    "5": ["Mathematics",
+    "Polyglot"],
+    "6": ["Mathematics",
+    "Polyglot.",
+    "Dictionaries"]
+  },
+  "source": "amazon.com books",
+  "workcode": "406884",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "7.99 x 1.85 inches",
+  "height": "1.85039 inches",
+  "thickness": "9.99998 inches",
+  "length": "7.99211 inches",
+  "dimensions": "1.85039 x 7.99211 x 9.99998 inches",
+  "weight": "2.4471309484021 pounds"
+},
+"295518030": {
+  "books_id": "295518030",
+  "title": "Theoretical Physics",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Kompaneyets, A. S.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Kompaneyets, A. S.",
+    "fl": "A. S. Kompaneyets",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B000IA4ZBM",
+  "publication": "Mir Publishers, Moscow",
+  "date": "1961",
+  "summary": "Theoretical Physics by A. S. Kompaneyets (1961)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["Russian"],
+  "originallanguage_codeA": ["eng",
+  "rus"],
+  "ddc": {
+    "code": ["530.1"],
+    "wording": ["Physics",
+    "Physics",
+    "Science",
+    "Theoretical Physics"]
+  },
+  "lcc": {
+    "code": "QC21 .K6513"
+  },
+  "subject": [["Physics"],
+  ["physics"]],
+  "source": "amazon.com books",
+  "workcode": "1235428",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "weight": "1.75 pounds"
+},
+"295518130": {
+  "books_id": "295518130",
+  "title": "Differential and Integral Calculus, Vol. I",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Piskunov, Nikolai",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Piskunov, Nikolai",
+    "fl": "Nikolai Piskunov",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "8123904924",
+  "ean": ["8123904924"],
+  "publication": "Mir Publishers, Moscow",
+  "date": "1981",
+  "summary": "Differential and Integral Calculus, Vol. I by Nikolai Piskunov (1981)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["515"],
+    "wording": ["Analysis",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA304"
+  },
+  "source": "amazon.com books",
+  "workcode": "28509080",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "199 p.; 7.99 x 1.85 inches",
+  "height": "1.8503936989 inches",
+  "thickness": "9.9999999898 inches",
+  "length": "7.9921259761 inches",
+  "dimensions": "1.8503936989 x 7.9921259761 x 9.9999999898 inches",
+  "weight": "0.52690480618 pounds",
+  "pages": "199 "
+},
+"295518136": {
+  "books_id": "295518136",
+  "title": "Differential And Integral Calculus, Vol 2",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Piskunov, Nikolai",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Piskunov, Nikolai",
+    "fl": "Nikolai Piskunov",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "8123904932",
+  "ean": ["8123904932"],
+  "publication": "Mir Publishers, Moscow",
+  "date": "1981",
+  "summary": "Differential And Integral Calculus, Vol 2 by Nikolai Piskunov (1981)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["515"],
+    "wording": ["Analysis",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA304"
+  },
+  "source": "amazon.com books",
+  "workcode": "5215565",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "199 p.; 7.99 x 1.85 inches",
+  "height": "1.85039 inches",
+  "thickness": "9.99998 inches",
+  "length": "7.99211 inches",
+  "dimensions": "1.85039 x 7.99211 x 9.99998 inches",
+  "weight": "0.52690480618 pounds",
+  "pages": "199 "
+},
+"295518316": {
+  "books_id": "295518316",
+  "title": "What Your Sixth Grader Needs to Know: Fundamentals of a Good Sixth-Grade Education (Core Knowledge Series : Resource Books for Grades One Through Six,)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Hirsch Jr., E. D.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Hirsch Jr., E. D.",
+    "fl": "E. D. Hirsch Jr.",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0385314671",
+  "isbn": {
+    "0": "0385314671",
+    "2": "9780385314671"
+  },
+  "asin": "0385314671",
+  "ean": ["0385314671"],
+  "publication": "Delta (1995), 416 pages",
+  "date": "1995",
+  "summary": "What Your Sixth Grader Needs to Know: Fundamentals of a Good Sixth-Grade Education (Core Knowledge Series : Resource Books for Grades One Through Six,) by E. D. Hirsch Jr. (1995)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["372.19"],
+    "wording": ["Education",
+    "Organization and activities in primary education",
+    "Primary education (Elementary education)",
+    "Primary education in subject areas",
+    "Social sciences"]
+  },
+  "lcc": {
+    "code": "LB1571 6 .W43"
+  },
+  "subject": [["Curriculum planning",
+  "United States"],
+  ["Sixth grade (Education)",
+  "Curricula"],
+  ["Sixth grade (Education)",
+  "Curricula",
+  "United States"]],
+  "series": ["Core Knowledge Series"],
+  "genre": ["Nonfiction",
+  "Tween"],
+  "genre_id": ["20275895",
+  "1191"],
+  "source": "amazon.com books",
+  "workcode": "34807",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "9 inches",
+  "thickness": "0.9 inches",
+  "length": "7.3 inches",
+  "dimensions": "9 x 7.3 x 0.9 inches",
+  "weight": "1.85 pounds",
+  "pages": "416 "
+},
+"295518334": {
+  "books_id": "295518334",
+  "title": "What Your 3rd Grader Needs to Know",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Hirsch, E. D.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Hirsch, E. D.",
+    "fl": "E. D. Hirsch",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "818528878X",
+  "isbn": {
+    "0": "818528878X",
+    "2": "9788185288789"
+  },
+  "asin": "818528878X",
+  "ean": ["818528878X"],
+  "summary": "What Your 3rd Grader Needs to Know by E. D. Hirsch",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["372.19"],
+    "wording": ["Education",
+    "Organization and activities in primary education",
+    "Primary education (Elementary education)",
+    "Primary education in subject areas",
+    "Social sciences"]
+  },
+  "lcc": {
+    "code": "LB1571 3 .W47"
+  },
+  "subject": {
+    "0": ["Curriculum planning",
+    "United States"],
+    "2": ["Third grade (Education)",
+    "Curricula",
+    "United States"],
+    "3": ["Third grade (Education)",
+    "United States",
+    "Curricula"],
+    "4": ["Third grade (Education)",
+    "United States.",
+    "Curricula"]
+  },
+  "series": ["Core Knowledge Series"],
+  "genre": ["Nonfiction"],
+  "genre_id": ["20275895"],
+  "source": "amazon.com books",
+  "workcode": "34808",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1"
+},
+"295518346": {
+  "books_id": "295518346",
+  "title": "Topology (2nd Economy Edition)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Munkres, James",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Munkres, James",
+    "fl": "James Munkres",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8120320468",
+  "isbn": {
+    "0": "8120320468",
+    "2": "9788120320468"
+  },
+  "asin": "8120320468",
+  "ean": ["8120320468"],
+  "publication": "Prentice-Hall, Inc. (2000), Edition: 2nd, 537 pages",
+  "date": "2000",
+  "summary": "Topology (2nd Economy Edition) by James Munkres (2000)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["514"],
+    "wording": ["Mathematics",
+    "Science",
+    "Topology"]
+  },
+  "lcc": {
+    "code": "QA611.M82"
+  },
+  "source": "amazon.com books",
+  "workcode": "11755494",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295518369": {
+  "books_id": "295518369",
+  "title": "Topics in Algebra",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Herstein, I N",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Herstein, I N",
+    "fl": "I N Herstein",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8126510188",
+  "isbn": {
+    "0": "8126510188",
+    "2": "9788126510184"
+  },
+  "asin": "8126510188",
+  "ean": ["8126510188"],
+  "publication": "JW&S (1975), Edition: 2nd",
+  "date": "1975",
+  "summary": "Topics in Algebra by I N Herstein (1975)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["512"],
+    "wording": ["Algebra",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA155.H4"
+  },
+  "subject": {
+    "0": ["Algebra"],
+    "2": ["algebra"]
+  },
+  "source": "amazon.com books",
+  "workcode": "175617",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "pages": "400 "
+},
+"295518378": {
+  "books_id": "295518378",
+  "title": "Elementary Number Theory (Paperback)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Burton, David",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Burton, David",
+    "fl": "David Burton",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9781259025761",
+  "isbn": ["9781259025761",
+  "1259025764"],
+  "asin": "1259025764",
+  "ean": ["1259025764"],
+  "publication": "Mcgraw (2017), Edition: 7th, 436 pages",
+  "date": "2017",
+  "summary": "Elementary Number Theory (Paperback) by David Burton (2017)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["512.72"],
+    "wording": ["Algebra",
+    "Mathematics",
+    "Number theory",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA241 .B83"
+  },
+  "subject": [["Number theory"]],
+  "series": ["International Series in Pure and Applied Mathematics"],
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1247",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "967365",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295518564": {
+  "books_id": "295518564",
+  "title": "Higher Mathematics for Beginners",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Zeldovich, Ya. B.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Zeldovich, Ya. B.",
+    "fl": "Ya. B. Zeldovich",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "publication": "Mir Publishers, Moscow",
+  "date": "1973",
+  "summary": "Higher Mathematics for Beginners by Ya. B. Zeldovich (1973)",
+  "ddc": {
+    "code": ["510"],
+    "wording": ["Mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": [],
+  "source": "manual entry",
+  "workcode": "34902113",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"295518702": {
+  "books_id": "295518702",
+  "title": "Typology",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Sheldon, Davis",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Sheldon, Davis",
+    "fl": "Davis Sheldon",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0070616108",
+  "isbn": {
+    "0": "0070616108",
+    "2": "9780070616103"
+  },
+  "asin": "0070616108",
+  "ean": ["0070616108"],
+  "publication": "Tata Mcgraw Hill (2004), Edition: First Edition, 448 pages",
+  "date": "2004",
+  "summary": "Typology by Davis Sheldon (2004)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["514"],
+    "wording": ["Mathematics",
+    "Science",
+    "Topology"]
+  },
+  "lcc": {
+    "code": "QA611 .D38"
+  },
+  "source": "amazon.com books",
+  "workcode": "12862835",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295518708": {
+  "books_id": "295518708",
+  "title": "Artificial Intelligence: A Modern Approach",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Norvig, Stuart Russell Russell Peter",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Norvig, Stuart Russell Russell Peter",
+    "fl": "Stuart Russell Russell Peter Norvig",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8177583670",
+  "isbn": {
+    "0": "8177583670",
+    "2": "9788177583670"
+  },
+  "asin": "8177583670",
+  "ean": ["8177583670"],
+  "publication": "Pearson, Edition: Second Edition: International Edition, 1022 pages",
+  "summary": "Artificial Intelligence: A Modern Approach by Stuart Russell Russell Peter Norvig",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["006.3"],
+    "wording": ["Artificial Intelligence",
+    "Computer science, information & general works",
+    "Computer science, knowledge & systems",
+    "Special computer methods"]
+  },
+  "lcc": {
+    "code": "Q335 .R86"
+  },
+  "subject": [["Artificial Intelligence"],
+  ["Artificial Intelligence",
+  "Periodicals"],
+  ["Artificial intelligence"],
+  ["Artificial intelligence",
+  "Periodicals"],
+  ["Machine learning"]],
+  "series": ["Prentice Hall Series in Artificial Intelligence"],
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "Science & Nature",
+  "Technology"],
+  "genre_id": ["20275895",
+  "1247",
+  "1457",
+  "17963"],
+  "source": "amazon.com books",
+  "workcode": "43569",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "pages": "1132 "
+},
+"295518988": {
+  "books_id": "295518988",
+  "title": "Elements Of Discrete Mathematics",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Liu, Chung L.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Liu, Chung L.",
+    "fl": "Chung L. Liu",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "007043476X",
+  "isbn": {
+    "0": "007043476X",
+    "2": "9780070434769"
+  },
+  "asin": "007043476X",
+  "ean": ["007043476X"],
+  "publication": "McGraw Hill Education India Pvt Ltd",
+  "summary": "Elements Of Discrete Mathematics by Chung L. Liu",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["511.1 ",
+    "511.1"],
+    "wording": ["Finite Mathematics",
+    "General principles of mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "32593928",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295519014": {
+  "books_id": "295519014",
+  "title": "Introduction To Graph Theory",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "West, Douglas B.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "West, Douglas B.",
+    "fl": "Douglas B. West",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8120314808",
+  "isbn": {
+    "0": "8120314808",
+    "2": "9788120314801"
+  },
+  "publication": "Prentice-Hall of India, New Delhi",
+  "date": "2000",
+  "summary": "Introduction To Graph Theory by Douglas B. West (2000)",
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["511.5"],
+    "wording": ["General principles of mathematics",
+    "Graph Theory",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA166 .W43"
+  },
+  "source": "manual entry",
+  "workcode": "9101826",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"295519200": {
+  "books_id": "295519200",
+  "title": "Matrices and Linear Algebra",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Schneider, Hans",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Barker, George Phillip",
+  "secondaryauthorroles": "Author",
+  "authors": [{
+    "lf": "Schneider, Hans",
+    "fl": "Hans Schneider",
+    "role": "Author"
+  },
+  {
+    "lf": "Barker, George Phillip",
+    "fl": "George Phillip Barker",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "publication": "Holt Rinehart and Winston, New York",
+  "date": "1968",
+  "summary": "Matrices and Linear Algebra by Hans Schneider (1968)",
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["512.9434"],
+    "wording": ["Algebra",
+    "Foundations of Algebra",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA184 .S38"
+  },
+  "subject": [["Algebras, Linear"],
+  ["Matrices"]],
+  "source": "manual entry",
+  "workcode": "430427",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "volumes": "1"
+},
+"295519215": {
+  "books_id": "295519215",
+  "title": "Geometry",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Mich\u00e8le, Audin",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Mich\u00e8le, Audin",
+    "fl": "Audin Mich\u00e8le",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8181280164",
+  "isbn": {
+    "0": "8181280164",
+    "2": "9788181280169"
+  },
+  "asin": "8181280164",
+  "ean": ["8181280164"],
+  "publication": "Springer India (2006), Edition: 2006, 382 pages",
+  "date": "2006",
+  "summary": "Geometry by Audin Mich\u00e8le (2006)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["530.1"],
+    "wording": ["Physics",
+    "Physics",
+    "Science",
+    "Theoretical Physics"]
+  },
+  "lcc": {
+    "code": "QC174.G7 T86"
+  },
+  "source": "amazon.com books",
+  "workcode": "1319888",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295519238": {
+  "books_id": "295519238",
+  "title": "Introductory Methods of Numerical Analysis",
+  "sortcharacter": "1",
+  "public": "true",
+  "authors": [[]],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "812031266X",
+  "isbn": {
+    "0": "812031266X",
+    "2": "9788120312661"
+  },
+  "asin": "812031266X",
+  "ean": ["812031266X"],
+  "publication": "Gardners Books",
+  "summary": "Introductory Methods of Numerical Analysis",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["515"],
+    "wording": ["Analysis",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA297.S34"
+  },
+  "source": "amazon.com books",
+  "workcode": "1002095",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295519321": {
+  "books_id": "295519321",
+  "title": "Mechanics 1",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Quadling, Douglas",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Quadling, Douglas",
+    "fl": "Douglas Quadling",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0521530156",
+  "isbn": {
+    "0": "0521530156",
+    "2": "9780521530156"
+  },
+  "asin": "0521530156",
+  "ean": ["0521530156"],
+  "publication": "Cambridge University Press (2002), Edition: New, 208 pages",
+  "date": "2002",
+  "summary": "Mechanics 1 by Douglas Quadling (2002)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["531.0151"],
+    "wording": ["Classical mechanics",
+    "Physics",
+    "Science"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "9347599",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "208 p.; 9.25 inches",
+  "height": "9.25 inches",
+  "thickness": "0.5 inches",
+  "length": "7.25 inches",
+  "dimensions": "9.25 x 7.25 x 0.5 inches",
+  "weight": "1.10010668738 pounds",
+  "pages": "208 "
+},
+"295519464": {
+  "books_id": "295519464",
+  "title": "John E. Freund's Mathematical Statistics",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Miller, Irwin",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Miller, Irwin",
+    "fl": "Irwin Miller",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "013123613X",
+  "isbn": {
+    "0": "013123613X",
+    "2": "9780131236134"
+  },
+  "asin": "013123613X",
+  "ean": ["013123613X"],
+  "publication": "Prentice Hall College Div (1998), Edition: 6, 624 pages",
+  "date": "1998",
+  "summary": "John E. Freund's Mathematical Statistics by Irwin Miller (1998)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["519.5"],
+    "wording": ["Mathematics",
+    "Probabilities and applied mathematics",
+    "Science",
+    "Statistical Mathematics"]
+  },
+  "lcc": {
+    "code": "QA276 .M4726"
+  },
+  "subject": [["Mathematical statistics"]],
+  "source": "amazon.com books",
+  "workcode": "990852",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "624 p.; 9.49 inches",
+  "height": "9.48817 inches",
+  "thickness": "1.10236 inches",
+  "length": "7.28345 inches",
+  "dimensions": "9.48817 x 7.28345 x 1.10236 inches",
+  "weight": "2.42949412724 pounds",
+  "pages": "624 "
+},
+"295519485": {
+  "books_id": "295519485",
+  "title": "Discrete And Combinatorial Mathematics: An Applied Introduction",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Grimaldi, Ralph P.",
+  "authors": [{
+    "lf": "Grimaldi, Ralph P.",
+    "fl": "Ralph P. Grimaldi"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9788178086514",
+  "isbn": ["9788178086514",
+  "8178086514"],
+  "publication": "Reading, Mass. ; London : Addison-Wesley, cop. 1999",
+  "date": "1999",
+  "summary": "Discrete And Combinatorial Mathematics: An Applied Introduction by Ralph P. Grimaldi (1999)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["510"],
+    "wording": ["Mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA 165"
+  },
+  "subject": [["Combinatorial analysis"],
+  ["Computer science Mathematics"],
+  ["Grafteori"],
+  ["MATEMATIK"],
+  ["MATHEMATICS"],
+  ["Matematik"],
+  ["Mathematics"],
+  ["grafteori"],
+  ["matematik"],
+  ["mathematics"]],
+  "source": "LIBRIS - Kungliga biblioteket / Royal Library of Sweden (Stockholm, Stockholm)",
+  "workcode": "354863",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1",
+    "text": "Paper Book"
+  }],
+  "copies": "1",
+  "volumes": "1",
+  "physical_description": "xix, 791 p.; 24 cm",
+  "height": "24 cm",
+  "dimensions": "24 cm",
+  "pages": "xix; 791 "
+},
+"295519493": {
+  "books_id": "295519493",
+  "title": "Discrete and Combinatorial Mathematics: An Applied Introduction",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Grimaldi, Ralph",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Grimaldi, Ralph",
+    "fl": "Ralph Grimaldi",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0201199122",
+  "isbn": {
+    "0": "0201199122",
+    "2": "9780201199123"
+  },
+  "asin": "0201199122",
+  "ean": ["0201199122"],
+  "publication": "Addison Wesley Publishing Company (1998), Edition: 4th Edition, 896 pages",
+  "date": "1998",
+  "summary": "Discrete and Combinatorial Mathematics: An Applied Introduction by Ralph Grimaldi (1998)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["510"],
+    "wording": ["Mathematics",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA39.2"
+  },
+  "subject": {
+    "0": ["Algebra"],
+    "1": ["Combinatorial analysis"],
+    "3": ["Computer science",
+    "Mathematics"],
+    "5": ["Mathematics"],
+    "7": ["algebra"],
+    "8": ["mathematics"]
+  },
+  "source": "amazon.com books",
+  "workcode": "354863",
+  "entrydate": "2025-09-15",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "896 p.; 9.53 inches",
+  "height": "9.52754 inches",
+  "thickness": "1.49606 inches",
+  "length": "7.75589 inches",
+  "dimensions": "9.52754 x 7.75589 x 1.49606 inches",
+  "weight": "3.46787138126 pounds",
+  "pages": "896 "
 }}
