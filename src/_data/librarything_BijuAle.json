@@ -3352,72 +3352,6 @@
   "weight": "0.63 pounds",
   "pages": "320 "
 },
-"248001280": {
-  "books_id": "248001280",
-  "title": "The Observer's Book of Insects",
-  "sortcharacter": "5",
-  "public": "true",
-  "primaryauthor": "Linssen, E. F.",
-  "primaryauthorrole": "Author",
-  "authors": [{
-    "lf": "Linssen, E. F.",
-    "fl": "E. F. Linssen",
-    "role": "Author"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "1854710486",
-  "isbn": {
-    "0": "1854710486",
-    "2": "9781854710482"
-  },
-  "asin": "1854710486",
-  "ean": ["1854710486"],
-  "publication": "Godfrey Cave Associates Ltd (1996), Edition: Revised, 192 pages",
-  "date": "1996",
-  "summary": "The Observer's Book of Insects by E. F. Linssen (1996)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["595.7"],
-    "wording": ["Animals (Zoology)",
-    "Arthropoda",
-    "Insects: Insecta, Hexapoda",
-    "Science"]
-  },
-  "lcc": {
-    "code": "QL482.G8 L5"
-  },
-  "subject": [["Arachnida",
-  "British Isles"],
-  ["Insects",
-  "British Isles"],
-  ["Spiders",
-  "British Isles"]],
-  "series": ["Observer's Books",
-  "The Observer's Pocket Series"],
-  "genre": ["Nonfiction",
-  "Science & Nature"],
-  "genre_id": ["20275895",
-  "1457"],
-  "source": "amazon.com books",
-  "workcode": "1330896",
-  "entrydate": "2023-08-30",
-  "format": [{
-    "code": "1.1.2",
-    "text": "Hardcover"
-  }],
-  "copies": "1",
-  "physical_description": "192 p.; 6.38 inches",
-  "height": "6.37794 inches",
-  "thickness": "0.59055 inches",
-  "length": "4.40944 inches",
-  "dimensions": "6.37794 x 4.40944 x 0.59055 inches",
-  "weight": "0.53 pounds",
-  "pages": "192 "
-},
 "248001284": {
   "books_id": "248001284",
   "title": "Observers Butterflies",
@@ -3840,16 +3774,16 @@
   "title": "0 to 5: The Complete Handbook for Young Mothers",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Jolly, Dr. Hugh",
+  "primaryauthor": "Jolly, Hugh",
   "authors": [{
-    "lf": "Jolly, Dr. Hugh",
-    "fl": "Dr. Hugh Jolly"
+    "lf": "Jolly, Hugh",
+    "fl": "Hugh Jolly"
   }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "publication": "London : Grosvenov Press, (1983).",
   "date": "1983",
-  "summary": "0 to 5: The Complete Handbook for Young Mothers by Dr. Hugh Jolly (1983)",
+  "summary": "0 to 5: The Complete Handbook for Young Mothers by Hugh Jolly (1983)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -5741,7 +5675,8 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},"248015575": {
+},
+"248015575": {
   "books_id": "248015575",
   "title": "A Dictionary of Linguistics and Phonetics (The Language Library)",
   "sortcharacter": "3",
@@ -5802,8 +5737,7 @@
   "dimensions": "9.700768 x 6.799199 x 1.531493 inches",
   "weight": "2.11864233782 pounds",
   "pages": "536 "
-},
-"248421202": {
+},"248421202": {
   "books_id": "248421202",
   "title": "The worst-case scenario travel handbook",
   "sortcharacter": "5",
@@ -10514,10 +10448,10 @@
   "Le seigneur des anneaux",
   "Der Herr der Ringe",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
-  "Taru Sormusten Herrasta",
   "W\u0142adca Pier\u015bcieni",
+  "The Lord of the Rings",
   "In de Ban van de Ring",
-  "The Lord of the Rings"],
+  "Taru Sormusten Herrasta"],
   "originaltitle": "The Hobbit, or, There and Back Again",
   "awards": ["1000 Books to Read Before You Die",
   "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
@@ -11374,7 +11308,8 @@
   "dimensions": "9.21 x 6.14 x 0.75 inches",
   "weight": "1.3999353637 pounds",
   "pages": "328 "
-},"248751155": {
+},
+"248751155": {
   "books_id": "248751155",
   "title": "Poems of Wordsworth",
   "sortcharacter": "1",
@@ -11416,8 +11351,7 @@
     "text": "Paper Book"
   }],
   "copies": "1"
-},
-"248751346": {
+},"248751346": {
   "books_id": "248751346",
   "title": "Favourite Greek Myths",
   "sortcharacter": "1",
@@ -11489,58 +11423,6 @@
     "text": "Paper Book"
   }],
   "copies": "1"
-},
-"248752221": {
-  "books_id": "248752221",
-  "title": "Teaching of History in Elementary and Secondary Schools (Classic Reprint)",
-  "sortcharacter": "1",
-  "public": "true",
-  "primaryauthor": "Johnson, Henry",
-  "primaryauthorrole": "Author",
-  "authors": [{
-    "lf": "Johnson, Henry",
-    "fl": "Henry Johnson",
-    "role": "Author"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "0483262153",
-  "isbn": {
-    "0": "0483262153",
-    "2": "9780483262157"
-  },
-  "asin": "0483262153",
-  "ean": ["0483262153"],
-  "publication": "Forgotten Books (2018), 487 pages",
-  "date": "2018",
-  "summary": "Teaching of History in Elementary and Secondary Schools (Classic Reprint) by Henry Johnson (2018)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["375.7\n",
-    "375.7"],
-    "wording": ["Curricula",
-    "Education",
-    "Social sciences"]
-  },
-  "lcc": [],
-  "source": "amazon.com books",
-  "workcode": "7952123",
-  "entrydate": "2023-09-11",
-  "format": [{
-    "code": "1.1.2",
-    "text": "Hardcover"
-  }],
-  "copies": "1",
-  "physical_description": "487 p.; 9.02 inches",
-  "height": "9.01573 inches",
-  "thickness": "1.0625963 inches",
-  "length": "5.98424 inches",
-  "dimensions": "9.01573 x 5.98424 x 1.0625963 inches",
-  "weight": "1.75928885076 pounds",
-  "pages": "487 "
 },
 "248752374": {
   "books_id": "248752374",
@@ -14002,7 +13884,7 @@
 },
 "248869357": {
   "books_id": "248869357",
-  "title": "Chronological and Thematic Charts of Philosophies and Philosophers (ZondervanCharts Photocopy",
+  "title": "Chronological and Thematic Charts of Philosophies and Philosophers (Photocopy)",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Hunnex, Milton D.",
@@ -14017,7 +13899,7 @@
   "0310462819"],
   "publication": "Grand Rapids, Mich. : Academie Books, c1986.",
   "date": "1986",
-  "summary": "Chronological and Thematic Charts of Philosophies and Philosophers (ZondervanCharts Photocopy by Milton D. Hunnex (1986)",
+  "summary": "Chronological and Thematic Charts of Philosophies and Philosophers (Photocopy) by Milton D. Hunnex (1986)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -15244,7 +15126,7 @@
 },
 "248869599": {
   "books_id": "248869599",
-  "title": "Cambridge IGCSE\u00ae and O Level Additional Mathematics Coursebook (Cambridge International IGCSE)",
+  "title": "Cambridge IGCSE\u00ae and O Level Additional Mathematics Coursebook",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Pemberton, Sue",
@@ -15263,7 +15145,7 @@
   "ean": ["1316605647"],
   "publication": "Cambridge University Press (2017), Edition: 1, 464 pages",
   "date": "2017",
-  "summary": "Cambridge IGCSE\u00ae and O Level Additional Mathematics Coursebook (Cambridge International IGCSE) by Sue Pemberton (2017)",
+  "summary": "Cambridge IGCSE\u00ae and O Level Additional Mathematics Coursebook by Sue Pemberton (2017)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -16849,7 +16731,8 @@
   "dimensions": "7.99211 x 4.99999 x 0.3440938 inches",
   "weight": "0.4 pounds",
   "pages": "148 "
-},"275052146": {
+},
+"275052146": {
   "books_id": "275052146",
   "title": "Philosophy Of Science (Fundamentals of Philosophy)",
   "sortcharacter": "1",
@@ -16954,8 +16837,7 @@
     "text": "Paperback"
   }],
   "copies": "1"
-},
-"275052201": {
+},"275052201": {
   "books_id": "275052201",
   "title": "Critical Theory and Practice: A Coursebook",
   "sortcharacter": "1",
@@ -19118,7 +19000,7 @@
 },
 "276503887": {
   "books_id": "276503887",
-  "title": "A Churchless Faith: Faith journeys beyond the churches",
+  "title": "A Churchless Faith: Faith Journeys Beyond The Churches",
   "sortcharacter": "3",
   "public": "true",
   "primaryauthor": "Jamieson, Alan",
@@ -19139,7 +19021,7 @@
   "ean": ["0281054657"],
   "publication": "SPCK Publishing (2002), 192 pages",
   "date": "2002",
-  "summary": "A Churchless Faith: Faith journeys beyond the churches by Alan Jamieson (2002)",
+  "summary": "A Churchless Faith: Faith Journeys Beyond The Churches by Alan Jamieson (2002)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -22523,7 +22405,8 @@
   "dimensions": "6.89 x 5.2 x 0.65 inches",
   "weight": "0.59965735264 pounds",
   "pages": "240 "
-},"276504375": {
+},
+"276504375": {
   "books_id": "276504375",
   "title": "Business as a Calling: Work and the Examined Life",
   "sortcharacter": "1",
@@ -22649,8 +22532,7 @@
   "dimensions": "7.75 x 5.25 x 0.75 inches",
   "weight": "0.53351867404 pounds",
   "pages": "288 "
-},
-"276504386": {
+},"276504386": {
   "books_id": "276504386",
   "title": "Who Moved the Stone?",
   "sortcharacter": "1",
@@ -28343,7 +28225,8 @@
   "dimensions": "9 x 6 x 0.73 inches",
   "weight": "0.9 pounds",
   "pages": "292 "
-},"276508735": {
+},
+"276508735": {
   "books_id": "276508735",
   "title": "What Can We Know?: An Introduction to the Theory of Knowledge",
   "sortcharacter": "1",
@@ -28452,8 +28335,7 @@
   "dimensions": "6.1 x 9 x 1.1 inches",
   "weight": "1.4660740423 pounds",
   "pages": "352 "
-},
-"276508777": {
+},"276508777": {
   "books_id": "276508777",
   "title": "What's So Great About Christianity",
   "sortcharacter": "1",
@@ -34457,7 +34339,8 @@
   }],
   "copies": "1",
   "volumes": "1"
-},"276549797": {
+},
+"276549797": {
   "books_id": "276549797",
   "title": "The general ecology, flora, and fauna of midland Nepal",
   "sortcharacter": "5",
@@ -34522,8 +34405,7 @@
   }],
   "copies": "1",
   "volumes": "1"
-},
-"276549863": {
+},"276549863": {
   "books_id": "276549863",
   "title": "My First Prayerbook",
   "sortcharacter": "1",
@@ -39918,7 +39800,8 @@
   "dimensions": "7.56 x 5.12 x 1.34 inches",
   "weight": "1.0141264052 pounds",
   "pages": "768 "
-},"276642743": {
+},
+"276642743": {
   "books_id": "276642743",
   "title": "The human race",
   "sortcharacter": "5",
@@ -40008,8 +39891,7 @@
   "physical_description": "242 p.",
   "weight": "3 pounds",
   "pages": "242 "
-},
-"276642767": {
+},"276642767": {
   "books_id": "276642767",
   "title": "Politics: The Basics",
   "sortcharacter": "1",
@@ -40867,7 +40749,7 @@
 },
 "276642926": {
   "books_id": "276642926",
-  "title": "Schaum's Outline of Principles of Economics, 2nd Edition (Schaum's Outlines)",
+  "title": "Schaum's Outline of Principles of Economics, 2nd Ed",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Salvatore, Dominick",
@@ -40886,9 +40768,9 @@
   },
   "asin": "0071762531",
   "ean": ["0071762531"],
-  "publication": "McGraw Hill (2011), Edition: 2, 408 pages",
+  "publication": "McGraw Hill India (2011), Edition: 2, 408 pages",
   "date": "2011",
-  "summary": "Schaum's Outline of Principles of Economics, 2nd Edition (Schaum's Outlines) by Dominick Salvatore (2011)",
+  "summary": "Schaum's Outline of Principles of Economics, 2nd Ed by Dominick Salvatore (2011)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -40902,8 +40784,8 @@
   "lcc": {
     "code": "HB171.S245"
   },
-  "series": ["Schaum's Outline",
-  "Compendios Schaum"],
+  "series": ["Compendios Schaum",
+  "Schaum's Outline"],
   "genre": ["Nonfiction",
   "Business",
   "Economics"],
@@ -46406,7 +46288,8 @@
   "dimensions": "6.7 x 4.1 x 0.8 inches",
   "weight": "0.42 pounds",
   "pages": "284 "
-},"276679867": {
+},
+"276679867": {
   "books_id": "276679867",
   "title": "The Good Earth",
   "sortcharacter": "5",
@@ -46476,10 +46359,10 @@
     "19": ["Married women",
     "Fiction"]
   },
-  "series": ["The House of Earth Trilogy",
-  "Buck's China Trilogy",
+  "series": ["De goede aarde Trilogie",
   "Bucks China Trilogie",
-  "De goede aarde Trilogie"],
+  "The House of Earth Trilogy",
+  "Buck's China Trilogy"],
   "originaltitle": "The Good Earth",
   "awards": ["100 Best Books by American Women During the Past 100 Years, 1833-1933",
   "100 Books That Shaped World History",
@@ -46552,8 +46435,7 @@
   }],
   "copies": "1",
   "volumes": "1"
-},
-"276680620": {
+},"276680620": {
   "books_id": "276680620",
   "title": "Manon Lescaut",
   "sortcharacter": "1",
@@ -46947,20 +46829,20 @@
     "15": ["humorous fiction"],
     "17": ["science fiction"]
   },
-  "series": ["Stopa\u0159\u016fv pr\u016fvodce po Galaxii",
-  "Galakse-blafferen",
-  "Guida galattica per gli autostoppisti",
-  "O Guia do Mochileiro das Gal\u00e1xias",
-  "Gu\u00eda del autoestopista gal\u00e1ctico",
-  "Liftartrilogin",
-  "Galaxis utikalauz",
-  "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
-  "The Hitchhiker's Guide to the Galaxy",
+  "series": ["The Hitchhiker's Guide to the Galaxy",
   "Hitch-Hikers Guide to the Galaxy",
-  "H2G2",
   "Autostopem przez Galaktyk\u0119",
+  "H2G2",
   "Per Anhalter durch die Galaxis",
-  "Het transgalactisch liftershandboek"],
+  "Het transgalactisch liftershandboek",
+  "Liftartrilogin",
+  "Gu\u00eda del autoestopista gal\u00e1ctico",
+  "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
+  "Galaxis utikalauz",
+  "O Guia do Mochileiro das Gal\u00e1xias",
+  "Guida galattica per gli autostoppisti",
+  "Galakse-blafferen",
+  "Stopa\u0159\u016fv pr\u016fvodce po Galaxii"],
   "originaltitle": "The Restaurant at the End of the Universe",
   "awards": ["Top 10 fictional towns in children's books"],
   "genre": ["Fiction",
@@ -48092,24 +47974,24 @@
     "34": ["fantasy fiction"],
     "35": ["fiction in English"]
   },
-  "series": ["Il Signore degli Anelli",
-  "Gy\u0171r\u0171k Ura",
-  "El Se\u00f1or de los Anillos",
-  "Gospodar prstenova",
-  "Gospodar prstenova",
+  "series": ["Der Herr der Ringe",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
   "\u9b54\u6212",
-  "Ringenes herre",
-  "El Senyor dels Anells",
-  "P\u00e1n Prsten\u016f",
   "Le seigneur des anneaux",
-  "Der Herr der Ringe",
-  "O Senhor dos An\u00e9is",
-  "Sagan om Ringen",
   "Ringenes herre",
+  "Sagan om Ringen",
+  "O Senhor dos An\u00e9is",
+  "P\u00e1n Prsten\u016f",
+  "El Senyor dels Anells",
+  "Ringenes herre",
+  "Gospodar prstenova",
+  "El Se\u00f1or de los Anillos",
+  "Gy\u0171r\u0171k Ura",
+  "Il Signore degli Anelli",
+  "Gospodar prstenova",
+  "W\u0142adca Pier\u015bcieni",
   "Taru Sormusten Herrasta",
   "In de Ban van de Ring",
-  "W\u0142adca Pier\u015bcieni",
   "The Lord of the Rings"],
   "originaltitle": "The Lord of the Rings",
   "awards": ["1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
@@ -50573,10 +50455,10 @@
   "lcc": {
     "code": "HV9713 .S6413"
   },
-  "series": ["Archipelag Gu\u0142ag",
+  "series": ["The Gulag Archipelago",
   "Der Archipel GULAG",
-  "De Goelag Archipel, 1918-1956",
-  "The Gulag Archipelago"],
+  "Archipelag Gu\u0142ag",
+  "De Goelag Archipel, 1918-1956"],
   "originaltitle": "&#1040;&#1088;&#1093;&#1080;&#1087;&#1077;&#1083;&#1072;&#1075; &#1043;&#1059;&#1051;&#1040;&#1043;",
   "awards": ["1000 Books to Read Before You Die",
   "Arhundrets bibliotek",
@@ -53522,7 +53404,8 @@
   "dimensions": "7.9 x 5.5 x 0.8 inches",
   "weight": "0.55 pounds",
   "pages": "180 "
-},"276715235": {
+},
+"276715235": {
   "books_id": "276715235",
   "title": "The Little, Brown Handbook, Ninth Edition",
   "sortcharacter": "5",
@@ -53651,8 +53534,7 @@
   "dimensions": "8.25 x 5.25 x 0.5 inches",
   "weight": "0.75 pounds",
   "pages": "320 "
-},
-"276715240": {
+},"276715240": {
   "books_id": "276715240",
   "title": "How to Study Foreign Languages",
   "sortcharacter": "1",
@@ -53973,85 +53855,6 @@
   "dimensions": "6.75 x 4 x 0.75 inches",
   "weight": "0.29982867632 pounds",
   "pages": "267 "
-},
-"276715317": {
-  "books_id": "276715317",
-  "title": "The Elements of Style, Fourth Edition",
-  "sortcharacter": "5",
-  "public": "true",
-  "primaryauthor": "Jr., William Strunk",
-  "primaryauthorrole": "Author",
-  "authors": [{
-    "lf": "Jr., William Strunk",
-    "fl": "William Strunk Jr.",
-    "role": "Author"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "9780205309023",
-  "isbn": ["9780205309023",
-  "020530902X"],
-  "asin": "020530902X",
-  "ean": ["7447521286972"],
-  "upc": ["769194038526"],
-  "publication": "Pearson (2019), Edition: 4th, 105 pages",
-  "date": "1999",
-  "summary": "The Elements of Style, Fourth Edition by William Strunk Jr. (1999)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["808"],
-    "wording": ["Literature & rhetoric",
-    "Literature, rhetoric & criticism",
-    "Rhetoric and collections of literary texts from more than two literatures"]
-  },
-  "lcc": {
-    "code": "PE1408.S772"
-  },
-  "subject": {
-    "0": ["English language",
-    "Rhetoric"],
-    "2": ["English language",
-    "Style"],
-    "4": ["English language--Rhetoric"],
-    "5": ["Language"],
-    "6": ["Report writing"],
-    "8": ["White, E. B. (Elwyn Brooks), 1899-"],
-    "9": ["Writing"],
-    "10": ["Writing",
-    "handbooks"],
-    "11": ["copy 1"],
-    "12": ["language"]
-  },
-  "awards": ["KIB - Non Fiction books everyone should read",
-  "National Review's 100 Best Nonfiction Books of the Century",
-  "New York Times bestseller",
-  "The Guardian's 100 Best Nonfiction Books of All-Time",
-  "The Modern Library's 100 Best Nonfiction: The Board's List",
-  "The Modern Library's 100 Best Nonfiction: The Readers' List"],
-  "genre": ["Nonfiction",
-  "General Nonfiction",
-  "Reference"],
-  "genre_id": ["20275895",
-  "1247",
-  "4877"],
-  "source": "amazon.com books",
-  "workcode": "3407",
-  "entrydate": "2024-12-15",
-  "format": [{
-    "code": "1.1.1",
-    "text": "Paperback"
-  }],
-  "copies": "1",
-  "physical_description": "105 p.; 7 x 0.3 inches",
-  "height": "0.3 inches",
-  "thickness": "4.5 inches",
-  "length": "7 inches",
-  "dimensions": "0.3 x 7 x 4.5 inches",
-  "weight": "0.110231131 pounds",
-  "pages": "105 "
 },
 "276715318": {
   "books_id": "276715318",
@@ -57431,7 +57234,7 @@
 },
 "276822413": {
   "books_id": "276822413",
-  "title": "Verbal & Non Verbal Reasining",
+  "title": "Verbal & Non Verbal Reasoning",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Aggarwal, R. S.",
@@ -57452,7 +57255,7 @@
   "ean": ["9352832167"],
   "publication": "S.Chand Publishing (2018)",
   "date": "2018",
-  "summary": "Verbal & Non Verbal Reasining by R. S. Aggarwal (2018)",
+  "summary": "Verbal & Non Verbal Reasoning by R. S. Aggarwal (2018)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage_codeA": ["eng"],
@@ -57550,7 +57353,7 @@
 },
 "276822474": {
   "books_id": "276822474",
-  "title": "Artificial Intelligence A Modern Approach",
+  "title": "Artificial Intelligence: A Modern Approach (3rd Ed)",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Russell, Stuart",
@@ -57571,7 +57374,7 @@
   "ean": ["9332518696"],
   "publication": "Pearson India (2013), Edition: 3, 1092 pages",
   "date": "2013",
-  "summary": "Artificial Intelligence A Modern Approach by Stuart Russell (2013)",
+  "summary": "Artificial Intelligence: A Modern Approach (3rd Ed) by Stuart Russell (2013)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -59039,7 +58842,8 @@
   "dimensions": "8.19 x 5.43 x 0.47 inches",
   "weight": "0.53 pounds",
   "pages": "212 "
-},"276824870": {
+},
+"276824870": {
   "books_id": "276824870",
   "title": "Paradigms Lost: Images of Man in the Mirror of Science",
   "sortcharacter": "1",
@@ -59207,8 +59011,7 @@
   "dimensions": "7.7952755826 x 0.68503936938 x 5.0787401523 inches",
   "weight": "0.440924524 pounds",
   "pages": "288 "
-},
-"276824876": {
+},"276824876": {
   "books_id": "276824876",
   "title": "The First Men in the Moon (Penguin Classics)",
   "sortcharacter": "5",
@@ -64542,7 +64345,8 @@
   "length": "7.874 inches",
   "dimensions": "1.5748 x 7.874 x 5.5118 inches",
   "weight": "0.44312911768363 pounds"
-},"276885093": {
+},
+"276885093": {
   "books_id": "276885093",
   "title": "An Introduction To The Study Of English Literature",
   "sortcharacter": "4",
@@ -64656,8 +64460,7 @@
   }],
   "copies": "1",
   "volumes": "1"
-},
-"276886180": {
+},"276886180": {
   "books_id": "276886180",
   "title": "John Keats; Selected Poems Odes, Hyperion And The Fall of Hyperion",
   "sortcharacter": "1",
@@ -65009,11 +64812,11 @@
   "title": "Teaching of History in Elementary and Secondary Schools",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Johnson, Henry 1867-",
+  "primaryauthor": "Johnson, Henry",
   "primaryauthorrole": "Author",
   "authors": [{
-    "lf": "Johnson, Henry 1867-",
-    "fl": "Henry 1867- Johnson",
+    "lf": "Johnson, Henry",
+    "fl": "Henry Johnson",
     "role": "Author"
   }],
   "collections_idA": [1],
@@ -65027,7 +64830,7 @@
   "ean": ["1373124016"],
   "publication": "Macmillan Company",
   "date": "1929",
-  "summary": "Teaching of History in Elementary and Secondary Schools by Henry 1867- Johnson (1929)",
+  "summary": "Teaching of History in Elementary and Secondary Schools by Henry Johnson (1929)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -69944,7 +69747,8 @@
   }],
   "copies": "1",
   "weight": "1.01 pounds"
-},"280388487": {
+},
+"280388487": {
   "books_id": "280388487",
   "title": "Income: An Introduction to Economics",
   "sortcharacter": "1",
@@ -70040,10 +69844,10 @@
     "Politics and government",
     "1917-1936"]
   },
-  "series": ["The Gulag Archipelago",
-  "Der Archipel GULAG",
+  "series": ["De Goelag Archipel, 1918-1956",
   "Archipelag Gu\u0142ag",
-  "De Goelag Archipel, 1918-1956"],
+  "Der Archipel GULAG",
+  "The Gulag Archipelago"],
   "originaltitle": "\u0410\u0440\u0445\u0438\u043f\u0435\u043b\u0430\u0433 \u0413\u0423\u041b\u0410\u0413",
   "awards": ["10 non-fiction \u043a\u043d\u0438\u0433, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0436\u0443\u0440\u043d\u0430\u043b\u0443 Slon",
   "100 Books That Shaped World History",
@@ -70107,8 +69911,7 @@
     "text": "Hardcover"
   }],
   "copies": "1"
-},
-"280388551": {
+},"280388551": {
   "books_id": "280388551",
   "title": "A Short Guide to English Style (Aids to English Series)",
   "sortcharacter": "3",
@@ -70275,9 +70078,9 @@
     "5": ["Political science",
     "Western influences"]
   },
-  "series": ["Hist\u00f3ria da Filosofia Ocidental",
+  "series": ["A History of Western Philosophy (Russell)",
   "L\u00e4nsimaisen filosofian historia",
-  "A History of Western Philosophy (Russell)"],
+  "Hist\u00f3ria da Filosofia Ocidental"],
   "originaltitle": "A History of Western Philosophy, and Its Connection with Political and Social Circumstances from the Earliest Times to the Present Day",
   "awards": ["Daily Telegraph's 100 Books of the Century, 1900-1999",
   "Das au\u00dfergew\u00f6hnliche Buch",
@@ -70363,9 +70166,9 @@
     "9": ["Tailors",
     "Fiction"]
   },
-  "series": ["Peter Rabbit",
-  "Llyfrau Gwreiddiol Guto Gwningen",
-  "Pelle Kanin"],
+  "series": ["Llyfrau Gwreiddiol Guto Gwningen",
+  "Pelle Kanin",
+  "Peter Rabbit"],
   "awards": ["NCTE Adventuring with Books: A Booklist for Pre-K\u2014Grade 6"],
   "genre": ["Children's Books",
   "Picture Books"],
@@ -70438,9 +70241,9 @@
     "4": ["Rats",
     "Fiction"]
   },
-  "series": ["Peter Rabbit",
-  "Llyfrau Gwreiddiol Guto Gwningen",
-  "Pelle Kanin"],
+  "series": ["Llyfrau Gwreiddiol Guto Gwningen",
+  "Pelle Kanin",
+  "Peter Rabbit"],
   "genre": ["Children's Books",
   "Picture Books"],
   "genre_id": ["11",
@@ -70508,9 +70311,9 @@
     "4": ["Stories for children"],
     "5": ["juvenile literature"]
   },
-  "series": ["Peter Rabbit",
-  "Llyfrau Gwreiddiol Guto Gwningen",
-  "Pelle Kanin"],
+  "series": ["Llyfrau Gwreiddiol Guto Gwningen",
+  "Pelle Kanin",
+  "Peter Rabbit"],
   "awards": ["1001 Children's Books You Must Read Before You Grow Up"],
   "genre": ["Children's Books",
   "Picture Books"],
@@ -70583,9 +70386,9 @@
     "7": ["Mice",
     "fiction"]
   },
-  "series": ["Peter Rabbit",
-  "Llyfrau Gwreiddiol Guto Gwningen",
-  "Pelle Kanin"],
+  "series": ["Llyfrau Gwreiddiol Guto Gwningen",
+  "Pelle Kanin",
+  "Peter Rabbit"],
   "genre": ["Children's Books",
   "Picture Books"],
   "genre_id": ["11",
@@ -70666,9 +70469,9 @@
     "Specimens"],
     "20": ["short stories"]
   },
-  "series": ["Peter Rabbit",
-  "Llyfrau Gwreiddiol Guto Gwningen",
-  "Pelle Kanin"],
+  "series": ["Llyfrau Gwreiddiol Guto Gwningen",
+  "Pelle Kanin",
+  "Peter Rabbit"],
   "awards": ["1001 Children's Books You Must Read Before You Grow Up",
   "501 Must-Read Books (Emma Beare, 2006)",
   "Blackwell's 1879-2019: 140 Years 140 Books",
@@ -70749,9 +70552,9 @@
     "Juvenile fiction"],
     "4": ["Stories for children"]
   },
-  "series": ["Peter Rabbit",
-  "Llyfrau Gwreiddiol Guto Gwningen",
-  "Pelle Kanin"],
+  "series": ["Llyfrau Gwreiddiol Guto Gwningen",
+  "Pelle Kanin",
+  "Peter Rabbit"],
   "awards": ["The Observer Best books of 2002",
   "World Book Day: 8 books that were set in Cumbria"],
   "genre": ["Children's Books",
@@ -73426,24 +73229,24 @@
     "21": ["fiction in English"]
   },
   "series": ["Der Herr der Ringe",
+  "Il Signore degli Anelli",
+  "Gospodar prstenova",
   "\u9b54\u6212",
   "\u039f \u0386\u03c1\u03c7\u03bf\u03bd\u03c4\u03b1\u03c2 \u03c4\u03c9\u03bd \u0394\u03b1\u03c7\u03c4\u03c5\u03bb\u03b9\u03b4\u03b9\u03ce\u03bd",
-  "Gospodar prstenova",
-  "Il Signore degli Anelli",
+  "Gy\u0171r\u0171k Ura",
   "Le seigneur des anneaux",
   "Ringenes herre",
   "Sagan om Ringen",
   "O Senhor dos An\u00e9is",
+  "P\u00e1n Prsten\u016f",
   "El Senyor dels Anells",
   "Ringenes herre",
   "Gospodar prstenova",
   "El Se\u00f1or de los Anillos",
-  "Gy\u0171r\u0171k Ura",
-  "P\u00e1n Prsten\u016f",
-  "In de Ban van de Ring",
-  "The Lord of the Rings",
   "W\u0142adca Pier\u015bcieni",
-  "Taru Sormusten Herrasta"],
+  "Taru Sormusten Herrasta",
+  "In de Ban van de Ring",
+  "The Lord of the Rings"],
   "originaltitle": "The Lord of the Rings",
   "awards": ["1001 Children's Books You Must Read Before You Grow Up",
   "1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
@@ -75715,7 +75518,8 @@
     "text": "Paper Book"
   }],
   "copies": "1"
-},"287193232": {
+},
+"287193232": {
   "books_id": "287193232",
   "title": "Ethology: What Animals Do and Why (Science for Everyone)",
   "sortcharacter": "1",
@@ -75881,8 +75685,7 @@
   "dimensions": "9.06 x 7.32 x 1.02 inches",
   "weight": "1.46 pounds",
   "pages": "343 "
-},
-"288465985": {
+},"288465985": {
   "books_id": "288465985",
   "title": "The First Days Of School - How To Be An Effective Teacher",
   "sortcharacter": "5",
@@ -77342,54 +77145,6 @@
   "weight": "0.9 pounds",
   "pages": "333 "
 },
-"291924746": {
-  "books_id": "291924746",
-  "title": "Extraordinary People",
-  "sortcharacter": "1",
-  "public": "true",
-  "primaryauthor": "Wilson, Derek",
-  "primaryauthorrole": "Author",
-  "authors": [{
-    "lf": "Wilson, Derek",
-    "fl": "Derek Wilson",
-    "role": "Author"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "0330280988",
-  "isbn": {
-    "0": "0330280988",
-    "2": "9780330280983"
-  },
-  "asin": "0330280988",
-  "ean": ["0330280988"],
-  "publication": "Macmillan (1983), 256 pages",
-  "date": "1983",
-  "summary": "Extraordinary People by Derek Wilson (1983)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["920.02"],
-    "wording": ["Biography & genealogy",
-    "Biography, genealogy, insignia",
-    "General and collective by localities",
-    "History & geography",
-    "Partial collections not limited to any special country or subject"]
-  },
-  "lcc": {
-    "code": "CT104"
-  },
-  "source": "amazon.com books",
-  "workcode": "26066",
-  "entrydate": "2025-08-05",
-  "format": [{
-    "code": "1.1.1",
-    "text": "Paperback"
-  }],
-  "copies": "1"
-},
 "291924770": {
   "books_id": "291924770",
   "title": "Leonard Maltin's Movie Encyclopedia: Career Profiles of More than 2000 Actors and Filmmakers, Past and Present (Reference)",
@@ -78285,29 +78040,29 @@
   },
   "series": ["The Chronicles of Narnia: Chronological order",
   "Chronicles of Narnia: Chronological order",
-  "\u7d0d\u5c3c\u4e9e\u50b3\u5947",
-  "Kroniki Narnii",
-  "Letopisi Narnije, hronolo\u0161ki",
-  "Le cronache di Narnia, ordine della storia",
-  "Les Chroniques de Narnia",
   "Narnia fort\u00e6llingerne",
+  "Les Chroniques de Narnia",
+  "Le cronache di Narnia, ordine della storia",
   "Las Cr\u00f3nicas De Narnia",
-  "Les Cr\u00f2niques de N\u00e0rnia",
+  "Narnia: kronologisk ordning",
+  "Die Chroniken von Narnia, Handlung Chronologisch",
   "Die Chroniken von Narnia",
   "De Kronieken van Narnia",
-  "Die Chroniken von Narnia, Handlung Chronologisch",
+  "Les Cr\u00f2niques de N\u00e0rnia",
+  "\u7d0d\u5c3c\u4e9e\u50b3\u5947",
   "Narnia kr\u00f3nik\u00e1i",
-  "Narnia: kronologisk ordning",
+  "Letopisi Narnije, hronolo\u0161ki",
+  "Kroniki Narnii",
+  "Narnia: publiceringsordning",
   "Narnia: publiceringsordning",
   "The Chronicles of Narnia: Publication order",
   "Chronicles of Narnia: Publication order",
   "\u7d0d\u5c3c\u4e9e\u50b3\u5947(\u51fa\u7248\u6b21\u5e8f)",
   "Les Chroniques de Narnia",
   "Opowie\u015bci z Narnii",
-  "Letopisi Narnije",
   "Le cronache di Narnia",
   "De Kronieken van Narnia",
-  "Narnia: publiceringsordning",
+  "Letopisi Narnije",
   "Die Chroniken von Narnia"],
   "awards": ["1,000 Books to Read Before You Die Page-A-Day Calendar",
   "1000 \u043b\u0443\u0447\u0448\u0438\u0445 \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0445\u0443\u0434. \u043b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0432 \u0440\u0443\u0441\u0441\u043a\u0438\u0445 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430\u0445, \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0434\u043b\u044f \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u043e\u0432\u0430\u043d\u0438\u044f \u0448\u043a\u043e\u043b\u044c\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438",
@@ -80409,7 +80164,7 @@
 },
 "295518316": {
   "books_id": "295518316",
-  "title": "What Your Sixth Grader Needs to Know: Fundamentals of a Good Sixth-Grade Education (Core Knowledge Series : Resource Books for Grades One Through Six,)",
+  "title": "What Your Sixth Grader Needs to Know",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Hirsch Jr., E. D.",
@@ -80430,7 +80185,7 @@
   "ean": ["0385314671"],
   "publication": "Delta (1995), 416 pages",
   "date": "1995",
-  "summary": "What Your Sixth Grader Needs to Know: Fundamentals of a Good Sixth-Grade Education (Core Knowledge Series : Resource Books for Grades One Through Six,) by E. D. Hirsch Jr. (1995)",
+  "summary": "What Your Sixth Grader Needs to Know by E. D. Hirsch Jr. (1995)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -80478,11 +80233,11 @@
   "title": "What Your 3rd Grader Needs to Know",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Hirsch, E. D.",
+  "primaryauthor": "Hirsch Jr., E. D.",
   "primaryauthorrole": "Author",
   "authors": [{
-    "lf": "Hirsch, E. D.",
-    "fl": "E. D. Hirsch",
+    "lf": "Hirsch Jr., E. D.",
+    "fl": "E. D. Hirsch Jr.",
     "role": "Author"
   }],
   "collections_idA": [1],
@@ -80494,7 +80249,7 @@
   },
   "asin": "818528878X",
   "ean": ["818528878X"],
-  "summary": "What Your 3rd Grader Needs to Know by E. D. Hirsch",
+  "summary": "What Your 3rd Grader Needs to Know by E. D. Hirsch Jr.",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -80537,7 +80292,7 @@
 },
 "295518346": {
   "books_id": "295518346",
-  "title": "Topology (2nd Economy Edition)",
+  "title": "Topology",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Munkres, James",
@@ -80558,7 +80313,7 @@
   "ean": ["8120320468"],
   "publication": "Prentice-Hall, Inc. (2000), Edition: 2nd, 537 pages",
   "date": "2000",
-  "summary": "Topology (2nd Economy Edition) by James Munkres (2000)",
+  "summary": "Topology by James Munkres (2000)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -80586,11 +80341,11 @@
   "title": "Topics in Algebra",
   "sortcharacter": "1",
   "public": "true",
-  "primaryauthor": "Herstein, I N",
+  "primaryauthor": "Herstein, Israel Nathan",
   "primaryauthorrole": "Author",
   "authors": [{
-    "lf": "Herstein, I N",
-    "fl": "I N Herstein",
+    "lf": "Herstein, Israel Nathan",
+    "fl": "Israel Nathan Herstein",
     "role": "Author"
   }],
   "collections_idA": [1],
@@ -80604,7 +80359,7 @@
   "ean": ["8126510188"],
   "publication": "JW&S (1975), Edition: 2nd",
   "date": "1975",
-  "summary": "Topics in Algebra by I N Herstein (1975)",
+  "summary": "Topics in Algebra by Israel Nathan Herstein (1975)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -80634,7 +80389,7 @@
 },
 "295518378": {
   "books_id": "295518378",
-  "title": "Elementary Number Theory (Paperback)",
+  "title": "Elementary Number Theory",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Burton, David",
@@ -80653,7 +80408,7 @@
   "ean": ["1259025764"],
   "publication": "Mcgraw (2017), Edition: 7th, 436 pages",
   "date": "2017",
-  "summary": "Elementary Number Theory (Paperback) by David Burton (2017)",
+  "summary": "Elementary Number Theory by David Burton (2017)",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -80719,55 +80474,9 @@
   "copies": "1",
   "volumes": "1"
 },
-"295518702": {
-  "books_id": "295518702",
-  "title": "Typology",
-  "sortcharacter": "1",
-  "public": "true",
-  "primaryauthor": "Sheldon, Davis",
-  "primaryauthorrole": "Author",
-  "authors": [{
-    "lf": "Sheldon, Davis",
-    "fl": "Davis Sheldon",
-    "role": "Author"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "0070616108",
-  "isbn": {
-    "0": "0070616108",
-    "2": "9780070616103"
-  },
-  "asin": "0070616108",
-  "ean": ["0070616108"],
-  "publication": "Tata Mcgraw Hill (2004), Edition: First Edition, 448 pages",
-  "date": "2004",
-  "summary": "Typology by Davis Sheldon (2004)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["514"],
-    "wording": ["Mathematics",
-    "Science",
-    "Topology"]
-  },
-  "lcc": {
-    "code": "QA611 .D38"
-  },
-  "source": "amazon.com books",
-  "workcode": "12862835",
-  "entrydate": "2025-09-15",
-  "format": [{
-    "code": "1.1.1",
-    "text": "Paperback"
-  }],
-  "copies": "1"
-},
 "295518708": {
   "books_id": "295518708",
-  "title": "Artificial Intelligence: A Modern Approach",
+  "title": "Artificial Intelligence: A Modern Approach (2nd Ed)",
   "sortcharacter": "1",
   "public": "true",
   "primaryauthor": "Norvig, Stuart Russell Russell Peter",
@@ -80787,7 +80496,7 @@
   "asin": "8177583670",
   "ean": ["8177583670"],
   "publication": "Pearson, Edition: Second Edition: International Edition, 1022 pages",
-  "summary": "Artificial Intelligence: A Modern Approach by Stuart Russell Russell Peter Norvig",
+  "summary": "Artificial Intelligence: A Modern Approach (2nd Ed) by Stuart Russell Russell Peter Norvig",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -81017,7 +80726,11 @@
   "title": "Introductory Methods of Numerical Analysis",
   "sortcharacter": "1",
   "public": "true",
-  "authors": [[]],
+  "primaryauthor": "Sastry, S. S.",
+  "authors": [{
+    "lf": "Sastry, S. S.",
+    "fl": "S. S. Sastry"
+  }],
   "collections_idA": [1],
   "collections": ["Your library"],
   "originalisbn": "812031266X",
@@ -81028,7 +80741,7 @@
   "asin": "812031266X",
   "ean": ["812031266X"],
   "publication": "Gardners Books",
-  "summary": "Introductory Methods of Numerical Analysis",
+  "summary": "Introductory Methods of Numerical Analysis by S. S. Sastry",
   "language": ["English"],
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
@@ -81157,61 +80870,6 @@
   "weight": "2.42949412724 pounds",
   "pages": "624 "
 },
-"295519485": {
-  "books_id": "295519485",
-  "title": "Discrete And Combinatorial Mathematics: An Applied Introduction",
-  "sortcharacter": "1",
-  "public": "true",
-  "primaryauthor": "Grimaldi, Ralph P.",
-  "authors": [{
-    "lf": "Grimaldi, Ralph P.",
-    "fl": "Ralph P. Grimaldi"
-  }],
-  "collections_idA": [1],
-  "collections": ["Your library"],
-  "originalisbn": "9788178086514",
-  "isbn": ["9788178086514",
-  "8178086514"],
-  "publication": "Reading, Mass. ; London : Addison-Wesley, cop. 1999",
-  "date": "1999",
-  "summary": "Discrete And Combinatorial Mathematics: An Applied Introduction by Ralph P. Grimaldi (1999)",
-  "language": ["English"],
-  "language_codeA": ["eng"],
-  "originallanguage": ["English"],
-  "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["510"],
-    "wording": ["Mathematics",
-    "Mathematics",
-    "Science"]
-  },
-  "lcc": {
-    "code": "QA 165"
-  },
-  "subject": [["Combinatorial analysis"],
-  ["Computer science Mathematics"],
-  ["Grafteori"],
-  ["MATEMATIK"],
-  ["MATHEMATICS"],
-  ["Matematik"],
-  ["Mathematics"],
-  ["grafteori"],
-  ["matematik"],
-  ["mathematics"]],
-  "source": "LIBRIS - Kungliga biblioteket / Royal Library of Sweden (Stockholm, Stockholm)",
-  "workcode": "354863",
-  "entrydate": "2025-09-15",
-  "format": [{
-    "code": "1.1",
-    "text": "Paper Book"
-  }],
-  "copies": "1",
-  "volumes": "1",
-  "physical_description": "xix, 791 p.; 24 cm",
-  "height": "24 cm",
-  "dimensions": "24 cm",
-  "pages": "xix; 791 "
-},
 "295519493": {
   "books_id": "295519493",
   "title": "Discrete and Combinatorial Mathematics: An Applied Introduction",
@@ -81273,4 +80931,401 @@
   "dimensions": "9.52754 x 7.75589 x 1.49606 inches",
   "weight": "3.46787138126 pounds",
   "pages": "896 "
+},
+"295571297": {
+  "books_id": "295571297",
+  "title": "Topology",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Sheldon, Davis",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Sheldon, Davis",
+    "fl": "Davis Sheldon",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0070616108",
+  "isbn": {
+    "0": "0070616108",
+    "2": "9780070616103"
+  },
+  "asin": "0070616108",
+  "ean": ["0070616108"],
+  "publication": "Tata Mcgraw Hill (2004), Edition: First Edition, 448 pages",
+  "date": "2004",
+  "summary": "Topology by Davis Sheldon (2004)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["514"],
+    "wording": ["Mathematics",
+    "Science",
+    "Topology"]
+  },
+  "lcc": {
+    "code": "QA611 .D38"
+  },
+  "source": "amazon.com books",
+  "workcode": "12862835",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295578876": {
+  "books_id": "295578876",
+  "title": "Cultural Literacy: What Every American Needs to Know",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Hirsch Jr., E. D.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Hirsch Jr., E. D.",
+    "fl": "E. D. Hirsch Jr.",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0394758439",
+  "isbn": {
+    "0": "0394758439",
+    "2": "9780394758435"
+  },
+  "asin": "0394758439",
+  "ean": ["8601300250953"],
+  "publication": "Vintage (1988), Edition: 3rd Printing, 272 pages",
+  "date": "1988",
+  "summary": "Cultural Literacy: What Every American Needs to Know by E. D. Hirsch Jr. (1988)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["370.19"],
+    "wording": ["Education",
+    "Education",
+    "Social sciences",
+    "Social themes",
+    "Theory of education; Meaning; Aim"]
+  },
+  "lcc": {
+    "code": "LB45"
+  },
+  "subject": {
+    "0": ["CULTURE"],
+    "1": ["Culture"],
+    "3": ["Educational anthropology",
+    "United States"],
+    "5": ["Literacy",
+    "United States"],
+    "7": ["Multicultural education",
+    "United States"],
+    "9": ["culture"]
+  },
+  "awards": ["New York Times bestseller"],
+  "genre": ["Nonfiction",
+  "General Nonfiction"],
+  "genre_id": ["20275895",
+  "1247"],
+  "source": "amazon.com books",
+  "workcode": "2005231",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "height": "7.9 inches",
+  "thickness": "0.8 inches",
+  "length": "5.1 inches",
+  "dimensions": "7.9 x 5.1 x 0.8 inches",
+  "weight": "0.75 pounds",
+  "pages": "272 "
+},
+"295634983": {
+  "books_id": "295634983",
+  "title": "Linear Algebra",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Friedberg, Stephen",
+  "primaryauthorrole": "Author",
+  "secondaryauthor": "Arnold Insel|Lawrence Spence",
+  "secondaryauthorroles": "Author|Author",
+  "authors": [{
+    "lf": "Friedberg, Stephen",
+    "fl": "Stephen Friedberg",
+    "role": "Author"
+  },
+  {
+    "lf": "Arnold Insel",
+    "fl": "Arnold Insel",
+    "role": "Author"
+  },
+  {
+    "lf": "Lawrence Spence",
+    "fl": "Lawrence Spence",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8120326067",
+  "isbn": {
+    "0": "8120326067",
+    "2": "9788120326064"
+  },
+  "asin": "8120326067",
+  "ean": ["8120326067"],
+  "publication": "Prentice Hall India (2004), Edition: 4th, 601 pages",
+  "date": "2004",
+  "summary": "Linear Algebra by Stephen Friedberg (2004)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["512.5"],
+    "wording": ["Algebra",
+    "Linear, multilinear, multidimensional Algebra",
+    "Mathematics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QA184 .F75"
+  },
+  "subject": [["Algebras, Linear"]],
+  "source": "amazon.com books",
+  "workcode": "155126",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295635043": {
+  "books_id": "295635043",
+  "title": "Schaum's Outline of Quantum Mechanics, 2nd Ed",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Peleg, Yoav",
+  "secondaryauthor": "Hecht, Eugene|Pnini, Reuven|Elyahu, Zaarur",
+  "secondaryauthorroles": "Author|Author|Author",
+  "authors": [{
+    "lf": "Peleg, Yoav",
+    "fl": "Yoav Peleg"
+  },
+  {
+    "lf": "Hecht, Eugene",
+    "fl": "Eugene Hecht",
+    "role": "Author"
+  },
+  {
+    "lf": "Pnini, Reuven",
+    "fl": "Reuven Pnini",
+    "role": "Author"
+  },
+  {
+    "lf": "Elyahu, Zaarur",
+    "fl": "Zaarur Elyahu",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0071333533",
+  "isbn": {
+    "0": "0071333533",
+    "2": "9780071333535"
+  },
+  "asin": "0071333533",
+  "ean": ["0071333533"],
+  "publication": "McGraw Hill India (2011), Edition: 2",
+  "date": "2011",
+  "summary": "Schaum's Outline of Quantum Mechanics, 2nd Ed by Yoav Peleg (2011)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["530.12"],
+    "wording": ["Physics",
+    "Physics",
+    "Quantum Mechanics",
+    "Science",
+    "Theoretical Physics"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "33288277",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295635060": {
+  "books_id": "295635060",
+  "title": "The Feynman Lectures On Physics Vol 2",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Feynman, Richard P.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Feynman, Richard P.",
+    "fl": "Richard P. Feynman",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8131721701",
+  "isbn": {
+    "0": "8131721701",
+    "2": "9788131721704"
+  },
+  "asin": "8131721701",
+  "ean": ["8131721701"],
+  "publication": "Pearson Education (2006)",
+  "date": "2006",
+  "summary": "The Feynman Lectures On Physics Vol 2 by Richard P. Feynman (2006)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["530"],
+    "wording": ["Physics",
+    "Physics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QC23.F47"
+  },
+  "subject": {
+    "0": ["Physics"],
+    "2": ["physics"]
+  },
+  "series": ["Feynman-Vorlesungen \u00fcber Physik, Band 1",
+  "The Feynman Lectures on Physics"],
+  "originaltitle": "The Feynman Lectures on Physics Vol. 2 : Mainly Electromagnetism and Matter",
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1247",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "45409",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295635062": {
+  "books_id": "295635062",
+  "title": "The Feynman Lectures On Physics Vol 3",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Feynman, Richard P.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Feynman, Richard P.",
+    "fl": "Richard P. Feynman",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "8131721663",
+  "isbn": {
+    "0": "8131721663",
+    "2": "9788131721667"
+  },
+  "asin": "8131721663",
+  "ean": ["8131721663"],
+  "publication": "Pearson Education (2006)",
+  "date": "2006",
+  "summary": "The Feynman Lectures On Physics Vol 3 by Richard P. Feynman (2006)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["530"],
+    "wording": ["Physics",
+    "Physics",
+    "Science"]
+  },
+  "lcc": {
+    "code": "QC23.F47"
+  },
+  "subject": {
+    "0": ["Physics"],
+    "2": ["physics"]
+  },
+  "series": ["Feynman-Vorlesungen \u00fcber Physik, Band 1",
+  "The Feynman Lectures on Physics"],
+  "originaltitle": "The Feynman Lectures on Physics Vol. 3: Quantum Mechanics",
+  "awards": ["5 \u043a\u043d\u0438\u0433 \u041f\u043e\u0441\u0442\u043d\u0430\u0443\u043a\u0438"],
+  "genre": ["Nonfiction",
+  "General Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1247",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "641160",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
+},
+"295635133": {
+  "books_id": "295635133",
+  "title": "A Modern Approach to Logical Reasoning",
+  "sortcharacter": "3",
+  "public": "true",
+  "primaryauthor": "Aggarwal, R. S.",
+  "authors": [{
+    "lf": "Aggarwal, R. S.",
+    "fl": "R. S. Aggarwal"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "9355013523",
+  "isbn": {
+    "0": "9355013523",
+    "2": "9789355013521"
+  },
+  "asin": "9355013523",
+  "ean": ["9355013523"],
+  "publication": "(2022)",
+  "date": "2022",
+  "summary": "A Modern Approach to Logical Reasoning by R. S. Aggarwal (2022)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["160"],
+    "wording": ["Philosophical logic",
+    "Philosophical logic",
+    "Philosophy & psychology"]
+  },
+  "lcc": [],
+  "source": "amazon.com books",
+  "workcode": "33312910",
+  "entrydate": "2025-09-16",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1"
 }}

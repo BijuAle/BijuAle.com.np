@@ -44,7 +44,7 @@ title: About
 
 My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science.
 
-Presently, I support a consulting firm called [Scott Wilson Nepal](https://swnepal.com.np/biju-ale/), working in research, monitoring, learning, and evaluation of developmental projects in Nepal.
+Presently, I support a consulting firm called [Scott Wilson Nepal](https://web.archive.org/web/20240522023029/https://swnepal.com.np/biju-ale/), working in research, monitoring, learning, and evaluation of developmental projects in Nepal.
 
 <details class="details-animated">
   <summary><strong>More about me...</strong></summary>
