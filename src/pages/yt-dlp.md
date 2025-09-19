@@ -13,7 +13,6 @@ yt-dlp \
   --embed-chapters \
   --embed-thumbnail \
   --embed-subs\
-  —embed-description\
   --parse-metadata "%(title)s:%(meta_title)s" \
   --output "%(title)s.%(ext)s" \
   --format "bestvideo+bestaudio/best" \
