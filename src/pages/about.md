@@ -43,7 +43,7 @@ title: About
 ## About Me
 
 My name is _Biju Ale_. I am a John 3:16 Christian with a deep interest in Philosophy, Theology, and Science.
-
+<!-- 
 Presently, I support a consulting firm called [Scott Wilson Nepal](https://web.archive.org/web/20240522023029/https://swnepal.com.np/biju-ale/), working in research, monitoring, learning, and evaluation of developmental projects in Nepal.
 
 <details class="details-animated">
@@ -79,4 +79,4 @@ If you appreciate my posts, please consider a small gift.
   <input type="hidden" name="hosted_button_id" value="M6UYLSALRKX5W" />
   <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
   <img alt="" border="0" src="https://www.paypal.com/en_NP/i/scr/pixel.gif" width="1" height="1" />
-</form>
+</form> -->
