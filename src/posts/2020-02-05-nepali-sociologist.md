@@ -1,5 +1,5 @@
 ---
-title: Discussing Worldviews, Machines, & Red Indians with a Nepalese sociologist.
+title: A Nepalese sociologist on Worldviews, Machines, & Red Indians.
 date: 2020-02-05
 tags: ["Journal", "Philosophy"]
 ---
@@ -10,7 +10,7 @@ Following is the English transcription of my confab with the prominent sociologi
 
 # About the Sociologist
 
-Dr Bhattachan is a UC Berkely alumni who co-founded the Department of Sociology & Anthropology in Tribhuvan University in Kathmandu, Nepal. He engages in right-based advocacy research for the upliftment of marginalised communities of Nepal including the indigenes, the Madhesis (Terai denizens), religious minorities, and the Dalits (untouchables).
+Dr Bhattachan is a UC Berkely alumni who co-founded the Department of Sociology & Anthropology in Tribhuvan University in Kathmandu, Nepal. He engages in rights-based advocacy research for the upliftment of marginalised communities of Nepal including the indigenes, the Madhesis (Terai denizens), religious minorities, and the Dalits (untouchables).
 
 # Dialogue Transcript
 

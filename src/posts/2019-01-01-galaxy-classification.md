@@ -1,6 +1,6 @@
 ---
 title: Classification of Galaxies with Machine Laearning
-tags: ["post", "Computing", "Science"]
+tags: ["post", "Computing", "Science", "Archive"]
 date: 2018-01-01
 ---
 

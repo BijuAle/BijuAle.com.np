@@ -1,7 +1,7 @@
 ---
 title: Favorite Bible Verses
 layout: "layouts/verse.njk"
-tags: ['post', 'Theology', 'Reading']
+tags: ['post', 'Theology', 'Reading', "Archive"]
 date: 2015-10-24
 ---
 

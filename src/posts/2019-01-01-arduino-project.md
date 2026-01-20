@@ -1,6 +1,6 @@
 ---
 title: Anti-bike Theft and Accident Detection with Arduino
-tags: ["post", "Computing"]
+tags: ["post", "Computing", "Archive"]
 date: 2019-01-01
 ---
 

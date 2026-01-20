@@ -1,7 +1,7 @@
 ---
 title: Gorkha Earthquake In Retrospect - Lessons In Diplomacy, Preparedness, & Morality
 date: 2020-10-02
-tags: ["Journal"]
+tags: ["Journal", "Archive"]
 ---
 
 <TOC headings={props.headings} />

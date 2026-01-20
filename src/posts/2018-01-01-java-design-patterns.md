@@ -1,6 +1,6 @@
 ---
 title: Design Patterns in Object-Oriented Programming
-tags: ["post", "Computing"]
+tags: ["post", "Computing", "Archive"]
 date: 2018-01-01
 ---
 
