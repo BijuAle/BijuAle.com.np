@@ -1,11 +1,15 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "bijuale",
+  "version": "3.0.0",
+  "main": "index.html",
+  "description": "Biju Ale's Website.",
   "scripts": {
-    "start": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx @11ty/eleventy",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --watch",
+    "serve": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
