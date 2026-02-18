@@ -1,0 +1,747 @@
+---
+layout: base.njk
+pagination:
+  data: photos.tags
+  size: 1
+  alias: tag
+permalink: "/photo-tag/{{ tag }}/"
+---
+
+<a href="{{ '/pages/photo-memories' }}" class="back-btn">← Photo Memories</a>
+
+<h1 class="tagName">{{ tag }}</h1>
+<div class="thumbs" id="thumbs-container">
+  {% for photo in photos.byTag[tag] %} {% set thumb = photo.secure_url |
+  replace('/upload/', '/upload/w_80,h_80,c_fill,q_70,f_webp,dpr_auto/') %}
+  <img
+    src="{{ thumb }}"
+    alt="Thumbnail for {{ photo.alt or 'Photo' }}"
+    class="thumb{% if loop.first %} active-thumb{% endif %}"
+    data-index="{{ loop.index0 }}"
+    data-medium="{{ photo.secure_url | replace('/upload/', '/upload/w_600,c_scale,q_75,f_webp,dpr_auto/') }}"
+    data-large="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_80,f_webp,dpr_auto/') }}"
+    data-xl="{{ photo.secure_url | replace('/upload/', '/upload/w_1400,c_scale,q_85,f_webp,dpr_auto/') }}"
+    role="button"
+    aria-label="View {{ photo.alt or 'photo' }}"
+    tabindex="0"
+  />
+  {% endfor %}
+</div>
+
+<div class="container">
+  <div class="photo-div" id="photo-container">
+    <button class="nav-btn prev-btn" aria-label="Previous photo" id="prev-btn">
+      ←
+    </button>
+    <button class="nav-btn next-btn" aria-label="Next photo" id="next-btn">
+      →
+    </button>
+    <div class="loading-indicator" id="loading-indicator">Loading...</div>
+
+    {% for photo in photos.byTag[tag] %}
+    <picture
+      class="photo-picture{% if not loop.first %} hidden{% endif %}"
+      data-index="{{ loop.index0 }}"
+    >
+      {% if loop.first %}
+      <source
+        media="(max-width: 600px)"
+        srcset="{{ photo.secure_url | replace('/upload/', '/upload/w_600,c_scale,q_auto,f_webp,dpr_auto/') }}"
+      />
+      <source
+        media="(max-width: 1200px)"
+        srcset="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_auto,f_webp,dpr_auto/') }}"
+      />
+      <img
+        src="{{ photo.secure_url | replace('/upload/', '/upload/w_1000,c_scale,q_auto,f_webp,dpr_auto/') }}"
+        alt="{{ photo.alt or 'Photo' }}"
+        class="photo-img loaded"
+        loading="eager"
+        fetchpriority="high"
+      />
+      {% else %}
+      <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%23f0f0f0'/%3E%3C/svg%3E"
+        alt="{{ photo.alt or 'Photo' }}"
+        class="photo-img"
+        loading="lazy"
+      />
+      {% endif %}
+    </picture>
+    {% endfor %}
+  </div>
+
+  <div class="metadata-div" id="metadata-container">
+    {% for photo in photos.byTag[tag] %}
+    <div
+      class="metadata-group{% if not loop.first %} hidden{% endif %}"
+      data-index="{{ loop.index0 }}"
+    >
+      {% if photo.context and photo.context.caption %}
+      <div class="caption">{{ photo.context.caption }}</div>
+      {% endif %}
+
+      <hr />
+
+      <table class="metadata-table">
+        {% if photo.context.DateTimeOriginal %}
+        <tr>
+          <td class="label">Photo Taken On</td>
+          <td>{{ photo.context.DateTimeOriginal }}</td>
+        </tr>
+        {% endif %} {% if photo.context.Make %}
+        <tr>
+          <td class="label">Camera</td>
+          <td>{{ photo.context.Make }} {{ photo.context.Model }}</td>
+        </tr>
+        {% endif %} {% if photo.context.iso %}
+        <tr>
+          <td class="label">ISO</td>
+          <td>{{ photo.context.iso }}</td>
+        </tr>
+        {% endif %} {% if photo.context.ApertureValue %}
+        <tr>
+          <td class="label">Aperture</td>
+          <td>{{ photo.context.ApertureValue }}</td>
+        </tr>
+        {% endif %} {% if photo.context.FocalLength %}
+        <tr>
+          <td class="label">Focal Length</td>
+          <td>{{ photo.context.FocalLength }}</td>
+        </tr>
+        {% endif %} {% if photo.context.ExposureTime %}
+        <tr>
+          <td class="label">Shutter Speed</td>
+          <td>{{ photo.context.ExposureTime }}</td>
+        </tr>
+        {% endif %} {% if photo.width %}
+        <tr>
+          <td class="label">Dimensions</td>
+          <td>{{ photo.width }} × {{ photo.height }} px</td>
+        </tr>
+        {% endif %}
+
+        <tr>
+          <td class="label">Copyright</td>
+          <td>© {% year %} Biju Ale</td>
+        </tr>
+      </table>
+
+      {% if photo.context.gps %}
+      <div class="map-container">
+        <span class="label">Photo Snap Location:</span>
+        {% set gps = photo.context.gps | replace(' ', '') %} {% set lat =
+        gps.split(',')[0] %} {% set lng = gps.split(',')[1] %}
+        <iframe
+          width="100%"
+          height="320"
+          frameborder="0"
+          style="border: 0"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q={{ lat }},{{
+            lng
+          }}&z=15&t=k&output=embed"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .tagName {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .photo-div {
+    width: 70%;
+    border: 1px solid black;
+    position: relative;
+  }
+
+  .metadata-div {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid black;
+    overflow-y: auto;
+  }
+
+  .photo-picture {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .photo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+  }
+
+  .photo-img:not(.loaded) {
+    filter: blur(2px);
+    opacity: 0.7;
+  }
+
+  .photo-img.loaded {
+    filter: none;
+    opacity: 1;
+  }
+
+  .loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #75c6a1;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 5;
+    display: none;
+  }
+
+  .loading-indicator.show {
+    display: block;
+  }
+
+  .thumbs {
+    margin: 0 auto;
+    overflow-x: auto;
+    border: 1px solid black;
+    display: flex;
+    gap: 2px;
+    padding: 2px;
+    scroll-behavior: smooth;
+  }
+
+  .thumbs img {
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .thumbs img:hover,
+  .thumbs img.active-thumb {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    border-color: #007acc;
+    transform: scale(1.05);
+  }
+
+  .photo-picture,
+  .metadata-group {
+    transition: opacity 0.2s ease;
+    opacity: 1;
+  }
+
+  .photo-picture.hidden,
+  .metadata-group.hidden {
+    display: none;
+  }
+
+  .metadata-table td.label,
+  .label {
+    text-align: right;
+    font-family: "Garamond R";
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+    width: 40%;
+  }
+
+  .metadata-table td:nth-child(2) {
+    text-align: center;
+    font-style: italic;
+    font-family: "Garamond Italic";
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+    word-break: break-word;
+  }
+
+  .caption {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-style: italic;
+    font-family: "Garamond Italic";
+    background: rgb(154, 154, 109);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    z-index: 10;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+
+  .nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .metadata-table td {
+    padding: 4px 1.5px !important;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  /* Mobile-friendly optimizations */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .photo-div,
+    .metadata-div {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .metadata-div {
+      max-height: 50vh;
+    }
+
+    .metadata-table {
+      width: 100%;
+      border-collapse: collapse;
+      display: block;
+    }
+
+    .metadata-table tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .metadata-table td {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+
+    .metadata-table td.label {
+      font-weight: bold;
+      width: 100%;
+      padding-bottom: 0;
+    }
+
+    .metadata-table td:nth-child(2) {
+      padding-top: 0;
+    }
+
+    .thumbs {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+</style>
+
+<script>
+  const checkbox = document.getElementById("check-menu");
+  window.onload = function () {
+    if (checkbox.checked==true) {
+      checkbox.checked = false;
+    }
+  };
+
+  class FastPhotoGallery {
+    constructor() {
+      this.currentIndex = 0;
+      this.isTransitioning = false;
+      this.touchStartX = 0;
+      this.touchEndX = 0;
+      this.imageCache = new Map();
+      this.loadingQueue = [];
+      this.isLoading = false;
+
+      this.init();
+    }
+
+    init() {
+      this.cacheElements();
+      this.setupEventListeners();
+      this.preloadCriticalImages();
+    }
+
+    cacheElements() {
+      this.thumbsContainer = document.getElementById("thumbs-container");
+      this.photoContainer = document.getElementById("photo-container");
+      this.metadataContainer = document.getElementById("metadata-container");
+      this.prevBtn = document.getElementById("prev-btn");
+      this.nextBtn = document.getElementById("next-btn");
+      this.loadingIndicator = document.getElementById("loading-indicator");
+
+      this.thumbs = [...this.thumbsContainer.querySelectorAll(".thumb")];
+      this.photos = [...this.photoContainer.querySelectorAll(".photo-picture")];
+      this.metadataGroups = [
+        ...this.metadataContainer.querySelectorAll(".metadata-group"),
+      ];
+
+      this.totalImages = this.thumbs.length;
+
+      if (this.totalImages === 0) {
+        this.prevBtn.disabled = true;
+        this.nextBtn.disabled = true;
+      }
+    }
+
+    setupEventListeners() {
+      // Thumbnail clicks
+      this.thumbsContainer.addEventListener(
+        "click",
+        this.handleThumbnailClick.bind(this)
+      );
+      this.thumbsContainer.addEventListener(
+        "keydown",
+        this.handleThumbnailKeydown.bind(this)
+      );
+
+      // Navigation buttons
+      this.prevBtn.addEventListener("click", () =>
+        this.navigateToIndex(this.getPrevIndex())
+      );
+      this.nextBtn.addEventListener("click", () =>
+        this.navigateToIndex(this.getNextIndex())
+      );
+
+      // Keyboard navigation
+      document.addEventListener("keydown", this.handleKeydown.bind(this));
+
+      // Touch/swipe for mobile
+      this.photoContainer.addEventListener(
+        "touchstart",
+        this.handleTouchStart.bind(this),
+        { passive: true }
+      );
+      this.photoContainer.addEventListener(
+        "touchend",
+        this.handleTouchEnd.bind(this),
+        { passive: true }
+      );
+
+      // Prevent context menu on long press
+      this.photoContainer.addEventListener("contextmenu", (e) =>
+        e.preventDefault()
+      );
+    }
+
+    async preloadCriticalImages() {
+      // Preload first 3 images immediately
+      const criticalIndices = [0, 1, 2].filter((i) => i < this.totalImages);
+
+      for (const index of criticalIndices) {
+        await this.loadImageForIndex(index, index === 0);
+      }
+    }
+
+    async loadImageForIndex(index, isUrgent = false) {
+      if (index < 0 || index >= this.totalImages) return;
+
+      const thumb = this.thumbs[index];
+      const picture = this.photos[index];
+      const img = picture.querySelector(".photo-img");
+
+      if (img.classList.contains("loaded") || img.dataset.loading) return;
+
+      img.dataset.loading = "true";
+
+      if (isUrgent) {
+        this.showLoading();
+      }
+
+      try {
+        // Determine optimal image size based on screen
+        const screenWidth = window.innerWidth;
+        const devicePixelRatio = window.devicePixelRatio || 1;
+
+        let imageUrl;
+        if (screenWidth <= 600) {
+          imageUrl = thumb.dataset.medium;
+        } else if (screenWidth <= 1200) {
+          imageUrl = thumb.dataset.large;
+        } else {
+          imageUrl = thumb.dataset.xl;
+        }
+
+        // Create new image element for preloading
+        const tempImg = new Image();
+
+        // Use Promise for better async handling
+        const loadPromise = new Promise((resolve, reject) => {
+          tempImg.onload = () => {
+            // Progressive enhancement with picture element
+            const sources = picture.querySelectorAll("source");
+            if (sources.length === 0) {
+              // Add responsive sources dynamically
+              const source1 = document.createElement("source");
+              source1.media = "(max-width: 600px)";
+              source1.srcset = thumb.dataset.medium;
+
+              const source2 = document.createElement("source");
+              source2.media = "(max-width: 1200px)";
+              source2.srcset = thumb.dataset.large;
+
+              picture.insertBefore(source1, img);
+              picture.insertBefore(source2, img);
+            }
+
+            // Update the actual image
+            img.src = imageUrl;
+            img.classList.add("loaded");
+            delete img.dataset.loading;
+
+            // Cache the loaded image
+            this.imageCache.set(index, imageUrl);
+
+            resolve();
+          };
+
+          tempImg.onerror = () => {
+            delete img.dataset.loading;
+            reject(new Error(`Failed to load image ${index}`));
+          };
+
+          // Set a timeout for slow connections
+          setTimeout(() => {
+            if (!img.classList.contains("loaded")) {
+              reject(new Error(`Image ${index} load timeout`));
+            }
+          }, 5000);
+        });
+
+        tempImg.src = imageUrl;
+        await loadPromise;
+      } catch (error) {
+        console.warn("Image load failed:", error);
+      } finally {
+        if (isUrgent) {
+          this.hideLoading();
+        }
+      }
+    }
+
+    showLoading() {
+      this.loadingIndicator.classList.add("show");
+    }
+
+    hideLoading() {
+      this.loadingIndicator.classList.remove("show");
+    }
+
+    async navigateToIndex(newIndex) {
+      if (
+        this.isTransitioning ||
+        newIndex === this.currentIndex ||
+        newIndex < 0 ||
+        newIndex >= this.totalImages
+      ) {
+        return;
+      }
+
+      this.isTransitioning = true;
+      const oldIndex = this.currentIndex;
+      this.currentIndex = newIndex;
+
+      // Load current image first if not loaded
+      await this.loadImageForIndex(newIndex, true);
+
+      // Update UI elements
+      this.updatePhoto(oldIndex, newIndex);
+      this.updateMetadata(oldIndex, newIndex);
+      this.updateThumbnail(oldIndex, newIndex);
+      this.scrollToActiveThumbnail(newIndex);
+
+      // Preload adjacent images in background
+      this.preloadAdjacentImages(newIndex);
+
+      // Reset transition flag
+      setTimeout(() => {
+        this.isTransitioning = false;
+      }, 200);
+
+      // Scroll to top on mobile
+      // if (window.innerWidth <= 600) {
+      //   window.scrollTo({ top: 0, behavior: "smooth" });
+      // }
+    }
+
+    preloadAdjacentImages(index) {
+      const indices = [this.getPrevIndex(index), this.getNextIndex(index)];
+
+      // Use requestIdleCallback for background loading
+      indices.forEach((i) => {
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => this.loadImageForIndex(i), {
+            timeout: 2000,
+          });
+        } else {
+          setTimeout(() => this.loadImageForIndex(i), 100);
+        }
+      });
+    }
+
+    updatePhoto(oldIndex, newIndex) {
+      const oldPhoto = this.photos[oldIndex];
+      const newPhoto = this.photos[newIndex];
+
+      if (oldPhoto) {
+        oldPhoto.classList.add("hidden");
+      }
+
+      if (newPhoto) {
+        newPhoto.classList.remove("hidden");
+      }
+    }
+
+    updateMetadata(oldIndex, newIndex) {
+      const oldMetadata = this.metadataGroups[oldIndex];
+      const newMetadata = this.metadataGroups[newIndex];
+
+      if (oldMetadata) {
+        oldMetadata.classList.add("hidden");
+      }
+
+      if (newMetadata) {
+        newMetadata.classList.remove("hidden");
+      }
+    }
+
+    updateThumbnail(oldIndex, newIndex) {
+      const oldThumb = this.thumbs[oldIndex];
+      const newThumb = this.thumbs[newIndex];
+
+      if (oldThumb) {
+        oldThumb.classList.remove("active-thumb");
+      }
+
+      if (newThumb) {
+        newThumb.classList.add("active-thumb");
+      }
+    }
+
+    scrollToActiveThumbnail(index) {
+      const activeThumb = this.thumbs[index];
+      if (activeThumb) {
+        activeThumb.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
+    }
+
+    handleThumbnailClick(e) {
+      if (e.target.classList.contains("thumb")) {
+        const index = parseInt(e.target.dataset.index);
+        this.navigateToIndex(index);
+      }
+    }
+
+    handleThumbnailKeydown(e) {
+      if (
+        e.target.classList.contains("thumb") &&
+        (e.key === "Enter" || e.key === " ")
+      ) {
+        e.preventDefault();
+        const index = parseInt(e.target.dataset.index);
+        this.navigateToIndex(index);
+      }
+    }
+
+    handleKeydown(e) {
+      if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA")
+        return;
+
+      switch (e.key) {
+        case "ArrowLeft":
+          e.preventDefault();
+          this.navigateToIndex(this.getPrevIndex());
+          break;
+        case "ArrowRight":
+          e.preventDefault();
+          this.navigateToIndex(this.getNextIndex());
+          break;
+        case "Home":
+          e.preventDefault();
+          this.navigateToIndex(0);
+          break;
+        case "End":
+          e.preventDefault();
+          this.navigateToIndex(this.totalImages - 1);
+          break;
+        case "Escape":
+          if (window.history.length > 1) {
+            window.history.back();
+          }
+          break;
+      }
+    }
+
+    handleTouchStart(e) {
+      this.touchStartX = e.changedTouches[0].screenX;
+    }
+
+    handleTouchEnd(e) {
+      this.touchEndX = e.changedTouches[0].screenX;
+      this.handleSwipe();
+    }
+
+    handleSwipe() {
+      const threshold = 50;
+      const diff = this.touchStartX - this.touchEndX;
+
+      if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+          this.navigateToIndex(this.getNextIndex());
+        } else {
+          this.navigateToIndex(this.getPrevIndex());
+        }
+      }
+    }
+
+    getPrevIndex(index = this.currentIndex) {
+      return index > 0 ? index - 1 : this.totalImages - 1;
+    }
+
+    getNextIndex(index = this.currentIndex) {
+      return index < this.totalImages - 1 ? index + 1 : 0;
+    }
+  }
+
+  // Initialize gallery when DOM is ready
+  document.addEventListener("DOMContentLoaded", () => {
+    window.photoGallery = new FastPhotoGallery();
+  });
+</script>

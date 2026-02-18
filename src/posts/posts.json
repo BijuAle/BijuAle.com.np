@@ -1,6 +1,0 @@
-{
-	"layout": "layouts/post.njk",
-	"tags": "post",
-	"author": "Biju Ale",
-	"permalink": "/{{ page.fileSlug }}/"
-}

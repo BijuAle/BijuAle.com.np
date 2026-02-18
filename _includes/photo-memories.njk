@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: Photo Tags
+---
+
+<section class="photo-tags">
+  <div class="tag-grid">
+    {% for tag in photos.tags %}
+      {% if photos.byTag[tag] and photos.byTag[tag][0] %}
+        <figure class="tag-card">
+          <a href="/photo-tag/{{ tag | url }}">
+            <img
+              src="{{ photos.byTag[tag][0].secure_url }}?w=150&h=150&c=fill&f=auto&q=auto"
+              alt="Photo representing {{ tag }}"
+              width="150"
+              height="150"
+            />
+            <figcaption>{{ tag | titleCase }}</figcaption>
+          </a>
+        </figure>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .tag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 4px; /* tighter spacing */
+  }
+
+  .tag-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .tag-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease-in-out;
+  }
+
+  .tag-card img:hover {
+    filter: grayscale(0%);
+  }
+
+  figcaption {
+    font-family: "Linux Biolinium O";
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.25rem;
+    color: #75c6a1;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+</style>

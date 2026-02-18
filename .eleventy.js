@@ -7,21 +7,14 @@ cloudinary.config({
 });
 
 const { DateTime } = require("luxon");
-const slugify = require("slugify");
-const katex = require("katex");
-const titleCase = (str) =>
-  str.replace(
-    /\w\S*/g,
-    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-  );
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/assets");
-  
+  eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("images");
+
   eleventyConfig.addFilter("formatted", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
-  eleventyConfig.addFilter("titleCase", titleCase);
 
   eleventyConfig.addFilter("date", function (dateObj) {
     return new Date(dateObj).toLocaleDateString("en-US", {
@@ -31,18 +24,28 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  eleventyConfig.addFilter("slug", (str) => {
-    if (!str) {
-      return;
-    }
-    return slugify(str, {
-      lower: true,
-      strict: true,
-      remove: /[']/g,
+  // Add getAllTags filter
+  eleventyConfig.addFilter("getAllTags", (collectionsObj) => {
+    let tagSet = new Set();
+    Object.keys(collectionsObj).forEach((tag) => {
+      if (tag !== "all" && tag !== "post") {
+        tagSet.add(tag);
+      }
     });
+    return [...tagSet];
   });
 
-   eleventyConfig.addFilter("latex", (content) => {
+  const titleCase = (str) =>
+    str.replace(
+      /\w\S*/g,
+      (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(),
+    );
+  eleventyConfig.addFilter("titleCase", titleCase);
+
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  const katex = require("katex");
+  eleventyConfig.addFilter("latex", (content) => {
     return content.replace(/\$\$(.+?)\$\$/g, (_, equation) => {
       const cleanEquation = equation
         .replace(/&lt;/g, "<")
@@ -51,45 +54,4 @@ module.exports = function (eleventyConfig) {
       return katex.renderToString(cleanEquation, { throwOnError: false });
     });
   });
-
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
- 
-
-  eleventyConfig.addCollection("tags", function (collection) {
-    const excludedTags = new Set(["page", "post"]); // Add tags to exclude
-    const tagCount = {};
-
-    // Loop through all items in the collection
-    collection.getAll().forEach((item) => {
-      if (item.data.tags) {
-        item.data.tags.forEach((tag) => {
-          // Skip excluded tags
-          if (!excludedTags.has(tag)) {
-            // Initialize the tag count if it doesn't exist
-            if (!tagCount[tag]) {
-              tagCount[tag] = 0;
-            }
-            // Increment the count for the tag
-            tagCount[tag]++;
-          }
-        });
-      }
-    });
-
-    // Convert the tagCount object to an array of objects
-    return Object.entries(tagCount).map(([tag, count]) => ({
-      tag,
-      count,
-    }));
-  });
-
-  return {
-    markdownTemplateEngine: "njk",
-    dir: {
-      input: "src",
-      output: "dist",
-      data: "_data",
-    },
-  };
 };

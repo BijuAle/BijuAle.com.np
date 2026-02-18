@@ -1,0 +1,22 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+permalink: /tags/{{ tag | slugify }}/
+---
+<h1>Tag: {{ tag }}</h1>
+
+<div>
+{%- for post in collections[tag] | reverse %}
+<div style="margin: 1rem; font-size: 1.5rem;">
+<span style="font-family: 'Linux Biolinium O'; font-size: 1.2rem; float:left; opacity: 50%; width:100px; margin-right: 1rem;" >{{ post.date | formatted }}</span><a style="color: rgb(52, 53, 29); font-family: Garamond Regular" href="{{ post.url }}">{{ post.data.title }}
+</a></div>
+{%- endfor %}
+</div>
+
+<a href="/" style="display: inline-block; margin-top: 2rem;">← Back to all posts</a>
