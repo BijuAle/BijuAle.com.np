@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
+
+    <!-- Preload fonts -->
+    <link
+      rel="preload"
+      href="/assets/fonts/GaramondPremrPro.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/AireRomanPro.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/LinBiolinum_R.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+
     <style>
       *,
       *::before,
@@ -15,14 +39,14 @@
 
       @font-face {
         font-family: "Linux Biolinium O";
-        src: url("/fonts/LinBiolinum_R.otf") format("opentype");
+        src: url("/assets/fonts/LinBiolinum_R.otf") format("opentype");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
         font-family: "CMU Serif Roman";
-        src: url("/fonts/cmunrm.ttf") format("truetype");
+        src: url("/assets/fonts/cmunrm.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -30,7 +54,7 @@
 
       @font-face {
         font-family: "Garamond Regular";
-        src: url("/fonts/GaramondPremrPro.otf") format("opentype");
+        src: url("/assets/fonts/GaramondPremrPro.otf") format("opentype");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -38,7 +62,7 @@
 
       @font-face {
         font-family: "Garamond Regular";
-        src: url("/fonts/GaramondPremrPro-It.otf") format("opentype");
+        src: url("/assets/fonts/GaramondPremrPro-It.otf") format("opentype");
         font-weight: normal;
         font-style: italic;
         font-display: swap;
@@ -46,7 +70,7 @@
 
       @font-face {
         font-family: "AireRomanPro";
-        src: url("/fonts/AireRomanPro.woff2") format("woff2");
+        src: url("/assets/fonts/AireRomanPro.woff2") format("woff2");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -54,7 +78,7 @@
 
       @font-face {
         font-family: "AireRomanPro";
-        src: url("/fonts/AireBoldPro.woff2") format("woff2");
+        src: url("/assets/fonts/AireBoldPro.woff2") format("woff2");
         font-weight: bold;
         font-style: normal;
         font-display: swap;
@@ -205,8 +229,8 @@
       .web-heading {
         text-align: center;
         position: relative;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
       }
 
       .web-heading::after {

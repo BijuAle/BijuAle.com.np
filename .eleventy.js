@@ -9,8 +9,7 @@ cloudinary.config({
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("fonts");
-  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addFilter("formatted", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
@@ -54,4 +53,13 @@ module.exports = function (eleventyConfig) {
       return katex.renderToString(cleanEquation, { throwOnError: false });
     });
   });
+
+  return {
+    markdownTemplateEngine: "njk",
+    dir: {
+      input: "src",
+      output: "dist",
+      data: "_data",
+    },
+  };
 };
