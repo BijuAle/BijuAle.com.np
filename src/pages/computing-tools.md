@@ -28,6 +28,7 @@ Body text goes here.
 \closing{Yours Faithfully,}
 \end{letter}
 \end{document}
+
 {% endcall %}
 
 ## Wrap text around a figure
@@ -60,7 +61,6 @@ from pdf2image import convert_from_path
 from PIL import Image, ImageEnhance
 import numpy as np
 import cv2
-
 pdf_filename = "a.pdf"
 
 if not os.path.isfile(pdf_filename):
@@ -198,8 +198,6 @@ Auto-rotate EXIF orientation, then stamp a copyright notice on every image. Outp
 for img in *; do
     jhead -autorot "$img"
 done
-
-# Step 2 – stamp copyright; outputs prefixed with f_
 for img in *; do
     convert "${img}" \
         -gravity SouthWest \
