@@ -5,285 +5,349 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
 
-    <!-- Preload fonts -->
-    <link
-      rel="preload"
-      href="/assets/fonts/GaramondPremrPro.otf"
-      as="font"
-      type="font/otf"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/AireRomanPro.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/LinBiolinum_R.otf"
-      as="font"
-      type="font/otf"
-      crossorigin
-    />
+    <link rel="preload" href="/assets/fonts/GaramondPremrPro.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/assets/fonts/AireRomanPro.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/LinBiolinum_R.otf" as="font" type="font/otf" crossorigin />
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+      onload="renderMathInElement(document.querySelector('main'), { delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}], throwOnError: false });">
+    </script>
 
     <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-      @font-face {
-        font-family: "Linux Biolinium O";
-        src: url("/assets/fonts/LinBiolinum_R.otf") format("opentype");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "CMU Serif Roman";
-        src: url("/assets/fonts/cmunrm.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
+      @font-face { font-family: "Linux Biolinium O"; src: url("/assets/fonts/LinBiolinum_R.otf") format("opentype"); font-weight: normal; font-style: normal; font-display: swap; }
+      @font-face { font-family: "CMU Serif Roman"; src: url("/assets/fonts/cmunrm.ttf") format("truetype"); font-weight: normal; font-style: normal; font-display: swap; }
+      @font-face { font-family: "Garamond Regular"; src: url("/assets/fonts/GaramondPremrPro.otf") format("opentype"); font-weight: normal; font-style: normal; font-display: swap; }
+      @font-face { font-family: "Garamond Regular"; src: url("/assets/fonts/GaramondPremrPro-It.otf") format("opentype"); font-weight: normal; font-style: italic; font-display: swap; }
+      @font-face { font-family: "AireRomanPro"; src: url("/assets/fonts/AireRomanPro.woff2") format("woff2"); font-weight: normal; font-style: normal; font-display: swap; }
+      @font-face { font-family: "AireRomanPro"; src: url("/assets/fonts/AireBoldPro.woff2") format("woff2"); font-weight: bold; font-style: normal; font-display: swap; }
 
-      @font-face {
-        font-family: "Garamond Regular";
-        src: url("/assets/fonts/GaramondPremrPro.otf") format("opentype");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
+      body { font-family: "Garamond Regular"; color: rgb(88 72 34); background-color: rgb(194 173 150); margin: 0 auto; max-width: 800px; padding: 0 1.5rem; }
 
-      @font-face {
-        font-family: "Garamond Regular";
-        src: url("/assets/fonts/GaramondPremrPro-It.otf") format("opentype");
-        font-weight: normal;
-        font-style: italic;
-        font-display: swap;
-      }
+      header { text-align: center; position: relative; }
+      header h1 { font-size: clamp(2rem, 5vw, 3rem); }
+      header span { font-family: "CMU Serif Roman"; display: block; line-height: 90%; font-size: clamp(0.75rem, 2vw, 0.95rem); }
+      header nav { font-family: "Linux Biolinium O"; font-size: clamp(0.9rem, 1rem, 1.2rem); text-transform: uppercase; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.2rem; margin: 0.5rem 0; }
+      header nav a { border: 1px solid grey; padding: 0.2rem; white-space: nowrap; }
 
-      @font-face {
-        font-family: "AireRomanPro";
-        src: url("/assets/fonts/AireRomanPro.woff2") format("woff2");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
+      main { text-align: justify; }
 
-      @font-face {
-        font-family: "AireRomanPro";
-        src: url("/assets/fonts/AireBoldPro.woff2") format("woff2");
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-      }
+      h1, h2, h3, h4 {color:rgb(85, 84, 68); font-weight: thin; font-family: "Linux Biolinium O", Georgia, serif; line-height: 1.2; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+      h1 { font-size: clamp(1.5rem, 4vw, 2rem); }
+      h2 { font-size: clamp(1.3rem, 3.5vw, 1.6rem); }
+      h3 { font-size: clamp(1.1rem, 3vw, 1.25rem); }
+      h4 { font-size: 1rem; }
 
-      body {
-        font-family: "Garamond Regular";
-        color: rgb(88 72 34);
-        background-color: rgb(194 173 150);
-        margin: 0 auto;
-        max-width: 800px;
-        padding: 0 1.5rem;
-      }
+      p { font-family: "Garamond Regular"; font-size: clamp(1rem, 2.5vw, 1.2rem); color: rgb(38, 55, 55); margin-bottom: 1.25rem; }
 
-      header {
-        text-align: center;
-        position: relative;
-      }
+      a { color: rgb(35 63 100); text-decoration: none; transition: background-color 0.3s ease; border-radius: 5px; }
+      a:hover { background-color: rgb(164, 159, 110); }
 
-      header h1 {
-        font-size: clamp(2rem, 5vw, 3rem);
-      }
+      ul, ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+      li { margin-bottom: 0.35rem; font-family: "Garamond Regular"; font-size: clamp(1rem, 2.5vw, 1.2rem); color: rgb(38, 55, 55); }
+      li > ul, li > ol { margin-top: 0.35rem; margin-bottom: 0; }
 
-      header span {
-        font-family: "CMU Serif Roman";
-        display: block;
-        line-height: 90%;
-        font-size: clamp(0.75rem, 2vw, 0.95rem);
-      }
+      blockquote { border-left: 3px solid #ccc; padding-left: 1.25rem; margin: 1.5rem 0; color: #555; font-style: italic; }
 
-      header nav {
-        font-family: "Linux Biolinium O";
-        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      code { font-family: "Courier New", monospace; font-size: 0.875em; padding: 0.15em 0.35em; border-radius: 3px; word-break: break-word; }
+      pre { padding: 1.25rem; border-radius: 4px; overflow-x: auto; margin-bottom: 1.25rem; }
+      pre code { background: none; padding: 0; font-size: 0.875rem; }
+
+      img { max-width: 100%; height: auto; display: block; margin: 1.5rem 0; }
+
+      .web-heading { font-family:"AireRomanPro";text-align: center; position: relative; margin: 0; padding: 0; }
+      .web-heading::after { content: "◆ ◆ ◆"; display: block; font-size: 1rem; color: #2e7d32; }
+      header > span:first-of-type { font-family: "Garamond Regular"; font-size: 1rem; margin-top: 1rem; opacity: 80%; }
+
+      /* ─── Desktop TOC: fixed, right of the 800px column ─── */
+      #toc {
+        display: none;
+        position: fixed;
+        left: calc(50% + 415px);
+        top: 5rem;
+        width: 275px;
+        max-height: calc(100vh - 6rem);
+        overflow-y: auto;
+        font-family: "Linux Biolinium O", sans-serif;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        border-left: 2px solid rgba(88, 72, 34, 0.22);
+        padding-left: 0.65rem;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(88,72,34,0.15) transparent;
+      }
+      #toc.toc-ready { display: block; }
+      @media (max-width: 1200px) { #toc.toc-ready { display: none; } }
+
+      #toc-label { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.62rem; color: rgba(88, 72, 34, 0.42); margin-bottom: 0.4rem; user-select: none; }
+      #toc ol { list-style: none; padding: 0; margin: 0; }
+      #toc li { margin: 0; }
+      #toc a { display: block; padding: 0.14rem 0.25rem; color: rgba(88, 72, 34, 0.68); border-radius: 3px; transition: color 0.15s, background-color 0.15s; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      #toc a:hover { color: rgb(88, 72, 34); background-color: rgba(88,72,34,0.07); }
+      #toc a.toc-active { color: rgb(35, 63, 100); font-weight: bold; }
+      #toc .lvl-1 a { padding-left: 0.25rem; }
+      #toc .lvl-2 a { padding-left: 0.9rem;  font-size: 0.91rem; }
+      #toc .lvl-3 a { padding-left: 1.5rem;  font-size: 0.87rem; opacity: 0.88; }
+      #toc .lvl-4 a { padding-left: 2.0rem;  font-size: 0.63rem; opacity: 0.78; }
+
+      /* ─── Mobile: sticky toggle button near title ─── */
+      #toc-toggle {
+        display: none;
+        position: sticky;
+        top: 0.5rem;
+        float: right;
+        z-index: 90;
+        margin-top: 0.5rem;
+        margin-bottom: -2.2rem;
+        font-family: "Linux Biolinium O", sans-serif;
+        font-size: 0.7rem;
         text-transform: uppercase;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.2rem;
-        margin: 0.5rem 0;
-      }
-
-      header nav a {
-        border: 1px solid grey;
-        padding: 0.2rem;
-        white-space: nowrap;
-      }
-
-      main {
-        text-align: justify;
-      }
-
-      /* headings */
-      h1,
-      h2,
-      h3,
-      h4 {
-        font-family: "AireRomanPro", Georgia, serif;
-        line-height: 1.2;
-        margin-top: 1.5rem;
-        margin-bottom: 0.75rem;
-      }
-      h1 {
-        font-size: clamp(1.5rem, 4vw, 2rem);
-      }
-      h2 {
-        font-size: clamp(1.3rem, 3.5vw, 1.6rem);
-      }
-      h3 {
-        font-size: clamp(1.1rem, 3vw, 1.25rem);
-      }
-      h4 {
-        font-size: 1rem;
-      }
-
-      /* paragraphs */
-      p {
-        font-family: "Garamond Regular";
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
-        color: rgb(38, 55, 55);
-        margin-bottom: 1.25rem;
-      }
-
-      a {
-        color: rgb(35 63 100);
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        border-radius: 5px;
-      }
-      a:hover {
-        background-color: rgb(164, 159, 110);
-      }
-
-      /* lists */
-      ul,
-      ol {
-        padding-left: 1.5rem;
-        margin-bottom: 1.25rem;
-      }
-      li {
-        margin-bottom: 0.35rem;
-        font-family: "Garamond Regular";
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
-        color: rgb(38, 55, 55);
-      }
-      li > ul,
-      li > ol {
-        margin-top: 0.35rem;
-        margin-bottom: 0;
-      }
-
-      /* blockquote */
-      blockquote {
-        border-left: 3px solid #ccc;
-        padding-left: 1.25rem;
-        margin: 1.5rem 0;
-        color: #555;
-        font-style: italic;
-      }
-
-      /* code */
-      code {
-        font-family: "Courier New", monospace;
-        font-size: 0.875em;
-        padding: 0.15em 0.35em;
-        border-radius: 3px;
-        word-break: break-word;
-      }
-      pre {
-        padding: 1.25rem;
+        letter-spacing: 0.05em;
+        color: rgba(88, 72, 34, 0.72);
+        background: rgba(185, 165, 140, 0.93);
+        border: 1px solid rgba(88, 72, 34, 0.28);
         border-radius: 4px;
-        overflow-x: auto;
-        margin-bottom: 1.25rem;
+        padding: 0.22rem 0.55rem;
+        cursor: pointer;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        user-select: none;
+        transition: background 0.15s, color 0.15s;
       }
-      pre code {
-        background: none;
-        padding: 0;
-        font-size: 0.875rem;
-      }
+      #toc-toggle:hover { background: rgba(164,159,110,0.8); color: rgb(88,72,34); }
+      #toc-toggle.open { color: rgb(35, 63, 100); border-color: rgba(35,63,100,0.35); }
+      /* only show on screens where desktop sidebar is hidden */
+      @media (max-width: 1200px) { #toc-toggle.toc-ready { display: block; } }
 
-      /* images */
-      img {
-        max-width: 100%;
-        height: auto;
+      /* ─── Slide-in drawer ─── */
+      #toc-drawer {
+        position: fixed;
+        top: 0; right: -280px;
+        width: 260px;
+        height: 100dvh;
+        z-index: 200;
+        background: rgb(183, 163, 138);
+        border-left: 2px solid rgba(88, 72, 34, 0.22);
+        padding: 1.1rem 0.9rem 2rem 1rem;
+        overflow-y: auto;
+        transition: right 0.27s cubic-bezier(0.4, 0, 0.2, 1);
+        scrollbar-width: thin;
+        scrollbar-color: rgba(88,72,34,0.2) transparent;
+      }
+      #toc-drawer.open { right: 0; }
+
+      #toc-drawer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.7rem;
+      }
+      #toc-drawer-title {
+        font-family: "Linux Biolinium O", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.63rem;
+        color: rgba(88, 72, 34, 0.45);
+        user-select: none;
+      }
+      #toc-drawer-close {
+        cursor: pointer;
+        font-size: 1.1rem;
+        line-height: 1;
+        color: rgba(88,72,34,0.5);
+        padding: 0.1rem 0.35rem;
+        border-radius: 3px;
+        transition: background 0.15s;
+      }
+      #toc-drawer-close:hover { background: rgba(88,72,34,0.1); color: rgb(88,72,34); }
+
+      #toc-drawer ol { list-style: none; padding: 0; margin: 0; }
+      #toc-drawer li { margin: 0; }
+      #toc-drawer a {
         display: block;
-        margin: 1.5rem 0;
+        padding: 0.32rem 0.3rem;
+        font-family: "Linux Biolinium O", sans-serif;
+        font-size: 0.84rem;
+        color: rgba(88, 72, 34, 0.78);
+        border-radius: 3px;
+        line-height: 1.35;
+        white-space: normal;
+        transition: color 0.15s, background 0.15s;
       }
+      #toc-drawer a:hover { color: rgb(88,72,34); background: rgba(88,72,34,0.08); }
+      #toc-drawer a.toc-active { color: rgb(35, 63, 100); font-weight: bold; }
+      #toc-drawer .lvl-1 a { padding-left: 0.3rem; }
+      #toc-drawer .lvl-2 a { padding-left: 1.1rem; font-size: 0.79rem; }
+      #toc-drawer .lvl-3 a { padding-left: 1.8rem; font-size: 0.74rem; opacity: 0.88; }
+      #toc-drawer .lvl-4 a { padding-left: 2.4rem; font-size: 0.7rem;  opacity: 0.78; }
 
-      .web-heading {
-        text-align: center;
-        position: relative;
-        margin: 0;
-        padding: 0;
+      /* scrim behind drawer */
+      #toc-scrim {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 199;
+        background: rgba(50, 38, 18, 0.38);
       }
+      #toc-scrim.open { display: block; }
 
-      .web-heading::after {
-        content: "◆ ◆ ◆";
-        display: block;
-        font-size: 1rem;
-        color: #2e7d32;
-      }
-      header > span:first-of-type {
-        font-family: "Garamond Regular";
-        font-size: 1rem;
-        margin-top: 1rem;
-        opacity: 80%;
-      }
-
-      /* Mobile adjustments */
       @media (max-width: 600px) {
-        body {
-          padding: 0 1rem;
-        }
-
-        header span {
-          font-family: "Garamond Regular";
-          font-size: 0.8rem;
-        }
-
-        header nav a {
-          padding: 0.3rem 0.5rem;
-          font-size: 0.9rem;
-        }
+        body { padding: 0 1rem; }
+        header span { font-family: "Garamond Regular"; font-size: 0.8rem; }
+        header nav a { padding: 0.3rem 0.5rem; font-size: 0.9rem; }
       }
     </style>
   </head>
   <body>
     <header>
-      <span
-        >You shall know the truth, <br />& the truth shall set you free.
-        <span style="font-style: italic">—John 8:32</span></span
-      >
+      <span>You shall know the truth, <br />& the truth shall set you free.
+        <span style="font-style: italic">—John 8:32</span></span>
       <a href="/"><h1 class="web-heading">Biju Ale</h1></a>
-
       <nav>
         <a href="/">Essays</a>
         <a href="/pages/photo-memories">Photo Memories</a>
+        <a href="/pages/computing-tools">Computing Tools</a>
         <a href="/pages/about">About</a>
       </nav>
       <hr style="color: gray; opacity: 30%" />
     </header>
+
+    <!-- Desktop TOC (fixed sidebar) -->
+    <aside id="toc" aria-label="Table of contents">
+      <div id="toc-label">Contents</div>
+      <nav><ol id="toc-list"></ol></nav>
+    </aside>
+
+    <!-- Mobile: scrim + slide-in drawer -->
+    <div id="toc-scrim"></div>
+    <aside id="toc-drawer" aria-label="Table of contents">
+      <div id="toc-drawer-header">
+        <span id="toc-drawer-title">Contents</span>
+        <span id="toc-drawer-close" aria-label="Close">&#x2715;</span>
+      </div>
+      <nav><ol id="toc-drawer-list"></ol></nav>
+    </aside>
+
     <main>
-      <h1 style="text-align: center; border-radius: 10px">
-        {{ title }}
-      </h1>
+      <!-- Mobile toggle button: sticky, floats right near article title -->
+      <button id="toc-toggle" aria-label="Toggle table of contents">Contents &#x25BE;</button>
+
+      <h1 style="font-family: 'AireRomanPro'; text-align: center; border-radius: 10px">{{ title }}</h1>
       {{ content | safe }}
     </main>
+
+    <script>
+    (function () {
+      var main        = document.querySelector('main');
+      var toc         = document.getElementById('toc');
+      var tocList     = document.getElementById('toc-list');
+      var drawer      = document.getElementById('toc-drawer');
+      var drawerList  = document.getElementById('toc-drawer-list');
+      var toggle      = document.getElementById('toc-toggle');
+      var scrim       = document.getElementById('toc-scrim');
+      var closeBtn    = document.getElementById('toc-drawer-close');
+
+      // Collect headings — skip the injected page-title h1 (first h1 in main)
+      var all      = Array.from(main.querySelectorAll('h1, h2, h3, h4'));
+      var titleEl  = main.querySelector('h1');
+      var headings = all.filter(function(h) { return h !== titleEl; });
+
+      if (headings.length < 2) return;
+
+      var tagDepth = { H1: 1, H2: 2, H3: 3, H4: 4 };
+      var minDepth = Math.min.apply(null, headings.map(function(h) { return tagDepth[h.tagName] || 1; }));
+
+      function slugify(s) {
+        return (s || '').toLowerCase().replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-').replace(/-+/g,'-') || 'section';
+      }
+
+      // Build both TOC lists simultaneously from the same headings
+      var usedIds = {};
+      headings.forEach(function(h) {
+        if (!h.id) {
+          var base = slugify(h.textContent), id = base, n = 2;
+          while (usedIds[id]) { id = base + '-' + n++; }
+          h.id = id;
+        }
+        usedIds[h.id] = true;
+
+        var lvl = (tagDepth[h.tagName] || 1) - minDepth + 1;
+
+        [tocList, drawerList].forEach(function(list) {
+          var li = document.createElement('li');
+          li.className = 'lvl-' + lvl;
+          var a = document.createElement('a');
+          a.href = '#' + h.id;
+          a.textContent = h.textContent;
+          a.title = h.textContent;
+          li.appendChild(a);
+          list.appendChild(li);
+        });
+      });
+
+      // ── Desktop sidebar ──
+      toc.classList.add('toc-ready');
+      var headerEl     = document.querySelector('header');
+      var headerBottom = headerEl.getBoundingClientRect().bottom;
+      toc.style.top       = (headerBottom + 14) + 'px';
+      toc.style.maxHeight = 'calc(100vh - ' + (headerBottom + 22) + 'px)';
+
+      // ── Mobile toggle ──
+      toggle.classList.add('toc-ready');
+
+      function openDrawer() {
+        drawer.classList.add('open');
+        scrim.classList.add('open');
+        toggle.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+      function closeDrawer() {
+        drawer.classList.remove('open');
+        scrim.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      toggle.addEventListener('click', function() {
+        drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+      });
+      closeBtn.addEventListener('click', closeDrawer);
+      scrim.addEventListener('click', closeDrawer);
+
+      // Close drawer when a link is tapped
+      drawerList.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') closeDrawer();
+      });
+
+      // Close on Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      // ── Active-section highlight (shared) ──
+      var desktopLinks = Array.from(tocList.querySelectorAll('a'));
+      var drawerLinks  = Array.from(drawerList.querySelectorAll('a'));
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            desktopLinks.forEach(function(l) { l.classList.remove('toc-active'); });
+            drawerLinks.forEach(function(l)  { l.classList.remove('toc-active'); });
+            var sel = 'a[href="#' + e.target.id + '"]';
+            var d = tocList.querySelector(sel);
+            var m = drawerList.querySelector(sel);
+            if (d) d.classList.add('toc-active');
+            if (m) m.classList.add('toc-active');
+          }
+        });
+      }, { rootMargin: '0px 0px -65% 0px', threshold: 0 });
+
+      headings.forEach(function(h) { observer.observe(h); });
+    })();
+    </script>
   </body>
 </html>

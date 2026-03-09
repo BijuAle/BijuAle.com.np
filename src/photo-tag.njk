@@ -83,53 +83,27 @@ permalink: "/photo-tag/{{ tag }}/"
 
       <hr />
 
-      <table class="metadata-table">
+      <div class="metadata-list">
         {% if photo.context.DateTimeOriginal %}
-        <tr>
-          <td class="label">Photo Taken On</td>
-          <td>{{ photo.context.DateTimeOriginal }}</td>
-        </tr>
+        <span>{{ photo.context.DateTimeOriginal }}</span>
         {% endif %} {% if photo.context.Make %}
-        <tr>
-          <td class="label">Camera</td>
-          <td>{{ photo.context.Make }} {{ photo.context.Model }}</td>
-        </tr>
+        <span>{{ photo.context.Make }} {{ photo.context.Model }}</span>
         {% endif %} {% if photo.context.iso %}
-        <tr>
-          <td class="label">ISO</td>
-          <td>{{ photo.context.iso }}</td>
-        </tr>
+        <span>{{ photo.context.iso }}</span>
         {% endif %} {% if photo.context.ApertureValue %}
-        <tr>
-          <td class="label">Aperture</td>
-          <td>{{ photo.context.ApertureValue }}</td>
-        </tr>
+        <span>{{ photo.context.ApertureValue }}</span>
         {% endif %} {% if photo.context.FocalLength %}
-        <tr>
-          <td class="label">Focal Length</td>
-          <td>{{ photo.context.FocalLength }}</td>
-        </tr>
+        <span>{{ photo.context.FocalLength }}</span>
         {% endif %} {% if photo.context.ExposureTime %}
-        <tr>
-          <td class="label">Shutter Speed</td>
-          <td>{{ photo.context.ExposureTime }}</td>
-        </tr>
+        <span>{{ photo.context.ExposureTime }}</span>
         {% endif %} {% if photo.width %}
-        <tr>
-          <td class="label">Dimensions</td>
-          <td>{{ photo.width }} × {{ photo.height }} px</td>
-        </tr>
+        <span>{{ photo.width }} × {{ photo.height }} px</span>
         {% endif %}
+ <span>© {% year %} Biju Ale</span>
 
-        <tr>
-          <td class="label">Copyright</td>
-          <td>© {% year %} Biju Ale</td>
-        </tr>
-      </table>
-
+      </div>
       {% if photo.context.gps %}
       <div class="map-container">
-        <span class="label">Photo Snap Location:</span>
         {% set gps = photo.context.gps | replace(' ', '') %} {% set lat =
         gps.split(',')[0] %} {% set lng = gps.split(',')[1] %}
         <iframe
@@ -257,26 +231,10 @@ permalink: "/photo-tag/{{ tag }}/"
     display: none;
   }
 
-  .metadata-table td.label,
-  .label {
-    text-align: right;
-    font-family: "Garamond R";
-    font-size: clamp(0.75rem, 2vw, 0.9rem);
-    width: 40%;
-  }
-
-  .metadata-table td:nth-child(2) {
-    text-align: center;
-    font-style: italic;
-    font-family: "Garamond Italic";
-    font-size: clamp(0.75rem, 2vw, 0.9rem);
-    word-break: break-word;
-  }
-
   .caption {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    font-style: italic;
-    font-family: "Garamond Italic";
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 1rem);
+    font-family: "Linux Biolinium O";
     background: rgb(154, 154, 109);
     padding: 0.5rem;
     margin-bottom: 0.5rem;
@@ -308,13 +266,20 @@ permalink: "/photo-tag/{{ tag }}/"
     background: rgba(0, 0, 0, 0.8);
   }
 
-  .metadata-table td {
-    padding: 4px 1.5px !important;
-  }
 
   .hidden {
     display: none !important;
   }
+  .metadata-list{
+    font-size: small;
+      font-family: "Linux Biolinium O";
+      list-style-type: none;
+    }
+    .metadata-list span{
+      display: block;
+      /* border: 1px solid grey; */
+      text-align: center;
+    }
 
   /* Mobile-friendly optimizations */
   @media (max-width: 600px) {
@@ -332,33 +297,9 @@ permalink: "/photo-tag/{{ tag }}/"
       max-height: 50vh;
     }
 
-    .metadata-table {
-      width: 100%;
-      border-collapse: collapse;
-      display: block;
-    }
-
-    .metadata-table tr {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 0.5rem;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .metadata-table td {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-
-    .metadata-table td.label {
-      font-weight: bold;
-      width: 100%;
-      padding-bottom: 0;
-    }
-
-    .metadata-table td:nth-child(2) {
-      padding-top: 0;
+    .metadata-list{
+      font-family: "Linux Biolinium O";
+      list-style-type: none;
     }
 
     .thumbs {

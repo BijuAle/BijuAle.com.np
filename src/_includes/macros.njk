@@ -1,0 +1,28 @@
+{% macro cmd(code) %}
+<div class="cmd-block">
+  <code class="cmd-code">{{ code | escape }}</code>
+  <button class="cmd-copy" onclick="copyCmd(this)">Copy</button>
+</div>
+{% endmacro %}
+
+{#
+  script(lang, name)
+  Usage:
+    {% call script("Python", "myscript.py") %}
+    raw code here — no HTML escaping needed
+    {% endcall %}
+#}
+{% macro script(lang, name) %}
+<div class="script-block">
+  <div class="script-meta">
+    <span class="script-lang">{{ lang }}</span>
+    <span class="script-name">{{ name }}</span>
+    <div class="script-actions">
+      <button onclick="toggleScript(this)">View</button>
+      <button onclick="copyScript(this)">Copy</button>
+      <button onclick="downloadScript(this)">Download</button>
+    </div>
+  </div>
+  <pre class="script-content" hidden><code>{{ caller() | trim | escape }}</code></pre>
+</div>
+{% endmacro %}
