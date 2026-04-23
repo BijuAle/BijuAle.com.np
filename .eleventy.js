@@ -7,9 +7,9 @@ cloudinary.config({
 });
 
 const { DateTime } = require("luxon");
-const pluginRss = require("@11ty/eleventy-plugin-rss").default;
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { default: pluginRss } = await import("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPassthroughCopy("src/assets");
