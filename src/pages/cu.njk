@@ -16,11 +16,12 @@ title: Cloudinary Photo Uploader
       display: inline-block;
     }
     .preview-image {
-      max-width: 200px;
+      max-width: 100%;
       max-height: 200px;
       object-fit: cover;
-      border: 2px solid #ccc;
-      border-radius: 5px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
     .remove-btn {
       position: absolute;
@@ -40,25 +41,50 @@ title: Cloudinary Photo Uploader
     }
     .exif-data,
     .metadata {
-      max-width: 200px;
       font-size: 12px;
-      margin-top: 5px;
+      margin-top: 10px;
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 8px;
     }
     .exif-data label,
     .metadata label {
       font-weight: bold;
+      color: #444;
+      margin-bottom: -4px;
     }
-    .exif-data input {
-      width: 100%;
-      font-size: 12px;
-    }
+    .exif-data input,
     .metadata textarea {
       width: 100%;
-      font-size: 12px;
+      font-size: 13px;
+      padding: 6px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fafafa;
+      transition: border-color 0.2s;
+    }
+    .exif-data input:focus,
+    .metadata textarea:focus {
+      outline: none;
+      border-color: #007bff;
+      background: #fff;
+    }
+    .metadata textarea {
       resize: vertical;
+    }
+    
+    /* Modern Card Layout for Preview Items */
+    .preview-item {
+      position: relative;
+      display: inline-flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: calc(33.333% - 10px);
+      min-width: 280px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     }
     .upload-btn,
     .upload-all-btn,
@@ -98,20 +124,30 @@ title: Cloudinary Photo Uploader
 </head>
 <body>
   <div id="notification"></div>
-  <label for="cloudinary-name">Cloudinary Name</label>
-  <input
-    type="text"
-    name="cloudinary-name"
-    id="cloudinary-name"
-    value="bijuale"
-  /><br />
-  <label for="unsigned-preset">Unsigned Preset</label>
-  <input
-    type="text"
-    name="unsigned-preset"
-    id="unsigned-preset"
-    value="bijuale"
-  /><br />
+  <div style="margin: 0 auto; background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #eee;">
+    <div style="display: flex; gap: 20px; margin-bottom: 15px;">
+      <div style="flex: 1;">
+        <label for="cloudinary-name" style="display:block; font-weight:bold; margin-bottom:5px;">Cloudinary Name</label>
+        <input
+          type="text"
+          name="cloudinary-name"
+          id="cloudinary-name"
+          value="bijuale"
+          style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;"
+        />
+      </div>
+      <div style="flex: 1;">
+        <label for="unsigned-preset" style="display:block; font-weight:bold; margin-bottom:5px;">Unsigned Preset</label>
+        <input
+          type="text"
+          name="unsigned-preset"
+          id="unsigned-preset"
+          value="bijuale"
+          style="width:100%; padding:8px; border:1px solid #ccc; border-radius:4px;"
+        />
+      </div>
+    </div>
+  </div>
   <button class="upload-all-btn" id="uploadAllBtn" style="display: none">
     Upload All
   </button>

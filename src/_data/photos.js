@@ -21,29 +21,68 @@ module.exports = async function () {
     return photo;
   });
 
-  // Sort each tag so the image with context key thumbnail=true comes first.
-  // Falls back to most-recently-uploaded if none is marked.
-  // thumbnail context value should be the exact tag name, e.g. thumbnail=Beautiful Flower
-  // This makes it tag-specific — the same image in multiple tags only wins for its intended tag.
-  // Falls back to thumbnail=true for backwards compatibility.
+  const thumbnails = {};
+
+  // Find thumbnail for each tag, then sort each tag chronologically (oldest first)
   Object.keys(tags).forEach(tag => {
-    const isThumb = photo => {
+    let bestThumb = tags[tag][0]; // fallback to most-recently-uploaded if none is marked
+    let maxScore = -1;
+    
+    tags[tag].forEach(photo => {
       const val = photo.context?.thumbnail;
-      return val === tag || val === "true";
-    };
-    tags[tag].sort((a, b) => {
-      // Prefer exact tag match over generic "true"
-      const aScore = photo => {
-        const val = photo.context?.thumbnail;
-        return val === tag ? 2 : val === "true" ? 1 : 0;
-      };
-      return aScore(b) - aScore(a);
+      const score = val === tag ? 2 : val === "true" ? 1 : 0;
+      if (score > maxScore && score > 0) {
+        maxScore = score;
+        bestThumb = photo;
+      }
     });
+    
+    thumbnails[tag] = bestThumb;
+
+    // Sort chronologically (oldest first)
+    tags[tag].sort((a, b) => new Date(a.created_at) - new Date(b.created_at));
+  });
+
+  const fs = require('fs');
+  const path = require('path');
+  
+  const orderFilePath = path.join(__dirname, 'tags_order.json');
+  let manualTagOrder = [];
+  
+  // 1. Read existing order from file (if it exists)
+  if (fs.existsSync(orderFilePath)) {
+    try {
+      manualTagOrder = JSON.parse(fs.readFileSync(orderFilePath, 'utf8'));
+    } catch (e) {
+      console.error("Error reading tags_order.json", e);
+    }
+  }
+
+  // 2. Find any new tags that aren't in the file yet
+  const allCurrentTags = Object.keys(tags);
+  const newTags = allCurrentTags.filter(tag => !manualTagOrder.includes(tag));
+  
+  // 3. If there are new tags, add them to the file automatically
+  if (newTags.length > 0) {
+    manualTagOrder = [...manualTagOrder, ...newTags];
+    fs.writeFileSync(orderFilePath, JSON.stringify(manualTagOrder, null, 2));
+  }
+
+  // 4. Sort based on the JSON file order
+  const sortedTags = allCurrentTags.sort((a, b) => {
+    const indexA = manualTagOrder.indexOf(a);
+    const indexB = manualTagOrder.indexOf(b);
+    
+    if (indexA !== -1 && indexB !== -1) return indexA - indexB; 
+    if (indexA !== -1) return -1;
+    if (indexB !== -1) return 1;
+    return a.localeCompare(b);
   });
 
   return {
     all: photos,
     byTag: tags,
-    tags: Object.keys(tags)
+    tags: sortedTags,
+    thumbnails: thumbnails
   };
 };

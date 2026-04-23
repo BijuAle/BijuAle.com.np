@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
-
+    <title>{{ title | default("Biju Ale") }}</title>
+    <meta name="description" content="{{ description | default('Biju Ale\'s personal website and portfolio.') }}" />
+    <meta property="og:title" content="{{ title | default('Biju Ale') }}" />
+    <meta property="og:description" content="{{ description | default('Biju Ale\'s personal website and portfolio.') }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bijuale.com.np{{ page.url }}" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preload" href="/assets/fonts/GaramondPremrPro.otf" as="font" type="font/otf" crossorigin />
     <link rel="preload" href="/assets/fonts/AireRomanPro.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/fonts/LinBiolinum_R.otf" as="font" type="font/otf" crossorigin />

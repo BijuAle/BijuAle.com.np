@@ -7,8 +7,11 @@ cloudinary.config({
 });
 
 const { DateTime } = require("luxon");
+const pluginRss = require("@11ty/eleventy-plugin-rss").default;
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addFilter("formatted", (dateObj) => {

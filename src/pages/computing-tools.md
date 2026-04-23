@@ -394,6 +394,9 @@ wget -c -r -np -k -E -p \
 
 # Mac
 
+## Get Router IP
+{{ cmd("netstat -nr | grep default") }}
+
 ## Remove stubborn login items
 
 Delete the relevant entries for the offending app from these directories:

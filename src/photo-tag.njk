@@ -30,13 +30,14 @@ permalink: "/photo-tag/{{ tag }}/"
 
 <div class="container">
   <div class="photo-div" id="photo-container">
-    <button class="nav-btn prev-btn" aria-label="Previous photo" id="prev-btn">
-      ←
-    </button>
-    <button class="nav-btn next-btn" aria-label="Next photo" id="next-btn">
-      →
-    </button>
-    <div class="loading-indicator" id="loading-indicator">Loading...</div>
+    <div class="photo-wrapper" style="position: relative; width: 100%;">
+      <button class="nav-btn prev-btn" aria-label="Previous photo" id="prev-btn">
+        <span class="arrow-icon">←</span>
+      </button>
+      <button class="nav-btn next-btn" aria-label="Next photo" id="next-btn">
+        <span class="arrow-icon">→</span>
+      </button>
+      <div class="loading-indicator" id="loading-indicator">Loading...</div>
 
     {% for photo in photos.byTag[tag] %}
     <picture
@@ -69,6 +70,7 @@ permalink: "/photo-tag/{{ tag }}/"
       {% endif %}
     </picture>
     {% endfor %}
+    </div>
   </div>
 
   <div class="metadata-div" id="metadata-container">
@@ -85,23 +87,22 @@ permalink: "/photo-tag/{{ tag }}/"
 
       <div class="metadata-list">
         {% if photo.context.DateTimeOriginal %}
-        <span>{{ photo.context.DateTimeOriginal }}</span>
+        <span>📅 <em>{{ photo.context.DateTimeOriginal }}</em></span>
         {% endif %} {% if photo.context.Make %}
-        <span>{{ photo.context.Make }} {{ photo.context.Model }}</span>
+        <span>📷 <em>{{ photo.context.Make }} {{ photo.context.Model }}</em></span>
         {% endif %} {% if photo.context.iso %}
-        <span>{{ photo.context.iso }}</span>
+        <span>🎞️ <em>ISO {{ photo.context.iso }}</em></span>
         {% endif %} {% if photo.context.ApertureValue %}
-        <span>{{ photo.context.ApertureValue }}</span>
+        <span>⭕ <em>{{ photo.context.ApertureValue }}</em></span>
         {% endif %} {% if photo.context.FocalLength %}
-        <span>{{ photo.context.FocalLength }}</span>
+        <span>🔭 <em>{{ photo.context.FocalLength }}</em></span>
         {% endif %} {% if photo.context.ExposureTime %}
-        <span>{{ photo.context.ExposureTime }}</span>
+        <span>⏱️ <em>{{ photo.context.ExposureTime }}</em></span>
         {% endif %} {% if photo.width %}
-        <span>{{ photo.width }} × {{ photo.height }} px</span>
+        <span>📏 <em>{{ photo.width }} × {{ photo.height }} px</em></span>
         {% endif %}
- <span>© {% year %} Biju Ale</span>
-
       </div>
+      <div style="text-align:center; font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">© {% year %} Biju Ale</div>
       {% if photo.context.gps %}
       <div class="map-container">
         {% set gps = photo.context.gps | replace(' ', '') %} {% set lat =
@@ -125,26 +126,54 @@ permalink: "/photo-tag/{{ tag }}/"
   </div>
 </div>
 
+<div id="kb-hint" style="text-align: center; font-size: 0.8rem; opacity: 0.6; margin-top: 5px; font-family: sans-serif; transition: opacity 0.5s;">
+  ⌨️ Use arrow keys to navigate
+</div>
+
 <style>
+  .back-btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: "Linux Biolinium O", sans-serif;
+    font-size: 0.9rem;
+    color: rgb(35, 63, 100);
+    text-decoration: none;
+    border: 1px solid rgba(35, 63, 100, 0.3);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  .back-btn:hover {
+    background-color: rgb(35, 63, 100);
+    color: white;
+  }
   .tagName {
     text-align: center;
+    margin: 0;
+    padding: 0;
   }
   .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     margin: 0 auto;
     padding: 10px;
+    gap: 1%; /* 1% gap to nicely separate photo and metadata */
   }
 
   .photo-div {
-    width: 70%;
+    flex: 1;
+    min-width: 0;
     border: 1px solid black;
     position: relative;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
   }
 
   .metadata-div {
-    width: 20%;
+    flex: 0 0 25%; /* Prevents shrinking/growing, keeps it exactly 25% */
+    max-width: 300px; /* Optional: keeps it from getting too wide on huge screens */
     padding: 10px;
     border: 1px solid black;
     overflow-y: auto;
@@ -196,12 +225,27 @@ permalink: "/photo-tag/{{ tag }}/"
     overflow-x: auto;
     border: 1px solid black;
     display: flex;
-    gap: 2px;
-    padding: 2px;
+    gap: 4px;
+    padding: 0 5px;
     scroll-behavior: smooth;
+    /* Custom Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,0,0,0.3) transparent;
+  }
+  .thumbs::-webkit-scrollbar {
+    height: 6px;
+  }
+  .thumbs::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .thumbs::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
   }
 
   .thumbs img {
+    margin: 0; /* Overrides inherited img margin from base.njk */
+    display: block;
     cursor: pointer;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -222,11 +266,17 @@ permalink: "/photo-tag/{{ tag }}/"
 
   .photo-picture,
   .metadata-group {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease-in-out;
     opacity: 1;
   }
 
-  .photo-picture.hidden,
+  .photo-picture.hidden {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
   .metadata-group.hidden {
     display: none;
   }
@@ -242,44 +292,78 @@ permalink: "/photo-tag/{{ tag }}/"
 
   .nav-btn {
     position: absolute;
-    top: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    min-width: 60px;
+    background: transparent;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    font-size: 1.2rem;
     z-index: 10;
-    border-radius: 3px;
-    transition: background 0.2s ease;
+    transition: background 0.3s ease;
   }
 
   .prev-btn {
-    left: 10px;
+    left: 0;
   }
 
   .next-btn {
-    right: 10px;
+    right: 0;
   }
 
   .nav-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.15); /* Subtle dark shade over half the photo */
+  }
+
+  .arrow-icon {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    pointer-events: none; /* Let the button handle clicks */
+  }
+
+  .prev-btn .arrow-icon {
+    left: 20px;
+    transform: translateY(-50%) translateX(-10px);
+  }
+
+  .next-btn .arrow-icon {
+    right: 20px;
+    transform: translateY(-50%) translateX(10px);
+  }
+
+  .prev-btn:hover .arrow-icon,
+  .next-btn:hover .arrow-icon {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
   }
 
 
   .hidden {
     display: none !important;
   }
-  .metadata-list{
-    font-size: small;
-      font-family: "Linux Biolinium O";
-      list-style-type: none;
-    }
-    .metadata-list span{
-      display: block;
-      /* border: 1px solid grey; */
-      text-align: center;
-    }
+  .metadata-list {
+    font-size: 0.85rem;
+    font-family: "Linux Biolinium O", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+  .metadata-list span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .metadata-list span em {
+    font-style: normal;
+    opacity: 0.8;
+  }
 
   /* Mobile-friendly optimizations */
   @media (max-width: 600px) {
@@ -517,6 +601,12 @@ permalink: "/photo-tag/{{ tag }}/"
 
       // Load current image first if not loaded
       await this.loadImageForIndex(newIndex, true);
+
+      // Hide keyboard hint on first navigation
+      const kbHint = document.getElementById('kb-hint');
+      if (kbHint && kbHint.style.opacity !== '0') {
+        kbHint.style.opacity = '0';
+      }
 
       // Update UI elements
       this.updatePhoto(oldIndex, newIndex);
