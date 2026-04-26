@@ -20,75 +20,79 @@ title: Photo Memories
   </div>
 </section>
 
+
 <style>
-  /* ── Reset base.njk main text-align so images aren't affected ── */
+  /* ── Reset base.njk main text-align ── */
   main { text-align: left; }
 
-  /* ── Pull grid edge-to-edge, ignoring body padding ── */
   .photo-grid-wrap {
-    margin: 1rem -1.5rem 0;
+    margin: 2rem 0;
+    padding: 0 1rem;
   }
 
-  /* ── 3-column Instagram grid ── */
   .photo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3px;
+    gap: 1.5rem;
+    align-items: start;
   }
 
-  /* ── Each cell: perfect square, overflow hidden ── */
   .photo-cell {
     position: relative;
     display: block;
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-    background: #111;
-    cursor: pointer;
+    background: #dcd9d0; /* Soothing Polaroid tone */
+    padding: 6px 10px 18px 10px; /* Thinned top border version user liked */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    text-decoration: none;
   }
 
-  /* ── Image fills the square fully ── */
+  /* Varied "Hand-Placed" Rotations applied to the cell */
+  .photo-cell:nth-child(4n+1) { transform: rotate(-1.5deg); }
+  .photo-cell:nth-child(4n+2) { transform: rotate(1.2deg); }
+  .photo-cell:nth-child(4n+3) { transform: rotate(-0.8deg); }
+  .photo-cell:nth-child(4n+4) { transform: rotate(1.8deg); }
+
   .photo-cell img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    margin: 0;
-    filter: grayscale(25%);
-    transition: transform 0.35s ease, filter 0.35s ease;
+    filter: sepia(5%) contrast(98%);
+    margin: 0 !important; /* Overrides global image margin */
+    border: none !important;
+    transition: filter 0.4s ease;
   }
 
-  /* ── Caption: hidden below the cell, slides up on hover ── */
   .photo-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0.65rem 0.5rem 0.5rem;
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: clamp(0.65rem, 1.5vw, 0.85rem);
-    color: #fff;
-    letter-spacing: 0.03em;
-    background: linear-gradient(transparent, rgba(0,0,0,0.62));
-    transform: translateY(100%);
-    transition: transform 0.28s ease;
+    display: block;
+    margin-top: 8px;
+    font-family: "Garamond", serif;
+    font-size: 0.9rem;
+    color: #000;
     text-align: center;
-    line-height: 1.3;
-    pointer-events: none;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
   }
 
-  /* ── Hover: zoom image, desaturate less, slide label up ── */
+  .photo-cell:hover {
+    transform: scale(1.05) rotate(0deg) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+
   .photo-cell:hover img {
-    transform: scale(1.06);
-    filter: grayscale(0%);
+    filter: sepia(0%) contrast(100%);
   }
 
-  .photo-cell:hover .photo-label {
-    transform: translateY(0);
-  }
-
-  /* ── Mobile: tighter, still 3-col ── */
-  @media (max-width: 500px) {
-    .photo-grid-wrap { margin: 0.75rem -1rem 0; }
-    .photo-grid { gap: 2px; }
+  @media (max-width: 600px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1.5rem;
+    }
+    .photo-cell {
+      padding: 6px 6px 20px 6px;
+    }
   }
 </style>
