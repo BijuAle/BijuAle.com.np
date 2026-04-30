@@ -14,7 +14,9 @@
     content="{{ description | default('Biju Ale\'s personal website and portfolio.') }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bijuale.com.np{{ page.url }}" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://bijuale.com.np{{ image | default('/assets/images/logo.png') }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://bijuale.com.np{{ image | default('/assets/images/logo.png') }}" />
   <link rel="preload" href="/assets/fonts/Garamond.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="/assets/fonts/Garamond%20Italic.ttf" as="font" type="font/ttf" crossorigin />
   <link rel="preload" href="/assets/fonts/Garamond%20Bold.ttf" as="font" type="font/ttf" crossorigin />
