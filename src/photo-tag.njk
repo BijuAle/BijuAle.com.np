@@ -462,7 +462,8 @@ permalink: "/photo-tag/{{ tag }}/"
       );
 
       // Keyboard navigation
-      document.addEventListener("keydown", this.handleKeydown.bind(this));
+      this.boundHandleKeydown = this.handleKeydown.bind(this);
+      document.addEventListener("keydown", this.boundHandleKeydown);
 
       // Touch/swipe for mobile
       this.photoContainer.addEventListener(
@@ -480,6 +481,12 @@ permalink: "/photo-tag/{{ tag }}/"
       this.photoContainer.addEventListener("contextmenu", (e) =>
         e.preventDefault()
       );
+    }
+
+    cleanup() {
+      if (this.boundHandleKeydown) {
+        document.removeEventListener("keydown", this.boundHandleKeydown);
+      }
     }
 
     async preloadCriticalImages() {
@@ -771,8 +778,20 @@ permalink: "/photo-tag/{{ tag }}/"
     }
   }
 
-  // Initialize gallery when DOM is ready
+  // Initialize gallery when DOM is ready or via Turbo
+  document.addEventListener("turbo:load", () => {
+    if (document.getElementById("thumbs-container")) {
+      if (window.photoGallery && window.photoGallery.cleanup) {
+        window.photoGallery.cleanup();
+      }
+      window.photoGallery = new FastPhotoGallery();
+    }
+  });
+  
+  // Fallback for direct load if turbo is disabled or slow
   document.addEventListener("DOMContentLoaded", () => {
-    window.photoGallery = new FastPhotoGallery();
+    if (document.getElementById("thumbs-container") && !window.photoGallery) {
+      window.photoGallery = new FastPhotoGallery();
+    }
   });
 </script>
