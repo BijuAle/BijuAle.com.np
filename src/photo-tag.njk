@@ -4,10 +4,10 @@ pagination:
   data: photos.tags
   size: 1
   alias: tag
-permalink: "/photo-tag/{{ tag }}/"
+permalink: "/photo-tag/{{ tag | slugify }}/"
 ---
 
-<a href="{{ '/pages/photo-memories' }}" class="back-btn">← Photo Memories</a>
+<a href="/pages/photo-memories/" class="back-btn">← Photo Memories</a>
 
 <h1 class="tagName">{{ tag }}</h1>
 <div class="thumbs" id="thumbs-container">
@@ -394,12 +394,11 @@ permalink: "/photo-tag/{{ tag }}/"
 </style>
 
 <script>
+  // Safely reset menu checkbox if it exists
   const checkbox = document.getElementById("check-menu");
-  window.onload = function () {
-    if (checkbox.checked==true) {
-      checkbox.checked = false;
-    }
-  };
+  if (checkbox) {
+    checkbox.checked = false;
+  }
 
   class FastPhotoGallery {
     constructor() {
@@ -778,20 +777,12 @@ permalink: "/photo-tag/{{ tag }}/"
     }
   }
 
-  // Initialize gallery when DOM is ready or via Turbo
-  document.addEventListener("turbo:load", () => {
-    if (document.getElementById("thumbs-container")) {
-      if (window.photoGallery && window.photoGallery.cleanup) {
-        window.photoGallery.cleanup();
-      }
-      window.photoGallery = new FastPhotoGallery();
+  // Initialize gallery immediately if container exists.
+  // Since this script is inside the <body>, Turbo will execute it every time the body is rendered.
+  if (document.getElementById("thumbs-container")) {
+    if (window.photoGallery && window.photoGallery.cleanup) {
+      window.photoGallery.cleanup();
     }
-  });
-  
-  // Fallback for direct load if turbo is disabled or slow
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById("thumbs-container") && !window.photoGallery) {
-      window.photoGallery = new FastPhotoGallery();
-    }
-  });
+    window.photoGallery = new FastPhotoGallery();
+  }
 </script>

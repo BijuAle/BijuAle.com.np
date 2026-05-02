@@ -678,8 +678,61 @@
       color: rgba(74, 68, 55, 0.1);
       font-family: serif;
     }
+
+    /* Target Highlight style */
+    .highlight-target, .reference-entry, [id^="cite-"] {
+      border-radius: 8px;
+      scroll-margin-top: 100px;
+      transition: background-color 0.3s ease;
+    }
+
+    .reference-entry {
+      margin-bottom: 1rem;
+      padding: 0.2rem 0.5rem;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.es2017-umd.js"></script>
+  <script>
+    // Use Web Animations API for more robust control
+    let activeAnimations = new Map();
+
+    function triggerHighlight(providedId) {
+      const id = providedId || (window.location.hash ? window.location.hash.substring(1) : null);
+      
+      // 1. Instantly cancel all previous highlights
+      activeAnimations.forEach((anim, el) => {
+        anim.cancel();
+      });
+      activeAnimations.clear();
+
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el) {
+        // 2. Start new animation with a more muted cream color
+        const anim = el.animate([
+          { backgroundColor: '#ebdcb2', boxShadow: '0 0 15px rgba(235, 220, 178, 0.5)' },
+          { backgroundColor: '#ebdcb2', offset: 0.7 }, 
+          { backgroundColor: 'transparent', boxShadow: 'none' }
+        ], {
+          duration: 5000,
+          easing: 'ease-out',
+          fill: 'forwards'
+        });
+        
+        activeAnimations.set(el, anim);
+      }
+    }
+
+    window.addEventListener('hashchange', () => triggerHighlight());
+    document.addEventListener('turbo:load', () => triggerHighlight());
+    
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link && link.hash) {
+        setTimeout(() => triggerHighlight(link.hash.substring(1)), 0);
+      }
+    });
+  </script>
 </head>
 
 <body>

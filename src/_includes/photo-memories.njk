@@ -7,7 +7,7 @@ title: Photo Memories
   <div class="photo-grid">
     {% for tag in photos.tags %}
     {% if photos.thumbnails[tag] %}
-    <a class="photo-cell" href="/photo-tag/{{ tag | url }}">
+    <a class="photo-cell" href="/photo-tag/{{ tag | slugify }}/">
       <span class="card-face">
         <img src="{{ photos.thumbnails[tag].secure_url }}?w=600&h=600&c=fill&f=auto&q=auto" alt="{{ tag }}"
           loading="lazy" />
