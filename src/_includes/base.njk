@@ -690,6 +690,69 @@
       margin-bottom: 1rem;
       padding: 0.2rem 0.5rem;
     }
+
+    /* Listing styles (Index and Tags) */
+    .listing-item {
+      margin: 0.8rem;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .listing-date {
+      font-family: 'Linux Biolinium O';
+      font-size: 1.2rem;
+      opacity: 0.5;
+      width: 120px;
+      text-align: right;
+      margin-right: 1rem;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    .listing-title {
+      color: rgb(52, 53, 29);
+      font-family: "Garamond", serif;
+    }
+
+    @media (max-width: 600px) {
+      header nav {
+        font-size: 1.1rem;
+        gap: 0.75rem;
+        padding: 0.8rem 0;
+      }
+
+      header nav a {
+        padding: 0.3rem 0.5rem;
+      }
+
+      .listing-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1.2rem 0.5rem;
+      }
+
+      .listing-date {
+        width: auto;
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 0.1rem;
+        font-size: 1rem;
+      }
+
+      .listing-title {
+        font-size: 1.3rem;
+      }
+
+      .bible-verse {
+        font-size: 0.95rem !important;
+      }
+
+      main p:first-of-type::first-letter {
+        font-size: 3.5rem !important;
+        margin-top: 0.2rem;
+      }
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.es2017-umd.js"></script>
   <script>

@@ -1,0 +1,37 @@
+---
+title: "Précis on The Unreality of Time by J. Ellis McTaggart"
+date: 2026-03-16
+tags: ["Philosophy", "Metaphysics"]
+---
+
+
+The British idealist, J. M. E. McTaggart, is a temporal anti-realist. Simply put, he does not believe Time is real. In his seminal 1908 paper, The Unreality of Time (<a id="cite-mctaggart-1" href="#ref-mctaggart1908">McTaggart 1908</a>), he introduces and distinguishes two fundamental temporal orders of moments in Time: the A-series and the B-series. He then shows that the A-series is more fundamental and, yet, it runs into a vicious regress. The logical problem with the A-series prompts him to conclude that Time is unreal, and temporal distinctions arise from human psychology rather than an ontological feature of the world.
+
+The A-series is a tensed theory of time. Moments in time flow from the past through the present into the future. McTaggart further clarifies the dependence of temporal order on the A-series by introducing the notion of the C-series, a non-temporal ordering of events that provides structure without direction. While the C-series determines a fixed arrangement of events, it does not specify which direction constitutes earlier or later. The direction essential to time arises only when one position is uniquely present, and this presentness moves along the series, thereby generating distinctions between past and future. Without this feature, the ordering would remain static and indistinguishable from a non-temporal sequence.
+
+The B-series, by contrast, is tenseless. Events in time merely have a permanent two-place relation, such as before, simultaneous to, or after. McTaggart contends that the A-series is more fundamental than the B-series. He reasons that change is essential to time, yet only the A-series can accommodate genuine change. In the B-series, events occupy eternally fixed positions; no event can alter its B-relations, cease to exist as an event, or come into being anew. The only genuine change an event undergoes concerns its A-determinations: the successive possession of being future, then present, then past. Moreover, the B-series is derivative: it arises only when A-determinations supply genuine change and the arrow of time to an otherwise neutral, bare order (the C-series). Thus, the A-series is both necessary for time and more fundamental than the B-series.
+
+McTaggart then advances a second, decisive argument, a reductio ad absurdum, that shows the A-series, though primitive and necessary for time, is internally incoherent and therefore untenable. He begins by noting that the A-determinations (past, present, future) are mutually incompatible: no event can be simultaneously past, present, and future. Yet because events in the A-series change, every event must successively exhibit all three determinations. This generates a contradiction, implying that the A-series, and with it Time itself, is unreal.
+
+McTaggart anticipates the obvious escape of the contradiction being only apparent because an event in the A-series instantiates the three temporal predicates not simultaneously but rather successively. Event M is present, was future, and will be past, each predicate holding at a different time. The decisive reply to this response by McTaggart is that successive predication is both viciously circular and generates a vicious infinite regress. It is circular because the very act of dissolving the contradiction, by saying M “was” future or “will be” past, smuggles in A-series notions (namely: was, will be) to explain when A-series predicates apply, thereby presupposing the very thing under analysis.
+
+Recast as a regress: the reply introduces a second-order A-series within which the first-order predicates are located. But this second-order series faces the identical contradiction; its moments are themselves past, present, and future, requiring a third-order series to resolve it, which in turn requires a fourth, and so on ad infinitum. The contradiction is never dissolved; it is merely knocked upward indefinitely. Since no level of the hierarchy escapes the original problem, the contradiction in the A-series is ineliminable, and thus, Time is unreal.
+
+Lastly, if Time is unreal, McTaggart explains why we have such universal and powerful beliefs about events being in the past, present, or future. He suggests that our temporal experiences are mental projections: subjective “appearances” that do not reflect the objective structure of reality. He argues that we map our different modes of internal awareness onto a non-temporal reality: we map memory to the past, perception to the present, and anticipation to the future. Because these variations in our mode of awareness have distinct phenomenological characters, we delude ourselves into inferring that the events themselves are undergoing a process of temporal change. We are like people looking through the stained glass who believe the world itself is colored; we view a static C-series through a temporal lens, he implies, creating the illusion of a flow that does not exist in the things themselves.
+
+# Critique
+McTaggart commits to what E. J. Lowe calls the indexical fallacy (<a id="cite-lowe-1" href="#ref-lowe1987">Lowe 1987</a>). “Present” means “happening now,” context-anchored like “here.” Saying event M “was future” in the past is therefore incoherent, comparable to “M is happening here over there”, so the regress targets an illegitimate move from the outset. If A-series expressions are irreducibly perspectival rather than detachable predicates, no event coherently bears all three A-determinations simultaneously, thereby dissolving the very contradiction the argument requires before any regress can form. Likewise, another point worth noting is that his conclusion relies heavily on a specific ontological assumption: he views the A-series as a B-series injected with A-determinations. This is often described as the “moving spotlight” theory (<a id="cite-broad-1" href="#ref-broad1923">Broad 1923</a>), where a sequence of existing events is scanned by a moving “now.” On a Presentist A-theory, however,  where only the present exists, and the past and future have no ontological status, the vicious regress is not applicable. If the past and future do not exist, event M does not bear the properties of being past or future in the same way it bears presentness. In this view, temporal becoming is absolute, and states of affairs in the world constantly come into and go out of existence rather than merely changing their location in a series. If tense is a primitive and irreducible feature of reality, as Presentists maintain, then describing an event as presently present is not a circular shortcoming but a metaphysically accurate reflection of a tensed world. Time's reality, McTaggart’s legacy proves, must be demonstrated, and not be taken for granted.
+
+# Reference
+
+<div id="ref-mctaggart1908" class="reference-entry">
+<a href="#cite-mctaggart-1">↩</a> McTaggart, J. Ellis. “The Unreality of Time.” <em>Mind</em> 17, no. 68 (1908): 457–74.
+</div>
+
+<div id="ref-lowe1987" class="reference-entry">
+<a href="#cite-lowe-1">↩</a> Lowe, E. J. “The Indexical Fallacy in Mc Taggart’s Proof of the Unreality of Time.” <em>Mind</em> XCVI, no. 381 (1987): 62–70. https://doi.org/10.1093/mind/XCVI.381.62.
+</div>
+
+<div id="ref-broad1923" class="reference-entry">
+<a href="#cite-broad-1">↩</a> Broad, Charlie Dunbar. “The General Problem of Time and Change.” In <em>Scientific Thought</em>. K. Paul, Trench, Trubner & Company, Limited, 1923.
+</div>

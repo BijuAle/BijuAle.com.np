@@ -13,9 +13,9 @@ permalink: /tags/{{ tag | slugify }}/
 
 <div>
 {%- for post in collections[tag] | reverse %}
-  <div style="margin: .8rem; font-size: 1.5rem;">
-    <span style="font-family: 'Linux Biolinium O'; font-size: 1.2rem; float:left; opacity: 50%; width:100px; text-align: right; margin-right: 1rem;" >{{ post.date | formatted }}</span>
-    <a style="color: rgb(52, 53, 29); font-family: Garamond" href="{{ post.url }}">{{ post.data.title }}</a>
+  <div class="listing-item">
+    <span class="listing-date">{{ post.date | formatted }}</span>
+    <a class="listing-title" href="{{ post.url }}">{{ post.data.title }}</a>
   </div>
 {%- endfor %}
 </div>
