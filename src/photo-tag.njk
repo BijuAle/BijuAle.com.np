@@ -395,7 +395,6 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
 <script>
   (function () {
-    // Safely reset menu checkbox if it exists
     const checkbox = document.getElementById("check-menu");
     if (checkbox) {
       checkbox.checked = false;
@@ -416,6 +415,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
       init() {
         this.cacheElements();
+        if (!this.thumbsContainer) return;
         this.setupEventListeners();
         this.preloadCriticalImages();
       }
@@ -428,6 +428,8 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         this.nextBtn = document.getElementById("next-btn");
         this.loadingIndicator = document.getElementById("loading-indicator");
 
+        if (!this.thumbsContainer) return;
+
         this.thumbs = [...this.thumbsContainer.querySelectorAll(".thumb")];
         this.photos = [...this.photoContainer.querySelectorAll(".photo-picture")];
         this.metadataGroups = [
@@ -437,8 +439,8 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         this.totalImages = this.thumbs.length;
 
         if (this.totalImages === 0) {
-          this.prevBtn.disabled = true;
-          this.nextBtn.disabled = true;
+          if (this.prevBtn) this.prevBtn.disabled = true;
+          if (this.nextBtn) this.nextBtn.disabled = true;
         }
       }
 
@@ -454,33 +456,39 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         );
 
         // Navigation buttons
-        this.prevBtn.addEventListener("click", () =>
-          this.navigateToIndex(this.getPrevIndex())
-        );
-        this.nextBtn.addEventListener("click", () =>
-          this.navigateToIndex(this.getNextIndex())
-        );
+        if (this.prevBtn) {
+          this.prevBtn.addEventListener("click", () =>
+            this.navigateToIndex(this.getPrevIndex())
+          );
+        }
+        if (this.nextBtn) {
+          this.nextBtn.addEventListener("click", () =>
+            this.navigateToIndex(this.getNextIndex())
+          );
+        }
 
         // Keyboard navigation
         this.boundHandleKeydown = this.handleKeydown.bind(this);
         document.addEventListener("keydown", this.boundHandleKeydown);
 
         // Touch/swipe for mobile
-        this.photoContainer.addEventListener(
-          "touchstart",
-          this.handleTouchStart.bind(this),
-          { passive: true }
-        );
-        this.photoContainer.addEventListener(
-          "touchend",
-          this.handleTouchEnd.bind(this),
-          { passive: true }
-        );
+        if (this.photoContainer) {
+          this.photoContainer.addEventListener(
+            "touchstart",
+            this.handleTouchStart.bind(this),
+            { passive: true }
+          );
+          this.photoContainer.addEventListener(
+            "touchend",
+            this.handleTouchEnd.bind(this),
+            { passive: true }
+          );
 
-        // Prevent context menu on long press
-        this.photoContainer.addEventListener("contextmenu", (e) =>
-          e.preventDefault()
-        );
+          // Prevent context menu on long press
+          this.photoContainer.addEventListener("contextmenu", (e) =>
+            e.preventDefault()
+          );
+        }
       }
 
       cleanup() {
@@ -503,6 +511,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
         const thumb = this.thumbs[index];
         const picture = this.photos[index];
+        if (!picture) return;
         const img = picture.querySelector(".photo-img");
 
         if (img.classList.contains("loaded") || img.dataset.loading) return;
@@ -516,8 +525,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         try {
           // Determine optimal image size based on screen
           const screenWidth = window.innerWidth;
-          const devicePixelRatio = window.devicePixelRatio || 1;
-
+          
           let imageUrl;
           if (screenWidth <= 600) {
             imageUrl = thumb.dataset.medium;
@@ -585,11 +593,11 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
       }
 
       showLoading() {
-        this.loadingIndicator.classList.add("show");
+        if (this.loadingIndicator) this.loadingIndicator.classList.add("show");
       }
 
       hideLoading() {
-        this.loadingIndicator.classList.remove("show");
+        if (this.loadingIndicator) this.loadingIndicator.classList.remove("show");
       }
 
       async navigateToIndex(newIndex) {
@@ -628,11 +636,6 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         setTimeout(() => {
           this.isTransitioning = false;
         }, 200);
-
-        // Scroll to top on mobile
-        // if (window.innerWidth <= 600) {
-        //   window.scrollTo({ top: 0, behavior: "smooth" });
-        // }
       }
 
       preloadAdjacentImages(index) {
@@ -778,12 +781,23 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
       }
     }
 
-    // Initialize gallery immediately if container exists.
-    if (document.getElementById("thumbs-container")) {
-      if (window.photoGallery && window.photoGallery.cleanup) {
-        window.photoGallery.cleanup();
+    const initGallery = () => {
+      if (document.getElementById("thumbs-container")) {
+        if (window.photoGallery && window.photoGallery.cleanup) {
+          window.photoGallery.cleanup();
+        }
+        window.photoGallery = new FastPhotoGallery();
       }
-      window.photoGallery = new FastPhotoGallery();
+    };
+
+    // Robust Turbo handling
+    if (window.galleryTurboListener) {
+      document.removeEventListener("turbo:load", window.galleryTurboListener);
     }
+    window.galleryTurboListener = initGallery;
+    document.addEventListener("turbo:load", window.galleryTurboListener);
+
+    // Initial load
+    initGallery();
   })();
 </script>

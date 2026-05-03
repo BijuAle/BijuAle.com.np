@@ -30,7 +30,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("getAllTags", (collectionsObj) => {
     let tagSet = new Set();
     Object.keys(collectionsObj).forEach((tag) => {
-      if (tag !== "all" && tag !== "post") {
+      if (tag !== "all" && tag !== "post" && (collectionsObj[tag] && collectionsObj[tag].length > 0)) {
         tagSet.add(tag);
       }
     });

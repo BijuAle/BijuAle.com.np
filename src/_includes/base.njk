@@ -933,72 +933,105 @@
 
   <script>
     (function () {
-      var main = document.querySelector('main');
-      var toc = document.getElementById('toc');
-      var tocList = document.getElementById('toc-list');
-      var drawer = document.getElementById('toc-drawer');
-      var drawerList = document.getElementById('toc-drawer-list');
-      var toggle = document.getElementById('toc-toggle');
-      var scrim = document.getElementById('toc-scrim');
-      var closeBtn = document.getElementById('toc-drawer-close');
+      function initTOC() {
+        var main = document.querySelector('main');
+        var toc = document.getElementById('toc');
+        var tocList = document.getElementById('toc-list');
+        var drawer = document.getElementById('toc-drawer');
+        var drawerList = document.getElementById('toc-drawer-list');
+        var toggle = document.getElementById('toc-toggle');
+        var scrim = document.getElementById('toc-scrim');
+        var closeBtn = document.getElementById('toc-drawer-close');
 
-      var all = Array.from(main.querySelectorAll('h1, h2, h3, h4'));
-      var titleEl = main.querySelector('h1');
-      var headings = all.filter(function (h) { return h !== titleEl; });
+        if (!main || !toc || !tocList || !drawer || !toggle) return;
 
-      if (headings.length < 2) return;
+        // Clear existing lists to avoid duplicates on re-init
+        tocList.innerHTML = '';
+        if (drawerList) drawerList.innerHTML = '';
+        
+        // Remove ready classes to re-evaluate
+        toc.classList.remove('toc-ready');
+        toggle.classList.remove('toc-ready');
 
-      var tagDepth = { H1: 1, H2: 2, H3: 3, H4: 4 };
-      var minDepth = Math.min.apply(null, headings.map(function (h) { return tagDepth[h.tagName] || 1; }));
+        var all = Array.from(main.querySelectorAll('h1, h2, h3, h4'));
+        var titleEl = main.querySelector('h1');
+        var headings = all.filter(function (h) { return h !== titleEl; });
 
-      function slugify(s) {
-        return (s || '').toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-+/g, '-') || 'section';
+        if (headings.length < 2) return;
+
+        var tagDepth = { H1: 1, H2: 2, H3: 3, H4: 4 };
+        var minDepth = Math.min.apply(null, headings.map(function (h) { return tagDepth[h.tagName] || 1; }));
+
+        function slugify(s) {
+          return (s || '').toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-+/g, '-') || 'section';
+        }
+
+        var usedIds = {};
+        headings.forEach(function (h) {
+          if (!h.id) {
+            var base = slugify(h.textContent), id = base, n = 2;
+            while (usedIds[id]) { id = base + '-' + n++; }
+            h.id = id;
+          }
+          usedIds[h.id] = true;
+          var lvl = (tagDepth[h.tagName] || 1) - minDepth + 1;
+          [tocList, drawerList].forEach(function (list) {
+            if (!list) return;
+            var li = document.createElement('li');
+            li.className = 'lvl-' + lvl;
+            var a = document.createElement('a');
+            a.href = '#' + h.id;
+            a.textContent = h.textContent;
+            a.title = h.textContent;
+            li.appendChild(a);
+            list.appendChild(li);
+          });
+        });
+
+        toc.classList.add('toc-ready');
+        toggle.classList.add('toc-ready');
+
+        function openDrawer() { drawer.classList.add('open'); scrim.classList.add('open'); }
+        function closeDrawer() { drawer.classList.remove('open'); scrim.classList.remove('open'); }
+
+        toggle.addEventListener('click', openDrawer);
+        if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+        scrim.addEventListener('click', closeDrawer);
+        
+        // Clean up old keydown listener
+        if (window._tocKeydownListener) {
+          document.removeEventListener('keydown', window._tocKeydownListener);
+        }
+        window._tocKeydownListener = function (e) { if (e.key === 'Escape') closeDrawer(); };
+        document.addEventListener('keydown', window._tocKeydownListener);
+
+        var desktopLinks = Array.from(tocList.querySelectorAll('a'));
+        
+        // Clean up old observer
+        if (window._tocObserver) {
+          window._tocObserver.disconnect();
+        }
+        window._tocObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              desktopLinks.forEach(function (l) { l.classList.remove('toc-active'); });
+              var d = tocList.querySelector('a[href="#' + e.target.id + '"]');
+              if (d) d.classList.add('toc-active');
+            }
+          });
+        }, { rootMargin: '0px 0px -65% 0px', threshold: 0 });
+        headings.forEach(function (h) { window._tocObserver.observe(h); });
       }
 
-      var usedIds = {};
-      headings.forEach(function (h) {
-        if (!h.id) {
-          var base = slugify(h.textContent), id = base, n = 2;
-          while (usedIds[id]) { id = base + '-' + n++; }
-          h.id = id;
-        }
-        usedIds[h.id] = true;
-        var lvl = (tagDepth[h.tagName] || 1) - minDepth + 1;
-        [tocList, drawerList].forEach(function (list) {
-          if (!list) return;
-          var li = document.createElement('li');
-          li.className = 'lvl-' + lvl;
-          var a = document.createElement('a');
-          a.href = '#' + h.id;
-          a.textContent = h.textContent;
-          a.title = h.textContent;
-          li.appendChild(a);
-          list.appendChild(li);
-        });
-      });
+      // Robust Turbo handling
+      if (window.tocTurboListener) {
+        document.removeEventListener("turbo:load", window.tocTurboListener);
+      }
+      window.tocTurboListener = initTOC;
+      document.addEventListener("turbo:load", window.tocTurboListener);
 
-      toc.classList.add('toc-ready');
-      toggle.classList.add('toc-ready');
-
-      function openDrawer() { drawer.classList.add('open'); scrim.classList.add('open'); }
-      function closeDrawer() { drawer.classList.remove('open'); scrim.classList.remove('open'); }
-
-      toggle.addEventListener('click', openDrawer);
-      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-      scrim.addEventListener('click', closeDrawer);
-      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDrawer(); });
-
-      var desktopLinks = Array.from(tocList.querySelectorAll('a'));
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            desktopLinks.forEach(function (l) { l.classList.remove('toc-active'); });
-            var d = tocList.querySelector('a[href="#' + e.target.id + '"]');
-            if (d) d.classList.add('toc-active');
-          }
-        });
-      }, { rootMargin: '0px 0px -65% 0px', threshold: 0 });
-      headings.forEach(function (h) { observer.observe(h); });
+      // Initial load
+      initTOC();
     })();
   </script>
 </body>
