@@ -1023,12 +1023,31 @@
         headings.forEach(function (h) { window._tocObserver.observe(h); });
       }
 
+      function cleanupTOC() {
+        if (window._tocKeydownListener) {
+          document.removeEventListener('keydown', window._tocKeydownListener);
+        }
+        if (window._tocObserver) {
+          window._tocObserver.disconnect();
+        }
+        var drawer = document.getElementById('toc-drawer');
+        var scrim = document.getElementById('toc-scrim');
+        if (drawer) drawer.classList.remove('open');
+        if (scrim) scrim.classList.remove('open');
+      }
+
       // Robust Turbo handling
       if (window.tocTurboListener) {
         document.removeEventListener("turbo:load", window.tocTurboListener);
       }
       window.tocTurboListener = initTOC;
       document.addEventListener("turbo:load", window.tocTurboListener);
+
+      if (window.tocBeforeCacheListener) {
+        document.removeEventListener("turbo:before-cache", window.tocBeforeCacheListener);
+      }
+      window.tocBeforeCacheListener = cleanupTOC;
+      document.addEventListener("turbo:before-cache", window.tocBeforeCacheListener);
 
       // Initial load
       initTOC();
