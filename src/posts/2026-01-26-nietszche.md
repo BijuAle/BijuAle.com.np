@@ -1,5 +1,5 @@
 ---
-title: "Nietzsche's Diatribe: Nihilistic Honesty"
+title: "Nietzsche's Nihilistic Diatribe"
 date: 2026-01-26
 tags: ["Philosophy", "Theology", "Ethics"]
 ---
@@ -18,11 +18,11 @@ Beyond Good and Evil is, therefore, a fallacious antithesis to the Sermon on the
 # Reference
 
 <div id="ref-cornford1945" class="reference-entry">
-<a href="#cite-cornford-1">↩</a> Cornford, F. M., trans. “(267 E-372 A). The Rudiments of Social Organization.” In <em>The Republic Of Plato</em>, by Plato. Oxford University Press, 1945.
+<a href="#cite-cornford-1">↩</a> Plato. “(267 E-372 A). The Rudiments of Social Organization).” In <em>The Republic Of Plato</em>, translated by F. M. Cornford. Oxford University Press, 1945.
 </div>
 
 <div id="ref-nietzsche2011" class="reference-entry">
-<a href="#cite-nietzsche-1">↩</a> Nietzsche, Friedrich. “Beyond Good and Evil.” In <em>The Moral Life: An Introductory Reader in Ethics and Literature</em>, edited by Louis P. Pojman and Lewis Vaughn, 121–134. Oxford University Press, 2011.
+<a href="#cite-nietzsche-1">↩</a> Nietzsche, Friedrich. “Beyond Good and Evil.” In <em>The Moral Life: An Introductory Reader in Ethics and Literature</em>, by Louis P. Pojman and Lewis Vaughn. Oxford University Press, 2011.
 </div>
 
 <div id="ref-sorokin1985" class="reference-entry">

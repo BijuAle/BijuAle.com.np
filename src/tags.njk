@@ -1,23 +1,23 @@
 ---
 layout: base.njk
 pagination:
-  data: collections
-  size: 1
-  alias: tag
-  filter:
-    - all
-    - post
+      data: collections
+      size: 1
+      alias: tag
+      filter:
+        - all
+        - post
 permalink: /tags/{{ tag | slugify }}/
 ---
 <h1>Tag: {{ tag }}</h1>
 
 <div>
-{%- for post in collections[tag] | reverse %}
+  {%- for post in collections[tag] | reverse %}
   <div class="listing-item">
     <span class="listing-date">{{ post.date | formatted }}</span>
     <a class="listing-title" href="{{ post.url }}">{{ post.data.title }}</a>
   </div>
-{%- endfor %}
+  {%- endfor %}
 </div>
 
-<a href="/" style="display: inline-block; margin-top: 2rem;">← Back to all posts</a>
+<a href="/" style="display: inline-block; margin-top: 2rem; font-size: 1rem; opacity: 0.8;">☜ Back to all posts</a>

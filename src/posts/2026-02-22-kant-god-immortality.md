@@ -1,0 +1,26 @@
+---
+title: "Kant's Postulates of God & Immortality"
+date: 2026-02-22
+tags: ["Philosophy", "Ethics"]
+---
+
+Morality obtains when the will, against all its inclinations, abides by universalizable laws without contradiction. Such laws must also be sensitive to human dignity, treating others not merely as means but as ends also in a shared community. This is the crux of Kant’s Categorical Imperative, which ultimately aims at the Summum Bonum or the highest good, the nature of which prompts one to postulate two necessary conditions for its fulfillment: the immortality of the soul and the existence of God (<a id="cite-kant-1" href="#ref-kant2013">Kant 2013, 230–233</a>).
+
+The first principle element of the Summum Bonum is Morality; the perfect accordance of the mind with the moral law. The perfect conformity of the will with the moral law, or holiness, is unattainable within the finite lifetime of a rational being in this world. Since genuine moral law does not truncate to fit the being’s limitations, and yet the law consistently demands holiness. By way of the Kantian principle of ought-implies-can, the only reasonable inference is to posit souls that persist through time and gradually improve over eternity. Sans such right understanding, many set unattainable goals, relying on incoherent theology.
+
+The second necessary component of the Summum Bonum is Happiness. We are morally obligated to promote the highest good, understood as the synthesis of the aforesaid morality or virtue and of happiness commensurate with that virtue. Again, the principle of ought-implies-can renders such an outcome in the realm of possibility. However, humans cannot unfailingly produce this proportionality by their own agency. Nor can the natural world governed by causal mechanisms effect a just moral desert. Therefore, there must be an all-powerful, all-good, and all-knowing supernatural intelligence, Himself the highest good, who perfectly harmonizes happiness with proportionate virtue. Faith in such a God is a pure rational faith since it is derived from the autonomy of reason, in this case, a practical one. Although the existence of God must be affirmed, his morality is, however, not grounded in Him. The pure practical reason comes first; God in the inaccessible noumenal world comes second, as its derivation, not its axiom. He could not be the moral foundation because that would be heteronomy and would breach the absolute allegiance to autonomy.
+
+Having established the postulates necessitated by the highest good, morality finds its fullness and culminates in rational religion. Christianity is accepted as the next logical step, not as morality’s foundation, but as the most coherent expression of autonomous, pure practical reasoning. God, and holiness as an unconditional demand, and bliss as a deferred hope, enter legitimately in Christianity. It promises that worthiness will ultimately be honored by God, the just divine distributor. Rational agents, hitherto, must act from duty in a shared moral commonwealth actively pursuing the Kingdom of God, which is the fulfillment of the Summum Bonum.
+
+# Critique
+Christianity resists integration into the Kantian scheme precisely because it is fundamentally a religion of grace rather than law. The gospel proclaims that God, out of His agape love, forgives the undeserving, justifies the ungodly, and declares righteous human beings who are default sinners in their act, attitude, and nature. Kant's rigorous ethic of duty and meritorious anticipation of virtue with commensurate happiness, by contrast, remains a form of moralism, of self-reliance and self-righteousness, deemed the “autonomy of the flesh,” as Pauline theology puts it, and finds wanting. 
+
+Kant rightly infers that humans are works in progress and their moral perfection or holiness anticipates immortal souls. Nevertheless, even under the horizon of infinite time, free and finite rational agents, marked by their innate propensity towards moral laxity and their potential for evil, cannot effect their own moral renewal by sheer autonomy and by simply persisting through temporal extension. In the Christian worldview, true sanctification occurs not through intense exertion of willpower over aeons but through submissive relational union with Christ (the “true vine”) and cooperative indwelling by the Holy Spirit. Only in this voluntary dependence and formation in Christlikeness by heteronomy of God’s Spirit does a person grow in holiness.
+
+Kant's system, for all its rational sophistication and elegance, thus leaves no genuine room for the transformative grace that lies at the heart of Christianity. Moreover, it is possible in Kant’s deontology to be dutiful without being loving to God and his people. This endangers moral agents to burdensome and apathetic legalism. Rather, for a Christian, there is no duty for duty’s sake since it only flows organically out of a God-transformed heart that loves.
+
+# Reference
+
+<div id="ref-kant2013" class="reference-entry">
+<a href="#cite-kant-1">↩</a> Kant, Immanuel. “God and Immortality as Postulates of Pure Practical Reason.” In <em>Ethical Theory: An Anthology</em>, edited by Russ Shafer-Landau, 230–233. Wiley-Blackwell, 2013.
+</div>

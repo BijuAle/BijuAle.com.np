@@ -680,7 +680,9 @@
     }
 
     /* Target Highlight style */
-    .highlight-target, .reference-entry, [id^="cite-"] {
+    .highlight-target,
+    .reference-entry,
+    [id^="cite-"] {
       border-radius: 8px;
       scroll-margin-top: 100px;
       transition: background-color 0.3s ease;
@@ -753,6 +755,75 @@
         margin-top: 0.2rem;
       }
     }
+
+    /* Index Page Sidebar Layout */
+    .index-layout {
+      position: relative;
+      width: 100%;
+    }
+
+    .category-sidebar {
+      position: fixed;
+      left: calc(50% + 350px);
+      top: 180px;
+      width: 220px;
+      z-index: 100;
+    }
+
+    .category-sidebar h2 {
+      text-align: left !important;
+      font-size: 0.75rem !important;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: rgba(88, 72, 34, 0.5) !important;
+      margin-top: 0.8rem !important;
+      margin-bottom: 1rem !important;
+      font-family: "Linux Biolinium O", sans-serif !important;
+      text-shadow: none !important;
+      border-bottom: 1px solid rgba(88, 72, 34, 0.1);
+      padding-bottom: 0.4rem;
+    }
+
+    .category-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      font-family: 'Linux Biolinium O';
+      font-size: 1.1rem;
+    }
+
+    .category-list a {
+      color: rgba(88, 72, 34, 0.8);
+      padding: 0.1rem 0;
+      transition: color 0.2s;
+    }
+
+    .category-list a:hover {
+      color: var(--accent-ink);
+      background: transparent;
+    }
+
+    /* Adjust index layout for screens where fixed sidebar would overlap or disappear */
+    @media (max-width: 1250px) {
+      .category-sidebar {
+        position: static;
+        width: 100%;
+        margin-top: 3rem;
+        border-top: 1px solid rgba(88, 72, 34, 0.1);
+        padding-top: 1.5rem;
+      }
+
+      .category-sidebar h2 {
+        text-align: center !important;
+      }
+
+      .category-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.es2017-umd.js"></script>
   <script>
@@ -761,7 +832,7 @@
 
     function triggerHighlight(providedId) {
       const id = providedId || (window.location.hash ? window.location.hash.substring(1) : null);
-      
+
       // 1. Instantly cancel all previous highlights
       activeAnimations.forEach((anim, el) => {
         anim.cancel();
@@ -774,21 +845,21 @@
         // 2. Start new animation with a more muted cream color
         const anim = el.animate([
           { backgroundColor: '#ebdcb2', boxShadow: '0 0 15px rgba(235, 220, 178, 0.5)' },
-          { backgroundColor: '#ebdcb2', offset: 0.7 }, 
+          { backgroundColor: '#ebdcb2', offset: 0.7 },
           { backgroundColor: 'transparent', boxShadow: 'none' }
         ], {
           duration: 5000,
           easing: 'ease-out',
           fill: 'forwards'
         });
-        
+
         activeAnimations.set(el, anim);
       }
     }
 
     window.addEventListener('hashchange', () => triggerHighlight());
     document.addEventListener('turbo:load', () => triggerHighlight());
-    
+
     document.addEventListener('click', (e) => {
       const link = e.target.closest('a');
       if (link && link.hash) {

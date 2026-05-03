@@ -1,39 +1,38 @@
 ---
 layout: base.njk
+title: Essays
 pagination:
-  size: 10
+  size: 20
   data: collections.post
   alias: posts
   reverse: true
 ---
 
-<div>
-{%- for post in pagination.items %}
-  <div class="listing-item">
-    <span class="listing-date">{{ post.date | formatted }}</span>
-    <a class="listing-title" href="{{ post.url }}">{{ post.data.title }}</a>
+<div class="index-layout">
+  <div class="post-list-column">
+    {%- for post in pagination.items %}
+    <div class="listing-item">
+      <span class="listing-date">{{ post.date | formatted }}</span>
+      <a class="listing-title" href="{{ post.url }}">{{ post.data.title }}</a>
+    </div>
+    {%- endfor %}
+
+    <div style="margin-top: 2rem; text-align: center; font-size: 1.5rem; opacity: 0.8;">
+      {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">☜</a>{% endif %}
+      {% if pagination.href.next %}<a href="{{ pagination.href.next }}">☞</a>{% endif %}
+    </div>
   </div>
-{%- endfor %}
-</div>
 
-
-<div style="margin: 0 auto; text-align: center; font-size: 2rem;">
-{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"
-  >&#8592;</a
->{% endif %} {% if pagination.href.next %}<a href="{{ pagination.href.next }}"
-  >&#8594;</a
->{% endif %}
-</div>
-
-<div style="margin-bottom: 1rem;">
-  <h2 style="margin: 0 0 .5rem; text-align: center; ">Category</h2>
-  <div style="margin: 0 auto; justify-content: center; display: flex; flex-wrap: wrap; gap: 0.75rem; font-family: 'Linux Biolinium O'; font-size:1.2rem;">
-  {%- for tag in collections | getAllTags | sort %}
-    {%- if tag != "post" %}
-    <a href="/tags/{{ tag | slugify }}/">
-      {{ tag }} ({{ collections[tag].length }})
-    </a>
-    {%- endif %}
-  {%- endfor %}
-  </div>
+  <aside class="category-sidebar">
+    <h2>Category</h2>
+    <div class="category-list">
+      {%- for tag in collections | getAllTags | sort %}
+      {%- if tag != "post" %}
+      <a href="/tags/{{ tag | slugify }}/">
+        {{ tag }} ({{ collections[tag].length }})
+      </a>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </aside>
 </div>
