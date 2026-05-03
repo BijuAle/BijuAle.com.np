@@ -464,11 +464,6 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         this.thumbs = [];
         this.photos = [];
         this.metadataGroups = [];
-        
-        // Reset initialization flag on the DOM element so it can be re-initialized from cache
-        if (this.thumbsContainer) {
-          delete this.thumbsContainer.dataset.galleryInitialized;
-        }
       }
 
       async preloadCriticalImages() {
@@ -599,23 +594,18 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
       const container = document.getElementById("thumbs-container");
       if (!container) return;
       
-      // If already initialized for this exact DOM element, don't do it again.
-      // But we MUST clean up if the page is being restored from cache.
-      if (container.dataset.galleryInitialized === "true") return;
+      console.log("Initializing gallery...");
 
-      // Clean up previous instance if any
+      // Clean up previous instance if any to avoid zombie listeners
       if (window.photoGallery && typeof window.photoGallery.cleanup === 'function') {
         window.photoGallery.cleanup();
       }
 
-      container.dataset.galleryInitialized = "true";
       window.photoGallery = new FastPhotoGallery();
     };
 
-    // Clean up BEFORE Turbo takes a snapshot for the cache.
-    // This ensures that when we return to the page, the "galleryInitialized" attribute is GONE
-    // so that initGallery will correctly re-bind listeners to the restored DOM.
     const onBeforeCache = () => {
+      console.log("Cleaning up gallery before cache...");
       if (window.photoGallery && typeof window.photoGallery.cleanup === 'function') {
         window.photoGallery.cleanup();
       }
@@ -634,12 +624,15 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
     window.galleryBeforeCacheListener = onBeforeCache;
     document.addEventListener("turbo:before-cache", window.galleryBeforeCacheListener);
 
-    // Initial boot
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initGallery);
-    } else {
-      initGallery();
-    }
+    // Initial boot with a small delay for Safari compatibility
+    const boot = () => {
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", () => setTimeout(initGallery, 10));
+      } else {
+        setTimeout(initGallery, 10);
+      }
+    };
+    boot();
     
     // Close mobile menu if open
     const checkbox = document.getElementById("check-menu");

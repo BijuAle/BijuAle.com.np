@@ -163,8 +163,7 @@ title: Cloudinary Photo Uploader
         const imageInput = document.getElementById("imageInput");
         if (!imageInput) return;
         
-        if (imageInput.dataset.uploaderInitialized === "true") return;
-        imageInput.dataset.uploaderInitialized = "true";
+        console.log("Initializing uploader...");
 
         const preview = document.getElementById("preview");
         const uploadAllBtn = document.getElementById("uploadAllBtn");
@@ -354,8 +353,7 @@ title: Cloudinary Photo Uploader
       };
 
       const onBeforeCache = () => {
-        const imageInput = document.getElementById("imageInput");
-        if (imageInput) delete imageInput.dataset.uploaderInitialized;
+        console.log("Cleaning up uploader before cache...");
       };
 
       if (window.uploaderTurboLoadListener) {
@@ -370,11 +368,14 @@ title: Cloudinary Photo Uploader
       window.uploaderBeforeCacheListener = onBeforeCache;
       document.addEventListener("turbo:before-cache", window.uploaderBeforeCacheListener);
 
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", initUploader);
-      } else {
-        initUploader();
-      }
+      const boot = () => {
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => setTimeout(initUploader, 10));
+        } else {
+          setTimeout(initUploader, 10);
+        }
+      };
+      boot();
     })();
   </script>
 </body>

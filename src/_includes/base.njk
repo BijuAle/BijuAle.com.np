@@ -1049,8 +1049,15 @@
       window.tocBeforeCacheListener = cleanupTOC;
       document.addEventListener("turbo:before-cache", window.tocBeforeCacheListener);
 
-      // Initial load
-      initTOC();
+      // Initial load with small delay for Safari
+      const boot = () => {
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", () => setTimeout(initTOC, 10));
+        } else {
+          setTimeout(initTOC, 10);
+        }
+      };
+      boot();
     })();
   </script>
 </body>
