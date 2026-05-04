@@ -10,6 +10,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 <a href="/pages/photo-memories/" class="back-btn">← Photo Memories</a>
 
 <h1 class="tagName">{{ tag }}</h1>
+<photo-gallery>
 <div class="thumbs" id="thumbs-container">
   {% for photo in photos.byTag[tag] %} {% set thumb = photo.secure_url |
   replace('/upload/', '/upload/w_80,h_80,c_fill,q_70,f_webp,dpr_auto/') %}
@@ -87,19 +88,19 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
       <div class="metadata-list">
         {% if photo.context.DateTimeOriginal %}
-        <span>📅 <em>{{ photo.context.DateTimeOriginal }}</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <em>{{ photo.context.DateTimeOriginal }}</em></span>
         {% endif %} {% if photo.context.Make %}
-        <span>📷 <em>{{ photo.context.Make }} {{ photo.context.Model }}</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg> <em>{{ photo.context.Make }} {{ photo.context.Model }}</em></span>
         {% endif %} {% if photo.context.iso %}
-        <span>🎞️ <em>ISO {{ photo.context.iso }}</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg> <em>ISO {{ photo.context.iso }}</em></span>
         {% endif %} {% if photo.context.ApertureValue %}
-        <span>⭕ <em>{{ photo.context.ApertureValue }}</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg> <em>{{ photo.context.ApertureValue }}</em></span>
         {% endif %} {% if photo.context.FocalLength %}
-        <span>🔭 <em>{{ photo.context.FocalLength }}</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg> <em>{{ photo.context.FocalLength }}</em></span>
         {% endif %} {% if photo.context.ExposureTime %}
-        <span>⏱️ <em>{{ photo.context.ExposureTime }}</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <em>{{ photo.context.ExposureTime }}</em></span>
         {% endif %} {% if photo.width %}
-        <span>📏 <em>{{ photo.width }} × {{ photo.height }} px</em></span>
+        <span><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg> <em>{{ photo.width }} × {{ photo.height }} px</em></span>
         {% endif %}
       </div>
       <div style="text-align:center; font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">© {% year %} Biju Ale</div>
@@ -127,8 +128,9 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 </div>
 
 <div id="kb-hint" style="text-align: center; font-size: 0.8rem; opacity: 0.6; margin-top: 5px; font-family: sans-serif; transition: opacity 0.5s;">
-  ⌨️ Use arrow keys to navigate
+  <svg class="meta-icon" style="vertical-align: middle; margin-right: 4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect><line x1="6" y1="8" x2="6" y2="8"></line><line x1="10" y1="8" x2="10" y2="8"></line><line x1="14" y1="8" x2="14" y2="8"></line><line x1="18" y1="8" x2="18" y2="8"></line><line x1="6" y1="12" x2="6" y2="12"></line><line x1="10" y1="12" x2="10" y2="12"></line><line x1="14" y1="12" x2="14" y2="12"></line><line x1="18" y1="12" x2="18" y2="12"></line><line x1="7" y1="16" x2="17" y2="16"></line></svg> Use arrow keys to navigate
 </div>
+</photo-gallery>
 
 <style>
   .back-btn {
@@ -360,6 +362,12 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
     padding: 0.3rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.05);
   }
+  .meta-icon {
+    width: 14px;
+    height: 14px;
+    color: rgba(35, 63, 100, 0.7);
+    flex-shrink: 0;
+  }
   .metadata-list span em {
     font-style: normal;
     opacity: 0.8;
@@ -379,11 +387,17 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
     .metadata-div {
       max-height: 50vh;
+      max-width: none;
+      margin: 0 auto;
     }
 
     .metadata-list{
       font-family: "Linux Biolinium O";
       list-style-type: none;
+    }
+
+    .metadata-list span {
+      justify-content: center;
     }
 
     .thumbs {
@@ -590,52 +604,28 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
       getNextIndex(index = this.currentIndex) { return index < this.totalImages - 1 ? index + 1 : 0; }
     }
 
-    const initGallery = () => {
-      const container = document.getElementById("thumbs-container");
-      if (!container) return;
+    class PhotoGalleryElement extends HTMLElement {
+      connectedCallback() {
+        // Run after a tiny delay to ensure children are parsed
+        setTimeout(() => {
+          this.gallery = new FastPhotoGallery();
+          
+          // Close mobile menu if open
+          const checkbox = document.getElementById("check-menu");
+          if (checkbox) checkbox.checked = false;
+        }, 10);
+      }
       
-      console.log("Initializing gallery...");
-
-      // Clean up previous instance if any to avoid zombie listeners
-      if (window.photoGallery && typeof window.photoGallery.cleanup === 'function') {
-        window.photoGallery.cleanup();
+      disconnectedCallback() {
+        if (this.gallery) {
+          this.gallery.cleanup();
+          this.gallery = null;
+        }
       }
-
-      window.photoGallery = new FastPhotoGallery();
-    };
-
-    const onBeforeCache = () => {
-      console.log("Cleaning up gallery before cache...");
-      if (window.photoGallery && typeof window.photoGallery.cleanup === 'function') {
-        window.photoGallery.cleanup();
-      }
-    };
-
-    // Robust listener management
-    if (window.galleryTurboListener) {
-      document.removeEventListener("turbo:load", window.galleryTurboListener);
     }
-    window.galleryTurboListener = initGallery;
-    document.addEventListener("turbo:load", window.galleryTurboListener);
-
-    if (window.galleryBeforeCacheListener) {
-      document.removeEventListener("turbo:before-cache", window.galleryBeforeCacheListener);
-    }
-    window.galleryBeforeCacheListener = onBeforeCache;
-    document.addEventListener("turbo:before-cache", window.galleryBeforeCacheListener);
-
-    // Initial boot with a small delay for Safari compatibility
-    const boot = () => {
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", () => setTimeout(initGallery, 10));
-      } else {
-        setTimeout(initGallery, 10);
-      }
-    };
-    boot();
     
-    // Close mobile menu if open
-    const checkbox = document.getElementById("check-menu");
-    if (checkbox) checkbox.checked = false;
+    if (!customElements.get('photo-gallery')) {
+      customElements.define('photo-gallery', PhotoGalleryElement);
+    }
   })();
 </script>
