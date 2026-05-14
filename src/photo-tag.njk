@@ -410,7 +410,8 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 <script>
   (function () {
     class FastPhotoGallery {
-      constructor() {
+      constructor(container) {
+        this.container = container;
         this.currentIndex = 0;
         this.isTransitioning = false;
         this.touchStartX = 0;
@@ -431,12 +432,12 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
       }
 
       cacheElements() {
-        this.thumbsContainer = document.getElementById("thumbs-container");
-        this.photoContainer = document.getElementById("photo-container");
-        this.metadataContainer = document.getElementById("metadata-container");
-        this.prevBtn = document.getElementById("prev-btn");
-        this.nextBtn = document.getElementById("next-btn");
-        this.loadingIndicator = document.getElementById("loading-indicator");
+        this.thumbsContainer = this.container.querySelector("#thumbs-container");
+        this.photoContainer = this.container.querySelector("#photo-container");
+        this.metadataContainer = this.container.querySelector("#metadata-container");
+        this.prevBtn = this.container.querySelector("#prev-btn");
+        this.nextBtn = this.container.querySelector("#next-btn");
+        this.loadingIndicator = this.container.querySelector("#loading-indicator");
 
         if (!this.thumbsContainer) return;
 
@@ -540,7 +541,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
         await this.loadImageForIndex(newIndex, true);
         
-        const kbHint = document.getElementById('kb-hint');
+        const kbHint = this.container.querySelector('#kb-hint');
         if (kbHint) kbHint.style.opacity = '0';
 
         this.updateUI(oldIndex, newIndex);
@@ -608,7 +609,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
       connectedCallback() {
         // Run after a tiny delay to ensure children are parsed
         setTimeout(() => {
-          this.gallery = new FastPhotoGallery();
+          this.gallery = new FastPhotoGallery(this);
           
           // Close mobile menu if open
           const checkbox = document.getElementById("check-menu");
