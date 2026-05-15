@@ -1,7 +1,7 @@
 ---
 date: 2017-10-24
 title: Resources for New Parents
-tags: ["Interesting", "Travel"]
+tags: ["Travel"]
 ---
 
 # Books
