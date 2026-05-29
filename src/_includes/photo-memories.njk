@@ -7,6 +7,12 @@ title: Photo Memories
   <div class="photo-grid">
     {% for tag in photos.tags %}
     {% if photos.thumbnails[tag] %}
+
+    {% set gravity = "" %}
+    {% if tag == "Second Whittling Project (Barn Owl)" %}
+    {% set gravity = "&g=north" %}
+    {% endif %}
+
     <a class="photo-cell" href="/photo-tag/{{ tag | slugify }}/">
       <span class="card-face">
         <img src="{{ photos.thumbnails[tag].secure_url }}?w=600&h=600&c=fill&f=auto&q=auto" alt="{{ tag }}"

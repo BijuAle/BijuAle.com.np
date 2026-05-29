@@ -149,7 +149,7 @@
       font-variant: small-caps;
       letter-spacing: 0.15em;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       gap: 1.5rem;
       padding: 0.6rem 0;
@@ -580,6 +580,12 @@
         padding: 0 1rem;
       }
 
+      header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        white-space: normal;
+      }
+
       .header-top-row {
         flex-direction: column;
         align-items: center;
@@ -889,6 +895,10 @@
         Memories</a>
       <a href="/pages/computing-tools" {% if page.url=="/pages/computing-tools/" %}class="nav-active" {% endif
         %}>Computing Tools</a>
+      <a href="/pages/kindle-notes" {% if page.url=="/pages/kindle-notes/" %}class="nav-active" {% endif %}>Kindle
+        Notes</a>
+      {# <a href="/pages/notes-crud" {% if page.url=="/pages/notes-crud/" %}class="nav-active" {% endif %}>Notes
+        CRUD</a> #}
       <a href="/pages/about" {% if page.url=="/pages/about/" %}class="nav-active" {% endif %}>About</a>
     </nav>
   </header>
@@ -948,7 +958,7 @@
         // Clear existing lists to avoid duplicates on re-init
         tocList.innerHTML = '';
         if (drawerList) drawerList.innerHTML = '';
-        
+
         // Remove ready classes to re-evaluate
         toc.classList.remove('toc-ready');
         toggle.classList.remove('toc-ready');
@@ -997,7 +1007,7 @@
         toggle.addEventListener('click', openDrawer);
         if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
         scrim.addEventListener('click', closeDrawer);
-        
+
         // Clean up old keydown listener
         if (window._tocKeydownListener) {
           document.removeEventListener('keydown', window._tocKeydownListener);
@@ -1006,7 +1016,7 @@
         document.addEventListener('keydown', window._tocKeydownListener);
 
         var desktopLinks = Array.from(tocList.querySelectorAll('a'));
-        
+
         // Clean up old observer
         if (window._tocObserver) {
           window._tocObserver.disconnect();
