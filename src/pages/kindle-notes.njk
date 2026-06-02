@@ -1,946 +1,592 @@
 ---
 layout: base.njk
 title: "Kindle Notes"
-description: "All Kindle highlights and notes, organised by book."
+description: "Highlights and notes from my reading, organised by book and category."
 permalink: /pages/kindle-notes/
 ---
 
-<!-- Hide the right-side TOC entirely on this page -->
 <style>
-  #toc,
-  #toc-toggle,
-  #toc-drawer,
-  #toc-scrim {
-    display: none !important;
-  }
+  #toc, #toc-toggle { display: none !important; }
 
-  /* ── Override global first-letter drop-cap for this page ── */
-  .notes-ro-page main p:first-of-type::first-letter {
-    float: none;
-    font-size: inherit;
-    line-height: inherit;
-    padding: 0;
-    color: inherit;
-  }
-
-  /* ══════════════════════════════════════════════
-     Right BOOKS SIDEBAR — fixed in blank left space
-     ══════════════════════════════════════════════ */
-  .bk-sidebar {
-    position: fixed;
-    /* Mirror the TOC position on the right: left: calc(50% + 415px) */
-    left: calc(50% + 415px);
-    top: 170px;
-    width: 210px;
-    max-height: calc(100vh - 200px);
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    z-index: 90;
-    overflow: hidden;
-  }
-
-  .bk-sidebar-inner {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .bk-sidebar-head {
-    font-family: "Linux Biolinium O", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.65rem;
-    color: rgba(88, 72, 34, 0.5);
-    margin-bottom: 0.6rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid rgba(88, 72, 34, 0.12);
-    user-select: none;
-    flex-shrink: 0;
-  }
-
-  .bk-search {
-    width: 100%;
-    padding: 0.35rem 0.55rem;
-    margin-bottom: 0.55rem;
-    font-family: "Garamond", serif;
-    font-size: 0.95rem;
-    border: 1px solid rgba(88, 72, 34, 0.2);
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.35);
-    color: var(--text-main);
-    flex-shrink: 0;
-  }
-
-  .bk-search:focus {
-    outline: none;
-    border-color: var(--accent-ink);
-    background: rgba(255, 255, 255, 0.7);
-  }
-
-  .bk-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow-y: auto;
-    flex-grow: 1;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(88, 72, 34, 0.15) transparent;
-  }
-
-  .bk-list li {
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.88rem;
-    line-height: 1.25;
-    padding: 0.38rem 0.4rem;
-    border-radius: 3px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.3rem;
-    margin-bottom: 1px;
-    transition: background 0.15s, color 0.15s;
-    color: rgba(88, 72, 34, 0.8);
-  }
-
-  .bk-list li:hover {
-    background: rgba(88, 72, 34, 0.07);
-  }
-
-  .bk-list li.bk-active {
-    background: var(--hover-bg);
-    color: var(--accent-ink);
-    font-weight: bold;
-  }
-
-  .bk-name {
-    flex-grow: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .bk-cnt {
-    background: rgba(88, 72, 34, 0.12);
-    color: var(--text-main);
-    font-size: 0.68rem;
-    font-weight: bold;
-    padding: 1px 5px;
-    border-radius: 10px;
-    flex-shrink: 0;
-    align-self: center;
-  }
-
-  .bk-active .bk-cnt {
-    background: rgba(26, 58, 90, 0.15);
-    color: var(--accent-ink);
-  }
-
-  /* Hide sidebar when viewport too narrow for it */
-  @media (max-width: 1150px) {
-    .bk-sidebar {
-      display: none;
-    }
-  }
-
-  /* ══════════════════════════════════════════════
-     MOBILE BOOK FILTER STRIP (visible ≤1150px)
-     ══════════════════════════════════════════════ */
-  .bk-mobile-strip {
-    display: none;
-    margin-bottom: 1.2rem;
-  }
-
-  @media (max-width: 1150px) {
-    .bk-mobile-strip {
-      display: block;
-    }
-  }
-
-  .bk-mobile-head {
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: rgba(88, 72, 34, 0.5);
-    margin-bottom: 0.5rem;
-  }
-
-  .bk-mobile-dropdown {
-    width: 100%;
-    padding: 0.6rem;
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.95rem;
-    border: 1px solid rgba(88, 72, 34, 0.25);
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.7);
-    color: var(--text-main);
-    outline: none;
-    cursor: pointer;
-  }
-
-  .bk-mobile-dropdown:focus {
-    border-color: var(--accent-ink);
-    background: rgba(255, 255, 255, 0.9);
-  }
-
-  /* ══════════════════════════════════════════════
-     TOP BAR: search + count
-     ══════════════════════════════════════════════ */
-  .notes-ro-topbar {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  .notes-ro-search-wrap {
-    position: relative;
-    flex-grow: 1;
-    max-width: 480px;
-  }
-
-  .notes-ro-search-icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.95rem;
-    opacity: 0.5;
-    pointer-events: none;
-  }
-
-  .notes-ro-search {
-    width: 100%;
-    padding: 0.5rem 2.2rem 0.5rem 2rem;
-    font-family: "Garamond", serif;
-    font-size: 1.05rem;
-    border: 1px solid rgba(88, 72, 34, 0.2);
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.4);
-    color: var(--text-main);
-    transition: all 0.25s;
-  }
-
-  .notes-ro-search:focus {
-    outline: none;
-    border-color: var(--accent-ink);
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 0 6px rgba(26, 58, 90, 0.12);
-  }
-
-  .notes-ro-clear {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 0.85rem;
-    color: rgba(88, 72, 34, 0.6);
-    padding: 2px 5px;
-    border-radius: 3px;
-    display: none;
-  }
-
-  .notes-ro-clear:hover {
-    background: rgba(88, 72, 34, 0.08);
-  }
-
-  .notes-ro-count {
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.9rem;
-    color: rgba(88, 72, 34, 0.6);
-    white-space: nowrap;
-  }
-
-  .notes-ro-count strong {
-    color: var(--accent-ink);
-    font-size: 1rem;
-  }
-
-  /* ══════════════════════════════════════════════
-     3-COLUMN CARD GRID
-     ══════════════════════════════════════════════ */
-  .notes-ro-grid {
+  .kn-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.1rem;
-    width: 100%;
+    grid-template-columns: 220px 1fr;
+    gap: 0;
+    margin-top: 16px;
+    min-height: 70vh;
   }
 
-  @media (max-width: 520px) {
-    .notes-ro-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* ── Note Card ── */
-  .ro-card {
-    background: rgba(255, 255, 255, 0.42);
-    border: 1px solid rgba(88, 72, 34, 0.14);
-    border-radius: 7px;
-    padding: 1rem;
+  /* ── Sidebar ─────────────────────────────────────────────────────────── */
+  .kn-sidebar {
+    border-right: 1px solid rgba(88,72,34,0.2);
+    padding-right: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
-    box-shadow: 0 3px 8px rgba(88, 72, 34, 0.04);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.2s;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    box-sizing: border-box;
+    gap: 0;
+    overflow: hidden;
   }
 
-  .ro-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 7px 16px rgba(88, 72, 34, 0.08);
-    background: rgba(255, 255, 255, 0.62);
+  .kn-sidebar-head {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-heading);
+    opacity: 0.6;
+    padding: 0 12px 8px;
   }
 
-  /* top strip: type badge + location */
-  .ro-card-top {
+  .kn-cat-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 8px 12px;
+    border-bottom: 1px solid rgba(88,72,34,0.15);
+    margin-bottom: 10px;
+  }
+
+  .kn-cat-btn {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 0.83rem;
+    color: var(--text-main);
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.75rem;
-    color: rgba(88, 72, 34, 0.55);
+    transition: background 0.12s;
   }
-
-  .ro-badge {
-    font-size: 0.65rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 2px 6px;
-    border-radius: 4px;
-    background: rgba(235, 220, 178, 0.55);
-    color: #614d1a;
+  .kn-cat-btn:hover { background: var(--hover-bg); }
+  .kn-cat-btn.active {
+    background: var(--accent-ink);
+    color: #fff;
+    font-weight: 600;
   }
-
-  .ro-badge.note {
-    background: rgba(26, 58, 90, 0.09);
-    color: var(--accent-ink);
-  }
-
-  .ro-badge.bookmark {
-    background: rgba(139, 38, 38, 0.07);
-    color: #8b2626;
-  }
-
-  /* book title + author (shown when viewing all) */
-  .ro-card-book {
-    display: none;
-  }
-
-  .ro-card-book.visible {
-    display: block;
-    border-bottom: 1px solid rgba(88, 72, 34, 0.09);
-    padding-bottom: 0.4rem;
-  }
-
-  .ro-book-title {
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.82rem;
-    font-weight: bold;
-    color: var(--text-heading);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .ro-book-author {
+  .kn-cat-count {
     font-size: 0.72rem;
-    color: rgba(88, 72, 34, 0.6);
-    margin-top: 1px;
+    opacity: 0.7;
+  }
+
+  .kn-book-list {
+    overflow-y: auto;
+    flex: 1;
+    padding: 0 8px;
+  }
+
+  .kn-book-item {
+    padding: 7px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    line-height: 1.3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-main);
+    margin-bottom: 1px;
+    gap: 6px;
+  }
+  .kn-book-item:hover { background: var(--hover-bg); }
+  .kn-book-item.active {
+    background: var(--accent-ink);
+    color: #fff;
+    font-weight: 600;
+  }
+  .kn-book-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-  /* content — normal weight, NOT italic */
-  .ro-card-content {
-    font-family: "Garamond", serif;
-    font-size: 1.05rem;
-    line-height: 1.45;
-    color: var(--text-main);
-    font-style: normal;
-    /* explicitly not italic */
-    flex-grow: 1;
-    padding-left: 0.55rem;
-    border-left: 2px solid rgba(88, 72, 34, 0.13);
-    word-break: break-word;
-    overflow-wrap: break-word;
+  .kn-book-count {
+    font-size: 0.72rem;
+    opacity: 0.7;
+    flex-shrink: 0;
   }
 
-  .ro-card-content.empty {
-    color: rgba(88, 72, 34, 0.38);
-    font-size: 0.9rem;
-    font-style: normal;
-  }
-
-  /* date at bottom */
-  .ro-card-date {
-    font-family: "Garamond", serif;
-    font-size: 0.78rem;
-    color: rgba(88, 72, 34, 0.48);
-    margin-top: auto;
-    padding-top: 0.4rem;
-    border-top: 1px solid rgba(88, 72, 34, 0.07);
-  }
-
-  /* ── Empty state ── */
-  .ro-empty {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 3rem 1.5rem;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px dashed rgba(88, 72, 34, 0.18);
-    border-radius: 8px;
-  }
-
-  .ro-empty-icon {
-    font-size: 2.5rem;
-    opacity: 0.45;
-    margin-bottom: 0.8rem;
-  }
-
-  .ro-empty h3 {
-    font-family: "Linux Biolinium O", sans-serif;
-    margin-bottom: 0.4rem;
-  }
-
-  .ro-empty p {
-    font-size: 0.95rem;
-    opacity: 0.6;
-  }
-
-  .ro-reset {
-    margin-top: 1rem;
-    background: transparent;
-    border: 1px solid rgba(88, 72, 34, 0.3);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-family: "Linux Biolinium O", sans-serif;
-    cursor: pointer;
-    color: var(--text-main);
-    transition: background 0.2s;
-  }
-
-  .ro-reset:hover {
-    background: rgba(88, 72, 34, 0.1);
-  }
-
-  /* ── Attached Note ── */
-  .ro-card-note {
-    background: rgba(235, 220, 178, 0.4);
-    padding: 0.7rem 0.9rem;
-    border-radius: 6px;
-    margin-top: 0.6rem;
-    font-family: "Garamond", serif;
-    font-size: 1.05rem;
-    color: var(--text-main);
-    border-left: 3px solid rgba(88, 72, 34, 0.4);
-  }
-
-  .ro-note-label {
-    font-family: "Linux Biolinium O", sans-serif;
-    font-size: 0.75rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgba(88, 72, 34, 0.8);
-    margin-bottom: 0.3rem;
-  }
-
-  /* ── Current book heading ── */
-  .notes-ro-filter-label {
-    font-family: "AireRomanPro", serif;
-    font-size: 1.3rem;
-    color: var(--text-heading);
-    margin-bottom: 1rem;
+  /* ── Main Content ─────────────────────────────────────────────────────── */
+  .kn-main {
+    padding: 0 0 0 24px;
     display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .kn-topbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(88,72,34,0.2);
+    margin-bottom: 16px;
     flex-wrap: wrap;
   }
 
-  .notes-ro-filter-label span {
-    font-family: "Linux Biolinium O", sans-serif;
+  .kn-heading { margin: 0; font-size: 1.1rem; flex: 1; }
+  .kn-heading small { font-size: 0.8rem; opacity: 0.6; font-weight: 400; }
+
+  .kn-search-wrap { position: relative; display: flex; align-items: center; }
+  .kn-search-wrap input {
+    padding: 6px 28px 6px 10px;
+    font-family: inherit;
     font-size: 0.85rem;
+    border: 1px solid rgba(88,72,34,0.3);
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    color: var(--text-main);
+    width: 190px;
+  }
+  .kn-clear {
+    position: absolute; right: 6px;
+    background: none; border: none; cursor: pointer;
+    font-size: 0.85rem; color: var(--text-heading);
+    display: none;
   }
 
-  /* Mobile spacing tweak */
-  @media (max-width: 600px) {
-    .notes-ro-topbar {
-      gap: 0.5rem;
-    }
+  .kn-view-btns { display: flex; gap: 4px; }
+  .kn-view-btn {
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    background: rgba(88,72,34,0.08);
+    border: 1px solid rgba(88,72,34,0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-main);
+  }
+  .kn-view-btn.active { background: var(--accent-ink); color: #fff; border-color: transparent; }
 
-    .notes-ro-search-wrap {
-      max-width: 100%;
-    }
+  .kn-count { font-size: 0.82rem; color: var(--text-heading); opacity: 0.7; }
 
-    /* ── View Toggle ── */
-    .notes-view-toggle {
-      display: flex;
-      border: 1px solid rgba(88, 72, 34, 0.2);
-      border-radius: 6px;
-      overflow: hidden;
-      margin-left: auto;
-    }
+  /* ── Grid / Swipe ─────────────────────────────────────────────────────── */
+  .kn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
 
-    @media (max-width: 600px) {
-      .notes-view-toggle {
-        margin-left: 0;
-      }
-    }
+  .kn-swipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
 
-    .view-btn {
-      background: rgba(255, 255, 255, 0.4);
-      border: none;
-      padding: 0.4rem 0.8rem;
-      cursor: pointer;
-      font-size: 1.1rem;
-      color: rgba(88, 72, 34, 0.6);
-      transition: background 0.2s, color 0.2s;
-    }
+  .kn-swipe-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 460px;
+  }
 
-    .view-btn:hover {
-      background: rgba(255, 255, 255, 0.7);
-    }
+  .kn-swipe-btn {
+    background: var(--accent-ink);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1rem;
+    transition: opacity 0.15s;
+  }
+  .kn-swipe-btn:disabled { opacity: 0.2; cursor: not-allowed; }
 
-    .view-btn.active {
-      background: var(--accent-ink);
-      color: #fff;
-    }
+  /* ── Card ─────────────────────────────────────────────────────────────── */
+  .kn-card {
+    border: 1px solid rgba(88,72,34,0.22);
+    border-radius: 7px;
+    padding: 14px;
+    background: rgba(255,255,255,0.22);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    transition: box-shadow 0.15s;
+  }
+  .kn-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
 
-    /* ── Swipe View Container ── */
-    .notes-ro-swipe-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      position: relative;
-      padding-bottom: 2rem;
-    }
+  /* Swipe card fills wrapper */
+  .kn-swipe-row .kn-card { flex: 1; min-height: 280px; }
 
-    .notes-swipe-info {
-      font-family: "Linux Biolinium O", sans-serif;
-      font-size: 1.1rem;
-      font-weight: bold;
-      color: rgba(88, 72, 34, 0.8);
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
+  .kn-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--text-heading);
+    opacity: 0.8;
+  }
 
-    .notes-ro-swipe-card-wrapper {
-      width: 100%;
-      max-width: 360px;
-      position: relative;
-      margin: 0 auto;
-    }
+  .kn-badge {
+    padding: 2px 7px;
+    border-radius: 99px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    background: rgba(88,72,34,0.12);
+  }
+  .kn-badge-philosophy { background: rgba(167,139,250,0.18); color: #7c3aed; }
+  .kn-badge-theology   { background: rgba(59,130,246,0.18);  color: #1d4ed8; }
+  .kn-badge-culture    { background: rgba(16,185,129,0.18);  color: #047857; }
+  .kn-badge-history    { background: rgba(249,115,22,0.18);  color: #c2410c; }
+  .kn-badge-science    { background: rgba(14,165,233,0.18);  color: #0369a1; }
+  .kn-badge-literature { background: rgba(236,72,153,0.18);  color: #be185d; }
 
-    .notes-ro-swipe-card-wrapper .ro-card {
-      width: 100%;
-      min-height: 560px;
-      display: flex;
-      flex-direction: column;
-    }
+  .kn-card-book {
+    font-size: 0.82rem;
+    border-bottom: 1px solid rgba(88,72,34,0.12);
+    padding-bottom: 7px;
+  }
+  .kn-card-book strong { display: block; line-height: 1.3; }
+  .kn-card-book span   { opacity: 0.65; }
 
-    .notes-swipe-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      background: var(--accent-ink);
-      color: #fff;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 1.4rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s, background 0.2s, opacity 0.2s;
-      user-select: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
+  .kn-card-content {
+    border-left: 3px solid var(--text-heading);
+    padding-left: 9px;
+    font-size: 1rem;
+    line-height: 1.5;
+    flex: 1;
+  }
+  /* Disable drop-cap inside cards */
+  .kn-card-content::first-letter { float: none !important; font-size: inherit !important; }
 
-    .notes-swipe-prev {
-      left: -70px;
-    }
+  .kn-card-note {
+    background: rgba(251,246,227,0.7);
+    border-left: 3px solid #d9822b;
+    padding: 8px 10px;
+    font-size: 0.88rem;
+    border-radius: 0 4px 4px 0;
+    line-height: 1.4;
+  }
+  .kn-card-note strong { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 3px; opacity: 0.7; }
 
-    .notes-swipe-next {
-      right: -70px;
-    }
+  .kn-card-date {
+    font-size: 0.72rem;
+    color: var(--text-heading);
+    opacity: 0.5;
+    margin-top: auto;
+  }
 
-    .notes-swipe-btn:hover:not(:disabled) {
-      transform: translateY(-50%) scale(1.08);
-      background: rgba(26, 58, 90, 0.85);
-    }
+  /* Mobile sidebar strip */
+  .kn-mobile-strip { display: none; margin-bottom: 12px; }
+  .kn-mobile-strip select {
+    width: 100%;
+    padding: 8px;
+    font-family: inherit;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(88,72,34,0.3);
+    border-radius: 4px;
+  }
 
-    .notes-swipe-btn:disabled {
-      opacity: 0.3;
-      cursor: not-allowed;
-      box-shadow: none;
-      transform: translateY(-50%);
-    }
+  /* Disable drop-caps globally on this page */
+  .kn-main p:first-of-type::first-letter { float: none !important; font-size: inherit !important; }
 
-    @media (max-width: 600px) {
-      .notes-ro-swipe-card-wrapper {
-        max-width: 100%;
-      }
-
-      .notes-ro-swipe-card-wrapper .ro-card {
-        min-height: 400px;
-      }
-
-      /* Move buttons inside the card on mobile, slightly transparent */
-      .notes-swipe-prev {
-        left: 10px;
-        opacity: 0.6;
-      }
-
-      .notes-swipe-next {
-        right: 10px;
-        opacity: 0.6;
-      }
-
-      .notes-swipe-btn:hover:not(:disabled) {
-        opacity: 0.9;
-      }
-    }
+  /* ── Responsive ─────────────────────────────────────────────────────── */
+  @media (max-width: 860px) {
+    .kn-layout { grid-template-columns: 1fr; }
+    .kn-sidebar { display: none; }
+    .kn-mobile-strip { display: block; }
+    .kn-main { padding: 0; }
+  }
 </style>
 
-<!-- Fixed left sidebar (desktop only) -->
-<aside class="bk-sidebar" aria-label="Books navigation">
-  <div class="bk-sidebar-inner">
-    <div class="bk-sidebar-head">Books</div>
-    <input class="bk-search" id="bk-search-desk" type="text" placeholder="Filter books…" aria-label="Filter books" />
-    <ul class="bk-list" id="bk-list-desk"></ul>
-  </div>
-</aside>
-
-<!-- Mobile book chips strip -->
-<div class="bk-mobile-strip" aria-label="Filter by book">
-  <div class="bk-mobile-head">Books</div>
-  <select class="bk-mobile-dropdown" id="bk-dropdown" aria-label="Select book"></select>
+<!-- Mobile book selector -->
+<div class="kn-mobile-strip">
+  <select id="kn-mobile-book"></select>
 </div>
 
-<!-- Top search bar + count -->
-<div class="notes-ro-topbar">
-  <div class="notes-ro-search-wrap">
-    <span class="notes-ro-search-icon">🔍</span>
-    <input class="notes-ro-search" id="ro-search" type="text" placeholder="Search highlights and notes…"
-      aria-label="Search notes" />
-    <button class="notes-ro-clear" id="ro-clear">✕</button>
+<!-- Layout -->
+<div class="kn-layout">
+
+  <!-- Sidebar -->
+  <aside class="kn-sidebar">
+    <div class="kn-sidebar-head">Categories</div>
+    <div class="kn-cat-filters" id="kn-cat-filters"></div>
+    <div class="kn-sidebar-head" style="margin-top:4px;">Books</div>
+    <div class="kn-book-list" id="kn-book-list"></div>
+  </aside>
+
+  <!-- Main -->
+  <div class="kn-main">
+    <div class="kn-topbar">
+      <h2 class="kn-heading" id="kn-heading">All Highlights</h2>
+      <span class="kn-count" id="kn-count"></span>
+      <div class="kn-search-wrap">
+        🔍 <input id="kn-search" type="text" placeholder="Search…" />
+        <button class="kn-clear" id="kn-clear">✕</button>
+      </div>
+      <div class="kn-view-btns">
+        <button class="kn-view-btn" id="kn-btn-grid">▦ Grid</button>
+        <button class="kn-view-btn active" id="kn-btn-swipe">◫ Swipe</button>
+      </div>
+    </div>
+
+    <div id="kn-grid"></div>
   </div>
-  <div class="notes-ro-count" id="ro-count"></div>
-  <div class="notes-view-toggle">
-    <button id="btn-view-grid" class="view-btn" aria-label="Grid View" title="Grid View">▦</button>
-    <button id="btn-view-swipe" class="view-btn active" aria-label="Swipe View" title="Swipe View">◫</button>
-  </div>
+
 </div>
 
-<!-- Active filter label -->
-<div class="notes-ro-filter-label" id="ro-filter-label">
-  All Clippings <span id="ro-filter-sub"></span>
-</div>
-
-<!-- Card grid -->
-<div class="notes-ro-grid" id="ro-grid"></div>
-
-<!-- Inject build-time data -->
 <script>
-  const RO_NOTES = {{ clippings | dump | safe }} || [];
+  const KN_DATA = {{ clippings | dump | safe }} || [];
 </script>
 
 <script>
-  (function () {
-    var notes = RO_NOTES;
-    var selBook = "all";
-    var searchQ = "";
-    var viewMode = "swipe";
-    var swipeIndex = 0;
+(function () {
+  var data     = KN_DATA;
+  var selCat   = 'all';
+  var selBook  = 'all';
+  var searchQ  = '';
+  var viewMode = 'swipe';
+  var swipeIdx = 0;
 
-    // Elements
-    var grid = document.getElementById("ro-grid");
-    var listDesk = document.getElementById("bk-list-desk");
-    var dropdownEl = document.getElementById("bk-dropdown");
-    var searchEl = document.getElementById("ro-search");
-    var clearBtn = document.getElementById("ro-clear");
-    var bkSearch = document.getElementById("bk-search-desk");
-    var countEl = document.getElementById("ro-count");
-    var labelEl = document.getElementById("ro-filter-label");
-    var subEl = document.getElementById("ro-filter-sub");
-    var btnGrid = document.getElementById("btn-view-grid");
-    var btnSwipe = document.getElementById("btn-view-swipe");
+  var gridEl    = document.getElementById('kn-grid');
+  var catFilters= document.getElementById('kn-cat-filters');
+  var bookList  = document.getElementById('kn-book-list');
+  var mobileBook= document.getElementById('kn-mobile-book');
+  var headingEl = document.getElementById('kn-heading');
+  var countEl   = document.getElementById('kn-count');
+  var searchEl  = document.getElementById('kn-search');
+  var clearBtn  = document.getElementById('kn-clear');
+  var btnGrid   = document.getElementById('kn-btn-grid');
+  var btnSwipe  = document.getElementById('kn-btn-swipe');
 
-    // Try to load fresh notes from the API (dev mode)
-    fetch("/api/notes")
-      .then(function (r) { if (r.ok) return r.json(); throw new Error(); })
-      .then(function (fresh) { notes = fresh; render(); })
-      .catch(function () { render(); });
+  // Prefer fresh API data if available
+  fetch('/api/clippings')
+    .then(function(r){ if(r.ok) return r.json(); throw new Error(); })
+    .then(function(fresh){ data = fresh.filter(function(c){ return !c.deleted; }); render(); })
+    .catch(function(){ render(); });
 
-    /* ── Helpers ── */
-    function bookMap() {
-      var m = {};
-      notes.forEach(function (n) {
-        if (!m[n.title]) m[n.title] = { author: n.author, count: 0 };
-        m[n.title].count++;
-      });
-      return m;
+  // ── Computed ─────────────────────────────────────────────────────────────
+  function categories() {
+    var cats = {};
+    data.forEach(function(c){
+      var cat = c.category || 'other';
+      if (!cats[cat]) cats[cat] = 0;
+      cats[cat]++;
+    });
+    return cats;
+  }
+
+  function booksByCat() {
+    var bm = {};
+    data.forEach(function(c){
+      var cat = c.category || 'other';
+      if (selCat !== 'all' && cat !== selCat) return;
+      if (!bm[c.title]) bm[c.title] = { author: c.author, count: 0, category: cat };
+      bm[c.title].count++;
+    });
+    return bm;
+  }
+
+  function filtered() {
+    return data.filter(function(c){
+      if (selCat  !== 'all' && (c.category||'other') !== selCat)  return false;
+      if (selBook !== 'all' && c.title !== selBook)                return false;
+      if (searchQ && !(
+            (c.content||'').toLowerCase().includes(searchQ) ||
+            (c.title||'').toLowerCase().includes(searchQ)   ||
+            (c.myNote||'').toLowerCase().includes(searchQ)
+          )) return false;
+      return true;
+    });
+  }
+
+  // ── Render ────────────────────────────────────────────────────────────────
+  function render() {
+    renderCatFilters();
+    renderBookList();
+    renderGrid();
+  }
+
+  function renderCatFilters() {
+    var cats = categories();
+    var total = data.length;
+    catFilters.innerHTML = '';
+
+    function makeBtn(label, value, count) {
+      var btn = document.createElement('button');
+      btn.className = 'kn-cat-btn' + (selCat === value ? ' active' : '');
+      btn.innerHTML = '<span>' + label + '</span><span class="kn-cat-count">' + count + '</span>';
+      btn.addEventListener('click', function(){ selCat = value; selBook = 'all'; swipeIdx = 0; render(); });
+      catFilters.appendChild(btn);
     }
 
-    function filtered() {
-      var out = selBook === "all" ? notes : notes.filter(function (n) { return n.title === selBook; });
-      if (searchQ) {
-        out = out.filter(function (n) {
-          return (n.content && n.content.toLowerCase().includes(searchQ))
-            || n.title.toLowerCase().includes(searchQ)
-            || (n.author && n.author.toLowerCase().includes(searchQ));
-        });
-      }
-      return out;
+    makeBtn('All', 'all', total);
+    Object.keys(cats).sort().forEach(function(c){
+      makeBtn(cap(c), c, cats[c]);
+    });
+  }
+
+  function renderBookList() {
+    var bm    = booksByCat();
+    var books = Object.keys(bm).sort(function(a,b){ return a.localeCompare(b); });
+    bookList.innerHTML = '';
+    mobileBook.innerHTML = '';
+
+    // "All" row
+    var all = document.createElement('div');
+    all.className = 'kn-book-item' + (selBook === 'all' ? ' active' : '');
+    all.innerHTML = '<span class="kn-book-title">All Books</span><span class="kn-book-count">' +
+      (selCat === 'all' ? data.length : Object.values(bm).reduce(function(s,b){ return s+b.count; },0)) + '</span>';
+    all.addEventListener('click', function(){ selBook = 'all'; swipeIdx = 0; render(); });
+    bookList.appendChild(all);
+
+    var mAll = document.createElement('option');
+    mAll.value = 'all'; mAll.textContent = 'All Books';
+    mAll.selected = selBook === 'all';
+    mobileBook.appendChild(mAll);
+
+    books.forEach(function(b){
+      var li = document.createElement('div');
+      li.className = 'kn-book-item' + (selBook === b ? ' active' : '');
+      li.innerHTML = '<span class="kn-book-title" title="' + esc(b) + '">' + esc(b) + '</span><span class="kn-book-count">' + bm[b].count + '</span>';
+      li.addEventListener('click', function(){ selBook = b; swipeIdx = 0; render(); });
+      bookList.appendChild(li);
+
+      var opt = document.createElement('option');
+      opt.value = b; opt.textContent = b + ' (' + bm[b].count + ')';
+      opt.selected = selBook === b;
+      mobileBook.appendChild(opt);
+    });
+  }
+
+  function renderGrid() {
+    var items = filtered();
+
+    // Heading
+    if (selBook === 'all') {
+      headingEl.innerHTML = (selCat === 'all' ? 'All Highlights' : cap(selCat) + ' Highlights') +
+        (searchQ ? ' <small>matching "' + esc(searchQ) + '"</small>' : '');
+    } else {
+      headingEl.innerHTML = esc(selBook) + (searchQ ? ' <small>matching "' + esc(searchQ) + '"</small>' : '');
     }
+    countEl.textContent = items.length + ' clipping' + (items.length !== 1 ? 's' : '');
 
-    function selectBook(b) {
-      selBook = b;
-      render();
-    }
+    gridEl.innerHTML = '';
 
-    /* ── Render sidebar (desktop) ── */
-    function renderSidebar() {
-      var bq = bkSearch ? bkSearch.value.toLowerCase().trim() : "";
-      var bm = bookMap();
-      var books = Object.keys(bm).sort(function (a, b) { return a.localeCompare(b); });
-      if (bq) books = books.filter(function (b) { return b.toLowerCase().includes(bq) || bm[b].author.toLowerCase().includes(bq); });
-
-      listDesk.innerHTML = "";
-
-      // "All" item
-      var all = document.createElement("li");
-      all.className = selBook === "all" ? "bk-active" : "";
-      all.innerHTML = '<span class="bk-name">All Books</span><span class="bk-cnt">' + notes.length + '</span>';
-      all.addEventListener("click", function () { selectBook("all"); });
-      listDesk.appendChild(all);
-
-      books.forEach(function (b) {
-        var li = document.createElement("li");
-        li.className = selBook === b ? "bk-active" : "";
-        li.title = b + " — " + bm[b].author;
-        li.innerHTML = '<span class="bk-name">' + esc(b) + '</span><span class="bk-cnt">' + bm[b].count + '</span>';
-        li.addEventListener("click", function () { selectBook(b); });
-        listDesk.appendChild(li);
-      });
-    }
-
-    /* ── Render dropdown (mobile) ── */
-    function renderDropdown() {
-      if (!dropdownEl) return;
-      var bm = bookMap();
-      var books = Object.keys(bm).sort(function (a, b) { return a.localeCompare(b); });
-
-      dropdownEl.innerHTML = "";
-
-      var allOpt = document.createElement("option");
-      allOpt.value = "all";
-      allOpt.textContent = "All (" + notes.length + ")";
-      allOpt.selected = (selBook === "all");
-      dropdownEl.appendChild(allOpt);
-
-      books.forEach(function (b) {
-        var opt = document.createElement("option");
-        opt.value = b;
-        opt.textContent = b + " (" + bm[b].count + ")";
-        opt.selected = (selBook === b);
-        dropdownEl.appendChild(opt);
-      });
-    }
-
-    function buildCard(note, showBook) {
-      var badgeClass = note.type ? note.type.toLowerCase() : "highlight";
-      var loc = [];
-      if (note.page) loc.push("p." + note.page);
-      if (note.location) loc.push("loc " + note.location);
-      var locStr = loc.join(" · ") || "snippet";
-
-      var hasContent = note.content && note.content.trim().length > 0;
-      var hasNote = note.noteContent && note.noteContent.trim().length > 0;
-
-      var card = document.createElement("div");
-      card.className = "ro-card";
-
-      var contentHtml = '<div class="ro-card-content' + (!hasContent ? " empty" : "") + '">' +
-        (hasContent ? esc(note.content).replace(/\n/g, "<br>") : "<i>Empty bookmark</i>") +
+    if (items.length === 0) {
+      gridEl.className = 'kn-grid';
+      gridEl.innerHTML = '<div style="text-align:center;padding:50px 20px;border:1px dashed rgba(88,72,34,0.3);border-radius:6px;width:100%">' +
+        '<p>No highlights found.</p>' +
+        '<button onclick="resetFilters()" style="margin-top:10px;padding:6px 14px;border:1px solid rgba(88,72,34,0.3);border-radius:4px;background:none;cursor:pointer;font-family:inherit">Reset filters</button>' +
         '</div>';
+      return;
+    }
 
-      if (hasNote) {
-        contentHtml += '<div class="ro-card-note"><div class="ro-note-label">My Note:</div>' + esc(note.noteContent).replace(/\n/g, "<br>") + '</div>';
-      }
+    if (viewMode === 'grid') {
+      gridEl.className = 'kn-grid';
+      items.forEach(function(c){ gridEl.appendChild(buildCard(c, selBook === 'all')); });
 
-      card.innerHTML =
-        '<div class="ro-card-top">' +
+    } else {
+      gridEl.className = 'kn-swipe-container';
+      if (swipeIdx < 0) swipeIdx = 0;
+      if (swipeIdx >= items.length) swipeIdx = items.length - 1;
+
+      var c = items[swipeIdx];
+
+      var infoBar = document.createElement('div');
+      infoBar.style.cssText = 'font-size:0.8rem;color:var(--text-heading);opacity:0.7';
+      infoBar.textContent = (swipeIdx + 1) + ' of ' + items.length;
+
+      var prev = document.createElement('button');
+      prev.className = 'kn-swipe-btn';
+      prev.innerHTML = '◀';
+      prev.disabled = swipeIdx === 0;
+      prev.onclick = function(){ swipeIdx--; renderGrid(); };
+
+      var next = document.createElement('button');
+      next.className = 'kn-swipe-btn';
+      next.innerHTML = '▶';
+      next.disabled = swipeIdx === items.length - 1;
+      next.onclick = function(){ swipeIdx++; renderGrid(); };
+
+      var row = document.createElement('div');
+      row.className = 'kn-swipe-row';
+      row.appendChild(prev);
+      row.appendChild(buildCard(c, selBook === 'all'));
+      row.appendChild(next);
+
+      gridEl.appendChild(infoBar);
+      gridEl.appendChild(row);
+
+      // Touch swipe
+      var startX = 0;
+      row.addEventListener('touchstart', function(e){ startX = e.changedTouches[0].screenX; }, {passive:true});
+      row.addEventListener('touchend', function(e){
+        var dx = e.changedTouches[0].screenX - startX;
+        if (dx < -40 && swipeIdx < items.length - 1){ swipeIdx++; renderGrid(); }
+        else if (dx > 40 && swipeIdx > 0){ swipeIdx--; renderGrid(); }
+      }, {passive:true});
+    }
+  }
+
+  function buildCard(c, showBook) {
+    var div = document.createElement('div');
+    div.className = 'kn-card';
+
+    var loc = [];
+    if (c.page)     loc.push('p.' + c.page);
+    if (c.location) loc.push('loc ' + c.location);
+    var locStr = loc.join(' · ') || '—';
+
+    var cat = c.category || 'other';
+    var badgeClass = 'kn-badge kn-badge-' + cat;
+
+    var bookHtml = showBook
+      ? '<div class="kn-card-book"><strong>' + esc(c.title) + '</strong><span> by ' + esc(c.author||'Unknown') + '</span></div>'
+      : '';
+
+    var noteHtml = (c.myNote && c.myNote.trim())
+      ? '<div class="kn-card-note"><strong>My Note</strong>' + esc(c.myNote).replace(/\n/g,'<br>') + '</div>'
+      : '';
+
+    div.innerHTML =
+      '<div class="kn-card-meta">' +
         '<span>🔖 ' + esc(locStr) + '</span>' +
-        '<span class="ro-badge ' + badgeClass + '">' + esc(note.type || "Highlight") + '</span>' +
-        '</div>' +
-        '<div class="ro-card-book' + (showBook ? " visible" : "") + '">' +
-        '<div class="ro-book-title" title="' + esc(note.title) + '">' + esc(note.title) + '</div>' +
-        '<div class="ro-book-author">by ' + esc(note.author || "Unknown") + '</div>' +
-        '</div>' +
-        contentHtml +
-        '<div class="ro-card-date">' + esc(note.dateAdded || "") + '</div>';
+        '<span class="' + badgeClass + '">' + cap(cat) + '</span>' +
+      '</div>' +
+      bookHtml +
+      '<div class="kn-card-content">' +
+        (c.content ? esc(c.content).replace(/\n/g,'<br>') : '<i>Empty</i>') +
+      '</div>' +
+      noteHtml +
+      '<div class="kn-card-date">' + esc(c.dateAdded||'') + '</div>';
 
-      return card;
-    }
+    return div;
+  }
 
-    /* ── Render grid ── */
-    function renderGrid() {
-      var items = filtered();
-      var showBook = selBook === "all";
+  // ── Resets & events ───────────────────────────────────────────────────────
+  window.resetFilters = function(){ selCat='all'; selBook='all'; searchQ=''; searchEl.value=''; clearBtn.style.display='none'; swipeIdx=0; render(); };
 
-      // Update filter label
-      if (selBook === "all") {
-        labelEl.childNodes[0].textContent = "All Clippings ";
-        subEl.textContent = "";
-      } else {
-        labelEl.childNodes[0].textContent = selBook + " ";
-        var bm = bookMap();
-        subEl.textContent = bm[selBook] ? "by " + bm[selBook].author : "";
-      }
+  searchEl.addEventListener('input', function(){
+    searchQ = searchEl.value.toLowerCase().trim();
+    clearBtn.style.display = searchQ ? 'inline' : 'none';
+    swipeIdx = 0; renderGrid();
+  });
+  clearBtn.addEventListener('click', function(){ searchEl.value=''; searchQ=''; clearBtn.style.display='none'; swipeIdx=0; renderGrid(); });
 
-      countEl.innerHTML = "<strong>" + items.length + "</strong> clipping" + (items.length !== 1 ? "s" : "");
-      grid.innerHTML = "";
-      grid.className = viewMode === "grid" ? "notes-ro-grid" : "notes-ro-swipe-container";
+  mobileBook.addEventListener('change', function(e){ selBook = e.target.value; swipeIdx = 0; render(); });
 
-      if (items.length === 0) {
-        grid.className = "notes-ro-grid";
-        var empty = document.createElement("div");
-        empty.className = "ro-empty";
-        empty.innerHTML =
-          '<div class="ro-empty-icon">📖</div>' +
-          '<h3>No clippings found</h3>' +
-          '<p>Try a different search or book.</p>' +
-          '<button class="ro-reset" id="ro-reset-btn">Reset filters</button>';
-        empty.querySelector("#ro-reset-btn").addEventListener("click", function () {
-          selBook = "all"; searchQ = ""; searchEl.value = ""; clearBtn.style.display = "none"; render();
-        });
-        grid.appendChild(empty);
-        return;
-      }
+  btnGrid.addEventListener('click', function(){ viewMode='grid'; btnGrid.classList.add('active'); btnSwipe.classList.remove('active'); swipeIdx=0; renderGrid(); });
+  btnSwipe.addEventListener('click', function(){ viewMode='swipe'; btnSwipe.classList.add('active'); btnGrid.classList.remove('active'); swipeIdx=0; renderGrid(); });
 
-      if (viewMode === "grid") {
-        items.forEach(function (note) {
-          grid.appendChild(buildCard(note, showBook));
-        });
-      } else {
-        // Swipe Mode
-        if (swipeIndex < 0) swipeIndex = 0;
-        if (swipeIndex >= items.length) swipeIndex = items.length - 1;
+  function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function cap(s){ return String(s||'').charAt(0).toUpperCase() + String(s||'').slice(1); }
 
-        var note = items[swipeIndex];
-
-        var info = document.createElement("div");
-        info.className = "notes-swipe-info";
-        info.textContent = (swipeIndex + 1) + " of " + items.length;
-
-        var prevBtn = document.createElement("button");
-        prevBtn.className = "notes-swipe-btn notes-swipe-prev";
-        prevBtn.innerHTML = "◀";
-        prevBtn.disabled = swipeIndex === 0;
-        prevBtn.onclick = function () { swipeIndex--; renderGrid(); };
-
-        var nextBtn = document.createElement("button");
-        nextBtn.className = "notes-swipe-btn notes-swipe-next";
-        nextBtn.innerHTML = "▶";
-        nextBtn.disabled = swipeIndex === items.length - 1;
-        nextBtn.onclick = function () { swipeIndex++; renderGrid(); };
-
-        var wrapper = document.createElement("div");
-        wrapper.className = "notes-ro-swipe-card-wrapper";
-
-        wrapper.appendChild(prevBtn);
-        wrapper.appendChild(buildCard(note, showBook));
-        wrapper.appendChild(nextBtn);
-
-        var topContainer = document.createElement("div");
-        topContainer.className = "notes-ro-swipe-container";
-        topContainer.appendChild(info);
-        topContainer.appendChild(wrapper);
-        grid.appendChild(topContainer);
-
-        // Touch swipe logic
-        var startX = 0;
-        wrapper.addEventListener("touchstart", function (e) {
-          startX = e.changedTouches[0].screenX;
-        }, { passive: true });
-        wrapper.addEventListener("touchend", function (e) {
-          var endX = e.changedTouches[0].screenX;
-          if (startX - endX > 40 && swipeIndex < items.length - 1) {
-            swipeIndex++; renderGrid();
-          } else if (endX - startX > 40 && swipeIndex > 0) {
-            swipeIndex--; renderGrid();
-          }
-        }, { passive: true });
-      }
-    }
-
-    /* ── Full render ── */
-    function render() {
-      renderSidebar();
-      renderDropdown();
-      renderGrid();
-    }
-
-    /* ── Events ── */
-    searchEl.addEventListener("input", function () {
-      searchQ = searchEl.value.toLowerCase().trim();
-      clearBtn.style.display = searchQ ? "block" : "none";
-      renderGrid();
-    });
-
-    clearBtn.addEventListener("click", function () {
-      searchEl.value = ""; searchQ = ""; clearBtn.style.display = "none"; renderGrid();
-    });
-
-    if (bkSearch) {
-      bkSearch.addEventListener("input", renderSidebar);
-    }
-
-    if (dropdownEl) {
-      dropdownEl.addEventListener("change", function (e) {
-        selectBook(e.target.value);
-      });
-    }
-
-    if (btnGrid && btnSwipe) {
-      btnGrid.addEventListener("click", function () {
-        viewMode = "grid";
-        btnGrid.className = "view-btn active";
-        btnSwipe.className = "view-btn";
-        renderGrid();
-      });
-
-      btnSwipe.addEventListener("click", function () {
-        viewMode = "swipe";
-        btnSwipe.className = "view-btn active";
-        btnGrid.className = "view-btn";
-        swipeIndex = 0;
-        renderGrid();
-      });
-    }
-
-    /* ── Escape helper ── */
-    function esc(s) {
-      return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-    }
-
-    render();
-  })();
+  render();
+})();
 </script>

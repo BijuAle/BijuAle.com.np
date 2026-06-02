@@ -1,0 +1,972 @@
+---
+layout: null
+title: "Kindle Admin"
+permalink: /kindle-admin/
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kindle Clippings Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+
+      --bg: #2f342e;
+      /* deep monastery stone */
+
+      --surface: #3b4338;
+      /* aged sage */
+
+      --surface2: #4b5247;
+      /* weathered olive stone */
+
+      --border: rgba(230, 225, 210, 0.08);
+
+      --text: #e6e1d2;
+      /* warm parchment */
+
+      --muted: #b3ab98;
+      /* faded manuscript */
+
+      --accent: #8c6a43;
+      /* old leather binding */
+
+      --accent2: #a4835b;
+      /* polished walnut */
+
+      --danger: #a05a4a;
+
+      --warn: #b08b57;
+
+      --success: #6f8a5f;
+
+      /* categories */
+
+      --cat-philosophy: #8d7a9f;
+      /* dusty lavender */
+
+      --cat-theology: #6f8292;
+      /* monastery blue-gray */
+
+      --cat-culture: #7a8f72;
+      /* sage green */
+
+      --cat-history: #9b7454;
+      /* aged terracotta */
+
+      --cat-science: #6c8a88;
+      /* muted teal */
+
+      --cat-literature: #9b7b6e;
+      /* faded rosewood */
+
+      --cat-other: #8d8b82;
+      /* stone gray */
+
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── Top Bar ─────────────────────────────────────────────────────────── */
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 20px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+
+    .topbar h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-right: auto;
+    }
+
+    .topbar h1 span {
+      color: var(--accent2);
+    }
+
+    .topbar-stats {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 14px;
+    }
+
+    .topbar-stats b {
+      color: var(--text);
+    }
+
+    .btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      border: none;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-danger {
+      background: var(--danger);
+      color: #fff;
+    }
+
+    .btn-warn {
+      background: var(--warn);
+      color: #000;
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: #000;
+    }
+
+    .filter-bar {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .filter-bar label {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .filter-bar select,
+    .filter-bar input {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+    }
+
+    /* ── Main Layout ────────────────────────────────────────────────────── */
+    .main {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* ── Book Sidebar ───────────────────────────────────────────────────── */
+    .sidebar {
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .sidebar-header {
+      padding: 12px 14px 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .sidebar-search {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .sidebar-search input {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-family: inherit;
+      font-size: 0.82rem;
+    }
+
+    .book-list {
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .book-item {
+      padding: 9px 14px;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      transition: background 0.1s;
+    }
+
+    .book-item:hover {
+      background: var(--surface2);
+    }
+
+    .book-item.active {
+      background: rgba(99, 102, 241, 0.15);
+      border-left: 3px solid var(--accent);
+    }
+
+    .book-item-title {
+      font-size: 0.82rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .book-item-meta {
+      font-size: 0.72rem;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .cat-badge {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 99px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cat-philosophy {
+      background: rgba(167, 139, 250, 0.2);
+      color: var(--cat-philosophy);
+    }
+
+    .cat-theology {
+      background: rgba(96, 165, 250, 0.2);
+      color: var(--cat-theology);
+    }
+
+    .cat-culture {
+      background: rgba(52, 211, 153, 0.2);
+      color: var(--cat-culture);
+    }
+
+    .cat-history {
+      background: rgba(251, 146, 60, 0.2);
+      color: var(--cat-history);
+    }
+
+    .cat-science {
+      background: rgba(56, 189, 248, 0.2);
+      color: var(--cat-science);
+    }
+
+    .cat-literature {
+      background: rgba(244, 114, 182, 0.2);
+      color: var(--cat-literature);
+    }
+
+    .cat-other {
+      background: rgba(148, 163, 184, 0.15);
+      color: var(--cat-other);
+    }
+
+    /* ── Clippings Panel ────────────────────────────────────────────────── */
+    .panel {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      background: var(--surface);
+    }
+
+    .panel-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      flex: 1;
+    }
+
+    .panel-subtitle {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .clippings-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ── Clipping Card ──────────────────────────────────────────────────── */
+    .clip-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.15s;
+    }
+
+    .clip-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .clip-card.is-deleted {
+      opacity: 0.4;
+      border-style: dashed;
+    }
+
+    .clip-card.is-duplicate {
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+    .clip-card-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .clip-card-head .badges {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .badge {
+      padding: 2px 7px;
+      border-radius: 99px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-dup {
+      background: rgba(245, 158, 11, 0.2);
+      color: var(--warn);
+    }
+
+    .badge-del {
+      background: rgba(239, 68, 68, 0.2);
+      color: var(--danger);
+    }
+
+    .badge-type {
+      background: rgba(99, 102, 241, 0.2);
+      color: var(--accent2);
+    }
+
+    .clip-content {
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--text);
+    }
+
+    .clip-content[contenteditable="true"] {
+      outline: none;
+      background: var(--surface2);
+      border-radius: 0 4px 4px 0;
+      padding: 6px 10px;
+      border-color: var(--accent2);
+    }
+
+    .clip-note-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .clip-note-label {
+      font-size: 0.7rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .clip-note {
+      width: 100%;
+      background: rgba(251, 191, 36, 0.07);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      border-radius: 5px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.85rem;
+      padding: 6px 9px;
+      resize: vertical;
+      min-height: 54px;
+    }
+
+    .clip-note:focus {
+      outline: none;
+      border-color: rgba(251, 191, 36, 0.5);
+    }
+
+    .clip-actions {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .clip-actions select {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 5px;
+      padding: 4px 7px;
+      font-family: inherit;
+      font-size: 0.78rem;
+    }
+
+    .btn-sm {
+      padding: 4px 10px;
+      font-size: 0.78rem;
+      border-radius: 5px;
+    }
+
+    /* ── Toast ──────────────────────────────────────────────────────────── */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-size: 0.85rem;
+      color: var(--text);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.25s, transform 0.25s;
+      z-index: 999;
+      max-width: 320px;
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #toast.toast-ok {
+      border-color: var(--success);
+      color: var(--success);
+    }
+
+    #toast.toast-err {
+      border-color: var(--danger);
+      color: var(--danger);
+    }
+
+    /* ── Scrollbar ──────────────────────────────────────────────────────── */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 3px;
+    }
+
+    /* ── Log Modal ─────────────────────────────────────────────────────── */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 900;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 560px;
+      width: 90%;
+      max-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .modal pre {
+      background: var(--bg);
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 0.8rem;
+      color: var(--success);
+      overflow-y: auto;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <h1>📚 Kindle Admin <span>/ Clippings</span></h1>
+    <div class="topbar-stats">
+      <span>Total: <b id="stat-total">—</b></span>
+      <span>Duplicates: <b id="stat-dups">—</b></span>
+      <span>Deleted: <b id="stat-del">—</b></span>
+    </div>
+    <div class="filter-bar">
+      <label>Show:</label>
+      <select id="filter-show">
+        <option value="active">Active only</option>
+        <option value="duplicates">Duplicates only</option>
+        <option value="deleted">Deleted only</option>
+        <option value="all">All</option>
+      </select>
+      <label>Category:</label>
+      <select id="filter-cat">
+        <option value="all">All</option>
+      </select>
+      <input id="filter-search" type="text" placeholder="Search…" style="width:160px;" />
+    </div>
+    <button class="btn btn-warn btn-sm" id="btn-import" title="Re-parse My Clippings.txt">⬇ Re-import</button>
+    <button class="btn btn-primary" id="btn-save">💾 Save</button>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <!-- Book Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">Books <span id="book-count" style="font-weight:400;"></span></div>
+      <div class="sidebar-search">
+        <input id="bk-search" type="text" placeholder="Filter books…" />
+      </div>
+      <div class="book-list" id="book-list"></div>
+    </aside>
+
+    <!-- Clipping Panel -->
+    <div class="panel">
+      <div class="panel-header">
+        <div>
+          <div class="panel-title" id="panel-title">All Books</div>
+          <div class="panel-subtitle" id="panel-subtitle"></div>
+        </div>
+        <button class="btn btn-outline btn-sm" id="btn-del-all-dups"
+          title="Soft-delete all duplicates in current view (keeps longest)">🗑 Delete dups (keep longest)</button>
+      </div>
+      <div class="clippings-list" id="clip-list"></div>
+    </div>
+  </div>
+
+  <!-- Log Modal -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal">
+      <strong>Import log</strong>
+      <pre id="modal-log"></pre>
+      <button class="btn btn-outline btn-sm" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast"></div>
+
+  <script>
+    (function () {
+      const CATEGORIES = ['philosophy', 'theology', 'culture', 'history', 'science', 'literature', 'other'];
+
+      let allData = [];        // full dataset from API
+      let selBook = '__all__'; // selected book title or '__all__'
+      let dirty = false;
+
+      // DOM refs
+      const bookList = document.getElementById('book-list');
+      const clipList = document.getElementById('clip-list');
+      const filterShow = document.getElementById('filter-show');
+      const filterCat = document.getElementById('filter-cat');
+      const filterSearch = document.getElementById('filter-search');
+      const bkSearch = document.getElementById('bk-search');
+      const btnSave = document.getElementById('btn-save');
+      const btnImport = document.getElementById('btn-import');
+      const btnDelDups = document.getElementById('btn-del-all-dups');
+      const panelTitle = document.getElementById('panel-title');
+      const panelSub = document.getElementById('panel-subtitle');
+      const statTotal = document.getElementById('stat-total');
+      const statDups = document.getElementById('stat-dups');
+      const statDel = document.getElementById('stat-del');
+      const bookCount = document.getElementById('book-count');
+
+      // ── Load ────────────────────────────────────────────────────────────────
+      async function load() {
+        try {
+          const r = await fetch('/api/clippings');
+          allData = await r.json();
+          populateCatFilter();
+          render();
+        } catch (e) {
+          toast('Failed to load clippings: ' + e.message, 'err');
+        }
+      }
+
+      // ── Category filter population ──────────────────────────────────────────
+      function populateCatFilter() {
+        const cats = [...new Set(allData.map(c => c.category || 'other'))].sort();
+        filterCat.innerHTML = '<option value="all">All</option>';
+        cats.forEach(c => {
+          const o = document.createElement('option');
+          o.value = c; o.textContent = cap(c);
+          filterCat.appendChild(o);
+        });
+      }
+
+      // ── Stats ────────────────────────────────────────────────────────────────
+      function updateStats() {
+        statTotal.textContent = allData.length;
+        statDups.textContent = allData.filter(c => c.isDuplicate && !c.deleted).length;
+        statDel.textContent = allData.filter(c => c.deleted).length;
+      }
+
+      // ── Filtered views ──────────────────────────────────────────────────────
+      function visibleClips() {
+        const show = filterShow.value;
+        const cat = filterCat.value;
+        const q = filterSearch.value.toLowerCase().trim();
+
+        return allData.filter(c => {
+          if (selBook !== '__all__' && c.title !== selBook) return false;
+          if (cat !== 'all' && (c.category || 'other') !== cat) return false;
+          if (show === 'active' && c.deleted) return false;
+          if (show === 'duplicates' && (!c.isDuplicate || c.deleted)) return false;
+          if (show === 'deleted' && !c.deleted) return false;
+          if (q && !((c.content || '').toLowerCase().includes(q) ||
+            (c.title || '').toLowerCase().includes(q) ||
+            (c.myNote || '').toLowerCase().includes(q))) return false;
+          return true;
+        });
+      }
+
+      function visibleBooks() {
+        const bq = bkSearch.value.toLowerCase().trim();
+        const cat = filterCat.value;
+        const show = filterShow.value;
+
+        const bookMap = {};
+        allData.forEach(c => {
+          if (cat !== 'all' && (c.category || 'other') !== cat) return;
+          if (show === 'active' && c.deleted) return;
+          if (show === 'duplicates' && (!c.isDuplicate || c.deleted)) return;
+          if (show === 'deleted' && !c.deleted) return;
+          if (!bookMap[c.title]) bookMap[c.title] = { author: c.author, category: c.category || 'other', count: 0, dups: 0 };
+          bookMap[c.title].count++;
+          if (c.isDuplicate) bookMap[c.title].dups++;
+        });
+
+        let books = Object.keys(bookMap).sort((a, b) => a.localeCompare(b));
+        if (bq) books = books.filter(b => b.toLowerCase().includes(bq) || (bookMap[b].author || '').toLowerCase().includes(bq));
+        return { books, bookMap };
+      }
+
+      // ── Render ───────────────────────────────────────────────────────────────
+      function render() {
+        updateStats();
+        renderSidebar();
+        renderClips();
+      }
+
+      function renderSidebar() {
+        const { books, bookMap } = visibleBooks();
+        bookCount.textContent = '(' + books.length + ')';
+        bookList.innerHTML = '';
+
+        // "All" row
+        const allLi = document.createElement('div');
+        allLi.className = 'book-item' + (selBook === '__all__' ? ' active' : '');
+        allLi.innerHTML = `<div class="book-item-title">All Books</div>
+      <div class="book-item-meta"><span>${allData.filter(c => !c.deleted).length} active</span></div>`;
+        allLi.addEventListener('click', () => { selBook = '__all__'; render(); });
+        bookList.appendChild(allLi);
+
+        books.forEach(b => {
+          const info = bookMap[b];
+          const li = document.createElement('div');
+          li.className = 'book-item' + (selBook === b ? ' active' : '');
+          li.innerHTML = `
+        <div class="book-item-title">${esc(b)}</div>
+        <div class="book-item-meta">
+          <span class="cat-badge cat-${info.category}">${cap(info.category)}</span>
+          <span>${info.count}${info.dups ? ` · ⚠️${info.dups} dup` : ''}</span>
+        </div>`;
+          li.addEventListener('click', () => { selBook = b; render(); });
+          bookList.appendChild(li);
+        });
+      }
+
+      function renderClips() {
+        const clips = visibleClips();
+        panelTitle.textContent = selBook === '__all__' ? 'All Books' : selBook;
+        panelSub.textContent = clips.length + ' clipping' + (clips.length !== 1 ? 's' : '');
+        clipList.innerHTML = '';
+
+        if (clips.length === 0) {
+          clipList.innerHTML = `<div style="text-align:center;padding:60px;color:var(--muted)">No clippings match the current filter.</div>`;
+          return;
+        }
+
+        clips.forEach(c => {
+          const card = buildCard(c);
+          clipList.appendChild(card);
+        });
+      }
+
+      function buildCard(c) {
+        const div = document.createElement('div');
+        div.className = 'clip-card' +
+          (c.deleted ? ' is-deleted' : '') +
+          (c.isDuplicate && !c.deleted ? ' is-duplicate' : '');
+        div.dataset.id = c.id;
+
+        const catOptions = CATEGORIES.map(cat =>
+          `<option value="${cat}" ${(c.category || 'other') === cat ? 'selected' : ''}>${cap(cat)}</option>`
+        ).join('');
+
+        div.innerHTML = `
+      <div class="clip-card-head">
+        <span>📍 ${esc(c.page ? 'p.' + c.page : '')} ${esc(c.location ? 'loc ' + c.location : '') || '—'}</span>
+        <span style="color:var(--muted)">${esc(c.dateAdded || '')}</span>
+        <div class="badges">
+          ${c.isDuplicate ? '<span class="badge badge-dup">⚠ Dup</span>' : ''}
+          ${c.deleted ? '<span class="badge badge-del">Deleted</span>' : ''}
+          <span class="badge badge-type">${esc(c.type || 'Highlight')}</span>
+        </div>
+      </div>
+
+      ${selBook === '__all__' ? `<div style="font-size:0.78rem;color:var(--muted);font-style:italic">${esc(c.title)}</div>` : ''}
+
+      <div class="clip-content" contenteditable="true" data-field="content">${esc(c.content || '')}</div>
+
+      <div class="clip-note-wrap">
+        <div class="clip-note-label">My Note</div>
+        <textarea class="clip-note" data-field="myNote" rows="2" placeholder="Add your own note…">${esc(c.myNote || '')}</textarea>
+      </div>
+
+      <div class="clip-actions">
+        <select data-field="category" title="Category (applies to whole book)">${catOptions}</select>
+        ${!c.deleted
+            ? `<button class="btn btn-danger btn-sm btn-delete">🗑 Delete</button>`
+            : `<button class="btn btn-success btn-sm btn-restore">↩ Restore</button>`}
+      </div>`;
+
+        // Content editable
+        div.querySelector('[data-field="content"]').addEventListener('input', ev => {
+          mutate(c.id, 'content', ev.target.innerText.trim());
+        });
+
+        // Note textarea
+        div.querySelector('[data-field="myNote"]').addEventListener('input', ev => {
+          mutate(c.id, 'myNote', ev.target.value);
+        });
+
+        // Category — applies to all clippings of same book
+        div.querySelector('[data-field="category"]').addEventListener('change', ev => {
+          const newCat = ev.target.value;
+          allData.forEach(entry => {
+            if (entry.title === c.title) entry.category = newCat;
+          });
+          markDirty();
+          render();
+        });
+
+        // Delete / Restore
+        const delBtn = div.querySelector('.btn-delete');
+        const resBtn = div.querySelector('.btn-restore');
+        if (delBtn) delBtn.addEventListener('click', () => { mutate(c.id, 'deleted', true); render(); });
+        if (resBtn) resBtn.addEventListener('click', () => { mutate(c.id, 'deleted', false); render(); });
+
+        return div;
+      }
+
+      // ── Mutations ────────────────────────────────────────────────────────────
+      function mutate(id, field, value) {
+        const entry = allData.find(c => c.id === id);
+        if (entry) { entry[field] = value; markDirty(); }
+      }
+
+      function markDirty() {
+        dirty = true;
+        btnSave.textContent = '💾 Save*';
+        btnSave.classList.add('btn-primary');
+      }
+
+      // ── Delete all dups in view (keep longest per location group) ────────────
+      btnDelDups.addEventListener('click', () => {
+        const clips = visibleClips().filter(c => c.isDuplicate && !c.deleted);
+        if (!clips.length) { toast('No active duplicates in current view', 'err'); return; }
+
+        // Group by title + approximate location
+        const groups = {};
+        clips.forEach(c => {
+          const key = c.title + '||' + (c.location || c.page || 'noloc');
+          if (!groups[key]) groups[key] = [];
+          groups[key].push(c);
+        });
+
+        let deleted = 0;
+        Object.values(groups).forEach(group => {
+          if (group.length < 2) return;
+          // Keep the one with the longest content, delete rest
+          group.sort((a, b) => (b.content || '').length - (a.content || '').length);
+          group.slice(1).forEach(c => { mutate(c.id, 'deleted', true); deleted++; });
+        });
+
+        toast(`Deleted ${deleted} duplicate(s). Save to persist.`, 'ok');
+        render();
+      });
+
+      // ── Save ─────────────────────────────────────────────────────────────────
+      btnSave.addEventListener('click', async () => {
+        btnSave.disabled = true;
+        try {
+          const r = await fetch('/api/clippings', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(allData),
+          });
+          const json = await r.json();
+          if (json.ok) {
+            dirty = false;
+            btnSave.textContent = '💾 Save';
+            toast(`Saved ${json.count} entries ✓`, 'ok');
+          } else {
+            toast('Save failed: ' + (json.error || 'unknown'), 'err');
+          }
+        } catch (e) {
+          toast('Save error: ' + e.message, 'err');
+        } finally {
+          btnSave.disabled = false;
+        }
+      });
+
+      // ── Re-import ────────────────────────────────────────────────────────────
+      btnImport.addEventListener('click', async () => {
+        if (dirty && !confirm('You have unsaved changes. Re-import will reload data. Continue?')) return;
+        btnImport.disabled = true;
+        try {
+          const r = await fetch('/api/clippings/import', { method: 'POST' });
+          const json = await r.json();
+          document.getElementById('modal-log').textContent = json.log || json.error || '(no output)';
+          document.getElementById('modal-backdrop').classList.add('open');
+          await load();
+        } catch (e) {
+          toast('Import error: ' + e.message, 'err');
+        } finally {
+          btnImport.disabled = false;
+        }
+      });
+
+      // ── Filters ──────────────────────────────────────────────────────────────
+      [filterShow, filterCat].forEach(el => el.addEventListener('change', () => { selBook = '__all__'; render(); }));
+      filterSearch.addEventListener('input', () => render());
+      bkSearch.addEventListener('input', () => renderSidebar());
+
+      // ── Helpers ──────────────────────────────────────────────────────────────
+      function esc(s) {
+        return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+      function cap(s) {
+        return String(s || '').charAt(0).toUpperCase() + String(s || '').slice(1);
+      }
+
+      let _toastTimer;
+      function toast(msg, type) {
+        const el = document.getElementById('toast');
+        el.textContent = msg;
+        el.className = 'show toast-' + (type || 'ok');
+        clearTimeout(_toastTimer);
+        _toastTimer = setTimeout(() => { el.className = ''; }, 3200);
+      }
+
+      window.closeModal = function () {
+        document.getElementById('modal-backdrop').classList.remove('open');
+      };
+
+      // Warn on unsaved changes
+      window.addEventListener('beforeunload', e => {
+        if (dirty) { e.preventDefault(); e.returnValue = ''; }
+      });
+
+      load();
+    })();
+  </script>
+</body>
+
+</html>
