@@ -1,5 +1,5 @@
 ---
 layout: base.njk
-title: Computing Tools
+title: Kindle Notes
 ---
 Under construction

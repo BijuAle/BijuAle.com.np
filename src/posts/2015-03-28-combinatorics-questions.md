@@ -4,7 +4,7 @@ date: 2015-03-28
 tags: ["Mathematics"]
 ---
 
-# Independent Events
+## Independent Events
 
 1. You have three shirts and four pairs of pants. How many outfits consisting of one shirt and one pair of pants can you make?
 2. In how many ways can a pair of die appear when rolled?
@@ -16,7 +16,7 @@ tags: ["Mathematics"]
 8. How many odd numbers with the third digit 5 are there between 20000 and 69999 inclusive?
 9. In how many ways can we form a license plate if there are 7 characters, none of which is the letter O, the first of which is a numerical digit (0-9), the second of which is a letter, and the remaining five of which can be either a digit or a letter (but not the letter O)?
 
-# Dependent Events
+## Dependent Events
 
 1. In how many ways can Michelangelo give five differently-colored M&M’s to five kids?
 2. How many odd numbers with the middle digit 5 are there between 40000 and 69999 inclusive, with no digits repeated?
@@ -27,13 +27,13 @@ tags: ["Mathematics"]
 7. In how many ways can we form an international commission if we must choose one European country from among 6 European countries, one Asian country from among 4, one North American country from among 3, and one African country from among 7?
 8. Your math club has 20 members. In how many ways can it select a president, a vice-president, and a treasurer if no member can hold more than one office?
 
-# Independent Events (needing casework)
+## Independent Events (needing casework)
 
 1. How many odd numbers with the middle digit 5 and no digit repeated are there between 20000 and 69999?
 2. On the island of Mumble, the Mumblian alphabet has only 5 letters, and every word in the Mumblian language has no more than 3 letters in it. How many words are possible? (A word can use a letter more than once, but 0 letters does not count as a word.)
 3. The inhabitants of the island of Mumble decided to expand their alphabet to the standard Roman alphabet (26 letters, A through Z). But they still limit their words to 3 letters or less, and for some reason, they insist that all words contain the letter A at least once. How many 3-letter words are possible?
 
-# Arrangements
+## Arrangements
 
 1.  In how many ways can I arrange four different books on a shelf?
 
@@ -41,7 +41,7 @@ tags: ["Mathematics"]
 
 3.  How many distinct arrangements are there for the following words: DOG, BALL, TATTER, PAPA
 
-# Arrangements with Restrictions
+## Arrangements with Restrictions
 
 1. In how many ways can the word HELLO be made if two Ls are paired?
 
@@ -55,7 +55,7 @@ tags: ["Mathematics"]
 
 6. In how many ways can the letters SUCCESS be arranged if no two S’s are next to one another?
 
-# Arrangements where order doesn't matter (Combination)
+## Arrangements where order doesn't matter (Combination)
 
 1. Answer each
 
@@ -69,7 +69,7 @@ tags: ["Mathematics"]
 
 1. In my state’s lottery, 48 balls are numbered from 1 to 48, and 6 are chosen. How many different sets of winning numbers are there? (In this lottery, the order in which the numbers are chosen does not matter.)
 
-# Some A-Level (CIE) Questions
+## Some A-Level (CIE) Questions
 
 1. 9709/62 Feb/Mar 2016Hannah chooses 5 singers from 15 applicants to appear in a concert. She lists the 5 singers in the order in which they will perform.
    (i) How many different lists can Hannah make? [2]
@@ -123,7 +123,7 @@ The 9 digits 1 to 9
 The 5 symbols # ~ \* ? !
 The password must include at least one capital letter, at least one digit, and at least one symbol. No character can be repeated. Find the number of different passwords that Chelsea can make. [4]
 
-# Answers
+## Answers
 
 ## Independent Events
 

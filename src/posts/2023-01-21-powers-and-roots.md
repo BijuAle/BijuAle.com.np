@@ -4,7 +4,7 @@ date: 2018-04-21
 tags: ["Mathematics"]
 ---
 
-# Exponential Growth
+## Exponential Growth
 
 - Case 1: +ve base < 1
     - E.g.: $$(\frac{1}{2})^1, (\frac{1}{2})^2, (\frac{1}{2})^3, (\frac{1}{2})^4, (\frac{1}{2})^5, (\frac{1}{2})^6...$$ or $$\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \frac{1}{32}, \frac{1}{64}...$$
@@ -18,7 +18,7 @@ tags: ["Mathematics"]
     - Absolute value decreases
     - +,- alternates
 
-# Exponent Properties
+## Exponent Properties
 - Inverse law: $$b^{-n}=\frac{1}{b^n}$$ and $$(\frac{p}{1})^{-n}=(\frac{q}{p})^n$$
 - Product law: $$(ab)^n=a^nb^n$$
 - Quotient law: $$(\frac{a}{b})^n=\frac{a^n}{b^n}$$
@@ -26,7 +26,7 @@ tags: ["Mathematics"]
 - Warning: $$(a \pm b)\neq a^n \pm b^n$$
 - Equating powers: If, $$a^m=a^n$$ then, $$m=n$$
 
-# Unit digit of Power
+## Unit digit of Power
 - Unit digit of any product is influenced by the unit digit of the two factors being multiplied. E.g.: $$12\underline{3} \cdot 1\underline{6} = 3886\underline{8}$$
 - What is the unit digit of $$57^{123}$$?
     1. Considering only one's place, $$ 7^1 =\underline{7}, 7^2=...\underline{9}, 7^3 = ...\underline{3}, 7^4=...\underline{1}, 7^5 =...\underline{7}$$ 
@@ -34,7 +34,7 @@ tags: ["Mathematics"]
     3. Therefore,$$ 7^{120}$$   has 1 in unit place, $$7^{121}$$  has 7, $$7^{122}$$  has 9 and $$7^{123}$$ has 3
     4. Therefore, the unit digit of $$57^{123}$$ is 3
 
-# Radicals
+## Radicals
 
 ## Radical Properties
 - $$\sqrt{PQ}=\sqrt{P}.\sqrt{Q}$$

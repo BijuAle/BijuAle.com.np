@@ -14,10 +14,10 @@ The second objection applies the intractability of disagreement to undermine epi
 
 The third move responds to Harman’s argument from the causal inefficacy of moral facts. The charge holds that realistically construed facts must have independent causal powers; moral facts lack them; therefore, they cannot be construed realistically. The second premise can be conceded, but the first premise must be rejected. Mathematical and epistemic truths (for instance, modus ponens in logic), for example, are causally effete, but they do exist. So do macro-level objects like an organism, distinct from its subatomic constituents. The role of moral facts is not explanatory in the sense of citing causes of events and predicting them. Rather, their role is normative. 
 
-# Critique
+## Critique
 Shafer-Landau offers a solid defense of moral realism against antirealist objections. His response to persistent moral disagreement effectively deflates the hidden false assumption that disagreement is equal to non-existence or non-reality. Likewise, his reply to Harman’s causal test is persuasive, showing that epistemic and logical norms also lack independent causal power. However, the weakest point is his positive metaphysics. Moral facts are declared sui generis, but this avoids rather than answers the grounding question: if moral properties necessarily co-vary with natural ones, what makes them genuinely nonnatural rather than merely epistemically inaccessible to science? The supervenience relation is acknowledged in Section V, but left underdeveloped, and it threatens to reduce moral nonnaturalism to a label rather than a substantive ontological distinction. He does not explicitly mention what natural facts or physical configurations subvene its respective moral fact, for instance, “Love is good,” or “We must quell evil.” By contrast, Christian Ethics, also nonnaturalistic, grounds morality in the good nature and character of the Triune God and provides a clearer and more robust explanation of moral objectivity and normativity.
 
-# Reference
+## Reference
 
 <div id="ref-landau2013" class="reference-entry">
 <a href="#cite-landau-1">↩</a> Shafer-Landau, Russ. “Ethics as Philosophy: A Defense of Ethical Nonnaturalism.” In <em>Ethical Theory: An Anthology</em>, edited by Russ Shafer-Landau, 54–62. Wiley-Blackwell, 2013.

@@ -12,10 +12,10 @@ Virtues of character are neither innate nor bestowed antinatally. We can learn, 
 
 Virtue is a particular kind of disposition flanked by its extreme versions that are the vices. Feelings and actions, like temper, can be out of balance, in excess, or in a healthy middle state. The brave person is neither reckless nor cowardly; the temperate person is neither self-indulgent nor insensible. This mean is not arithmetic but qualitative and relative to the agent, defined by what the prudent person (phronimos) would subscribe to in a given situation, much as a trainer prescribes a diet relative to the athlete's constitution, proclivities (sometimes needing corrections), and needs. Some actions, however, such as murder and adultery, admit of no mean, since their very names already include baseness. There is no right middle way, in this respect, concerning them.
 
-# Critique
+## Critique
 Aristotle’s virtue ethics emphasizes an individual’s moral and character formation as central to a good life. It offers a way through the impasse of thin modern ethics suspended between tasking deontology, ethical egoism, and the reductive calculus of utilitarianism. The archer desires to aim at the bullseye and has the reasoning and enabling faculties in her soul. However, there are shortcomings in human nature and will, which Aristotle himself notices in the incontinent man. The precarious balancing act in the spectrum of virtue leaves her efforts skewed and her spirit weary. She discerns what is right but ends up doing otherwise, implying that the energy needed to draw the bowstring must come outside the naturalistic framework. This is the Christian diagnosis of sin (hamartia) or “missing the mark.” Sin, unlike uninformed mistakes, is caused not only by a lack of knowledge about what one should aim at. It is an inherent brokenness of the human spirit that cannot be fixed by good intentions, laws, or habits. Christian spirituality does not eliminate our nature but perfects it. Eudaimonism provides excellent resources to thicken morality, but it also prompts us to look beyond self-moralism. Thomas Aquinas clarifies this: Aristotle is not to be refuted but completed. His teleology must be fulfilled in God, and His Spirit empowered by divine grace.
 
-# Reference
+## Reference
 
 <div id="ref-aristotle2013" class="reference-entry">
 <a href="#cite-aristotle-1">↩</a> Aristotle. “The Nature of Virtue.” In <em>Ethical Theory: An Anthology</em>, edited by Russ Shafer-Landau, 615–629. Wiley-Blackwell, 2013.

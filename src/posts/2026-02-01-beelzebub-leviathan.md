@@ -10,12 +10,12 @@ What explains the corruption in Golding’s boys? Although Pojman briefly dabble
 
 Pojman wants to conclude that the purpose of morality is to create a happy and virtuous person. He mentions this explicitly only in the last paragraph of his paper. However, his preceding reflection devotes almost the entire space to analyzing Golding’s microcosm of human evil and applying Hobbesian analysis to assess and respond to it. In effect, his argument essentially becomes, at worse a non sequitur, or at best, a proof for only one of the necessary conditions for morality’s purpose, namely negative ethics. This does not discount that he has done the latter persuasively. Indeed, society will implode under the unchecked propensity of man to do evil. And moral codes and conventions are indeed efficacious and necessary in achieving this end. However, moral codes should not be conflated with morality. It is only part of the whole.
 
-# Critique
+## Critique
 Hobbes, a key architect of the Enlightenment, abandons Aristotelian teleology guiding ultimate explanations, embracing a reductionist-materialist worldview. Although not in the company of Rand or Nietzsche, he remains an egoist at the core. His ethics are too thin to cultivate genuine virtue. Hobbesian agents abide by the law only for prudential, pragmatic reasons. The contract merely facilitates the pursuit of one’s self-interests,  without fatal collisions. The aim is not to produce virtue. Moreover, rational self-interest invites Garrett Hardin’s “tragedy of the commons”.  They mistrust each other and prioritize immediate personal gain over cumulative communal benefit. Even in a perfectly realized Hobbesian society, nothing prevents cunning citizens from free-riding on the contract’s benefits while contributing minimally.
 
 I contend that virtue cannot be obtained simply by observing negative ethics. We also need a thicker ethics that takes into account righly ordered soul that is metaphysically tethered to reality and bears virtues. Only in this context, positive ethics like proactive altruism and selfless love gains its momentum. The five purposes of morality Pojman outlines do not anticipate Bonhoeffer to execute his costly Operation 7, or the Chambonnais to rescue the Jews. 
 
-# Reference
+## Reference
 
 <div id="ref-hobbes2013" class="reference-entry">
 <a href="#cite-hobbes-1">↩</a> Hobbes, Thomas. “Leviathan.” In <em>Ethical Theory: An Anthology</em>, edited by Russ Shafer-Landau. Wiley-Blackwell, 2013.

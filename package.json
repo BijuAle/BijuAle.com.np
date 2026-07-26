@@ -1,26 +1,20 @@
 {
-  "name": "bijuale",
-  "version": "3.0.0",
-  "main": "index.html",
-  "description": "Biju Ale's Website.",
+  "name": "bare-11ty-blog",
+  "version": "1.0.0",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
-    "watch": "npx @11ty/eleventy --watch",
-    "serve": "npx @11ty/eleventy --serve",
-    "start": "npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* npx @11ty/eleventy"
+    "build": "eleventy",
+    "bench": "DEBUG=Eleventy:Benchmark* eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-rss": "^3.0.0",
-    "cloudinary": "^2.9.0",
-    "dotenv": "^17.3.1",
-    "katex": "^0.16.28",
-    "luxon": "^3.7.2"
+    "@hotwired/turbo": "^8.0.23",
+    "cloudinary": "^2.10.0",
+    "dotenv": "^17.4.2"
   }
 }

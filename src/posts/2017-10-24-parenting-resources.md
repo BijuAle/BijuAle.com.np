@@ -4,7 +4,7 @@ title: Resources for New Parents
 tags: ["Travel"]
 ---
 
-# Books
+## Books
 
 - Beatrix Potter 23-volume books
 - The Hobbit - JRR Tolkien
@@ -16,12 +16,12 @@ tags: ["Travel"]
 - The Defense Never Rests - William Lane Craig, Joseph Tang (2-Vol: Workbook and Teacher's Guide)
 - Dr Spock books on Parenting and Baby Care
 
-# Podcast
+## Podcast
 
 - The MAVEN Parent Podcast (Brett and Erin Kunkle guide you through Christian parenting in a secular culture, with wisdom and a bunch of practical help.)
 - #STRAsk - Amy Hall & Greg Koul (Apologetics)
 
-# Children Goods Store (in Nepal)
+## Children Goods Store (in Nepal)
 - Educational Toys Center, Kupondole, Lalitpur
 - MYint Furniture, Kimdol, Swoyambhu, Kathmandu
 - Samuel's Direct, Jhamsikhel, Lalitpur

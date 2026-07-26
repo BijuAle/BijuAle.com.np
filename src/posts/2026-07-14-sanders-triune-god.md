@@ -1,0 +1,21 @@
+---
+title: "The Triune God: Orders of Knowing and Being"
+date: 2026-07-14
+tags: ["Theology", "Philosophy"]
+---
+
+Fred Sanders’s *The Triune God* provides a lucid account of the relationship between the temporal missions of the Son and the Spirit, namely, the incarnation and Pentecost, and their eternal processions, the Son’s eternal generation and the Spirit’s eternal spiration (<a id="cite-sanders" href="#ref-sanders2016">Sanders 2016</a>). As explored throughout TTCT 603, Sanders synthesizes the Trinitarian insights of theologians ranging from Gregory of Nazianzus and Augustine to Thomas Aquinas and Wolfhart Pannenberg through the complementary categories of the Order of Knowing and the Order of Being. The former describes the epistemological movement from God’s redemptive acts in history toward the knowledge of His eternal triune life, while the latter concerns God’s immanent ontology independent of creation.
+
+A particularly illuminating contribution is Sanders’s treatment of Augustine’s Order of Knowing. Augustine’s partitive exegesis, together with the distinction between Christ’s divine and human natures, functions as more than a defense against Arianism or subordinationism. Sanders demonstrates that Augustine recognized a third category of biblical statements: those that reveal the Son’s eternal relation of origin to the Father. The Father’s sending of the Son manifests the Son’s eternal "fromness" without suggesting any ontological inferiority. Consequently, the temporal mission of the Son becomes a reliable theological pathway to understanding His eternal procession, for His historical sending reveals His eternal filial identity.
+
+Sanders further balances this epistemological movement with what he terms the Thomistic Order of Being. Drawing upon Thomas Aquinas, he explains that a divine mission is an eternal procession accompanied by a temporal effect. This notion of "elongation" clarifies how God genuinely acts within history without His being being constituted by history. Sanders also highlights Wolfhart Pannenberg’s insistence upon distinguishing God’s internal life from His external works as an essential safeguard of divine aseity. God does not require creation in order to be active because His eternal life consists in the perfect communion and activity of Father, Son, and Holy Spirit.
+
+Sanders’s interaction with John of Damascus and B. B. Warfield likewise clarifies the biblical character of Trinitarian doctrine. Warfield argues that the New Testament presupposes the Trinity more than it explicitly teaches it. Sanders grounds this insight in John of Damascus’s conviction that the knowledge of the Trinity is "inside knowledge," graciously revealed by the divine Persons themselves. Thus, the New Testament does not so much introduce an abstract doctrine of the Trinity as it bears witness to the personal arrival of the Son and the Spirit. This perspective also reinforces Gregory of Nazianzus’s agraphon argument: although the term *Trinity* does not appear in Scripture, the triadic naming of the one God, most notably in the baptismal command of Matthew 28:19, gathers the entire gospel narrative into its distinctly Trinitarian form.
+
+By harmonizing the Order of Knowing (Augustinian epistemology) with the Order of Being (Thomistic metaphysics), Sanders helped me understand the doctrine of the Trinity not as a speculative construction assembled from isolated biblical texts, but as a coherent theological synthesis emerging from the entirety of Scripture. The temporal missions of the Son and the Spirit progressively unveil God's eternal triune life and naturally lead the Church to respond with the *Gloria Patri*: "Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen."
+
+## Reference
+
+<div id="ref-sanders2016" class="reference-entry">
+<a href="#cite-sanders">↩</a> Sanders, Fred. <em>The Triune God</em>. Grand Rapids, MI: Zondervan Academic, 2016.
+</div>
