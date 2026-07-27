@@ -21,7 +21,8 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
     {% endif %}
 
     <div id="slideshow-container">
-        {% for photo in tagPhotos %}
+        {% set sortedPhotos = tagPhotos | sort(attribute='context.DateTimeOriginal') %}
+        {% for photo in sortedPhotos %}
         <div class="slide {% if loop.first %}active{% endif %}">
             <div class="slide-image-container">
                 <img src="{{ photo.secure_url }}" alt="{{ photo.alt }}" title="Click to view fullscreen" {% if not
@@ -33,25 +34,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
                     {% if photo.context and photo.context.caption %}
                     <div class="caption">{{ photo.context.caption }}</div>
                     {% endif %}
-                    <div class="specs">
-                        {% if photo.context.DateTimeOriginal %}
-                        <span><em>{{ photo.context.DateTimeOriginal }}</em></span>
-                        {% endif %} {% if photo.context.Make %}
-                        <span><em>{{ photo.context.Make }} {{ photo.context.Model }}</em></span>
-                        {% endif %} {% if photo.context.iso %}
-                        <span> <em>ISO {{ photo.context.iso }}</em></span>
-                        {% endif %} {% if photo.context.ApertureValue %}
-                        <span> <em>{{ photo.context.ApertureValue }}</em></span>
-                        {% endif %} {% if photo.context.FocalLength %}
-                        <span><em>{{ photo.context.FocalLength }}</em></span>
-                        {% endif %} {% if photo.context.ExposureTime %}
-                        <span><em>{{ photo.context.ExposureTime }}</em></span>
-                        {% endif %} {% if photo.width %}
-                        <span><em>{{ photo.width }} × {{ photo.height }} px</em></span>
-                        {% endif %}
-                    </div>
                 </div>
-
 
                 {% if photo.context.gps %}
                 <div class="map-container">
@@ -64,6 +47,23 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
                         loading="lazy"></iframe>
                 </div>
                 {% endif %}
+                <div class="specs">
+                    {% if photo.context.DateTimeOriginal %}
+                    <span>{{ photo.context.DateTimeOriginal}}; </span>
+                    {% endif %} {% if photo.context.Make %}
+                    <span>{{ photo.context.Make }} {{ photo.context.Model}}; </span>
+                    {% endif %} {% if photo.context.iso %}
+                    <span>ISO {{ photo.context.iso}}; </span>
+                    {% endif %} {% if photo.context.ApertureValue %}
+                    <span>{{ photo.context.ApertureValue}}; </span>
+                    {% endif %} {% if photo.context.FocalLength %}
+                    <span>{{ photo.context.FocalLength}}; </span>
+                    {% endif %} {% if photo.context.ExposureTime %}
+                    <span>{{ photo.context.ExposureTime}}; </span>
+                    {% endif %} {% if photo.width %}
+                    <span>{{ photo.width }} × {{ photo.height }} px</span>
+                    {% endif %}
+                </div>
             </div>
         </div>
         {% endfor %}
@@ -141,6 +141,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
 
     .specs {
         padding: .5rem;
+        text-align: center;
     }
 
     .specs span {
@@ -208,10 +209,12 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         display: flex;
         flex-direction: column;
         border: 1 px solid brown;
+        gap: .1rem;
     }
 
     .metadata-list span {
-        display: flex;
+        border: 1px solid gray;
+        border-radius: 2px;
         align-items: center;
         font-family: "Linux Biolinium O";
     }
@@ -235,7 +238,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
         align-items: center;
         gap: 1.5rem;
         margin-top: 1.5rem;
-        margin-bottom:.5rem;
+        margin-bottom: .5rem;
         font-family: "AireRomanPro", Garamond, serif;
     }
 
@@ -253,7 +256,7 @@ permalink: "/photo-tag/{{ tag | slugify }}/"
     }
 
     .nav-btn:hover {
-        cursor:pointer;
+        cursor: pointer;
     }
 
     @keyframes fadeEffect {
